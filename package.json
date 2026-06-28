@@ -29,7 +29,7 @@
     "@cloudflare/workers-types": "^4.20260628.1",
     "@tailwindcss/vite": "^4.1.13",
     "typescript": "^5.9.3",
-    "wrangler": "^4.105.0"
+    "wrangler": "^3.114.17"
   },
   "packageManager": "pnpm@10.33.4",
   "engines": {
