@@ -1,0 +1,19 @@
+---
+/**
+ * Soft "配套资源" / resource CTA block — gentle, no fake urgency, no popup.
+ * Wire to a real download guide page once the affiliate program is ready.
+ */
+interface Props {
+  title: string;
+  description: string;
+  ctaLabel: string;
+  ctaHref: string;
+}
+const { title, description, ctaLabel, ctaHref } = Astro.props;
+---
+<aside class="resource-cta my-10 rounded-xl p-6" style="background: var(--color-accent-soft); border: 1px solid var(--color-border);">
+  <p class="badge mb-3">Resource</p>
+  <h3 class="text-lg font-semibold mb-1">{title}</h3>
+  <p class="text-sm mb-4" style="color: var(--color-fg-soft);">{description}</p>
+  <a href={ctaHref} rel="nofollow sponsored" class="btn btn-primary">{ctaLabel}</a>
+</aside>

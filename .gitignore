@@ -1,8 +1,27 @@
-.claude/
+# dependencies
+node_modules/
+.pnpm-store/
+
+# build output
+dist/
+.astro/
+.wrangler/
+
+# logs
 *.log
-.DS_Store
+npm-debug.log*
+pnpm-debug.log*
+
+# environment
 .env
 .env.local
-node_modules/
+.env.*.local
+
+# editor / OS
+.DS_Store
 .vscode/
 .idea/
+Thumbs.db
+
+# agent / harness
+.claude/

@@ -1,0 +1,37 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { type Locale } from '~/i18n/ui';
+import { getLocaleFromUrl } from '~/i18n/utils';
+import { SITE } from '~/site.config';
+
+const locale: Locale = getLocaleFromUrl(Astro.url);
+const titleByLocale: Record<Locale, { title: string; body: string }> = {
+  en: {
+    title: 'About',
+    body: `${SITE.title} is a static-first, edge-fast personal site. Every page you read is pre-rendered HTML served from the nearest Cloudflare node.`,
+  },
+  zh: {
+    title: '关于',
+    body: `${SITE.title} 是一个静态优先、边缘加速的个人站点。你读到的每个页面都是从最近的 Cloudflare 节点直接返回的预渲染 HTML。`,
+  },
+};
+const copy = titleByLocale[locale];
+---
+<BaseLayout title={copy.title} description={copy.body}>
+  <article class="container-prose py-16">
+    <h1 class="text-3xl font-semibold mb-4">{copy.title}</h1>
+    <p class="text-lg" style="color: var(--color-fg-soft);">{copy.body}</p>
+    <h2 class="text-xl font-semibold mt-10 mb-3">{locale === 'en' ? 'How the site is built' : '站点如何搭建'}</h2>
+    <ul class="list-disc pl-5 space-y-2" style="color: var(--color-fg-soft);">
+      <li>{locale === 'en' ? 'Astro 5 with the Cloudflare adapter' : 'Astro 5 + Cloudflare 适配器'}</li>
+      <li>{locale === 'en' ? 'Tailwind CSS 4 for styling, CSS variables for theming' : 'Tailwind CSS 4 样式 + CSS 变量主题'}</li>
+      <li>{locale === 'en' ? 'Markdown content with Zod-validated frontmatter' : 'Markdown 内容 + Zod frontmatter 校验'}</li>
+      <li>{locale === 'en' ? 'Pages Functions only when static is not enough' : '仅在静态不够时使用 Pages Functions'}</li>
+    </ul>
+    <h2 class="text-xl font-semibold mt-10 mb-3">{locale === 'en' ? 'Get in touch' : '联系'}</h2>
+    <p style="color: var(--color-fg-soft);">
+      Email: <a class="hover:text-[var(--color-accent)]" href={`mailto:${SITE.email}`}>{SITE.email}</a><br />
+      GitHub: <a class="hover:text-[var(--color-accent)]" href={SITE.social.github} rel="noopener">{SITE.social.github}</a>
+    </p>
+  </article>
+</BaseLayout>

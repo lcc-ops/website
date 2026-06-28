@@ -1,0 +1,23 @@
+---
+import { SITE } from '~/site.config';
+interface Props { slot: string; label?: string }
+const { slot, label = 'Advertisement' } = Astro.props;
+const enabled = SITE.ads.enabled && SITE.ads.client;
+---
+{enabled ? (
+  <aside class="ad-slot my-8" aria-label={label}>
+    <ins
+      class="adsbygoogle block"
+      style="display:block"
+      data-ad-client={SITE.ads.client}
+      data-ad-slot={slot}
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    />
+  </aside>
+) : (
+  <aside class="ad-placeholder my-8 rounded-lg p-6 text-center text-sm" style="border:1px dashed var(--color-border); color: var(--color-fg-soft);" aria-label="Ad placeholder">
+    <span class="badge mb-2">{label}</span>
+    <p>Ad slot reserved — set <code>SITE.ads.enabled=true</code> and fill <code>client</code> + <code>slot</code> after AdSense approval.</p>
+  </aside>
+)}

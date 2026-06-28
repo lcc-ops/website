@@ -1,0 +1,38 @@
+---
+import BaseHead from '~/components/BaseHead.astro';
+import Header from '~/components/Header.astro';
+import Footer from '~/components/Footer.astro';
+import CookieBanner from '~/components/CookieBanner.astro';
+import '~/styles/global.css';
+import { getLocaleFromUrl } from '~/i18n/utils';
+import { type Locale } from '~/i18n/ui';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  type?: 'website' | 'article';
+  pubDate?: Date;
+  updatedDate?: Date;
+  category?: string;
+  tags?: string[];
+  alternates?: Record<Locale, string>;
+}
+const props = Astro.props;
+const locale: Locale = getLocaleFromUrl(Astro.url);
+---
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <BaseHead {...props} />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:px-3 focus:py-2 focus:rounded-md" style="background: var(--color-accent); color: white;">Skip to content</a>
+    <Header />
+    <main id="main" class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+    <CookieBanner />
+  </body>
+</html>

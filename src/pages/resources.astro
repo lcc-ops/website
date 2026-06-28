@@ -1,0 +1,31 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { type Locale } from '~/i18n/ui';
+import { getLocaleFromUrl, localizePath } from '~/i18n/utils';
+const locale: Locale = getLocaleFromUrl(Astro.url);
+
+const isEn = locale === 'en';
+const title = isEn ? 'Resources' : '配套资源';
+const desc = isEn
+  ? 'A quiet landing page for shared downloads and notes. No ads, no pop-ups.'
+  : '用于分享下载与笔记的安静着陆页。无广告、无弹窗。';
+---
+<BaseLayout title={title} description={desc}>
+  <article class="container-prose py-16">
+    <h1 class="text-3xl font-semibold mb-3">{title}</h1>
+    <p class="text-lg" style="color: var(--color-fg-soft);">{desc}</p>
+
+    <ul class="mt-8 space-y-3">
+      <li class="card p-5">
+        <h2 class="font-semibold">{isEn ? 'Sample archive' : '示例资源包'}</h2>
+        <p class="text-sm mt-1" style="color: var(--color-fg-soft);">
+          {isEn ? 'Coming soon — link will be added when the program is ready.' : '即将上线——准备好后这里会显示跳转链接。'}
+        </p>
+      </li>
+    </ul>
+
+    <p class="mt-10 text-sm" style="color: var(--color-fg-soft);">
+      <a href={localizePath('/blog', locale)} class="hover:text-[var(--color-accent)]">← {isEn ? 'Back to the blog' : '返回博客'}</a>
+    </p>
+  </article>
+</BaseLayout>

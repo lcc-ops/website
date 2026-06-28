@@ -1,0 +1,106 @@
+---
+import { SITE } from '~/site.config';
+import { getLocaleFromUrl, localizePath, SITE_URL } from '~/i18n/utils';
+import { defaultLocale, languages, type Locale } from '~/i18n/ui';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  type?: 'website' | 'article';
+  pubDate?: Date;
+  updatedDate?: Date;
+  category?: string;
+  tags?: string[];
+  locale?: Locale;
+  alternates?: Record<Locale, string>;
+}
+
+const url = Astro.url;
+const locale: Locale = Astro.props.locale ?? getLocaleFromUrl(url);
+const {
+  title,
+  description,
+  image = '/og-default.svg',
+  type = 'website',
+  pubDate,
+  updatedDate,
+  category,
+  tags = [],
+} = Astro.props;
+
+const fullTitle = title === SITE.title ? title : `${title} · ${SITE.title}`;
+const canonical = new URL(Astro.url.pathname, Astro.url.origin).toString();
+const ogImage = new URL(image, Astro.url.origin).toString();
+
+// Build hreflang for every locale that has a translation
+const allAlternates: Record<string, string> = {
+  'x-default': new URL(localizePath('/' + (Astro.props.alternates?.en ? '' : ''), defaultLocale), Astro.url.origin).toString(),
+};
+for (const loc of Object.keys(languages) as Locale[]) {
+  const path = Astro.props.alternates?.[loc] ?? Astro.url.pathname;
+  allAlternates[loc] = new URL(path, Astro.url.origin).toString();
+}
+
+const jsonLd: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': type === 'article' ? 'Article' : 'WebSite',
+  headline: title,
+  description,
+  url: canonical,
+  inLanguage: locale,
+  author: { '@type': 'Person', name: SITE.author },
+  publisher: {
+    '@type': 'Organization',
+    name: SITE.title,
+    logo: { '@type': 'ImageObject', url: new URL('/icon.svg', Astro.url.origin).toString() },
+  },
+};
+if (pubDate) jsonLd.datePublished = pubDate.toISOString();
+if (updatedDate) jsonLd.dateModified = updatedDate.toISOString();
+if (category) jsonLd.articleSection = category;
+if (tags.length) jsonLd.keywords = tags.join(', ');
+---
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="generator" content={Astro.generator} />
+
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<link rel="icon" type="image/svg+xml" href="/icon.svg" />
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0b0b0f" media="(prefers-color-scheme: dark)" />
+
+<!-- hreflang -->
+{Object.entries(allAlternates).map(([lang, href]) => (
+  <link rel="alternate" hreflang={lang} href={href} />
+))}
+
+<!-- Open Graph -->
+<meta property="og:type" content={type} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:locale" content={locale === 'zh' ? 'zh_CN' : 'en_US'} />
+{Object.keys(languages)
+  .filter((l) => l !== locale)
+  .map((l) => <meta property="og:locale:alternate" content={l === 'zh' ? 'zh_CN' : 'en_US'} />)}
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title={`${SITE.title} RSS`} href={new URL('/rss.xml', Astro.url.origin).toString()} />
+
+<!-- JSON-LD -->
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+<!-- Cloudflare Web Analytics (fill beacon after deploy) -->
+{SITE.analytics.cfBeacon && (
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify(SITE.analytics.cfBeacon)}></script>
+)}

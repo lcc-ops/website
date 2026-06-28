@@ -1,0 +1,9 @@
+---
+interface Props {
+  type: 'Article' | 'HowTo' | 'FAQPage' | 'WebSite' | 'SoftwareApplication';
+  data: Record<string, unknown>;
+}
+const { type, data } = Astro.props;
+const json = { '@context': 'https://schema.org', '@type': type, ...data };
+---
+<script is:inline type="application/ld+json" set:html={JSON.stringify(json)} />

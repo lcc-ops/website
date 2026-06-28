@@ -1,0 +1,34 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import ToolCard from '~/components/ToolCard.astro';
+import { type Locale, t } from '~/i18n/ui';
+import { getLocaleFromUrl, localizePath } from '~/i18n/utils';
+
+const locale: Locale = getLocaleFromUrl(Astro.url);
+const allTools = await getCollection('tools');
+const tools = allTools.filter((tool) => tool.id.startsWith(`${locale}/`));
+
+const byKey = new Map<string, { en?: string; zh?: string }>();
+for (const p of allTools) {
+  const loc = p.id.match(/^([a-z]{2})\//)?.[1] as Locale | undefined;
+  if (!loc) continue;
+  byKey.set(p.data.translationKey, {
+    ...(byKey.get(p.data.translationKey) ?? {}),
+    [loc]: `/tools/${p.id}`,
+  });
+}
+---
+<BaseLayout title={t(locale, 'tools.title')} description={t(locale, 'tools.subtitle')}>
+  <section class="container-page py-16">
+    <h1 class="text-3xl font-semibold mb-2">{t(locale, 'tools.title')}</h1>
+    <p class="mb-8" style="color: var(--color-fg-soft);">{t(locale, 'tools.subtitle')}</p>
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {tools.map((tool) => {
+        const other = locale === 'en' ? 'zh' : 'en';
+        const translation = byKey.get(tool.data.translationKey)?.[other];
+        return <ToolCard tool={tool} locale={locale} translationLink={translation ? localizePath(translation, other) : undefined} />;
+      })}
+    </div>
+  </section>
+</BaseLayout>

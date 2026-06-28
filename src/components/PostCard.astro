@@ -1,0 +1,38 @@
+---
+import { dateFormatter, localizePath } from '~/i18n/utils';
+import { t, type Locale } from '~/i18n/ui';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+  locale: Locale;
+  translationLink?: string;
+}
+const { post, locale, translationLink } = Astro.props;
+const dateFmt = dateFormatter(locale);
+---
+<article class="card p-6 flex flex-col gap-3">
+  <div class="flex items-center gap-2 text-xs" style="color: var(--color-fg-soft);">
+    <span class="badge">{post.data.category}</span>
+    <time datetime={post.data.pubDate.toISOString()}>{dateFmt.format(post.data.pubDate)}</time>
+    {translationLink && (
+      <a href={translationLink} class="ml-auto hover:text-[var(--color-accent)]" hreflang={locale}>
+        {locale === 'en' ? '中文' : 'EN'}
+      </a>
+    )}
+  </div>
+  <h2 class="text-xl font-semibold leading-snug">
+    <a href={localizePath(`/blog/${post.id}`, locale)} class="hover:text-[var(--color-accent)]">
+      {post.data.title}
+    </a>
+  </h2>
+  <p class="text-sm" style="color: var(--color-fg-soft);">{post.data.description}</p>
+  <div class="mt-auto pt-3 flex items-center justify-between text-xs" style="color: var(--color-fg-soft);">
+    <span class="flex flex-wrap gap-1.5">
+      {post.data.tags.slice(0, 3).map((tag) => <span class="badge">#{tag}</span>)}
+    </span>
+    <a href={localizePath(`/blog/${post.id}`, locale)} class="font-medium hover:text-[var(--color-accent)]">
+      {t(locale, 'blog.readMore')} →
+    </a>
+  </div>
+</article>

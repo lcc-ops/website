@@ -1,0 +1,32 @@
+---
+import { localizePath } from '~/i18n/utils';
+import { t, type Locale } from '~/i18n/ui';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  tool: CollectionEntry<'tools'>;
+  locale: Locale;
+  translationLink?: string;
+}
+const { tool, locale, translationLink } = Astro.props;
+---
+<article class="card p-6 flex flex-col gap-3">
+  <div class="flex items-center gap-3">
+    <span class="text-2xl" aria-hidden="true">{tool.data.icon}</span>
+    <span class="badge">{tool.data.category}</span>
+    {translationLink && (
+      <a href={translationLink} class="ml-auto text-xs hover:text-[var(--color-accent)]" hreflang={locale}>
+        {locale === 'en' ? '中文' : 'EN'}
+      </a>
+    )}
+  </div>
+  <h2 class="text-lg font-semibold leading-snug">
+    <a href={localizePath(`/tools/${tool.id}`, locale)} class="hover:text-[var(--color-accent)]">
+      {tool.data.title}
+    </a>
+  </h2>
+  <p class="text-sm" style="color: var(--color-fg-soft);">{tool.data.description}</p>
+  <a href={localizePath(`/tools/${tool.id}`, locale)} class="btn mt-auto self-start">
+    {t(locale, 'tools.openTool')}
+  </a>
+</article>

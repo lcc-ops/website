@@ -1,0 +1,47 @@
+---
+import { type Locale } from '~/i18n/ui';
+import { getLocaleFromUrl } from '~/i18n/utils';
+const locale: Locale = getLocaleFromUrl(Astro.url);
+
+const text = locale === 'en'
+  ? {
+      title: 'Cookies & analytics',
+      body: 'We use a tiny localStorage key for theme and language. We never set tracking cookies unless you opt in below.',
+      accept: 'Accept analytics',
+      decline: 'Essential only',
+    }
+  : {
+      title: 'Cookie 与统计',
+      body: '本站仅用少量 localStorage 记录主题与语言。除非你主动启用，否则不会设置追踪 Cookie。',
+      accept: '启用统计',
+      decline: '仅必要',
+    };
+---
+<div
+  id="cookie-banner"
+  class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:bottom-6 sm:max-w-md z-50 hidden"
+>
+  <div class="card p-5">
+    <h2 class="font-semibold mb-1">{text.title}</h2>
+    <p class="text-sm mb-4" style="color: var(--color-fg-soft);">{text.body}</p>
+    <div class="flex gap-2 justify-end">
+      <button id="cookie-decline" type="button" class="btn">{text.decline}</button>
+      <button id="cookie-accept" type="button" class="btn btn-primary">{text.accept}</button>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    const KEY = 'cookie-consent';
+    const banner = document.getElementById('cookie-banner');
+    if (!banner) return;
+    if (!localStorage.getItem(KEY)) banner.classList.remove('hidden');
+    function close(value) {
+      localStorage.setItem(KEY, value);
+      banner.classList.add('hidden');
+    }
+    document.getElementById('cookie-accept')?.addEventListener('click', () => close('accepted'));
+    document.getElementById('cookie-decline')?.addEventListener('click', () => close('essential'));
+  })();
+</script>

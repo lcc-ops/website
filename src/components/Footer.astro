@@ -1,0 +1,19 @@
+---
+import { t, type Locale } from '~/i18n/ui';
+import { getLocaleFromUrl, localizePath } from '~/i18n/utils';
+import { SITE } from '~/site.config';
+
+const locale: Locale = getLocaleFromUrl(Astro.url);
+const year = new Date().getFullYear();
+---
+<footer class="mt-24 border-t" style="border-color: var(--color-border);">
+  <div class="container-page py-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between text-sm" style="color: var(--color-fg-soft);">
+    <p>© {year} {SITE.author}. {t(locale, 'footer.copyright')}</p>
+    <div class="flex flex-wrap gap-4">
+      <a href={localizePath('/about', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'nav.about')}</a>
+      <a href={localizePath('/privacy', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'footer.privacy')}</a>
+      <a href={localizePath('/terms', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'footer.terms')}</a>
+      <a href={localizePath('/rss.xml', locale)} class="hover:text-[var(--color-accent)]">RSS</a>
+    </div>
+  </div>
+</footer>

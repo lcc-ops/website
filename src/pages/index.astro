@@ -1,0 +1,95 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import PostCard from '~/components/PostCard.astro';
+import ToolCard from '~/components/ToolCard.astro';
+import { SITE } from '~/site.config';
+import { t, type Locale } from '~/i18n/ui';
+import { getLocaleFromUrl, localizePath } from '~/i18n/utils';
+import type { CollectionEntry } from 'astro:content';
+
+const locale: Locale = getLocaleFromUrl(Astro.url);
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const allTools = await getCollection('tools');
+
+function translationsByKey(items: CollectionEntry<'blog'>[] | CollectionEntry<'tools'>[]) {
+  const map = new Map<string, Partial<Record<Locale, CollectionEntry<'blog'> | CollectionEntry<'tools'>>>>();
+  for (const item of items) {
+    const key = item.data.translationKey;
+    const entry = item.id.match(/^([a-z]{2})\//)?.[1] as Locale | undefined;
+    if (!entry) continue;
+    const current = (map.get(key) ?? {}) as Partial<Record<Locale, CollectionEntry<'blog'> | CollectionEntry<'tools'>>>;
+    current[entry] = item;
+    map.set(key, current);
+  }
+  return map;
+}
+
+const postsByKey = translationsByKey(allPosts);
+const toolsByKey = translationsByKey(allTools);
+
+const postsHere = allPosts
+  .filter((p) => p.id.startsWith(`${locale}/`))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 6);
+
+const toolsHere = allTools
+  .filter((p) => p.id.startsWith(`${locale}/`));
+
+function translationFor(key: string, target: Locale) {
+  return localizePath(`/blog/${target}/${key}`, target);
+}
+function toolTranslationFor(key: string, target: Locale) {
+  return localizePath(`/tools/${target}/${key}`, target);
+}
+---
+<BaseLayout title={SITE.title} description={SITE.description}>
+  <section class="container-page py-20 sm:py-28">
+    <p class="badge mb-4">{SITE.name}</p>
+    <h1 class="text-4xl sm:text-6xl font-semibold tracking-tight max-w-3xl">
+      {t(locale, 'site.title')}
+    </h1>
+    <p class="mt-5 text-lg max-w-2xl" style="color: var(--color-fg-soft);">
+      {t(locale, 'site.tagline')}
+    </p>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href={localizePath('/blog', locale)} class="btn btn-primary">{t(locale, 'nav.blog')} →</a>
+      <a href={localizePath('/tools', locale)} class="btn">{t(locale, 'nav.tools')} →</a>
+    </div>
+  </section>
+
+  <section class="container-page py-10">
+    <div class="flex items-baseline justify-between mb-6">
+      <h2 class="text-2xl font-semibold">{t(locale, 'nav.blog')}</h2>
+      <a href={localizePath('/blog', locale)} class="text-sm hover:text-[var(--color-accent)]">{t(locale, 'blog.readMore')} →</a>
+    </div>
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {postsHere.map((post) => {
+        const key = post.data.translationKey;
+        const other = locale === 'en' ? 'zh' : 'en';
+        const translationLink = postsByKey.get(key)?.[other]
+          ? translationFor(key, other)
+          : undefined;
+        return <PostCard post={post} locale={locale} translationLink={translationLink} />;
+      })}
+    </div>
+  </section>
+
+  <section class="container-page py-10">
+    <div class="flex items-baseline justify-between mb-6">
+      <h2 class="text-2xl font-semibold">{t(locale, 'nav.tools')}</h2>
+      <a href={localizePath('/tools', locale)} class="text-sm hover:text-[var(--color-accent)]">{t(locale, 'blog.readMore')} →</a>
+    </div>
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {toolsHere.map((tool) => {
+        const key = tool.data.translationKey;
+        const other = locale === 'en' ? 'zh' : 'en';
+        const translationLink = toolsByKey.get(key)?.[other]
+          ? toolTranslationFor(key, other)
+          : undefined;
+        return <ToolCard tool={tool} locale={locale} translationLink={translationLink} />;
+      })}
+    </div>
+  </section>
+</BaseLayout>
