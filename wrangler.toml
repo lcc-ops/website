@@ -1,3 +1,7 @@
+# Wrangler config for the local `wrangler pages dev` workflow.
+# Cloudflare Pages does NOT read this file when deploying via the dashboard —
+# the dashboard uses its own project settings (Build output: dist).
+
 name = "website"
 compatibility_date = "2025-01-01"
 pages_build_output_dir = "./dist"
