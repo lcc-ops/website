@@ -1,12 +1,10 @@
-# Wrangler config for the local `wrangler pages dev` workflow.
-# Cloudflare Pages does NOT read this file when deploying via the dashboard —
-# the dashboard uses its own project settings (Build output: dist).
-
 name = "website"
 compatibility_date = "2025-01-01"
 pages_build_output_dir = "./dist"
 
-# Uncomment to enable click-tracking KV for /go/:id redirects.
+# Click-tracking KV for /go/:id redirects. Uncomment after running:
+#   npx wrangler kv:namespace create GO_STATS
+# and replacing the id below.
 # [[kv_namespaces]]
 # binding = "GO_STATS"
 # id = "REPLACE_WITH_KV_ID"
