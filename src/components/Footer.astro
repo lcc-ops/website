@@ -5,9 +5,6 @@ import { SITE } from '~/site.config';
 
 const locale: Locale = getLocaleFromUrl(Astro.url);
 const year = new Date().getFullYear();
-const builtLine = locale === 'en'
-  ? 'Built with Astro · Deployed on Cloudflare Workers'
-  : 'Astro 构建 · Cloudflare Workers 部署';
 const tagline = t(locale, 'site.tagline');
 ---
 <footer class="mt-24 border-t" style="border-color: var(--color-border);">
@@ -35,9 +32,8 @@ const tagline = t(locale, 'site.tagline');
         </ul>
       </div>
     </div>
-    <div class="mt-8 pt-6 border-t flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between text-sm" style="border-color: var(--color-border); color: var(--color-fg-soft);">
+    <div class="mt-8 pt-6 border-t text-sm" style="border-color: var(--color-border); color: var(--color-fg-soft);">
       <p>© {year} {SITE.author}. {t(locale, 'footer.copyright')}</p>
-      <p>{builtLine}</p>
     </div>
   </div>
 </footer>

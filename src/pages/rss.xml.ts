@@ -6,7 +6,7 @@ import { defaultLocale } from '~/i18n/ui';
 
 export async function GET(context: APIContext) {
   const posts = (await getCollection('content', ({ data }) => !data.draft))
-    .filter((p) => p.id.startsWith(`${defaultLocale}/`))
+    .filter((p) => p.id.endsWith(`/${defaultLocale}`))
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
   return rss({
@@ -17,7 +17,7 @@ export async function GET(context: APIContext) {
       title: post.data.title,
       pubDate: post.data.pubDate,
       description: post.data.description,
-      link: `/content/${post.id}`,
+      link: `/content/${post.id.split('/')[0]}`,
       categories: [post.data.category, ...post.data.tags],
     })),
     customData: `<language>${defaultLocale}-${defaultLocale === 'zh' ? 'CN' : 'US'}</language>`,
