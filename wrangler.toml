@@ -7,6 +7,13 @@ main = "./dist/_worker.js"
 binding = "SESSION"
 id = "0ba2374477324a06b6a7e0162dcc558d"
 
+[observability]
+[observability.logs]
+enabled = true
+invocation_logs = true
+[observability.traces]
+enabled = false
+
 # Cloudflare Worker project. Built with @astrojs/cloudflare adapter
 # and served from the `dist/_worker.js` entrypoint produced by `astro build`.
 
