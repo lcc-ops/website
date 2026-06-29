@@ -1,6 +1,7 @@
 name = "website"
 compatibility_date = "2025-01-01"
 main = "./dist/_worker.js"
+assets = { directory = "./dist", binding = "ASSETS" }
 
 # SESSION KV binding required by @astrojs/cloudflare adapter.
 [[kv_namespaces]]
