@@ -9,7 +9,8 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "wrangler pages deploy ./dist"
+    "deploy": "wrangler pages deploy ./dist",
+    "versions:upload": "wrangler versions upload"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
