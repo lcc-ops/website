@@ -5,31 +5,70 @@ import { getLocaleFromUrl } from '~/i18n/utils';
 import { SITE } from '~/site.config';
 
 const locale: Locale = getLocaleFromUrl(Astro.url);
-const titleByLocale: Record<Locale, { title: string; body: string }> = {
+const titleByLocale: Record<Locale, { title: string; intro: string; who: string; forSellers: string; how: string[]; principles: string[]; contact: string }> = {
   en: {
     title: 'About',
-    body: `${SITE.title} is a static-first, edge-fast personal site. Every page you read is pre-rendered HTML served from the nearest Cloudflare node.`,
+    intro: 'A free toolkit that does the math so cross-border sellers can stop guessing and start pricing for profit.',
+    who: 'I run a small catalog of e-commerce stores selling from China to North America and Europe. The margins on cross-border orders are thin, and most of the loss hides inside numbers — payment fees, FX spreads, dimensional weight, ad waste — that nobody hands you a clean spreadsheet for. Crossborder Cost Lab is where I publish the calculators I built for my own shelves, so you don\'t have to rebuild them.',
+    forSellers: 'If you sell on Shopify, WooCommerce, Amazon, TikTok Shop or run a one-product dropshipping store, this site is for you. The tools assume you know your cost of goods, you already ship orders internationally, and you want answers in 30 seconds, not a 40-page whitepaper.',
+    how: [
+      'Astro 5 with the Cloudflare Worker adapter — every page is rendered at the edge, near your reader.',
+      'Tailwind CSS 4 plus CSS variables for theming — light and dark, no flicker, no layout shift.',
+      'Markdown content with Zod-validated frontmatter — content is data, edits stay atomic.',
+      'Vanilla TypeScript inside each calculator — no framework runtime, no tracking pixels, your inputs never leave the browser.',
+    ],
+    principles: [
+      'No login. No email gate. Every calculator works the moment the page loads.',
+      'No black-box formulas. The math is visible, the assumptions are documented.',
+      'No sponsored rankings. Tools are listed by what they answer, not what pays the most.',
+    ],
+    contact: 'Spotted a wrong rate, a missing currency, or a calculation that breaks in the corner cases? Open an issue on GitHub or send a note — I read every one.',
   },
   zh: {
     title: '关于',
-    body: `${SITE.title} 是一个静态优先、边缘加速的个人站点。你读到的每个页面都是从最近的 Cloudflare 节点直接返回的预渲染 HTML。`,
+    intro: '一个免费工具集，专门帮你算清跨境订单里那些看不见的成本，让定价回到利润本身。',
+    who: '我自己在做面向北美和欧洲的小型独立站。跨境订单的利润极薄，大部分损耗藏在付款手续费、汇差、体积重、广告浪费这些没人给你算清楚的数字里。跨境成本实验室是我把自用的计算器公开出来的地方，省得你再从头搭一遍。',
+    forSellers: '如果你在 Shopify、WooCommerce、Amazon、TikTok Shop 上卖货，或者做单品 Dropshipping，这个站点就是为你准备的。这些工具假设你清楚自己的货成本、已经在发跨境包裹、想要 30 秒内拿到答案，而不是再读一份 40 页的白皮书。',
+    how: [
+      'Astro 5 + Cloudflare Worker 适配器——每个页面都在边缘节点渲染。',
+      'Tailwind CSS 4 + CSS 变量主题——明暗双主题，无闪烁、无布局跳动。',
+      'Markdown 内容 + Zod frontmatter 校验——内容即数据，修改保持原子化。',
+      '每个计算器用纯 TypeScript 写在浏览器端——无框架运行时、无追踪像素，输入数据不离开浏览器。',
+    ],
+    principles: [
+      '无需注册、无需邮箱——页面打开就能算。',
+      '公式公开透明——计算过程可见，假设条件有说明。',
+      '不接受付费排序——工具按回答的问题排序，不按付费金额排序。',
+    ],
+    contact: '发现汇率过时、币种缺失，或边角案例下算错了？欢迎在 GitHub 提 Issue 或邮件告诉我——每条都会看。',
   },
 };
 const copy = titleByLocale[locale];
 ---
-<BaseLayout title={copy.title} description={copy.body}>
+<BaseLayout title={copy.title} description={copy.intro}>
   <article class="container-prose py-16">
     <h1 class="text-3xl font-semibold mb-4">{copy.title}</h1>
-    <p class="text-lg" style="color: var(--color-fg-soft);">{copy.body}</p>
+    <p class="text-lg" style="color: var(--color-fg-soft);">{copy.intro}</p>
+
+    <h2 class="text-xl font-semibold mt-10 mb-3">{locale === 'en' ? 'Who runs this' : '我是谁'}</h2>
+    <p style="color: var(--color-fg-soft);">{copy.who}</p>
+
+    <h2 class="text-xl font-semibold mt-10 mb-3">{locale === 'en' ? 'Who it is for' : '给谁用'}</h2>
+    <p style="color: var(--color-fg-soft);">{copy.forSellers}</p>
+
     <h2 class="text-xl font-semibold mt-10 mb-3">{locale === 'en' ? 'How the site is built' : '站点如何搭建'}</h2>
     <ul class="list-disc pl-5 space-y-2" style="color: var(--color-fg-soft);">
-      <li>{locale === 'en' ? 'Astro 5 with the Cloudflare adapter' : 'Astro 5 + Cloudflare 适配器'}</li>
-      <li>{locale === 'en' ? 'Tailwind CSS 4 for styling, CSS variables for theming' : 'Tailwind CSS 4 样式 + CSS 变量主题'}</li>
-      <li>{locale === 'en' ? 'Markdown content with Zod-validated frontmatter' : 'Markdown 内容 + Zod frontmatter 校验'}</li>
-      <li>{locale === 'en' ? 'Pages Functions only when static is not enough' : '仅在静态不够时使用 Pages Functions'}</li>
+      {copy.how.map((line) => <li>{line}</li>)}
     </ul>
+
+    <h2 class="text-xl font-semibold mt-10 mb-3">{locale === 'en' ? 'Editorial principles' : '编辑原则'}</h2>
+    <ul class="list-disc pl-5 space-y-2" style="color: var(--color-fg-soft);">
+      {copy.principles.map((line) => <li>{line}</li>)}
+    </ul>
+
     <h2 class="text-xl font-semibold mt-10 mb-3">{locale === 'en' ? 'Get in touch' : '联系'}</h2>
-    <p style="color: var(--color-fg-soft);">
+    <p style="color: var(--color-fg-soft);">{copy.contact}</p>
+    <p class="mt-3" style="color: var(--color-fg-soft);">
       Email: <a class="hover:text-[var(--color-accent)]" href={`mailto:${SITE.email}`}>{SITE.email}</a><br />
       GitHub: <a class="hover:text-[var(--color-accent)]" href={SITE.social.github} rel="noopener">{SITE.social.github}</a>
     </p>

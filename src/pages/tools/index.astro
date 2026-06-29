@@ -8,7 +8,7 @@ import { getLocaleFromUrl, localizePath } from '~/i18n/utils';
 
 const locale: Locale = getLocaleFromUrl(Astro.url);
 const allTools = await getCollection('tools');
-const tools = allTools.filter((tool) => tool.id.startsWith(`${locale}/`));
+const tools = allTools.filter((tool) => tool.id.endsWith(`/${locale}`));
 
 const byKey = new Map<string, { en?: string; zh?: string }>();
 for (const p of allTools) {

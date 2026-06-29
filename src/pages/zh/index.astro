@@ -31,12 +31,12 @@ const postsByKey = translationsByKey(allPosts);
 const toolsByKey = translationsByKey(allTools);
 
 const postsHere = allPosts
-  .filter((p) => p.id.startsWith(`${locale}/`))
+  .filter((p) => p.id.endsWith(`/${locale}`))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 6);
 
 const toolsHere = allTools
-  .filter((p) => p.id.startsWith(`${locale}/`));
+  .filter((p) => p.id.endsWith(`/${locale}`));
 
 function postTranslationFor(slug: string, target: Locale) {
   return localizePath(`/content/${slug}`, target);

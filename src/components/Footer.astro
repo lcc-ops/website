@@ -5,15 +5,39 @@ import { SITE } from '~/site.config';
 
 const locale: Locale = getLocaleFromUrl(Astro.url);
 const year = new Date().getFullYear();
+const builtLine = locale === 'en'
+  ? 'Built with Astro · Deployed on Cloudflare Workers'
+  : 'Astro 构建 · Cloudflare Workers 部署';
+const tagline = t(locale, 'site.tagline');
 ---
 <footer class="mt-24 border-t" style="border-color: var(--color-border);">
-  <div class="container-page py-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between text-sm" style="color: var(--color-fg-soft);">
-    <p>© {year} {SITE.author}. {t(locale, 'footer.copyright')}</p>
-    <div class="flex flex-wrap gap-4">
-      <a href={localizePath('/about', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'nav.about')}</a>
-      <a href={localizePath('/privacy', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'footer.privacy')}</a>
-      <a href={localizePath('/terms', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'footer.terms')}</a>
-      <a href={localizePath('/rss.xml', locale)} class="hover:text-[var(--color-accent)]">RSS</a>
+  <div class="container-page py-10">
+    <div class="grid gap-8 sm:grid-cols-3 text-sm" style="color: var(--color-fg-soft);">
+      <div>
+        <p class="font-semibold mb-2" style="color: var(--color-fg);">{SITE.name}</p>
+        <p>{tagline}</p>
+      </div>
+      <div>
+        <p class="font-semibold mb-2" style="color: var(--color-fg);">{locale === 'en' ? 'Site' : '站点'}</p>
+        <ul class="space-y-1">
+          <li><a href={localizePath('/about', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'nav.about')}</a></li>
+          <li><a href={localizePath('/content', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'nav.content')}</a></li>
+          <li><a href={localizePath('/tools', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'nav.tools')}</a></li>
+          <li><a href={localizePath('/resources', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'nav.resources')}</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold mb-2" style="color: var(--color-fg);">{locale === 'en' ? 'Legal' : '法律'}</p>
+        <ul class="space-y-1">
+          <li><a href={localizePath('/privacy', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'footer.privacy')}</a></li>
+          <li><a href={localizePath('/terms', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'footer.terms')}</a></li>
+          <li><a href={localizePath('/rss.xml', locale)} class="hover:text-[var(--color-accent)]">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-8 pt-6 border-t flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between text-sm" style="border-color: var(--color-border); color: var(--color-fg-soft);">
+      <p>© {year} {SITE.author}. {t(locale, 'footer.copyright')}</p>
+      <p>{builtLine}</p>
     </div>
   </div>
 </footer>

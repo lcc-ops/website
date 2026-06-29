@@ -2,24 +2,51 @@
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import { SITE } from '~/site.config';
 
-const subtitle = `${SITE.title} 是一个静态优先、边缘加速的个人站点。你读到的每个页面都是从最近的 Cloudflare 节点直接返回的预渲染 HTML。`;
+const copy = {
+  title: '关于',
+  intro: '一个免费工具集，专门帮你算清跨境订单里那些看不见的成本，让定价回到利润本身。',
+  who: '我自己在做面向北美和欧洲的小型独立站。跨境订单的利润极薄，大部分损耗藏在付款手续费、汇差、体积重、广告浪费这些没人给你算清楚的数字里。跨境成本实验室是我把自用的计算器公开出来的地方，省得你再从头搭一遍。',
+  forSellers: '如果你在 Shopify、WooCommerce、Amazon、TikTok Shop 上卖货，或者做单品 Dropshipping，这个站点就是为你准备的。这些工具假设你清楚自己的货成本、已经在发跨境包裹、想要 30 秒内拿到答案，而不是再读一份 40 页的白皮书。',
+  how: [
+    'Astro 5 + Cloudflare Worker 适配器——每个页面都在边缘节点渲染。',
+    'Tailwind CSS 4 + CSS 变量主题——明暗双主题，无闪烁、无布局跳动。',
+    'Markdown 内容 + Zod frontmatter 校验——内容即数据，修改保持原子化。',
+    '每个计算器用纯 TypeScript 写在浏览器端——无框架运行时、无追踪像素，输入数据不离开浏览器。',
+  ],
+  principles: [
+    '无需注册、无需邮箱——页面打开就能算。',
+    '公式公开透明——计算过程可见，假设条件有说明。',
+    '不接受付费排序——工具按回答的问题排序，不按付费金额排序。',
+  ],
+  contact: '发现汇率过时、币种缺失，或边角案例下算错了？欢迎在 GitHub 提 Issue 或邮件告诉我——每条都会看。',
+};
 ---
-<BaseLayout title="关于" description={subtitle}>
+<BaseLayout title={copy.title} description={copy.intro}>
   <article class="container-prose py-16">
-    <h1 class="text-3xl font-semibold mb-4">关于</h1>
-    <p class="text-lg" style="color: var(--color-fg-soft);">{subtitle}</p>
+    <h1 class="text-3xl font-semibold mb-4">{copy.title}</h1>
+    <p class="text-lg" style="color: var(--color-fg-soft);">{copy.intro}</p>
+
+    <h2 class="text-xl font-semibold mt-10 mb-3">我是谁</h2>
+    <p style="color: var(--color-fg-soft);">{copy.who}</p>
+
+    <h2 class="text-xl font-semibold mt-10 mb-3">给谁用</h2>
+    <p style="color: var(--color-fg-soft);">{copy.forSellers}</p>
+
     <h2 class="text-xl font-semibold mt-10 mb-3">站点如何搭建</h2>
     <ul class="list-disc pl-5 space-y-2" style="color: var(--color-fg-soft);">
-      <li>Astro 5 + Cloudflare 适配器</li>
-      <li>Tailwind CSS 4 样式 + CSS 变量主题</li>
-      <li>Markdown 内容 + Zod frontmatter 校验</li>
-      <li>仅在静态不够时使用 Pages Functions</li>
+      {copy.how.map((line) => <li>{line}</li>)}
     </ul>
+
+    <h2 class="text-xl font-semibold mt-10 mb-3">编辑原则</h2>
+    <ul class="list-disc pl-5 space-y-2" style="color: var(--color-fg-soft);">
+      {copy.principles.map((line) => <li>{line}</li>)}
+    </ul>
+
     <h2 class="text-xl font-semibold mt-10 mb-3">联系</h2>
-    <p style="color: var(--color-fg-soft);">
+    <p style="color: var(--color-fg-soft);">{copy.contact}</p>
+    <p class="mt-3" style="color: var(--color-fg-soft);">
       Email: <a class="hover:text-[var(--color-accent)]" href={`mailto:${SITE.email}`}>{SITE.email}</a><br />
       GitHub: <a class="hover:text-[var(--color-accent)]" href={SITE.social.github} rel="noopener">{SITE.social.github}</a>
     </p>
   </article>
 </BaseLayout>
-
