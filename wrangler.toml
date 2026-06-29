@@ -3,10 +3,14 @@ compatibility_date = "2025-01-01"
 compatibility_flags = ["nodejs_compat"]
 main = "./dist/_worker.js/index.js"
 
-# @astrojs/cloudflare ships a self-contained Worker bundle at dist/_worker.js.
-# Prerendered HTML and _astro/ assets live alongside it and are served by the
-# Worker itself — do NOT point assets.directory at ./dist, or wrangler will
-# treat the _worker.js directory as static assets and abort the deploy.
+# Static assets (.well-known, icon.svg, /_astro/*, prerendered HTML, ...) live
+# inside ./dist alongside the Worker bundle. The Astro Cloudflare adapter reads
+# them at runtime via `env.ASSETS.fetch(...)` — without this binding every
+# static request returns 500. The `dist/_worker.js/` directory is excluded
+# via .assetsignore so wrangler does not refuse the upload.
+[assets]
+directory = "./dist"
+binding = "ASSETS"
 
 # SESSION KV binding required by @astrojs/cloudflare adapter.
 [[kv_namespaces]]
