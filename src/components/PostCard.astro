@@ -22,7 +22,7 @@ const dateFmt = dateFormatter(locale);
     )}
   </div>
   <h2 class="text-xl font-semibold leading-snug">
-    <a href={localizePath(`/content/${post.id}`, locale)} class="hover:text-[var(--color-accent)]">
+    <a href={localizePath(`/content/${post.id.split('/')[0]}`, locale)} class="hover:text-[var(--color-accent)]">
       {post.data.title}
     </a>
   </h2>
@@ -31,7 +31,7 @@ const dateFmt = dateFormatter(locale);
     <span class="flex flex-wrap gap-1.5">
       {post.data.tags.slice(0, 3).map((tag) => <span class="badge">#{tag}</span>)}
     </span>
-    <a href={localizePath(`/content/${post.id}`, locale)} class="font-medium hover:text-[var(--color-accent)]">
+    <a href={localizePath(`/content/${post.id.split('/')[0]}`, locale)} class="font-medium hover:text-[var(--color-accent)]">
       {t(locale, 'blog.readMore')} →
     </a>
   </div>

@@ -52,11 +52,13 @@ export default defineConfig({
       },
     }),
   ],
-  // Redirect legacy /blog URLs to /content (collection + route renamed).
+  // Redirect legacy /blog URLs to /content. Old URLs were shaped
+  // /blog/<slug>/<lang> and /zh/blog/<slug>/<lang>; the new layout puts the
+  // locale in the URL prefix only, so we drop the trailing <lang> segment.
   redirects: {
     '/blog': '/content',
-    '/blog/[...slug]': '/content/[...slug]',
     '/zh/blog': '/zh/content',
-    '/zh/blog/[...slug]': '/zh/content/[...slug]',
+    '/blog/[slug]/[lang]': '/content/[slug]',
+    '/zh/blog/[slug]/[lang]': '/zh/content/[slug]',
   },
 });

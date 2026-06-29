@@ -21,12 +21,12 @@ const { tool, locale, translationLink } = Astro.props;
     )}
   </div>
   <h2 class="text-lg font-semibold leading-snug">
-    <a href={localizePath(`/tools/${tool.id}`, locale)} class="hover:text-[var(--color-accent)]">
+    <a href={localizePath(`/tools/${tool.id.split('/')[0]}`, locale)} class="hover:text-[var(--color-accent)]">
       {tool.data.title}
     </a>
   </h2>
   <p class="text-sm" style="color: var(--color-fg-soft);">{tool.data.description}</p>
-  <a href={localizePath(`/tools/${tool.id}`, locale)} class="btn mt-auto self-start">
+  <a href={localizePath(`/tools/${tool.id.split('/')[0]}`, locale)} class="btn mt-auto self-start">
     {t(locale, 'tools.openTool')}
   </a>
 </article>

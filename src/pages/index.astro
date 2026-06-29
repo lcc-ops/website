@@ -37,11 +37,11 @@ const postsHere = allPosts
 const toolsHere = allTools
   .filter((p) => p.id.startsWith(`${locale}/`));
 
-function translationFor(key: string, target: Locale) {
-  return localizePath(`/content/${target}/${key}`, target);
+function translationFor(slug: string, target: Locale) {
+  return localizePath(`/content/${slug}`, target);
 }
-function toolTranslationFor(key: string, target: Locale) {
-  return localizePath(`/tools/${target}/${key}`, target);
+function toolTranslationFor(slug: string, target: Locale) {
+  return localizePath(`/tools/${slug}`, target);
 }
 ---
 <BaseLayout title={SITE.title} description={SITE.description}>

@@ -2,12 +2,12 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import ToolCard from '~/components/ToolCard.astro';
-import { type Locale, t } from '~/i18n/ui';
-import { getLocaleFromUrl, localizePath } from '~/i18n/utils';
+import { type Locale } from '~/i18n/ui';
+import { localizePath } from '~/i18n/utils';
 
-const locale: Locale = getLocaleFromUrl(Astro.url);
+const locale: Locale = 'zh';
 const allTools = await getCollection('tools');
-const tools = allTools.filter((tool) => tool.id.startsWith(`${locale}/`));
+const tools = allTools.filter((tool) => tool.id.endsWith('/zh'));
 
 const byKey = new Map<string, { en?: string; zh?: string }>();
 for (const p of allTools) {
@@ -19,13 +19,13 @@ for (const p of allTools) {
   });
 }
 ---
-<BaseLayout title={t(locale, 'tools.title')} description={t(locale, 'tools.subtitle')}>
+<BaseLayout title="工具" description="完全在浏览器中运行的轻量工具。">
   <section class="container-page py-16">
-    <h1 class="text-3xl font-semibold mb-2">{t(locale, 'tools.title')}</h1>
-    <p class="mb-8" style="color: var(--color-fg-soft);">{t(locale, 'tools.subtitle')}</p>
+    <h1 class="text-3xl font-semibold mb-2">工具</h1>
+    <p class="mb-8" style="color: var(--color-fg-soft);">完全在浏览器中运行的轻量工具。</p>
     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {tools.map((tool) => {
-        const other = locale === 'en' ? 'zh' : 'en';
+        const other: Locale = 'en';
         const translation = byKey.get(tool.data.translationKey)?.[other];
         return <ToolCard tool={tool} locale={locale} translationLink={translation ? localizePath(translation, other) : undefined} />;
       })}

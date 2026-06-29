@@ -1,0 +1,132 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Breadcrumb from '~/components/Breadcrumb.astro';
+import AdSlot from '~/components/AdSlot.astro';
+import ResourceCta from '~/components/ResourceCta.astro';
+import SeoStructuredData from '~/components/SeoStructuredData.astro';
+import { type Locale, t } from '~/i18n/ui';
+import { localizePath, dateFormatter } from '~/i18n/utils';
+import readingTime from 'reading-time';
+
+export async function getStaticPaths() {
+  const all = await getCollection('content', ({ data }) => !data.draft);
+  return all
+    .filter((post) => post.id.endsWith('/zh'))
+    .map((post) => ({
+      params: { slug: post.id.split('/')[0] },
+      props: { post },
+    }));
+}
+
+const { post } = Astro.props;
+const slug = post.id.split('/')[0];
+const locale: Locale = 'zh';
+const other: Locale = 'en';
+const { Content } = await render(post);
+const dateFmt = dateFormatter(locale);
+const minutes = Math.max(1, Math.round(readingTime(post.body ?? '').minutes));
+
+const allPosts = await getCollection('content', ({ data }) => !data.draft);
+const translation = allPosts.find(
+  (p) => p.data.translationKey === post.data.translationKey && p.id.startsWith(`${slug}/`),
+);
+const translationHref = translation ? localizePath(`/content/${slug}`, other) : undefined;
+
+const alternates: Record<Locale, string> = {
+  en: localizePath(`/content/${slug}`, 'en'),
+  zh: localizePath(`/content/${slug}`, 'zh'),
+};
+
+const articleJsonLd = {
+  headline: post.data.title,
+  description: post.data.description,
+  inLanguage: locale,
+  keywords: post.data.tags.join(', '),
+  datePublished: post.data.pubDate.toISOString(),
+  ...(post.data.updatedDate ? { dateModified: post.data.updatedDate.toISOString() } : {}),
+};
+void articleJsonLd;
+---
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  type="article"
+  pubDate={post.data.pubDate}
+  updatedDate={post.data.updatedDate}
+  category={post.data.category}
+  tags={post.data.tags}
+  alternates={alternates}
+>
+  <article class="container-prose py-12">
+    <Breadcrumb
+      items={[
+        { label: t(locale, 'nav.home'), href: '/' },
+        { label: t(locale, 'nav.blog'), href: '/content' },
+        { label: post.data.title },
+      ]}
+    />
+
+    <header class="mb-8">
+      <div class="flex flex-wrap items-center gap-2 text-sm mb-3" style="color: var(--color-fg-soft);">
+        <span class="badge">{post.data.category}</span>
+        <time datetime={post.data.pubDate.toISOString()}>{t(locale, 'blog.publishedOn')} {dateFmt.format(post.data.pubDate)}</time>
+        <span>· {minutes} {t(locale, 'blog.minutes')}</span>
+        {translationHref && (
+          <a href={translationHref} class="ml-auto hover:text-[var(--color-accent)]" hreflang={other}>
+            {other === 'en' ? 'Read in English' : '中文版'}
+          </a>
+        )}
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight">{post.data.title}</h1>
+      {post.data.tldr && (
+        <p class="mt-4 text-lg" style="color: var(--color-fg-soft);">{post.data.tldr}</p>
+      )}
+    </header>
+
+    <AdSlot slot="article-top" label={t(locale, 'ad.disclosure')} />
+
+    <div class="prose prose-neutral dark:prose-invert max-w-none">
+      <Content />
+    </div>
+
+    <AdSlot slot="article-bottom" label={t(locale, 'ad.disclosure')} />
+
+    {post.data.faq.length > 0 && (
+      <section class="mt-12">
+        <h2 class="text-2xl font-semibold mb-4">{t(locale, 'common.faq')}</h2>
+        <div class="space-y-4">
+          {post.data.faq.map((item) => (
+            <details class="card p-4">
+              <summary class="font-medium cursor-pointer">{item.q}</summary>
+              <p class="mt-2 text-sm" style="color: var(--color-fg-soft);">{item.a}</p>
+            </details>
+          ))}
+        </div>
+        <SeoStructuredData
+          type="FAQPage"
+          data={{
+            mainEntity: post.data.faq.map((f) => ({
+              '@type': 'Question',
+              name: f.q,
+              acceptedAnswer: { '@type': 'Answer', text: f.a },
+            })),
+          }}
+        />
+      </section>
+    )}
+
+    <ResourceCta
+      title="相关资源"
+      description="下载配套笔记与工具集合，跟这篇文章一起用。"
+      ctaLabel="查看资源"
+      ctaHref={localizePath('/resources', locale)}
+    />
+
+    <footer class="mt-10 pt-6 border-t" style="border-color: var(--color-border);">
+      <p class="text-sm" style="color: var(--color-fg-soft);">
+        {t(locale, 'blog.tag')}: {post.data.tags.map((tag) => <span class="badge mr-1">#{tag}</span>)}
+      </p>
+    </footer>
+  </article>
+</BaseLayout>

@@ -1,0 +1,138 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Breadcrumb from '~/components/Breadcrumb.astro';
+import AdSlot from '~/components/AdSlot.astro';
+import ResourceCta from '~/components/ResourceCta.astro';
+import SeoStructuredData from '~/components/SeoStructuredData.astro';
+import { type Locale, t } from '~/i18n/ui';
+import { localizePath } from '~/i18n/utils';
+import TextDiff from '~/components/tools/TextDiff.astro';
+
+const componentMap: Record<string, typeof TextDiff> = { TextDiff };
+
+export async function getStaticPaths() {
+  const all = await getCollection('tools');
+  return all
+    .filter((tool) => tool.id.endsWith('/zh'))
+    .map((tool) => ({
+      params: { slug: tool.id.split('/')[0] },
+      props: { tool },
+    }));
+}
+
+const { tool } = Astro.props;
+const slug = tool.id.split('/')[0];
+const locale: Locale = 'zh';
+const other: Locale = 'en';
+const { Content } = await render(tool);
+const Component = componentMap[tool.data.component] ?? TextDiff;
+
+const allTools = await getCollection('tools');
+const translation = allTools.find(
+  (p) => p.data.translationKey === tool.data.translationKey && p.id.startsWith(`${slug}/`),
+);
+
+const howTo = {
+  name: tool.data.title,
+  description: tool.data.description,
+  step: [
+    { '@type': 'HowToStep', name: '打开工具', text: '进入页面顶部的交互区域。' },
+    { '@type': 'HowToStep', name: '输入内容', text: '按下方说明粘贴或上传你的内容。' },
+    { '@type': 'HowToStep', name: '执行操作', text: '点击主按钮，结果会在浏览器内计算。' },
+  ],
+};
+---
+<BaseLayout
+  title={tool.data.title}
+  description={tool.data.description}
+  type="article"
+  pubDate={tool.data.pubDate}
+  category={tool.data.category}
+  tags={tool.data.tags}
+  alternates={{
+    en: localizePath(`/tools/${slug}`, 'en'),
+    zh: localizePath(`/tools/${slug}`, 'zh'),
+  }}
+>
+  <article class="container-page py-12">
+    <Breadcrumb
+      items={[
+        { label: t(locale, 'nav.home'), href: '/' },
+        { label: t(locale, 'tools.title'), href: '/tools' },
+        { label: tool.data.title },
+      ]}
+    />
+
+    <header class="mb-6">
+      <div class="flex flex-wrap items-center gap-2 text-sm mb-3" style="color: var(--color-fg-soft);">
+        <span class="text-2xl" aria-hidden="true">{tool.data.icon}</span>
+        <span class="badge">{tool.data.category}</span>
+        {translation && (
+          <a href={localizePath(`/tools/${slug}`, other)} class="ml-auto hover:text-[var(--color-accent)]" hreflang={other}>
+            {other === 'en' ? 'Read in English' : '中文版'}
+          </a>
+        )}
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight">{tool.data.title}</h1>
+      {tool.data.tldr && (
+        <p class="mt-3 text-lg" style="color: var(--color-fg-soft);">{tool.data.tldr}</p>
+      )}
+    </header>
+
+    <section class="card p-6 sm:p-8 mb-8">
+      <Component />
+    </section>
+
+    <AdSlot slot="tool-bottom" label={t(locale, 'ad.disclosure')} />
+
+    <div class="container-prose">
+      <div class="prose prose-neutral dark:prose-invert max-w-none">
+        <Content />
+      </div>
+
+      {tool.data.faq.length > 0 && (
+        <section class="mt-12">
+          <h2 class="text-2xl font-semibold mb-4">{t(locale, 'common.faq')}</h2>
+          <div class="space-y-4">
+            {tool.data.faq.map((item) => (
+              <details class="card p-4">
+                <summary class="font-medium cursor-pointer">{item.q}</summary>
+                <p class="mt-2 text-sm" style="color: var(--color-fg-soft);">{item.a}</p>
+              </details>
+            ))}
+          </div>
+          <SeoStructuredData
+            type="FAQPage"
+            data={{
+              mainEntity: tool.data.faq.map((f) => ({
+                '@type': 'Question',
+                name: f.q,
+                acceptedAnswer: { '@type': 'Answer', text: f.a },
+              })),
+            }}
+          />
+        </section>
+      )}
+
+      <ResourceCta
+        title="保存你的结果"
+        description="导出到文件、通过短链分享，或把工具收藏起来以后再用。"
+        ctaLabel="更多工具"
+        ctaHref={localizePath('/tools', locale)}
+      />
+    </div>
+  </article>
+
+  <SeoStructuredData type="HowTo" data={howTo} />
+  <SeoStructuredData
+    type="SoftwareApplication"
+    data={{
+      name: tool.data.title,
+      applicationCategory: 'UtilitiesApplication',
+      operatingSystem: 'Any',
+      description: tool.data.description,
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    }}
+  />
+</BaseLayout>
