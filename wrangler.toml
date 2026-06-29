@@ -1,5 +1,6 @@
 name = "website"
 compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
 main = "./dist/_worker.js/index.js"
 
 # SESSION KV binding required by @astrojs/cloudflare adapter.
