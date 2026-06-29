@@ -1,5 +1,6 @@
 name = "website"
 compatibility_date = "2025-01-01"
+pages_build_output_dir = "./dist"
 
 # Cloudflare Pages project. Built with @astrojs/cloudflare and served
 # from the `dist/` directory produced by `astro build`.
