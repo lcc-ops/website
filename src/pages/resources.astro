@@ -14,6 +14,7 @@ const resourcePacks = [
       : '插公式即用：产品成本、物流、费用、退款、广告支出。含按 SKU 和渠道的净利润看板。',
     href: '#download',
     size: '128 KB · XLSX',
+    type: 'XLSX',
   },
   {
     title: isEn ? 'Dropshipping P&L Spreadsheet' : 'Dropshipping 真实成本核算表',
@@ -22,6 +23,7 @@ const resourcePacks = [
       : '完整成本堆栈（$50 AliExpress dropshipping 店铺）：货品成本、物流、广告、退货、拒付。',
     href: '#download',
     size: '94 KB · XLSX',
+    type: 'XLSX',
   },
   {
     title: isEn ? 'Chargeback Evidence Templates' : '拒付申诉证据模板',
@@ -30,33 +32,55 @@ const resourcePacks = [
       : '"未收到货"和"货不符"拒付申诉模板。Stripe + PayPal 双版本。',
     href: '#download',
     size: '42 KB · DOCX',
+    type: 'DOCX',
   },
 ];
+
+const totalCount = resourcePacks.length;
+const totalSize = '264 KB';
 ---
 <BaseLayout title={t(locale, 'resources.title')} description={t(locale, 'resources.subtitle')}>
-  <article class="container-prose py-16">
-    <h1 class="text-3xl font-semibold mb-3">{t(locale, 'resources.title')}</h1>
-    <p class="text-lg" style="color: var(--color-fg-soft);">{t(locale, 'resources.subtitle')}</p>
+  <article>
+    <section class="container-page py-16 sm:py-20 border-b" style="border-color: var(--color-border);">
+      <p class="badge mb-4">📦 {isEn ? 'Free downloads' : '免费下载'}</p>
+      <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight max-w-3xl">
+        {t(locale, 'resources.title')}
+      </h1>
+      <p class="mt-4 text-lg max-w-2xl" style="color: var(--color-fg-soft);">
+        {t(locale, 'resources.subtitle')}
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3 text-sm" style="color: var(--color-fg-soft);">
+        <span class="badge">{totalCount} {isEn ? 'resources' : '个资源'}</span>
+        <span class="badge">{totalSize}</span>
+        <span class="badge">{isEn ? 'No signup' : '无需注册'}</span>
+      </div>
+    </section>
 
-    <ul class="mt-8 space-y-4">
-      {resourcePacks.map((pack) => (
-        <li class="card p-5">
-          <div class="flex flex-wrap items-start justify-between gap-3">
-            <div>
-              <h2 class="font-semibold">{pack.title}</h2>
-              <p class="text-sm mt-1" style="color: var(--color-fg-soft);">{pack.desc}</p>
-              <p class="text-xs mt-2" style="color: var(--color-fg-soft);">{pack.size}</p>
+    <section class="container-page py-12">
+      <h2 class="text-2xl font-semibold mb-6">{isEn ? 'Available now' : '现有资源'}</h2>
+      <ul class="space-y-4">
+        {resourcePacks.map((pack) => (
+          <li class="card p-6">
+            <div class="flex flex-wrap items-start justify-between gap-4">
+              <div class="flex-1 min-w-[260px]">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="badge">{pack.type}</span>
+                  <span class="text-xs" style="color: var(--color-fg-soft);">{pack.size}</span>
+                </div>
+                <h3 class="text-lg font-semibold">{pack.title}</h3>
+                <p class="text-sm mt-1" style="color: var(--color-fg-soft);">{pack.desc}</p>
+              </div>
+              <a href={pack.href} class="btn btn-primary self-start">{t(locale, 'common.download')} ↓</a>
             </div>
-            <a href={pack.href} class="btn">{t(locale, 'common.download')} ↓</a>
-          </div>
-        </li>
-      ))}
-    </ul>
+          </li>
+        ))}
+      </ul>
 
-    <p class="mt-10 text-xs" style="color: var(--color-fg-soft);">{t(locale, 'resources.disclosure')}</p>
+      <p class="mt-10 text-xs" style="color: var(--color-fg-soft);">{t(locale, 'resources.disclosure')}</p>
 
-    <p class="mt-10 text-sm" style="color: var(--color-fg-soft);">
-      <a href={localizePath('/content', locale)} class="hover:text-[var(--color-accent)]">← {t(locale, 'nav.content')}</a>
-    </p>
+      <p class="mt-10 text-sm" style="color: var(--color-fg-soft);">
+        <a href={localizePath('/content', locale)} class="hover:text-[var(--color-accent)]">← {t(locale, 'nav.content')}</a>
+      </p>
+    </section>
   </article>
 </BaseLayout>
