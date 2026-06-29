@@ -1,5 +1,4 @@
 ---
-export const prerender = true;
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import Breadcrumb from '~/components/Breadcrumb.astro';
@@ -14,21 +13,26 @@ const componentMap: Record<string, typeof TextDiff> = { TextDiff };
 
 export async function getStaticPaths() {
   const all = await getCollection('tools');
-  return all.map((tool) => ({
-    params: { lang: tool.id.split('/')[0], slug: tool.id.split('/').slice(1).join('/') },
-    props: { tool },
-  }));
+  // Only emit paths for English tools. The matching zh tool is rendered by
+  // src/pages/zh/tools/[...slug].astro at /zh/tools/<slug>.
+  return all
+    .filter((tool) => tool.id.endsWith('/en'))
+    .map((tool) => ({
+      params: { slug: tool.id.split('/')[0] },
+      props: { tool },
+    }));
 }
 
 const { tool } = Astro.props;
-const locale: Locale = tool.id.split('/')[0] as Locale;
+const slug = tool.id.split('/')[0];
+const locale: Locale = tool.id.split('/').pop() as Locale;
 const other: Locale = locale === 'en' ? 'zh' : 'en';
 const { Content } = await render(tool);
 const Component = componentMap[tool.data.component] ?? TextDiff;
 
 const allTools = await getCollection('tools');
 const translation = allTools.find(
-  (p) => p.data.translationKey === tool.data.translationKey && p.id.startsWith(`${other}/`)
+  (p) => p.data.translationKey === tool.data.translationKey && p.id.startsWith(`${slug}/`),
 );
 
 const howTo = {
@@ -49,8 +53,8 @@ const howTo = {
   category={tool.data.category}
   tags={tool.data.tags}
   alternates={{
-    en: localizePath(`/tools/en/${tool.data.translationKey}`, 'en'),
-    zh: localizePath(`/tools/zh/${tool.data.translationKey}`, 'zh'),
+    en: localizePath(`/tools/${slug}`, 'en'),
+    zh: localizePath(`/tools/${slug}`, 'zh'),
   }}
 >
   <article class="container-page py-12">
@@ -67,7 +71,7 @@ const howTo = {
         <span class="text-2xl" aria-hidden="true">{tool.data.icon}</span>
         <span class="badge">{tool.data.category}</span>
         {translation && (
-          <a href={localizePath(`/tools/${translation.id}`, other)} class="ml-auto hover:text-[var(--color-accent)]" hreflang={other}>
+          <a href={localizePath(`/tools/${slug}`, other)} class="ml-auto hover:text-[var(--color-accent)]" hreflang={other}>
             {other === 'en' ? 'Read in English' : '中文版'}
           </a>
         )}

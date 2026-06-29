@@ -8,8 +8,9 @@ const path = Astro.url.pathname.replace(new RegExp(`^/(${Object.keys(languages).
 
 const nav = [
   { href: localizePath('/', locale), key: 'nav.home' as const },
-  { href: localizePath('/content', locale), key: 'nav.blog' as const },
+  { href: localizePath('/content', locale), key: 'nav.content' as const },
   { href: localizePath('/tools', locale), key: 'nav.tools' as const },
+  { href: localizePath('/resources', locale), key: 'nav.resources' as const },
   { href: localizePath('/about', locale), key: 'nav.about' as const },
 ];
 

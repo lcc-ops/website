@@ -1,0 +1,174 @@
+---
+import { t, type Locale } from '~/i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+const locale = (Astro.props.locale ?? 'en') as Locale;
+const labels = {
+  cost: t(locale, 'tool.cost'),
+  shipping: t(locale, 'tool.shipping'),
+  commission: t(locale, 'tool.commission'),
+  payment: t(locale, 'tool.payment'),
+  margin: t(locale, 'tool.margin'),
+  price: t(locale, 'tool.price'),
+  profit: t(locale, 'tool.profit'),
+  fixedFee: t(locale, 'tool.fixedFee'),
+  suggested: t(locale, 'tool.suggested'),
+  perUnit: t(locale, 'tool.perUnit'),
+  breakeven: t(locale, 'tool.breakeven'),
+  reset: t(locale, 'tool.reset'),
+  copy: t(locale, 'common.copy'),
+  copied: t(locale, 'common.copied'),
+};
+---
+<div class="pricing-calc" data-locale={locale}>
+  <div class="grid gap-4 sm:grid-cols-2">
+    <label class="block">
+      <span class="text-sm font-medium">{labels.cost} (USD)</span>
+      <input type="number" inputmode="decimal" min="0" step="0.01" name="cost" value="8" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.shipping} (USD)</span>
+      <input type="number" inputmode="decimal" min="0" step="0.01" name="shipping" value="3.5" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.commission} (%)</span>
+      <input type="number" inputmode="decimal" min="0" max="100" step="0.1" name="commission" value="2.9" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.payment} (%)</span>
+      <input type="number" inputmode="decimal" min="0" max="100" step="0.1" name="paymentFee" value="2.9" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.fixedFee} / order (USD)</span>
+      <input type="number" inputmode="decimal" min="0" step="0.01" name="fixedFee" value="0.3" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">Target {labels.margin} (%)</span>
+      <input type="number" inputmode="decimal" min="0" max="95" step="1" name="margin" value="30" class="mt-1 w-full input" />
+    </label>
+  </div>
+
+  <div class="mt-6 grid gap-4 sm:grid-cols-3">
+    <div class="card p-4">
+      <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.suggested ?? labels.price}</div>
+      <div class="mt-1 text-2xl font-semibold" data-out="price">—</div>
+      <div class="text-xs mt-1" style="color: var(--color-fg-soft);">USD</div>
+    </div>
+    <div class="card p-4">
+      <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.perUnit ?? `${labels.profit} / unit`}</div>
+      <div class="mt-1 text-2xl font-semibold" data-out="profit">—</div>
+      <div class="text-xs mt-1" style="color: var(--color-fg-soft);">USD</div>
+    </div>
+    <div class="card p-4">
+      <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.breakeven ?? `Break-even ${labels.price}`}</div>
+      <div class="mt-1 text-2xl font-semibold" data-out="breakeven">—</div>
+      <div class="text-xs mt-1" style="color: var(--color-fg-soft);">USD (0% margin)</div>
+    </div>
+  </div>
+
+  <div class="mt-4 flex gap-2">
+    <button type="button" class="btn" data-action="reset">{labels.reset}</button>
+    <button type="button" class="btn" data-action="copy">{labels.copy}</button>
+  </div>
+
+  <p class="mt-6 text-xs" style="color: var(--color-fg-soft);">
+    Formula: <code class="font-mono">price = (cost + shipping + fixedFee) / (1 − commission% − payment% − margin%)</code>.
+    {locale === 'zh' ? '本工具仅为估算参考，不构成财务或经营建议。' : 'Estimates only. Not financial advice.'}
+  </p>
+</div>
+
+<script>
+  type CalcInputs = {
+    cost: number;
+    shipping: number;
+    commission: number;
+    paymentFee: number;
+    fixedFee: number;
+    margin: number;
+  };
+
+  const calc = (i: CalcInputs) => {
+    const feeRate = (i.commission + i.paymentFee) / 100;
+    const marginRate = i.margin / 100;
+    const denom = 1 - feeRate - marginRate;
+    const price = denom > 0 ? (i.cost + i.shipping + i.fixedFee) / denom : NaN;
+    const breakeven = feeRate < 1 ? (i.cost + i.shipping + i.fixedFee) / (1 - feeRate) : NaN;
+    const profit = price * (1 - feeRate) - (i.cost + i.shipping + i.fixedFee);
+    return {
+      price: Number.isFinite(price) ? price : NaN,
+      breakeven: Number.isFinite(breakeven) ? breakeven : NaN,
+      profit: Number.isFinite(profit) ? profit : NaN,
+    };
+  };
+
+  const fmt = (n: number, locale: string) =>
+    Number.isFinite(n)
+      ? new Intl.NumberFormat(locale === 'zh' ? 'zh-CN' : 'en-US', { style: 'currency', currency: 'USD' }).format(n)
+      : '—';
+
+  document.querySelectorAll<HTMLElement>('.pricing-calc').forEach((root) => {
+    const locale = root.dataset.locale ?? 'en';
+    const inputs = {
+      cost: root.querySelector<HTMLInputElement>('[name=cost]')!,
+      shipping: root.querySelector<HTMLInputElement>('[name=shipping]')!,
+      commission: root.querySelector<HTMLInputElement>('[name=commission]')!,
+      paymentFee: root.querySelector<HTMLInputElement>('[name=paymentFee]')!,
+      fixedFee: root.querySelector<HTMLInputElement>('[name=fixedFee]')!,
+      margin: root.querySelector<HTMLInputElement>('[name=margin]')!,
+    };
+    const out = {
+      price: root.querySelector<HTMLElement>('[data-out=price]')!,
+      breakeven: root.querySelector<HTMLElement>('[data-out=breakeven]')!,
+      profit: root.querySelector<HTMLElement>('[data-out=profit]')!,
+    };
+
+    const update = () => {
+      const i: CalcInputs = {
+        cost: parseFloat(inputs.cost.value) || 0,
+        shipping: parseFloat(inputs.shipping.value) || 0,
+        commission: parseFloat(inputs.commission.value) || 0,
+        paymentFee: parseFloat(inputs.paymentFee.value) || 0,
+        fixedFee: parseFloat(inputs.fixedFee.value) || 0,
+        margin: parseFloat(inputs.margin.value) || 0,
+      };
+      const r = calc(i);
+      out.price.textContent = fmt(r.price, locale);
+      out.profit.textContent = fmt(r.profit, locale);
+      out.breakeven.textContent = fmt(r.breakeven, locale);
+    };
+
+    Object.values(inputs).forEach((el) => el.addEventListener('input', update));
+    update();
+
+    root.querySelector<HTMLButtonElement>('[data-action=reset]')?.addEventListener('click', () => {
+      Object.entries(inputs).forEach(([k, el]) => {
+        const defaults: Record<string, string> = {
+          cost: '8', shipping: '3.5', commission: '2.9', paymentFee: '2.9', fixedFee: '0.3', margin: '30',
+        };
+        el.value = defaults[k] ?? '';
+      });
+      update();
+    });
+
+    root.querySelector<HTMLButtonElement>('[data-action=copy]')?.addEventListener('click', async () => {
+      const text = [
+        `Suggested price: ${out.price.textContent}`,
+        `Break-even: ${out.breakeven.textContent}`,
+        `Profit/unit: ${out.profit.textContent}`,
+      ].join('\n');
+      try {
+        await navigator.clipboard.writeText(text);
+        const btn = root.querySelector<HTMLButtonElement>('[data-action=copy]');
+        if (btn) {
+          const original = btn.textContent;
+          btn.textContent = root.dataset.copiedLabel ?? 'Copied';
+          setTimeout(() => { btn.textContent = original; }, 1500);
+        }
+      } catch {
+        // Clipboard unavailable — no-op
+      }
+    });
+  });
+</script>

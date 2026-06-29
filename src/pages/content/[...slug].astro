@@ -1,5 +1,4 @@
 ---
-export const prerender = true;
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import Breadcrumb from '~/components/Breadcrumb.astro';
@@ -12,29 +11,35 @@ import readingTime from 'reading-time';
 
 export async function getStaticPaths() {
   const all = await getCollection('content', ({ data }) => !data.draft);
-  return all.map((post) => ({
-    params: { lang: post.id.split('/')[0], slug: post.id.split('/').slice(1).join('/') },
-    props: { post },
-  }));
+  // Only emit paths for English posts. The matching zh post is rendered by
+  // src/pages/zh/content/[...slug].astro at /zh/content/<slug>.
+  return all
+    .filter((post) => post.id.endsWith('/en'))
+    .map((post) => ({
+      params: { slug: post.id.split('/')[0] },
+      props: { post },
+    }));
 }
 
 const { post } = Astro.props;
-const locale: Locale = post.id.split('/')[0] as Locale;
+const slug = post.id.split('/')[0];
+const locale: Locale = post.id.split('/').pop() as Locale;
 const other: Locale = locale === 'en' ? 'zh' : 'en';
 const { Content } = await render(post);
 const dateFmt = dateFormatter(locale);
 const minutes = Math.max(1, Math.round(readingTime(post.body ?? '').minutes));
 
-// Find translation
+// Find translation. Files live at src/content/blog/<slug>/<lang>.md so the
+// translated entry shares the same first path segment as the current one.
 const allPosts = await getCollection('content', ({ data }) => !data.draft);
 const translation = allPosts.find(
-  (p) => p.data.translationKey === post.data.translationKey && p.id.startsWith(`${other}/`)
+  (p) => p.data.translationKey === post.data.translationKey && p.id.startsWith(`${slug}/`),
 );
-const translationHref = translation ? localizePath(`/content/${translation.id}`, other) : undefined;
+const translationHref = translation ? localizePath(`/content/${slug}`, other) : undefined;
 
 const alternates: Record<Locale, string> = {
-  en: localizePath(`/content/en/${post.data.translationKey}`, 'en'),
-  zh: localizePath(`/content/zh/${post.data.translationKey}`, 'zh'),
+  en: localizePath(`/content/${slug}`, 'en'),
+  zh: localizePath(`/content/${slug}`, 'zh'),
 };
 
 // Article structured data is emitted by BaseHead via the type=article prop

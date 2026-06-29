@@ -25,3 +25,6 @@ Thumbs.db
 
 # agent / harness
 .claude/
+
+# local notes (not tracked)
+docs/NOTES.md

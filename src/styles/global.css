@@ -71,6 +71,17 @@
   .btn-primary:hover {
     filter: brightness(1.08);
   }
+  .input {
+    @apply w-full rounded-md px-3 py-2 text-sm transition;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    color: var(--color-fg);
+  }
+  .input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px oklch(from var(--color-accent) l c h / 0.15);
+  }
 }
 
 @media (prefers-color-scheme: dark) {

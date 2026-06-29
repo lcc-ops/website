@@ -1,0 +1,27 @@
+---
+import { categoryLabels, t, type Locale } from '~/i18n/ui';
+import { localizePath } from '~/i18n/utils';
+
+interface Props {
+  category: string;
+  locale: Locale;
+  href?: string;
+  active?: boolean;
+}
+const { category, locale, href, active = false } = Astro.props;
+const label = category === 'all'
+  ? t(locale, 'tools.allCategories')
+  : (categoryLabels[locale]?.[category] ?? category);
+const target = href ?? (category === 'all' ? localizePath('/content', locale) : localizePath(`/content?category=${category}`, locale));
+const style = active
+  ? 'background: var(--color-accent); color: white; border-color: transparent;'
+  : '';
+---
+<a
+  href={target}
+  class="badge transition hover:text-[var(--color-accent)]"
+  style={style}
+  data-category={category}
+>
+  {label}
+</a>

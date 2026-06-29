@@ -9,7 +9,7 @@ import rehypeExternalLinks from 'rehype-external-links';
 import remarkGfm from 'remark-gfm';
 
 export default defineConfig({
-  site: 'https://lcc-ops.github.io/website',
+  site: 'https://website.2088643687.workers.dev',
   output: 'server',
   adapter: cloudflare({
     imageService: 'cloudflare',

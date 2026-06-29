@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import PostCard from '~/components/PostCard.astro';
 import ToolCard from '~/components/ToolCard.astro';
+import CategoryChip from '~/components/CategoryChip.astro';
 import { SITE } from '~/site.config';
 import { t, type Locale } from '~/i18n/ui';
 import { localizePath } from '~/i18n/utils';
@@ -43,44 +44,30 @@ function postTranslationFor(slug: string, target: Locale) {
 function toolTranslationFor(slug: string, target: Locale) {
   return localizePath(`/tools/${slug}`, target);
 }
+
+const featuredCategories = ['pricing', 'shipping', 'payment', 'ads', 'ops'];
 ---
 <BaseLayout title={SITE.title} description={SITE.description}>
   <section class="container-page py-20 sm:py-28">
-    <p class="badge mb-4">{SITE.name}</p>
-    <h1 class="text-4xl sm:text-6xl font-semibold tracking-tight max-w-3xl">
-      {t(locale, 'site.title')}
+    <p class="badge mb-4">{t(locale, 'home.hero.eyebrow')}</p>
+    <h1 class="text-4xl sm:text-6xl font-semibold tracking-tight max-w-4xl">
+      {t(locale, 'home.hero.title')}
     </h1>
     <p class="mt-5 text-lg max-w-2xl" style="color: var(--color-fg-soft);">
-      {t(locale, 'site.tagline')}
+      {t(locale, 'home.hero.subtitle')}
     </p>
     <div class="mt-8 flex flex-wrap gap-3">
-      <a href={localizePath('/content', locale)} class="btn btn-primary">{t(locale, 'nav.blog')} →</a>
-      <a href={localizePath('/tools', locale)} class="btn">{t(locale, 'nav.tools')} →</a>
+      <a href={localizePath('/tools', locale)} class="btn btn-primary">{t(locale, 'home.hero.cta.calculators')} →</a>
+      <a href={localizePath('/content', locale)} class="btn">{t(locale, 'home.hero.cta.guides')} →</a>
     </div>
   </section>
 
   <section class="container-page py-10">
     <div class="flex items-baseline justify-between mb-6">
-      <h2 class="text-2xl font-semibold">{t(locale, 'nav.blog')}</h2>
-      <a href={localizePath('/content', locale)} class="text-sm hover:text-[var(--color-accent)]">{t(locale, 'blog.readMore')} →</a>
-    </div>
-    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-      {postsHere.map((post) => {
-        const key = post.data.translationKey;
-        const other: Locale = 'en';
-        const translationLink = postsByKey.get(key)?.[other]
-          ? postTranslationFor(key, other)
-          : undefined;
-        return <PostCard post={post} locale={locale} translationLink={translationLink} />;
-      })}
-    </div>
-  </section>
-
-  <section class="container-page py-10">
-    <div class="flex items-baseline justify-between mb-6">
-      <h2 class="text-2xl font-semibold">{t(locale, 'nav.tools')}</h2>
+      <h2 class="text-2xl font-semibold">{t(locale, 'home.section.calculators')}</h2>
       <a href={localizePath('/tools', locale)} class="text-sm hover:text-[var(--color-accent)]">{t(locale, 'blog.readMore')} →</a>
     </div>
+    <p class="mb-6 text-sm" style="color: var(--color-fg-soft);">{t(locale, 'home.section.calculators.subtitle')}</p>
     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {toolsHere.map((tool) => {
         const key = tool.data.translationKey;
@@ -91,5 +78,37 @@ function toolTranslationFor(slug: string, target: Locale) {
         return <ToolCard tool={tool} locale={locale} translationLink={translationLink} />;
       })}
     </div>
+  </section>
+
+  <section class="container-page py-10">
+    <h2 class="text-2xl font-semibold mb-2">{t(locale, 'home.section.categories')}</h2>
+    <p class="mb-6 text-sm" style="color: var(--color-fg-soft);">定价 · 物流 · 收款 · 广告 · 运营</p>
+    <div class="flex flex-wrap gap-2">
+      {featuredCategories.map((cat) => (
+        <CategoryChip category={cat} locale={locale} href={localizePath(`/content?category=${cat}`, locale)} />
+      ))}
+    </div>
+  </section>
+
+  <section class="container-page py-10">
+    <div class="flex items-baseline justify-between mb-6">
+      <h2 class="text-2xl font-semibold">{t(locale, 'home.section.guides')}</h2>
+      <a href={localizePath('/content', locale)} class="text-sm hover:text-[var(--color-accent)]">{t(locale, 'blog.readMore')} →</a>
+    </div>
+    <p class="mb-6 text-sm" style="color: var(--color-fg-soft);">{t(locale, 'home.section.guides.subtitle')}</p>
+    {postsHere.length === 0 ? (
+      <p class="text-sm" style="color: var(--color-fg-soft);">{t(locale, 'blog.noPosts')}</p>
+    ) : (
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {postsHere.map((post) => {
+          const key = post.data.translationKey;
+          const other: Locale = 'en';
+          const translationLink = postsByKey.get(key)?.[other]
+            ? postTranslationFor(key, other)
+            : undefined;
+          return <PostCard post={post} locale={locale} translationLink={translationLink} />;
+        })}
+      </div>
+    )}
   </section>
 </BaseLayout>

@@ -2,7 +2,8 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import ToolCard from '~/components/ToolCard.astro';
-import { type Locale, t } from '~/i18n/ui';
+import CategoryChip from '~/components/CategoryChip.astro';
+import { type Locale, t, categoryLabels } from '~/i18n/ui';
 import { getLocaleFromUrl, localizePath } from '~/i18n/utils';
 
 const locale: Locale = getLocaleFromUrl(Astro.url);
@@ -18,13 +19,28 @@ for (const p of allTools) {
     [loc]: `/tools/${p.id.split('/')[0]}`,
   });
 }
+
+const categoryParam = Astro.url.searchParams.get('category');
+const activeCategory = categoryParam && categoryParam in categoryLabels[locale] ? categoryParam : undefined;
+
+const filtered = activeCategory ? tools.filter((t) => t.data.category === activeCategory) : tools;
+
+const toolCategories = Array.from(new Set(tools.map((t) => t.data.category)));
 ---
 <BaseLayout title={t(locale, 'tools.title')} description={t(locale, 'tools.subtitle')}>
   <section class="container-page py-16">
     <h1 class="text-3xl font-semibold mb-2">{t(locale, 'tools.title')}</h1>
-    <p class="mb-8" style="color: var(--color-fg-soft);">{t(locale, 'tools.subtitle')}</p>
+    <p class="mb-6" style="color: var(--color-fg-soft);">{t(locale, 'tools.subtitle')}</p>
+
+    <div class="mb-8 flex flex-wrap gap-2">
+      <CategoryChip category="all" locale={locale} href={localizePath('/tools', locale)} active={!activeCategory} />
+      {toolCategories.map((cat) => (
+        <CategoryChip category={cat} locale={locale} href={localizePath(`/tools?category=${cat}`, locale)} active={activeCategory === cat} />
+      ))}
+    </div>
+
     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-      {tools.map((tool) => {
+      {filtered.map((tool) => {
         const other = locale === 'en' ? 'zh' : 'en';
         const translation = byKey.get(tool.data.translationKey)?.[other];
         return <ToolCard tool={tool} locale={locale} translationLink={translation ? localizePath(translation, other) : undefined} />;

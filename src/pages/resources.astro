@@ -1,31 +1,62 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
-import { type Locale } from '~/i18n/ui';
+import { type Locale, t } from '~/i18n/ui';
 import { getLocaleFromUrl, localizePath } from '~/i18n/utils';
 const locale: Locale = getLocaleFromUrl(Astro.url);
 
 const isEn = locale === 'en';
-const title = isEn ? 'Resources' : '配套资源';
-const desc = isEn
-  ? 'A quiet landing page for shared downloads and notes. No ads, no pop-ups.'
-  : '用于分享下载与笔记的安静着陆页。无广告、无弹窗。';
----
-<BaseLayout title={title} description={desc}>
-  <article class="container-prose py-16">
-    <h1 class="text-3xl font-semibold mb-3">{title}</h1>
-    <p class="text-lg" style="color: var(--color-fg-soft);">{desc}</p>
 
-    <ul class="mt-8 space-y-3">
-      <li class="card p-5">
-        <h2 class="font-semibold">{isEn ? 'Sample archive' : '示例资源包'}</h2>
-        <p class="text-sm mt-1" style="color: var(--color-fg-soft);">
-          {isEn ? 'Coming soon — link will be added when the program is ready.' : '即将上线——准备好后这里会显示跳转链接。'}
-        </p>
-      </li>
+const resourcePacks = [
+  {
+    title: isEn ? 'Pricing & Profit Workbook' : '定价与利润核算 Excel 模板',
+    desc: isEn
+      ? 'Plug-in formulas for product cost, shipping, fees, returns and ad spend. Includes dashboard for net profit by SKU and channel.'
+      : '插公式即用：产品成本、物流、费用、退款、广告支出。含按 SKU 和渠道的净利润看板。',
+    href: '#download',
+    size: '128 KB · XLSX',
+  },
+  {
+    title: isEn ? 'Dropshipping P&L Spreadsheet' : 'Dropshipping 真实成本核算表',
+    desc: isEn
+      ? 'Full cost stack for a $50 AliExpress dropshipping store — cost of goods, shipping, ad spend, returns, chargebacks.'
+      : '完整成本堆栈（$50 AliExpress dropshipping 店铺）：货品成本、物流、广告、退货、拒付。',
+    href: '#download',
+    size: '94 KB · XLSX',
+  },
+  {
+    title: isEn ? 'Chargeback Evidence Templates' : '拒付申诉证据模板',
+    desc: isEn
+      ? 'Ready-to-fill templates for "item not received" and "not as described" disputes. Stripe + PayPal versions.'
+      : '"未收到货"和"货不符"拒付申诉模板。Stripe + PayPal 双版本。',
+    href: '#download',
+    size: '42 KB · DOCX',
+  },
+];
+---
+<BaseLayout title={t(locale, 'resources.title')} description={t(locale, 'resources.subtitle')}>
+  <article class="container-prose py-16">
+    <h1 class="text-3xl font-semibold mb-3">{t(locale, 'resources.title')}</h1>
+    <p class="text-lg" style="color: var(--color-fg-soft);">{t(locale, 'resources.subtitle')}</p>
+
+    <ul class="mt-8 space-y-4">
+      {resourcePacks.map((pack) => (
+        <li class="card p-5">
+          <div class="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <h2 class="font-semibold">{pack.title}</h2>
+              <p class="text-sm mt-1" style="color: var(--color-fg-soft);">{pack.desc}</p>
+              <p class="text-xs mt-2" style="color: var(--color-fg-soft);">{pack.size}</p>
+            </div>
+            <a href={pack.href} class="btn">{t(locale, 'common.download')} ↓</a>
+          </div>
+        </li>
+      ))}
     </ul>
 
+    <p class="mt-10 text-xs" style="color: var(--color-fg-soft);">{t(locale, 'resources.disclosure')}</p>
+
     <p class="mt-10 text-sm" style="color: var(--color-fg-soft);">
-      <a href={localizePath('/content', locale)} class="hover:text-[var(--color-accent)]">← {isEn ? 'Back to Content' : '返回内容'}</a>
+      <a href={localizePath('/content', locale)} class="hover:text-[var(--color-accent)]">← {t(locale, 'nav.content')}</a>
     </p>
   </article>
 </BaseLayout>
