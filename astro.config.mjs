@@ -52,4 +52,11 @@ export default defineConfig({
       },
     }),
   ],
+  // Redirect legacy /blog URLs to /content (collection + route renamed).
+  redirects: {
+    '/blog': '/content',
+    '/blog/[...slug]': '/content/[...slug]',
+    '/zh/blog': '/zh/content',
+    '/zh/blog/[...slug]': '/zh/content/[...slug]',
+  },
 });
