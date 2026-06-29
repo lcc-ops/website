@@ -37,6 +37,7 @@ const alternates: Record<Locale, string> = {
 <BaseLayout
   title={post.data.title}
   description={post.data.description}
+  image={`/og/content/${slug}-${locale}.svg`}
   type="article"
   pubDate={post.data.pubDate}
   updatedDate={post.data.updatedDate}

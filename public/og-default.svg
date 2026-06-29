@@ -1,11 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Crossborder Cost Lab — Pricing, Shipping &amp; Ad Math for Cross-border Sellers">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0b0b0f"/>
-      <stop offset="100%" stop-color="#1f2330"/>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0b12"/>
+      <stop offset="100%" stop-color="#15151f"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <text x="80" y="320" fill="white" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="72" font-weight="700">website</text>
-  <text x="80" y="400" fill="#9ca3af" font-family="ui-sans-serif, system-ui, sans-serif" font-size="32" font-weight="400">Static-first, edge-fast, content-driven.</text>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect x="0" y="0" width="6" height="630" fill="#7c8cff"/>
+
+  <text x="80" y="120" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" font-weight="500" fill="#a0a0b0" letter-spacing="2">CROSS-BORDER SELLER MATH</text>
+
+  <text x="80" y="200" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="76" font-weight="700" fill="#f4f4f6">
+    <tspan x="80" dy="0">Crossborder</tspan>
+    <tspan x="80" dy="88">Cost Lab</tspan>
+  </text>
+
+  <text x="80" y="460" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="32" font-weight="400" fill="#a0a0b0">Pricing, shipping &amp; ad math</text>
+  <text x="80" y="500" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="32" font-weight="400" fill="#a0a0b0">for cross-border sellers.</text>
+
+  <text x="1120" y="570" text-anchor="end" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" font-weight="600" fill="#7c8cff">Crossborder Cost Lab</text>
 </svg>
