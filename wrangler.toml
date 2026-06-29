@@ -2,7 +2,11 @@ name = "website"
 compatibility_date = "2025-01-01"
 compatibility_flags = ["nodejs_compat"]
 main = "./dist/_worker.js/index.js"
-assets = { directory = "./dist", binding = "ASSETS" }
+
+# @astrojs/cloudflare ships a self-contained Worker bundle at dist/_worker.js.
+# Prerendered HTML and _astro/ assets live alongside it and are served by the
+# Worker itself — do NOT point assets.directory at ./dist, or wrangler will
+# treat the _worker.js directory as static assets and abort the deploy.
 
 # SESSION KV binding required by @astrojs/cloudflare adapter.
 [[kv_namespaces]]
