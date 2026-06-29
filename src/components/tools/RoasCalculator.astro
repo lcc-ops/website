@@ -56,8 +56,9 @@ const labels = {
     </div>
   </div>
 
-  <div class="mt-4 flex gap-2">
+  <div class="mt-4 flex flex-wrap gap-2">
     <button type="button" class="btn" data-action="reset">{labels.reset}</button>
+    <button type="button" class="btn" data-action="share">{locale === 'zh' ? '复制分享链接' : 'Copy share link'}</button>
   </div>
 
   <p class="mt-6 text-xs" style="color: var(--color-fg-soft);">
@@ -106,6 +107,8 @@ const labels = {
       maxCpa: root.querySelector<HTMLElement>('[data-out=maxCpa]')!,
     };
 
+    const DEFAULTS = { unitPrice: 45, cogs: 12, payment: 8, margin: 25 };
+
     const update = () => {
       const i: RoasInputs = {
         unitPrice: parseFloat(inputs.unitPrice.value) || 0,
@@ -120,14 +123,91 @@ const labels = {
     };
 
     Object.values(inputs).forEach((el) => el.addEventListener('input', update));
+
+    // --- Share link: encode current inputs into ?p=<base64url(JSON)> ---
+    const encode = (i: RoasInputs): string => {
+      const json = JSON.stringify([
+        round(i.unitPrice, 2),
+        round(i.cogs, 2),
+        round(i.payment, 2),
+        round(i.margin, 1),
+      ]);
+      return btoa(json).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    };
+    const decode = (s: string): Partial<RoasInputs> | null => {
+      try {
+        const padded = s.replace(/-/g, '+').replace(/_/g, '/') + '==='.slice((s.length + 3) % 4);
+        const parsed = JSON.parse(atob(padded));
+        if (!Array.isArray(parsed) || parsed.length !== 4) return null;
+        const [u, c, p, m] = parsed as unknown[];
+        if (![u, c, p, m].every((n) => typeof n === 'number' && Number.isFinite(n))) return null;
+        return { unitPrice: u as number, cogs: c as number, payment: p as number, margin: m as number };
+      } catch {
+        return null;
+      }
+    };
+    const round = (n: number, d: number) => Math.round(n * 10 ** d) / 10 ** d;
+
+    // Hydrate from ?p=... if present
+    const params = new URLSearchParams(window.location.search);
+    const fromUrl = params.get('p');
+    if (fromUrl) {
+      const restored = decode(fromUrl);
+      if (restored) {
+        if (restored.unitPrice !== undefined) inputs.unitPrice.value = String(restored.unitPrice);
+        if (restored.cogs !== undefined) inputs.cogs.value = String(restored.cogs);
+        if (restored.payment !== undefined) inputs.payment.value = String(restored.payment);
+        if (restored.margin !== undefined) inputs.margin.value = String(restored.margin);
+      }
+    }
     update();
 
     root.querySelector<HTMLButtonElement>('[data-action=reset]')?.addEventListener('click', () => {
-      inputs.unitPrice.value = '45';
-      inputs.cogs.value = '12';
-      inputs.payment.value = '8';
-      inputs.margin.value = '25';
+      inputs.unitPrice.value = String(DEFAULTS.unitPrice);
+      inputs.cogs.value = String(DEFAULTS.cogs);
+      inputs.payment.value = String(DEFAULTS.payment);
+      inputs.margin.value = String(DEFAULTS.margin);
       update();
+      stripShareParam();
     });
+
+    const shareBtn = root.querySelector<HTMLButtonElement>('[data-action=share]');
+    shareBtn?.addEventListener('click', async () => {
+      const i: RoasInputs = {
+        unitPrice: parseFloat(inputs.unitPrice.value) || 0,
+        cogs: parseFloat(inputs.cogs.value) || 0,
+        payment: parseFloat(inputs.payment.value) || 0,
+        margin: parseFloat(inputs.margin.value) || 0,
+      };
+      const token = encode(i);
+      const url = new URL(window.location.href);
+      url.searchParams.set('p', token);
+      window.history.replaceState({}, '', url.toString());
+      try {
+        await navigator.clipboard.writeText(url.toString());
+        const original = shareBtn.textContent;
+        shareBtn.textContent = locale === 'zh' ? '已复制' : 'Copied';
+        shareBtn.setAttribute('data-copied', 'true');
+        setTimeout(() => {
+          shareBtn.textContent = original;
+          shareBtn.removeAttribute('data-copied');
+        }, 1500);
+      } catch {
+        // Clipboard blocked: the URL is now in the address bar — user can copy manually.
+        const original = shareBtn.textContent;
+        shareBtn.textContent = locale === 'zh' ? '已写入地址栏' : 'Updated URL';
+        setTimeout(() => {
+          shareBtn.textContent = original;
+        }, 1500);
+      }
+    });
+
+    function stripShareParam() {
+      const url = new URL(window.location.href);
+      if (url.searchParams.has('p')) {
+        url.searchParams.delete('p');
+        window.history.replaceState({}, '', url.toString());
+      }
+    }
   });
 </script>
