@@ -85,8 +85,10 @@ const howTo = {
     <AdSlot slot="tool-bottom" label={t(locale, 'ad.disclosure')} />
 
     <div class="container-prose">
-      <div class="prose prose-neutral dark:prose-invert max-w-none">
-        <Content />
+      <div class="overflow-x-auto">
+        <div class="prose prose-neutral dark:prose-invert max-w-none">
+          <Content />
+        </div>
       </div>
 
       {tool.data.faq.length > 0 && (
