@@ -1,0 +1,164 @@
+---
+import { t, type Locale } from '~/i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+const locale = (Astro.props.locale ?? 'en') as Locale;
+const labels = {
+  length: t(locale, 'tool.length'),
+  width: t(locale, 'tool.width'),
+  height: t(locale, 'tool.height'),
+  weight: t(locale, 'tool.weight'),
+  qty: t(locale, 'tool.qty'),
+  mode: t(locale, 'tool.mode'),
+  modeAir: t(locale, 'tool.mode.air'),
+  modeSea: t(locale, 'tool.mode.sea'),
+  cbm: t(locale, 'tool.cbm'),
+  chargeableWeight: t(locale, 'tool.chargeableWeight'),
+  totalCbm: t(locale, 'tool.totalCbm'),
+  totalWeight: t(locale, 'tool.totalWeight'),
+  boxesNeeded: t(locale, 'tool.boxesNeeded'),
+  reset: t(locale, 'tool.reset'),
+  perUnit: t(locale, 'tool.perUnit'),
+};
+---
+<div class="cbm-calc" data-locale={locale}>
+  <div class="grid gap-4 sm:grid-cols-3">
+    <label class="block">
+      <span class="text-sm font-medium">{labels.length} (cm)</span>
+      <input type="number" min="0" step="0.1" name="length" value="50" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.width} (cm)</span>
+      <input type="number" min="0" step="0.1" name="width" value="40" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.height} (cm)</span>
+      <input type="number" min="0" step="0.1" name="height" value="30" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.weight} (kg) {labels.perUnit}</span>
+      <input type="number" min="0" step="0.01" name="weight" value="2.5" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.qty}</span>
+      <input type="number" min="1" step="1" name="qty" value="20" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.mode}</span>
+      <select name="mode" class="mt-1 w-full input">
+        <option value="air" selected>{labels.modeAir}</option>
+        <option value="sea">{labels.modeSea}</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="mt-6 grid gap-4 sm:grid-cols-3">
+    <div class="card p-4">
+      <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.totalCbm}</div>
+      <div class="mt-1 text-2xl font-semibold" data-out="totalCbm">—</div>
+      <div class="text-xs mt-1" style="color: var(--color-fg-soft);">m³</div>
+    </div>
+    <div class="card p-4">
+      <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.totalWeight}</div>
+      <div class="mt-1 text-2xl font-semibold" data-out="totalWeight">—</div>
+      <div class="text-xs mt-1" style="color: var(--color-fg-soft);">kg</div>
+    </div>
+    <div class="card p-4">
+      <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.chargeableWeight}</div>
+      <div class="mt-1 text-2xl font-semibold" data-out="chargeable">—</div>
+      <div class="text-xs mt-1" style="color: var(--color-fg-soft);">kg</div>
+    </div>
+  </div>
+
+  <div class="mt-4 flex gap-2">
+    <button type="button" class="btn" data-action="reset">{labels.reset}</button>
+  </div>
+
+  <p class="mt-6 text-xs" style="color: var(--color-fg-soft);">
+    {locale === 'zh'
+      ? '空运体积重系数常见 6000（cm³/kg），海运常用 10000。计费重取实重与体积重最大值。'
+      : 'Air freight typically uses a volumetric divisor of 6000 (cm³/kg); sea freight 10000. Chargeable weight is the greater of actual and volumetric weight.'}
+  </p>
+</div>
+
+<script>
+  type CbmInputs = {
+    length: number;
+    width: number;
+    height: number;
+    weight: number;
+    qty: number;
+    mode: 'air' | 'sea';
+  };
+
+  const calc = (i: CbmInputs) => {
+    const divisor = i.mode === 'sea' ? 10000 : 6000;
+    const volumeEach = (i.length * i.width * i.height) / divisor; // kg
+    const volWeightEach = Number.isFinite(volumeEach) ? volumeEach : 0;
+    const chargeableEach = Math.max(i.weight, volWeightEach);
+    return {
+      totalCbm: (i.length * i.width * i.height * i.qty) / 1_000_000,
+      totalWeight: i.weight * i.qty,
+      chargeable: chargeableEach * i.qty,
+    };
+  };
+
+  const fmt = (n: number, locale: string, decimals: number) =>
+    Number.isFinite(n)
+      ? new Intl.NumberFormat(locale === 'zh' ? 'zh-CN' : 'en-US', {
+          minimumFractionDigits: decimals,
+          maximumFractionDigits: decimals,
+        }).format(n)
+      : '—';
+
+  document.querySelectorAll<HTMLElement>('.cbm-calc').forEach((root) => {
+    const locale = root.dataset.locale ?? 'en';
+    const get = (name: string) =>
+      root.querySelector(`[name=${name}]`) as HTMLInputElement;
+    const inputs: Record<string, HTMLInputElement | HTMLSelectElement> = {
+      length: get('length'),
+      width: get('width'),
+      height: get('height'),
+      weight: get('weight'),
+      qty: get('qty'),
+      mode: root.querySelector('[name=mode]') as unknown as HTMLSelectElement,
+    };
+    const out = {
+      totalCbm: root.querySelector<HTMLElement>('[data-out=totalCbm]')!,
+      totalWeight: root.querySelector<HTMLElement>('[data-out=totalWeight]')!,
+      chargeable: root.querySelector<HTMLElement>('[data-out=chargeable]')!,
+    };
+
+    const update = () => {
+      const i: CbmInputs = {
+        length: parseFloat(inputs.length.value) || 0,
+        width: parseFloat(inputs.width.value) || 0,
+        height: parseFloat(inputs.height.value) || 0,
+        weight: parseFloat(inputs.weight.value) || 0,
+        qty: Math.max(1, parseFloat(inputs.qty.value) || 1),
+        mode: inputs.mode.value as 'air' | 'sea',
+      };
+      const r = calc(i);
+      out.totalCbm.textContent = fmt(r.totalCbm, locale, 3);
+      out.totalWeight.textContent = fmt(r.totalWeight, locale, 2);
+      out.chargeable.textContent = fmt(r.chargeable, locale, 2);
+    };
+
+    Object.values(inputs).forEach((el) => el.addEventListener('input', update));
+    update();
+
+    root.querySelector<HTMLButtonElement>('[data-action=reset]')?.addEventListener('click', () => {
+      (['length', 'width', 'height', 'weight', 'qty'] as const).forEach((k) => {
+        const el = inputs[k];
+        const defaults: Record<string, string> = {
+          length: '50', width: '40', height: '30', weight: '2.5', qty: '20',
+        };
+        el.value = defaults[k] ?? '';
+      });
+      inputs.mode.value = 'air';
+      update();
+    });
+  });
+</script>

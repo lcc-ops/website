@@ -8,9 +8,17 @@ import SeoStructuredData from '~/components/SeoStructuredData.astro';
 import { type Locale, t } from '~/i18n/ui';
 import { localizePath } from '~/i18n/utils';
 import PricingCalculator from '~/components/tools/PricingCalculator.astro';
+import CbmCalculator from '~/components/tools/CbmCalculator.astro';
+import FeeComparator from '~/components/tools/FeeComparator.astro';
+import RoasCalculator from '~/components/tools/RoasCalculator.astro';
+import FxWithdrawCalculator from '~/components/tools/FxWithdrawCalculator.astro';
 
 const componentMap: Record<string, (props: { locale?: Locale }) => unknown> = {
   PricingCalculator,
+  CbmCalculator,
+  FeeComparator,
+  RoasCalculator,
+  FxWithdrawCalculator,
 };
 
 const slug = Astro.params.slug ?? '';

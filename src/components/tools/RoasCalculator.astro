@@ -1,0 +1,133 @@
+---
+import { t, type Locale } from '~/i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+const locale = (Astro.props.locale ?? 'en') as Locale;
+const labels = {
+  unitPrice: t(locale, 'tool.unitPrice'),
+  cogs: t(locale, 'tool.cogs'),
+  payment: t(locale, 'tool.payment'),
+  targetMargin: t(locale, 'tool.targetMargin'),
+  ctr: 'CTR',
+  breakEvenRoas: t(locale, 'tool.breakEvenRoas'),
+  targetRoas: t(locale, 'tool.targetRoas'),
+  maxCpa: t(locale, 'tool.maxCpa'),
+  maxCpc: t(locale, 'tool.maxCpc'),
+  reset: t(locale, 'tool.reset'),
+};
+---
+<div class="roas-calc" data-locale={locale}>
+  <div class="grid gap-4 sm:grid-cols-2">
+    <label class="block">
+      <span class="text-sm font-medium">{labels.unitPrice} (USD)</span>
+      <input type="number" min="0" step="0.01" name="unitPrice" value="45" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.cogs} (USD)</span>
+      <input type="number" min="0" step="0.01" name="cogs" value="12" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.payment} (%)</span>
+      <input type="number" min="0" max="50" step="0.1" name="payment" value="8" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.targetMargin} (%)</span>
+      <input type="number" min="0" max="95" step="1" name="margin" value="25" class="mt-1 w-full input" />
+    </label>
+  </div>
+
+  <div class="mt-6 grid gap-4 sm:grid-cols-3">
+    <div class="card p-4">
+      <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.breakEvenRoas}</div>
+      <div class="mt-1 text-2xl font-semibold" data-out="breakRoas">—</div>
+      <div class="text-xs mt-1" style="color: var(--color-fg-soft);">x</div>
+    </div>
+    <div class="card p-4">
+      <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.targetRoas}</div>
+      <div class="mt-1 text-2xl font-semibold" data-out="targetRoas">—</div>
+      <div class="text-xs mt-1" style="color: var(--color-fg-soft);">x</div>
+    </div>
+    <div class="card p-4">
+      <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.maxCpa}</div>
+      <div class="mt-1 text-2xl font-semibold" data-out="maxCpa">—</div>
+      <div class="text-xs mt-1" style="color: var(--color-fg-soft);">USD</div>
+    </div>
+  </div>
+
+  <div class="mt-4 flex gap-2">
+    <button type="button" class="btn" data-action="reset">{labels.reset}</button>
+  </div>
+
+  <p class="mt-6 text-xs" style="color: var(--color-fg-soft);">
+    {locale === 'zh'
+      ? '保本 ROAS = 1 / (1 − 支付费率 − 利润率)。即广告每花 1 元需要回本所需的最少收入倍数。'
+      : 'Break-even ROAS = 1 / (1 − payment% − margin%). The minimum revenue multiple per $1 of ad spend to break even.'}
+  </p>
+</div>
+
+<script>
+  type RoasInputs = { unitPrice: number; cogs: number; payment: number; margin: number };
+
+  const calc = (i: RoasInputs) => {
+    const netPerOrder = i.unitPrice * (1 - i.payment / 100) - i.cogs;
+    const targetNet = i.unitPrice * (1 - i.payment / 100) * (i.margin / 100);
+    const availableForAds = netPerOrder; // break-even
+    const breakRoas = availableForAds > 0 ? i.unitPrice / availableForAds : NaN;
+    const targetRoas = targetNet > 0 ? i.unitPrice * (1 - i.payment / 100) / targetNet : NaN;
+    const maxCpa = availableForAds; // spend <= net profit per order
+    return { breakRoas, targetRoas, maxCpa };
+  };
+
+  const fmtNumber = (n: number, locale: string, decimals: number) =>
+    Number.isFinite(n)
+      ? new Intl.NumberFormat(locale === 'zh' ? 'zh-CN' : 'en-US', {
+          minimumFractionDigits: decimals,
+          maximumFractionDigits: decimals,
+        }).format(n)
+      : '—';
+  const fmtMoney = (n: number, locale: string) =>
+    Number.isFinite(n) && n > 0
+      ? new Intl.NumberFormat(locale === 'zh' ? 'zh-CN' : 'en-US', { style: 'currency', currency: 'USD' }).format(n)
+      : '—';
+
+  document.querySelectorAll<HTMLElement>('.roas-calc').forEach((root) => {
+    const locale = root.dataset.locale ?? 'en';
+    const inputs = {
+      unitPrice: root.querySelector<HTMLInputElement>('[name=unitPrice]')!,
+      cogs: root.querySelector<HTMLInputElement>('[name=cogs]')!,
+      payment: root.querySelector<HTMLInputElement>('[name=payment]')!,
+      margin: root.querySelector<HTMLInputElement>('[name=margin]')!,
+    };
+    const out = {
+      breakRoas: root.querySelector<HTMLElement>('[data-out=breakRoas]')!,
+      targetRoas: root.querySelector<HTMLElement>('[data-out=targetRoas]')!,
+      maxCpa: root.querySelector<HTMLElement>('[data-out=maxCpa]')!,
+    };
+
+    const update = () => {
+      const i: RoasInputs = {
+        unitPrice: parseFloat(inputs.unitPrice.value) || 0,
+        cogs: parseFloat(inputs.cogs.value) || 0,
+        payment: parseFloat(inputs.payment.value) || 0,
+        margin: parseFloat(inputs.margin.value) || 0,
+      };
+      const r = calc(i);
+      out.breakRoas.textContent = fmtNumber(r.breakRoas, locale, 2);
+      out.targetRoas.textContent = fmtNumber(r.targetRoas, locale, 2);
+      out.maxCpa.textContent = fmtMoney(r.maxCpa, locale);
+    };
+
+    Object.values(inputs).forEach((el) => el.addEventListener('input', update));
+    update();
+
+    root.querySelector<HTMLButtonElement>('[data-action=reset]')?.addEventListener('click', () => {
+      inputs.unitPrice.value = '45';
+      inputs.cogs.value = '12';
+      inputs.payment.value = '8';
+      inputs.margin.value = '25';
+      update();
+    });
+  });
+</script>

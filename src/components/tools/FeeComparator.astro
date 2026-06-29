@@ -1,0 +1,150 @@
+---
+import { t, type Locale } from '~/i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+const locale = (Astro.props.locale ?? 'en') as Locale;
+const labels = {
+  unitPrice: t(locale, 'tool.unitPrice'),
+  monthlyVolume: t(locale, 'tool.monthlyVolume'),
+  monthlyRevenue: t(locale, 'tool.monthlyRevenue'),
+  monthlyFee: t(locale, 'tool.monthlyFee'),
+  effectiveFee: t(locale, 'tool.effectiveFee'),
+  paypal: t(locale, 'tool.paypal'),
+  stripe: t(locale, 'tool.stripe'),
+  winner: t(locale, 'tool.winner'),
+  reset: t(locale, 'tool.reset'),
+};
+---
+<div class="fee-calc" data-locale={locale}>
+  <div class="grid gap-4 sm:grid-cols-2">
+    <label class="block">
+      <span class="text-sm font-medium">{labels.unitPrice} (USD)</span>
+      <input type="number" min="0" step="0.01" name="unitPrice" value="35" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.monthlyVolume}</span>
+      <input type="number" min="0" step="1" name="volume" value="300" class="mt-1 w-full input" />
+    </label>
+  </div>
+
+  <div class="mt-6 grid gap-4 sm:grid-cols-2">
+    <div class="card p-4">
+      <div class="text-sm font-semibold mb-3">{labels.paypal}</div>
+      <div class="space-y-2 text-sm">
+        <div class="flex justify-between"><span style="color: var(--color-fg-soft);">{labels.monthlyRevenue}</span><span data-out="paypalRevenue">—</span></div>
+        <div class="flex justify-between"><span style="color: var(--color-fg-soft);">{labels.monthlyFee}</span><span data-out="paypalFee">—</span></div>
+        <div class="flex justify-between font-semibold pt-2 border-t" style="border-color: var(--color-border);">
+          <span>{labels.effectiveFee}</span><span data-out="paypalRate">—</span>
+        </div>
+      </div>
+    </div>
+    <div class="card p-4">
+      <div class="text-sm font-semibold mb-3">{labels.stripe}</div>
+      <div class="space-y-2 text-sm">
+        <div class="flex justify-between"><span style="color: var(--color-fg-soft);">{labels.monthlyRevenue}</span><span data-out="stripeRevenue">—</span></div>
+        <div class="flex justify-between"><span style="color: var(--color-fg-soft);">{labels.monthlyFee}</span><span data-out="stripeFee">—</span></div>
+        <div class="flex justify-between font-semibold pt-2 border-t" style="border-color: var(--color-border);">
+          <span>{labels.effectiveFee}</span><span data-out="stripeRate">—</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-4 card p-4" data-out="winner">—</div>
+
+  <div class="mt-4 flex gap-2">
+    <button type="button" class="btn" data-action="reset">{labels.reset}</button>
+  </div>
+
+  <p class="mt-6 text-xs" style="color: var(--color-fg-soft);">
+    {locale === 'zh'
+      ? 'PayPal 商业交易：4.4% + $0.30；Stripe 标准卡支付：2.9% + $0.30（含国内卡汇率 2%）。此处按美国卡组织费率估算，跨境卡另加 1.5%。实际以你的合同为准。'
+      : 'PayPal commercial transactions charge 4.4% + $0.30 per order. Stripe standard card rate is 2.9% + $0.30 (plus an estimated 2% international card fee and 1.5% cross-border). Your contract may differ.'}
+  </p>
+</div>
+
+<script>
+  type FeeInputs = { unitPrice: number; volume: number };
+
+  // PayPal: 4.4% + $0.30 per domestic commercial transaction
+  const PAYPAL_RATE = 0.044;
+  const PAYPAL_FIXED = 0.30;
+  // Stripe: 2.9% + $0.30 standard, including 2% international card + 1.5% cross-border
+  const STRIPE_RATE = 0.044;
+
+  const calc = (i: FeeInputs) => {
+    const revenue = i.unitPrice * i.volume;
+    const paypalFee = revenue * PAYPAL_RATE + PAYPAL_FIXED * i.volume;
+    const stripeFee = revenue * STRIPE_RATE + 0.30 * i.volume;
+    return {
+      revenue,
+      paypalFee,
+      stripeFee,
+      paypalRate: revenue > 0 ? paypalFee / revenue : NaN,
+      stripeRate: revenue > 0 ? stripeFee / revenue : NaN,
+    };
+  };
+
+  const fmtMoney = (n: number, locale: string) =>
+    Number.isFinite(n) && n > 0
+      ? new Intl.NumberFormat(locale === 'zh' ? 'zh-CN' : 'en-US', { style: 'currency', currency: 'USD' }).format(n)
+      : new Intl.NumberFormat(locale === 'zh' ? 'zh-CN' : 'en-US', { style: 'currency', currency: 'USD' }).format(0);
+  const fmtPct = (n: number, locale: string) =>
+    Number.isFinite(n)
+      ? new Intl.NumberFormat(locale === 'zh' ? 'zh-CN' : 'en-US', { style: 'percent', maximumFractionDigits: 2 }).format(n)
+      : '—';
+
+  document.querySelectorAll<HTMLElement>('.fee-calc').forEach((root) => {
+    const locale = root.dataset.locale ?? 'en';
+    const inputs = {
+      unitPrice: root.querySelector<HTMLInputElement>('[name=unitPrice]')!,
+      volume: root.querySelector<HTMLInputElement>('[name=volume]')!,
+    };
+    const out = {
+      paypalRevenue: root.querySelector<HTMLElement>('[data-out=paypalRevenue]')!,
+      paypalFee: root.querySelector<HTMLElement>('[data-out=paypalFee]')!,
+      paypalRate: root.querySelector<HTMLElement>('[data-out=paypalRate]')!,
+      stripeRevenue: root.querySelector<HTMLElement>('[data-out=stripeRevenue]')!,
+      stripeFee: root.querySelector<HTMLElement>('[data-out=stripeFee]')!,
+      stripeRate: root.querySelector<HTMLElement>('[data-out=stripeRate]')!,
+      winner: root.querySelector<HTMLElement>('[data-out=winner]')!,
+    };
+
+    const update = () => {
+      const i: FeeInputs = {
+        unitPrice: parseFloat(inputs.unitPrice.value) || 0,
+        volume: parseFloat(inputs.volume.value) || 0,
+      };
+      const r = calc(i);
+      out.paypalRevenue.textContent = fmtMoney(r.revenue, locale);
+      out.paypalFee.textContent = fmtMoney(r.paypalFee, locale);
+      out.paypalRate.textContent = fmtPct(r.paypalRate, locale);
+      out.stripeRevenue.textContent = fmtMoney(r.revenue, locale);
+      out.stripeFee.textContent = fmtMoney(r.stripeFee, locale);
+      out.stripeRate.textContent = fmtPct(r.stripeRate, locale);
+
+      const winner = r.stripeFee < r.paypalFee
+        ? `${labels.stripe} ↓ ${fmtMoney(r.paypalFee - r.stripeFee, locale)}/mo`
+        : `${labels.paypal} ↓ ${fmtMoney(r.stripeFee - r.paypalFee, locale)}/mo`;
+      const winnerLabel = locale === 'zh' ? `${labels.winner}：` : `${labels.winner}: `;
+      out.winner.innerHTML = `<span class="font-semibold">${winnerLabel}</span>${winner}`;
+    };
+
+    const labels = {
+      stripe: locale === 'zh' ? 'Stripe' : 'Stripe',
+      paypal: locale === 'zh' ? 'PayPal' : 'PayPal',
+      winner: '',
+    };
+
+    Object.values(inputs).forEach((el) => el.addEventListener('input', update));
+    update();
+
+    root.querySelector<HTMLButtonElement>('[data-action=reset]')?.addEventListener('click', () => {
+      inputs.unitPrice.value = '35';
+      inputs.volume.value = '300';
+      update();
+    });
+  });
+</script>

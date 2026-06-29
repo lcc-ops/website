@@ -1,0 +1,196 @@
+---
+import { t, type Locale } from '~/i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+const locale = (Astro.props.locale ?? 'en') as Locale;
+const labels = {
+  amount: t(locale, 'tool.amount'),
+  fromCurrency: t(locale, 'tool.fromCurrency'),
+  toCurrency: t(locale, 'tool.toCurrency'),
+  receiveAmount: t(locale, 'tool.receiveAmount'),
+  fxMargin: t(locale, 'tool.fxMargin'),
+  withdrawFee: t(locale, 'tool.withdrawFee'),
+  reset: t(locale, 'tool.reset'),
+};
+---
+<div class="fx-calc" data-locale={locale}>
+  <div class="grid gap-4 sm:grid-cols-3">
+    <label class="block">
+      <span class="text-sm font-medium">{labels.amount}</span>
+      <input type="number" min="0" step="0.01" name="amount" value="10000" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.fromCurrency}</span>
+      <select name="from" class="mt-1 w-full input">
+        <option value="USD" selected>USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+      </select>
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.toCurrency}</span>
+      <select name="to" class="mt-1 w-full input">
+        <option value="CNY" selected>CNY</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="mt-6 grid gap-4 sm:grid-cols-3">
+    <div class="card p-4">
+      <div class="text-sm font-semibold mb-2">PayPal</div>
+      <div class="space-y-2 text-sm">
+        <div class="flex justify-between"><span style="color: var(--color-fg-soft);">{labels.fxMargin}</span><span data-out="paypalFx">—</span></div>
+        <div class="flex justify-between"><span style="color: var(--color-fg-soft);">{labels.withdrawFee}</span><span data-out="paypalFee">—</span></div>
+        <div class="flex justify-between font-semibold pt-2 border-t" style="border-color: var(--color-border);">
+          <span>{labels.receiveAmount}</span><span data-out="paypalReceive">—</span>
+        </div>
+      </div>
+    </div>
+    <div class="card p-4">
+      <div class="text-sm font-semibold mb-2">Wise</div>
+      <div class="space-y-2 text-sm">
+        <div class="flex justify-between"><span style="color: var(--color-fg-soft);">{labels.fxMargin}</span><span data-out="wiseFx">—</span></div>
+        <div class="flex justify-between"><span style="color: var(--color-fg-soft);">{labels.withdrawFee}</span><span data-out="wiseFee">—</span></div>
+        <div class="flex justify-between font-semibold pt-2 border-t" style="border-color: var(--color-border);">
+          <span>{labels.receiveAmount}</span><span data-out="wiseReceive">—</span>
+        </div>
+      </div>
+    </div>
+    <div class="card p-4">
+      <div class="text-sm font-semibold mb-2">Airwallex</div>
+      <div class="space-y-2 text-sm">
+        <div class="flex justify-between"><span style="color: var(--color-fg-soft);">{labels.fxMargin}</span><span data-out="airwallexFx">—</span></div>
+        <div class="flex justify-between"><span style="color: var(--color-fg-soft);">{labels.withdrawFee}</span><span data-out="airwallexFee">—</span></div>
+        <div class="flex justify-between font-semibold pt-2 border-t" style="border-color: var(--color-border);">
+          <span>{labels.receiveAmount}</span><span data-out="airwallexReceive">—</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-4 flex gap-2">
+    <button type="button" class="btn" data-action="reset">{labels.reset}</button>
+  </div>
+
+  <p class="mt-6 text-xs" style="color: var(--color-fg-soft);">
+    {locale === 'zh'
+      ? '基准汇率为参考中间价。PayPal 隐含汇率点差约 3.0–4.0%；Wise 中间价 + 0.41% 手续费；Airwallex 工商户账户费用更低。'
+      : 'Base rates are mid-market reference values. PayPal embeds a 3–4% FX margin. Wise charges mid-market + a 0.41% fee. Airwallex business accounts are lower still.'}
+  </p>
+</div>
+
+<script>
+  type FxInputs = { amount: number; from: string; to: string };
+
+  // Reference mid-market rates per 1 unit of `from` currency, in `to` currency
+  const MID_RATES: Record<string, number> = {
+    USD_CNY: 7.25,
+    USD_USD: 1,
+    USD_EUR: 0.92,
+    USD_GBP: 0.79,
+    USD_JPY: 155,
+    EUR_CNY: 7.85,
+    EUR_USD: 1.085,
+    EUR_EUR: 1,
+    EUR_GBP: 0.86,
+    EUR_JPY: 168,
+    GBP_CNY: 9.15,
+    GBP_USD: 1.265,
+    GBP_EUR: 1.16,
+    GBP_GBP: 1,
+    GBP_JPY: 196,
+    JPY_CNY: 0.047,
+    JPY_USD: 0.0065,
+    JPY_EUR: 0.0059,
+    JPY_GBP: 0.0051,
+    JPY_JPY: 1,
+  };
+
+  // FX margin baked into the user-facing rate, plus a flat withdraw fee (in `to` currency equivalent)
+  const PROVIDERS = [
+    { key: 'paypal', fxMargin: 0.035, withdrawFeeIn: 0 },
+    { key: 'wise', fxMargin: 0.0041, withdrawFeeIn: 0 },
+    { key: 'airwallex', fxMargin: 0.0035, withdrawFeeIn: 0 },
+  ] as const;
+
+  const calc = (i: FxInputs, p: typeof PROVIDERS[number]) => {
+    const mid = MID_RATES[`${i.from}_${i.to}`];
+    const userRate = mid * (1 - p.fxMargin);
+    const gross = i.amount * userRate;
+    const fee = p.withdrawFeeIn > 0 ? p.withdrawFeeIn * userRate : 0;
+    const receive = gross - fee;
+    return { fxMargin: p.fxMargin, fee, receive };
+  };
+
+  const fmtPct = (n: number, locale: string) =>
+    new Intl.NumberFormat(locale === 'zh' ? 'zh-CN' : 'en-US', { style: 'percent', maximumFractionDigits: 2 }).format(n);
+  const fmtMoney = (n: number, locale: string, currency: string) =>
+    Number.isFinite(n) && n > 0
+      ? new Intl.NumberFormat(locale === 'zh' ? 'zh-CN' : 'en-US', {
+          style: 'currency',
+          currency,
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2,
+        }).format(n)
+      : '—';
+
+  document.querySelectorAll<HTMLElement>('.fx-calc').forEach((root) => {
+    const locale = root.dataset.locale ?? 'en';
+    const inputs: Record<string, HTMLInputElement | HTMLSelectElement> = {
+      amount: root.querySelector('[name=amount]') as unknown as HTMLInputElement,
+      from: root.querySelector('[name=from]') as unknown as HTMLSelectElement,
+      to: root.querySelector('[name=to]') as unknown as HTMLSelectElement,
+    };
+    const out = {
+      paypalFx: root.querySelector<HTMLElement>('[data-out=paypalFx]')!,
+      paypalFee: root.querySelector<HTMLElement>('[data-out=paypalFee]')!,
+      paypalReceive: root.querySelector<HTMLElement>('[data-out=paypalReceive]')!,
+      wiseFx: root.querySelector<HTMLElement>('[data-out=wiseFx]')!,
+      wiseFee: root.querySelector<HTMLElement>('[data-out=wiseFee]')!,
+      wiseReceive: root.querySelector<HTMLElement>('[data-out=wiseReceive]')!,
+      airwallexFx: root.querySelector<HTMLElement>('[data-out=airwallexFx]')!,
+      airwallexFee: root.querySelector<HTMLElement>('[data-out=airwallexFee]')!,
+      airwallexReceive: root.querySelector<HTMLElement>('[data-out=airwallexReceive]')!,
+    };
+
+    const update = () => {
+      const i: FxInputs = {
+        amount: parseFloat(inputs.amount.value) || 0,
+        from: inputs.from.value,
+        to: inputs.to.value,
+      };
+      const toCurrency = i.to;
+      const rows = PROVIDERS.map((p) => {
+        const r = calc(i, p);
+        return { p, r };
+      });
+      const map: Record<string, { fx: HTMLElement; fee: HTMLElement; recv: HTMLElement }> = {
+        paypal: { fx: out.paypalFx, fee: out.paypalFee, recv: out.paypalReceive },
+        wise: { fx: out.wiseFx, fee: out.wiseFee, recv: out.wiseReceive },
+        airwallex: { fx: out.airwallexFx, fee: out.airwallexFee, recv: out.airwallexReceive },
+      };
+      rows.forEach(({ p, r }) => {
+        const cells = map[p.key];
+        cells.fx.textContent = fmtPct(r.fxMargin, locale);
+        cells.fee.textContent = fmtMoney(r.fee, locale, toCurrency);
+        cells.recv.textContent = fmtMoney(r.receive, locale, toCurrency);
+      });
+    };
+
+    Object.values(inputs).forEach((el) => el.addEventListener('input', update));
+    Object.values(inputs).forEach((el) => el.addEventListener('change', update));
+    update();
+
+    root.querySelector<HTMLButtonElement>('[data-action=reset]')?.addEventListener('click', () => {
+      inputs.amount.value = '10000';
+      inputs.from.value = 'USD';
+      inputs.to.value = 'CNY';
+      update();
+    });
+  });
+</script>
