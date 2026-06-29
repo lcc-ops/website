@@ -10,7 +10,7 @@ import remarkGfm from 'remark-gfm';
 
 export default defineConfig({
   site: 'https://lcc-ops.github.io/website',
-  output: 'static',
+  output: 'server',
   adapter: cloudflare({
     imageService: 'cloudflare',
   }),
