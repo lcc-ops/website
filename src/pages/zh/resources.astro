@@ -8,21 +8,18 @@ const resourcePacks = [
   {
     title: '定价与利润核算 Excel 模板',
     desc: '插公式即用：产品成本、物流、费用、退款、广告支出。含按 SKU 和渠道的净利润看板。',
-    href: '#download',
     size: '128 KB · XLSX',
     type: 'XLSX',
   },
   {
     title: 'Dropshipping 真实成本核算表',
     desc: '完整成本堆栈（$50 AliExpress dropshipping 店铺）：货品成本、物流、广告、退货、拒付。',
-    href: '#download',
     size: '94 KB · XLSX',
     type: 'XLSX',
   },
   {
     title: '拒付申诉证据模板',
     desc: '"未收到货"和"货不符"拒付申诉模板。Stripe + PayPal 双版本。',
-    href: '#download',
     size: '42 KB · DOCX',
     type: 'DOCX',
   },
@@ -62,7 +59,7 @@ const totalSize = '264 KB';
                 <h3 class="text-lg font-semibold">{pack.title}</h3>
                 <p class="text-sm mt-1" style="color: var(--color-fg-soft);">{pack.desc}</p>
               </div>
-              <a href={pack.href} class="btn btn-primary self-start">{t(locale, 'common.download')} ↓</a>
+              <span class="badge self-start" style="background: var(--color-bg-soft);">即将上线</span>
             </div>
           </li>
         ))}
