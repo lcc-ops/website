@@ -49,22 +49,42 @@ const otherLocale: Locale = locale === 'en' ? 'zh' : 'en';
         id="theme-toggle"
         type="button"
         aria-label={t(locale, 'nav.theme')}
-        class="rounded-md p-2 transition"
-        style="border:1px solid var(--color-border);"
+        aria-pressed="false"
+        data-label-dark={t(locale, 'nav.theme.toDark')}
+        data-label-light={t(locale, 'nav.theme.toLight')}
+        class="theme-toggle rounded-md p-2 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+        style="border:1px solid var(--color-border); --tw-ring-color: var(--color-accent);"
       >
-        <span aria-hidden="true">◐</span>
+        <span aria-hidden="true" data-theme-icon>◐</span>
       </button>
     </div>
   </div>
 </header>
 
 <script is:inline>
-  const root = document.documentElement;
-  const stored = localStorage.getItem('theme');
-  if (stored) root.setAttribute('data-theme', stored);
-  document.getElementById('theme-toggle')?.addEventListener('click', () => {
-    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    root.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-  });
+  (() => {
+    const root = document.documentElement;
+    const stored = localStorage.getItem('theme');
+    if (stored === 'dark' || stored === 'light') {
+      root.setAttribute('data-theme', stored);
+    }
+    const btn = document.getElementById('theme-toggle');
+    const icon = btn?.querySelector('[data-theme-icon]');
+    const isDark = () => root.getAttribute('data-theme') === 'dark';
+    const syncAria = () => {
+      if (!btn) return;
+      const dark = isDark();
+      btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+      const labelFor = dark ? btn.dataset.labelLight : btn.dataset.labelDark;
+      if (labelFor) btn.setAttribute('aria-label', labelFor);
+      if (icon) icon.textContent = dark ? '◑' : '◐';
+    };
+    syncAria();
+    btn?.addEventListener('click', () => {
+      const next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      syncAria();
+    });
+  })();
 </script>

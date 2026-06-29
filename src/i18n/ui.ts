@@ -18,6 +18,8 @@ const en: UIDict = {
   'nav.about': 'About',
   'nav.search': 'Search',
   'nav.theme': 'Toggle theme',
+  'nav.theme.toDark': 'Switch to dark theme',
+  'nav.theme.toLight': 'Switch to light theme',
   // Site identity
   'site.title': 'Crossborder Cost Lab',
   'site.tagline': 'Free calculators and practical guides to price, ship and profit on every cross-border order.',
@@ -150,6 +152,8 @@ const zh: UIDict = {
   'nav.about': '关于',
   'nav.search': '搜索',
   'nav.theme': '切换主题',
+  'nav.theme.toDark': '切换到深色主题',
+  'nav.theme.toLight': '切换到浅色主题',
   // Site identity
   'site.title': '跨境成本实验室',
   'site.tagline': '免费计算器与实操指南，帮你算清每笔跨境订单的利润。',
