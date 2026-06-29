@@ -9,31 +9,23 @@ import { type Locale, t } from '~/i18n/ui';
 import { localizePath, dateFormatter } from '~/i18n/utils';
 import readingTime from 'reading-time';
 
-export async function getStaticPaths() {
-  const all = await getCollection('content', ({ data }) => !data.draft);
-  // Only emit paths for English posts. The matching zh post is rendered by
-  // src/pages/zh/content/[...slug].astro at /zh/content/<slug>.
-  return all
-    .filter((post) => post.id.endsWith('/en'))
-    .map((post) => ({
-      params: { slug: post.id.split('/')[0] },
-      props: { post },
-    }));
+const slug = Astro.params.slug ?? '';
+const locale: Locale = 'en';
+const other: Locale = 'zh';
+
+const allPosts = await getCollection('content', ({ data }) => !data.draft);
+const post = allPosts.find((p) => p.id === `${slug}/en`);
+
+if (!post) {
+  return new Response('Not Found', { status: 404 });
 }
 
-const { post } = Astro.props;
-const slug = post.id.split('/')[0];
-const locale: Locale = post.id.split('/').pop() as Locale;
-const other: Locale = locale === 'en' ? 'zh' : 'en';
 const { Content } = await render(post);
 const dateFmt = dateFormatter(locale);
 const minutes = Math.max(1, Math.round(readingTime(post.body ?? '').minutes));
 
-// Find translation. Files live at src/content/blog/<slug>/<lang>.md so the
-// translated entry shares the same first path segment as the current one.
-const allPosts = await getCollection('content', ({ data }) => !data.draft);
 const translation = allPosts.find(
-  (p) => p.data.translationKey === post.data.translationKey && p.id.startsWith(`${slug}/`),
+  (p) => p.data.translationKey === post.data.translationKey && p.id.startsWith(`${slug}/`) && p.id !== post.id,
 );
 const translationHref = translation ? localizePath(`/content/${slug}`, other) : undefined;
 
@@ -41,18 +33,6 @@ const alternates: Record<Locale, string> = {
   en: localizePath(`/content/${slug}`, 'en'),
   zh: localizePath(`/content/${slug}`, 'zh'),
 };
-
-// Article structured data is emitted by BaseHead via the type=article prop
-const articleJsonLd = {
-  headline: post.data.title,
-  description: post.data.description,
-  inLanguage: locale,
-  keywords: post.data.tags.join(', '),
-  datePublished: post.data.pubDate.toISOString(),
-  ...(post.data.updatedDate ? { dateModified: post.data.updatedDate.toISOString() } : {}),
-};
-// Surface for future in-page JSON-LD additions
-void articleJsonLd;
 ---
 <BaseLayout
   title={post.data.title}
@@ -68,7 +48,7 @@ void articleJsonLd;
     <Breadcrumb
       items={[
         { label: t(locale, 'nav.home'), href: '/' },
-        { label: t(locale, 'nav.blog'), href: '/content' },
+        { label: t(locale, 'nav.content'), href: '/content' },
         { label: post.data.title },
       ]}
     />
@@ -80,7 +60,7 @@ void articleJsonLd;
         <span>· {minutes} {t(locale, 'blog.minutes')}</span>
         {translationHref && (
           <a href={translationHref} class="ml-auto hover:text-[var(--color-accent)]" hreflang={other}>
-            {other === 'en' ? 'Read in English' : '中文版'}
+            中文版
           </a>
         )}
       </div>

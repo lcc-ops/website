@@ -7,30 +7,28 @@ import ResourceCta from '~/components/ResourceCta.astro';
 import SeoStructuredData from '~/components/SeoStructuredData.astro';
 import { type Locale, t } from '~/i18n/ui';
 import { localizePath } from '~/i18n/utils';
-import TextDiff from '~/components/tools/TextDiff.astro';
+import PricingCalculator from '~/components/tools/PricingCalculator.astro';
 
-const componentMap: Record<string, typeof TextDiff> = { TextDiff };
+const componentMap: Record<string, (props: { locale?: Locale }) => unknown> = {
+  PricingCalculator,
+};
 
-export async function getStaticPaths() {
-  const all = await getCollection('tools');
-  return all
-    .filter((tool) => tool.id.endsWith('/zh'))
-    .map((tool) => ({
-      params: { slug: tool.id.split('/')[0] },
-      props: { tool },
-    }));
-}
-
-const { tool } = Astro.props;
-const slug = tool.id.split('/')[0];
+const slug = Astro.params.slug ?? '';
 const locale: Locale = 'zh';
 const other: Locale = 'en';
-const { Content } = await render(tool);
-const Component = componentMap[tool.data.component] ?? TextDiff;
 
 const allTools = await getCollection('tools');
+const tool = allTools.find((p) => p.id === `${slug}/zh`);
+
+if (!tool) {
+  return new Response('Not Found', { status: 404 });
+}
+
+const { Content } = await render(tool);
+const Component = componentMap[tool.data.component] ?? PricingCalculator;
+
 const translation = allTools.find(
-  (p) => p.data.translationKey === tool.data.translationKey && p.id.startsWith(`${slug}/`),
+  (p) => p.data.translationKey === tool.data.translationKey && p.id.startsWith(`${slug}/`) && p.id !== tool.id,
 );
 
 const howTo = {
@@ -81,7 +79,7 @@ const howTo = {
     </header>
 
     <section class="card p-6 sm:p-8 mb-8">
-      <Component />
+      <Component locale={locale} />
     </section>
 
     <AdSlot slot="tool-bottom" label={t(locale, 'ad.disclosure')} />

@@ -7,32 +7,28 @@ import ResourceCta from '~/components/ResourceCta.astro';
 import SeoStructuredData from '~/components/SeoStructuredData.astro';
 import { type Locale, t } from '~/i18n/ui';
 import { localizePath } from '~/i18n/utils';
-import TextDiff from '~/components/tools/TextDiff.astro';
+import PricingCalculator from '~/components/tools/PricingCalculator.astro';
 
-const componentMap: Record<string, typeof TextDiff> = { TextDiff };
+const componentMap: Record<string, (props: { locale?: Locale }) => unknown> = {
+  PricingCalculator,
+};
 
-export async function getStaticPaths() {
-  const all = await getCollection('tools');
-  // Only emit paths for English tools. The matching zh tool is rendered by
-  // src/pages/zh/tools/[...slug].astro at /zh/tools/<slug>.
-  return all
-    .filter((tool) => tool.id.endsWith('/en'))
-    .map((tool) => ({
-      params: { slug: tool.id.split('/')[0] },
-      props: { tool },
-    }));
-}
-
-const { tool } = Astro.props;
-const slug = tool.id.split('/')[0];
-const locale: Locale = tool.id.split('/').pop() as Locale;
-const other: Locale = locale === 'en' ? 'zh' : 'en';
-const { Content } = await render(tool);
-const Component = componentMap[tool.data.component] ?? TextDiff;
+const slug = Astro.params.slug ?? '';
+const locale: Locale = 'en';
+const other: Locale = 'zh';
 
 const allTools = await getCollection('tools');
+const tool = allTools.find((p) => p.id === `${slug}/en` || p.id === `${slug}/zh/en`);
+
+if (!tool) {
+  return new Response('Not Found', { status: 404 });
+}
+
+const { Content } = await render(tool);
+const Component = componentMap[tool.data.component] ?? PricingCalculator;
+
 const translation = allTools.find(
-  (p) => p.data.translationKey === tool.data.translationKey && p.id.startsWith(`${slug}/`),
+  (p) => p.data.translationKey === tool.data.translationKey && p.id.startsWith(`${slug}/`) && p.id !== tool.id,
 );
 
 const howTo = {
@@ -72,7 +68,7 @@ const howTo = {
         <span class="badge">{tool.data.category}</span>
         {translation && (
           <a href={localizePath(`/tools/${slug}`, other)} class="ml-auto hover:text-[var(--color-accent)]" hreflang={other}>
-            {other === 'en' ? 'Read in English' : '中文版'}
+            中文版
           </a>
         )}
       </div>
@@ -83,7 +79,7 @@ const howTo = {
     </header>
 
     <section class="card p-6 sm:p-8 mb-8">
-      <Component />
+      <Component locale={locale} />
     </section>
 
     <AdSlot slot="tool-bottom" label={t(locale, 'ad.disclosure')} />

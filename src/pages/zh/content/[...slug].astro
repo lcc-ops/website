@@ -9,27 +9,23 @@ import { type Locale, t } from '~/i18n/ui';
 import { localizePath, dateFormatter } from '~/i18n/utils';
 import readingTime from 'reading-time';
 
-export async function getStaticPaths() {
-  const all = await getCollection('content', ({ data }) => !data.draft);
-  return all
-    .filter((post) => post.id.endsWith('/zh'))
-    .map((post) => ({
-      params: { slug: post.id.split('/')[0] },
-      props: { post },
-    }));
-}
-
-const { post } = Astro.props;
-const slug = post.id.split('/')[0];
+const slug = Astro.params.slug ?? '';
 const locale: Locale = 'zh';
 const other: Locale = 'en';
+
+const allPosts = await getCollection('content', ({ data }) => !data.draft);
+const post = allPosts.find((p) => p.id === `${slug}/zh`);
+
+if (!post) {
+  return new Response('Not Found', { status: 404 });
+}
+
 const { Content } = await render(post);
 const dateFmt = dateFormatter(locale);
 const minutes = Math.max(1, Math.round(readingTime(post.body ?? '').minutes));
 
-const allPosts = await getCollection('content', ({ data }) => !data.draft);
 const translation = allPosts.find(
-  (p) => p.data.translationKey === post.data.translationKey && p.id.startsWith(`${slug}/`),
+  (p) => p.data.translationKey === post.data.translationKey && p.id.startsWith(`${slug}/`) && p.id !== post.id,
 );
 const translationHref = translation ? localizePath(`/content/${slug}`, other) : undefined;
 
@@ -37,16 +33,6 @@ const alternates: Record<Locale, string> = {
   en: localizePath(`/content/${slug}`, 'en'),
   zh: localizePath(`/content/${slug}`, 'zh'),
 };
-
-const articleJsonLd = {
-  headline: post.data.title,
-  description: post.data.description,
-  inLanguage: locale,
-  keywords: post.data.tags.join(', '),
-  datePublished: post.data.pubDate.toISOString(),
-  ...(post.data.updatedDate ? { dateModified: post.data.updatedDate.toISOString() } : {}),
-};
-void articleJsonLd;
 ---
 <BaseLayout
   title={post.data.title}
@@ -62,7 +48,7 @@ void articleJsonLd;
     <Breadcrumb
       items={[
         { label: t(locale, 'nav.home'), href: '/' },
-        { label: t(locale, 'nav.blog'), href: '/content' },
+        { label: t(locale, 'nav.content'), href: '/content' },
         { label: post.data.title },
       ]}
     />
