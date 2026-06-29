@@ -1,0 +1,23 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { localizePath } from '~/i18n/utils';
+---
+<BaseLayout title="配套资源" description="用于分享下载与笔记的安静着陆页。无广告、无弹窗。">
+  <article class="container-prose py-16">
+    <h1 class="text-3xl font-semibold mb-3">配套资源</h1>
+    <p class="text-lg" style="color: var(--color-fg-soft);">用于分享下载与笔记的安静着陆页。无广告、无弹窗。</p>
+
+    <ul class="mt-8 space-y-3">
+      <li class="card p-5">
+        <h2 class="font-semibold">示例资源包</h2>
+        <p class="text-sm mt-1" style="color: var(--color-fg-soft);">
+          即将上线——准备好后这里会显示跳转链接。
+        </p>
+      </li>
+    </ul>
+
+    <p class="mt-10 text-sm" style="color: var(--color-fg-soft);">
+      <a href={localizePath('/content', 'zh')} class="hover:text-[var(--color-accent)]">← 返回内容</a>
+    </p>
+  </article>
+</BaseLayout>

@@ -11,7 +11,7 @@ type UIDict = Record<string, string>;
 
 const en: UIDict = {
   'nav.home': 'Home',
-  'nav.blog': 'Blog',
+  'nav.blog': 'Content',
   'nav.tools': 'Tools',
   'nav.about': 'About',
   'nav.search': 'Search',
@@ -41,7 +41,7 @@ const en: UIDict = {
 
 const zh: UIDict = {
   'nav.home': '首页',
-  'nav.blog': '博客',
+  'nav.blog': '内容',
   'nav.tools': '工具',
   'nav.about': '关于',
   'nav.search': '搜索',

@@ -1,0 +1,25 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { SITE } from '~/site.config';
+
+const subtitle = `${SITE.title} 是一个静态优先、边缘加速的个人站点。你读到的每个页面都是从最近的 Cloudflare 节点直接返回的预渲染 HTML。`;
+---
+<BaseLayout title="关于" description={subtitle}>
+  <article class="container-prose py-16">
+    <h1 class="text-3xl font-semibold mb-4">关于</h1>
+    <p class="text-lg" style="color: var(--color-fg-soft);">{subtitle}</p>
+    <h2 class="text-xl font-semibold mt-10 mb-3">站点如何搭建</h2>
+    <ul class="list-disc pl-5 space-y-2" style="color: var(--color-fg-soft);">
+      <li>Astro 5 + Cloudflare 适配器</li>
+      <li>Tailwind CSS 4 样式 + CSS 变量主题</li>
+      <li>Markdown 内容 + Zod frontmatter 校验</li>
+      <li>仅在静态不够时使用 Pages Functions</li>
+    </ul>
+    <h2 class="text-xl font-semibold mt-10 mb-3">联系</h2>
+    <p style="color: var(--color-fg-soft);">
+      Email: <a class="hover:text-[var(--color-accent)]" href={`mailto:${SITE.email}`}>{SITE.email}</a><br />
+      GitHub: <a class="hover:text-[var(--color-accent)]" href={SITE.social.github} rel="noopener">{SITE.social.github}</a>
+    </p>
+  </article>
+</BaseLayout>
+

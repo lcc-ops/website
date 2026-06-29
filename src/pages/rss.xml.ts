@@ -5,7 +5,7 @@ import { SITE } from '~/site.config';
 import { defaultLocale } from '~/i18n/ui';
 
 export async function GET(context: APIContext) {
-  const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  const posts = (await getCollection('content', ({ data }) => !data.draft))
     .filter((p) => p.id.startsWith(`${defaultLocale}/`))
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
@@ -17,7 +17,7 @@ export async function GET(context: APIContext) {
       title: post.data.title,
       pubDate: post.data.pubDate,
       description: post.data.description,
-      link: `/blog/${post.id}`,
+      link: `/content/${post.id}`,
       categories: [post.data.category, ...post.data.tags],
     })),
     customData: `<language>${defaultLocale}-${defaultLocale === 'zh' ? 'CN' : 'US'}</language>`,

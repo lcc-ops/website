@@ -5,10 +5,10 @@ import PostCard from '~/components/PostCard.astro';
 import ToolCard from '~/components/ToolCard.astro';
 import { SITE } from '~/site.config';
 import { t, type Locale } from '~/i18n/ui';
-import { getLocaleFromUrl, localizePath } from '~/i18n/utils';
+import { localizePath } from '~/i18n/utils';
 import type { CollectionEntry } from 'astro:content';
 
-const locale: Locale = getLocaleFromUrl(Astro.url);
+const locale: Locale = 'zh';
 
 const allPosts = await getCollection('content', ({ data }) => !data.draft);
 const allTools = await getCollection('tools');
@@ -37,7 +37,7 @@ const postsHere = allPosts
 const toolsHere = allTools
   .filter((p) => p.id.startsWith(`${locale}/`));
 
-function translationFor(key: string, target: Locale) {
+function postTranslationFor(key: string, target: Locale) {
   return localizePath(`/content/${target}/${key}`, target);
 }
 function toolTranslationFor(key: string, target: Locale) {
@@ -67,9 +67,9 @@ function toolTranslationFor(key: string, target: Locale) {
     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {postsHere.map((post) => {
         const key = post.data.translationKey;
-        const other = locale === 'en' ? 'zh' : 'en';
+        const other: Locale = 'en';
         const translationLink = postsByKey.get(key)?.[other]
-          ? translationFor(key, other)
+          ? postTranslationFor(key, other)
           : undefined;
         return <PostCard post={post} locale={locale} translationLink={translationLink} />;
       })}
@@ -84,7 +84,7 @@ function toolTranslationFor(key: string, target: Locale) {
     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {toolsHere.map((tool) => {
         const key = tool.data.translationKey;
-        const other = locale === 'en' ? 'zh' : 'en';
+        const other: Locale = 'en';
         const translationLink = toolsByKey.get(key)?.[other]
           ? toolTranslationFor(key, other)
           : undefined;
