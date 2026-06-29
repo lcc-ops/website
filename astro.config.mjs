@@ -60,5 +60,6 @@ export default defineConfig({
     '/zh/blog': '/zh/content',
     '/blog/[slug]/[lang]': '/content/[slug]',
     '/zh/blog/[slug]/[lang]': '/zh/content/[slug]',
+    '/zh/rss.xml': '/rss.xml',
   },
 });
