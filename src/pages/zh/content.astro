@@ -7,7 +7,7 @@ import { localizePath } from '~/i18n/utils';
 
 const locale: Locale = 'zh';
 
-const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const allPosts = await getCollection('content', ({ data }) => !data.draft);
 const localeOf = (id: string): Locale | undefined =>
   id.split('/').pop() as Locale | undefined;
 const posts = allPosts
@@ -19,14 +19,14 @@ for (const p of allPosts) {
   const loc = localeOf(p.id);
   if (!loc) continue;
   const k = p.data.translationKey;
-  byKey.set(k, { ...(byKey.get(k) ?? {}), [loc]: `/blog/${p.id}` });
+  byKey.set(k, { ...(byKey.get(k) ?? {}), [loc]: `/content/${p.id}` });
 }
 ---
-<BaseLayout title={`Blog · lcc-ops`} description="All posts in the blog.">
+<BaseLayout title={`内容 · lcc-ops`} description="所有文章。">
   <section class="container-page py-16">
-    <h1 class="text-3xl font-semibold mb-2">Blog</h1>
+    <h1 class="text-3xl font-semibold mb-2">内容</h1>
     <p class="mb-8" style="color: var(--color-fg-soft);">
-      {posts.length} {posts.length === 1 ? 'post' : 'posts'}
+      {posts.length} 篇
     </p>
     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {posts.map((post) => {

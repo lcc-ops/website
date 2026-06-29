@@ -11,7 +11,7 @@ import { localizePath, dateFormatter } from '~/i18n/utils';
 import readingTime from 'reading-time';
 
 export async function getStaticPaths() {
-  const all = await getCollection('blog', ({ data }) => !data.draft);
+  const all = await getCollection('content', ({ data }) => !data.draft);
   return all.map((post) => ({
     params: { lang: post.id.split('/')[0], slug: post.id.split('/').slice(1).join('/') },
     props: { post },
@@ -26,15 +26,15 @@ const dateFmt = dateFormatter(locale);
 const minutes = Math.max(1, Math.round(readingTime(post.body ?? '').minutes));
 
 // Find translation
-const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const allPosts = await getCollection('content', ({ data }) => !data.draft);
 const translation = allPosts.find(
   (p) => p.data.translationKey === post.data.translationKey && p.id.startsWith(`${other}/`)
 );
-const translationHref = translation ? localizePath(`/blog/${translation.id}`, other) : undefined;
+const translationHref = translation ? localizePath(`/content/${translation.id}`, other) : undefined;
 
 const alternates: Record<Locale, string> = {
-  en: localizePath(`/blog/en/${post.data.translationKey}`, 'en'),
-  zh: localizePath(`/blog/zh/${post.data.translationKey}`, 'zh'),
+  en: localizePath(`/content/en/${post.data.translationKey}`, 'en'),
+  zh: localizePath(`/content/zh/${post.data.translationKey}`, 'zh'),
 };
 
 // Article structured data is emitted by BaseHead via the type=article prop
@@ -63,7 +63,7 @@ void articleJsonLd;
     <Breadcrumb
       items={[
         { label: t(locale, 'nav.home'), href: '/' },
-        { label: t(locale, 'nav.blog'), href: '/blog' },
+        { label: t(locale, 'nav.blog'), href: '/content' },
         { label: post.data.title },
       ]}
     />

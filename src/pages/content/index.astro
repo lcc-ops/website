@@ -7,7 +7,7 @@ import { getLocaleFromUrl, localizePath } from '~/i18n/utils';
 
 const locale: Locale = getLocaleFromUrl(Astro.url);
 
-const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const allPosts = await getCollection('content', ({ data }) => !data.draft);
 const localeOf = (id: string): Locale | undefined =>
   id.split('/').pop() as Locale | undefined;
 const posts = allPosts
@@ -20,14 +20,14 @@ for (const p of allPosts) {
   const loc = localeOf(p.id);
   if (!loc) continue;
   const k = p.data.translationKey;
-  byKey.set(k, { ...(byKey.get(k) ?? {}), [loc]: `/blog/${p.id}` });
+  byKey.set(k, { ...(byKey.get(k) ?? {}), [loc]: `/content/${p.id}` });
 }
 ---
-<BaseLayout title={`Blog · lcc-ops`} description="All posts in the blog.">
+<BaseLayout title={`Content · lcc-ops`} description="All posts.">
   <section class="container-page py-16">
-    <h1 class="text-3xl font-semibold mb-2">Blog</h1>
+    <h1 class="text-3xl font-semibold mb-2">{locale === 'zh' ? '内容' : 'Content'}</h1>
     <p class="mb-8" style="color: var(--color-fg-soft);">
-      {posts.length} {posts.length === 1 ? 'post' : 'posts'}
+      {posts.length} {locale === 'zh' ? (posts.length === 1 ? '篇文章' : '篇文章') : (posts.length === 1 ? 'post' : 'posts')}
     </p>
     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {posts.map((post) => {
