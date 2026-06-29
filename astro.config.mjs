@@ -9,7 +9,7 @@ import rehypeExternalLinks from 'rehype-external-links';
 import remarkGfm from 'remark-gfm';
 
 export default defineConfig({
-  site: 'https://website.2088643687.workers.dev',
+  site: 'https://kuajinglab.xyz',
   output: 'server',
   adapter: cloudflare({
     imageService: 'cloudflare',

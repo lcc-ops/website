@@ -1,6 +1,6 @@
 import { defaultLocale, type Locale, languages } from './ui.ts';
 
-export const SITE_URL = 'https://website.2088643687.workers.dev';
+export const SITE_URL = 'https://kuajinglab.xyz';
 
 export function getLocaleFromUrl(url: URL): Locale {
   const [, seg] = url.pathname.split('/');
