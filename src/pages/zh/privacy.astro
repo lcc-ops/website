@@ -1,18 +1,90 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
+import { SITE } from '~/site.config';
 ---
-<BaseLayout title="隐私政策" description="本站数据使用说明。">
+<BaseLayout
+  title="隐私政策"
+  description="本站如何收集、使用与保护你的数据。符合 GDPR 与中国《个人信息保护法》。"
+>
   <article class="container-prose py-16 prose prose-neutral dark:prose-invert">
     <h1>隐私政策</h1>
-    <p>最后更新：2026-06-30</p>
+    <p><strong>最后更新：</strong>2026-06-30</p>
 
-    <h2>数据收集</h2>
-    <p>默认情况下本站不收集任何个人身份信息。如果启用统计或广告，相关服务方会按其自身政策处理数据。</p>
+    <p>
+      <strong>数据控制者：</strong>{SITE.author} · 联系方式：<a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+    </p>
 
-    <h2>Cookie</h2>
-    <p>本站仅使用 localStorage 记录主题与语言偏好。默认不使用追踪 Cookie；启用广告后另行告知。</p>
+    <h2>1. 我们收集哪些数据</h2>
+    <p>默认情况下本站不收集任何个人身份信息。具体而言，当你访问页面时，内容分发网络（Cloudflare）仅会处理为送达页面所必需的最少技术信息：你的 IP 地址（日志中截断/匿名化）、浏览器类型、来源页和时间戳。这些日志仅保留最多 30 天，用于反滥用与安全。</p>
+    <p>在你通过 Cookie 横幅明确同意后，以下情况可能额外适用：</p>
+    <ul>
+      <li><strong>Cloudflare Web Analytics</strong>——本站自建、无 Cookie 的聚合页面浏览统计。不含个人数据，无跨站追踪。</li>
+      <li><strong>Google AdSense</strong>（启用时）——会设置 Cookie 以投放与衡量广告。个性化广告需要你的明确同意；在法规允许时我们默认投放非个性化广告。</li>
+      <li><strong>联盟 / 合作伙伴链接</strong>——外链到 Shopify、Stripe、PayPal、17Track、Etsy、亚马逊 FBA 工具时，对方域可能设置第一方 Cookie 用于归因。我们从未从这些合作方收到个人数据，仅能看到聚合点击数。</li>
+    </ul>
+    <p>本站所有计算器完全在你的浏览器内运行，你输入的数字不会发送到任何服务器。</p>
 
-    <h2>联系</h2>
-    <p>隐私相关问题请通过关于页联系。</p>
+    <h2>2. 我们设置的 localStorage</h2>
+    <p>我们使用浏览器的 localStorage（不是 Cookie）保存：</p>
+    <ul>
+      <li><code>theme</code>——浅色/深色主题偏好。</li>
+      <li><code>locale</code>——语言偏好。</li>
+      <li><code>cookie-consent</code>——你的同意选择。</li>
+    </ul>
+    <p>你可以随时通过浏览器设置清除 localStorage。这样会重置偏好，但不会删除我们可能持有的服务端数据（本站无服务端个人数据存储）。</p>
+
+    <h2>3. 处理依据</h2>
+    <p>如果你在 EEA、英国、瑞士或中国境内，我们的处理依据如下：</p>
+    <ul>
+      <li><strong>合法权益（GDPR 第 6(1)(f) 条）</strong>——运行站点、防止滥用、回复直接询问。</li>
+      <li><strong>同意（GDPR 第 6(1)(a) 条 / 中国《个保法》第 13 条）</strong>——分析与广告 Cookie，仅在你点击横幅"接受"后设置。你可以随时撤回。</li>
+      <li><strong>合同（第 6(1)(b) 条）</strong>——不适用。本站不提供用户账号或付费服务。</li>
+    </ul>
+
+    <h2>4. 数据保留期</h2>
+    <p>我们不维护用户数据库。唯一的持久状态存储于你自己的浏览器（localStorage）。Cloudflare CDN 日志在 30 天后自动删除。如启用 Cloudflare Web Analytics，聚合统计将无限期保留，但不含个人数据。</p>
+
+    <h2>5. 第三方处理者</h2>
+    <table>
+      <thead>
+        <tr><th>提供方</th><th>用途</th><th>地域</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Cloudflare, Inc.</td><td>CDN、边缘托管、DDoS 防护、可选 Web Analytics</td><td>全球边缘，主节点在欧盟/美国</td></tr>
+        <tr><td>Google LLC（AdSense）</td><td>广告（仅在启用时）</td><td>美国、欧盟（须符合 TFC / 欧盟用户同意政策）</td></tr>
+        <tr><td>合作站点（Shopify、Stripe、PayPal、17Track、Etsy、Amazon）</td><td>外链归因</td><td>视合作方而定</td></tr>
+      </tbody>
+    </table>
+    <p>我们不出售、出租、交换你的数据。我们不与上表未列出的任何方共享数据。</p>
+
+    <h2>6. 国际数据传输</h2>
+    <p>本站通过 Cloudflare 的全球边缘网络提供服务。你的请求可能在你的区域内处理，或在不可用时跨区域处理。使用本站即表示你知悉你的 IP 地址与请求元数据可能经过你所在国/地区之外的 Cloudflare 基础设施传输。Cloudflare 参与了 EU-US Data Privacy Framework。</p>
+
+    <h2>7. 你的权利</h2>
+    <p>如果你在 EEA、英国、瑞士、加州、弗吉尼亚、中国或类似司法管辖区，你有权：</p>
+    <ul>
+      <li><strong>访问</strong>——索取我们持有的你的个人数据副本。</li>
+      <li><strong>更正</strong>——更正不准确或不完整的数据。</li>
+      <li><strong>删除</strong>——要求删除你的数据（"被遗忘权"）。</li>
+      <li><strong>限制处理</strong>——在投诉处理期间限制我们处理你的数据。</li>
+      <li><strong>可携带</strong>——以结构化、机器可读格式接收你的数据。</li>
+      <li><strong>反对</strong>——反对基于合法权益的处理，包括画像。</li>
+      <li><strong>撤回同意</strong>——随时撤回（仅对未来生效），通过清除 localStorage 中的 <code>cookie-consent</code> 或发邮件给我们。</li>
+      <li><strong>投诉</strong>——向你所在地的数据保护机构投诉（例如法国的 CNIL、英国的 ICO、西班牙的 AEPD，或中国网信办、行业主管部门）。</li>
+    </ul>
+    <p>如要行使上述任何权利，请发邮件到 <a href={`mailto:${SITE.email}`}>{SITE.email}</a>。我们将在 30 天内回复。</p>
+
+    <h2>8. 儿童</h2>
+    <p>本站不针对 16 岁以下儿童，亦不知情地收集他们的数据。如你认为有儿童提供了数据，请联系我们，我们将予以删除。</p>
+
+    <h2>9. 安全</h2>
+    <p>所有流量均使用 HTTPS（TLS），仅由 Cloudflare 边缘节点提供。本站无登录系统、无用户数据库、无后端个人数据存储。风险面仅限于你的请求到边缘节点之间经过的数据。</p>
+
+    <h2>10. 政策变更</h2>
+    <p>如我们的处理方式发生变更，我们会更新本页并刷新顶部"最后更新"日期。重大变更将在首页通过横幅提示至少 14 天。</p>
+
+    <h2>11. 联系方式</h2>
+    <p>邮箱：<a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+    <p>地址：不适用——本站为个人站点，无注册办公地。</p>
   </article>
 </BaseLayout>

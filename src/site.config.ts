@@ -5,7 +5,7 @@ export const SITE = {
     'Pricing formulas, shipping math, payment fees and ad ROI for cross-border sellers. Free calculators, no signup.',
   shortName: 'CCL',
   author: 'lcc-ops',
-  email: 'contact@example.com',
+  email: 'contact@kuajinglab.xyz',
   social: {
     github: 'https://github.com/lcc-ops',
   },

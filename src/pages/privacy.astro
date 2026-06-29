@@ -1,31 +1,90 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
-import { type Locale } from '~/i18n/ui';
-import { getLocaleFromUrl } from '~/i18n/utils';
-
-const locale: Locale = getLocaleFromUrl(Astro.url);
+import { SITE } from '~/site.config';
 ---
 <BaseLayout
-  title={locale === 'en' ? 'Privacy Policy' : '隐私政策'}
-  description={locale === 'en' ? 'How this site handles data.' : '本站数据使用说明。'}
+  title="Privacy Policy"
+  description="How this site collects, uses and protects your data. GDPR-compliant."
 >
   <article class="container-prose py-16 prose prose-neutral dark:prose-invert">
-    <h1>{locale === 'en' ? 'Privacy Policy' : '隐私政策'}</h1>
-    <p>{locale === 'en' ? 'Last updated: 2026-06-30' : '最后更新：2026-06-30'}</p>
+    <h1>Privacy Policy</h1>
+    <p><strong>Last updated:</strong> 2026-06-30</p>
 
-    <h2>{locale === 'en' ? 'Data we collect' : '数据收集'}</h2>
-    <p>{locale === 'en'
-      ? 'By default this site collects nothing personally identifying. If you opt in to analytics or advertising, the relevant provider will process data per their own policy.'
-      : '默认情况下本站不收集任何个人身份信息。如果启用统计或广告，相关服务方会按其自身政策处理数据。'
-    }</p>
+    <p>
+      <strong>Data controller:</strong> {SITE.author} · Contact: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+    </p>
 
-    <h2>{locale === 'en' ? 'Cookies' : 'Cookie'}</h2>
-    <p>{locale === 'en'
-      ? 'We use a tiny localStorage key to remember your theme and language preference. We do not use tracking cookies unless advertising is enabled.'
-      : '本站仅使用 localStorage 记录主题与语言偏好。默认不使用追踪 Cookie；启用广告后另行告知。'
-    }</p>
+    <h2>1. What data we collect</h2>
+    <p>By default this site collects nothing personally identifying. Specifically, when you visit a page, our content delivery network (Cloudflare) processes only the technical minimum needed to deliver the page: your IP address (truncated / anonymized in logs), browser type, referrer and timestamp. These logs are retained for up to 30 days for abuse and security purposes.</p>
+    <p>With your consent (via the cookie banner), the following may additionally apply:</p>
+    <ul>
+      <li><strong>Cloudflare Web Analytics</strong> — first-party, cookie-less, aggregated page-view counts. No personal data, no cross-site tracking.</li>
+      <li><strong>Google AdSense</strong> (when enabled) — sets cookies to deliver and measure ads. Personalized ads require your consent; we default to non-personalized ads where allowed by regulation.</li>
+      <li><strong>Affiliate / partner links</strong> — outbound links to Shopify, Stripe, PayPal, 17Track, Etsy and Amazon FBA tools may set first-party cookies on the partner's domain to attribute a referral. We never receive personally identifying data from these partners; we only ever see aggregated click counts.</li>
+    </ul>
+    <p>Tools on this site run entirely in your browser. The numbers you enter are never sent to a server.</p>
 
-    <h2>{locale === 'en' ? 'Contact' : '联系'}</h2>
-    <p>{locale === 'en' ? 'For privacy questions, see the About page for contact details.' : '隐私相关问题请通过关于页联系。'}</p>
+    <h2>2. localStorage we set</h2>
+    <p>We use the browser's localStorage (not cookies) for:</p>
+    <ul>
+      <li><code>theme</code> — your light / dark preference.</li>
+      <li><code>locale</code> — your language preference.</li>
+      <li><code>cookie-consent</code> — your opt-in or opt-out choice.</li>
+    </ul>
+    <p>You can clear localStorage at any time via your browser settings. Doing so resets preferences but does not delete any data we may hold server-side.</p>
+
+    <h2>3. Legal basis for processing</h2>
+    <p>If you are in the EEA, UK or Switzerland, our legal bases under the GDPR are:</p>
+    <ul>
+      <li><strong>Legitimate interest (Art. 6(1)(f))</strong> — operating the site, preventing abuse, answering direct enquiries.</li>
+      <li><strong>Consent (Art. 6(1)(a))</strong> — analytics and advertising cookies, set only after you click "Accept" on the cookie banner. You may withdraw consent at any time.</li>
+      <li><strong>Contract (Art. 6(1)(b))</strong> — none. We do not run any user account or paid service.</li>
+    </ul>
+
+    <h2>4. Data retention</h2>
+    <p>We do not maintain a user database. The only persistent state is in your own browser (localStorage). Cloudflare CDN logs are auto-deleted after 30 days. If we enable Cloudflare Web Analytics, aggregated counts are retained indefinitely but contain no personal data.</p>
+
+    <h2>5. Third-party processors</h2>
+    <table>
+      <thead>
+        <tr><th>Provider</th><th>Purpose</th><th>Region</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Cloudflare, Inc.</td><td>CDN, edge hosting, DDoS protection, optional Web Analytics</td><td>Global edge; primary in EU/US</td></tr>
+        <tr><td>Google LLC (AdSense)</td><td>Advertising (only when enabled)</td><td>US, EU (subject to TFC / EU user consent policy)</td></tr>
+        <tr><td>Partner sites (Shopify, Stripe, PayPal, 17Track, Etsy, Amazon)</td><td>Outbound referral attribution</td><td>Per partner</td></tr>
+      </tbody>
+    </table>
+    <p>We do not sell, rent or trade your data. We do not share data with parties not listed above.</p>
+
+    <h2>6. International data transfers</h2>
+    <p>The site is served from Cloudflare's global edge network. Your request may be handled on a node in your region or, if unavailable, in another region. By using the site you acknowledge that your IP address and request metadata will transit through Cloudflare infrastructure that may be outside your country of residence. Cloudflare participates in the EU-US Data Privacy Framework.</p>
+
+    <h2>7. Your rights</h2>
+    <p>If you are in the EEA, UK, Switzerland, California, Virginia, or another jurisdiction with similar protections, you have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> — request a copy of any personal data we hold about you.</li>
+      <li><strong>Rectification</strong> — correct inaccurate or incomplete data.</li>
+      <li><strong>Erasure</strong> — request deletion of your data ("right to be forgotten").</li>
+      <li><strong>Restriction</strong> — limit how we process your data while a complaint is resolved.</li>
+      <li><strong>Portability</strong> — receive your data in a structured, machine-readable format.</li>
+      <li><strong>Object</strong> — object to processing based on legitimate interest, including profiling.</li>
+      <li><strong>Withdraw consent</strong> — at any time, with future effect only, by clearing <code>cookie-consent</code> in localStorage or emailing us.</li>
+      <li><strong>Lodge a complaint</strong> — with your local data protection authority (e.g. CNIL in France, ICO in the UK, AEPD in Spain, or the equivalent in your jurisdiction).</li>
+    </ul>
+    <p>To exercise any of these rights, email <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. We respond within 30 days.</p>
+
+    <h2>8. Children</h2>
+    <p>This site is not directed at children under 16, and we do not knowingly collect data from them. If you believe a child has provided data, contact us and we will delete it.</p>
+
+    <h2>9. Security</h2>
+    <p>We use HTTPS (TLS) for all traffic, served exclusively from Cloudflare's edge. The site has no login system, no user database and no backend storage of personal data. The risk surface is limited to what transits your request to the edge.</p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>We will update this page and the "Last updated" date above if our practices change. Material changes will be flagged in a banner on the home page for at least 14 days.</p>
+
+    <h2>11. Contact</h2>
+    <p>Email: <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+    <p>Postal: not applicable — this is a personal site with no registered office.</p>
   </article>
 </BaseLayout>

@@ -13,6 +13,12 @@ const locale: Locale = getLocaleFromUrl(Astro.url);
     <h1>{locale === 'en' ? 'Terms of Service' : '服务条款'}</h1>
     <p>{locale === 'en' ? 'Last updated: 2026-06-30' : '最后更新：2026-06-30'}</p>
 
+    <h2>{locale === 'en' ? 'No professional advice' : '不构成专业建议'}</h2>
+    <p>{locale === 'en'
+      ? 'The calculators, formulas, and worked examples on this site are provided for general informational and educational purposes only. They are not, and should not be relied upon as, professional financial, accounting, tax, legal or business advice. Pricing, margin, ROAS, FX and storage estimates depend on assumptions, market conditions and inputs that change frequently; the actual numbers for your business may differ materially. Before making any business, financial or legal decision based on the output of these tools, consult a qualified professional (such as a licensed accountant, financial advisor or attorney) in your jurisdiction. Use of the tools and information is at your own risk; the author disclaims all liability for losses arising from such use.'
+      : '本站提供的所有计算器、公式与算账示例仅用于一般信息与教育目的，不构成专业财务、会计、税务、法律或经营建议，亦不应被依赖为上述建议。定价、利润率、ROAS、汇率与仓储估算依赖于会频繁变化的假设、市场条件与输入参数；你业务场景下的实际数字可能与此存在重大差异。在依据本站工具的输出做出任何业务、财务或法律决定前，请咨询你所在司法管辖区的合格专业人士（如持牌会计师、财务顾问或律师）。使用本站工具与信息所产生的风险由你本人承担；作者对因此产生的任何损失不承担责任。'
+    }</p>
+
     <h2>{locale === 'en' ? 'Content' : '内容'}</h2>
     <p>{locale === 'en'
       ? 'All articles are provided as-is for informational purposes. The author is not liable for decisions made based on the content.'
