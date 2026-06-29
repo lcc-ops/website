@@ -3,9 +3,9 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import PostCard from '~/components/PostCard.astro';
 import { type Locale } from '~/i18n/ui';
-import { getLocaleFromUrl, localizePath } from '~/i18n/utils';
+import { localizePath } from '~/i18n/utils';
 
-const locale: Locale = getLocaleFromUrl(Astro.url);
+const locale: Locale = 'zh';
 
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const localeOf = (id: string): Locale | undefined =>
@@ -14,7 +14,6 @@ const posts = allPosts
   .filter((p) => localeOf(p.id) === locale)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-// group by translationKey
 const byKey = new Map<string, { en?: string; zh?: string }>();
 for (const p of allPosts) {
   const loc = localeOf(p.id);
@@ -31,7 +30,7 @@ for (const p of allPosts) {
     </p>
     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {posts.map((post) => {
-        const other = locale === 'en' ? 'zh' : 'en';
+        const other: Locale = 'en';
         const translation = byKey.get(post.data.translationKey)?.[other];
         return <PostCard post={post} locale={locale} translationLink={translation} />;
       })}
