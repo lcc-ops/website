@@ -48,17 +48,70 @@ function toolTranslationFor(slug: string, target: Locale) {
 const featuredCategories = ['pricing', 'shipping', 'payment', 'ads', 'ops'];
 ---
 <BaseLayout title={SITE.title} description={SITE.description}>
-  <section class="container-page py-20 sm:py-28">
-    <p class="badge mb-4">{t(locale, 'home.hero.eyebrow')}</p>
-    <h1 class="text-4xl sm:text-6xl font-semibold tracking-tight max-w-4xl">
-      {t(locale, 'home.hero.title')}
-    </h1>
-    <p class="mt-5 text-lg max-w-2xl" style="color: var(--color-fg-soft);">
-      {t(locale, 'home.hero.subtitle')}
-    </p>
-    <div class="mt-8 flex flex-wrap gap-3">
-      <a href={localizePath('/tools', locale)} class="btn btn-primary">{t(locale, 'home.hero.cta.calculators')} →</a>
-      <a href={localizePath('/content', locale)} class="btn">{t(locale, 'home.hero.cta.guides')} →</a>
+  <section class="container-page py-16 sm:py-24">
+    <div class="grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+      <div>
+        <p class="badge mb-4">{t(locale, 'home.hero.eyebrow')}</p>
+        <h1 class="text-4xl sm:text-6xl font-semibold tracking-tight max-w-4xl">
+          {t(locale, 'home.hero.title')}
+        </h1>
+        <p class="mt-5 text-lg max-w-2xl" style="color: var(--color-fg-soft);">
+          {t(locale, 'home.hero.subtitle')}
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href={localizePath('/tools', locale)} class="btn btn-primary">{t(locale, 'home.hero.cta.calculators')} →</a>
+          <a href={localizePath('/content', locale)} class="btn">{t(locale, 'home.hero.cta.guides')} →</a>
+        </div>
+        <dl class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl">
+          <div class="card p-4">
+            <dt class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{t(locale, 'home.stats.calculators')}</dt>
+            <dd class="mt-1 text-2xl font-semibold">5</dd>
+          </div>
+          <div class="card p-4">
+            <dt class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{t(locale, 'home.stats.currencies')}</dt>
+            <dd class="mt-1 text-2xl font-semibold">4</dd>
+          </div>
+          <div class="card p-4">
+            <dt class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{t(locale, 'home.stats.guides')}</dt>
+            <dd class="mt-1 text-2xl font-semibold">9</dd>
+          </div>
+          <div class="card p-4">
+            <dt class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{t(locale, 'home.stats.uptime')}</dt>
+            <dd class="mt-1 text-2xl font-semibold">100%</dd>
+          </div>
+        </dl>
+      </div>
+      <aside aria-labelledby="hero-preview-label" class="card p-6 sm:p-8">
+        <div class="flex items-center justify-between mb-6">
+          <p id="hero-preview-label" class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">
+            {t(locale, 'home.preview.label')}
+          </p>
+          <span class="inline-flex h-2 w-2 rounded-full bg-emerald-500" aria-hidden="true"></span>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-3">
+          <div class="rounded-lg p-4" style="background: var(--color-bg-soft);">
+            <p class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{t(locale, 'home.preview.price')}</p>
+            <p class="mt-2 text-2xl font-semibold tabular-nums">$24.85</p>
+            <p class="mt-1 text-xs" style="color: var(--color-fg-soft);">成本 $8 · 利润率 30%</p>
+          </div>
+          <div class="rounded-lg p-4" style="background: var(--color-bg-soft);">
+            <p class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{t(locale, 'home.preview.cbm')}</p>
+            <p class="mt-2 text-2xl font-semibold tabular-nums">80.0 kg</p>
+            <p class="mt-1 text-xs" style="color: var(--color-fg-soft);">空运 · 按体积</p>
+          </div>
+          <div class="rounded-lg p-4" style="background: var(--color-bg-soft);">
+            <p class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{t(locale, 'home.preview.breakEven')}</p>
+            <p class="mt-2 text-2xl font-semibold tabular-nums">1.85x</p>
+            <p class="mt-1 text-xs" style="color: var(--color-fg-soft);">客单价 $45 · 利润率 25%</p>
+          </div>
+        </div>
+        <div class="mt-6 pt-6 border-t flex items-center justify-between" style="border-color: var(--color-border);">
+          <p class="text-sm" style="color: var(--color-fg-soft);">输入即算——直接打开下方任一计算器体验。</p>
+          <a href={localizePath('/tools', locale)} class="text-sm font-medium hover:text-[var(--color-accent)]">
+            {t(locale, 'home.hero.cta.calculators')} →
+          </a>
+        </div>
+      </aside>
     </div>
   </section>
 

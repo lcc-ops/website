@@ -39,20 +39,54 @@ The tool returns:
 
 Defaults assume mid-market reference rates as of writing; your actual rate depends on the day. The **provider with the smallest gap between its fee column and the sum of others** is the winner.
 
+## Sample receive amounts (USD → CNY, $10,000)
+
+| Provider | FX margin | Effective rate | Receive CNY | Loss vs mid-market |
+|---|---|---|---|---|
+| Mid-market (reference) | 0% | 7.25 | ¥72,500 | ¥0 |
+| PayPal | 3.5% | 6.996 | ¥69,963 | ¥2,537 |
+| Wise | 0.41% | 7.220 | ¥72,203 | ¥297 |
+| Airwallex | 0.35% | 7.225 | ¥72,246 | ¥254 |
+
+On a single $10k transfer, the gap between PayPal and Airwallex is **~$2,283 in your favor**. Multiply by 12 monthly transfers and you're at $27k/year — meaningful for any cross-border operator.
+
 ## Common gotchas
 
 - **Intermediary bank fees** (often $15–25 per wire) are not modeled here. Wise and Airwallex both avoid these by using local rails in 60+ countries.
 - **Receiving fees**: many providers charge for receiving inbound wires. Stripe, Wise, Airwallex have free receiving for major currencies.
 - **Holding balances**: leaving money in a Wise multi-currency wallet gives you mid-market when you transfer between currencies inside the wallet — useful for paying suppliers in EUR while customers pay in USD.
+- **Forward contracts**: above $50k/month, Airwallex and PingPong offer locked-in FX rates via forward contracts. The calculator doesn''t model these; talk to the provider.
+
+## Common mistakes
+
+- **Trusting the "no fee" receipt** — PayPal shows 0% on receipt but bundles 3–4% into the FX rate on withdrawal. Always compare against the mid-market rate you see on Google.
+- **Wiring in USD to a domestic bank that converts for you** — Chinese state banks typically add 1–2% on top of mid-market and charge a $20–40 wire fee. Worse than PayPal.
+- **Ignoring intermediary bank fees** — a SWIFT wire from a US bank to a Chinese bank typically triggers two intermediary banks, each $15–25.
+- **Leaving large balances on a non-interest-bearing platform** — Wise and Airwallex pay ~3% on USD float (via treasury bills); idle balances are working for you.
 
 ## When to switch
 
 - **Under $10k/month**: Wise Business — best mix of cost, speed (1–2 days) and multi-currency support.
 - **$10k–$50k/month**: Airwallex — lower effective rate, prepaid cards, batch payouts.
 - **$50k+/month**: Airwallex or PingPong — both offer treasury management and FX hedging on forward contracts.
+- **Pure USD recipients with a US LLC**: open a Mercury or Relay account, take USD via Stripe ACH, pay vendors via ACH. Zero conversion, zero wire fees.
 
-## Tools
+## When this calculator is not enough
+
+- **Crypto on/off-ramps** (USDC → USD) have their own fee structure.
+- **High-volume forward contracts** — talk to Airwallex treasury or a corporate FX desk for sub-0.1% pricing.
+- **Regulated corridors** (RU, IR, NG) may have sanctions or compliance limits that block all three providers.
+
+## Workflow
+
+1. Pull your last 90 days of cross-border payout amounts by currency.
+2. Run this calculator for the largest currency pair you settle.
+3. Cross-check the gap against the table above for your band.
+4. If switching, open Wise Business first (1-day approval), then Airwallex (3–7 days) — run both for 30 days to compare real rates.
+
+## Tools & reading
 
 - **[Pricing Calculator](/tools/pricing-calculator/)** — incorporate FX loss into pricing
 - **[Fee Comparator](/tools/fee-comparator/)** — compute processor-side fees
+- **[ROAS Calculator](/tools/roas-calculator/)** — fold FX margin into ad budget math
 - **Strategy article** — [PayPal vs Stripe fees](/content/paypal-vs-stripe-fees/)

@@ -69,3 +69,37 @@ For a full P&L, use the **profit-tracking spreadsheet** in our resources section
 | Forgetting fixed per-order fees | Always add them — they compound at scale |
 | Ignoring shipping in the formula | Shipping is a cost, not a marketing line item |
 | Mixing currencies | Convert everything to one currency first |
+
+## Reference scenarios (US Shopify defaults)
+
+| Cost | Shipping | Commission | Payment | Fixed | Margin | Suggested | Break-even |
+|---|---|---|---|---|---|---|---|
+| $5 | $3.50 | 2.9% | 2.9% | $0.30 | 30% | $18.46 | $9.69 |
+| $8 | $3.50 | 2.9% | 2.9% | $0.30 | 30% | $24.85 | $13.05 |
+| $15 | $5.00 | 2.9% | 2.9% | $0.30 | 25% | $33.16 | $24.87 |
+| $40 | $8.00 | 6.5% (Etsy) | 3% | $0.30 | 35% | $98.43 | $63.98 |
+
+Notice how a **2% effective fee increase** (Etsy 6.5% + 3% vs Shopify 2.9% bundled) raises the suggested price ~3.6% on the $40 product — small per unit, large across a catalog.
+
+## When this calculator is not enough
+
+- **Tiered or volume pricing** — B2B or wholesale SKUs need a quantity-break table; this assumes one unit price.
+- **Bundle / kit pricing** — component cost allocation is non-trivial; build a separate model.
+- **Subscription / recurring** — first-order math is fine, but LTV/CAC math (see ROAS calculator) drives the real margin.
+- **Returns-heavy categories** — bake 5–15% return cost into your landed cost before computing price.
+- **FX-sensitive supply chains** — if your cost is in CNY and you sell in USD, recompute weekly; the rate alone can swing margin 2–4%.
+
+## Workflow
+
+1. Pull **actual** landed cost (goods + freight + duties) per SKU, not supplier FOB.
+2. Add platform commission + payment fee + per-order fixed fee from your storefront contract.
+3. Run this calculator at your realistic target margin (start at 25–30%).
+4. Cross-check the suggested price against current market on Amazon / Etsy / Shopify search.
+5. If suggested price is above market, walk the levers: cost → shipping → fee negotiation → bundle.
+
+## Tools & reading
+
+- **[ROAS Calculator](/tools/roas-calculator/)** — what ad spend can your margin support?
+- **[Fee Comparator](/tools/fee-comparator/)** — set the right payment fee assumption
+- **[CBM Calculator](/tools/cbm-calculator/)** — model freight accurately per SKU
+- **Strategy article** — [Pricing formula explained](/content/pricing-formula-explained/)

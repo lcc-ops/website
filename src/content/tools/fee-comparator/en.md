@@ -38,20 +38,55 @@ The tool returns:
 
 Defaults assume **PayPal commercial transactions** (4.4% + $0.30) and **Stripe standard card** (2.9% + $0.30 base, with an estimated 1.5% cross-border card surcharge baked into Stripe's effective rate for international orders). Adjust the inputs to your actual mix.
 
+## Effective fee across order volumes
+
+| Unit price | Monthly orders | Revenue | PayPal fee | Stripe fee | Gap / month | Gap / year |
+|---|---|---|---|---|---|---|
+| $25 | 200 | $5,000 | $280 | $194 | $86 | $1,032 |
+| $35 | 300 | $10,500 | $569 | $404 | $165 | $1,980 |
+| $60 | 500 | $30,000 | $1,590 | $1,140 | $450 | $5,400 |
+| $120 | 150 | $18,000 | $948 | $696 | $252 | $3,024 |
+
+The gap scales **roughly linearly with revenue**, not with order count. At $30k/month, PayPal's premium is ~$5,400/year — that's a full-time employee in some markets. Stripe wins on standard domestic card volume; PayPal wins only when buyers specifically refuse to pay by card.
+
 ## What's NOT in this calculator
 
 - **Chargeback / dispute fees** ($15–20 per case) — plan a reserve.
 - **Subscription billing discounts** — Stripe Billing and PayPal Subscriptions have different retained-rate cards.
 - **Local methods** (iDEAL, Klarna, Alipay) — providers like Adyen, Mollie, Airwallex Payment Acceptance aggregate these with one fee.
+- **Card-present vs card-not-present** — keyed and online transactions price differently from POS.
+
+## Common mistakes
+
+- **Reading "no monthly fee" as free** — PayPal has no monthly fee but a higher per-transaction rate. Run the math.
+- **Ignoring the 1.5% international surcharge** — it stacks on top of the base rate. A 4.4% + 1.5% PayPal cross-border transaction costs 5.9% before FX.
+- **Forgetting currency conversion** — if your customer pays in EUR and you settle in USD, PayPal takes 3–4% on top of the displayed rate. Stripe is 1%.
+- **Underestimating chargebacks** — budget 0.1–0.3% of revenue as a reserve; for high-AOV niches (electronics, supplements) it can hit 1%.
 
 ## When to switch providers
 
 - **You're under $50k/month** and primarily domestic: PayPal's check is rare; Stripe tends to be 0.5–1% cheaper.
 - **You sell across borders**: Stripe's interbank FX is 1–2% cheaper than PayPal's embedded margin.
 - **You have B2B or older EU customers**: keep PayPal as a secondary option even if Stripe is primary — conversion often increases.
+- **You sell subscriptions**: Stripe Billing's retained card rate is materially lower than PayPal Subscriptions at scale.
+- **You want local methods** (iDEAL, Bancontact, BLIK): Adyen or Mollie, not PayPal/Stripe direct.
 
-## Tools
+## When this calculator is not enough
+
+- **Volume-tiered pricing** kicks in at $100k+/month — contact both for custom rates; this calculator assumes posted rates.
+- **Marketplace-specific fees** (Etsy Payments, Amazon Seller Central) have their own rate cards.
+- **Crypto or BNPL** (Klarna, Afterpay) sit outside both PayPal and Stripe's standard pricing.
+
+## Workflow
+
+1. Pull your last 90 days of revenue and order count from your storefront.
+2. Run this calculator with **actual** unit price (median, not list).
+3. Cross-check the gap with the **Effective Fee** table above for your revenue band.
+4. If switching, run a 30-day A/B test on Stripe Checkout before migrating fully.
+
+## Tools & reading
 
 - **[Pricing Calculator](/tools/pricing-calculator/)** — feed the effective rate back into your margin
 - **[FX Withdraw Calculator](/tools/fx-withdraw-calculator/)** — measure post-fee receive amount for payouts
+- **[ROAS Calculator](/tools/roas-calculator/)** — fold the effective rate into break-even ad math
 - **Strategy article** — [PayPal vs Stripe fees deep dive](/content/paypal-vs-stripe-fees/)

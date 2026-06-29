@@ -42,11 +42,29 @@ The tool returns:
 
 For mixed shipments, run the calculator once per SKU and sum the chargeable weights.
 
+## Real shipment reference
+
+| Product | Carton L×W×H (cm) | Weight (kg) | Qty | Mode | Total CBM | Chargeable | Per-unit cost impact |
+|---|---|---|---|---|---|---|---|
+| Phone case | 50 × 40 × 30 | 2.5 | 20 | Air | 0.12 | 20.0 kg (vol) | $0.30 / unit (air) |
+| Cotton T-shirt | 60 × 40 × 40 | 12 | 50 | Air | 0.48 | 80.0 kg (vol) | $0.18 / unit |
+| Pillow insert | 60 × 40 × 40 | 1.2 | 80 | Sea | 0.77 | 76.8 kg (vol) | $0.04 / unit (sea wins) |
+| Bluetooth speaker | 45 × 35 × 25 | 8 | 30 | Air | 0.118 | 30.0 kg (actual) | $0.12 / unit |
+
+Three of the four rows above are billed by **volumetric** weight, not actual weight — the cotton T-shirts look heavy (12 kg per carton) but volumetric 80 kg is what gets billed. The pillow insert example is the classic case where switching from air to sea halves the per-unit freight cost.
+
 ## Why the divisor matters
 
 The divisor is the carrier's price lever. Smaller divisor → larger volumetric weight → higher bill. Air freight's 6000 divisor effectively says "1 m³ of air freight equals 167 kg of product." Sea's 10000 divisor relaxes that to 100 kg per m³.
 
 If a forwarder quotes a different divisor (5000, 7000), ask **why**. Some markets (e.g. China domestic, certain Latam lanes) use non-standard divisors. The International Air Transport Association (IATA) standard is 6000.
+
+## Common mistakes
+
+- **Forgetting inner-pack density** — 50 phone cases packed into one 50×40×30 box with foam void fill changes the billable dimension but not the product weight.
+- **Mixing modes inside one PO** — the calculator assumes all units share the same mode. Run the math separately for each leg.
+- **Trusting supplier carton weights** — they often quote **net** weight. Add 8–15% for outer carton, pallet wrap, and dunnage.
+- **Ignoring carrier minimums** — many express couriers have a 21 kg minimum even for a 2 kg parcel, billed at the minimum rate.
 
 ## Practical tips
 
@@ -54,8 +72,23 @@ If a forwarder quotes a different divisor (5000, 7000), ask **why**. Some market
 - **Always measure the outer carton**, not the product. Pallet wrap and void fill add 5–10%.
 - **Group by destination and dim tier** if you ship multiple SKUs to optimize cartons per shipment.
 - **Ask about minimum chargeable weight** — many carriers have a 21 kg or 25 kg minimum even for tiny parcels.
+- **Quote with both divisors** — give your forwarder the air and sea numbers from this calculator, then negotiate from there.
 
-## Tools
+## When this calculator is not enough
+
+- **Multi-leg shipments** (factory → port → Amazon warehouse) need separate runs per leg with different divisors.
+- **FBA inbound** uses Amazon's own size tiers, not dim weight. See [Amazon FBA fee math](#) for the tier table.
+- **Hazardous or oversized cargo** triggers surcharge schedules beyond simple volumetric math.
+
+## Workflow
+
+1. Measure each SKU's outer carton after packing.
+2. Run this calculator once per SKU, export the chargeable weight.
+3. Cross-check against the forwarder's quote using both divisors.
+4. Feed total freight into the [Pricing Calculator](/tools/pricing-calculator/) for landed-cost pricing.
+
+## Tools & reading
 
 - **[Product Pricing Calculator](/tools/pricing-calculator/)** — fold shipping cost into your landed price
-- **Shipping math guide** — see [CBM and dimensional weight explained](/content/cbm-and-dimensional-weight/)
+- **[Fee Comparator](/tools/fee-comparator/)** — adjust margins for processor fees
+- **Shipping math guide** — [CBM and dimensional weight explained](/content/cbm-and-dimensional-weight/)

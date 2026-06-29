@@ -38,6 +38,18 @@ The tool returns:
 - **Target ROAS** — multiplier needed to hit your target margin after ad spend.
 - **Max CPA** — the most you can pay per acquired customer while staying break-even on order one.
 
+## Reference scenarios
+
+| Unit price | COGS+ship | Payment % | Target margin | Break-even | Target ROAS | Max CPA |
+|---|---|---|---|---|---|---|
+| $25 | $8 | 4% | 20% | 1.32x | 1.65x | $16.00 |
+| $45 | $14 | 4% | 25% | 1.41x | 1.85x | $29.20 |
+| $80 | $22 | 4% | 30% | 1.52x | 2.16x | $54.80 |
+| $150 | $45 | 5% | 35% | 1.67x | 2.56x | $97.50 |
+| $300 | $90 | 5% | 40% | 1.82x | 3.03x | $195.00 |
+
+Break-even moves slowly with target margin; max CPA moves linearly with unit price. The lever that breaks campaigns fastest is **payment fee drift** (FX surcharges, processor tier changes) — a 1% increase in effective fee requires ~10% more ROAS to compensate.
+
 ## Beyond ROAS: the levers
 
 ROAS is the output. The input levers are:
@@ -49,14 +61,32 @@ ROAS is the output. The input levers are:
 
 If ROAS is below target, walk each lever in order: **check CPM** (auction problems?), then **check CTR** (creative fatigue?), then **check CVR** (landing page mismatch?).
 
-## When ROAS lies
+## Common mistakes
 
-- **Attribution windows**: Facebook defaults to 7-day click + 1-day view. Set it explicitly.
-- **Brand vs non-brand**: brand search always ROAS-higher because the customer is pre-converted. Compare apples to apples.
-- **Cash vs accrual**: you may have paid for a click in May that converted in July. Use the platform's day-of-ad-spend view, not accounting date.
+- **Comparing ROAS across attribution windows** — Facebook 7-day click vs Google 30-day click is not apples-to-apples. Pin a window before benchmarking.
+- **Ignoring refunds and chargebacks** — they hit COGS twice (refund + lost acquisition cost). Add 2–5% to your target margin to absorb them.
+- **Forgetting creative fatigue** — if your ROAS drops 30% over 14 days with no CPM change, your creative is exhausted, not your audience.
+- **Using LTV math at first order** — break-even is order one. Use LTV math only after you have repeat purchase data; otherwise you're scaling unprofitable cohorts.
+- **Reading "target ROAS" as guaranteed** — it's the multiplier needed at your stated margin, not the actual ROAS your ads deliver.
 
-## Tools
+## When this calculator is not enough
+
+- **Subscription or LTV-driven businesses** — use cohort LTV / CAC instead of first-order ROAS.
+- **High return-rate niches** (apparel, beauty) — bake return rate into the margin assumption; 20% returns effectively erases a 25% target margin.
+- **B2B with long sales cycles** — use pipeline math, not ROAS.
+- **Tiered pricing or wholesale** — net per-order margin varies; this calculator assumes a single unit price.
+
+## Workflow
+
+1. Pull **actual** margin from your P&L (COGS + ship + processor + returns), not the headline margin.
+2. Run this calculator to get break-even and max CPA.
+3. Set ad-platform bid caps at 80% of max CPA — give the algorithm headroom to find conversions, then tighten.
+4. Compare platform-reported ROAS to bank-deposit ROAS weekly. A persistent 20%+ gap means attribution is broken.
+5. When ROAS drops, walk the levers in order: CPM → CTR → CVR → AOV.
+
+## Tools & reading
 
 - **[Pricing Calculator](/tools/pricing-calculator/)** — model fees into price
+- **[Fee Comparator](/tools/fee-comparator/)** — set the right payment fee assumption
 - **[FX Withdraw Calculator](/tools/fx-withdraw-calculator/)** — net out FX margin for payout planning
 - **Strategy article** — [ROAS formula and target benchmarks](/content/google-ads-roas-formula/)
