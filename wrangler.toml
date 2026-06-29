@@ -1,12 +1,9 @@
 name = "website"
 compatibility_date = "2025-01-01"
-pages_build_output_dir = "./dist"
+main = "./dist/_worker.js"
 
-# Cloudflare Pages project. Built with @astrojs/cloudflare and served
-# from the `dist/` directory produced by `astro build`.
-#
-# `pages_build_output_dir` is set automatically when the build is
-# run by Cloudflare's build system, so we don't hardcode it here.
+# Cloudflare Worker project. Built with @astrojs/cloudflare adapter
+# and served from the `dist/_worker.js` entrypoint produced by `astro build`.
 
 # Click-tracking KV for /go/:id redirects. Uncomment after running:
 #   npx wrangler kv:namespace create GO_STATS
