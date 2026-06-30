@@ -1,0 +1,288 @@
+---
+import { type Locale } from '~/i18n/ui';
+import { getLocaleFromUrl } from '~/i18n/utils';
+
+const locale: Locale = getLocaleFromUrl(Astro.url);
+const isEn = locale === 'en';
+const i18n = {
+  placeholder: isEn ? 'Search guides, tools, FAQ…' : '搜索指南、计算器、FAQ…',
+  empty: isEn ? 'Type to search.' : '输入关键词开始搜索。',
+  noResults: isEn ? 'No matches. Try fewer or different words.' : '无匹配。换个词试试。',
+  hint: isEn ? '↑↓ navigate · ⏎ open · esc close' : '↑↓ 选择 · ⏎ 打开 · esc 关闭',
+  loadError: isEn ? 'Search is temporarily unavailable.' : '搜索暂不可用。',
+};
+---
+<dialog
+  id="search-dialog"
+  aria-label={isEn ? 'Site search' : '站内搜索'}
+  class="search-dialog fixed inset-0 m-auto w-full max-w-2xl h-fit rounded-xl p-0 backdrop:bg-black/40 backdrop:backdrop-blur-sm"
+  style="background: var(--color-bg); color: var(--color-fg); border: 1px solid var(--color-border); box-shadow: 0 24px 64px -16px oklch(0% 0 0 / 0.35);"
+>
+  <div class="p-4 border-b" style="border-color: var(--color-border);">
+    <input
+      id="search-input"
+      type="search"
+      autocomplete="off"
+      spellcheck="false"
+      placeholder={i18n.placeholder}
+      class="w-full bg-transparent text-base outline-none"
+      style="color: var(--color-fg);"
+    />
+  </div>
+  <div id="search-results" class="max-h-[60vh] overflow-y-auto p-2">
+    <p id="search-empty" class="text-sm px-2 py-4" style="color: var(--color-fg-soft);">
+      {i18n.empty}
+    </p>
+    <ul id="search-list" class="space-y-1 hidden"></ul>
+  </div>
+  <div class="px-4 py-2 text-xs border-t" style="border-color: var(--color-border); color: var(--color-fg-soft);">
+    {i18n.hint}
+  </div>
+</dialog>
+
+<style>
+  .search-dialog::backdrop {
+    background: oklch(0% 0 0 / 0.4);
+  }
+  .search-result {
+    display: block;
+    padding: 0.6rem 0.75rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  .search-result:hover,
+  .search-result[aria-selected="true"] {
+    background: var(--color-accent-soft);
+  }
+  .search-result-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.15rem;
+  }
+  .search-result-excerpt {
+    font-size: 0.8rem;
+    color: var(--color-fg-soft);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .search-result-url {
+    font-size: 0.7rem;
+    color: var(--color-fg-soft);
+    opacity: 0.7;
+    margin-top: 0.15rem;
+  }
+</style>
+
+<script>
+  type IndexEntry = {
+    url: string;
+    locale: 'en' | 'zh';
+    title: string;
+    description: string;
+    category: string;
+    tags: string[];
+    excerpt: string;
+    body: string;
+  };
+
+  const dialog = document.getElementById('search-dialog') as HTMLDialogElement | null;
+  const input = document.getElementById('search-input') as HTMLInputElement | null;
+  const emptyEl = document.getElementById('search-empty');
+  const listEl = document.getElementById('search-list') as HTMLUListElement | null;
+  const toggleBtn = document.getElementById('search-toggle');
+
+  if (!dialog || !input || !listEl || !emptyEl || !toggleBtn) {
+    console.warn('Search dialog: required elements not found, search disabled.');
+  } else {
+    const idleMsg = emptyEl.textContent ?? '';
+    const currentLocale: IndexEntry['locale'] =
+      (document.documentElement.lang as IndexEntry['locale']) === 'zh' ? 'zh' : 'en';
+
+    // Localized strings — read once from the rendered DOM. The empty
+    // paragraph initially shows the "idle" hint; the "no results" copy lives
+    // in the bottom hint and is duplicated here in English as a safe default.
+    const noResultsMsg = 'No matches. Try fewer or different words.';
+    const loadErrorMsg = 'Search is temporarily unavailable.';
+
+    let index: IndexEntry[] | null = null;
+    let indexLoading: Promise<IndexEntry[] | null> | null = null;
+    let selectedIndex = 0;
+    let currentResults: IndexEntry[] = [];
+
+    async function loadIndex(): Promise<IndexEntry[] | null> {
+      if (index) return index;
+      if (indexLoading) return indexLoading;
+      indexLoading = (async () => {
+        try {
+          const res = await fetch('/search-index.json', { cache: 'force-cache' });
+          if (!res.ok) return null;
+          const data = (await res.json()) as IndexEntry[];
+          index = data;
+          return data;
+        } catch (err) {
+          console.warn('Search index failed to load:', err);
+          return null;
+        } finally {
+          indexLoading = null;
+        }
+      })();
+      return indexLoading;
+    }
+
+    function escapeHtml(s: string): string {
+      return s
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function scoreEntry(entry: IndexEntry, q: string): number {
+      const needle = q.toLowerCase();
+      const title = entry.title.toLowerCase();
+      const desc = entry.description.toLowerCase();
+      const tags = entry.tags.join(' ').toLowerCase();
+      const body = entry.body.toLowerCase();
+      let score = 0;
+      if (title.includes(needle)) score += 100;
+      if (title.startsWith(needle)) score += 40;
+      if (tags.includes(needle)) score += 50;
+      if (desc.includes(needle)) score += 30;
+      if (body.includes(needle)) score += 10;
+      return score;
+    }
+
+    function search(rawQuery: string, max = 8): IndexEntry[] {
+      const q = rawQuery.trim();
+      if (!q || !index) return [];
+      const scored: Array<{ entry: IndexEntry; score: number }> = [];
+      for (const entry of index) {
+        const s = scoreEntry(entry, q);
+        if (s > 0) scored.push({ entry, score: s });
+      }
+      scored.sort((a, b) => b.score - a.score);
+      const sameLocale = scored.filter((x) => x.entry.locale === currentLocale).slice(0, max);
+      if (sameLocale.length > 0) return sameLocale.map((x) => x.entry);
+      // Fallback: show the other locale's top results so the search box is
+      // never empty if the user types a query that only exists in one language.
+      return scored.slice(0, max).map((x) => x.entry);
+    }
+
+    function renderResults(): void {
+      if (!currentResults.length) {
+        const q = (input!.value || '').trim();
+        if (q && !index) emptyEl!.textContent = loadErrorMsg;
+        else if (q) emptyEl!.textContent = noResultsMsg;
+        else emptyEl!.textContent = idleMsg;
+        emptyEl!.classList.remove('hidden');
+        listEl!.classList.add('hidden');
+        return;
+      }
+      emptyEl!.classList.add('hidden');
+      listEl!.classList.remove('hidden');
+      listEl!.innerHTML = currentResults
+        .map(
+          (r, i) => `
+            <li>
+              <a class="search-result" href="${escapeHtml(r.url)}" data-index="${i}" aria-selected="${i === selectedIndex}">
+                <p class="search-result-title">${escapeHtml(r.title)}</p>
+                <p class="search-result-excerpt">${escapeHtml(r.excerpt)}</p>
+                <p class="search-result-url">${escapeHtml(r.url)}</p>
+              </a>
+            </li>`,
+        )
+        .join('');
+    }
+
+    function updateSelection(): void {
+      listEl!.querySelectorAll<HTMLAnchorElement>('.search-result').forEach((el, i) => {
+        el.setAttribute('aria-selected', String(i === selectedIndex));
+      });
+      listEl!.querySelector<HTMLAnchorElement>(`[data-index="${selectedIndex}"]`)?.scrollIntoView({ block: 'nearest' });
+    }
+
+    let debounceTimer: number | undefined;
+    input.addEventListener('input', () => {
+      const q = input!.value.trim();
+      selectedIndex = 0;
+      window.clearTimeout(debounceTimer);
+      if (!q) {
+        currentResults = [];
+        renderResults();
+        return;
+      }
+      debounceTimer = window.setTimeout(() => {
+        currentResults = search(q, 8);
+        renderResults();
+      }, 80);
+    });
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        if (currentResults.length) {
+          selectedIndex = (selectedIndex + 1) % currentResults.length;
+          updateSelection();
+        }
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (currentResults.length) {
+          selectedIndex = (selectedIndex - 1 + currentResults.length) % currentResults.length;
+          updateSelection();
+        }
+      } else if (e.key === 'Enter') {
+        const target = listEl!.querySelector<HTMLAnchorElement>(`[data-index="${selectedIndex}"]`);
+        if (target) {
+          e.preventDefault();
+          window.location.href = target.href;
+        }
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        dialog!.close();
+      }
+    });
+
+    function open(): void {
+      void loadIndex();
+      dialog!.showModal();
+      window.setTimeout(() => input!.focus(), 0);
+    }
+    function close(): void {
+      dialog!.close();
+    }
+
+    toggleBtn.addEventListener('click', open);
+
+    document.addEventListener('keydown', (e) => {
+      const isMac = /Mac|iPhone|iPad/.test(navigator.userAgent);
+      const cmdOrCtrl = isMac ? e.metaKey : e.ctrlKey;
+      if (cmdOrCtrl && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        if (dialog!.open) close();
+        else open();
+        return;
+      }
+      if (e.key === '/' && !dialog!.open) {
+        const active = document.activeElement;
+        if (active && ['INPUT', 'TEXTAREA'].includes(active.tagName)) return;
+        e.preventDefault();
+        open();
+        return;
+      }
+      if (e.key === 'Escape' && dialog!.open) {
+        close();
+      }
+    });
+
+    dialog.addEventListener('click', (e) => {
+      const r = dialog!.getBoundingClientRect();
+      if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) {
+        close();
+      }
+    });
+  }
+</script>

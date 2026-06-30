@@ -1,0 +1,576 @@
+[
+  {
+    "url": "/zh/content/dropshipping-hidden-costs/",
+    "locale": "zh",
+    "title": "2026 Dropshipping 真实成本拆解",
+    "description": "透明拆解每个 Dropshipper 都会漏的成本 — 供应商费、退货、支付冻结、广告支出、退款。含 $50 客单价店铺的真实 P&L。",
+    "category": "pricing",
+    "tags": [
+      "dropshipping",
+      "成本",
+      "利润",
+      "隐形"
+    ],
+    "excerpt": "\"Dropshipping 零成本启动\"是谎话。下面是真实店铺的支出。 完整成本堆 $50 产品 AliExpress dropshipping 店铺： | 成本 | 金额 | 占营收 % | |---|---|---| | 收入 | $50.00 | 100% | | 产品成本 | $12.00 | 24% | | ",
+    "body": "\"Dropshipping 零成本启动\"是谎话。下面是真实店铺的支出。 完整成本堆 $50 产品 AliExpress dropshipping 店铺： | 成本 | 金额 | 占营收 % | |---|---|---| | 收入 | $50.00 | 100% | | 产品成本 | $12.00 | 24% | | 到客户物流 | $4.50 | 9% | | Shopify Basic | $1.30（分摊） | 2.6% | | Shopify Payments | $1.75（2.9% + $0.30） | 3.5% | | 应用（5 × $20/月 分摊） | $3.30 | 6.6% | | 邮件工具 | $0.50 | 1% | | 广告前小计 | $26.65 | 53.3% | | 毛利润 | $23.35 | 46.7% | | 广告支出（Google + Meta） | $10.00 | 20% | | 退货前净利率 | $13.35 | 26.7% | | 退货（8% 订单 × $50 × 30% 成本基础） | $1.20 | 2.4% | | 拒付（1% × $15 费） | $0.15 | 0.3% | | 退款处理（Stripe 收的退款费） | $0.20 | 0.4% | | 客服时间（分摊） | $0.50 | 1% | | 真实净利率 | $11.30 | 22.6% | 22.6% 看着不错。再加上多数新手漏掉的东西： 侵蚀利润的隐形成本 慢物流退款 美国客户期望 5–7 天到货。AliExpress 物流 15–25 天。约 5% 客户申请部分退款（\"我的订单呢？\"）或全额退款。 每个慢物流投诉平均赔 $10。100 单/月就是 $50 退款，这些问题你阻止不了。 \"货不符\"投诉 客户收到 $12 AliExpress 产品后，约 3% 会发起\"货不符\"投诉。PayPal 和 Stripe 通常站买家。每单成本：$20 产品退款 + $15 拒付费 + $5 时间 = $40/单。 广告素材成本 成功店铺每月测试 5–10 个素材。每个视频素材外包 $50–300，自己做 4–8 小时。多数新手没预算这个。 KOL / UGC 成本 用 KOL 或付费 UGC，每个创作者 $100–500。不追踪等于 ROI 未验证。 订阅疲劳 试过不用的应用还在扣费。每月审计。 货币转换损失 Stripe 货币转换收 1%。PayPal 收 3–4%。收美元但付人民币供应商，默认损失 2–3%。 库存波动 Dropshipper 控制不了库存。广告跑一半产品断货。断货品浪费的广告：总广告预算的 5–10%。 客服时间 每单产生约 0.1 小时客服时间。按 $20/小时全负荷算，$2/单。新手都低估。 \"爆品\"陷阱 大师卖\"爆品\""
+  },
+  {
+    "url": "/zh/content/paypal-vs-stripe-fees/",
+    "locale": "zh",
+    "title": "2026 PayPal vs Stripe 费率对比：每笔真实成本",
+    "description": "PayPal 和 Stripe 跨境卖家费率并排对比。包含小额费陷阱、拒付处理、货币转换成本。",
+    "category": "payment",
+    "tags": [
+      "paypal",
+      "stripe",
+      "费率",
+      "对比"
+    ],
+    "excerpt": "PayPal 和 Stripe 表面看起来差不多。真实成本差距在国际销售和货币转换上才显现。 标准美国卡费率（2026） | 项目 | PayPal Checkout | Stripe | |---|---|---| | 在线交易 | 3.49% + $0.49 | 2.9% + $0.30 | | 线下（刷卡） | ",
+    "body": "PayPal 和 Stripe 表面看起来差不多。真实成本差距在国际销售和货币转换上才显现。 标准美国卡费率（2026） | 项目 | PayPal Checkout | Stripe | |---|---|---| | 在线交易 | 3.49% + $0.49 | 2.9% + $0.30 | | 线下（刷卡） | 2.29% + $0.09 | 2.7% + $0.05 | | 月费 | $0 | $0 | | 开通费 | $0 | $0 | | 拒付费 | $20 | $15 | PayPal 标准在线费率是 3.49% + $0.49（常见说法 \"2.99% + $0.49\" 是旧费率）。Stripe 年流水 $1M 以下是 2.9% + $0.30。 $50 一单差距： PayPal：$2.24 Stripe：$1.75 Stripe 每单多留 $0.49。 小额费陷阱 两家都收单笔固定费。低价品上这就是巨大的百分比： | 售价 | Stripe 成本 | 占销售 % | |---|---|---| | $5 | $0.45 | 8.9% | | $10 | $0.59 | 5.9% | | $25 | $1.03 | 4.1% | | $50 | $1.75 | 3.5% | | $100 | $3.20 | 3.2% | $10 以下，支付成本就超过营收 6%。小额品要么捆绑销售，要么换 Square 这种扁平费率（线上 2.9% + $0.30，线下 2.6% + $0.10）。 国际卡费率 | | PayPal | Stripe | |---|---|---| | 国际卡附加 | 1.50% | 1.0%（在标准费率之上） | | 货币转换费 | 3–4%（零售汇率） | 1%（批发汇率） | | 支持货币 | 25 | 135+ | | 提现货币 | 56 | 50+ | $100 单卖给英国客户用英镑付： PayPal：3.49% + $0.49 + 1.5% + 3.5% 汇兑 = $8.49 总计 Stripe：2.9% + $0.30 + 1% + 1% 汇兑 = $5.70 总计 Stripe 这一单省 $2.79。 拒付处理 | | PayPal | Stripe | |---|---|---| | 拒付费 | $20 | $15 | | 网络费（胜诉） | — | $0.40（美国）/ $15（其他） | | 申诉窗口 | 10 天 | 7–14 天 | | 证据上传 | 手动表单 | 后台 + API | | 胜诉率（典型） | 40% | 40% | Stripe 后台和 API 让取证更容易。$0.40 网络费仅限 Visa/Mastercard（不含 Amex）。Stripe $15 拒付费胜诉后退；PayPal 的"
+  },
+  {
+    "url": "/zh/content/shopify-fees-breakdown/",
+    "locale": "zh",
+    "title": "2026 Shopify 费用完全拆解",
+    "description": "2026 年 Shopify 每一项费用 — 订阅、支付、应用、主题和隐藏成本。含计算器告诉你 $50 一单实际到手多少。",
+    "category": "pricing",
+    "tags": [
+      "shopify",
+      "费用",
+      "支付",
+      "拆解"
+    ],
+    "excerpt": "Shopify 头条数字是 \"$39/月\"。真实成本远高于此。下面是 2026 年一家典型店铺的每一笔费用。 订阅档 | 套餐 | 月费 | 适合 | |---|---|---| | Starter | $5 | 副业、线下销售 | | Basic | $39 | 新店，月营收 < $10k | | Shopify |",
+    "body": "Shopify 头条数字是 \"$39/月\"。真实成本远高于此。下面是 2026 年一家典型店铺的每一笔费用。 订阅档 | 套餐 | 月费 | 适合 | |---|---|---| | Starter | $5 | 副业、线下销售 | | Basic | $39 | 新店，月营收 < $10k | | Shopify | $105 | 增长期，需要更多报表 | | Advanced | $399 | 年营收 $1M+，最低刷卡费率 | 三年计划 Basic 降至 $29/月，Advanced 降至 $299/月。 交易费 — Shopify Payments 用 Shopify Payments（底层 Stripe）： | 渠道 | 在线 | 线下 | |---|---|---| | Basic 套餐 | 2.9% + $0.30 | 2.7% + $0.00 | | Shopify 套餐 | 2.7% + $0.30 | 2.5% + $0.00 | | Advanced 套餐 | 2.5% + $0.30 | 2.4% + $0.00 | 国际卡（非美国）在百分比上额外加 1.5%。 交易费 — 第三方网关 用 PayPal、Stripe 直连或其他网关： Basic 套餐：每笔额外 2.0% Shopify 套餐：1.0% Advanced 套餐：0.5% 算账：Basic + PayPal = 3.49% + $0.30 + PayPal 费率。$10k/月以下就用 Shopify Payments，别折腾。 $50 一单实际到手 假设 Shopify Basic + Shopify Payments，无应用额外抽成： $50 一单平台成本 4.8%。$20 一单 7.4%。$200 一单 3.6%。 多数卖家漏掉的隐藏费 货币转换 Shopify Payments 对非美元交易额外收 1.5%，再加 1–2% 的汇兑点差。尽量用美元结算。 退款费 Shopify 交易费在退款时不退。服装类影响大 — 15% 退货率意味着你付了 $1.75 交易费处理订单，退款后这 $1.75 白付。 拒付费 每笔拒付 $15，不管输赢。哪怕赢了，你也付了 $15 自卫。 应用交易费 部分应用（订阅、批发、市场）在 Shopify Payments 之上额外收 2%。检查应用栈。 主题费 免费主题功能有限。多数正经店铺一次性付 $150–350 买付费主题。避开有隐藏授权的\"免费主题\"。 邮件成本 Shopify Email 前 10,000 封/月免费，超出 $0.001/封。Klaviyo 集成 500 联系人后起步 $45/月。 真实店铺的月度账单 | 项目 | 成本 | |---|---| | Basic 订阅 | $39 | | 付费主题（摊销） | $12"
+  },
+  {
+    "url": "/zh/tools/pricing-calculator/",
+    "locale": "zh",
+    "title": "独立站产品定价计算器",
+    "description": "免费 Shopify 定价计算器。输入成本、物流、佣金和目标利润率，自动算出建议售价、单件利润和盈亏平衡价。",
+    "category": "pricing",
+    "tags": [
+      "定价",
+      "shopify",
+      "计算器",
+      "利润"
+    ],
+    "excerpt": "产品定价计算器 回答每个跨境卖家都问的问题：我应该卖多少钱才真赚钱？ 多数定价公式只算 \"成本 × 加价倍数\"。但这样漏掉了物流、平台佣金、支付手续费，还有那些悄悄吃掉利润的单笔固定费。这个计算器四个都包含。 使用方法 填 产品成本（付给供应商的金额，美元）。 填 物流成本 / 单（包邮模型填 0）。 填 佣金 %（美",
+    "body": "产品定价计算器 回答每个跨境卖家都问的问题：我应该卖多少钱才真赚钱？ 多数定价公式只算 \"成本 × 加价倍数\"。但这样漏掉了物流、平台佣金、支付手续费，还有那些悄悄吃掉利润的单笔固定费。这个计算器四个都包含。 使用方法 填 产品成本（付给供应商的金额，美元）。 填 物流成本 / 单（包邮模型填 0）。 填 佣金 %（美国 Shopify Payments 是 2.9%；Etsy 是 6.5% + 3%；亚马逊是 15%）。 填 支付处理 %（如果平台打包在一起，和佣金一样）。 填 单笔固定费（Shopify 收 $0.30；PayPal 部分地区收 $0.49）。 设 目标净利率（所有费用之后）。 看 建议售价、盈亏平衡价、单件利润。 公式 盈亏平衡价假设 0% 净利率，超过它卖出去的部分都是利润。 算例 $8 产品 + $3.50 物流 + 2.9% 佣金 + 2.9% 支付费 + $0.30 固定费 + 30% 目标利润率： 建议售价：$24.85 盈亏平衡价：$13.05（零利润） 单件利润（按建议售价）：$7.46 如果你的市场卖不到 $24.85，目标利润率就不现实。要么砍成本、要么提价、要么接受更薄的利润。 这个计算器没算的 退货成本（普通品类在成本上加 5–15%） 广告成本占比（跑付费流量时从利润里扣） 汇兑损耗（收美元花人民币时 1–3%） 完整 P&L 看资源区的 利润核算 Excel 模板。 常见错误 | 错误 | 修法 | |---|---| | 用毛利率而不是净利率 | 本计算器用净利率（扣完所有费） | | 漏算单笔固定费 | 一定要加，规模大了累计惊人 | | 公式里忽略物流 | 物流是成本，不是营销条目 | | 货币混着用 | 先全部换算成同一种货币 | 参考场景（Shopify 美国默认） | 成本 | 物流 | 平台佣金 | 支付费 | 单笔固定费 | 目标利润率 | 建议售价 | 保本售价 | |---|---|---|---|---|---|---|---| | $5 | $3.50 | 2.9% | 2.9% | $0.30 | 30% | $18.46 | $9.69 | | $8 | $3.50 | 2.9% | 2.9% | $0.30 | 30% | $24.85 | $13.05 | | $15 | $5.00 | 2.9% | 2.9% | $0.30 | 25% | $33.16 | $24.87 | | $40 | $8.00 | 6.5%（Etsy） | 3% | $0.30 | 35% | $98.43 | $63.98 | 注意有效费率涨 2%（Etsy 6.5% + 3% 对比 Shopify 2.9% 打包），$40 客单价建议价涨 3.6%——单件看起来小，整盘 SKU 累起来很大。 何时"
+  },
+  {
+    "url": "/zh/tools/fx-withdraw-calculator/",
+    "locale": "zh",
+    "title": "汇率与提现对比器 — PayPal / Wise / Airwallex",
+    "description": "对比 PayPal、Wise、Airwallex 在 USD、EUR、GBP、JPY 兑换 CNY、USD、EUR 时的实际到账金额。",
+    "category": "payment",
+    "tags": [
+      "paypal",
+      "wise",
+      "airwallex",
+      "汇率",
+      "提现",
+      "货币转换",
+      "跨境"
+    ],
+    "excerpt": "跨境卖家资金从客户银行卡到内地对公账户通常要过 4 道费——收款手续费、汇损、中转行费、提现费。Wise 和 Airwallex 在汇损这个单一最大漏水上砍过 PayPal。 计算器怎么算 金额——你要换的总额。 原币种——销售币种（USD 最常见）。 目标币种——通常对中国主体是 CNY，对美国主体是 USD。 返回",
+    "body": "跨境卖家资金从客户银行卡到内地对公账户通常要过 4 道费——收款手续费、汇损、中转行费、提现费。Wise 和 Airwallex 在汇损这个单一最大漏水上砍过 PayPal。 计算器怎么算 金额——你要换的总额。 原币种——销售币种（USD 最常见）。 目标币种——通常对中国主体是 CNY，对美国主体是 USD。 返回： 各家的隐含汇损。 提现手续费（如有）。 净到账金额——进你银行账户的实数。 默认汇率基于中间价参考值；你的实际汇率取决于当日。哪家费率和实际差额最小即赢家。 到账示例（USD → CNY，$10,000） | 服务商 | 汇损点差 | 有效汇率 | 到账 CNY | 较中间价损失 | |---|---|---|---|---| | 中间价（参考） | 0% | 7.25 | ¥72,500 | ¥0 | | PayPal | 3.5% | 6.996 | ¥69,963 | ¥2,537 | | Wise | 0.41% | 7.220 | ¥72,203 | ¥297 | | Airwallex | 0.35% | 7.225 | ¥72,246 | ¥254 | 单笔 $10k，PayPal 与 Airwallex 的差额是 $2,283 进你口袋。按月 12 笔算，每年 $27k——对任何跨境玩家都不是小数。 常见坑 中转行费（每笔 $15–25）此处不模拟。Wise 和 Airwallex 在 60+ 国家用本地轨道避免这笔费。 收款手续费：很多服务商收 USD/EUR 收款费。Stripe、Wise、Airwallex 对主要币种免收款费。 留仓余额：资金放进 Wise 多币种钱包后，跨币种转换用中间价——客户付 USD、付供应商 EUR 场景特别好用。 远期合约：$50k+/月，Airwallex 和 PingPong 提供锁汇的远期合约。本计算器不模拟，找服务商谈。 常见错误 轻信\"无手续费\"收款——PayPal 收款显示 0%，但提现时把 3–4% 塞进汇率。永远对比 Google 的中间价。 用国内银行电汇 USD 让他们换汇——国有大行通常在中间价上加 1–2%，外加 $20–40 电报费。比 PayPal 还差。 忽略中转行费——美国银行到中国银行的 SWIFT 电汇通常触发两家中转行，每家 $15–25。 在不计息的平台留大额余额——Wise 和 Airwallex 对 USD 浮存给约 3%（国库券收益），闲钱可以帮你赚钱。 何时换服务商 月 $10k 以下：Wise Business ——成本、速度（1–2 天）、多币种的最佳组合。 月 $10k–$50k：Airwallex ——更低有效费率、预付卡、批量付款。 月 $50k+：Airwallex 或 PingPong ——都提供资金管理和远期汇率对冲。 纯 U"
+  },
+  {
+    "url": "/zh/content/pricing-formula-explained/",
+    "locale": "zh",
+    "title": "跨境电商定价公式（含算例）",
+    "description": "跨境卖家在 Shopify、Etsy、亚马逊上定价的精准公式。包含 Dropshipping、品牌商品、高客单价品类的真实算例。",
+    "category": "pricing",
+    "tags": [
+      "定价",
+      "shopify",
+      "etsy",
+      "amazon",
+      "公式"
+    ],
+    "excerpt": "多数卖家凭感觉定价：成本 × 3 差不多。直到第三个月账目显示亏损。下面是专业跨境卖家真正用的公式。 公式 其中： 成本 = 美元采购价 物流 = 单笔到客户成本 固定费 = 单笔平台费（Shopify $0.30，PayPal 部分市场 $0.49） 佣金 + 支付费率 = 合计百分比费用 目标利润率 = 想留的净利",
+    "body": "多数卖家凭感觉定价：成本 × 3 差不多。直到第三个月账目显示亏损。下面是专业跨境卖家真正用的公式。 公式 其中： 成本 = 美元采购价 物流 = 单笔到客户成本 固定费 = 单笔平台费（Shopify $0.30，PayPal 部分市场 $0.49） 佣金 + 支付费率 = 合计百分比费用 目标利润率 = 想留的净利率 % 算例 1 — Shopify 品牌商品 成本：$8 物流：$3.50 Shopify Payments 费率：2.9% + $0.30 目标利润率：35% 单件利润：$19.00 × (1 − 0.029) − 11.80 = $6.65 算例 2 — Etsy 手工艺品 成本：$12（材料 + 工时） 物流：$5（含 $1 包装） Etsy 交易费：6.5% Etsy 支付处理：3% + $0.25 目标利润率：40% 算例 3 — 亚马逊 FBA 成本：$6 亚马逊推荐费：15% FBA 履约：$4.50 目标利润率：25% 盈亏平衡价（0% 利润）是 $13.13。超过它卖就是赚，低于它卖就是亏。 为什么加价倍数会失灵 $8 成本 × 3 = $24。但实际： | 项目 | 金额 | |---|---| | 收入 | $24.00 | | Shopify 费率（2.9% + $0.30） | −$1.00 | | 支付处理（已含上面） | — | | 物流 | −$3.50 | | 成本 | −$8.00 | | 净利润 | $11.50 | 净利率 48%，不是你想要的 35%。3× 倍数会让低价品溢价过度，高价品反而不够。公式在全目录都能正确缩放。 考虑退货调整 按品类在成本上加 5–15% 退货缓冲： | 品类 | 退货率缓冲 | |---|---| | 服装 | 15% | | 电子 | 8% | | 家居 | 6% | | 美妆 | 4% | | 图书/音像 | 3% | 算例 1 加 15% 退货，成本从 $8 调到 $9.20： 考虑广告调整 跑付费流量时，实际目标利润率更低。35% 利润率配 20% 广告成本占比，实际净利只有 15%。要么提价，要么降 ACoS。 应用这个公式的工具 产品定价计算器 — 用我们的定价工具秒算 利润核算 Excel 模板 — 见 资源页 速查清单 [ ] 美元成本 [ ] 单笔物流 [ ] 平台佣金 % [ ] 支付处理 % [ ] 单笔固定费 [ ] 目标利润率（净） [ ] 退货缓冲 [ ] 广告成本缓冲（如有）"
+  },
+  {
+    "url": "/zh/content/profit-tracking-spreadsheet/",
+    "locale": "zh",
+    "title": "跨境电商利润核算 Excel 搭建教程",
+    "description": "手把手教你用 Excel 或 Google Sheets 搭建利润核算表。含公式、看板配置、免费模板下载。",
+    "category": "ops",
+    "tags": [
+      "excel",
+      "表格",
+      "利润",
+      "核算"
+    ],
+    "excerpt": "多数卖家追踪营收但不追踪利润。利润才是你真正留下的。下面是怎么搭建说真话的表格。 你需要四张 sheet 完整的利润追踪表有四张 sheet： 订单（输入） 每笔销售一行。 | 列 | 描述 | |---|---| | date | 下单日期 | | orderid | 唯一订单号 | | channel | Shop",
+    "body": "多数卖家追踪营收但不追踪利润。利润才是你真正留下的。下面是怎么搭建说真话的表格。 你需要四张 sheet 完整的利润追踪表有四张 sheet： 订单（输入） 每笔销售一行。 | 列 | 描述 | |---|---| | date | 下单日期 | | orderid | 唯一订单号 | | channel | Shopify、Etsy、Amazon 等 | | sku | 商品标识 | | qty | 数量 | | saleprice | 单价 | | currency | USD、EUR、GBP | | paymentfee | Stripe/PayPal 收的 | | shippingcost | 物流成本 | | productcost | 供应商成本（分摊） | | shippingcountry | 目的地国家 | | customeremail | 复购分析 | | status | paid、refunded、partiallyrefunded | | refundamount | 退款金额 | | chargebackflag | TRUE/FALSE | | notes | 备注 | 成本（输入） 每单变动的成本。 | 列 | 描述 | |---|---| | date | 成本日期 | | type | shipping、packaging、label、customs、duty 等 | | amount | 成本 | | relatedorderid | 关联订单号 | | notes | 说明 | 广告（输入） 每日广告花费和结果数据。 | 列 | 描述 | |---|---| | date | 花费日期 | | channel | Google、Meta、TikTok、Pinterest | | campaign | 广告活动名 | | spend | 日花费 | | clicks | 点击数 | | conversions | 转化数（来自平台） | | conversionvalue | 归因收入（来自平台） | 看板（输出） 从其他三张 sheet 通过公式拉数据。更新一次，看到全部。 关键公式 按月总营收 按商品净利（最近 30 天） F 是收入，I 是产品成本，H 是物流成本，G 是支付费。 净利率 % 按渠道 ROAS（最近 30 天） 广告驱动单件利润（Google，最近 30 天） 看板布局 实施步骤 建四张 sheet，表头按上面来。 每天导入订单 — Shopify、Etsy、Amazon 都能导 CSV。用脚本或手动导入。 每天导入广告 — Google Ads API、Meta API，或 CSV 导出。 在看板 sheet 配一次公式，自动更新。 加条件格式 — 赚钱绿色，亏钱红色。 每周邮件摘要 — Goo"
+  },
+  {
+    "url": "/zh/content/global-payment-methods/",
+    "locale": "zh",
+    "title": "全球主流支付方式全景梳理（2026 版）",
+    "description": "按大洲和国家维度，系统梳理 80+ 国家的主流支付生态：钱包支付、互联网支付、移动支付、银行卡支付、预付卡、跨境支付。",
+    "category": "payment",
+    "tags": [
+      "支付",
+      "全球",
+      "钱包",
+      "跨境",
+      "市场"
+    ],
+    "excerpt": "数字支付在不同区域差异巨大。东亚靠移动钱包，欧洲靠银行卡和即时银行转账，拉美是银行卡和现金券混合体，非洲靠移动货币。下面是按国家梳理的全景图。 亚洲：最复杂的支付生态 东亚 中国 是全球移动钱包渗透率最高的市场。支付宝和微信支付覆盖约 90% 城市消费者，主导线下扫码支付。配套钱包：京东钱包、翼支付、百度钱包、银联钱包",
+    "body": "数字支付在不同区域差异巨大。东亚靠移动钱包，欧洲靠银行卡和即时银行转账，拉美是银行卡和现金券混合体，非洲靠移动货币。下面是按国家梳理的全景图。 亚洲：最复杂的支付生态 东亚 中国 是全球移动钱包渗透率最高的市场。支付宝和微信支付覆盖约 90% 城市消费者，主导线下扫码支付。配套钱包：京东钱包、翼支付、百度钱包、银联钱包。互联网支付平台：支付宝在线支付、财付通、银联在线支付、快钱、汇付天下。银行和支付机构的移动端 APP 实现全民扫码和远程转账。 银行卡：银联（国内主导）、Visa、Mastercard、JCB。预付卡：联通、电信、移动运营商卡，加零售礼品卡。跨境：支付宝国际版、微信支付国际版、银联国际，搭配 PingPong、Airwallex、连连支付。 日本 是成熟卡组织和本土特色的结合。钱包：PayPay、LINE Pay、乐天 Pay、au WALLET。互联网支付：JCB Net Payment、乐天网上支付、GMO Payment Gateway。银行卡：JCB、Visa、Mastercard、Amex，加上本土 UFJ NICOS。交通卡 Suica、Pasmo、ICOCA 延伸到便利店和自动售货机。 韩国 集中度高。三个头部钱包：Kakao Pay、Samsung Pay、Toss。互联网支付：KCP、LG U+ Pay、SK Pay。银行卡：BC Card、新韩卡、KB 卡 + 国际卡组织。交通：T-Money、Cashbee。跨境：Kakao Pay International、NHN 国际支付。 蒙古 银行系钱包主导：蒙古国家银行移动支付、Golomt 银行移动钱包、XacBank 钱包。 东南亚 越南：MoMo、ZaloPay、VNPay 头部。互联网：VNPay、OnePay、NganLuong。银行卡：Vietcombank、VietinBank、AGRIBANK。跨境：VNPay 国际版、MoMo 国际版。 泰国：TrueMoney、PromptPay、Rabbit LINE Pay、KBank 钱包。PromptPay 是国家级即时支付系统。银行卡：开泰银行、盘谷银行、TMB 银行。跨境：TrueMoney 国际、Ascend Money 国际。 印尼：GoPay、OVO、Dana、ShopeePay。网关：Doku、Midtrans、Xendit。银行卡：BCA、曼迪里、CIMB Niaga。跨境：Midtrans 国际版、Xendit 国际版。 新加坡（成熟、金融中心级）：GrabPay、Singtel Dash、DBS PayLah!、OCBC Pay Anyone、eNETS。银行卡：DBS/POSB、华侨银行、大华银行 + 国际卡组织。跨境：NETS 国际、星展国际。 马来西亚：Touch'n Go eWallet（"
+  },
+  {
+    "url": "/zh/content/payment-chargeback-prevention/",
+    "locale": "zh",
+    "title": "如何防止收款拒付（以及申诉成功）",
+    "description": "跨境电商拒付防范实战。涵盖欺诈筛查、3DS、证据模板、Stripe 和 PayPal 申诉流程。",
+    "category": "payment",
+    "tags": [
+      "拒付",
+      "欺诈",
+      "争议",
+      "防范"
+    ],
+    "excerpt": "拒付不是退款。这是 $15–20 费 + 产品成本 + 你的时间 — 哪怕你赢了。预防比抗辩便宜。 拒付两种类型 未授权（持卡人欺诈） 有人用偷的卡从你这买东西。真实持卡人发现后拒付。开 3DS 的话责任转移给发卡行。没开 3DS 你承担损失。 开 3DS 胜诉率：85%（发卡行赔） 没开 3DS 胜诉率：40%（你赔",
+    "body": "拒付不是退款。这是 $15–20 费 + 产品成本 + 你的时间 — 哪怕你赢了。预防比抗辩便宜。 拒付两种类型 未授权（持卡人欺诈） 有人用偷的卡从你这买东西。真实持卡人发现后拒付。开 3DS 的话责任转移给发卡行。没开 3DS 你承担损失。 开 3DS 胜诉率：85%（发卡行赔） 没开 3DS 胜诉率：40%（你赔） 商户争议（买家反悔） 未收到货（INR）— 买家声称产品没到 严重货不符（SNAD）— 产品和描述差太多 服务未提供 — 数字产品、服务 这些要证据，不是欺诈过滤器。证据充分胜诉率：60–80%。 防范清单 销售前 [ ] 所有交易开 3D Secure。Stripe 和 PayPal 都支持。转化率降 3–5%，拒付降 50%+。 [ ] 用 AVS（地址验证系统）。账单地址和收货地址不匹配就是欺诈信号。 [ ] 强制 CVV — 永远不豁免。多数欺诈没有 CVV。 [ ] 速度检查 — 同一 IP/卡 24 小时内 3+ 单就标记。 [ ] 屏蔽高风险国家（如果本来就不发）。Stripe Radar 有列表。 [ ] 不要强制签收 — 签收要求买家必须在场，通常上班时间，反而增加拒付。 结账时 [ ] 清晰的账单描述符 — 用可识别名字。\"店铺名 12345\" 而不是 \"TXN987XYZ\"。 [ ] 订单确认邮件 — 立刻发，含订单号、商品、总价、预计到达。 [ ] 发货确认邮件 — 标签创建就发，附物流号。 [ ] 实时跟踪 — 包裹移动就发更新。 销售后 [ ] 主动沟通 — 物流延误时，买家联系你之前先发邮件。INR 拒付降 40%。 [ ] 简单退款路径 — 让\"申请退款\"一目了然。能轻松退款的买家很少拒付。 [ ] 24 小时内回复所有消息 — 沉默就是拒付燃料。 [ ] 宽松退货政策 — 30 天、免费退货。成本低于拒付费。 拒付申诉要交什么 \"未收到货\" 物流号+承运商 承运商送达状态+送达日期+地点 签收（如有） 买家下单 IP 地址 邮件往来（你发过的\"订单呢？\"回复） \"货不符\" 原始商品页（截图+URL） 实发商品照片 供应商/厂家描述 买家签收确认 商品相关的历史沟通 \"未授权\" 3DS 认证记录（CAVV / ECI 值） AVS 匹配（账单 = 收货地址） CVV 匹配 买家订单历史（老客或首单） 设备指纹+IP 地理位置匹配账单地址 Stripe 拒付申诉模板 PayPal 拒付申诉模板 不要做的事 不要退款又接受拒付 — 你会被扣两次（退款 + 拒付费）。 不要发到和账单地址不同的地址 — 几乎必输。 不要用通用拒付文本 — 每个争议要具体证据。 不要错过截止日期 — 争议开起来立刻设日历提醒。 不要和客户吵架 — 保持专业沟通，法律威胁适得其反。 预防挡不住的时候 一些拒付不可避免。追踪比率： < 0"
+  },
+  {
+    "url": "/zh/content/cbm-and-dimensional-weight/",
+    "locale": "zh",
+    "title": "体积重与 CBM 完全指南（含计算器）",
+    "description": "怎么算 CBM、计费重和空运/海运/快递的体积重。含免费计算器和常见产品尺寸的算例。",
+    "category": "shipping",
+    "tags": [
+      "cbm",
+      "物流",
+      "体积重",
+      "国际快递"
+    ],
+    "excerpt": "CBM 和体积重是决定物流费用的两个数字。算错要么多付，要么收到承运商的调整账单。 什么是 CBM？ CBM = 立方米。是货物的体积： 例：一个箱子 60cm × 40cm × 30cm 10 个相同箱子：0.72 CBM。 什么是体积重？ 体积重（也称\"泡重\"）按货物占的空间算，不按质量算。轻但体积大的东西如果只按",
+    "body": "CBM 和体积重是决定物流费用的两个数字。算错要么多付，要么收到承运商的调整账单。 什么是 CBM？ CBM = 立方米。是货物的体积： 例：一个箱子 60cm × 40cm × 30cm 10 个相同箱子：0.72 CBM。 什么是体积重？ 体积重（也称\"泡重\"）按货物占的空间算，不按质量算。轻但体积大的东西如果只按实际重量收费就太便宜。 除数取决于承运商和运输方式： | 方式 | 除数 | |---|---| | 空运 | 6000 | | 快递（DHL、FedEx、UPS） | 5000 | | 海运散货（LCL） | 1000 | | USPS First-Class | 9000 | | 亚马逊 FBA 入仓 | 5000 | 承运商按两者取大 每票货，承运商都算两个数： 实际重量（秤读数） 体积重（体积 ÷ 除数） 你付较大的那个。这就是 计费重。 算例 一个 50cm × 40cm × 30cm 重 8kg 的箱子，DHL 出货： 你付 12kg 的钱，不是 8kg。哪怕秤上只读 8。 什么时候体积重起作用 经验法则：产品体积大但轻（枕头、泡沫、灯罩）时，体积重总是赢。密度高体积小（书、金属件）时，实际重量赢。 | 产品类型 | 体积重 or 实际？ | |---|---| | 服装（压缩） | 实际 | | 书 | 实际 | | 泡沫、枕头、毛绒 | 体积重 | | 灯罩、篮子 | 体积重 | | 电子（小） | 实际 | | 家具配件 | 体积重 | | 保健品、化妆品 | 实际 | | 充气产品 | 永远是体积重 | 怎么降低体积重 公式改不了，但包装可以改： 用能装下的最小箱子 — 每厘米都算钱。能用 40cm 箱就别用 50cm。 软货压紧 — 服装真空袋能减 30–50% 体积重。 拆成多箱 — 两个 5kg 箱通常比一个 10kg 形状奇怪的箱更便宜。 能折叠就折叠 — 折叠大幅降低体积。 算例：包装优化 10 件衬衫装 50×40×30cm 箱，每件 200g： 海运 LCL 特殊性 海运拼箱（LCL）的除数是 1000 — 意味着体积重更狠。1 CBM 高密度货（1000kg 实际）打平。低于这个密度就是为体积买单。 多数 LCL 承运商还有 最低 1 CBM 起收费，哪怕你只出 0.3 CBM。 空运 vs 快递 | | 空运 | 快递（DHL/FedEx） | |---|---|---| | 除数 | 6000 | 5000 | | 单价/kg | $4–8 | $6–12 | | 适合 | 100kg+ 大货 | < 100kg 急件 | | 时效 | 5–10 天 | 3–7 天 | | 跟踪 | 基础 | 实时 | 快递除数更小（5000 vs 6000），体积重更高 — 所以快递对泡货更贵。 速查：什么时候用什么方"
+  },
+  {
+    "url": "/content/epacket-sunset-logistics-alternatives/",
+    "locale": "en",
+    "title": "After ePacket: Cross-border Logistics Alternatives for 2026",
+    "description": "ePacket is being sunset. What replaced it for China-to-US and China-to-EU sellers — YunExpress, Cainiao, Yanwen, SF International, Asendia. With transit time, cost and tracking quality comparison.",
+    "category": "shipping",
+    "tags": [
+      "epacket",
+      "logistics",
+      "china",
+      "cross-border",
+      "shipping"
+    ],
+    "excerpt": "ePacket was the default for Chinese sellers shipping small parcels to the US and EU. It is being phased out through 2026, replaced by a fragmented set of carrie",
+    "body": "ePacket was the default for Chinese sellers shipping small parcels to the US and EU. It is being phased out through 2026, replaced by a fragmented set of carriers with different price, speed and tracking characteristics. Here is what works now. What changed USPS stopped accepting ePacket inbound in mid-2023. Most China Post lines migrated to Cainiao Standard, which keeps similar pricing but adds a tracking step. Sellers still listing ePacket on Etsy or Shopify risk buyer complaints when tracking gaps appear. The good news: alternatives now cover the same price points. The bad news: choosing between them is more complex. Replacement matrix (0.5–2 kg to US) | Carrier | Transit (days) | Cost per kg | Tracking | Notes | |---|---|---|---|---| | YunExpress Economy | 12–20 | $4.80 | Semi-tracked | Cheapest tracked option, slower | | YunExpress Standard | 10–15 | $6.20 | End-to-end | Stronger tracking, faster | | Cainiao Standard | 14–25 | $3.80 | Partial | Cheapest but tracking gaps | | Cainiao Premium | 8–12 | $7.20 | End-to-end | AliExpress default, fastest | | Yanwen Economic Air | 18–28 | $3.50 | Weak | Cheapest, only for low-value items | | SF International | 7–12 | $6.80 | End-to-en"
+  },
+  {
+    "url": "/zh/content/amazon-fba-fees-breakdown/",
+    "locale": "zh",
+    "title": "Amazon FBA 费用拆解：推荐费、履约费、仓储费、那些没人提的附加费",
+    "description": "Amazon FBA 的每一笔费用都列清楚：推荐费、履约费、仓储费、移除费、退货处理费、长期库存附加费。以一款 $25 产品为例做完整算账。",
+    "category": "payment",
+    "tags": [
+      "amazon",
+      "fba",
+      "费用",
+      "履约",
+      "仓储"
+    ],
+    "excerpt": "Amazon 的费率表 14 页，多数卖家定价只算了推荐费，剩下的藏在履约、仓储、退货、长期库存附加费里。下面是一款 $25 产品的完整账单。 $25 产品的完整费用堆栈 | 费用 | 金额 | 占售价比 | |---|---|---| | 售价 | $25.00 | 100% | | 推荐费（15%） | $3.75",
+    "body": "Amazon 的费率表 14 页，多数卖家定价只算了推荐费，剩下的藏在履约、仓储、退货、长期库存附加费里。下面是一款 $25 产品的完整账单。 $25 产品的完整费用堆栈 | 费用 | 金额 | 占售价比 | |---|---|---| | 售价 | $25.00 | 100% | | 推荐费（15%） | $3.75 | 15% | | FBA 履约费（小标件，≤6 oz） | $3.06 | 12.2% | | FBA 履约费（小标件，6–12 oz） | $3.43 | 13.7% | | FBA 履约费（小标件，12–16 oz） | $3.86 | 15.4% | | 关闭费（仅限图书、媒体、电子游戏） | $0.00 | 0% | | Amazon 的总抽成（不含仓储） | $7.61 | 30.4% | 这是底线。下面是大多数人会忘记的附加费。 仓储费 Amazon 按每立方英尺每日收取库存占用费。2026 年标准：非旺季（1–9 月）$0.87/立方英尺/月，旺季（10–12 月）$2.40/立方英尺/月。 以 12×8×4 英寸的盒子（约 0.222 立方英尺）装 $25 产品： 非旺季月仓储：$0.19 旺季月仓储：$0.53 仓储费单看小，但会累积。1,000 件的产品花 6 个月才卖完，每月每件扣 $0.10，6 个月就是 $600。 长期库存附加费 FBA 仓库存放超过 181 天的单位每月加收附加费： | 存放天数 | 小标件附加费 | |---|---| | 0–180 | $0 | | 181–270 | $0.30/件/月 | | 271–330 | $0.60/件/月 | | 331–365 | $0.90/件/月 | | 365+ | 长期仓储费：$6.90/立方英尺（或 $0.15/件，取高） | 一款 9 个月才清掉的货，光长期库存附加费就 $1.80——还没算仓储。 退货处理费 退货 Amazon 照收推荐费，并对特定品类（服饰、鞋、手表、珠宝、箱包及大部分消费品）加收退货处理费。 退货处理费取以下较低者： 原始 FBA 履约费的 100% $5.00 对 $25 产品（$3.86 履约费），每退一件 Amazon 不亏反赚 $3.86 加推荐费。退货率 10% 的产品，每卖一件平均被退货吃 $0.77。 移除与弃置 要清掉死库存的话： 移除订单：$0.75/件（标准）或 $1.50/件（超大件） 弃置订单：$0.30/件（标准）或 $0.60/件（超大件） 500 件死库存，移除就要 $375。有些卖家把这一项当作\"赌错 SKU 的成本\"。 算账：30% 净利率反推售价 目标：覆盖所有 Amazon 费用和货成本后，净利 30%。 以 $25 小标件、8% 退货率、6 个月仓储、$6 到岸成本为例： $20.67"
+  },
+  {
+    "url": "/content/amazon-fba-fees-breakdown/",
+    "locale": "en",
+    "title": "Amazon FBA Fees Breakdown: Referral, Fulfillment, Storage, and the Add-Ons Nobody Mentions",
+    "description": "Every fee Amazon charges FBA sellers, with worked examples for a $25 product. Covers referral, FBA fulfillment, storage, removal, returns processing, aged inventory and long-term surcharges.",
+    "category": "payment",
+    "tags": [
+      "amazon",
+      "fba",
+      "fees",
+      "fulfillment",
+      "storage"
+    ],
+    "excerpt": "Amazon's fee schedule is 14 pages long, and most sellers price by the referral fee alone. The rest hides in fulfillment, storage, returns, and aged-inventory su",
+    "body": "Amazon's fee schedule is 14 pages long, and most sellers price by the referral fee alone. The rest hides in fulfillment, storage, returns, and aged-inventory surcharges. Here is the full bill for a typical $25 product. The full fee stack on a $25 product | Fee | Amount | % of price | |---|---|---| | Sale price | $25.00 | 100% | | Referral fee (15%) | $3.75 | 15% | | FBA fulfillment (small standard, ≤6 oz) | $3.06 | 12.2% | | FBA fulfillment (small standard, 6–12 oz) | $3.43 | 13.7% | | FBA fulfillment (small standard, 12–16 oz) | $3.86 | 15.4% | | Closing fee (Books, Media, Video Games only) | $0.00 | 0% | | Amazon's cut before storage | $7.61 | 30.4% | That is the floor. Now add the surcharges most sellers forget. Storage fees Amazon charges for the space your inventory occupies, measured in cubic feet per day. As of 2026, off-peak (Jan–Sep) storage is $0.87/cubic foot/month; peak (Oct–Dec) is $2.40/cubic foot/month. For a $25 product in a 12×8×4 inch box (0.222 cubic feet): Off-peak monthly: $0.19 Peak monthly: $0.53 Storage costs look small per unit but compound. A 1,000-unit run that takes 6 months to sell eats roughly $0.10/unit per month off-peak, or $600 total. Aged inventor"
+  },
+  {
+    "url": "/tools/cbm-calculator/",
+    "locale": "en",
+    "title": "CBM & Dimensional Weight Calculator",
+    "description": "Compute CBM (m³), chargeable weight, total weight and boxes needed for air and sea freight quotes.",
+    "category": "shipping",
+    "tags": [
+      "cbm",
+      "dimensional weight",
+      "shipping",
+      "air freight",
+      "sea freight",
+      "logistics"
+    ],
+    "excerpt": "CBM and dimensional weight are not the same. CBM is physical volume — how much three-dimensional space your shipment occupies in cubic meters. Dimensional (or v",
+    "body": "CBM and dimensional weight are not the same. CBM is physical volume — how much three-dimensional space your shipment occupies in cubic meters. Dimensional (or volumetric) weight is a pricing construct that converts that volume into a weight equivalent so carriers can charge fairly for space when goods are large but light. Carriers charge you based on the greater of actual weight or volumetric weight. That's why a pallet of foam pillows can weigh 50 kg yet bill as 300 kg — the volume takes more space than the mass suggests. How this calculator works Length, width, height (cm) — single-unit carton dimensions. Weight per unit (kg) — gross weight including packaging. Quantity — how many cartons (or how many units if packed together). Mode — air (divisor 6000) or sea (divisor 10000). The tool returns: Total CBM = L × W × H × qty ÷ 1,000,000 Total weight = weight × qty Chargeable weight = max(total weight, total volume ÷ divisor) For mixed shipments, run the calculator once per SKU and sum the chargeable weights. Real shipment reference | Product | Carton L×W×H (cm) | Weight (kg) | Qty | Mode | Total CBM | Chargeable | Per-unit cost impact | |---|---|---|---|---|---|---|---| | Phone case"
+  },
+  {
+    "url": "/zh/tools/cbm-calculator/",
+    "locale": "zh",
+    "title": "CBM 与体积重计算器",
+    "description": "计算 CBM（m³）、计费重、总重量和所需箱数，用于空运和海运报价对比。",
+    "category": "shipping",
+    "tags": [
+      "cbm",
+      "体积重",
+      "物流",
+      "空运",
+      "海运",
+      "计费重"
+    ],
+    "excerpt": "CBM 和体积重不是一回事。CBM 是物理体积——货物占用的三维空间，单位 m³。体积重是定价机制，把体积换算成等效重量，方便承运商在货物大但轻时对占用空间合理收费。 承运商按实重和体积重的较大值收费。所以一托盘泡沫枕才 50 kg，账单可能显示 300 kg——体积占的空间比质量暗示的多。 计算器怎么算 长、宽、高 ",
+    "body": "CBM 和体积重不是一回事。CBM 是物理体积——货物占用的三维空间，单位 m³。体积重是定价机制，把体积换算成等效重量，方便承运商在货物大但轻时对占用空间合理收费。 承运商按实重和体积重的较大值收费。所以一托盘泡沫枕才 50 kg，账单可能显示 300 kg——体积占的空间比质量暗示的多。 计算器怎么算 长、宽、高 (cm)——单件外箱尺寸。 单件重量 (kg)——含包装毛重。 数量——箱数（或合包件数）。 模式——空运（除数 6000）或海运（除数 10000）。 输出： 总体积 CBM = 长×宽×高×数量 ÷ 1,000,000 总重量 = 单件重量 × 数量 计费重 = max(总重量, 总体积 ÷ 除数) 多 SKU 混装时，每个 SKU 跑一次，结果相加。 真实货件参考 | 产品 | 外箱 L×W×H (cm) | 重量 (kg) | 数量 | 模式 | 总体积 CBM | 计费重 | 单件运费影响 | |---|---|---|---|---|---|---|---| | 手机壳 | 50 × 40 × 30 | 2.5 | 20 | 空 | 0.12 | 20.0 kg (体) | $0.30 / 件 (空) | | 纯棉 T 恤 | 60 × 40 × 40 | 12 | 50 | 空 | 0.48 | 80.0 kg (体) | $0.18 / 件 | | 抱枕芯 | 60 × 40 × 40 | 1.2 | 80 | 海 | 0.77 | 76.8 kg (体) | $0.04 / 件 (海省一半) | | 蓝牙音箱 | 45 × 35 × 25 | 8 | 30 | 空 | 0.118 | 30.0 kg (实) | $0.12 / 件 | 上表 4 行里有 3 行按体积重计费，不是实重。T 恤单箱实重 12 kg 听起来很重，但体积 80 kg 才是账单数字。抱枕芯是经典案例：从空运换海运，单件运费直接腰斩。 除数为什么重要 除数是承运商的定价杠杆。除数小 → 体积重大 → 账单高。空运除数 6000 等价于说\"1 m³ 空运等于 167 kg 货物\"，海运 10000 则放宽到每 m³ 100 kg。 如果货代给的除数不一样（5000、7000），问为什么。部分市场（中国国内、部分拉美航线）用非标除数。IATA 标准是 6000。 常见错误 忽略内包装密度——50 个手机壳塞进一个 50×40×30 箱加泡沫填充，体积变大但产品重量不变。 一票 PO 混模式——本计算器假设所有件同模式，每条腿分开算。 直接信供应商箱重——他们常报净重。外箱、缠膜、填充物另加 8–15%。 忽略最低计费——多数快递对 2 kg 小包有 21 kg 最低计费。 实用技巧 向上取整到 0.5 kg——承运商按更高的小数位计费。 始终量外箱，别量产品。"
+  },
+  {
+    "url": "/content/cbm-and-dimensional-weight/",
+    "locale": "en",
+    "title": "CBM and Dimensional Weight Explained (with Calculator)",
+    "description": "How to calculate CBM, chargeable weight and dimensional weight for air, sea and express shipping. Includes a free calculator and worked examples for common product sizes.",
+    "category": "shipping",
+    "tags": [
+      "cbm",
+      "shipping",
+      "dimensional-weight",
+      "logistics"
+    ],
+    "excerpt": "CBM and dimensional weight are the two numbers that decide what you pay for shipping. Get them wrong and you either overpay or get a surprise adjustment bill. W",
+    "body": "CBM and dimensional weight are the two numbers that decide what you pay for shipping. Get them wrong and you either overpay or get a surprise adjustment bill. What is CBM? CBM = cubic meter. It's the volume of your shipment: Example: a box 60cm × 40cm × 30cm For 10 identical boxes: 0.72 CBM. What is dimensional weight? Dimensional weight (also \"volumetric weight\") accounts for the space a package takes up, not just its mass. Light but bulky items would be unfairly cheap if carriers only charged by actual weight. The divisor depends on the carrier and mode: | Mode | Divisor | |---|---| | Air freight | 6000 | | Express (DHL, FedEx, UPS) | 5000 | | Sea freight (LCL) | 1000 | | USPS First-Class | 9000 | | Amazon FBA inbound | 5000 | Carrier charges the higher number For every shipment, the carrier calculates both: Actual weight (scale) Dimensional weight (volume ÷ divisor) You pay for the higher of the two. This is called chargeable weight. Worked example A box 50cm × 40cm × 30cm weighing 8kg, shipping via DHL: You pay for 12kg, not 8kg. Even though the scale reads 8. When dimensional weight kicks in Rule of thumb: if your product is bulky and light (pillows, foam, lampshades), dimensi"
+  },
+  {
+    "url": "/zh/content/epacket-sunset-logistics-alternatives/",
+    "locale": "zh",
+    "title": "ePacket 关停后：2026 年跨境物流替代方案",
+    "description": "ePacket 正在退场。中国到美 / 中国到欧卖家现在用什么——YunExpress、菜鸟、燕文、顺丰国际、Asendia。含时效、单价、追踪质量对比。",
+    "category": "shipping",
+    "tags": [
+      "epacket",
+      "物流",
+      "中国",
+      "跨境",
+      "货运"
+    ],
+    "excerpt": "ePacket 是中国卖家寄小包裹到美 / 欧的事实标准。2026 年逐步退场，被一组价格、时效、追踪各不相同的承运商替代。下面是现在能用的方案。 发生了什么 USPS 2023 年中停接 ePacket 入境。中国邮政大部分线路迁到菜鸟标快，价位类似但加了一道追踪节点。还在 Etsy 或 Shopify 上写 ePa",
+    "body": "ePacket 是中国卖家寄小包裹到美 / 欧的事实标准。2026 年逐步退场，被一组价格、时效、追踪各不相同的承运商替代。下面是现在能用的方案。 发生了什么 USPS 2023 年中停接 ePacket 入境。中国邮政大部分线路迁到菜鸟标快，价位类似但加了一道追踪节点。还在 Etsy 或 Shopify 上写 ePacket 的卖家，追踪断点出现时容易被买家投诉。 好消息：替代品覆盖了原来价位。坏消息：选哪家更复杂了。 替代矩阵（0.5–2 kg 到美） | 承运商 | 时效（天） | 单价 /kg | 追踪 | 备注 | |---|---|---|---|---| | YunExpress 经济线 | 12–20 | $4.80 | 半追踪 | 最便宜含追踪，慢 | | YunExpress 标准线 | 10–15 | $6.20 | 端到端 | 追踪稳，时效好 | | 菜鸟标快 | 14–25 | $3.80 | 部分追踪 | 最便宜但有断点 | | 菜鸟优先 | 8–12 | $7.20 | 端到端 | AliExpress 默认，最快 | | 燕文经济空运 | 18–28 | $3.50 | 弱追踪 | 最便宜，只适合低价品 | | 顺丰国际 | 7–12 | $6.80 | 端到端 | 时效最好，价格高 | | Asendia（美线） | 12–18 | $5.40 | 端到端 | USPS 交接，适合 B2C | 对比 ePacket 时代 $3.50–$5.00/kg、7–14 天、端到端追踪。替代品要么贵 10–20% 拿含追踪，要么便宜但追踪弱。 中国到欧替代方案 | 承运商 | 时效（天） | 单价 /kg | 追踪 | |---|---|---|---| | YunExpress 欧线 | 12–22 | $4.20 | 端到端 | | 菜鸟标快 欧线 | 16–28 | $3.20 | 部分追踪 | | DHL eCommerce | 8–14 | $7.50 | 端到端 | | Asendia 欧线 | 14–20 | $5.10 | 端到端 | | GLS 跨境 | 10–18 | $6.40 | 端到端 | 欧线比美线每 kg 贵 5–10%，便宜的服务时效更长。德国海关随机加 1–3 天。 按产品选承运 低价小件（$10 以下）： 燕文经济或菜鸟标快。追踪断点能接受。 中等价位（$10–$50）： YunExpress 标准或 Asendia。追踪要让买家看得过去。 高价 / 时效敏感： 顺丰国际或菜鸟优先。每 kg 多花 $2–3 换时效。 大件（2 kg 以上）： YunExpress 海运或 Asendia 海运。$1.80–$3.50/kg，30–50 天。 货代怎么合作 月发 200+ 包裹的卖家，货代聚量后能拿到"
+  },
+  {
+    "url": "/content/etsy-fees-vs-shopify/",
+    "locale": "en",
+    "title": "Etsy Fees vs Shopify: A Side-by-Side Cost Breakdown for Handmade Sellers",
+    "description": "Real comparison of Etsy and Shopify fees for a $35 handmade product: listing, transaction, payment, offsite ads, shipping label and Shopify subscription. Includes breakeven volume analysis.",
+    "category": "pricing",
+    "tags": [
+      "etsy",
+      "shopify",
+      "fees",
+      "handmade",
+      "comparison"
+    ],
+    "excerpt": "Etsy and Shopify look like the same job — sell handmade goods — but their fee structures diverge at every line. Here is the real cost on a $35 product, plus the",
+    "body": "Etsy and Shopify look like the same job — sell handmade goods — but their fee structures diverge at every line. Here is the real cost on a $35 product, plus the breakeven volume where each wins. Fee stack on a $35 product | Fee | Etsy | Shopify Basic + Stripe | |---|---|---| | Subscription | $0 | $39/month | | Listing / product page | $0.20 | $0 | | Transaction fee | 6.5% = $2.28 | 0% | | Payment processing | 3% + $0.25 = $1.30 | 2.9% + $0.30 = $1.32 | | Platform + payment total | $3.78 | $1.32 | | Offsite ads (15% on attributed sales) | $5.25 (if attributed) | $0 | | Total with offsite ads | $9.03 | $1.32 | | Shipping label discount | 10–30% off USPS | Variable | Etsy is cheaper per order for low-volume sellers, but offsite ads and the $0.20 listing can flip the math fast. Listing fees in detail Every Etsy listing costs $0.20. Listings auto-renew every 4 months, or when sold. 100 active listings, 4 months no sales: $20 in renewal fees 100 active listings, all sold in 4 months: $0 (renewed on sale) For sellers with high SKU counts and slow turnover, listings add up. A 1,000-SKU shop costs $200 every 4 months just to stay visible. Transaction + payment fee math | Order value | Etsy "
+  },
+  {
+    "url": "/zh/content/etsy-fees-vs-shopify/",
+    "locale": "zh",
+    "title": "Etsy vs Shopify 费用对比：手作卖家的真实账单",
+    "description": "Etsy 和 Shopify 在 $35 手作产品上的真实费用对比：上架费、成交费、支付费、站外广告、运费标签、Shopify 月费。含盈亏平衡点分析。",
+    "category": "pricing",
+    "tags": [
+      "etsy",
+      "shopify",
+      "费用",
+      "手作",
+      "对比"
+    ],
+    "excerpt": "Etsy 和 Shopify 看起来干同一件事——卖手作——但费用结构每个条目都不一样。下面是 $35 产品的真实成本，以及双方各占上风的销量临界点。 $35 产品费用堆栈 | 费用 | Etsy | Shopify Basic + Stripe | |---|---|---| | 月费 | $0 | $39/月 | ",
+    "body": "Etsy 和 Shopify 看起来干同一件事——卖手作——但费用结构每个条目都不一样。下面是 $35 产品的真实成本，以及双方各占上风的销量临界点。 $35 产品费用堆栈 | 费用 | Etsy | Shopify Basic + Stripe | |---|---|---| | 月费 | $0 | $39/月 | | 上架 / 商品页 | $0.20 | $0 | | 成交费 | 6.5% = $2.28 | 0% | | 支付处理 | 3% + $0.25 = $1.30 | 2.9% + $0.30 = $1.32 | | 平台 + 支付合计 | $3.78 | $1.32 | | 站外广告（归因单 15%） | $5.25（被归因时） | $0 | | 含站外广告合计 | $9.03 | $1.32 | | 运费标签折扣 | USPS 9 折–7 折 | 视情况 | 低销量 Etsy 单价更低，但站外广告和 $0.20 上架会把算账翻过来。 上架费细节 每个 Etsy 上架 $0.20。4 个月或售出时自动续。 100 个在线 listing，4 个月没卖出：续期费 $20 100 个在线 listing，4 个月全卖出：$0（卖出即续） SKU 多、动销慢的卖家，光上架就吃钱。1,000 SKU 的店每 4 个月花 $200 才能保持可见。 成交 + 支付费算账 | 订单金额 | Etsy（6.5% + 3% + $0.25） | Shopify Basic + Stripe（2.9% + $0.30） | |---|---|---| | $10 | $1.43 | $0.59 | | $20 | $2.23 | $0.88 | | $35 | $3.78 | $1.32 | | $50 | $5.00 | $1.75 | | $100 | $8.75 | $3.20 | 每个价位 Etsy 抽的\"平台 + 支付\"都差不多是 Shopify 的 3 倍。 站外广告 Etsy 在平台外投广告（Google、Facebook、Pinterest）。年营收 $10K 以下，被归因的订单收 15%。$10K 以上降到 12%。 $10K 以下不能退出。这个区间里站外广告能把 Etsy 从\"便宜\"变成\"贵很多\"。 $35 产品 30% 归因率，每归因单加 $5.25。月 100 单、30% 归因 = $157.50/月，已经是 Shopify 月费的 4 倍。 运费标签折扣 Etsy 提供 USPS、FedEx、Canada Post 标签，9 折–7 折。$5 USPS Priority 标签，平台付 $3.50–$4.50。 Shopify Shipping 提供 USPS、UPS、DHL 等同价位。标签成本两边差不多，差别在平台费上加多少。 盈亏平衡"
+  },
+  {
+    "url": "/tools/fx-withdraw-calculator/",
+    "locale": "en",
+    "title": "FX & Payout Comparator — PayPal, Wise, Airwallex",
+    "description": "Compare what you actually receive across PayPal, Wise and Airwallex when converting USD, EUR, GBP or JPY into CNY, USD or EUR.",
+    "category": "payment",
+    "tags": [
+      "paypal",
+      "wise",
+      "airwallex",
+      "fx",
+      "payout",
+      "currency conversion",
+      "cross-border"
+    ],
+    "excerpt": "Cross-border sellers pay 3–4 different fees when money moves from a customer''s card to a mainland China bank account: payment processing fee, FX margin, interm",
+    "body": "Cross-border sellers pay 3–4 different fees when money moves from a customer''s card to a mainland China bank account: payment processing fee, FX margin, intermediary bank fee, withdrawal fee. Wise and Airwallex undercut PayPal specifically on FX margin, which is often the single largest leak. How this calculator works Amount — the gross amount you''re converting. From currency — your sales currency (USD most common). To currency — typically CNY for Chinese entities, USD for US-based. The tool returns: FX margin baked into each provider''s displayed rate. Withdraw fee (if any). Net receive amount — what hits your bank. Defaults assume mid-market reference rates as of writing; your actual rate depends on the day. The provider with the smallest gap between its fee column and the sum of others is the winner. Sample receive amounts (USD → CNY, $10,000) | Provider | FX margin | Effective rate | Receive CNY | Loss vs mid-market | |---|---|---|---|---| | Mid-market (reference) | 0% | 7.25 | ¥72,500 | ¥0 | | PayPal | 3.5% | 6.996 | ¥69,963 | ¥2,537 | | Wise | 0.41% | 7.220 | ¥72,203 | ¥297 | | Airwallex | 0.35% | 7.225 | ¥72,246 | ¥254 | On a single $10k transfer, the gap between PayPal an"
+  },
+  {
+    "url": "/content/global-payment-methods/",
+    "locale": "en",
+    "title": "Global Payment Methods by Region: The Complete 2026 Map",
+    "description": "A continent-by-continent guide to wallets, internet payments, mobile payments, cards, prepaid cards, and cross-border payment services in 80+ countries.",
+    "category": "payment",
+    "tags": [
+      "payment",
+      "global",
+      "wallets",
+      "cross-border",
+      "marketplaces"
+    ],
+    "excerpt": "Digital payments vary dramatically by region. East Asia runs on mobile wallets, Europe on cards and instant bank transfers, Latin America on a hybrid of cards a",
+    "body": "Digital payments vary dramatically by region. East Asia runs on mobile wallets, Europe on cards and instant bank transfers, Latin America on a hybrid of cards and cash vouchers, Africa on mobile money. Here is the country-by-country map. Asia: the most diverse payment landscape East Asia China has the world's highest mobile wallet penetration. Alipay and WeChat Pay cover 90% of urban consumers and dominate in-person QR-code payments. Supporting wallets: JDB Pay, Best Pay, Baidu Wallet, UnionPay Wallet. Internet payment platforms: Alipay Online, TenPay, UnionPay Online, 99Bill, ChinaPnr. Mobile apps from every major bank and payment institution enable QR scanning and remote transfers. Card networks: UnionPay (dominant domestically), Visa, Mastercard, JCB. Prepaid: carrier cards from China Unicom/Telecom/Mobile, plus retail gift cards. Cross-border: Alipay International, WeChat Pay International, UnionPay International, PingPong, Airwallex, LianLian Pay. Japan combines mature card networks with transit-flavored prepaid cards. Wallets: PayPay, LINE Pay, Rakuten Pay, au WALLET. Internet payment: JCB Net Payment, Rakuten Online Payment, GMO Payment Gateway. Cards: JCB, Visa, Mastercard,"
+  },
+  {
+    "url": "/zh/content/google-ads-roas-formula/",
+    "locale": "zh",
+    "title": "Google Ads ROAS 公式：真实的盈亏平衡计算",
+    "description": "怎么算 Google Ads ROAS、盈亏平衡 ROAS、基于实际利润率的目标 ROAS。含公式、计算器、常见 ROAS 错误。",
+    "category": "ads",
+    "tags": [
+      "google-ads",
+      "roas",
+      "roi",
+      "盈亏平衡"
+    ],
+    "excerpt": "ROAS 是电商里引用最多的指标。多数卖家算错 — 庆祝亏损的广告活动。 ROAS 到底测什么 ROAS 4× 意味着每 $1 广告支出返回 $4 收入。这是毛数。完全没告诉你有没有赚钱。 盈亏平衡公式 其中 净利率 = 扣完全部成本（COGS、物流、平台费、退款）后的利润 ÷ 收入。 25% 净利率店铺：1 ÷ 0.",
+    "body": "ROAS 是电商里引用最多的指标。多数卖家算错 — 庆祝亏损的广告活动。 ROAS 到底测什么 ROAS 4× 意味着每 $1 广告支出返回 $4 收入。这是毛数。完全没告诉你有没有赚钱。 盈亏平衡公式 其中 净利率 = 扣完全部成本（COGS、物流、平台费、退款）后的利润 ÷ 收入。 25% 净利率店铺：1 ÷ 0.25 = 4× 盈亏平衡 ROAS。 4× 以上广告支出就回本。4× 以下就是亏。 算例 店铺单品经济： 售价：$50 成本：$12 物流：$4 支付+平台费：$3（6%） 单件净利：$31（62% 利润率） 盈亏平衡 ROAS = 1 ÷ 0.62 = 1.61× 如果店铺达到 3× ROAS，归因到广告的单件利润： 3× ROAS 看起来很美，但广告单实际利润率 28.7%，不是 62%。广告花的钱是真金白银。 含利润缓冲的目标 ROAS 别只瞄盈亏平衡。加上其他成本的缓冲： | 场景 | 25% 净利率店铺的目标 ROAS | |---|---| | 盈亏平衡 | 4× | | 25% 利润缓冲 | 5.33× | | 50% 利润缓冲 | 8× | | 100% 利润缓冲（利润翻倍） | 16× | 多数店铺起步目标 2× 盈亏平衡 ROAS。连续 2 周低于盈亏平衡的广告系列直接砍。 常见 ROAS 错误 毛净混淆 50% 毛利率的产品（成本 = 售价的 50%）扣完费用、物流、退款后可能只有 20% 净利率。公式里用 50%，算出 2× 盈亏平衡，实际需要 5×。 忽略退货和拒付 15% 退货率的服装店要在成本上加 10%。如果\"ROAS\"不算退货，等于自欺欺人。 不扣支付处理费 $100 收入不是你的 $100。Stripe 拿 $3.20。算进公式。 辅助转化算错 Google 的\"转化价值\"包含浏览转化和跨设备。手机上看广告、桌面 Google 搜索后才下单的客户也被计入。这会让 ROAS 虚高 10–30%。 LTV 盲区 盈亏平衡 ROAS 的首单可以接受，如果 LTV 是首单 3 倍。但 LTV 和 AOV 一样的话，首单必须盈利。 报表时间窗口 24 小时的 ROAS 和 30 天 ROAS 看起来差很多。多数平台可自选。冷流量广告系列用 7 天或更长。 行业 ROAS 基准（美国电商 2026） | 品类 | 中位数 ROAS | 前 25% | |---|---|---| | 服装 | 2.8× | 5× | | 电子 | 3.5× | 6× | | 家居 | 3.2× | 5.5× | | 美妆 | 4× | 7× | | 保健品 | 3.8× | 6.5× | | 宠物 | 4.5× | 7.5× | | 数字产品 | 6× | 12× | 这些都是行业聚合数。你店铺的盈亏平衡是决策时唯一重要的数字。 不涨价怎"
+  },
+  {
+    "url": "/content/google-ads-roas-formula/",
+    "locale": "en",
+    "title": "Google Ads ROAS Formula: The Real Break-even Calculation",
+    "description": "How to calculate Google Ads ROAS, break-even ROAS, and target ROAS based on your actual margin. Includes formula, calculator, and common ROAS mistakes.",
+    "category": "ads",
+    "tags": [
+      "google-ads",
+      "roas",
+      "roi",
+      "break-even"
+    ],
+    "excerpt": "ROAS is the most quoted metric in ecommerce. Most sellers don't calculate it correctly — and end up celebrating unprofitable campaigns. What ROAS actually measu",
+    "body": "ROAS is the most quoted metric in ecommerce. Most sellers don't calculate it correctly — and end up celebrating unprofitable campaigns. What ROAS actually measures A ROAS of 4× means every $1 in ad spend returned $4 in revenue. That's the gross number. It tells you nothing about whether you made money. The break-even formula Where net margin = profit after all costs (COGS, shipping, fees, refunds) divided by revenue. For a 25% net margin store: 1 ÷ 0.25 = 4× break-even ROAS. Anything above 4× is profit on ad spend alone. Anything below is loss. Worked example A store with these unit economics: Sale price: $50 Cost: $12 Shipping: $4 Payment + platform fees: $3 (6%) Net profit per sale: $31 (62% margin) Break-even ROAS = 1 ÷ 0.62 = 1.61× If the store achieves 3× ROAS, profit per sale attributed to ads: 3× ROAS looks great but the actual margin on ad-driven sales is 28.7%, not 62%. The ad cost is real money you spent. Target ROAS with profit buffer Don't aim for break-even. Add a buffer for other costs: | Scenario | Target ROAS at 25% net margin | |---|---| | Break-even | 4× | | 25% profit buffer | 5.33× | | 50% profit buffer | 8× | | 100% profit buffer (double profit) | 16× | For mos"
+  },
+  {
+    "url": "/content/profit-tracking-spreadsheet/",
+    "locale": "en",
+    "title": "How to Build a Cross-border Profit Tracking Spreadsheet",
+    "description": "Step-by-step tutorial for building a profit-tracking spreadsheet in Excel or Google Sheets. Includes formulas, dashboard setup, and free template link.",
+    "category": "ops",
+    "tags": [
+      "excel",
+      "spreadsheet",
+      "profit",
+      "tracking"
+    ],
+    "excerpt": "Most sellers track revenue but not profit. Profit is what you actually keep. Here's how to build a spreadsheet that tells the truth. The four sheets you need A ",
+    "body": "Most sellers track revenue but not profit. Profit is what you actually keep. Here's how to build a spreadsheet that tells the truth. The four sheets you need A complete profit tracker has four sheets: Orders (the input) Every sale gets one row. | Column | Description | |---|---| | date | Order date | | orderid | Unique order ID | | channel | Shopify, Etsy, Amazon, etc. | | sku | Product identifier | | qty | Quantity sold | | saleprice | Per-unit price | | currency | USD, EUR, GBP | | paymentfee | What Stripe/PayPal took | | shippingcost | What you paid for shipping | | productcost | Supplier cost (allocated) | | shippingcountry | Destination country | | customeremail | For repeat customer analysis | | status | paid, refunded, partiallyrefunded | | refundamount | If refunded | | chargebackflag | TRUE/FALSE | | notes | Anything noteworthy | Costs (the input) Per-order costs that vary. | Column | Description | |---|---| | date | Cost date | | type | shipping, packaging, label, customs, duty, etc. | | amount | Cost | | relatedorderid | Order ID if applicable | | notes | Context | Ads (the input) Daily ad spend and result data. | Column | Description | |---|---| | date | Spend date | | "
+  },
+  {
+    "url": "/content/payment-chargeback-prevention/",
+    "locale": "en",
+    "title": "How to Prevent Payment Chargebacks (and Win Disputes When They Happen)",
+    "description": "Practical chargeback prevention for cross-border ecommerce. Covers fraud screening, 3DS, evidence templates, and the dispute process on Stripe and PayPal.",
+    "category": "payment",
+    "tags": [
+      "chargeback",
+      "fraud",
+      "dispute",
+      "prevention"
+    ],
+    "excerpt": "A chargeback isn't a refund. It's a $15–20 fee plus the product cost plus your time — even if you win. Prevention is cheaper than defense. The two types of char",
+    "body": "A chargeback isn't a refund. It's a $15–20 fee plus the product cost plus your time — even if you win. Prevention is cheaper than defense. The two types of chargebacks Unauthorized (cardholder fraud) Someone used a stolen card to buy from you. The real cardholder notices and disputes. With 3DS in place, liability shifts to the issuer. Without 3DS, you eat the loss. Win rate with 3DS: 85% (issuer pays) Win rate without 3DS: 40% (you eat it) Merchant disputes (buyer remorse) Item not received (INR) — buyer claims product didn't arrive Significantly not as described (SNAD) — product differs from listing Service not provided — digital products, services These need evidence, not fraud filters. Win rate with strong evidence: 60–80%. Prevention checklist Before the sale [ ] Enable 3D Secure on all transactions. Stripe and PayPal both support it. Conversion drops 3–5%, but chargebacks drop 50%+. [ ] Use AVS (Address Verification System). Mismatched billing/shipping is a fraud flag. [ ] CVV required — never waive it. Most fraud doesn't have the CVV. [ ] Velocity checks — flag 3+ orders from same IP/card in 24h. [ ] Block high-risk countries if you don't ship there. List available in Stripe "
+  },
+  {
+    "url": "/zh/tools/fee-comparator/",
+    "locale": "zh",
+    "title": "PayPal vs Stripe 手续费对比器",
+    "description": "输入客单价和月单量，对比 PayPal 与 Stripe 的月手续费总额和有效费率。",
+    "category": "payment",
+    "tags": [
+      "paypal",
+      "stripe",
+      "费率",
+      "对比",
+      "收款",
+      "电商"
+    ],
+    "excerpt": "PayPal 和 Stripe 在标准卡交易上都收大约 3% + $0.30，但一旦叠加国际卡、货币转换、拒付费，结构差异立刻拉开。一个 $35 客单价 × 300 单/月的店铺，月流水 $10,500——1% 有效费率差就是 $1,260/年。 计算器怎么算 客单价 (USD)——平均订单金额。 月单量——每月订单总",
+    "body": "PayPal 和 Stripe 在标准卡交易上都收大约 3% + $0.30，但一旦叠加国际卡、货币转换、拒付费，结构差异立刻拉开。一个 $35 客单价 × 300 单/月的店铺，月流水 $10,500——1% 有效费率差就是 $1,260/年。 计算器怎么算 客单价 (USD)——平均订单金额。 月单量——每月订单总数。 输出： 各家月手续费 有效费率 = 月手续费 ÷ 月流水 差额——按月的金额差 默认假设 PayPal 商业交易（4.4% + $0.30）和 Stripe 标准卡（2.9% + $0.30 基础，含约 1.5% 跨境卡附加作为综合有效费率）。按自己的实际客单组成调整。 不同订单量的有效费率 | 客单价 | 月单量 | 流水 | PayPal 费 | Stripe 费 | 月差 | 年差 | |---|---|---|---|---|---|---| | $25 | 200 | $5,000 | $280 | $194 | $86 | $1,032 | | $35 | 300 | $10,500 | $569 | $404 | $165 | $1,980 | | $60 | 500 | $30,000 | $1,590 | $1,140 | $450 | $5,400 | | $120 | 150 | $18,000 | $948 | $696 | $252 | $3,024 | 差额与流水大致线性相关，与单数无关。$30k/月流水，PayPal 多收 $5,400/年——在某些市场够一个全职员工。Stripe 在标准国内卡场景胜出；PayPal 只在买家明确拒绝刷卡的场景才赢。 这工具不算什么 拒付 / 争议费（每笔 $15–20）——预留准备金。 订阅计费折扣——Stripe Billing 和 PayPal Subscriptions 的留存卡定价不一样。 本地支付（iDEAL、Klarna、Alipay）——Adyen、Mollie、Airwallex Payment Acceptance 等聚合器用一笔费率包打。 刷卡 vs 输卡——POS 与线上定价不同。 常见错误 把\"无月费\"等同于免费——PayPal 无月费但单笔费率更高，跑数看看。 忽略 1.5% 国际附加费——在基础费率上叠加。PayPal 跨境交易 4.4% + 1.5% = 5.9%，还没算汇损。 忘记货币转换——客户付 EUR、你结算 USD，PayPal 在公示汇率上再加 3–4%。Stripe 是 1%。 低估拒付——准备 0.1–0.3% 流水的准备金；高客单品类（电子、保健品）可能到 1%。 何时切换服务商 <$50k/月 + 纯国内：Stripe 通常便宜 0.5–1%。PayPal 的支票罕见。 跨境销售：Stripe 银行间汇率比 PayPal 内"
+  },
+  {
+    "url": "/tools/fee-comparator/",
+    "locale": "en",
+    "title": "PayPal vs Stripe Fee Comparator",
+    "description": "Compare monthly PayPal and Stripe processing fees for your unit price and order volume. See which is cheaper.",
+    "category": "payment",
+    "tags": [
+      "paypal",
+      "stripe",
+      "fees",
+      "comparison",
+      "payments",
+      "e-commerce"
+    ],
+    "excerpt": "Both PayPal and Stripe charge roughly 3% + $0.30 on standard card transactions, but the structures diverge quickly once you add international cards, currency co",
+    "body": "Both PayPal and Stripe charge roughly 3% + $0.30 on standard card transactions, but the structures diverge quickly once you add international cards, currency conversion, and dispute fees. A $35 product on 300 orders/month generates $10,500 in revenue — a 1% effective-rate difference is $1,260/year. How this calculator works Unit price (USD) — average order value. Monthly volume — total orders per month. The tool returns: Monthly fee for each provider Effective rate = monthly fee ÷ monthly revenue Wins by — the dollar gap per month Defaults assume PayPal commercial transactions (4.4% + $0.30) and Stripe standard card (2.9% + $0.30 base, with an estimated 1.5% cross-border card surcharge baked into Stripe's effective rate for international orders). Adjust the inputs to your actual mix. Effective fee across order volumes | Unit price | Monthly orders | Revenue | PayPal fee | Stripe fee | Gap / month | Gap / year | |---|---|---|---|---|---|---| | $25 | 200 | $5,000 | $280 | $194 | $86 | $1,032 | | $35 | 300 | $10,500 | $569 | $404 | $165 | $1,980 | | $60 | 500 | $30,000 | $1,590 | $1,140 | $450 | $5,400 | | $120 | 150 | $18,000 | $948 | $696 | $252 | $3,024 | The gap scales roughly lin"
+  },
+  {
+    "url": "/content/paypal-vs-stripe-fees/",
+    "locale": "en",
+    "title": "PayPal vs Stripe Fees in 2026: The Real Cost Per Sale",
+    "description": "Side-by-side fee comparison of PayPal and Stripe for cross-border sellers. Includes micro-fee trap, chargeback handling, and currency conversion costs.",
+    "category": "payment",
+    "tags": [
+      "paypal",
+      "stripe",
+      "fees",
+      "comparison"
+    ],
+    "excerpt": "PayPal and Stripe look similar on paper. The real cost difference shows up on international sales and currency conversion. Standard US card fees (2026) | Featur",
+    "body": "PayPal and Stripe look similar on paper. The real cost difference shows up on international sales and currency conversion. Standard US card fees (2026) | Feature | PayPal Checkout | Stripe | |---|---|---| | Online transaction | 3.49% + $0.49 | 2.9% + $0.30 | | In-person (card present) | 2.29% + $0.09 | 2.7% + $0.05 | | Monthly fee | $0 | $0 | | Setup fee | $0 | $0 | | Chargeback fee | $20 | $15 | PayPal's standard online rate is 3.49% + $0.49 (often quoted as \"2.99% + $0.49\" — that's the older rate). Stripe is 2.9% + $0.30 for the first $1M/year processed. The difference on a $50 sale: PayPal: $2.24 Stripe: $1.75 You keep $0.49 more per sale with Stripe. The micro-fee trap Both processors charge a fixed fee per transaction. For small-ticket items, this is a huge percentage: | Sale price | Stripe cost | As % of sale | |---|---|---| | $5 | $0.45 | 8.9% | | $10 | $0.59 | 5.9% | | $25 | $1.03 | 4.1% | | $50 | $1.75 | 3.5% | | $100 | $3.20 | 3.2% | Below $10, processor fees are over 6% of revenue. If you sell small items, either bundle them or switch to a flat-rate processor like Square (2.6% + $0.10 in-person, 2.9% + $0.30 online). International card fees | | PayPal | Stripe | |---|---"
+  },
+  {
+    "url": "/tools/pricing-calculator/",
+    "locale": "en",
+    "title": "Product Pricing Calculator for Cross-border Sellers",
+    "description": "Free Shopify pricing calculator. Enter cost, shipping, fees and target margin — get the suggested price, profit per unit and break-even price instantly.",
+    "category": "pricing",
+    "tags": [
+      "pricing",
+      "shopify",
+      "calculator",
+      "profit"
+    ],
+    "excerpt": "The Product Pricing Calculator answers the question every cross-border seller asks: what should I charge to actually make money? Most pricing formulas stop at \"",
+    "body": "The Product Pricing Calculator answers the question every cross-border seller asks: what should I charge to actually make money? Most pricing formulas stop at \"cost × markup.\" That misses shipping, platform commission, payment processing, and the small per-order fixed fees that quietly eat your margin. This calculator includes all four. How to use it Enter your product cost (what you pay the supplier, in USD). Add your shipping cost per order (or use 0 for free-shipping models). Enter commission % (Shopify Payments is 2.9% in the US; Etsy is 6.5% + 3%; Amazon is 15%). Enter payment processing % (often the same as commission if your platform bundles it). Add any fixed per-order fee (Shopify charges $0.30; PayPal charges $0.49 in some regions). Set your target net margin (after all fees). Read the suggested price, break-even price, and profit per unit. The formula The break-even price assumes 0% net margin — anything you sell above it is profit. Worked example A $8 product with $3.50 shipping, 2.9% commission, 2.9% payment fee, $0.30 fixed fee, and a 30% target margin: Suggested price: $24.85 Break-even price: $13.05 (zero profit) Profit per unit at the suggested price: $7.46 If you "
+  },
+  {
+    "url": "/zh/tools/roas-calculator/",
+    "locale": "zh",
+    "title": "ROAS 保本与目标利润率计算器",
+    "description": "根据客单价、成本、支付费率和目标利润率，反算保本 ROAS、目标 ROAS 和最高 CPA。",
+    "category": "ads",
+    "tags": [
+      "roas",
+      "保本",
+      "cpa",
+      "cpc",
+      "广告",
+      "facebook",
+      "tiktok",
+      "google"
+    ],
+    "excerpt": "ROAS（广告支出回报率）是付费社交里最常用的指标，但多数卖家只是凭感觉看，不去验算。3.0x ROAS 听起来很好，拆开算利润率——8% 支付费、25% 目标利润率下，保本其实只有 1.85x。低于这个数，首单就亏钱。 计算器怎么算 客单价 (USD)——售价（打折后实际成交价）。 成本 + 物流 (USD)——到岸",
+    "body": "ROAS（广告支出回报率）是付费社交里最常用的指标，但多数卖家只是凭感觉看，不去验算。3.0x ROAS 听起来很好，拆开算利润率——8% 支付费、25% 目标利润率下，保本其实只有 1.85x。低于这个数，首单就亏钱。 计算器怎么算 客单价 (USD)——售价（打折后实际成交价）。 成本 + 物流 (USD)——到岸价，含生产、包装、运到客户手中的运费。 支付费率 (%)——总处理费，含汇损和平台佣金。 目标利润率 (%)——扣完所有固定成本后想要的净利润率。 输出： 保本 ROAS = 1 ÷ (1 − 支付费率% − 目标利润率%)。低于这个数，每个广告美元都亏。 目标 ROAS——达到目标利润率所需的倍数。 最高 CPA——首单保本情况下你最多能付的获客成本。 参考场景 | 客单价 | 成本+物流 | 支付费率 | 目标利润率 | 保本 | 目标 ROAS | 最高 CPA | |---|---|---|---|---|---|---| | $25 | $8 | 4% | 20% | 1.32x | 1.65x | $16.00 | | $45 | $14 | 4% | 25% | 1.41x | 1.85x | $29.20 | | $80 | $22 | 4% | 30% | 1.52x | 2.16x | $54.80 | | $150 | $45 | 5% | 35% | 1.67x | 2.56x | $97.50 | | $300 | $90 | 5% | 40% | 1.82x | 3.03x | $195.00 | 保本随目标利润率变化慢；最高 CPA 随客单价线性变化。最容易把广告搞崩的杠杆是支付费率漂移（汇损附加、支付商分级调整）——有效费率涨 1%，需要多 10% 的 ROAS 来补偿。 超越 ROAS：四个杠杆 ROAS 是输出。输入的杠杆是： CTR（点击率）——由素材和开场决定。 CVR（转化率）——由落地页、优惠、定价锚点决定。 AOV（客单价）——套装、加购、临界包邮。 CPM（千次曝光成本）——由受众质量和竞争决定。 ROAS 不达标时，按顺序排查：先看 CPM（竞价问题？）、再看 CTR（素材疲劳？）、最后查 CVR（落地页不匹配？）。 常见错误 跨归因窗口比 ROAS——Facebook 7 天点击 vs Google 30 天点击不能直接比。先锁窗口再 benchmark。 忽略退货和拒付——它们让成本涨两次（退货 + 丢失的获客成本）。目标利润率再加 2–5% 吸收它们。 忘记素材疲劳——14 天内 ROAS 跌 30% 但 CPM 没变，多半是素材废了，不是受众废了。 用 LTV 算首单——保本是首单。LTV 数学只在有复购数据时用，否则你在放大不盈利的群组。 把\"目标 ROAS\"当保证值——它是按你设的利"
+  },
+  {
+    "url": "/tools/roas-calculator/",
+    "locale": "en",
+    "title": "ROAS Break-Even Calculator",
+    "description": "Compute break-even ROAS, target ROAS, and max CPA from your unit price, cost, payment fee and target margin.",
+    "category": "ads",
+    "tags": [
+      "roas",
+      "break-even",
+      "cpa",
+      "cpc",
+      "ads",
+      "facebook",
+      "tiktok",
+      "google"
+    ],
+    "excerpt": "ROAS (Return on Ad Spend) is the single most-used metric in paid social, but most sellers eyeball it without checking the math. A 3.0x ROAS sounds great until y",
+    "body": "ROAS (Return on Ad Spend) is the single most-used metric in paid social, but most sellers eyeball it without checking the math. A 3.0x ROAS sounds great until your margins and fees break it down — at 8% payment fee and 25% target margin, your break-even is closer to 1.85x. Anything below that loses money on the first order. How this calculator works Unit price (USD) — selling price (post-discount if you run promos). COGS + shipping (USD) — landed cost including production, packaging, freight to customer. Payment fee (%) — total processor fee including FX and platform commission. Target margin (%) — net margin you want after all fixed costs. The tool returns: Break-even ROAS = 1 / (1 − payment% − margin%). Below this, every ad dollar loses money. Target ROAS — multiplier needed to hit your target margin after ad spend. Max CPA — the most you can pay per acquired customer while staying break-even on order one. Reference scenarios | Unit price | COGS+ship | Payment % | Target margin | Break-even | Target ROAS | Max CPA | |---|---|---|---|---|---|---| | $25 | $8 | 4% | 20% | 1.32x | 1.65x | $16.00 | | $45 | $14 | 4% | 25% | 1.41x | 1.85x | $29.20 | | $80 | $22 | 4% | 30% | 1.52x | 2.16"
+  },
+  {
+    "url": "/content/shopify-fees-breakdown/",
+    "locale": "en",
+    "title": "Shopify Fees in 2026: The Complete Breakdown for Sellers",
+    "description": "Every fee Shopify charges in 2026 — subscription, payments, apps, themes and the hidden costs. Includes a calculator showing what a $50 sale actually nets you.",
+    "category": "pricing",
+    "tags": [
+      "shopify",
+      "fees",
+      "payments",
+      "breakdown"
+    ],
+    "excerpt": "Shopify's headline number is \"$39/month.\" The real cost is much higher. Here's every fee a typical store pays in 2026. Subscription tiers | Plan | Monthly | Bes",
+    "body": "Shopify's headline number is \"$39/month.\" The real cost is much higher. Here's every fee a typical store pays in 2026. Subscription tiers | Plan | Monthly | Best for | |---|---|---| | Starter | $5 | Side projects, in-person sales | | Basic | $39 | New stores, < $10k/month revenue | | Shopify | $105 | Growing stores, more reports | | Advanced | $399 | $1M+/year, lowest card rates | The 3-year plan discounts Basic to $29/month and Advanced to $299/month. Transaction fees — Shopify Payments If you use Shopify Payments (powered by Stripe): | Channel | Online | In-person | |---|---|---| | Basic plan | 2.9% + $0.30 | 2.7% + $0.00 | | Shopify plan | 2.7% + $0.30 | 2.5% + $0.00 | | Advanced plan | 2.5% + $0.30 | 2.4% + $0.00 | For international cards (non-US), add 1.5% to the percentage. Transaction fees — third-party gateways If you use PayPal, Stripe directly, or another gateway: Basic plan: 2.0% extra on top of what the gateway charges Shopify plan: 1.0% Advanced plan: 0.5% The math: Basic + PayPal = 3.49% + $0.30 + PayPal's fee. Stick with Shopify Payments until you process $10k+/month. What a $50 sale actually nets Assume Shopify Basic + Shopify Payments, no apps charging transaction "
+  },
+  {
+    "url": "/content/pricing-formula-explained/",
+    "locale": "en",
+    "title": "The Cross-border Pricing Formula (with Worked Examples)",
+    "description": "The exact formula cross-border sellers use to price products on Shopify, Etsy and Amazon. Includes worked examples for dropshipping, branded products and high-AOV niches.",
+    "category": "pricing",
+    "tags": [
+      "pricing",
+      "shopify",
+      "etsy",
+      "amazon",
+      "formula"
+    ],
+    "excerpt": "Most sellers price by gut feel: cost × 3 sounds right. That works until the third month when the books show a loss. Here's the formula professional cross-border",
+    "body": "Most sellers price by gut feel: cost × 3 sounds right. That works until the third month when the books show a loss. Here's the formula professional cross-border sellers actually use. The formula Where: cost = supplier price in USD shipping = per-order shipping cost to customer fixed fees = per-order platform fees (Shopify $0.30, PayPal $0.49 in some markets) commission + payment = combined percentage fee target margin = net profit % you want to keep Worked example 1 — branded Shopify product Cost: $8 Shipping: $3.50 Shopify Payments fee: 2.9% + $0.30 Target margin: 35% Profit per unit: $19.00 × (1 − 0.029) − 11.80 = $6.65 Worked example 2 — Etsy handmade Cost: $12 (materials + labor) Shipping: $5 (with $1 packaging) Etsy transaction fee: 6.5% Etsy payment processing: 3% + $0.25 Target margin: 40% Worked example 3 — Amazon FBA Cost: $6 Amazon referral fee: 15% FBA fulfillment: $4.50 Target margin: 25% The break-even price (0% margin) is $13.13. Anything above that is profit, anything below is a loss. Why markup-based pricing fails A 3× markup on $8 gives $24. But: | Item | Amount | |---|---| | Revenue | $24.00 | | Shopify fee (2.9% + $0.30) | −$1.00 | | Payment processing (already i"
+  },
+  {
+    "url": "/content/dropshipping-hidden-costs/",
+    "locale": "en",
+    "title": "The Hidden Costs of Dropshipping in 2026 (Real Numbers)",
+    "description": "A transparent breakdown of every cost dropshippers forget — supplier fees, returns, payment holds, ad spend, refunds. Includes a real P&L from a $50 average-order store.",
+    "category": "pricing",
+    "tags": [
+      "dropshipping",
+      "costs",
+      "profit",
+      "hidden"
+    ],
+    "excerpt": "\"Dropshipping is free to start\" is the lie. Here's what a real store actually pays. The complete cost stack A store selling a $50 product via AliExpress dropshi",
+    "body": "\"Dropshipping is free to start\" is the lie. Here's what a real store actually pays. The complete cost stack A store selling a $50 product via AliExpress dropshipping: | Cost | Amount | % of revenue | |---|---|---| | Revenue | $50.00 | 100% | | Product cost | $12.00 | 24% | | Shipping to customer | $4.50 | 9% | | Shopify Basic | $1.30 (allocated) | 2.6% | | Shopify Payments | $1.75 (2.9% + $0.30) | 3.5% | | Apps (5 × $20/mo allocated) | $3.30 | 6.6% | | Email tool | $0.50 | 1% | | Subtotal before ads | $26.65 | 53.3% | | Gross margin | $23.35 | 46.7% | | Ad spend (Google + Meta) | $10.00 | 20% | | Net margin before returns | $13.35 | 26.7% | | Returns (8% of orders × $50 × cost basis 30%) | $1.20 | 2.4% | | Chargebacks (1% × $15 fee) | $0.15 | 0.3% | | Refund processing (refund fees kept by Stripe) | $0.20 | 0.4% | | Customer service time (allocated) | $0.50 | 1% | | Real net margin | $11.30 | 22.6% | That 22.6% looks fine. Now add the things most beginners forget: Hidden costs that erode profit Slow shipping refunds US customers expect delivery in 5–7 days. AliExpress shipping takes 15–25 days. 5% of customers request partial refunds (\"where is my order?\") or full refunds. Average "
+  },
+  {
+    "url": "/zh/content/tiktok-shop-commission-breakdown/",
+    "locale": "zh",
+    "title": "TikTok Shop 佣金拆解：创作者和卖家到底付多少",
+    "description": "TikTok Shop 2026 年的每一笔费用：推荐佣金、交易服务费、创作者分成、运费补贴规则、90 天退货窗口。$30 产品完整算账。",
+    "category": "payment",
+    "tags": [
+      "tiktok",
+      "tiktok-shop",
+      "费用",
+      "创作者",
+      "佣金"
+    ],
+    "excerpt": "TikTok Shop 的费率结构是主流电商平台里最短的，但惩罚那些不把创作者分成算进去的卖家。下面是一款 $30 产品的真实成本。 $30 产品的费用堆栈 | 费用 | 金额 | 占售价比 | |---|---|---| | 售价 | $30.00 | 100% | | 推荐佣金（6%，服饰类） | $1.80 | ",
+    "body": "TikTok Shop 的费率结构是主流电商平台里最短的，但惩罚那些不把创作者分成算进去的卖家。下面是一款 $30 产品的真实成本。 $30 产品的费用堆栈 | 费用 | 金额 | 占售价比 | |---|---|---| | 售价 | $30.00 | 100% | | 推荐佣金（6%，服饰类） | $1.80 | 6% | | 交易服务费（1.8%） | $0.54 | 1.8% | | TikTok 抽成 | $2.34 | 7.8% | | 创作者分成（10% 常见） | $3.00 | 10% | | TikTok 从创作者分成抽的 30% | $0.90 | 3% | | 创作者 + TikTok 分成层 | $3.90 | 13% | | 平台 + 创作者合计 | $6.24 | 20.8% | 这是底线。叠上 5% 退货率、10% 站外广告、$0.30 固定交易成本，画面就变了。 各品类推荐佣金 | 品类 | 推荐费 % | |---|---| | 服饰（衣服、配件） | 6% | | 家居 | 6% | | 电子 | 4% | | 美妆 | 5% | | 宠物用品 | 5% | | 玩具与收藏 | 5% | | 图书与媒体 | 4% | | 食品饮料 | 4% | | 汽车配件 | 4% | 比 Amazon 15% 推荐费低得多。但创作者分成才是算账不严时的暴雷点。 创作者分成——隐形成本 大多数 TikTok Shop 卖家依赖创作者。卖家自己设佣金率（5–20% 常见），任何带你这件货的创作者都按这个比例拿销售分成。 创作者带一单时： 创作者得：佣金率 × 售价（如 10% × $30 = $3.00） TikTok 得：创作者所得的 30%（$3.00 × 30% = $0.90） 10% 的创作者分成实际成本是营收的 13%，不是 10%。 思路：把分成当营销成本算 把创作者分成当营销支出，不当平台费。 $30 产品、$9 成本、10% 创作者分成、8% 退货率、15% 广告费： 仍然健康，前提是创作者转化率 4% 以上。低于这个，60%+ 毛利会被分成层吃掉变成个位数。 退货窗口与成本 TikTok Shop 有 90 天退货窗口。大部分品类要求卖家付退货运费： 标准运费标签：$3.00–$4.50 超大件：$6.00–$9.00 $30 产品 10% 退货率，$4 退货运费，每卖一件平均被吃 $1.20，还没算仓储与重新上架。 新卖家激励 TikTok Shop 跑 90 天新卖家计划： 90 天 0% 推荐佣金（品类不同） 30 天 0% 交易服务费 最多 $1,500 创作者撮合 $200 广告金 相当于第一个月平台抽成为 0%，第二三个月降到 1.8%，然后跳回 6%+1.8%。上线量和促销后定价要按这个规划。 FBT（"
+  },
+  {
+    "url": "/content/tiktok-shop-commission-breakdown/",
+    "locale": "en",
+    "title": "TikTok Shop Commission Breakdown: What Creators and Sellers Actually Pay",
+    "description": "Every fee TikTok Shop charges in 2026: referral commission, transaction fee, creator affiliate cut, shipping subsidy rules, and the 90-day return window. With a worked example for a $30 product.",
+    "category": "payment",
+    "tags": [
+      "tiktok",
+      "tiktok-shop",
+      "fees",
+      "creator",
+      "commission"
+    ],
+    "excerpt": "TikTok Shop's fee structure is the shortest among major marketplaces, but it punishes sellers who do not model the creator affiliate cut. Here is the real cost ",
+    "body": "TikTok Shop's fee structure is the shortest among major marketplaces, but it punishes sellers who do not model the creator affiliate cut. Here is the real cost on a $30 product. Fee stack on a $30 product | Fee | Amount | % of price | |---|---|---| | Sale price | $30.00 | 100% | | Referral commission (6%, fashion) | $1.80 | 6% | | Transaction fee (1.8%) | $0.54 | 1.8% | | TikTok's cut | $2.34 | 7.8% | | Creator affiliate (10% typical) | $3.00 | 10% | | TikTok's cut of creator fee (30%) | $0.90 | 3% | | Creator + TikTok affiliate layer | $3.90 | 13% | | Total platform + creator | $6.24 | 20.8% | That is the floor. Add a 5% return rate, 10% offsite ad spend, and a $0.30 fixed transaction cost, and the picture changes. Referral commission by category | Category | Referral % | |---|---| | Fashion (apparel, accessories) | 6% | | Home & living | 6% | | Electronics | 4% | | Health & beauty | 5% | | Pet supplies | 5% | | Toys & collectibles | 5% | | Books & media | 4% | | Food & beverage | 4% | | Auto accessories | 4% | Compared to Amazon's 15% referral, TikTok Shop's commission is one-third. But the creator affiliate layer is what makes the math unforgiving if you skip the modeling. Creat"
+  }
+]

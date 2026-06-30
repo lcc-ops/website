@@ -36,6 +36,16 @@ const otherLocale: Locale = locale === 'en' ? 'zh' : 'en';
     </nav>
 
     <div class="flex items-center gap-2">
+      <button
+        id="search-toggle"
+        type="button"
+        aria-label={t(locale, 'nav.search')}
+        aria-haspopup="dialog"
+        class="rounded-md p-2 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+        style="border:1px solid var(--color-border); --tw-ring-color: var(--color-accent);"
+      >
+        <span aria-hidden="true">🔍</span>
+      </button>
       <a
         href={localizePath(path, otherLocale)}
         hreflang={otherLocale}
