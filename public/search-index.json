@@ -47,8 +47,8 @@
   {
     "url": "/zh/content/local-ai-automation-freelance/",
     "locale": "zh",
-    "title": "本地小老板 AI 自动化接单案例：单兵，3 个月月入 2000 美金，6 个月月入 5000 美金",
-    "description": "冷峻拆解一个 AI 自动化接单案例，单位经济（本地小客户：牙科诊所、地产中介、会计事务所）、线下 vs 线上转化率的差距、\"Upwork 同比 109% 增长\"这个数字实际支撑什么。",
+    "title": "本地小老板 AI 自动化接单案例：单兵，6 个月月入 5000 美金 —— 但 AI 是最没意思的那部分",
+    "description": "冷峻拆解一个知识星球案例。本地小客户的单位经济、为什么线下销售赢过 Upwork 投标、以及原帖跳过的三件决定模型成败的事。",
     "category": "ai",
     "tags": [
       "ai",
@@ -58,8 +58,8 @@
       "case-study",
       "monetization"
     ],
-    "excerpt": "知识星球上一条帖描述一个单独运营者，走进本地小商家——牙科诊所、地产中介、会计事务所——卖 Make.com 加 GPT 接入的 AI 自动化方案，到第 6 个月做到月入约 5000 美金。原帖把算账",
-    "body": "知识星球上一条帖描述一个单独运营者，走进本地小商家——牙科诊所、地产中介、会计事务所——卖 Make.com 加 GPT 接入的 AI 自动化方案，到第 6 个月做到月入约 5000 美金。原帖把算账、技术栈、线下 vs 线上的销售差距讲得很直白。下面拆到底哪些数字能站住。 原帖数字一览 指标 数值 单客户安装费 500 - 1,500 美金 月维护费 200 - 500 美金 第 1 个月客户数 2 - 3 第 3 个月月入 2,000 USD/月 第 6 个月月入（目标） 5,000 USD/月 Upwork AI 自由职业时薪 30 - 70 美金（报给客户的报价） Upwork AI 类目增速 109% YoY（原帖口径） 数字均为作者自报。Upwork AI 类目增速参考其季报 80-120% 区间，不与本帖时间严格对应当作方向性支持。 真正的算账 关键在 retainer 占比：安装费是入门票，月维护才是复利基础。5 个 retainer 客户意味着月 1,500-2,500 USD 不动收入、再不需要新销售维持——这就是原帖把目标定在第 6 个月\"稳定 5,000 USD/月\"的逻辑（约 10 个客户，假设稳定留存）。 原帖说的技术栈 技术门槛非常低，原帖强调\"零代码\"： Make.com 或 Zapier 做工作流引擎 GPT 做自然语言层（邮件初稿、线索分类、结构化抽取） Make / Zapier 免费版够覆盖前 3-5 个客户 典型工作流骨架（每个客户 trigger 不同，背板可复用）： 每个客户工作流 trigger 不同但骨架一致。运营者能扩规模的原因就是这条骨架跨客户复用。 线下 vs 线上渠道 这是原帖最接近\"真实护城河\"的一段，也是最容易读漏的一段： 渠道 客户发现方式 信任 价格竞争 Upwork 投标单 客户搜过、比过价 低——单子 20+ 提案抢 高——卷到底线 本地走进去 客户根本不知道有这种东西 高——面对面、多次会面 低——先动先占 原帖核心断言：\"本地老板根本不知道这些工具存在\"。运营者走进去，把工作流 demo 摆到具体业务问题上，客户的心理锚定从\"我要找最低价\"变成\"我都不知道这东西存在\"。这是信息差套利不是价格差套利。 这也是为什么 Upwork 上\"AI automation consulting\"冷投标通常关不掉单——买家画像不同：Upwork 上是已知 AI 的创始人，对比挑最便宜的；线下是首次接触 AI 自动化的牙医/会计。 \"109% YoY 增长\"那个数字 原帖引用\"Upwork 类目增长 109% YoY\"没给原始报告。几个注意： Upwork 季报 AI 类目 2024-2025 区间在 80-120%——109% 落在区间内 同一类目在 Upwork 上比线下渠道竞争剧烈得多——上行的需"
+    "excerpt": "知识星球上一条帖描述一个单独运营者，走进本地小商家——牙科诊所、地产中介、会计事务所——卖 Make.com 加 GPT 接入的 AI 自动化方案，到第 6 个月做到月入约 5,000 美金。原帖把算",
+    "body": "知识星球上一条帖描述一个单独运营者，走进本地小商家——牙科诊所、地产中介、会计事务所——卖 Make.com 加 GPT 接入的 AI 自动化方案，到第 6 个月做到月入约 5,000 美金。原帖把算账、技术栈、线下 vs 线上销售差距讲得很直白。三件它没讲的事：实施摩擦、retainer 流失、面对面销售周期。还有一个第四件事原帖完全没碰：AI 平台的账户级风险。下面拆原帖的实际算账。 原帖数字 指标 数值 单客户安装费 500 - 1,500 美金 月维护费 200 - 500 美金 第 1 个月客户数 2 - 3 第 3 个月月入 2,000 USD/月 第 6 个月月入（目标） 5,000 USD/月 Upwork AI 自由职业时薪 30 - 70 美金 Upwork AI 类目增速 109% YoY 数字均为作者自报。Upwork 109% 这个口径未对应到具体季度的原始报告。 算账 Retainer 占比是重点。安装费是入门票，月维护才是复利基础。5 个 retainer 客户意味着月 1,500-2,500 USD 不动收入、再不依赖新销售维持——这就是原帖把目标定在第 6 个月\"稳定 5,000 USD/月\"的算账逻辑（约 10 个客户、假设稳定留存）。是否真能稳定 70% 留存，原帖没说，下面\"坑\"那节覆盖。 技术栈是简单部分 Make.com 或 Zapier 做工作流引擎 GPT 做自然语言层（邮件初稿、线索分类、结构化抽取） Make / Zapier 免费版够覆盖前 3-5 个客户 典型工作流骨架（每客户 trigger 不同，背板可复用）： 运营者能扩规模的原因就是这条骨架跨客户复用。 线下 vs Upwork 这一段是核心 这是原帖最接近\"真护城河\"的一段，也是最容易读漏的一段： 渠道 客户发现 信任 价格竞争 Upwork 投标单 客户搜过、比过价 低——单子 20+ 提案抢 高——卷到底线 本地走进去 客户根本不知道有这种东西 高——面对面、多次会面 低——先动先占 买家心理锚定不同。Upwork 上买家比价，线下买家第一次听说。信息差套利，不是价格差套利。 这也是 Upwork 上\"AI automation consulting\"冷投标关不掉单的原因。买家画像不同：Upwork 上是已知 AI 的创始人挑最便宜的；线下是首次接触的牙医/会计。 \"109% YoY 增长\"那个数字 Upwork 季报 AI 类目 2024-2025 区间在 80-120%——109% 落在区间内 同一类目在 Upwork 上比线下渠道竞争剧烈得多——上行的需求自然吸引更多运营者入场 Upwork 类目增长不能直接翻译成线下——是两个市场、两类客户 109% 数字有方向价值。不是这个案例的依据，因为这个案例讲的恰恰是不靠 Upwork 涨红"
   },
   {
     "url": "/zh/content/vertical-ai-tools-gap/",
@@ -651,8 +651,8 @@
   {
     "url": "/content/local-ai-automation-freelance/",
     "locale": "en",
-    "title": "Local SMB AI Automation Freelance Case: One Operator, 2,000 USD/Month by Month 3, 5,000 USD/Month by Month 6",
-    "description": "Cold-eyed breakdown of an AI automation case sourced from the web. Unit economics on local SMB clients (dental clinics, real-estate agents, accounting firms), the offline vs online conversion gap, and what the 109% YoY Upwork demand claim actually supports.",
+    "title": "Local SMB AI Automation Freelance Case: One Operator, 5,000 USD/Month by Month 6 — and Why the AI Is the Least Interesting Part",
+    "description": "Cold-eyed breakdown of a knowledge-planet case. Unit economics on local SMB clients, why offline sales beats Upwork bidding, and three failure modes the source quietly skips.",
     "category": "ai",
     "tags": [
       "ai",
@@ -662,8 +662,8 @@
       "case-study",
       "monetization"
     ],
-    "excerpt": "A Chinese knowledge-planet post describes a solo operator who walks into local small businesses — de",
-    "body": "A Chinese knowledge-planet post describes a solo operator who walks into local small businesses — dental clinics, real estate agents, accounting firms — sells them AI-powered workflow integrations built on Make.com and a GPT layer, and builds to about 5,000 USD/month by month 6. The post is direct about the math, the stack, and the offline-vs-online sales gap. Below is what the case actually adds up to. What the post claims, in numbers Quantity Value Setup fee per client 500 - 1,500 USD Monthly retainer 200 - 500 USD per client Clients month 1 2 - 3 Month 3 revenue 2,000 USD / month Month 6 revenue (target) 5,000 USD / month Reported Upwork AI freelance hourly rate 30 - 70 USD Cited Upwork category growth 109% YoY (post's claim) All figures are self-reported. Upwork's AI-category growth claim is directional — Upwork has published category YoY growth in the 80-120% range in past quarters; 109% is plausible but not specifically verified. The arithmetic that matters The interesting point is the recurring share: setup is the entry price, the retainer is what compounds. Once you have 5 retainer clients, you have a roughly 1,500-2,500 USD/month baseline that does not require new sales to"
+    "excerpt": "A knowledge-planet post describes a solo operator who walks into local small businesses (dental clin",
+    "body": "A knowledge-planet post describes a solo operator who walks into local small businesses (dental clinics, real estate agents, accounting firms), sells them AI-powered workflow integrations on Make.com plus a GPT layer, and reports 5,000 USD/month by month 6. The post is direct about numbers, direct about the stack, direct about the offline-vs-online gap. Three things it is not direct about: implementation friction, retainer churn, and the sales cycle length. Below is what the case actually adds up to, and the three gaps. What the source post claims Quantity Value Setup fee per client 500 - 1,500 USD Monthly retainer 200 - 500 USD per client Clients in month 1 2 - 3 Month 3 revenue 2,000 USD/month Month 6 revenue (target) 5,000 USD/month Upwork AI freelance hourly rate 30 - 70 USD Cited Upwork category growth 109% YoY All figures are self-reported. The author's first name is omitted; the cited Upwork growth does not link to a primary report. The arithmetic The interesting part is the recurring share. The setup fee is the entry price; the retainer is what compounds. Five retainer clients give a 1,500-2,500 USD/month baseline that does not require new sales to maintain. The \"5,000 USD "
   },
   {
     "url": "/zh/tools/fee-comparator/",
