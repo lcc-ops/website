@@ -70,3 +70,8 @@ Once a solo founder accepts the realistic price ceiling around 99 USD/mo, the on
 - A tight onboarding that gets the user to the "aha" moment inside the first session.
 
 The math will not save a product with bad distribution. The math will keep a product with good distribution honest about the volume it needs.
+
+## Related reading
+
+- [Cursor: How a VS Code Fork Reached a Nine-Figure ARR](/content/cursor-business-model/) — what high-ARPU AI looks like at the extreme end.
+- [GPT Wrappers: 8 Patterns That Work, 5 That Burn Cash](/content/gpt-wrapper-business-models/) — the structural reason the 9-29 USD solo price point is dangerous for many product shapes.

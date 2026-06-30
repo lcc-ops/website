@@ -78,3 +78,9 @@ Cursor（Anysphere 出品）有四档：
 - 高 ARPU、低 CAC、Agent 模式作为升级点。这就是这套玩法。
 - 「VS Code 分支」这种具体分发捷径不可复制。「楔入日常工具」的总模式可以。
 - 模型成本是每个 AI 订阅产品永久的毛利压力。请提前规划。
+
+## 延伸阅读
+
+- [GPT 套壳产品：8 种赚钱套路与 5 种烧钱陷阱](/zh/content/gpt-wrapper-business-models/) — Cursor 所在的大模式。
+- [一个人做到月入 5 万的 AI SaaS 需要多少付费用户](/zh/content/solo-saas-profit-math/) — 单人 AI 产品的单位经济长什么样。
+- [AI 订阅产品盈利门槛计算器](/zh/tools/ai-break-even/) — 代入你的客单价、获客成本、留存。

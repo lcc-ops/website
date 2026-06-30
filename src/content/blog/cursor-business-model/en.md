@@ -78,3 +78,9 @@ The next twelve months will tell whether those defenses keep the unit economics 
 - High ARPU, low CAC, agent-mode as the upsell. That is the play.
 - The specific "VS Code fork" distribution shortcut is not repeatable. The general "wedge into a daily-use tool" pattern is.
 - Model cost is the permanent margin pressure on every AI subscription product. Plan for it.
+
+## Related reading
+
+- [GPT Wrappers: 8 Patterns That Work, 5 That Burn Cash](/content/gpt-wrapper-business-models/) — the broader pattern that Cursor sits inside.
+- [The Math of a 5K USD/Month Solo AI SaaS](/content/solo-saas-profit-math/) — what the unit economics look like for a one-person AI product.
+- [AI Subscription Break-Even Calculator](/tools/ai-break-even/) — plug in your own price, CAC, and lifetime.

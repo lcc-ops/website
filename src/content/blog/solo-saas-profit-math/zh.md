@@ -70,3 +70,8 @@ faq:
 - 紧凑的 onboarding，让用户在第一场会话内到「啊哈」时刻。
 
 数学救不了一个分发差的产品。数学能让一个分发好的产品对自己需要的量保持诚实。
+
+## 延伸阅读
+
+- [Cursor 商业模型拆解：一个 VS Code 分支如何做到 9 位数 ARR](/zh/content/cursor-business-model/) — 高 ARPU AI 极端端长什么样。
+- [GPT 套壳产品：8 种赚钱套路与 5 种烧钱陷阱](/zh/content/gpt-wrapper-business-models/) — 9-29 美元/月价位在结构上对很多产品形态是危险的。
