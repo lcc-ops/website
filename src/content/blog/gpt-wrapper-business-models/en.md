@@ -17,6 +17,8 @@ faq:
     a: 'Channel-native distribution: tools that plug into where the user already works (Slack, Notion, VS Code, Shopify, Linear) ride existing engagement. Standalone web apps with no integration are the hardest to grow.'
   - q: 'How do you spot a wrapper that will die in 6 months?'
     a: 'A landing page that demos the product with one clever prompt, no per-user analytics, no usage-based pricing, no clear upgrade path past the free tier, and no integration with the user existing tools.'
+  - q: 'Can a vertical workflow tool really outcompete a general AI assistant?'
+    a: 'Yes, because the alternative to a vertical tool is a human, not a generic AI. A lease abstraction tool for lawyers replaces a paralegal hour; a generic chat tool replaces nothing the lawyer was not already doing faster themselves.'
 ---
 
 The phrase "GPT wrapper" is used to mean two very different things. The dismissive use: a thin product that adds nothing the underlying model does not already do. The technical use: any product that sits between the user and a foundation model. Most funded AI products in 2023-2025 are wrappers in the technical sense. The question is which of them are wrappers in the dismissive sense.

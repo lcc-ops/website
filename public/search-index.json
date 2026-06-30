@@ -155,6 +155,22 @@
     "body": "CBM 和体积重是决定物流费用的两个数字。算错要么多付，要么收到承运商的调整账单。 什么是 CBM？ CBM = 立方米。是货物的体积： 例：一个箱子 60cm × 40cm × 30cm 10 个相同箱子：0.72 CBM。 什么是体积重？ 体积重（也称\"泡重\"）按货物占的空间算，不按质量算。轻但体积大的东西如果只按实际重量收费就太便宜。 除数取决于承运商和运输方式： 方式 除数 空运 6000 快递（DHL、FedEx、UPS） 5000 海运散货（LCL） 1000 USPS First-Class 9000 亚马逊 FBA 入仓 5000 承运商按两者取大 每票货，承运商都算两个数： 实际重量（秤读数） 体积重（体积 ÷ 除数） 你付较大的那个。这就是 计费重。 算例 一个 50cm × 40cm × 30cm 重 8kg 的箱子，DHL 出货： 你付 12kg 的钱，不是 8kg。哪怕秤上只读 8。 什么时候体积重起作用 经验法则：产品体积大但轻（枕头、泡沫、灯罩）时，体积重总是赢。密度高体积小（书、金属件）时，实际重量赢。 产品类型 体积重 or 实际？ 服装（压缩） 实际 书 实际 泡沫、枕头、毛绒 体积重 灯罩、篮子 体积重 电子（小） 实际 家具配件 体积重 保健品、化妆品 实际 充气产品 永远是体积重 怎么降低体积重 公式改不了，但包装可以改： 用能装下的最小箱子 — 每厘米都算钱。能用 40cm 箱就别用 50cm。 软货压紧 — 服装真空袋能减 30–50% 体积重。 拆成多箱 — 两个 5kg 箱通常比一个 10kg 形状奇怪的箱更便宜。 能折叠就折叠 — 折叠大幅降低体积。 算例：包装优化 10 件衬衫装 50×40×30cm 箱，每件 200g： 海运 LCL 特殊性 海运拼箱（LCL）的除数是 1000 — 意味着体积重更狠。1 CBM 高密度货（1000kg 实际）打平。低于这个密度就是为体积买单。 多数 LCL 承运商还有 最低 1 CBM 起收费，哪怕你只出 0.3 CBM。 空运 vs 快递 空运 快递（DHL/FedEx） 除数 6000 5000 单价/kg $4–8 $6–12 适合 100kg+ 大货 < 100kg 急件 时效 5–10 天 3–7 天 跟踪 基础 实时 快递除数更小（5000 vs 6000），体积重更高 — 所以快递对泡货更贵。 速查：什么时候用什么方式 货物画像 最佳方式 < 20kg，急件 快递 20–200kg，密度高 快递或空运 100–500kg，任意密度 空运 200kg+ / 2 CBM+，不急 海运 LCL 整柜（28+ CBM） 海运 FCL 配套工具 CBM 计算器 — 即将上线 产品定价计算器 — 把物流费算进定价 物流成本 Excel — 见 资源页"
   },
   {
+    "url": "/zh/content/solo-saas-profit-math/",
+    "locale": "zh",
+    "title": "一个人做到月入 5 万的 AI SaaS 需要多少付费用户",
+    "description": "一个人做的 AI SaaS 真正要多少付费用户才能撑起 5000 美元/月 MRR。三个典型价位的 LTV/CAC 数学。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "saas",
+      "solo",
+      "profit",
+      "math"
+    ],
+    "excerpt": "一个独立 AI SaaS 想替代一份工资，需要大约每月 5000 美元 MRR。所需付费用户数取决于三件事：月费、获客成本、平均客户生命周期。代入真实数字，结论让人不舒服：在典型的独立创始人价位下，你",
+    "body": "一个独立 AI SaaS 想替代一份工资，需要大约每月 5000 美元 MRR。所需付费用户数取决于三件事：月费、获客成本、平均客户生命周期。代入真实数字，结论让人不舒服：在典型的独立创始人价位下，你需要的用户数比创业故事里说的多得多。 设定 假设： 独立创始人，无员工，无销售团队。 通过内容、社区、几次发布（Product Hunt、X、独立社区）分发。不投广告。 一个真正有用的产品——流失是这个类别的自然水平，不是糟糕 UX 抬高的。 代入盈利门槛计算器： 客单价 CAC 平均留存 回本用户数 回本时月 MRR 9 美元/月 40 美元 6 个月 27 243 美元 29 美元/月 80 美元 8 个月 23 667 美元 99 美元/月 200 美元 12 个月 25 2,475 美元 注意：回本用户数在三个价位下大致一样（20-30 人）——低价位下数学还更宽松。让人难受的是回本点的 MRR，那是「客单价 × 用户数」的函数。要到 5000 美元 MRR，需要在回本点上再扩 8-20 倍。 5000 美元 MRR 真正需要多少 客单价 所需付费用户 月流失 5% 下每月新用户 月流失 10% 下每月新用户 9 美元/月 556 28 56 29 美元/月 173 9 17 99 美元/月 51 3 5 「每月新用户」那一列才是运营上要紧的。9 美元/月档每月要拉来 28-56 个新付费用户才能稳住。99 美元/月档只需要 3-5 个。产品能力、上线摩擦、创始人每周工时，在这两列之间的差距是巨大的。 为什么 29 美元是独立创始人的常见价位 大多数独立 AI SaaS 落在 19-29 美元/月，因为： 9 美元太便宜养不起创始人。即便 500 用户，MRR 才 4500 美元。 99 美元需要企业销售动作（安全审查、采购、定制合同），一个独立创始人跑不动单个签约。 29 美元落在「个人买家刷信用卡不用问老板」的区间，也是让「所需用户数」运营上可实现的合适价位。 数学：在 29 美元/月、月流失 5%、CAC 80 美元下，你需要 173 付费用户、每月 9 个新用户来撑住 5000 美元 MRR。这对一个有好产品、有内容习惯的独立创始人是可达成的目标。如果靠付费投放就不可达成。 瓶颈是用户数，不是价格 一旦独立创始人接受了现实价位上限在 99 美元/月左右，剩下的杠杆只有量。标准动作是： 每周稳定的内容输出（一篇深度、一篇快文），沉淀 SEO 与个人品牌。 少数几个分发渠道（一个社区、一个发布场、一个合作伙伴）。 紧凑的 onboarding，让用户在第一场会话内到「啊哈」时刻。 数学救不了一个分发差的产品。数学能让一个分发好的产品对自己需要的量保持诚实。"
+  },
+  {
     "url": "/content/epacket-sunset-logistics-alternatives/",
     "locale": "en",
     "title": "After ePacket: Cross-border Logistics Alternatives for 2026",
@@ -286,6 +302,38 @@
     "body": "CBM and dimensional weight are the two numbers that decide what you pay for shipping. Get them wrong and you either overpay or get a surprise adjustment bill. What is CBM? CBM = cubic meter. It's the volume of your shipment: Example: a box 60cm × 40cm × 30cm For 10 identical boxes: 0.72 CBM. What is dimensional weight? Dimensional weight (also \"volumetric weight\") accounts for the space a package takes up, not just its mass. Light but bulky items would be unfairly cheap if carriers only charged by actual weight. The divisor depends on the carrier and mode: Mode Divisor Air freight 6000 Express (DHL, FedEx, UPS) 5000 Sea freight (LCL) 1000 USPS First-Class 9000 Amazon FBA inbound 5000 Carrier charges the higher number For every shipment, the carrier calculates both: Actual weight (scale) Dimensional weight (volume ÷ divisor) You pay for the higher of the two. This is called chargeable weight. Worked example A box 50cm × 40cm × 30cm weighing 8kg, shipping via DHL: You pay for 12kg, not 8kg. Even though the scale reads 8. When dimensional weight kicks in Rule of thumb: if your product is bulky and light (pillows, foam, lampshades), dimensional weight always wins. If it's dense and sma"
   },
   {
+    "url": "/zh/content/cursor-business-model/",
+    "locale": "zh",
+    "title": "Cursor 商业模型拆解：一个 VS Code 分支如何做到 9 位数 ARR 而不靠销售",
+    "description": "Cursor 定价层级、Anysphere 营收、用户量、获客成本的粗算，以及让单位经济转正的两个产品决策。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "cursor",
+      "saas",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "Cursor 是 2023-2025 年最强的案例：一个 AI 产品把开发者的认知度换成了真金白银。下面是单位经济的粗算——哪些是知道的、哪些是估的、模型在哪里会破。 定价结构 Cursor（Anys",
+    "body": "Cursor 是 2023-2025 年最强的案例：一个 AI 产品把开发者的认知度换成了真金白银。下面是单位经济的粗算——哪些是知道的、哪些是估的、模型在哪里会破。 定价结构 Cursor（Anysphere 出品）有四档： 档位 价格 面向 Hobby 免费 轻度用户、学生 Pro 20 美元/月 个人开发者 Pro+ 40 美元/月 高用量用户，需要更多模型配额 Business / Enterprise 定制，通常 40 美元/座位/月 起，含 SSO 与管理后台 团队和企业 这个阶梯有两点不寻常。第一，免费档相当慷慨——覆盖了基础代码补全——所以升级的拉力来自 Agent 类功能（Composer、跨文件编辑、终端命令），不是基础自动补全。第二，消费者端没有按用量计费档。产品赌的是：一个已经把 Cursor 集成进工作流的开发者，不会忍受退回非 AI 编辑器，于是按这个价位收费。 营收估算 广泛流传的「2025 年末 5 亿美元 ARR」数字来自媒体报道，不是财报。它和可观察的输入一致： Pro 付费用户数在六位数高位，按 20 美元/月 Pro+ / Business 档小但快速增长，40 美元以上/座位 自 2023 起每年大约翻倍的复合增长 如果估算高端是准确的，模型成本扣掉之后的毛利就是关键问题。Cursor 按 token 给 OpenAI 和 Anthropic 付费。一个 20 美元的用户每月跑 5000 万 token 的 GPT-4 级别推理，模型成本不下降或用户不升档到 40 美元，座位就亏。 CAC：结构上接近零 按公开信息，Cursor 从来没有跑过有意义的效果广告预算。获客渠道是： 开发者社区里的口碑 影响力/内容（赞助开发者领域的播客与 YouTube 频道） VS Code 分支本身：装上 Cursor 的用户离分享给队友只差一次点击 一个 20 美元/月的产品 CAC 不必为零，只要它小于「回本窗口 × 月度贡献毛利」即可。ARPU 20 美元下，即便 CAC 100 美元，只要用户留着，6 个月内就回本。但以 Cursor 实际的口碑热度，隐含 CAC 比这低得多。 两个产品赌注 两个产品动作解释了剩下的故事： Tab（自动补全）作为免费钩子。 Tab 让 Cursor 进入了上百万编辑器。它有意做得比 ChatGPT 类聊天弱，让用户感受到差距，然后为 Agent 类功能升级。 Composer（Agent 模式）作为升级触发。 Composer 发布后，产品从「更快的编辑器」变成「能在项目里跨文件出活的同事」。这个动作让高用量用户的 ARPU 翻倍打开了空间，也开了企业渠道。 风险 结构性风险是模型成本。20 美元的 Pro 座位只要推理成本波动就毛利被挤。Cursor 的防线是： 向 Pro+ / Enter"
+  },
+  {
+    "url": "/content/cursor-business-model/",
+    "locale": "en",
+    "title": "Cursor: How a VS Code Fork Reached a Nine-Figure ARR Without a Sales Team",
+    "description": "A back-of-envelope look at Cursor pricing tiers, Anysphere revenue, user count, CAC, and the two product bets that made the math work.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "cursor",
+      "saas",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "Cursor is the strongest case study of a 2023-2025 AI product that turned developer mindshare into re",
+    "body": "Cursor is the strongest case study of a 2023-2025 AI product that turned developer mindshare into revenue. Below is a back-of-envelope breakdown of the unit economics — what we know, what we estimate, and where the model breaks. The pricing stack Cursor (made by Anysphere) sells four tiers: Tier Price Audience Hobby Free Casual users, students Pro 20 USD/mo Individual developers Pro+ 40 USD/mo Power users wanting higher model allowances Business / Enterprise Custom, typically 40 USD+/seat/mo with SSO and admin Teams and companies Two things are unusual about this ladder. First, the free tier is generous — it covers basic code completion — so the upgrade pull comes from the agentic features (Composer, multi-file edits, terminal commands), not from basic autocomplete. Second, there is no usage-metered plan at the consumer end. The product bets that a developer who has integrated Cursor will not tolerate going back to a non-AI editor, and prices accordingly. Revenue estimate The widely-cited \"500M USD ARR\" number for late 2025 comes from a press report, not a filing. It is consistent with reported growth and a few observable inputs: A Pro paying user base in the high six figures at 20"
+  },
+  {
     "url": "/zh/content/epacket-sunset-logistics-alternatives/",
     "locale": "zh",
     "title": "ePacket 关停后：2026 年跨境物流替代方案",
@@ -396,6 +444,38 @@
     ],
     "excerpt": "ROAS is the most quoted metric in ecommerce. Most sellers don't calculate it correctly — and end up ",
     "body": "ROAS is the most quoted metric in ecommerce. Most sellers don't calculate it correctly — and end up celebrating unprofitable campaigns. What ROAS actually measures A ROAS of 4× means every $1 in ad spend returned $4 in revenue. That's the gross number. It tells you nothing about whether you made money. The break-even formula Where net margin = profit after all costs (COGS, shipping, fees, refunds) divided by revenue. For a 25% net margin store: 1 ÷ 0.25 = 4× break-even ROAS. Anything above 4× is profit on ad spend alone. Anything below is loss. Worked example A store with these unit economics: Sale price: $50 Cost: $12 Shipping: $4 Payment + platform fees: $3 (6%) Net profit per sale: $31 (62% margin) Break-even ROAS = 1 ÷ 0.62 = 1.61× If the store achieves 3× ROAS, profit per sale attributed to ads: 3× ROAS looks great but the actual margin on ad-driven sales is 28.7%, not 62%. The ad cost is real money you spent. Target ROAS with profit buffer Don't aim for break-even. Add a buffer for other costs: Scenario Target ROAS at 25% net margin Break-even 4× 25% profit buffer 5.33× 50% profit buffer 8× 100% profit buffer (double profit) 16× For most stores, target 2× break-even ROAS as a"
+  },
+  {
+    "url": "/zh/content/gpt-wrapper-business-models/",
+    "locale": "zh",
+    "title": "GPT 套壳产品：8 种赚钱套路与 5 种烧钱陷阱",
+    "description": "8 种在财务上站得住脚的 GPT 套壳产品模式，5 种在落地页看着漂亮、被 token 账单烧死的模式。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "gpt",
+      "wrappers",
+      "patterns",
+      "monetization"
+    ],
+    "excerpt": "「GPT 套壳」这个说法有两种意思。贬义用法：在底层模型之上什么都没加的薄产品。技术用法：任何坐在用户和基础模型之间的产品。2023-2025 大多数拿到融资的 AI 产品都是技术意义上的套壳。问题在",
+    "body": "「GPT 套壳」这个说法有两种意思。贬义用法：在底层模型之上什么都没加的薄产品。技术用法：任何坐在用户和基础模型之间的产品。2023-2025 大多数拿到融资的 AI 产品都是技术意义上的套壳。问题在哪些是贬义意义上的套壳。 下面是 8 种通常能赚钱的模式，5 种通常烧钱的模式。列表不穷尽，但后半部分的失败模式在每个例子里都共享。 8 种能成的模式 垂直工作流工具。 掌握一个行业里的具体岗位（律师的租约摘要、诊所的预授权草拟、货代的装箱单生成）。付费意愿高，因为替代方案是人来做。 Copilot 增强。 一个插件，住在用户已经用的工具里——Slack bot、Notion 扩展、VS Code 插件、Shopify 应用。分发免费；CAC 接近零；切换成本是集成本身。 工作流自动化。 「带 AI 的 Zapier」，把用户的一句提示变成跨 API 的多步动作。按执行或按接入账号收费。 Prompt 市场 / IP 店。 高质量 prompt 和模板的精选库，卖给非技术用户。毛利 90%+；产品是策展和包装，不是模型。 一个垂直行业的 AI 客服。 替代某个具体行业里的一层人工客服（电商退货、SaaS 入门、牙科诊所登记）。买家的 ROI 具体可量。 面向电商的 AI 图像 / 视频。 商品摄影、列表图、短视频广告。买家的替代方案是 200 美元/张的摄影棚或 500 美元/条的拍摄。 AI Agent 工作室 / 服务。 一家咨询公司，为中端市场客户搭建和运行 AI 工作流。产品是团队的时间和品味，不是工具。毛利像服务业的（40-60%）。 内部带 AI 的高 ARPU 垂直 SaaS。 一个传统垂直 SaaS（诊所管理、美发预约、物业管理），AI 是其中一个功能。AI 是升级点；SaaS 是护城河。 5 种烧钱的模式 这五种失败模式共享一个特征：在不可控的 token 账单上铺一个低的平价 ARPU。 20 美元/月无限制聊天。 任何聊天型套壳的重度用户每月会烧掉 50-200 美元的模型成本。20 美元平价座位在这些账号上是倒挂的。模式死于：一个重度用户上首页，公司要么全员重新定价，要么自己吃亏损。 通用的「与 PDF 对话」。 第一个用户能跑通，然后他们上传 200 页文档，token 账单超过用户终身价值。除非能按文档收费或对低价档硬卡，否则走不通。 作为消费应用的 AI 生图。 自 2023 年起，消费者为 AI 图像工具付费的意愿已经崩了，因为底层模型在模型厂商自己的站点上免费或近免费。产品必须是工作流，不是图本身。 「X 行业的 AI」但不掌握 X。 给你不理解的行业做一个通用 AI 助手。分发难、模型 20% 的时候是错的、用户随时可以跑去模型厂商自己的产品。 个性化 AI 伴侣 / 朋友 / 教练。 用户兴趣高、付费意愿低、情感支持成本高、"
+  },
+  {
+    "url": "/content/gpt-wrapper-business-models/",
+    "locale": "en",
+    "title": "GPT Wrappers: 8 Patterns That Work, 5 That Burn Cash",
+    "description": "A field guide to the 8 GPT-wrapper product patterns that hold up financially, and the 5 that look promising on a landing page and die in the token bill.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "gpt",
+      "wrappers",
+      "patterns",
+      "monetization"
+    ],
+    "excerpt": "The phrase \"GPT wrapper\" is used to mean two very different things. The dismissive use: a thin produ",
+    "body": "The phrase \"GPT wrapper\" is used to mean two very different things. The dismissive use: a thin product that adds nothing the underlying model does not already do. The technical use: any product that sits between the user and a foundation model. Most funded AI products in 2023-2025 are wrappers in the technical sense. The question is which of them are wrappers in the dismissive sense. Below are the 8 patterns that tend to make money, and the 5 that tend to burn cash. The list is not exhaustive, but the failure mode in the second half is shared across every example. 8 patterns that work Vertical workflow tool. A tool that owns a specific job in a specific industry (lease abstraction for lawyers, prior-auth drafting for clinics, packing-list generation for freight forwarders). High willingness to pay because the alternative is a human doing the work. Copilot augmentation. A plug-in that lives inside the tool the user already uses — a Slack bot, a Notion extension, a VS Code plugin, a Shopify app. Distribution is free; CAC is near zero; switching cost is the integration. Workflow automation. A \"Zapier with AI\" that turns a user prompt into a multi-step action across APIs. Pricing is pe"
   },
   {
     "url": "/content/profit-tracking-spreadsheet/",
@@ -574,6 +654,22 @@
     ],
     "excerpt": "\"Dropshipping is free to start\" is the lie. Here's what a real store actually pays. The complete cos",
     "body": "\"Dropshipping is free to start\" is the lie. Here's what a real store actually pays. The complete cost stack A store selling a $50 product via AliExpress dropshipping: Cost Amount % of revenue Revenue $50.00 100% Product cost $12.00 24% Shipping to customer $4.50 9% Shopify Basic $1.30 (allocated) 2.6% Shopify Payments $1.75 (2.9% + $0.30) 3.5% Apps (5 × $20/mo allocated) $3.30 6.6% Email tool $0.50 1% Subtotal before ads $26.65 53.3% Gross margin $23.35 46.7% Ad spend (Google + Meta) $10.00 20% Net margin before returns $13.35 26.7% Returns (8% of orders × $50 × cost basis 30%) $1.20 2.4% Chargebacks (1% × $15 fee) $0.15 0.3% Refund processing (refund fees kept by Stripe) $0.20 0.4% Customer service time (allocated) $0.50 1% Real net margin $11.30 22.6% That 22.6% looks fine. Now add the things most beginners forget: Hidden costs that erode profit Slow shipping refunds US customers expect delivery in 5–7 days. AliExpress shipping takes 15–25 days. 5% of customers request partial refunds (\"where is my order?\") or full refunds. Average payout on a slow-shipping complaint: $10 per affected customer. On 100 orders/month, that's $50 in refunds for issues you can't prevent. \"Item not as "
+  },
+  {
+    "url": "/content/solo-saas-profit-math/",
+    "locale": "en",
+    "title": "The Math of a 5K USD/Month Solo AI SaaS",
+    "description": "How many paying users a one-person AI SaaS actually needs to clear 5K USD/mo. The LTV/CAC math behind three typical price points, with the break-even calculator embedded.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "saas",
+      "solo",
+      "profit",
+      "math"
+    ],
+    "excerpt": "A solo AI SaaS that replaces a salary needs to clear roughly 5K USD/month MRR. The number of paying ",
+    "body": "A solo AI SaaS that replaces a salary needs to clear roughly 5K USD/month MRR. The number of paying users that requires depends on three things: the monthly price, the customer acquisition cost, and the average customer lifetime. Plug in real numbers and the conclusion is uncomfortable: at typical solo-founder price points, you need many more users than the founding story suggests. The setup Assume: A solo founder, no employees, no sales team. Distribution through content, community, and one-time launches (Product Hunt, X, indie communities). No paid ads. A product that is genuinely useful — churn is the natural rate for the category, not artificially inflated by bad UX. Plug into the break-even calculator: Price CAC Avg lifetime Payback users Monthly MRR at payback 9 USD/mo 40 USD 6 months 27 243 USD 29 USD/mo 80 USD 8 months 23 667 USD 99 USD/mo 200 USD 12 months 25 2,475 USD Notice the payback user count is roughly the same across price points (20-30 users) — the math is forgiving at the lower end. The painful number is the MRR at the payback point, which is a function of price x user count. Hitting 5K USD MRR requires scaling 8-20x past break-even. What 5K USD MRR actually requ"
   },
   {
     "url": "/zh/content/tiktok-shop-commission-breakdown/",
