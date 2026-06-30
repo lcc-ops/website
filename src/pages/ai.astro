@@ -1,0 +1,147 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { type Locale, t } from '~/i18n/ui';
+import { getLocaleFromUrl, localizePath } from '~/i18n/utils';
+
+const locale: Locale = getLocaleFromUrl(Astro.url);
+const isEn = locale === 'en';
+
+const allPosts = await getCollection('content', ({ data }) => !data.draft);
+const aiPosts = allPosts
+  .filter((p) => p.id.endsWith(`/${locale}`) && p.data.category === 'ai')
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+const copy = {
+  en: {
+    title: 'AI Lab — Real P&L From Independent AI Products',
+    intro: 'A side project: I run a few AI products and write up the real numbers — revenue, churn, CAC, LTV. Cold-eyed, no hot takes, no sponsored rankings.',
+    stats: {
+      posts: `${aiPosts.length} post${aiPosts.length === 1 ? '' : 's'}`,
+      tool: '1 calculator',
+      signup: 'No signup',
+    },
+    section: {
+      tool: 'Calculator',
+      latest: 'Latest',
+      about: 'Why this column',
+    },
+    aboutP1: 'I am not a commentator. I am building. The math here is the same one used on the cross-border side of the site — pricing, margins, payback — applied to AI subscription products.',
+    aboutP2: 'Every number is sourced. Every formula is reproducible in the calculator below. If a claim is wrong, the GitHub issue tracker is the place to flag it.',
+    openTool: 'Open calculator',
+    allPosts: 'All posts',
+    comingSoon: 'AI articles ship in the next batch. The calculator below is already live.',
+  },
+  zh: {
+    title: 'AI 实验 — 独立 AI 产品的真实账本',
+    intro: '副栏：我自己在跑几个 AI 产品，这里写真实账本——营收、流失、获客成本、生命周期价值。冷静视角，不喊单、不接推广。',
+    stats: {
+      posts: `${aiPosts.length} 篇文章`,
+      tool: '1 个计算器',
+      signup: '无需注册',
+    },
+    section: {
+      tool: '计算器',
+      latest: '最新文章',
+      about: '为什么有这个专栏',
+    },
+    aboutP1: '我不是评论员，我在做。这里的算账和跨境那侧用的是同一套——定价、利润率、回本——只是换到了 AI 订阅产品上。',
+    aboutP2: '每个数据点都给来源。每个公式都能在下面的计算器里复现。如果你发现哪条结论有错，GitHub issue 区是提出质疑的地方。',
+    openTool: '打开计算器',
+    allPosts: '全部文章',
+    comingSoon: 'AI 文章在下一批发布。下方计算器已经可用。',
+  },
+};
+const c = copy[locale];
+
+const alternates: Record<Locale, string> = {
+  en: '/ai',
+  zh: '/zh/ai',
+};
+const title = c.title;
+const description = c.intro;
+---
+<BaseLayout title={title} description={description} alternates={alternates}>
+  <article>
+    <section class="container-page py-16 sm:py-20">
+      <p class="badge mb-4">🧪 {isEn ? 'AI Lab' : 'AI 实验'}</p>
+      <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight max-w-3xl">
+        {title}
+      </h1>
+      <p class="mt-4 text-lg max-w-2xl" style="color: var(--color-fg-soft);">
+        {c.intro}
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3 text-sm" style="color: var(--color-fg-soft);">
+        <span class="badge">{c.stats.posts}</span>
+        <span class="badge">{c.stats.tool}</span>
+        <span class="badge">{c.stats.signup}</span>
+      </div>
+    </section>
+
+    <section class="container-page py-10">
+      <div class="flex items-baseline justify-between mb-6">
+        <h2 class="text-2xl font-semibold">{c.section.tool}</h2>
+        <a href={localizePath('/tools/ai-break-even', locale)} class="text-sm hover:text-[var(--color-accent)]">
+          {c.openTool} →
+        </a>
+      </div>
+      <a
+        href={localizePath('/tools/ai-break-even', locale)}
+        class="card p-5 block group"
+      >
+        <div class="flex items-center gap-2 text-xs mb-2" style="color: var(--color-fg-soft);">
+          <span class="text-xl" aria-hidden="true">🧮</span>
+          <span class="badge">pricing</span>
+        </div>
+        <h3 class="text-base font-semibold group-hover:text-[var(--color-accent)]">
+          {isEn ? 'AI Subscription Break-Even Calculator' : 'AI 订阅产品盈利门槛计算器'} ↗
+        </h3>
+        <p class="text-sm mt-1" style="color: var(--color-fg-soft);">
+          {isEn
+            ? 'How many paid users you need before acquisition costs pay back, given a monthly price, CAC, and average lifetime.'
+            : '在客单价、获客成本、平均留存月数下，多少付费用户能回本。'}
+        </p>
+      </a>
+    </section>
+
+    <section class="container-page py-10">
+      <h2 class="text-2xl font-semibold mb-6">{c.section.latest}</h2>
+      {aiPosts.length === 0 ? (
+        <p class="text-sm" style="color: var(--color-fg-soft);">{c.comingSoon}</p>
+      ) : (
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {aiPosts.map((post) => {
+            const slug = post.id.split('/')[0];
+            return (
+              <a
+                href={localizePath(`/content/${slug}`, locale)}
+                class="card p-5 block group"
+              >
+                <div class="flex items-center gap-2 text-xs mb-2" style="color: var(--color-fg-soft);">
+                  <span class="badge">{t(locale, 'category.ai')}</span>
+                  <time datetime={post.data.pubDate.toISOString()}>
+                    {new Intl.DateTimeFormat(isEn ? 'en-US' : 'zh-CN', { year: 'numeric', month: 'short' }).format(post.data.pubDate)}
+                  </time>
+                </div>
+                <h3 class="text-base font-semibold group-hover:text-[var(--color-accent)]">{post.data.title}</h3>
+                <p class="text-sm mt-1" style="color: var(--color-fg-soft);">{post.data.description}</p>
+              </a>
+            );
+          })}
+        </div>
+      )}
+      <a href={localizePath('/content', locale)} class="mt-6 inline-block text-sm hover:text-[var(--color-accent)]">
+        {c.allPosts} →
+      </a>
+    </section>
+
+    <section class="container-page py-10">
+      <h2 class="text-2xl font-semibold mb-4">{c.section.about}</h2>
+      <div class="max-w-2xl space-y-4" style="color: var(--color-fg-soft);">
+        <p>{c.aboutP1}</p>
+        <p>{c.aboutP2}</p>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
