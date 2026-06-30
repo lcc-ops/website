@@ -67,3 +67,9 @@ faq:
 - 越过免费档的升级路径，不靠重度用户补贴别人。
 
 四项缺两个，单位经济大概率是负的。缺三个，产品是一个功能，不是一家公司。
+
+## 延伸阅读
+
+- [Cursor 商业模型拆解：一个 VS Code 分支如何做到 9 位数 ARR](/zh/content/cursor-business-model/) — 「高 ARPU + Agent 模式」最强案例。
+- [一个人做到月入 5 万的 AI SaaS 需要多少付费用户](/zh/content/solo-saas-profit-math/) — 9-29 美元/月定价在用户数上意味着什么。
+- [AI 订阅产品盈利门槛计算器](/zh/tools/ai-break-even/) — 代入你自己的数字。

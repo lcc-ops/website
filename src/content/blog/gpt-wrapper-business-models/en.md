@@ -67,3 +67,9 @@ If you are evaluating a wrapper, look for these four things:
 - An upgrade path past the free tier that does not require power users to subsidize the rest.
 
 Miss two of the four and the unit economics are likely negative. Miss three and the product is a feature, not a company.
+
+## Related reading
+
+- [Cursor: How a VS Code Fork Reached a Nine-Figure ARR](/content/cursor-business-model/) — the strongest case study of the "high-ARPU agent-mode" pattern.
+- [The Math of a 5K USD/Month Solo AI SaaS](/content/solo-saas-profit-math/) — what 9-29 USD/mo pricing actually requires in user count.
+- [AI Subscription Break-Even Calculator](/tools/ai-break-even/) — model your own numbers.
