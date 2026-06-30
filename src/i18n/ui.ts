@@ -86,7 +86,6 @@ const en: UIDict = {
   // Resources page
   'resources.title': 'Free resources',
   'resources.subtitle': 'Spreadsheet templates, SOP checklists and curated links. No email required.',
-  'resources.disclosure': 'Some links are affiliate links. We may earn a small commission if you sign up.',
   // Tool-specific labels (used in components)
   'tool.cost': 'Cost',
   'tool.shipping': 'Shipping',
@@ -220,7 +219,6 @@ const zh: UIDict = {
   // Resources page
   'resources.title': '免费资源',
   'resources.subtitle': 'Excel 模板、SOP 检查清单与精选工具合集。无需邮箱。',
-  'resources.disclosure': '部分链接为联盟推广链接，签约可能获得佣金。',
   // Tool-specific labels
   'tool.cost': '成本',
   'tool.shipping': '物流',
