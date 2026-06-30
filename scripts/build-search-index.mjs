@@ -15,6 +15,12 @@ const OUT = join(ROOT, "public", "search-index.json");
 
 const LOCALES = ["en", "zh"];
 
+// Per-build timestamp suffix. Append as ?v=… to the fetch URL so the
+// browser never serves a stale index across deploys (the asset itself is
+// re-emitted on every build so the file URL is stable, but the cache
+// key needs to change).
+const BUILD_ID = Date.now().toString(36);
+
 /**
  * Extract the YAML frontmatter block from a Markdown file as a plain object.
  * Minimal hand-rolled parser — we only need string / array / scalar fields the
@@ -158,4 +164,4 @@ const all = [...blog, ...tools].sort((a, b) => a.title.localeCompare(b.title));
 
 await mkdir(dirname(OUT), { recursive: true });
 await writeFile(OUT, JSON.stringify(all, null, 2), "utf8");
-console.log(`search index: ${all.length} entries (${blog.length} blog, ${tools.length} tools) → ${relative(ROOT, OUT)}`);
+console.log(`search index: ${all.length} entries (${blog.length} blog, ${tools.length} tools) → ${relative(ROOT, OUT)} (build ${BUILD_ID})`);

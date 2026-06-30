@@ -128,7 +128,12 @@ const i18n = {
       if (indexLoading) return indexLoading;
       indexLoading = (async () => {
         try {
-          const res = await fetch('/search-index.json', { cache: 'force-cache' });
+          // Cache hits the index file across same-build sessions, but the
+          // ?v=… bust changes every build so a redeploy always reaches the
+          // browser with fresh data.
+          const res = await fetch(`/search-index.json?v=${Date.now().toString(36)}`, {
+            cache: 'no-cache',
+          });
           if (!res.ok) return null;
           const data = (await res.json()) as IndexEntry[];
           index = data;
