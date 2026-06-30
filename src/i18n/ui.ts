@@ -16,6 +16,7 @@ const en: UIDict = {
   'nav.tools': 'Calculators',
   'nav.resources': 'Resources',
   'nav.about': 'About',
+  'nav.ai': 'AI Lab',
   'nav.search': 'Search',
   'nav.theme': 'Toggle theme',
   'nav.theme.toDark': 'Switch to dark theme',
@@ -37,6 +38,7 @@ const en: UIDict = {
   'category.cbm': 'Dimensional weight',
   'category.tool': 'Tool review',
   'category.guide': 'Beginner',
+  'category.ai': 'AI monetization',
   // Hero / home
   'home.hero.eyebrow': 'Cross-border seller math',
   'home.hero.title': 'Price it right, ship it smart, profit on every order.',
@@ -149,6 +151,7 @@ const zh: UIDict = {
   'nav.tools': '计算器',
   'nav.resources': '资源',
   'nav.about': '关于',
+  'nav.ai': 'AI 实验',
   'nav.search': '搜索',
   'nav.theme': '切换主题',
   'nav.theme.toDark': '切换到深色主题',
@@ -170,6 +173,7 @@ const zh: UIDict = {
   'category.cbm': '体积重',
   'category.tool': '工具评测',
   'category.guide': '入门科普',
+  'category.ai': 'AI 变现',
   // Hero / home
   'home.hero.eyebrow': '跨境卖家算账',
   'home.hero.title': '算对账、控住成本、每单都赚钱。',
