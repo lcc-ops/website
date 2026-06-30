@@ -21,49 +21,49 @@ faq:
     a: 'Three risks the post calls out: (1) Google can change its AI content policy and de-rank the portfolio; (2) RPM is seasonal — Q1 is typically 60% of Q4 because advertisers spend less; (3) any single site being deindexed wipes out 1/3 of revenue. The 3-site, multi-niche, multi-domain strategy is a hedge against any single-point failure.'
 ---
 
-A Chinese knowledge-planet post describes a solo operator running 3 English-language information niche sites that produce around 50 articles per day with AI assistance, clearing about 2,300 USD/month AdSense by month 6. The 3 sites target pet health, DIY home repair, and personal finance. The post gives specific numbers on volume, RPM, and cost structure, and is explicit about the keyword-selection discipline that makes the model work. Below is what the math actually says once you stop reading it as "AI content" and start reading it as "search-volume arbitrage."
+A solo operator runs 3 English-language information niche sites, producing about 50 articles per day with AI assistance, clearing about 2,300 USD/month AdSense by month 6. The 3 sites target pet health, DIY home repair, and personal finance. Specific numbers on volume, RPM, and cost structure, plus explicit keyword-selection discipline. Below is what the math actually says once you read it as "search-volume arbitrage."
 
 ## What the case claims
 
 | Quantity | Value |
 |---|---|
 | Sites | 3 (pet health, home DIY repair, personal finance) |
-| Total articles over 6 months | ~9,000 |
+| Total articles over 6 months | about 9,000 |
 | Daily article output per site | 15-20 |
-| Daily articles across portfolio | ~50 |
-| Daily UV across portfolio | ~8,000 |
-| Monthly PV | ~360,000 |
+| Daily articles across portfolio | about 50 |
+| Daily UV across portfolio | about 8,000 |
+| Monthly PV | about 360,000 |
 | RPM | 6-9 USD |
-| Monthly AdSense by month 6 | ~2,300 USD |
-| Cash costs | ~30 USD/year (domains) + 12 USD/month (hosting) + 20 USD/month (Claude Pro) |
+| Monthly AdSense by month 6 | about 2,300 USD |
+| Cash costs | about 30 USD/year (domains) + 12 USD/month (hosting) + 20 USD/month (Claude Pro) |
 
-All figures are self-reported in the case. RPM figures are consistent with publicly-reported AdSense information-niche rates for English-language traffic.
+All figures are self-reported. RPM figures are consistent with publicly-reported AdSense information-niche rates for English-language traffic.
 
 ## The cost compression, in concrete numbers
 
-The post's central claim is the 500x cost compression:
+The 500x cost compression is the central claim:
 
 ```
 Traditional ghostwritten content
   Per article:            5 - 10 USD
-  Output:                 ~10 articles / day / operator
+  Output:                 about 10 articles / day / operator
   Cost per 9,000 articles: 45,000 - 90,000 USD
   Lead time:              weeks
 
 AI-assisted pipeline
-  Per article (subscription spread): ~0.013 USD
-  Output:                 ~50 articles / day / operator
-  Cost per 9,000 articles: ~120 USD (6 months of Claude Pro)
+  Per article (subscription spread): about 0.013 USD
+  Output:                 about 50 articles / day / operator
+  Cost per 9,000 articles: about 120 USD (6 months of Claude Pro)
   Lead time:              hours
 ```
 
-This is not "AI is faster at writing." This is "the cost-per-article crossed a threshold where the entire niche-strategy becomes possible."
+This is not "AI is faster at writing." It is "the cost-per-article crossed a threshold where the entire niche-strategy becomes possible."
 
-At 10 USD per article, only the highest-volume keywords are worth pursuing. At 0.013 USD per article, **the long tail** of low-volume keywords becomes economically viable. The 100-500 SV keyword band — too small for big sites, too competitive for small sites without AI volume — becomes the operator's natural niche.
+At 10 USD per article, only the highest-volume keywords are worth pursuing. At 0.013 USD per article, the long tail of low-volume keywords becomes economically viable. The 100-500 SV keyword band (too small for big sites, too competitive for small sites without AI volume) becomes the operator's natural niche.
 
 ## The keyword strategy
 
-The post is explicit about the targeting rule:
+Targeting rule:
 
 | Filter | Value | Why |
 |---|---|---|
@@ -81,7 +81,7 @@ The model breaks if you stop publishing. Reasons:
 Active publishing (Day 1-180):
   Each new article -> new entry in Google index
   Each indexed article -> 1-10 pageviews / month at this KD band
-  Composite: 50 articles / day -> ~3,000-15,000 incremental pageviews / month
+  Composite: 50 articles / day -> about 3,000-15,000 incremental pageviews / month
   AdSense revenue scales with published-article count
 
 Stops publishing:
@@ -90,39 +90,40 @@ Stops publishing:
   Revenue decays in 60-90 days
 ```
 
-The 1-hour-per-day commitment the post describes is not editorial luxury — it is the bare minimum to keep the compounding curve moving. Operators who publish 200 articles then stop see AdSense revenue plateau and decay within a quarter.
+The 1-hour-per-day commitment is not editorial luxury; it is the bare minimum to keep the compounding curve moving. Operators who publish 200 articles then stop see AdSense revenue plateau and decay within a quarter.
 
-## What the post does not cover
+## What the case does not cover
 
-- **Google's AI-content policy.** The post is from 2026-Q2. Google's helpful-content and AI-generated content policies have been tightening for several years; the policy equilibrium as of writing allows information-niche AI content with editorial signal, but this can change. Any operator running this model should treat the policy as a moving target.
-- **Account linkages across 3 sites.** The post says different domains with different registration info for risk-spreading, but does not address which hosting, which analytics, which ad accounts link between sites and what triggers Google to consolidate them. Modern AdSense account-linkage rules can collapse multi-site strategies if executed naively.
+- **Google's AI-content policy.** Google's helpful-content and AI-generated content policies have been tightening for several years; the policy equilibrium as of writing allows information-niche AI content with editorial signal, but this can change. Any operator should treat the policy as a moving target.
+- **Account linkages across 3 sites.** Different domains with different registration info for risk-spreading, but which hosting, analytics, or ad accounts link between sites and what triggers Google to consolidate them is not addressed. Modern AdSense account-linkage rules can collapse multi-site strategies if executed naively.
 - **Refund and dispute rates.** AdSense is pay-per-click and does not have direct consumer refunds, but invalid-click detection and advertiser-side quality controls can claw back revenue.
-- **The 2300 USD/month figure is self-described.** Independent verification (Stripe / payout statements) is not included in the post.
+- **The 2300 USD/month figure is self-described.** Independent verification (Stripe / payout statements) is not included.
 
 ## Three-site portfolio math
 
-The 3-site structure is **explicit risk diversification**, not accidental choice:
+The 3-site structure is explicit risk diversification, not accidental choice:
 
 ```
 Single-site risk:        100% of revenue from one niche, one domain, one algorithm change
 Two-site risk:           50% per site; one drop takes you to "income replacement" range
-Three-site portfolio:    Each site contributes ~33%; one site declining leaves 67% intact
+Three-site portfolio:    Each site contributes about 33%; one declining leaves 67% intact
 Cash-flow floor:         A single site hitting steady $700-800/month is the operation's break-even
 ```
 
-The post does not say any single site is at 2300 USD; it says the portfolio is. This is honest framing — most single-niche AI content sites earn less than the headline figure suggests.
+No single site is at 2300 USD; the portfolio is. Honest framing: most single-niche AI content sites earn less than the headline figure suggests.
 
 ## Take-away
 
-If you have 1 hour per day, no inventory, and the willingness to publish for 6 months without seeing meaningful return: this is a real model. **The window is open in 2026 because Google's policy equilibrium is currently tolerant of AI-assisted information content; this is not guaranteed to last.**
+1 hour per day, no inventory, and the willingness to publish for 6 months without seeing meaningful return: this is a real model. **The window is open in 2026 because Google's policy equilibrium is currently tolerant of AI-assisted information content; this is not guaranteed to last.**
 
-Do not copy the post's framing of "AI solves content production." The model works because:
-1. **Cost compression**: 0.013 USD per article vs 5-10 USD
-2. **Long-tail keyword saturation**: 50 articles/day produces 50 new search entry points
-3. **AdSense RPM**: information-niche RPM is stable; product-niche RPM is volatile
+Do not copy the framing of "AI solves content production." The model works because:
+
+1. Cost compression: 0.013 USD per article vs 5-10 USD
+2. Long-tail keyword saturation: 50 articles/day produces 50 new search entry points
+3. AdSense RPM: information-niche RPM is stable; product-niche RPM is volatile
 
 AI is the cost floor. SEO is the distribution. AdSense is the monetization. The combination is what produces 2300 USD/month at month 6. None of the three alone is the trick.
 
-If you are reading this in 2027+, the policy equilibrium may have shifted. Re-check Google's helpful-content policies before committing.
+Reading this in 2027+? The policy equilibrium may have shifted. Re-check Google's helpful-content policies before committing.
 
 ---
