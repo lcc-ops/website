@@ -45,6 +45,23 @@
     "body": "Shopify 头条数字是 \"$39/月\"。真实成本远高于此。下面是 2026 年一家典型店铺的每一笔费用。 订阅档 套餐 月费 适合 Starter $5 副业、线下销售 Basic $39 新店，月营收 < $10k Shopify $105 增长期，需要更多报表 Advanced $399 年营收 $1M+，最低刷卡费率 三年计划 Basic 降至 $29/月，Advanced 降至 $299/月。 交易费 — Shopify Payments 用 Shopify Payments（底层 Stripe）： 渠道 在线 线下 Basic 套餐 2.9% + $0.30 2.7% + $0.00 Shopify 套餐 2.7% + $0.30 2.5% + $0.00 Advanced 套餐 2.5% + $0.30 2.4% + $0.00 国际卡（非美国）在百分比上额外加 1.5%。 交易费 — 第三方网关 用 PayPal、Stripe 直连或其他网关： Basic 套餐：每笔额外 2.0% Shopify 套餐：1.0% Advanced 套餐：0.5% 算账：Basic + PayPal = 3.49% + $0.30 + PayPal 费率。$10k/月以下就用 Shopify Payments，别折腾。 $50 一单实际到手 假设 Shopify Basic + Shopify Payments，无应用额外抽成： $50 一单平台成本 4.8%。$20 一单 7.4%。$200 一单 3.6%。 多数卖家漏掉的隐藏费 货币转换 Shopify Payments 对非美元交易额外收 1.5%，再加 1–2% 的汇兑点差。尽量用美元结算。 退款费 Shopify 交易费在退款时不退。服装类影响大 — 15% 退货率意味着你付了 $1.75 交易费处理订单，退款后这 $1.75 白付。 拒付费 每笔拒付 $15，不管输赢。哪怕赢了，你也付了 $15 自卫。 应用交易费 部分应用（订阅、批发、市场）在 Shopify Payments 之上额外收 2%。检查应用栈。 主题费 免费主题功能有限。多数正经店铺一次性付 $150–350 买付费主题。避开有隐藏授权的\"免费主题\"。 邮件成本 Shopify Email 前 10,000 封/月免费，超出 $0.001/封。Klaviyo 集成 500 联系人后起步 $45/月。 真实店铺的月度账单 项目 成本 Basic 订阅 $39 付费主题（摊销） $12 5 个必备应用（平均） $90 邮件工具（1k 联系人） $30 域名 $1 固定合计 $172/月 交易费（$10k 营收） $320 平台总成本 $492 占总营收 4.9%。定价时直接算进去。 什么时候升级套餐 Basic 继续用，直到： 月流"
   },
   {
+    "url": "/zh/content/local-ai-automation-freelance/",
+    "locale": "zh",
+    "title": "本地小老板 AI 自动化接单案例：单兵，3 个月月入 2000 美金，6 个月月入 5000 美金",
+    "description": "冷峻拆解一个 AI 自动化接单案例，单位经济（本地小客户：牙科诊所、地产中介、会计事务所）、线下 vs 线上转化率的差距、\"Upwork 同比 109% 增长\"这个数字实际支撑什么。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "automation",
+      "freelance",
+      "local-smb",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "知识星球上一条帖描述一个单独运营者，走进本地小商家——牙科诊所、地产中介、会计事务所——卖 Make.com 加 GPT 接入的 AI 自动化方案，到第 6 个月做到月入约 5000 美金。原帖把算账",
+    "body": "知识星球上一条帖描述一个单独运营者，走进本地小商家——牙科诊所、地产中介、会计事务所——卖 Make.com 加 GPT 接入的 AI 自动化方案，到第 6 个月做到月入约 5000 美金。原帖把算账、技术栈、线下 vs 线上的销售差距讲得很直白。下面拆到底哪些数字能站住。 原帖数字一览 指标 数值 单客户安装费 500 - 1,500 美金 月维护费 200 - 500 美金 第 1 个月客户数 2 - 3 第 3 个月月入 2,000 USD/月 第 6 个月月入（目标） 5,000 USD/月 Upwork AI 自由职业时薪 30 - 70 美金（报给客户的报价） Upwork AI 类目增速 109% YoY（原帖口径） 数字均为作者自报。Upwork AI 类目增速参考其季报 80-120% 区间，不与本帖时间严格对应当作方向性支持。 真正的算账 关键在 retainer 占比：安装费是入门票，月维护才是复利基础。5 个 retainer 客户意味着月 1,500-2,500 USD 不动收入、再不需要新销售维持——这就是原帖把目标定在第 6 个月\"稳定 5,000 USD/月\"的逻辑（约 10 个客户，假设稳定留存）。 原帖说的技术栈 技术门槛非常低，原帖强调\"零代码\"： Make.com 或 Zapier 做工作流引擎 GPT 做自然语言层（邮件初稿、线索分类、结构化抽取） Make / Zapier 免费版够覆盖前 3-5 个客户 典型工作流骨架（每个客户 trigger 不同，背板可复用）： 每个客户工作流 trigger 不同但骨架一致。运营者能扩规模的原因就是这条骨架跨客户复用。 线下 vs 线上渠道 这是原帖最接近\"真实护城河\"的一段，也是最容易读漏的一段： 渠道 客户发现方式 信任 价格竞争 Upwork 投标单 客户搜过、比过价 低——单子 20+ 提案抢 高——卷到底线 本地走进去 客户根本不知道有这种东西 高——面对面、多次会面 低——先动先占 原帖核心断言：\"本地老板根本不知道这些工具存在\"。运营者走进去，把工作流 demo 摆到具体业务问题上，客户的心理锚定从\"我要找最低价\"变成\"我都不知道这东西存在\"。这是信息差套利不是价格差套利。 这也是为什么 Upwork 上\"AI automation consulting\"冷投标通常关不掉单——买家画像不同：Upwork 上是已知 AI 的创始人，对比挑最便宜的；线下是首次接触 AI 自动化的牙医/会计。 \"109% YoY 增长\"那个数字 原帖引用\"Upwork 类目增长 109% YoY\"没给原始报告。几个注意： Upwork 季报 AI 类目 2024-2025 区间在 80-120%——109% 落在区间内 同一类目在 Upwork 上比线下渠道竞争剧烈得多——上行的需"
+  },
+  {
     "url": "/zh/content/vertical-ai-tools-gap/",
     "locale": "zh",
     "title": "垂直 AI vs 通用 AI：为什么下一波独立 AI 工具不是 GPT 的另一层壳",
@@ -630,6 +647,23 @@
     ],
     "excerpt": "A chargeback isn't a refund. It's a $15–20 fee plus the product cost plus your time — even if you wi",
     "body": "A chargeback isn't a refund. It's a $15–20 fee plus the product cost plus your time — even if you win. Prevention is cheaper than defense. The two types of chargebacks Unauthorized (cardholder fraud) Someone used a stolen card to buy from you. The real cardholder notices and disputes. With 3DS in place, liability shifts to the issuer. Without 3DS, you eat the loss. Win rate with 3DS: 85% (issuer pays) Win rate without 3DS: 40% (you eat it) Merchant disputes (buyer remorse) Item not received (INR) — buyer claims product didn't arrive Significantly not as described (SNAD) — product differs from listing Service not provided — digital products, services These need evidence, not fraud filters. Win rate with strong evidence: 60–80%. Prevention checklist Before the sale [ ] Enable 3D Secure on all transactions. Stripe and PayPal both support it. Conversion drops 3–5%, but chargebacks drop 50%+. [ ] Use AVS (Address Verification System). Mismatched billing/shipping is a fraud flag. [ ] CVV required — never waive it. Most fraud doesn't have the CVV. [ ] Velocity checks — flag 3+ orders from same IP/card in 24h. [ ] Block high-risk countries if you don't ship there. List available in Stripe "
+  },
+  {
+    "url": "/content/local-ai-automation-freelance/",
+    "locale": "en",
+    "title": "Local SMB AI Automation Freelance Case: One Operator, 2,000 USD/Month by Month 3, 5,000 USD/Month by Month 6",
+    "description": "Cold-eyed breakdown of an AI automation case sourced from the web. Unit economics on local SMB clients (dental clinics, real-estate agents, accounting firms), the offline vs online conversion gap, and what the 109% YoY Upwork demand claim actually supports.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "automation",
+      "freelance",
+      "local-smb",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A Chinese knowledge-planet post describes a solo operator who walks into local small businesses — de",
+    "body": "A Chinese knowledge-planet post describes a solo operator who walks into local small businesses — dental clinics, real estate agents, accounting firms — sells them AI-powered workflow integrations built on Make.com and a GPT layer, and builds to about 5,000 USD/month by month 6. The post is direct about the math, the stack, and the offline-vs-online sales gap. Below is what the case actually adds up to. What the post claims, in numbers Quantity Value Setup fee per client 500 - 1,500 USD Monthly retainer 200 - 500 USD per client Clients month 1 2 - 3 Month 3 revenue 2,000 USD / month Month 6 revenue (target) 5,000 USD / month Reported Upwork AI freelance hourly rate 30 - 70 USD Cited Upwork category growth 109% YoY (post's claim) All figures are self-reported. Upwork's AI-category growth claim is directional — Upwork has published category YoY growth in the 80-120% range in past quarters; 109% is plausible but not specifically verified. The arithmetic that matters The interesting point is the recurring share: setup is the entry price, the retainer is what compounds. Once you have 5 retainer clients, you have a roughly 1,500-2,500 USD/month baseline that does not require new sales to"
   },
   {
     "url": "/zh/tools/fee-comparator/",
