@@ -31,3 +31,12 @@ Thumbs.db
 
 # local notes (not tracked)
 docs/NOTES.md
+
+# local scrapers (not tracked — agent-only tooling, never committed)
+scripts/scrapers/
+scripts/scrapers/*
+
+# Python bytecode (anywhere in the repo)
+__pycache__/
+*.pyc
+*.pyo
