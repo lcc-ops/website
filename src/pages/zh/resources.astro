@@ -16,6 +16,11 @@ const topPosts = allPosts
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 6);
 
+const aiPosts = allPosts
+  .filter((p) => p.id.endsWith(`/${locale}`) && p.data.category === 'ai')
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
 const externalLinks: Array<{ label: string; href: string; tag: string; desc: string }> = [
   { label: 'Shopify 定价', href: 'https://www.shopify.com/pricing', tag: '平台', desc: '官方套餐拆解 — Basic / Shopify / Advanced 月费。' },
   { label: 'Stripe 费率', href: 'https://stripe.com/pricing', tag: '收款', desc: '按国家与卡组织划分的单笔费率。' },
@@ -119,6 +124,36 @@ const externalLinks: Array<{ label: string; href: string; tag: string; desc: str
           </li>
         ))}
       </ul>
+    </section>
+
+    <section class="container-page py-10">
+      <div class="flex items-baseline justify-between mb-6">
+        <h2 class="text-2xl font-semibold">AI 实验</h2>
+        <a href={localizePath('/ai', locale)} class="text-sm hover:text-[var(--color-accent)]">全部文章 →</a>
+      </div>
+      <p class="text-sm mb-4" style="color: var(--color-fg-soft);">
+        副栏：我自己在跑几个 AI 产品，这里写真实账本。不喊单、不接推广。
+      </p>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {aiPosts.map((post) => {
+          const slug = post.id.split('/')[0];
+          return (
+            <a
+              href={localizePath(`/content/${slug}`, locale)}
+              class="card p-5 block group"
+            >
+              <div class="flex items-center gap-2 text-xs mb-2" style="color: var(--color-fg-soft);">
+                <span class="badge">{t(locale, 'category.ai')}</span>
+                <time datetime={post.data.pubDate.toISOString()}>
+                  {new Intl.DateTimeFormat('zh-CN', { year: 'numeric', month: 'short' }).format(post.data.pubDate)}
+                </time>
+              </div>
+              <h3 class="text-base font-semibold group-hover:text-[var(--color-accent)]">{post.data.title}</h3>
+              <p class="text-sm mt-1" style="color: var(--color-fg-soft);">{post.data.description}</p>
+            </a>
+          );
+        })}
+      </div>
     </section>
   </article>
 </BaseLayout>
