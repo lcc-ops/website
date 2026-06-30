@@ -30,6 +30,7 @@ A subscription product is healthy when each customer's lifetime contribution exc
 ```
 LTV              = price × lifetimeMonths
 paybackUsers     = ceil((CAC × lifetimeMonths) / price)
+targetUsers      = ceil((CAC × targetMonths) / price)
 monthlyMRRTarget = paybackUsers × price
 roi              = LTV / CAC
 ```

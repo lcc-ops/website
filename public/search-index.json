@@ -171,6 +171,40 @@
     "body": "ePacket was the default for Chinese sellers shipping small parcels to the US and EU. It is being phased out through 2026, replaced by a fragmented set of carriers with different price, speed and tracking characteristics. Here is what works now. What changed USPS stopped accepting ePacket inbound in mid-2023. Most China Post lines migrated to Cainiao Standard, which keeps similar pricing but adds a tracking step. Sellers still listing ePacket on Etsy or Shopify risk buyer complaints when tracking gaps appear. The good news: alternatives now cover the same price points. The bad news: choosing between them is more complex. Replacement matrix (0.5–2 kg to US) Carrier Transit (days) Cost per kg Tracking Notes YunExpress Economy 12–20 $4.80 Semi-tracked Cheapest tracked option, slower YunExpress Standard 10–15 $6.20 End-to-end Stronger tracking, faster Cainiao Standard 14–25 $3.80 Partial Cheapest but tracking gaps Cainiao Premium 8–12 $7.20 End-to-end AliExpress default, fastest Yanwen Economic Air 18–28 $3.50 Weak Cheapest, only for low-value items SF International 7–12 $6.80 End-to-end Best speed, premium price Asendia (US-bound) 12–18 $5.40 End-to-end USPS handoff, good for B2C For c"
   },
   {
+    "url": "/zh/tools/ai-break-even/",
+    "locale": "zh",
+    "title": "AI 订阅产品盈利门槛计算器",
+    "description": "AI 订阅产品在客单价、获客成本、平均留存月数下，多少付费用户能回本。",
+    "category": "pricing",
+    "tags": [
+      "ai",
+      "saas",
+      "monetization",
+      "break-even",
+      "ltv",
+      "cac"
+    ],
+    "excerpt": "订阅产品是否健康，看一个用户终身贡献是否大于获取他的成本。两个数最重要：LTV（生命周期价值）和 CAC（获客成本）。下面的计算器把 LTV/CAC 关系转成每个创始人真正会问的问题——「我需要多少付",
+    "body": "订阅产品是否健康，看一个用户终身贡献是否大于获取他的成本。两个数最重要：LTV（生命周期价值）和 CAC（获客成本）。下面的计算器把 LTV/CAC 关系转成每个创始人真正会问的问题——「我需要多少付费用户才能停止在获客上亏钱？」 数学 3 倍 ROI 是常说的及格线。低于它，企业靠时间在烧钱。 怎么用 输入月订阅价格（美元）。 输入一个付费用户的完整获客成本。 输入平均留存月数。如果你只知道月流失率，用 1 除以流失率：月流失 5% ≈ 平均留存 20 个月。 输入目标回本月数——你希望获客成本在多少个月内回本。默认 12 个月是合理的 SaaS 目标。 输出告诉你需要多少付费用户才能回本、对应月 MRR、以及 ROI 倍数。"
+  },
+  {
+    "url": "/tools/ai-break-even/",
+    "locale": "en",
+    "title": "AI Subscription Break-Even Calculator",
+    "description": "How many paid users an AI subscription product needs before customer acquisition costs pay back, given monthly price, CAC, and average lifetime.",
+    "category": "pricing",
+    "tags": [
+      "ai",
+      "saas",
+      "monetization",
+      "break-even",
+      "ltv",
+      "cac"
+    ],
+    "excerpt": "A subscription product is healthy when each customer's lifetime contribution exceeds the cost of acq",
+    "body": "A subscription product is healthy when each customer's lifetime contribution exceeds the cost of acquiring them. Two numbers matter: LTV (lifetime value) and CAC (customer acquisition cost). The calculator below turns the LTV/CAC relationship into the question every founder actually asks — \"how many paid users do I need before I stop losing money on acquisition?\" The math A 3x ROI multiple is the commonly cited break-even target. Below that, the business runs on borrowed time. How to use Enter the monthly subscription price (USD). Enter the fully-loaded CAC for a paying user. Enter the average lifetime in months. If you only know monthly churn, divide 1 by the churn rate: 5% monthly churn ≈ 20-month lifetime. Enter the target payback window — the number of months in which you want acquisition costs to pay back. The default 12 months is a reasonable SaaS target. The output shows how many paid users you need to clear acquisition costs, the monthly MRR that requires, and the ROI multiple."
+  },
+  {
     "url": "/zh/content/amazon-fba-fees-breakdown/",
     "locale": "zh",
     "title": "Amazon FBA 费用拆解：推荐费、履约费、仓储费、那些没人提的附加费",

@@ -12,6 +12,8 @@ const labels = {
   target: locale === 'zh' ? '目标回本月数' : 'Target payback (months)',
   ltv: locale === 'zh' ? '单用户 LTV' : 'Lifetime value',
   payback: locale === 'zh' ? '回本所需付费用户' : 'Payback users',
+  targetUsers: locale === 'zh' ? '目标回本累计用户' : 'Cumulative users at target',
+  targetUsersUnit: locale === 'zh' ? '人' : 'users',
   mrr: locale === 'zh' ? '月 MRR 门槛' : 'Monthly MRR target',
   roi: 'ROI 倍数',
   reset: t(locale, 'tool.reset'),
@@ -40,7 +42,7 @@ const labels = {
     </label>
   </div>
 
-  <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+  <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
     <div class="card p-4">
       <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.ltv}</div>
       <div class="mt-1 text-2xl font-semibold" data-out="ltv">—</div>
@@ -50,6 +52,11 @@ const labels = {
       <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.payback}</div>
       <div class="mt-1 text-2xl font-semibold" data-out="payback">—</div>
       <div class="text-xs mt-1" style="color: var(--color-fg-soft);">{locale === 'zh' ? '人' : 'users'}</div>
+    </div>
+    <div class="card p-4">
+      <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.targetUsers}</div>
+      <div class="mt-1 text-2xl font-semibold" data-out="targetUsers">—</div>
+      <div class="text-xs mt-1" style="color: var(--color-fg-soft);">{labels.targetUsersUnit}</div>
     </div>
     <div class="card p-4">
       <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.mrr}</div>
@@ -80,13 +87,14 @@ const labels = {
 
   const calc = (i: Inputs) => {
     if (i.price <= 0 || i.lifetime <= 0) {
-      return { ltv: NaN, payback: NaN, mrr: NaN, roi: NaN };
+      return { ltv: NaN, payback: NaN, targetUsers: NaN, mrr: NaN, roi: NaN };
     }
     const ltv = i.price * i.lifetime;
     const payback = Math.ceil((i.cac * i.lifetime) / i.price);
+    const targetUsers = Math.ceil((i.cac * i.target) / i.price);
     const mrr = payback * i.price;
     const roi = i.cac > 0 ? ltv / i.cac : NaN;
-    return { ltv, payback, mrr, roi };
+    return { ltv, payback, targetUsers, mrr, roi };
   };
 
   document.querySelectorAll<HTMLDivElement>('.ai-breakeven-calc').forEach((root) => {
