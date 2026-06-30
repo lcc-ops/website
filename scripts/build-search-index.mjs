@@ -88,6 +88,9 @@ function stripMarkdown(s) {
     .replace(/^#{1,6}\s+/gm, "")
     .replace(/^\s*[-*+]\s+/gm, "")
     .replace(/^\s*\d+\.\s+/gm, "")
+    // Markdown tables: drop separator rows (|---|---|) and pipe-fragment cells
+    .replace(/^\s*\|?[\s:|-]+\|?[\s:|-]*\s*$/gm, " ")
+    .replace(/\|/g, " ")
     .replace(/[*_~>]+/g, "")
     .replace(/\s+/g, " ")
     .trim();
@@ -142,7 +145,7 @@ async function indexCollection(collection) {
       description: fm.description ?? "",
       category: fm.category ?? "",
       tags: Array.isArray(fm.tags) ? fm.tags : [],
-      excerpt: body.slice(0, 160),
+      excerpt: body.slice(0, 100),
       body: body.slice(0, 1200),
     });
   }
