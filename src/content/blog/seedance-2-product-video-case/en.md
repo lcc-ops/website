@@ -8,9 +8,9 @@ translationKey: 'seedance-2-product-video-case'
 tldr: 'A Hangzhou former detail-page designer switched to Seedance 2.0 commercial product videos in January 2026 and now bills 30K RMB/month. International packs run 250-3500 USD. The arbitrage is not the model output quality — it is the cost structure rewrite from a 5-person team into 1 person.'
 faq:
   - q: 'How much revenue does the case describe?'
-    a: 'Six-month revenue curve posted by the author: month 1 around 2K RMB, month 2 around 5K, month 3 above 10K, month 6 around 30K. These are self-reported numbers from the source post, not audit-verified.'
+    a: 'Six-month revenue curve posted by the author: month 1 around 2K RMB, month 2 around 5K, month 3 above 10K, month 6 around 30K. These are self-reported numbers from the case, not audit-verified.'
   - q: 'What does the international pricing look like?'
-    a: 'The source post quotes three Upwork tiers: entry 250-450 USD per 60-second product video, standard 600-1200 USD with script collaboration and dual-format delivery, premium 1500-3500 USD for a 3-5 video bundle with multilingual subtitles.'
+    a: ' the case quotes three Upwork tiers: entry 250-450 USD per 60-second product video, standard 600-1200 USD with script collaboration and dual-format delivery, premium 1500-3500 USD for a 3-5 video bundle with multilingual subtitles.'
   - q: 'Why does the author say "now" is the window?'
     a: 'Three reasons are given: (1) Seedance 2.0 reached "good enough" on 4K, character consistency and product-shape stability around Q2 2026; (2) most SMB brands still expect AI video to look fake, so the demo converts hard; (3) the supply of operators who can deliver commercial-grade output is thin, so pricing power sits with the seller side.'
   - q: 'What is the AI leverage point?'
@@ -83,8 +83,6 @@ Practical implication: the model pays best for the next 12 months. After that, t
 
 ## Take-away
 
-If you have a design background and want product videos as a side income: the case is internally consistent, the numbers are plausible, and the window is real. If you are a pure-prompt operator entering cold, plan for 3-4 months before month 3's number, not the month 1 trajectory the source post leads with.
+If you have a design background and want product videos as a side income: the case is internally consistent, the numbers are plausible, and the window is real. If you are a pure-prompt operator entering cold, plan for 3-4 months before month 3's number, not the month 1 trajectory the case leads with.
 
 ---
-
-**Source**: linked from a public post in the knowledge-planet group `AI出海·1001个赚钱案例` (group id `28855218245821`), topic id `82255212145151482`, posted 2026-06-28 by 静水流深. Cases are sourced from the web. Numbers above are self-reported, not independently verified. The model year and pricing tiers reflect the source author's claim about their own experience at the time of writing, not a market-wide survey.

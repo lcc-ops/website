@@ -37,7 +37,7 @@ A Chinese knowledge-planet post describes a solo operator running 3 English-lang
 | Monthly AdSense by month 6 | ~2,300 USD |
 | Cash costs | ~30 USD/year (domains) + 12 USD/month (hosting) + 20 USD/month (Claude Pro) |
 
-All figures are self-reported in the source post. RPM figures are consistent with publicly-reported AdSense information-niche rates for English-language traffic.
+All figures are self-reported in the case. RPM figures are consistent with publicly-reported AdSense information-niche rates for English-language traffic.
 
 ## The cost compression, in concrete numbers
 
@@ -126,5 +126,3 @@ AI is the cost floor. SEO is the distribution. AdSense is the monetization. The 
 If you are reading this in 2027+, the policy equilibrium may have shifted. Re-check Google's helpful-content policies before committing.
 
 ---
-
-**Source**: linked from a public post in the knowledge-planet group `AI出海·1001个赚钱案例` (group id `28855218245821`), topic id `45544512242154248`, posted 2026-06-30 by 静水流深. Cases are sourced from the web. Revenue and cost figures above are self-reported. AdSense RPM, keyword-difficulty scoring, and Google's AI-content policy reflect publicly stated terms at time of writing.

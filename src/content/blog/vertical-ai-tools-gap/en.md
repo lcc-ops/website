@@ -8,7 +8,7 @@ translationKey: 'vertical-ai-tools-gap'
 tldr: 'General AI tools (writing, translation, design) are saturated. Vertical AI tools in legaltech, medtech, real estate, education and cross-border ecommerce are under-built but each carries its own entry barrier. The compliance verticals pay higher per customer but reject most indie operators; the operationally-textured verticals (real estate, cross-border ecommerce) are where the indie play survives.'
 faq:
   - q: 'Which verticals are saturated?'
-    a: 'Per the source post: writing, translation and design are "extremely crowded" — meaning customer acquisition cost is high enough that an indie operator without channel advantage cannot break even on paid acquisition alone. New entrants either need a non-trivial moat (data, integration, workflow lock-in) or expect to compete on organic reach alone.'
+    a: ': writing, translation and design are "extremely crowded" — meaning customer acquisition cost is high enough that an indie operator without channel advantage cannot break even on paid acquisition alone. New entrants either need a non-trivial moat (data, integration, workflow lock-in) or expect to compete on organic reach alone.'
   - q: 'Why does legaltech pay higher per customer?'
     a: 'B2B compliance work has two structural advantages for AI: high willingness to pay (a missed contract clause or a missed regulation is far more expensive than the tool cost) and low customer volume needed for sustainable revenue. The flip side is regulatory risk and slow sales cycles.'
   - q: 'Why is medtech harder than it looks?'
@@ -16,9 +16,9 @@ faq:
   - q: 'Which verticals are realistic for an indie?'
     a: 'Two stand out: real estate / construction (B2B willingness to pay is strong, integration with BIM and CAD is annoying-but-tractable, regulation is light) and cross-border ecommerce (operations-heavy verticals where AI tools fit naturally into the listing / customer-support workflow, the go-to-market runs through existing operator networks).'
   - q: 'What is the actual moat in vertical AI?'
-    a: 'Not the model. The moat is the workflow and data: the proprietary data you gather through usage, the workflow integrations you build early, the customer relationships you lock in. The source post argues implicitly that vertical AI is closer to a SaaS business than to a GPT wrapper business — the AI is the cost-saver, the moat is the workflow lock-in.'
+    a: 'Not the model. The moat is the workflow and data: the proprietary data you gather through usage, the workflow integrations you build early, the customer relationships you lock in. the case argues implicitly that vertical AI is closer to a SaaS business than to a GPT wrapper business — the AI is the cost-saver, the moat is the workflow lock-in.'
   - q: 'Is there data backing the "saturated general / under-built vertical" thesis?'
-    a: 'The source post has no data. The pattern is corroborated in adjacent industry surveys (Gartner, a16z consumption surveys) showing that vertical AI is taking share of new AI software revenue while horizontal AI tools consolidate. Treat the post as a directional observation, not a market-sizing claim.'
+    a: ' the case has no data. The pattern is corroborated in adjacent industry surveys (Gartner, a16z consumption surveys) showing that vertical AI is taking share of new AI software revenue while horizontal AI tools consolidate. Treat the post as a directional observation, not a market-sizing claim.'
 ---
 
 A Chinese knowledge-planet thread asked: "In the AI-for-export direction, do we bet on the general-tool traffic play, or do we go deep into a vertical?" The post lists five candidate verticals — legaltech, medtech, real estate, education, cross-border ecommerce — and argues that **the general-AI tool category is saturated** but vertical AI is "not yet fully developed." Below is what that observation is worth, and where each vertical actually pays.
@@ -82,15 +82,13 @@ Realistic indie play: clinician productivity tools that do not make diagnostic c
 | Compliance burden | Moderate. Sector regulations (consumer protection, advertising claims) apply but the AI sits inside an existing legal structure. |
 | Indie-friendly? | Yes. The go-to-market runs through existing operator networks (Amazon seller groups, Shopify agency lists, Reddit communities), most of which are accessible without paid acquisition. |
 
-## The deeper pattern
-
-The source post is right about the saturation / vertical split, but the more useful observation is **what makes a vertical AI tool defensible**. In the wrapper era, the moat is "model wrapper that ships faster than the next wrapper." In vertical AI, the wrapper is table stakes; the moat is workflow lock-in:
+## The deeper pattern the case is right about the saturation / vertical split, but the more useful observation is **what makes a vertical AI tool defensible**. In the wrapper era, the moat is "model wrapper that ships faster than the next wrapper." In vertical AI, the wrapper is table stakes; the moat is workflow lock-in:
 
 - The proprietary data the tool gathers through usage
 - The integrations you build first (BIM, ERP, CRM, KDP-style marketplaces)
 - The customer trust you accumulate through case work
 
-This is why the source post's "category is under-built" framing is incomplete. Vertical AI tools that go deep on workflow produce defensible businesses. Vertical AI tools that produce horizontal-looking tools inside a vertical wrapper do not.
+This is why the case's "category is under-built" framing is incomplete. Vertical AI tools that go deep on workflow produce defensible businesses. Vertical AI tools that produce horizontal-looking tools inside a vertical wrapper do not.
 
 ## What the post does not cover
 
@@ -105,5 +103,3 @@ If you are picking a vertical AI tool to build: **start with a workflow you unde
 If you are buying vertical AI tools to evaluate: **look for workflow integration depth, not model benchmark scores.** The model underneath is becoming a commodity. What you are paying for is workflow fit.
 
 ---
-
-**Source**: linked from a public post in the knowledge-planet group `AI出海·1001个赚钱案例` (group id `28855218245821`), topic id `14422484882281842`, posted 2026-06-28 by 搞钱呀. Cases are sourced from the web. The post is a market-direction question, not a case study with verified data; the regulatory and go-to-market notes above are derived from publicly-available industry context, not from the source author.

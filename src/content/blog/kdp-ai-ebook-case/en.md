@@ -8,9 +8,9 @@ translationKey: 'kdp-ai-ebook-case'
 tldr: 'A self-published library of 350 AI-assisted ebooks cleared about 18,000 EUR in six months on Amazon KDP. Average 51 EUR per book is the wrong read — the distribution is 20/80, with most of the revenue coming from a small share of titles. The model is not "write one good book"; it is "run a library where the failures cost 4 EUR each."'
 faq:
   - q: 'How much revenue does the case describe?'
-    a: '350 books, 6 months, total around 18,000 EUR (the source post says approximately 14,000 USD). Per-book average is approximately 51 EUR, but the post states the actual distribution is roughly 20/80: 20% of titles carry 80% of the revenue, with most titles earning single-digit EUR over their lifetime.'
+    a: '350 books, 6 months, total around 18,000 EUR ( the case says approximately 14,000 USD). Per-book average is approximately 51 EUR, but the post states the actual distribution is roughly 20/80: 20% of titles carry 80% of the revenue, with most titles earning single-digit EUR over their lifetime.'
   - q: 'What is the cost per book?'
-    a: 'The source post quotes 4-8 EUR per book including AI drafting, AI cover, and typesetting. Compare to traditional ghostwriting of a single book at several hundred EUR minimum — a single unsold title wipes out the entire library ROI on the traditional side.'
+    a: ' the case quotes 4-8 EUR per book including AI drafting, AI cover, and typesetting. Compare to traditional ghostwriting of a single book at several hundred EUR minimum — a single unsold title wipes out the entire library ROI on the traditional side.'
   - q: 'Why does the post say category choice matters more than quality?'
     a: 'Because the post gives a specific datapoint: the same AI and same workflow produced 7 sci-fi titles earning 84 EUR total versus 7 dark-romance titles earning 1,092 EUR. That is a 13x gap, with quality identical. Search-volume and category-momentum dominate when the cost of failure is near zero.'
   - q: 'How long does each book take?'
@@ -36,7 +36,7 @@ A case circulating on a Chinese knowledge-planet group describes someone publish
 | Editing time per book | 1 - 2 hours |
 | Monthly income (after 3 months) | 1,000 - 3,000 USD |
 
-All figures are self-reported in the source post. No invoices, no dashboard screenshots, no audit. Treat as data points from one operator's claim, not market-wide evidence.
+All figures are self-reported in the case. No invoices, no dashboard screenshots, no audit. Treat as data points from one operator's claim, not market-wide evidence.
 
 ## The arithmetic that actually matters
 
@@ -96,5 +96,3 @@ If you have 2-3 hours a day and minimal capital, and you can read a category's s
 Do not copy the post's "publish 100 books in 3 months" cadence without an editor. The reason this works is not the AI writing speed, it is that the cost-per-failure stayed small enough that the failures do not kill the library.
 
 ---
-
-**Source**: linked from a public post in the knowledge-planet group `AI出海·1001个赚钱案例` (group id `28855218245821`), topic id `45544515258252418`, posted 2026-06-27 by 静水流深. Cases are sourced from the web. Revenue, cost and time figures above are self-reported and not independently verified. KDP policies, royalty rates and ad pricing reflect Amazon's published terms at time of writing.

@@ -8,7 +8,7 @@ translationKey: 'etsy-ai-digital-products'
 tldr: 'A solo operator sells AI-generated digital products (planners, templates, prompt packs) on Etsy, clearing around 2,500 USD/month with zero inventory and zero customer support. The 2026 category growth is reportedly 38% year-over-year. The model is not "a digital product" — it is "100+ listables stacked against Etsy SEO," where compounding reach replaces per-product excellence.'
 faq:
   - q: 'How much can a solo Etsy AI digital product seller actually earn?'
-    a: 'Per the source post and adjacent seller surveys: 60-70% of sellers earn less than 50 USD/month because they publish a few products and stop. Operators with 20+ products and consistent optimization earn 300-1000 USD/month. Top sellers with multi-platform presence and niche focus earn 1000-5000 USD/month. The 2,500 USD headline figure sits in the top quartile.'
+    a: ' and adjacent seller surveys: 60-70% of sellers earn less than 50 USD/month because they publish a few products and stop. Operators with 20+ products and consistent optimization earn 300-1000 USD/month. Top sellers with multi-platform presence and niche focus earn 1000-5000 USD/month. The 2,500 USD headline figure sits in the top quartile.'
   - q: 'What sells?'
     a: '"Useful" digital files — printable planners, Notion dashboards, prompt packs, template bundles. Average order value 7-27 USD; high-end bundles reach 49-97 USD. The post gives a concrete example: an ADHD daily planner listing that cleared 400 USD in its first month because search volume was high and competition low.'
   - q: 'What does it cost to run?'
@@ -34,7 +34,7 @@ A Chinese knowledge-planet post describes a solo seller on Etsy clearing 2,500 U
 | Time to first revenue | First product listed within days; meaningful revenue at month 3-6 |
 | Headline category growth | Etsy digital products category reportedly +38% YoY in 2026 |
 
-All figures are self-reported in the source post. The 38% growth figure is sourced to Etsy's public category data; cross-checking it was not in scope of this case, so treat as the post's claim.
+All figures are self-reported in the case. The 38% growth figure is sourced to Etsy's public category data; cross-checking it was not in scope of this case, so treat as the post's claim.
 
 ## The 100-listable thesis
 
@@ -111,5 +111,3 @@ If you have AI generation speed and SEO patience, this is a real business model.
 Do not copy the post's framing of "AI solved passive income." The model works because **Etsy gives new listables a search boost, AI lowers the production cost per listable, and bundles increase AOV**. AI is the cost-saver, Etsy is the marketplace, SEO is the distribution. None of these alone is the trick; the combination is.
 
 ---
-
-**Source**: linked from a public post in the knowledge-planet group `AI出海·1001个赚钱案例` (group id `28855218245821`), topic id `22255212115242451`, posted 2026-06-28 by 静水流深. Cases are sourced from the web. Revenue and operational figures above are self-reported. Etsy's fee structure and digital products policy reflect Etsy's published terms at time of writing.
