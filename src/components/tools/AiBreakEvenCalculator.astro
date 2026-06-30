@@ -1,0 +1,136 @@
+---
+import { t, type Locale } from '~/i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+const locale = (Astro.props.locale ?? 'en') as Locale;
+const labels = {
+  price: locale === 'zh' ? '月费 (USD)' : 'Monthly price (USD)',
+  cac: locale === 'zh' ? '获客成本 (USD)' : 'Customer acquisition cost (USD)',
+  lifetime: locale === 'zh' ? '平均留存月数' : 'Average lifetime (months)',
+  target: locale === 'zh' ? '目标回本月数' : 'Target payback (months)',
+  ltv: locale === 'zh' ? '单用户 LTV' : 'Lifetime value',
+  payback: locale === 'zh' ? '回本所需付费用户' : 'Payback users',
+  mrr: locale === 'zh' ? '月 MRR 门槛' : 'Monthly MRR target',
+  roi: 'ROI 倍数',
+  reset: t(locale, 'tool.reset'),
+  hint: locale === 'zh'
+    ? '客单价 19 美元、获客成本 30 美元、留存 6 个月 → 需 10 个付费用户才能回本。'
+    : 'At $19/mo, $30 CAC, 6-month lifetime: you need 10 paid users to break even.',
+};
+---
+<div class="ai-breakeven-calc" data-locale={locale}>
+  <div class="grid gap-4 sm:grid-cols-2">
+    <label class="block">
+      <span class="text-sm font-medium">{labels.price}</span>
+      <input type="number" min="1" step="0.5" name="price" value="19" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.cac}</span>
+      <input type="number" min="0" step="0.5" name="cac" value="30" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.lifetime}</span>
+      <input type="number" min="1" max="60" step="1" name="lifetime" value="6" class="mt-1 w-full input" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-medium">{labels.target}</span>
+      <input type="number" min="1" max="36" step="1" name="target" value="12" class="mt-1 w-full input" />
+    </label>
+  </div>
+
+  <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="card p-4">
+      <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.ltv}</div>
+      <div class="mt-1 text-2xl font-semibold" data-out="ltv">—</div>
+      <div class="text-xs mt-1" style="color: var(--color-fg-soft);">USD</div>
+    </div>
+    <div class="card p-4">
+      <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.payback}</div>
+      <div class="mt-1 text-2xl font-semibold" data-out="payback">—</div>
+      <div class="text-xs mt-1" style="color: var(--color-fg-soft);">{locale === 'zh' ? '人' : 'users'}</div>
+    </div>
+    <div class="card p-4">
+      <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.mrr}</div>
+      <div class="mt-1 text-2xl font-semibold" data-out="mrr">—</div>
+      <div class="text-xs mt-1" style="color: var(--color-fg-soft);">USD/mo</div>
+    </div>
+    <div class="card p-4">
+      <div class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{labels.roi}</div>
+      <div class="mt-1 text-2xl font-semibold" data-out="roi">—</div>
+      <div class="text-xs mt-1" style="color: var(--color-fg-soft);">x</div>
+    </div>
+  </div>
+
+  <div class="mt-4 flex flex-wrap gap-2">
+    <button type="button" class="btn" data-action="reset">{labels.reset}</button>
+  </div>
+
+  <p class="mt-6 text-xs" style="color: var(--color-fg-soft);">{labels.hint}</p>
+</div>
+
+<script>
+  type Inputs = { price: number; cac: number; lifetime: number; target: number };
+
+  const fmt = (n: number) =>
+    Number.isFinite(n)
+      ? n.toLocaleString('en-US', { maximumFractionDigits: 0 })
+      : '—';
+
+  const calc = (i: Inputs) => {
+    if (i.price <= 0 || i.lifetime <= 0) {
+      return { ltv: NaN, payback: NaN, mrr: NaN, roi: NaN };
+    }
+    const ltv = i.price * i.lifetime;
+    const payback = Math.ceil((i.cac * i.lifetime) / i.price);
+    const mrr = payback * i.price;
+    const roi = i.cac > 0 ? ltv / i.cac : NaN;
+    return { ltv, payback, mrr, roi };
+  };
+
+  document.querySelectorAll<HTMLDivElement>('.ai-breakeven-calc').forEach((root) => {
+    const read = (): Inputs => {
+      const get = (name: string) => {
+        const el = root.querySelector<HTMLInputElement>(`input[name="${name}"]`);
+        return parseFloat(el?.value ?? '0') || 0;
+      };
+      return {
+        price: get('price'),
+        cac: get('cac'),
+        lifetime: get('lifetime'),
+        target: get('target'),
+      };
+    };
+
+    const write = (out: Record<string, number>) => {
+      for (const [key, val] of Object.entries(out)) {
+        const el = root.querySelector<HTMLDivElement>(`[data-out="${key}"]`);
+        if (el) el.textContent = fmt(val);
+      }
+    };
+
+    const refresh = () => write(calc(read()));
+
+    root.querySelectorAll<HTMLInputElement>('input').forEach((el) =>
+      el.addEventListener('input', refresh),
+    );
+
+    const resetBtn = root.querySelector<HTMLButtonElement>('[data-action="reset"]');
+    resetBtn?.addEventListener('click', () => {
+      const defaults: Record<string, string> = {
+        price: '19',
+        cac: '30',
+        lifetime: '6',
+        target: '12',
+      };
+      for (const [name, value] of Object.entries(defaults)) {
+        const el = root.querySelector<HTMLInputElement>(`input[name="${name}"]`);
+        if (el) el.value = value;
+      }
+      refresh();
+    });
+
+    refresh();
+  });
+</script>
