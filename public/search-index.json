@@ -45,6 +45,24 @@
     "body": "Shopify 头条数字是 \"$39/月\"。真实成本远高于此。下面是 2026 年一家典型店铺的每一笔费用。 订阅档 套餐 月费 适合 Starter $5 副业、线下销售 Basic $39 新店，月营收 < $10k Shopify $105 增长期，需要更多报表 Advanced $399 年营收 $1M+，最低刷卡费率 三年计划 Basic 降至 $29/月，Advanced 降至 $299/月。 交易费 — Shopify Payments 用 Shopify Payments（底层 Stripe）： 渠道 在线 线下 Basic 套餐 2.9% + $0.30 2.7% + $0.00 Shopify 套餐 2.7% + $0.30 2.5% + $0.00 Advanced 套餐 2.5% + $0.30 2.4% + $0.00 国际卡（非美国）在百分比上额外加 1.5%。 交易费 — 第三方网关 用 PayPal、Stripe 直连或其他网关： Basic 套餐：每笔额外 2.0% Shopify 套餐：1.0% Advanced 套餐：0.5% 算账：Basic + PayPal = 3.49% + $0.30 + PayPal 费率。$10k/月以下就用 Shopify Payments，别折腾。 $50 一单实际到手 假设 Shopify Basic + Shopify Payments，无应用额外抽成： $50 一单平台成本 4.8%。$20 一单 7.4%。$200 一单 3.6%。 多数卖家漏掉的隐藏费 货币转换 Shopify Payments 对非美元交易额外收 1.5%，再加 1–2% 的汇兑点差。尽量用美元结算。 退款费 Shopify 交易费在退款时不退。服装类影响大 — 15% 退货率意味着你付了 $1.75 交易费处理订单，退款后这 $1.75 白付。 拒付费 每笔拒付 $15，不管输赢。哪怕赢了，你也付了 $15 自卫。 应用交易费 部分应用（订阅、批发、市场）在 Shopify Payments 之上额外收 2%。检查应用栈。 主题费 免费主题功能有限。多数正经店铺一次性付 $150–350 买付费主题。避开有隐藏授权的\"免费主题\"。 邮件成本 Shopify Email 前 10,000 封/月免费，超出 $0.001/封。Klaviyo 集成 500 联系人后起步 $45/月。 真实店铺的月度账单 项目 成本 Basic 订阅 $39 付费主题（摊销） $12 5 个必备应用（平均） $90 邮件工具（1k 联系人） $30 域名 $1 固定合计 $172/月 交易费（$10k 营收） $320 平台总成本 $492 占总营收 4.9%。定价时直接算进去。 什么时候升级套餐 Basic 继续用，直到： 月流"
   },
   {
+    "url": "/zh/content/vertical-ai-tools-gap/",
+    "locale": "zh",
+    "title": "垂直 AI vs 通用 AI：为什么下一波独立 AI 工具不是 GPT 的另一层壳",
+    "description": "一条来自知识星球的方向性观察：通用 AI 工具赛道已经极度内卷，但垂直 AI 工具（法律科技/医疗/地产/教育/跨境电商）还远没被吃透。冷峻拆解：哪些品类客户真付费、哪些是合规深坑、个人开发者该进哪个。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "vertical-ai",
+      "market",
+      "legaltech",
+      "medtech",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "知识星球上一条讨论帖问：\"AI 出海方向，到底押通用工具的大流量，还是做垂直行业的深水区？\"原帖列了五个候选垂直（法律科技、医疗、地产、教育、跨境电商），论断是通用 AI 工具已经饱和，垂直 AI 还",
+    "body": "知识星球上一条讨论帖问：\"AI 出海方向，到底押通用工具的大流量，还是做垂直行业的深水区？\"原帖列了五个候选垂直（法律科技、医疗、地产、教育、跨境电商），论断是通用 AI 工具已经饱和，垂直 AI 还远没被吃透。下面把这条观察拆开看：每个垂直的算账到底什么样。 原帖真正在说什么 这是一条方向性讨论而非案例研究。作者观察： 通用 AI 类（写作/翻译/设计）\"极度内卷\" 垂直 AI 类（法律科技/医疗/地产/教育/跨境电商）\"似乎还没被充分开发\" 每个品类的合规门槛和获客成本不一样 作者邀请读者补真实案例。我下面把每个品类各自拆开，不把原帖当数据用。 五个垂直：算账到底长什么样 法律科技 — 合同审查、合规检查 维度 现状 付费意愿 高。漏一个条款的成本 工具年费。 合规负担 重，但在客户侧，不在开发者侧。开发者要明确不提供法律服务。 销售周期 长。企业法务买的是信任和案例，不是营销页面。 个人能进吗 边缘。客户被头部集中（Harvey、Spellbook、Ironclad）。个人得有细分角度或在头部弱的区域进场。 现实路径：垂直细分法律科技（特定合同类型的条款审查、AI 租约摘要、AI 法规变更监测）。50 个付费客户比 500 个容易落地。 医疗 — 诊疗辅助、健康管理 维度 现状 付费意愿 列表最高。临床医生省时间、效果能改善。 合规负担 严重。美国 FDA 510(k)、欧盟 MDR、中国 NMPA。批文周期几个月起步。 责任 模型出错时的人身损害赔偿。即使有 indemnification 也挡不住诉讼。 个人能进吗 不能。资金充足的团队也常常只做\"决策支持\"不做\"诊断\"以避开医疗器械分类。个人开发者没签过临床专家就别上。 现实路径：不做诊断声明的临床医生效率工具——病历摘要、保险预授权自动化、账单编码建议。这一类落在监管线以下，不需要医疗器械批文。 地产/建筑 — 方案生成、成本估算 维度 现状 付费意愿 B2B 侧强。建筑公司习惯为省估算时间的工具付费。 合规负担 轻。输出只是公司内部用。 集成成本 高。BIM/CAD/造价数据库打通麻烦但能做。 个人能进吗 能，且在细分子类。比如特定建筑类型的 AI 算量、特定司法辖区的 AI 报建助手。客户买的不是 GPT，是 BIM-native 工作流，护城河能形成。 教育 — 个性化教学、作业批改 维度 现状 付费意愿 两侧都有：老师免费采用，家长愿意为辅导替代付费。 合规负担 中。学生数据法规（FERPA、GDPR-K）实在但没医疗那么重。 竞争 重。Khan Academy、Duolingo 和资金充足的 AI 辅导创业已经覆盖大部分明显场景。 个人能进吗 直达消费者边缘。如果走 B2B2C——卖给辅导连锁、语言学校、 Homeschool 联合体——反而更顺。 跨境电商 — 选品/listing "
+  },
+  {
     "url": "/zh/tools/pricing-calculator/",
     "locale": "zh",
     "title": "独立站产品定价计算器",
@@ -171,6 +189,24 @@
     "body": "一个独立 AI SaaS 想替代一份工资，需要大约每月 5000 美元 MRR。所需付费用户数取决于三件事：月费、获客成本、平均客户生命周期。代入真实数字，结论让人不舒服：在典型的独立创始人价位下，你需要的用户数比创业故事里说的多得多。 设定 假设： 独立创始人，无员工，无销售团队。 通过内容、社区、几次发布（Product Hunt、X、独立社区）分发。不投广告。 一个真正有用的产品——流失是这个类别的自然水平，不是糟糕 UX 抬高的。 代入盈利门槛计算器： 客单价 CAC 平均留存 回本用户数 回本时月 MRR 9 美元/月 40 美元 6 个月 27 243 美元 29 美元/月 80 美元 8 个月 23 667 美元 99 美元/月 200 美元 12 个月 25 2,475 美元 注意：回本用户数在三个价位下大致一样（20-30 人）——低价位下数学还更宽松。让人难受的是回本点的 MRR，那是「客单价 × 用户数」的函数。要到 5000 美元 MRR，需要在回本点上再扩 8-20 倍。 5000 美元 MRR 真正需要多少 客单价 所需付费用户 月流失 5% 下每月新用户 月流失 10% 下每月新用户 9 美元/月 556 28 56 29 美元/月 173 9 17 99 美元/月 51 3 5 「每月新用户」那一列才是运营上要紧的。9 美元/月档每月要拉来 28-56 个新付费用户才能稳住。99 美元/月档只需要 3-5 个。产品能力、上线摩擦、创始人每周工时，在这两列之间的差距是巨大的。 为什么 29 美元是独立创始人的常见价位 大多数独立 AI SaaS 落在 19-29 美元/月，因为： 9 美元太便宜养不起创始人。即便 500 用户，MRR 才 4500 美元。 99 美元需要企业销售动作（安全审查、采购、定制合同），一个独立创始人跑不动单个签约。 29 美元落在「个人买家刷信用卡不用问老板」的区间，也是让「所需用户数」运营上可实现的合适价位。 数学：在 29 美元/月、月流失 5%、CAC 80 美元下，你需要 173 付费用户、每月 9 个新用户来撑住 5000 美元 MRR。这对一个有好产品、有内容习惯的独立创始人是可达成的目标。如果靠付费投放就不可达成。 瓶颈是用户数，不是价格 一旦独立创始人接受了现实价位上限在 99 美元/月左右，剩下的杠杆只有量。标准动作是： 每周稳定的内容输出（一篇深度、一篇快文），沉淀 SEO 与个人品牌。 少数几个分发渠道（一个社区、一个发布场、一个合作伙伴）。 紧凑的 onboarding，让用户在第一场会话内到「啊哈」时刻。 数学救不了一个分发差的产品。数学能让一个分发好的产品对自己需要的量保持诚实。 延伸阅读 Cursor 商业模型拆解：一个 VS Code 分支如何做到 9 位数 ARR —"
   },
   {
+    "url": "/zh/content/english-ai-seo-content-site/",
+    "locale": "zh",
+    "title": "英文 AI 内容站案例：3 个站、9000 篇文章、6 个月月入 2300 美金 AdSense —— 以及让模型跑通的 500 倍成本压缩",
+    "description": "冷峻拆解一个 3 站英文 AI AdSense 案例。关键词策略（KD<15、月搜索量 100-500）、生产算账（每天 50 篇 × 0.013 美金/篇）、为什么\"AI 不是质量，而是产量\"这句话比多数人承认的更真实，以及模型在哪会破。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "seo",
+      "adsense",
+      "content-site",
+      "cross-border",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "知识星球上一条帖子描述单独运营者跑 3 个英文信息类 niche 站，AI 协助日产约 50 篇，到第 6 个月 AdSense 月入约 2300 美金。3 个站分别做宠物健康、家庭 DIY 维修、个",
+    "body": "知识星球上一条帖子描述单独运营者跑 3 个英文信息类 niche 站，AI 协助日产约 50 篇，到第 6 个月 AdSense 月入约 2300 美金。3 个站分别做宠物健康、家庭 DIY 维修、个人财务小知识。原帖给了具体数字——产量、RPM、成本结构——并把\"为什么这个模型能跑通\"的关键词纪律讲得很直白。下面把数字拆开来看。 案例数字一览 指标 数值 站点数 3（宠物健康/家庭 DIY 维修/个人财务） 6 个月总文章数 9,000 单站日产 15-20 篇 整站群日产 50 日均 UV 合计 8,000 月 PV 360,000 RPM 6-9 美金 第 6 个月 AdSense 月入 2,300 USD 现金成本 约 30 美金/年（域名）+ 12 美金/月（主机）+ 20 美金/月（Claude Pro） 数字均为作者自报。RPM 数字与公开的英文信息类 AdSense 区间一致。 500 倍成本压缩 原帖的核心论断： 重点不是\"AI 写得更快\"，是\"单篇成本过了某个阈值，整个 niche 策略从不可能变成可能\"。 10 美金/篇的成本下，只有最高搜索量的关键词才值得做。0.013 美金/篇的成本下，搜索量长尾突然有了商业上的可行性。100-500 月搜索量这个带——大站不屑于做，小站没 AI 拼不过产量——成了运营者的天然甜区。 关键词策略 原帖点明筛选规则： 筛选 值 为什么 KD（关键词难度） < 15 大站不想进来 月搜索量 100 - 500 大站忽略、小站不靠 AI 拼不过 主题类型 信息类，不碰产品评测 没有退货/退款/客服 信息类约束是关键。AdSense RPM 在信息搜索上最高（用户点广告去离开答案页）；产品评测类能换更高电商佣金，但要供应商关系、库存考虑、内容质量预期更严。运营者选了摩擦最低的变现方式。 复利曲线 停更即败。理由： 原帖说的\"每天 1 小时\"不是编辑奢侈——是维持复利曲线的最低动作。发 200 篇就停的人，AdSense 营收见顶一季度内就掉。 原帖没说的几件事 Google 的 AI 内容政策。原帖发于 2026-Q2。Google 的 helpful-content 与 AI 内容政策这几年一直在收紧；目前对\"有编辑信号\"的信息类 AI 内容是容忍的，但这不是永久状态。任何跑这个模型的人要把政策当移动靶看。 3 站之间的账号关联。原帖说\"不同域名、不同注册信息\"分散风险，但没讲哪个主机、哪套 analytics、哪套 Adsense 账号在站点之间是连着的——哪些动作会让 Google 把它们合并成单一账号风险画像。AdSense 现代规则下，朴素运营的多站策略可能反而踩坑。 退款 / 争议。AdSense 按点击付费，没有直接消费者退款，但无效点击检测和广告主侧质量控制会扣回营收。 2300 美金/月 "
+  },
+  {
     "url": "/content/epacket-sunset-logistics-alternatives/",
     "locale": "en",
     "title": "After ePacket: Cross-border Logistics Alternatives for 2026",
@@ -185,6 +221,42 @@
     ],
     "excerpt": "ePacket was the default for Chinese sellers shipping small parcels to the US and EU. It is being pha",
     "body": "ePacket was the default for Chinese sellers shipping small parcels to the US and EU. It is being phased out through 2026, replaced by a fragmented set of carriers with different price, speed and tracking characteristics. Here is what works now. What changed USPS stopped accepting ePacket inbound in mid-2023. Most China Post lines migrated to Cainiao Standard, which keeps similar pricing but adds a tracking step. Sellers still listing ePacket on Etsy or Shopify risk buyer complaints when tracking gaps appear. The good news: alternatives now cover the same price points. The bad news: choosing between them is more complex. Replacement matrix (0.5–2 kg to US) Carrier Transit (days) Cost per kg Tracking Notes YunExpress Economy 12–20 $4.80 Semi-tracked Cheapest tracked option, slower YunExpress Standard 10–15 $6.20 End-to-end Stronger tracking, faster Cainiao Standard 14–25 $3.80 Partial Cheapest but tracking gaps Cainiao Premium 8–12 $7.20 End-to-end AliExpress default, fastest Yanwen Economic Air 18–28 $3.50 Weak Cheapest, only for low-value items SF International 7–12 $6.80 End-to-end Best speed, premium price Asendia (US-bound) 12–18 $5.40 End-to-end USPS handoff, good for B2C For c"
+  },
+  {
+    "url": "/zh/content/kdp-ai-ebook-case/",
+    "locale": "zh",
+    "title": "AI + Amazon KDP 案例：6 个月 350 本、18000 欧元，以及为什么这是书库赌局而非单本赌局",
+    "description": "冷峻拆解一个网络流传的 AI 批量电子书 KDP 案例。成本结构算账、20/80 分布、为什么品类选择压过内容质量，以及哪些路径可以照抄、哪些坑必躲。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "kdp",
+      "amazon",
+      "publishing",
+      "passive-income",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "知识星球上一个流传的案例描述某人用 AI 辅助写了 350 本电子书发到 Amazon KDP，六个月累计约 18000 欧元。数字是作者自报，原帖把整个事情框在\"AI 批量出版\"。下面是把\"书生意\"",
+    "body": "知识星球上一个流传的案例描述某人用 AI 辅助写了 350 本电子书发到 Amazon KDP，六个月累计约 18000 欧元。数字是作者自报，原帖把整个事情框在\"AI 批量出版\"。下面是把\"书生意\"换成\"书库生意\"之后算出来的真账。 原帖数字一览 指标 数值 总本数 350 时间窗口 6 个月 总收入 ≈ 18,000 EUR（约 14,000 USD） 平均每本 ≈ 51 EUR 单本生产成本 4 - 8 EUR 产出节奏 3 - 5 本/周 单本编辑耗时 1 - 2 小时 月收入（3 个月后） 1,000 - 3,000 USD 数字均为作者自报，没有发票、截图或第三方验证。当作单一操作者的自证数据看，不是市场普遍水位。 真正算得动的算术 别看平均。这个案例的内部结构是 20/80：20% 的书扛 80% 的收入，多数书一辈子赚个位数欧元。原帖给了一个具体对比——7 本科幻合赚 84 欧元，7 本暗黑言情合赚 1092 欧元，同一个 AI 同一套流程同一份时间投入。13 倍差距完全来自品类和搜索量。 这就是 YouTube 频道、垂直内容站、应用商店、独立游戏目录的同一种结构。单位经济能跑通是因为失败的单位成本小到可以吞下大量失败。 策略在书库层面成立，不是单本书。一本是抛硬币，350 本是组合投资。 成本结构重写（具体数字） 单本成本压了 50-100 倍，是这个模型存在的唯一根本原因。传统成本下 350 本卖不动 = EUR 10 万+ 亏损；AI 成本下 350 本卖不动 = EUR 1750 亏损。书库的风险预算由时间决定，不由资本决定。 原帖点出的失败模式 失败模式 为什么它能杀数字 只出一本，等着收钱 单本方差太大，没法做决策 没做搜索量调研就选品类 7 本科幻 84 欧 vs 7 本暗黑言情 1092 欧已经是完整证据 AI 直出不编辑 差评累积、账号风险、有机排名下降 不做封面、简介、关键词 亚马逊是有机搜索驱动，包装差等于隐形 前三条是为了避免招致亚马逊侧后果。第四条是为了被看见。 原帖没说的几件事 退款 / 争议率。4 欧元成本下 1-2% 退款无所谓；编辑粗糙的稿子 10-15% 退款会变成账号级风险。 税费 / 平台抽成。KDP 在 0.99-2.99 USD 区间抽 30%；更高价位抽 65%。原帖没提。 广告投入。纯有机 KDP 收入增长慢。不少操作者每本书花 USD 200-500 在 AMS 广告上推曝光。原帖完全没提广告成本。 账号风险画像。多个 KDP 账号、共享 IP、突发的产出爆发——亚马逊审核组会对高产出版做抽查。原帖没讲怎么压在信号阈值之下。 结论 如果你每天有 2-3 小时、本金极少、能读懂一个品类的搜索量分布：这是个内部自洽的真案例。别被\"AI 写了一本书\"的描述带跑了——整个生意是按\"单本失败成本 4 "
+  },
+  {
+    "url": "/content/kdp-ai-ebook-case/",
+    "locale": "en",
+    "title": "AI + Amazon KDP Case: 350 Books in 6 Months, 18,000 EUR, and Why This Is a Library Bet Not a Book Bet",
+    "description": "Cold-eyed breakdown of an AI bulk-ebook KDP case sourced from the web. Cost-structure arithmetic, the 20/80 distribution, why category choice dominates content quality, and what is safe to copy.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "kdp",
+      "amazon",
+      "publishing",
+      "passive-income",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A case circulating on a Chinese knowledge-planet group describes someone publishing 350 AI-assisted ",
+    "body": "A case circulating on a Chinese knowledge-planet group describes someone publishing 350 AI-assisted ebooks on Amazon KDP, clearing roughly 18,000 EUR over six months. The numbers are self-reported and the full text frames this as \"AI batch publishing.\" Below is what the math actually says once you stop reading it as a book business and start reading it as a library business. What the post claims, in numbers Quantity Value Total books 350 Time window 6 months Total revenue ≈ 18,000 EUR (≈ 14,000 USD) Per-book average ≈ 51 EUR Per-book production cost 4 - 8 EUR Output cadence 3 - 5 books / week Editing time per book 1 - 2 hours Monthly income (after 3 months) 1,000 - 3,000 USD All figures are self-reported in the source post. No invoices, no dashboard screenshots, no audit. Treat as data points from one operator's claim, not market-wide evidence. The arithmetic that actually matters Skip the average. The case is built around a 20/80 distribution, where 20% of titles carry 80% of revenue and most titles earn single-digit EUR. The post provides one concrete comparison: 7 sci-fi titles earned 84 EUR, 7 dark-romance titles earned 1,092 EUR, with the same AI, the same workflow, the same t"
   },
   {
     "url": "/zh/tools/ai-break-even/",
@@ -334,6 +406,24 @@
     "body": "Cursor is the strongest case study of a 2023-2025 AI product that turned developer mindshare into revenue. Below is a back-of-envelope breakdown of the unit economics — what we know, what we estimate, and where the model breaks. The pricing stack Cursor (made by Anysphere) sells four tiers: Tier Price Audience Hobby Free Casual users, students Pro 20 USD/mo Individual developers Pro+ 40 USD/mo Power users wanting higher model allowances Business / Enterprise Custom, typically 40 USD+/seat/mo with SSO and admin Teams and companies Two things are unusual about this ladder. First, the free tier is generous — it covers basic code completion — so the upgrade pull comes from the agentic features (Composer, multi-file edits, terminal commands), not from basic autocomplete. Second, there is no usage-metered plan at the consumer end. The product bets that a developer who has integrated Cursor will not tolerate going back to a non-AI editor, and prices accordingly. Revenue estimate The widely-cited \"500M USD ARR\" number for late 2025 comes from a press report, not a filing. It is consistent with reported growth and a few observable inputs: A Pro paying user base in the high six figures at 20"
   },
   {
+    "url": "/content/english-ai-seo-content-site/",
+    "locale": "en",
+    "title": "English AI Content Site Case: 3 Sites, 9,000 Articles, 2,300 USD/Month AdSense in 6 Months — And the 500x Cost Compression That Makes It Work",
+    "description": "Cold-eyed read of a 3-site English AI-powered AdSense content case sourced from the web. The keyword strategy (KD < 15, search 100-500/mo), the production math (50 articles/day at $0.013 each), why \"AI is not about quality, it is about volume\" is more true than most people admit, and where the model breaks.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "seo",
+      "adsense",
+      "content-site",
+      "cross-border",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A Chinese knowledge-planet post describes a solo operator running 3 English-language information nic",
+    "body": "A Chinese knowledge-planet post describes a solo operator running 3 English-language information niche sites that produce around 50 articles per day with AI assistance, clearing about 2,300 USD/month AdSense by month 6. The 3 sites target pet health, DIY home repair, and personal finance. The post gives specific numbers on volume, RPM, and cost structure, and is explicit about the keyword-selection discipline that makes the model work. Below is what the math actually says once you stop reading it as \"AI content\" and start reading it as \"search-volume arbitrage.\" What the case claims Quantity Value Sites 3 (pet health, home DIY repair, personal finance) Total articles over 6 months 9,000 Daily article output per site 15-20 Daily articles across portfolio 50 Daily UV across portfolio 8,000 Monthly PV 360,000 RPM 6-9 USD Monthly AdSense by month 6 2,300 USD Cash costs 30 USD/year (domains) + 12 USD/month (hosting) + 20 USD/month (Claude Pro) All figures are self-reported in the source post. RPM figures are consistent with publicly-reported AdSense information-niche rates for English-language traffic. The cost compression, in concrete numbers The post's central claim is the 500x cost c"
+  },
+  {
     "url": "/zh/content/epacket-sunset-logistics-alternatives/",
     "locale": "zh",
     "title": "ePacket 关停后：2026 年跨境物流替代方案",
@@ -348,6 +438,40 @@
     ],
     "excerpt": "ePacket 是中国卖家寄小包裹到美 / 欧的事实标准。2026 年逐步退场，被一组价格、时效、追踪各不相同的承运商替代。下面是现在能用的方案。 发生了什么 USPS 2023 年中停接 ePack",
     "body": "ePacket 是中国卖家寄小包裹到美 / 欧的事实标准。2026 年逐步退场，被一组价格、时效、追踪各不相同的承运商替代。下面是现在能用的方案。 发生了什么 USPS 2023 年中停接 ePacket 入境。中国邮政大部分线路迁到菜鸟标快，价位类似但加了一道追踪节点。还在 Etsy 或 Shopify 上写 ePacket 的卖家，追踪断点出现时容易被买家投诉。 好消息：替代品覆盖了原来价位。坏消息：选哪家更复杂了。 替代矩阵（0.5–2 kg 到美） 承运商 时效（天） 单价 /kg 追踪 备注 YunExpress 经济线 12–20 $4.80 半追踪 最便宜含追踪，慢 YunExpress 标准线 10–15 $6.20 端到端 追踪稳，时效好 菜鸟标快 14–25 $3.80 部分追踪 最便宜但有断点 菜鸟优先 8–12 $7.20 端到端 AliExpress 默认，最快 燕文经济空运 18–28 $3.50 弱追踪 最便宜，只适合低价品 顺丰国际 7–12 $6.80 端到端 时效最好，价格高 Asendia（美线） 12–18 $5.40 端到端 USPS 交接，适合 B2C 对比 ePacket 时代 $3.50–$5.00/kg、7–14 天、端到端追踪。替代品要么贵 10–20% 拿含追踪，要么便宜但追踪弱。 中国到欧替代方案 承运商 时效（天） 单价 /kg 追踪 YunExpress 欧线 12–22 $4.20 端到端 菜鸟标快 欧线 16–28 $3.20 部分追踪 DHL eCommerce 8–14 $7.50 端到端 Asendia 欧线 14–20 $5.10 端到端 GLS 跨境 10–18 $6.40 端到端 欧线比美线每 kg 贵 5–10%，便宜的服务时效更长。德国海关随机加 1–3 天。 按产品选承运 低价小件（$10 以下）： 燕文经济或菜鸟标快。追踪断点能接受。 中等价位（$10–$50）： YunExpress 标准或 Asendia。追踪要让买家看得过去。 高价 / 时效敏感： 顺丰国际或菜鸟优先。每 kg 多花 $2–3 换时效。 大件（2 kg 以上）： YunExpress 海运或 Asendia 海运。$1.80–$3.50/kg，30–50 天。 货代怎么合作 月发 200+ 包裹的卖家，货代聚量后能拿到承运商批发价。两条路： API 集成平台（Easyship、ShipStation、ShipBob）——对接店铺，自动选最便宜承运商 承运商直签——YunExpress、菜鸟、顺丰国际都开直签账户 直签便宜 15–30%，但要月量（通常 500+ 包裹）。 Etsy 比 Shopify 更吃追踪质量 Etsy 买家每天看追踪。3 天没更新就来问\"我的货呢\"。Shopify 买家更耐心。 E"
+  },
+  {
+    "url": "/zh/content/etsy-ai-digital-products/",
+    "locale": "zh",
+    "title": "Etsy AI 数字产品案例：100 个 listing、零库存、月入 2500 美金，以及为什么这是堆 Etsy SEO 的复利",
+    "description": "冷峻拆解一个 Etsy AI 数字产品案例。38% 类目增长数字、100 个 listing 假设、5 美金单品变 27 美金套装的 bundle 策略，以及模型在哪里撑不住。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "etsy",
+      "digital-products",
+      "passive-income",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "知识星球上一条帖子描述单独运营者在 Etsy 卖 AI 生成的数字产品（月入 2500 美金、零库存、零客服）。原帖把它框成\"被动收入\"，给了一个具体例子：一份 ADHD 每日计划表第一个月 400 ",
+    "body": "知识星球上一条帖子描述单独运营者在 Etsy 卖 AI 生成的数字产品（月入 2500 美金、零库存、零客服）。原帖把它框成\"被动收入\"，给了一个具体例子：一份 ADHD 每日计划表第一个月 400 美金。下面是冷峻拆解——案例到底说什么、规模化算账什么样、模型在哪撑不住。 案例数字一览 指标 数值 月收入 2,500 USD 库存 无（纯数字文件） 客服 无（在交付那一刻之外） 成本栈 ChatGPT 订阅（20 USD/月）+ Canva 免费版 首批收入时间 上架即可有零星，月 3-6 形成持续营收 类目增长 Etsy 数字产品类目 2026 同比增长 38%（原帖口径） 数字均为作者自报。38% 这一增速数字归到 Etsy 公开类目数据，本案范围内没逐项核对，按原帖口径处理。 100 个 listing 的算账 原帖暗中说的是\"这生意不是一件产品，是 100+ 个 listing 堆在 Etsy SEO 上\"。账这么算： 2500 美金这条 headline 落在\"100 个 listing 低端段\"。过了大约 30 个 listing，每多一个 listing 的边际时间开始比带来的收入更慢——这时生意从\"主动 hustle\"拐到\"复利\"。 Bundle 数学 原帖点了 bundle 策略但没给完整算账： 形态 价格 转化率 单个访客收入 5 USD 单品 5 USD 1.0% 0.05 USD 27 USD 5 件套 27 USD 1.4% 0.38 USD 数字按原帖\"bundle 转化率 3 倍\"的口径推演。bundle 跑得动有三个原因： AOV 拉高，每笔 Etsy 交易的绝对金额变大 bundle 减少买家决策成本，感知价值更高 Etsy 搜索排名对高 AOV 完整交易加权位置，下一位买家更看见你 这是通用电商模式，Etsy 这种 marketplace 把它奖励得更大。不是 AI 独有。 Etsy SEO：这才是真正生意 原帖一半篇幅在讲 AI，一半在讲 Etsy SEO。提到的机制： 长尾标题：\"2026 ADHD Daily Planner Printable — Time Blocking + Habit Tracker\" 而不是 \"Digital Planner\" 13 个标签全用上，全关键词化 文件名也重写成关键词 持续上新品，因为 Etsy 把没动销的 listing 降权 复利的真东西：每个 listing 是店铺的一个独立搜索入口。100 个 listing 覆盖 100 个不同长尾搜索 = 100 个不同入口进同一店铺。跑出来的爆款互相给店铺里的其他产品导流。 这就是为什么原帖锚在\"选品眼光 + SEO 执行力 + 产品数量的复利\"——AI 是产能速度倍增器，SEO 是分发引擎。 原帖没说的几件事 Etsy 收费栈。"
+  },
+  {
+    "url": "/content/etsy-ai-digital-products/",
+    "locale": "en",
+    "title": "Etsy AI Digital Products Case: 100 Listables, Zero Inventory, 2,500 USD/Month, and Why It Is Compounding SEO in a Disposable File",
+    "description": "A cold-eyed read of an Etsy AI-generated digital product case sourced from the web. The 38% category growth number, the 100-listable thesis, the bundle strategy that turns 5 USD singles into 27 USD bundles, and where the model falls apart.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "etsy",
+      "digital-products",
+      "passive-income",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A Chinese knowledge-planet post describes a solo seller on Etsy clearing 2,500 USD/month selling AI-",
+    "body": "A Chinese knowledge-planet post describes a solo seller on Etsy clearing 2,500 USD/month selling AI-generated digital products — printable planners, Notion dashboards, prompt packs. No inventory, no shipping, no customer service beyond delivery. The post frames this as \"passive income\" and gives one concrete example: an ADHD daily planner that made 400 USD in its first month. Below is what the case actually describes, what the math looks like at scale, and where the model breaks. What the case claims Quantity Value Monthly revenue 2,500 USD Inventory None (digital files only) Customer service None at delivery Cost stack ChatGPT subscription (around 20 USD/month) + free Canva Time to first revenue First product listed within days; meaningful revenue at month 3-6 Headline category growth Etsy digital products category reportedly +38% YoY in 2026 All figures are self-reported in the source post. The 38% growth figure is sourced to Etsy's public category data; cross-checking it was not in scope of this case, so treat as the post's claim. The 100-listable thesis The post argues — implicitly — that this is not a \"one product\" business. It is a \"100+ listables stacked against Etsy SEO\" bu"
   },
   {
     "url": "/content/etsy-fees-vs-shopify/",
@@ -610,6 +734,40 @@
     "body": "ROAS (Return on Ad Spend) is the single most-used metric in paid social, but most sellers eyeball it without checking the math. A 3.0x ROAS sounds great until your margins and fees break it down — at 8% payment fee and 25% target margin, your break-even is closer to 1.85x. Anything below that loses money on the first order. How this calculator works Unit price (USD) — selling price (post-discount if you run promos). COGS + shipping (USD) — landed cost including production, packaging, freight to customer. Payment fee (%) — total processor fee including FX and platform commission. Target margin (%) — net margin you want after all fixed costs. The tool returns: Break-even ROAS = 1 / (1 − payment% − margin%). Below this, every ad dollar loses money. Target ROAS — multiplier needed to hit your target margin after ad spend. Max CPA — the most you can pay per acquired customer while staying break-even on order one. Reference scenarios Unit price COGS+ship Payment % Target margin Break-even Target ROAS Max CPA $25 $8 4% 20% 1.32x 1.65x $16.00 $45 $14 4% 25% 1.41x 1.85x $29.20 $80 $22 4% 30% 1.52x 2.16x $54.80 $150 $45 5% 35% 1.67x 2.56x $97.50 $300 $90 5% 40% 1.82x 3.03x $195.00 Break-even"
   },
   {
+    "url": "/zh/content/seedance-2-product-video-case/",
+    "locale": "zh",
+    "title": "Seedance 2.0 产品视频案例：从月薪 8000 的详情页设计师到月入 3 万的 AI 视频接单",
+    "description": "冷峻拆解一个网络流传的 AI 产品视频接单案例。背后的算账、海外报价区间、\"现在是窗口期\"的四项论据，以及它在哪里站得住、在哪里拉满。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "video",
+      "seedance",
+      "freelance",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一个来自知识星球的帖子描述了杭州一位产品设计师的故事：月薪 8000 改成接 Seedance 2.0 商业产品视频单，六个月内冲到月入约 3 万。原帖还列出三个海外报价档，以及四条\"为什么现在是窗口",
+    "body": "一个来自知识星球的帖子描述了杭州一位产品设计师的故事：月薪 8000 改成接 Seedance 2.0 商业产品视频单，六个月内冲到月入约 3 万。原帖还列出三个海外报价档，以及四条\"为什么现在是窗口\"的论据。下面是冷峻拆解——哪里有意思、哪里被夸、账到底怎么算。 6 个月收入曲线（按原帖） 月份 收入（人民币） 备注 1 2,000 \"10 个小单\" 2 5,000 \"老客户转介绍\" 3 10,000 \"一个品牌 20 条打包\" 6 30,000 \"稳定\"（自述） 这条曲线本质是 freelance 典型 hockey stick 的前半段。1-2 月是亏损式报价（第一单 200 块），3 月起是量大而非客单价高，6 月以后是转介绍飞轮转起来。30K 是稳态而非高点——把这当作\"这个订单密度下的平台期\"，不是\"封顶的天花板\"。 数字均为作者自报。原帖没有贴发票。 真正有意思的是\"成本结构重写\" 帖子里最值得拆的不是\"AI 视频现在行不行\"，是这一段： 质量进步（\"够不够用\"）是噱头，单位经济翻转是因为\"几万块人力\"被压成\"几百块订阅费\"。在中小客户的电商主图视频、Listing 视频、TikTok Shop 商品卡这一段，客户是为交付截止时间和单价付费，不是为电影感付费——重写就够用。 海外三档（按原帖引述） 档位 交付物 价格（美金） 入门包 60 秒产品视频，3 天交付 250 – 450 标准包 脚本协作 + 品牌定制 + 双尺寸 600 – 1,200 高端包 3-5 条套装 + 多语言字幕 1,500 – 3,500 作者框架：\"交付时间是传统的 1/5，收费是传统的 1/3，你的时薪其实是传统 3 倍\"。这只在按包报价时成立——按小时报价就把这个杠杆废掉了，因为买家会用你的小时价去比价。 \"现在窗口\"三条论据，哪些站得住 工具质量门槛越过（4K / 一致性 / 产品形状稳定）在 2026 Q2 中小买家预期还锚在\"AI=一眼假\"，demo 转化率高 能交付商业级质量的供给端很薄，定价权在卖家 前两条是真的，但都是有时效性的： (1) 半年到一年内各家模型收敛后会摊平 (2) demo 包在网络里跑几轮，买家教育就完成 (3) 是唯一能撑住长尾利润的，但只保护首批建立口碑的接单者 实操含义：这个模型在未来 12 个月里回报最高。过完这个窗口，平台一定会有供应曲线追上来的同行打包同款服务、降到当前一半价格但质量近似。 帖子里没说的几件事 税费和平台抽成：Upwork 抽 10-20%。Stripe + 平台抽成是真实的成本。 退款 / 争议率：AI 视频在客户品味这一关的失败率不是零。 复购：作者提到转介绍，没披露 30K 月里\"老客复购\" vs \"一次性单\"的占比。 \"30K 稳态\"是带设计背景的接单者。纯 prompt 操作者没有任何审美经验，"
+  },
+  {
+    "url": "/content/seedance-2-product-video-case/",
+    "locale": "en",
+    "title": "Seedance 2.0 Product Video Case: From 8000 RMB Detail-Page Designer to 30K/Month AI Video Freelancer",
+    "description": "Cold-eyed breakdown of an AI product-video freelance case sourced from the web. Backend math, international pricing tier, and the four-window argument for why \"now\" is the early period.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "video",
+      "seedance",
+      "freelance",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A case from a Chinese knowledge-planet group describes a Hangzhou product designer whose monthly pay",
+    "body": "A case from a Chinese knowledge-planet group describes a Hangzhou product designer whose monthly pay went from 8K RMB to 30K RMB within six months by switching from detail-page design to AI-generated product videos with Seedance 2.0. The post also quotes three international pricing tiers and a four-window argument for why the timing matters. Below is the cold-eyed breakdown — what is interesting, what is overstated, and what the math actually implies. The six-month revenue curve, as posted Month Revenue (RMB) Source notes 1 2,000 \"ten small gigs\" 2 5,000 \"referrals from earlier clients\" 3 10,000 \"one brand ordered a 20-video batch\" 6 30,000 \"stable\" (self-described) What the curve actually shows: this is the front half of a typical freelance hockey stick. Months 1-2 are loss-leader pricing (first gig was 200 RMB); month 3 onwards is volume, not rate; month 6 plus is when referrals compound. The 30K figure is steady-state, not peak. Treat it as the answer to \"what does the plateau look like at this gig density,\" not \"what can you earn at the top.\" Numbers are self-reported. The post does not post invoices. The cost structure collapse The interesting claim is not \"AI video is good no"
+  },
+  {
     "url": "/content/shopify-fees-breakdown/",
     "locale": "en",
     "title": "Shopify Fees in 2026: The Complete Breakdown for Sellers",
@@ -702,5 +860,23 @@
     ],
     "excerpt": "TikTok Shop's fee structure is the shortest among major marketplaces, but it punishes sellers who do",
     "body": "TikTok Shop's fee structure is the shortest among major marketplaces, but it punishes sellers who do not model the creator affiliate cut. Here is the real cost on a $30 product. Fee stack on a $30 product Fee Amount % of price Sale price $30.00 100% Referral commission (6%, fashion) $1.80 6% Transaction fee (1.8%) $0.54 1.8% TikTok's cut $2.34 7.8% Creator affiliate (10% typical) $3.00 10% TikTok's cut of creator fee (30%) $0.90 3% Creator + TikTok affiliate layer $3.90 13% Total platform + creator $6.24 20.8% That is the floor. Add a 5% return rate, 10% offsite ad spend, and a $0.30 fixed transaction cost, and the picture changes. Referral commission by category Category Referral % Fashion (apparel, accessories) 6% Home & living 6% Electronics 4% Health & beauty 5% Pet supplies 5% Toys & collectibles 5% Books & media 4% Food & beverage 4% Auto accessories 4% Compared to Amazon's 15% referral, TikTok Shop's commission is one-third. But the creator affiliate layer is what makes the math unforgiving if you skip the modeling. Creator affiliate — the hidden cost Most TikTok Shop sellers rely on creators. You set the commission rate (5–20% is typical), and any creator who posts your pro"
+  },
+  {
+    "url": "/content/vertical-ai-tools-gap/",
+    "locale": "en",
+    "title": "Vertical AI vs General AI: Why the Next Wave of Independent AI Tools Is Not a Wrapper on GPT",
+    "description": "A directional note from a Chinese knowledge-planet thread: the general-purpose AI tool category is saturated, but vertical AI tools in legaltech, medtech, real estate, education and cross-border ecommerce are under-built. Cold-eyed read of which verticals actually pay, which are compliance quagmires, and where the indie operator can enter.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "vertical-ai",
+      "market",
+      "legaltech",
+      "medtech",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A Chinese knowledge-planet thread asked: \"In the AI-for-export direction, do we bet on the general-t",
+    "body": "A Chinese knowledge-planet thread asked: \"In the AI-for-export direction, do we bet on the general-tool traffic play, or do we go deep into a vertical?\" The post lists five candidate verticals — legaltech, medtech, real estate, education, cross-border ecommerce — and argues that the general-AI tool category is saturated but vertical AI is \"not yet fully developed.\" Below is what that observation is worth, and where each vertical actually pays. What the post actually argues The post is a market-direction note, not a case study. The author observes that: General AI categories (writing / translation / design) are \"extremely crowded.\" Vertical AI categories (legaltech / medtech / real estate / education / cross-border ecommerce) look under-built. Compliance burden and customer acquisition cost vary sharply by vertical. The author invites readers to share real case studies. Below I treat each vertical individually rather than treating the post as if it were evidence. The five verticals: where the math actually works Legaltech — contract review, compliance checks Dimension Reading Willingness to pay High. A missed clause costs the customer more than the entire annual tool fee. Compliance"
   }
 ]
