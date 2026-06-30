@@ -303,6 +303,7 @@ export const categoryLabels: Record<Locale, Record<string, string>> = {
     cbm: 'Dimensional weight',
     tool: 'Tool review',
     guide: 'Beginner',
+    ai: 'AI monetization',
   },
   zh: {
     pricing: '定价',
@@ -313,5 +314,6 @@ export const categoryLabels: Record<Locale, Record<string, string>> = {
     cbm: '体积重',
     tool: '工具评测',
     guide: '入门科普',
+    ai: 'AI 变现',
   },
 };
