@@ -7,7 +7,7 @@ export const SITE = {
   author: 'lcc-ops',
   email: 'contact@kuajinglab.xyz',
   social: {
-    github: 'https://github.com/lcc-ops',
+    github: 'https://github.com/lcc-ops/website',
   },
   analytics: {
     // Cloudflare Web Analytics beacon — fill after deploying to Workers
