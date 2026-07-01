@@ -15,6 +15,13 @@ const locale: Locale = getLocaleFromUrl(Astro.url);
 const allPosts = await getCollection('content', ({ data }) => !data.draft);
 const allTools = await getCollection('tools');
 
+// Home-page stats. Computed from collections / config so the numbers
+// stay in sync as content grows.
+const uniquePosts = new Set(allPosts.map((p) => p.data.translationKey));
+const calculatorCount = allTools.length;
+const currencyCount = SITE.fxCurrencies.length;
+const guideCount = uniquePosts.size;
+
 function translationsByKey(items: CollectionEntry<'content'>[] | CollectionEntry<'tools'>[]) {
   const map = new Map<string, Partial<Record<Locale, CollectionEntry<'content'> | CollectionEntry<'tools'>>>>();
   for (const item of items) {
@@ -125,15 +132,15 @@ const faqLd = {
         <dl class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl">
           <div class="card p-4">
             <dt class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{t(locale, 'home.stats.calculators')}</dt>
-            <dd class="mt-1 text-2xl font-semibold">5</dd>
+            <dd class="mt-1 text-2xl font-semibold">{calculatorCount}</dd>
           </div>
           <div class="card p-4">
             <dt class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{t(locale, 'home.stats.currencies')}</dt>
-            <dd class="mt-1 text-2xl font-semibold">4</dd>
+            <dd class="mt-1 text-2xl font-semibold">{currencyCount}</dd>
           </div>
           <div class="card p-4">
             <dt class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{t(locale, 'home.stats.guides')}</dt>
-            <dd class="mt-1 text-2xl font-semibold">9</dd>
+            <dd class="mt-1 text-2xl font-semibold">{guideCount}</dd>
           </div>
           <div class="card p-4">
             <dt class="text-xs uppercase tracking-wide" style="color: var(--color-fg-soft);">{t(locale, 'home.stats.uptime')}</dt>

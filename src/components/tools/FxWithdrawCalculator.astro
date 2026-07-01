@@ -1,5 +1,6 @@
 ---
 import { t, type Locale } from '~/i18n/ui';
+import { SITE } from '~/site.config';
 
 interface Props {
   locale?: Locale;
@@ -14,6 +15,12 @@ const labels = {
   withdrawFee: t(locale, 'tool.withdrawFee'),
   reset: t(locale, 'tool.reset'),
 };
+// Source of truth: SITE.fxCurrencies. The first entry is the default
+// "from", the second is the default "to" (en: USD→CNY, zh: CNY→USD).
+const fxFromDefault = locale === 'zh' ? 'CNY' : 'USD';
+const fxToDefault = locale === 'zh' ? 'USD' : 'CNY';
+const fromCurrencies = SITE.fxCurrencies.filter((c) => c !== fxToDefault);
+const toCurrencies = SITE.fxCurrencies.filter((c) => c !== fxFromDefault);
 ---
 <div class="fx-calc" data-locale={locale}>
   <div class="grid gap-4 sm:grid-cols-3">
@@ -24,18 +31,17 @@ const labels = {
     <label class="block">
       <span class="text-sm font-medium">{labels.fromCurrency}</span>
       <select name="from" class="mt-1 w-full input">
-        <option value="USD" selected>USD</option>
-        <option value="EUR">EUR</option>
-        <option value="GBP">GBP</option>
-        <option value="JPY">JPY</option>
+        {fromCurrencies.map((c) => (
+          <option value={c} selected={c === fxFromDefault}>{c}</option>
+        ))}
       </select>
     </label>
     <label class="block">
       <span class="text-sm font-medium">{labels.toCurrency}</span>
       <select name="to" class="mt-1 w-full input">
-        <option value="CNY" selected>CNY</option>
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
+        {toCurrencies.map((c) => (
+          <option value={c} selected={c === fxToDefault}>{c}</option>
+        ))}
       </select>
     </label>
   </div>

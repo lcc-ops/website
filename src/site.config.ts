@@ -18,4 +18,8 @@ export const SITE = {
     enabled: false,
     client: '',
   },
+  // Source of truth for the FX calculator's currency dropdown. Both
+  // FxWithdrawCalculator and the home-page stats read from this list.
+  // Update here, not in the .astro file.
+  fxCurrencies: ['USD', 'EUR', 'GBP', 'JPY', 'CNY'],
 } as const;
