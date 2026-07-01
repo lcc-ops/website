@@ -43,7 +43,7 @@ A clean snapshot of US-audience CPM by niche as of mid-2026:
 | Gaming | 0.6-2 | Massive view volume; gamer LTV is low and ad-block is high |
 | Entertainment, meme, compilation | 0.4-1.5 | Same as gaming; ad-block rate exceeds 40% in many geos |
 
-The spread between top and bottom is approximately 100x. The spread between "sustainable creator business" and "hobby that costs money" is approximately 20x.
+The spread between top and bottom is approximately 100x. The gap in earnings between a "sustainable creator business" and a "hobby that costs money" runs roughly 20x.
 
 ## What the subscriber bands actually pay
 
