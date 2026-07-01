@@ -293,6 +293,23 @@
     "body": "订阅产品是否健康，看一个用户终身贡献是否大于获取他的成本。两个数最重要：LTV（生命周期价值）和 CAC（获客成本）。下面的计算器把 LTV/CAC 关系转成每个创始人真正会问的问题——「我需要多少付费用户才能停止在获客上亏钱？」 数学 3 倍 ROI 是常说的及格线。低于它，企业靠时间在烧钱。 怎么用 输入月订阅价格（美元）。 输入一个付费用户的完整获客成本。 输入平均留存月数。如果你只知道月流失率，用 1 除以流失率：月流失 5% ≈ 平均留存 20 个月。 输入目标回本月数——你希望获客成本在多少个月内回本。默认 12 个月是合理的 SaaS 目标。 输出告诉你需要多少付费用户才能回本、对应月 MRR、以及 ROI 倍数。"
   },
   {
+    "url": "/zh/content/ai-tool-non-english-localization/",
+    "locale": "zh",
+    "title": "AI 写作工具出海非英语市场: 本地化到底先做哪一轨",
+    "description": "英语市场跑通的 AI 写作工具, 想进日本、韩国、东南亚、拉美。四条本地化轨道 (UI 翻译/支付/社媒/客服), 哪一条最该先做, 以及标准建议悄悄忽略的三个成本。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "localization",
+      "non-english-markets",
+      "saas",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一个英语市场跑通的 AI 写作工具想看下一个四个市场: 日本、韩国、东南亚、拉美。问题不是\"选哪个\", 是\"四条本地化轨道按什么顺序交付\"。标准建议(\"先翻译, 再加支付, 再投广告, 再招客服\")是",
+    "body": "一个英语市场跑通的 AI 写作工具想看下一个四个市场: 日本、韩国、东南亚、拉美。问题不是\"选哪个\", 是\"四条本地化轨道按什么顺序交付\"。标准建议(\"先翻译, 再加支付, 再投广告, 再招客服\")是错的顺序。下面是能 work 的顺序, 以及标准建议悄悄忽略的三个成本。 四条本地化轨道 轨道 覆盖 缺了的失败模式 1. UI/内容翻译 应用内字符串, 着陆页, 邮件序列 注册摩擦, 用户觉得是外国 AI 不维护 2. 支付方式 本地钱包, 本地卡, 替代支付通道 支付页第二步流失, 日韩 40-60% 本地用户没法用卡或 PayPal 付 3. 本地社媒渠道 日台 LINE, 韩国 KakaoTalk, 东南亚 WhatsApp, 拉美 Instagram 没有自然流量, 只能买广告, 没法做口碑 4. 客服 跨时区覆盖 + 语言流利的客服 第一张差评工单 = 第二周流失 运营者常犯的错是把它们当 checklist, 每个做 2 周然后按 1-2-3-4 顺序交付。实际能 work 的顺序要看市场。 Track 1: 不能像机翻的翻译 运营者首先跳过的是翻译质量。GPT-4 翻完直接上, 母语者一眼看出, 立刻把这产品贴上\"外国 AI\"标签, 信任掉。修法不是\"换更好的模型\", 是对高曝光字符串跑一次人工 QA。 高曝光字符串不是产品介绍大段文字, 是: 价格页标题和三个套餐名 CTA 按钮 (开始免费试用, 升级, 取消) 错误提示 (支付失败, 卡被拒, 网络错误) 空状态 (新用户刚进来什么都没生成时看到的画面) 母语 QA 一遍这 30-50 个字符串, 一门语言 400-1200 美金。ROI 是非线性的, 因为非英语市场付费转化, 头 10 秒的用户体验是唯一重要的, 那里有 5+ 本地化竞品在抢。 运营者忽略的成本: 迭代成本。每次产品更新, 20-40% 字符串要重开。一个每月发 2 次 UI 改动的 SaaS, 每月每门语言付 30-50 字符串的翻译费。6 个月后, 持续本地化账单比初次搭建还大。 Track 2: 支付本地化 逐国家支付组合是第二条, 也是最直接卡单客单价的轨道。 市场 默认支付 备注 日本 信用卡 + Konbini + 银行转账 PayPal 不是默认, ARPU 30 美金以下 Konbini 是必选 韩国 KakaoPay + NaverPay + Toss + 卡 卡渗透率高, 本地钱包是信任信号 台湾 信用卡 + LINE Pay + ATM 转账 30 美金以下是 LINE Pay 东南亚 (泰/越/印尼/菲) 本地钱包 (GrabPay/GCash/TrueMoney) + 卡 各国不同, 印尼跑 GoPay/OVO, 菲律宾跑 GCash 拉美 (墨/巴/阿) 卡 + PIX (巴) + OXXO "
+  },
+  {
     "url": "/tools/ai-break-even/",
     "locale": "en",
     "title": "AI Subscription Break-Even Calculator",
@@ -308,6 +325,23 @@
     ],
     "excerpt": "A subscription product is healthy when each customer's lifetime contribution exceeds the cost of acq",
     "body": "A subscription product is healthy when each customer's lifetime contribution exceeds the cost of acquiring them. Two numbers matter: LTV (lifetime value) and CAC (customer acquisition cost). The calculator below turns the LTV/CAC relationship into the question every founder actually asks — \"how many paid users do I need before I stop losing money on acquisition?\" The math A 3x ROI multiple is the commonly cited break-even target. Below that, the business runs on borrowed time. How to use Enter the monthly subscription price (USD). Enter the fully-loaded CAC for a paying user. Enter the average lifetime in months. If you only know monthly churn, divide 1 by the churn rate: 5% monthly churn ≈ 20-month lifetime. Enter the target payback window — the number of months in which you want acquisition costs to pay back. The default 12 months is a reasonable SaaS target. The output shows how many paid users you need to clear acquisition costs, the monthly MRR that requires, and the ROI multiple."
+  },
+  {
+    "url": "/content/ai-tool-non-english-localization/",
+    "locale": "en",
+    "title": "AI Writing Tool Going Non-English: The Localization Order That Actually Matters",
+    "description": "An English-market AI writing tool expanding into Japan, Korea, Southeast Asia, and Latin America. The four localization tracks (UI translation, payments, channels, support), the one that matters first, and the localization costs the standard advice quietly ignores.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "localization",
+      "non-english-markets",
+      "saas",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "An English-market AI writing tool is profitable and looking at the next four markets: Japan, Korea, ",
+    "body": "An English-market AI writing tool is profitable and looking at the next four markets: Japan, Korea, Southeast Asia, and Latin America. The question is not \"which market\" but \"in what order should the four localization tracks ship.\" The conventional advice (\"translate, then add payment, then run ads, then hire support\") is the wrong sequence. Below is the sequence that actually works, and the three costs the standard advice quietly ignores. The four localization tracks Track What it covers Failure mode if missing 1. UI / content translation In-app strings, landing pages, email sequences Signup friction; user assumes tool is foreign and unmaintained 2. Payment methods Local wallets, local cards, alternative rails Checkout abandonment at the second step; 40-60% of local users in JP/KR cannot pay with card or PayPal 3. Local social channels LINE in JP/TW, KakaoTalk in KR, WhatsApp in SEA, Instagram in LATAM No organic distribution; you can buy ads but cannot build word-of-mouth 4. Customer support Timezone coverage + language-fluent agents First bad support ticket = churn in week 2 The mistake operators make is treating these as a checklist and shipping them in order 1, 2, 3, 4 with 2 "
   },
   {
     "url": "/zh/content/amazon-fba-fees-breakdown/",
@@ -557,6 +591,40 @@
     "body": "Digital payments vary dramatically by region. East Asia runs on mobile wallets, Europe on cards and instant bank transfers, Latin America on a hybrid of cards and cash vouchers, Africa on mobile money. Here is the country-by-country map. Asia: the most diverse payment landscape East Asia China has the world's highest mobile wallet penetration. Alipay and WeChat Pay cover 90% of urban consumers and dominate in-person QR-code payments. Supporting wallets: JDB Pay, Best Pay, Baidu Wallet, UnionPay Wallet. Internet payment platforms: Alipay Online, TenPay, UnionPay Online, 99Bill, ChinaPnr. Mobile apps from every major bank and payment institution enable QR scanning and remote transfers. Card networks: UnionPay (dominant domestically), Visa, Mastercard, JCB. Prepaid: carrier cards from China Unicom/Telecom/Mobile, plus retail gift cards. Cross-border: Alipay International, WeChat Pay International, UnionPay International, PingPong, Airwallex, LianLian Pay. Japan combines mature card networks with transit-flavored prepaid cards. Wallets: PayPay, LINE Pay, Rakuten Pay, au WALLET. Internet payment: JCB Net Payment, Rakuten Online Payment, GMO Payment Gateway. Cards: JCB, Visa, Mastercard,"
   },
   {
+    "url": "/zh/content/gojiberry-ai-sales-agent/",
+    "locale": "zh",
+    "title": "Gojiberry AI: 一个 AI 销售员, 11 个月从 0 到 350 万美金年化, 把自己当第一个客户",
+    "description": "Y Combinator 背书的 B2B AI 销售 agent, 11 个月做到 350 万美金年化。冷峻拆解: 单元经济、自我销售飞轮, 以及公开数据没说的三个数字。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "b2b-saas",
+      "sales-automation",
+      "agent",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "Gojiberry AI 是 B2B AI 销售 agent: 输入一个 URL, 系统找高意向潜客, 跑多渠道外联, 替客户约会议。创始人公开口径 11 个月做到 350 万美金年化营收, 2000",
+    "body": "Gojiberry AI 是 B2B AI 销售 agent: 输入一个 URL, 系统找高意向潜客, 跑多渠道外联, 替客户约会议。创始人公开口径 11 个月做到 350 万美金年化营收, 2000+ B2B 销售团队在用, Y Combinator 背书。这是创始人的第二个 SaaS, 第一个在 50 万欧元年化时卖掉了。这个产品不是辅助销售, 是直接当一个销售。 产品到底在做什么 客户视角的完整流程: 买家是 B2B 销售团队, 原本要花 4000-6000 美金/月雇初级 SDR 来干这些活。产品替换的不是 Closer, 是 Closer 前面那一整段漏斗。 350 万 ARR 后面的算账 这就是隐含的 blended ARPU。在企业级 SaaS 里这是一个低 ARPU, 所以真正重要的单位是团队数, 不是单价。145 USD/月, 价格更接近\"Stripe Atlas 加几个集成\"的层级, 不是 Salesforce seat。靠量, 不靠抬价。 创始人的第一个 SaaS 50 万欧元年化时卖掉。第二个 11 个月跑到了 7 倍。这跟一个更广的观察一致:第二个产品跑得更快, 因为创始人已经有分发、客户开发直觉、定价手感。 为什么\"自我销售\"飞轮是关键 Gojiberry 被引用最多的是\"产品自己卖自己\"。两件具体的事: 产品是它自己的第一个客户。 AI agent 替 Gojiberry 找潜客、写外联序列、约 demo。替付费客户跑漏斗的系统, 就是替自己跑漏斗的系统。Gojiberry 没有独立的 marketing ops 流程。 单 URL 上手。 买家不配序列, 不写 prompt, 不建潜客名单。粘贴一个网站, agent 接手一切。从注册到约到会议, 时间是小时, 不是周。 这两件事干的是同一件事: 把\"感兴趣\"和\"看到它真的在跑\"之间的距离压到最短。当天午饭前就约到会议的买家, 跟 onboarding 了两周的买家, 是完全不同的买家。 这也是为什么这个模型作为 wrapper 很难抄。Wrapper 跑的是客户的配置。自我销售的产品是配置本身在生产里跑。两种架构分化很快。 价格锚定\"人头\", 不锚定 seat 结构性的定价洞察: 锚定 买家心智 结果 99 USD/月\"AI 销售工具\" 跟其他 AI 工具比 买家在功能表上挑 4000 USD/月 SDR 等价 跟招一个人比 买家在看约到的会是不是真的 Gojiberry 锚的是第二种。客户付的不是\"AI 功能\", 是\"半个 SDR 的等价物\"。在 145 USD/月这个隐含 ARPU 下, 买家心智更接近\"一个帮我做前期外联的实习生\", 不是\"我在评估一个工具\"。心智转移是账能算下来的关键。 通用打法 近期 B2B AI 工具里反复出现的模式: 选一个结果是日历事件的工作流"
+  },
+  {
+    "url": "/content/gojiberry-ai-sales-agent/",
+    "locale": "en",
+    "title": "Gojiberry AI: An AI Sales Agent That Reached 3.5M USD ARR in 11 Months by Selling Itself",
+    "description": "A B2B AI sales agent, Y Combinator-backed, that scaled from 0 to 3.5M USD annualized in 11 months. Cold-eyed read of the unit economics, the self-sell loop, and three numbers the public story quietly skips.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "b2b-saas",
+      "sales-automation",
+      "agent",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "Gojiberry AI is a B2B AI sales agent: input a URL, the system finds high-intent prospects, runs mult",
+    "body": "Gojiberry AI is a B2B AI sales agent: input a URL, the system finds high-intent prospects, runs multi-channel outreach, and books meetings on the customer calendar. The founder publicly states 3.5M USD annualized revenue 11 months after launch, 2,000+ B2B sales teams using the product, Y Combinator-backed. This is the founder's second SaaS — the first sold at 500K EUR annualized. The product does not assist a salesperson. It acts as one. What the product actually does The workflow the customer sees: The buyer is a B2B sales team that would otherwise pay a junior SDR 4,000-6,000 USD/month to do this manually. The product does not replace the closer — it replaces the part of the funnel before the closer. The arithmetic behind 3.5M ARR That is the implied blended ARPU. It is a low ARPU relative to enterprise SaaS, which is why the unit that matters is team count, not price per team. At 145 USD/month, the product is priced closer to a \"Stripe Atlas + a couple of integrations\" tier than to a Salesforce seat. Volume is the play, not ARPU expansion. The founder's first SaaS sold at 500K EUR annualized. The second one is running roughly 7x the first in 11 months. The pattern is consistent "
+  },
+  {
     "url": "/zh/content/google-ads-roas-formula/",
     "locale": "zh",
     "title": "Google Ads ROAS 公式：真实的盈亏平衡计算",
@@ -766,6 +834,40 @@
     ],
     "excerpt": "ROAS (Return on Ad Spend) is the single most-used metric in paid social, but most sellers eyeball it",
     "body": "ROAS (Return on Ad Spend) is the single most-used metric in paid social, but most sellers eyeball it without checking the math. A 3.0x ROAS sounds great until your margins and fees break it down — at 8% payment fee and 25% target margin, your break-even is closer to 1.85x. Anything below that loses money on the first order. How this calculator works Unit price (USD) — selling price (post-discount if you run promos). COGS + shipping (USD) — landed cost including production, packaging, freight to customer. Payment fee (%) — total processor fee including FX and platform commission. Target margin (%) — net margin you want after all fixed costs. The tool returns: Break-even ROAS = 1 / (1 − payment% − margin%). Below this, every ad dollar loses money. Target ROAS — multiplier needed to hit your target margin after ad spend. Max CPA — the most you can pay per acquired customer while staying break-even on order one. Reference scenarios Unit price COGS+ship Payment % Target margin Break-even Target ROAS Max CPA $25 $8 4% 20% 1.32x 1.65x $16.00 $45 $14 4% 25% 1.41x 1.85x $29.20 $80 $22 4% 30% 1.52x 2.16x $54.80 $150 $45 5% 35% 1.67x 2.56x $97.50 $300 $90 5% 40% 1.82x 3.03x $195.00 Break-even"
+  },
+  {
+    "url": "/zh/content/salesrobot-zero-funding-ai-saas/",
+    "locale": "zh",
+    "title": "SalesRobot: 一个 100 万美金 ARR 的 LinkedIn AI 工具, 4100 个客户, 零融资",
+    "description": "LinkedIn 自动化 + 冷邮件 AI 工具, 100 万美金 ARR, 4100+ B2B 团队, 零外部资金。冷峻拆解: 单元经济, \"高度分散市场\"论, 以及 bootstrapped AI SaaS 真正证明了什么。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "b2b-saas",
+      "linkedin-automation",
+      "bootstrapped",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "SalesRobot 是 B2B 销售团队的 LinkedIn 自动化和冷邮件工具。创始人公开口径 100 万美金 ARR, 4100+ B2B 销售团队和获客代理作为客户, 零外部融资。创始人现在用",
+    "body": "SalesRobot 是 B2B 销售团队的 LinkedIn 自动化和冷邮件工具。创始人公开口径 100 万美金 ARR, 4100+ B2B 销售团队和获客代理作为客户, 零外部融资。创始人现在用同一批客户做第二个产品 Kuron.ai。下面是单元经济, 让 bootstrap 能成立的结构性论点, 以及公开故事没讲的三个失败模式。 产品到底做什么 买家是 B2B 销售团队, 原本要付: 初级 SDR 综合 4000-6000 美金/月 外包 SDR 代理 3000-8000 美金/月每席 干冷外联的 VA 1500-2500 美金/月 工具干写作/时序/路由/多渠道协调, 人干 close。被替换的单位是客户 P&L 上一条人头费, 不是预算表上一个软件 license。 100 万 ARR 后面的算账 这就是隐含的 blended ARPU。20 USD/月每团队, SalesRobot 定价是自助式 SaaS, 不是企业级 seat。靠量。SalesRobot 不是 Salesforce, 定价姿态更接近 Calendly 或 Loom。 有意思的结构性观察: 创始人没融资, 但规模做到 1M ARR, 4100+ 客户。邻近赛道拿融资的对手客户数 50-200, ARPU 高 10-30 倍。不同的游戏, 不同的计分板。bootstrap 在客户广度上赢, 不在单客营收上赢。 \"高度分散市场\"这个论断 创始人押注的结构性论点: 市场 动态 对 AI 工具的含义 B2B 销售工具 买家是销售团队, 每家有自己 ICP/动作/行业合规 工具不能一刀切, 垂直深度的工具赢 LinkedIn 自动化 LinkedIn 是一个渠道, 买家平行用 3-5 个渠道 拿 LinkedIn 这一块的工具是更大 stack 的一小部分 冷邮件 买家散布在 100+ 行业, 各国送达率规则不同 单一\"冷邮件 AI\" 不能服务所有买家 销售赋能 买卖动作在 SaaS, 代理, 金融, 医疗之间完全不同 横向\"AI for sales\" 输给垂直工具 含义: B2B 销售工具市场不是赢家通吃。多个 1M-10M ARR 工具能共存, 不需要互相打死。赢的工具是窄买家画像上做深度的, 不是试图服务所有人的。 这也是 bootstrap 理性的原因。拿融资的对手得讲 TAM 扩张和赢家通吃来撑估值。bootstrap 工具不用。两家公司在玩不同的游戏, 不同的计分板。 为什么创始人拒绝融资 公开报道显示创始人多次被劝融资, 都拒了。理由 (转述): 市场分散, 没有能撑得起稀释的 TAM 扩张打法。 产品已经盈利, 外部资本会强加\"不惜一切增长\"的行为, 跟市场不匹配。 宁愿用第一个产品的现金流做第二个产品, 也不愿拿钱丢掉对第二个产品的控制。 这是少见的\"我不需要你的钱\"立"
+  },
+  {
+    "url": "/content/salesrobot-zero-funding-ai-saas/",
+    "locale": "en",
+    "title": "SalesRobot: A 1M USD ARR LinkedIn AI Tool With 4,100 Customers and Zero Outside Funding",
+    "description": "A LinkedIn-automation and cold-email AI tool, 1M USD ARR, 4,100+ B2B sales teams, zero outside capital. Cold-eyed read of the unit economics, the \"highly fragmented\" market thesis, and what a bootstrapped AI SaaS actually proves.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "b2b-saas",
+      "linkedin-automation",
+      "bootstrapped",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "SalesRobot is a LinkedIn-automation and cold-email tool for B2B sales teams. The founder publicly st",
+    "body": "SalesRobot is a LinkedIn-automation and cold-email tool for B2B sales teams. The founder publicly states 1M USD annual recurring revenue, 4,100+ B2B sales teams and lead-gen agencies as customers, zero outside capital. The founder is now building a second product (Kuron.ai) on the same customer base. Below is the unit economics, the structural thesis that makes the bootstrap work, and the three failure modes the public story does not address. What the product does The buyer is a B2B sales team that would otherwise pay: A junior SDR at 4,000-6,000 USD/month all-in An outsourced SDR agency at 3,000-8,000 USD/month per seat A VA handling cold outreach at 1,500-2,500 USD/month The tool does the writing, the timing, the routing, and the multi-channel coordination. The human does the close. The unit being replaced is a headcount line on the customer's P&L, not a software license on a budget spreadsheet. The arithmetic behind 1M ARR That is the implied blended ARPU. At 20 USD/month per team, SalesRobot is priced as a self-serve SaaS tool, not as an enterprise seat. Volume is the play. The product is not Salesforce; it is closer to a Calendly or a Loom in pricing posture. The interesting s"
   },
   {
     "url": "/zh/content/seedance-2-product-video-case/",
