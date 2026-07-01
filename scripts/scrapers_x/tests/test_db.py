@@ -131,3 +131,21 @@ def test_runs_skips_non_ok(db):
         items_seen=0, items_inserted=0, items_skipped=0,
     )
     assert db.last_successful_run() is None
+
+
+def test_topics_exists(db):
+    """exists() returns True iff tweet_id is already present."""
+    row = TopicRow(
+        tweet_id="42",
+        url="https://x.com/x/status/42",
+        author_handle="x", author_name="X", posted_at=None,
+        body_text="hi", like_count=0, reply_count=0,
+        repost_count=0, quote_count=0,
+        search_keyword="AI变现", search_mode="top",
+        first_seen_at="2026-07-02T00:00:00Z",
+        last_seen_at="2026-07-02T00:00:00Z",
+    )
+    assert db.topics.exists("42") is False
+    db.topics.upsert(row)
+    assert db.topics.exists("42") is True
+    assert db.topics.exists("999") is False

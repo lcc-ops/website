@@ -78,14 +78,13 @@ def _extract_card(card, mode: str) -> TopicRow | None:
             handle = lines[1][1:]
 
     def _count(testid: str) -> int:
-        btn = card.query_selector(f'[data-testid="{testid}"]')
-        if not btn:
+        # X renders like/reply/retweet icons inside the testid element,
+        # and the count is on the testid element itself's aria-label
+        # (the parent button is unlabeled on X.com).
+        node = card.query_selector(f'[data-testid="{testid}"]')
+        if not node:
             return 0
-        # Walk up to the button ancestor for aria-label
-        ancestor = btn.evaluate_handle(
-            "el => el.closest('button') || el"
-        )
-        label = ancestor.get_attribute("aria-label") or ""
+        label = node.get_attribute("aria-label") or ""
         return parse_count(label)
 
     now = utcnow_iso()
@@ -141,15 +140,17 @@ def crawl(args: argparse.Namespace) -> int:
                             items_skipped += 1
                             continue
                         if args.dry_run:
-                            log.info("[dry-run] %s  likes=%s", row.url, row.like_count)
+                            log.info(
+                                "[dry-run] %s  likes=%d replies=%d",
+                                row.url, row.like_count, row.reply_count,
+                            )
                             continue
-                        before = db.topics.recent(within_seconds=86400 * 365 * 10)
+                        existed = db.topics.exists(row.tweet_id)
                         db.topics.upsert(row)
-                        after = db.topics.recent(within_seconds=86400 * 365 * 10)
-                        if len(after) > len(before):
-                            items_inserted += 1
-                        else:
+                        if existed:
                             items_skipped += 1
+                        else:
+                            items_inserted += 1
                 finally:
                     if opened_new:
                         try:

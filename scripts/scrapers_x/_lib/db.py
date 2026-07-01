@@ -95,6 +95,14 @@ class _Topics:
         )
         self._c.commit()
 
+    def exists(self, tweet_id: str) -> bool:
+        """True iff a row with this tweet_id is already present."""
+        cur = self._c.execute(
+            "SELECT 1 FROM topics WHERE tweet_id = ? LIMIT 1",
+            (tweet_id,),
+        )
+        return cur.fetchone() is not None
+
     def recent(self, within_seconds: int) -> list[TopicRow]:
         """Rows whose last_seen_at is within the window, newest first."""
         cutoff = now_minus_seconds_iso(within_seconds)
