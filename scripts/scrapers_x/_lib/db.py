@@ -55,6 +55,18 @@ class TopicRow:
     last_seen_at: str
 
 
+@dataclass(frozen=True)
+class RunSummary:
+    run_id: int
+    mode: str
+    started_at: str
+    finished_at: Optional[str]
+    status: str
+    items_seen: int
+    items_inserted: int
+    items_skipped: int
+
+
 class _Topics:
     def __init__(self, conn: sqlite3.Connection) -> None:
         self._c = conn
@@ -134,9 +146,70 @@ class Database:
             );
             CREATE INDEX IF NOT EXISTS idx_topics_last_seen
               ON topics(last_seen_at);
+
+            CREATE TABLE IF NOT EXISTS runs (
+              run_id          INTEGER PRIMARY KEY AUTOINCREMENT,
+              mode            TEXT NOT NULL,
+              started_at      TEXT NOT NULL,
+              finished_at     TEXT,
+              status          TEXT NOT NULL DEFAULT 'in_progress',
+              items_seen      INTEGER NOT NULL DEFAULT 0,
+              items_inserted  INTEGER NOT NULL DEFAULT 0,
+              items_skipped   INTEGER NOT NULL DEFAULT 0
+            );
+            CREATE INDEX IF NOT EXISTS idx_runs_status
+              ON runs(status);
             """
         )
         self._c.commit()
+
+    def record_run_start(self, mode: str, started_at: str) -> int:
+        cur = self._c.execute(
+            "INSERT INTO runs(mode, started_at) VALUES (?, ?)",
+            (mode, started_at),
+        )
+        self._c.commit()
+        return cur.lastrowid
+
+    def record_run_end(
+        self,
+        run_id: int,
+        finished_at: str,
+        status: str,
+        items_seen: int,
+        items_inserted: int,
+        items_skipped: int,
+    ) -> None:
+        self._c.execute(
+            """
+            UPDATE runs
+               SET finished_at = ?, status = ?,
+                   items_seen = ?, items_inserted = ?, items_skipped = ?
+             WHERE run_id = ?
+            """,
+            (
+                finished_at, status,
+                items_seen, items_inserted, items_skipped,
+                run_id,
+            ),
+        )
+        self._c.commit()
+
+    def last_successful_run(self) -> Optional[RunSummary]:
+        cur = self._c.execute(
+            """
+            SELECT run_id, mode, started_at, finished_at, status,
+                   items_seen, items_inserted, items_skipped
+              FROM runs
+             WHERE status = 'ok'
+             ORDER BY started_at DESC
+             LIMIT 1
+            """
+        )
+        row = cur.fetchone()
+        if row is None:
+            return None
+        return RunSummary(*row)
 
     def close(self) -> None:
         self._c.close()

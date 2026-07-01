@@ -98,3 +98,36 @@ def test_topics_recent_orders_by_last_seen(db):
 
 
 # TODO(Task 5): Add test asserting the 'runs' table is created by ensure_schema.
+
+
+def test_runs_lifecycle(db):
+    """record_run_start returns an id; record_run_end finalizes it."""
+    from _lib.db import utcnow_iso
+    started = utcnow_iso()
+    run_id = db.record_run_start(mode="full", started_at=started)
+    assert isinstance(run_id, int)
+    db.record_run_end(
+        run_id,
+        finished_at=utcnow_iso(),
+        status="ok",
+        items_seen=10,
+        items_inserted=7,
+        items_skipped=3,
+    )
+    summary = db.last_successful_run()
+    assert summary is not None
+    assert summary.mode == "full"
+    assert summary.items_inserted == 7
+    assert summary.items_skipped == 3
+
+
+def test_runs_skips_non_ok(db):
+    """last_successful_run ignores failed runs."""
+    from _lib.db import utcnow_iso
+    now = utcnow_iso()
+    bad = db.record_run_start(mode="full", started_at=now)
+    db.record_run_end(
+        bad, finished_at=utcnow_iso(), status="error",
+        items_seen=0, items_inserted=0, items_skipped=0,
+    )
+    assert db.last_successful_run() is None
