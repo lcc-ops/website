@@ -8,20 +8,20 @@ translationKey: 'x-com-ai-ipo-window'
 tldr: 'Until OpenAI or Anthropic actually IPOs, the visible exit for AI capital is private. When the first one prints, late-stage private marks reset and discount disappears. That step is the trade-cycle break, not the model getting worse.'
 faq:
   - q: 'Is an OpenAI IPO likely in 2026?'
-    a: 'At the time this was written the most-cited public estimate was Q4 2026 for OpenAI and a similar Q4-or-2027 window for Anthropic. Both timelines slip; treat any single quarter estimate as one data point, not a calendar.'
+    a: 'At the time this was written the most-cited public estimate was Q4 2026 for OpenAI and a similar Q4-or-2027 window for Anthropic. Both timelines slip; treat any single quarter estimate as one data point, not as a calendar commitment.'
   - q: 'What is the discount that early investors accept?'
-    a: 'Tender offers and secondary rounds in 2024-2025 reportedly priced AI rounds 30-50% below the last primary valuation in some cases. The size of the discount reflects the gap between paper mark and what a willing secondary buyer would pay.'
+    a: 'Tender offers and secondary rounds in 2024-2025 reportedly priced AI rounds at 30-50% below the last primary valuation in some cases. The size of the discount reflects the gap between paper mark and what a willing secondary buyer would pay.'
   - q: 'How do public AI names tell us the cycle is breaking?'
     a: 'When public AI infrastructure names start missing revenue or guide down because capacity is overbuilt, that is one signal. A second signal is hyperscaler capex commentary pivoting from "constrained" to "right-sized."'
   - q: 'What does this mean for someone building an AI wrapper today?'
     a: 'If the IPO window is the cycle bottom, then the next 12-18 months are the window where private capital is still in price-insensitive mode and customer budgets are still growing. After the first major IPO prints, both budgets and capital get harder.'
   - q: 'Could OpenAI IPO at a lower valuation than its last private round?'
-    a: 'It is structurally possible. Public market pricing is constrained by index inclusion, lock-up, and free float; private marks are constrained by who is left to write the check. The two price discovery systems do not have to agree.'
+    a: 'It is structurally possible. Public market pricing is constrained by index inclusion, lockup, and free float; private marks are constrained by who is left to write the check. The two price discovery systems do not have to agree.'
   - q: 'Is this a long-AI or short-AI trade?'
     a: 'It is not a directional view on the technology. The view is that capital has a clock, and the clock reads roughly four quarters from peak private mark to first public print. Whatever the AI trade is on that date is a different trade than today.'
 ---
 
-The argument running through one widely-shared post is timing, not technology. The claim is that US AI demand stays elevated through roughly Q4 2026 because the exit path for private AI capital is still private. The minute OpenAI or Anthropic actually IPOs, the discount that has kept late private rounds attractive collapses, and the trade-cycle break shows up before the model quality declines.
+The argument running through one widely-shared post is timing, not technology. The claim is that US AI demand stays elevated through roughly Q4 2026 because the exit path for private AI capital is still private. The minute OpenAI or Anthropic actually IPOs, the discount that has kept late-stage private rounds attractive collapses, and the trade-cycle break shows up before the model quality declines.
 
 That is a statement about capital structure, not about what GPT-5 can or cannot do.
 
@@ -35,7 +35,7 @@ Until the first IPO prints, three things stay true:
 2. The public market reference for AI quality is mostly the hyperscalers and a small group of chip and infrastructure names. Those tickers do not reprice until earnings or capex commentary forces them to.
 3. Customers continue to grow AI budgets because there is no public benchmark that says "AI is fully priced in." Budgets compress when benchmarks arrive, not when models get incrementally worse.
 
-## What "AI 熄火" looks like in numbers
+## What the "AI trade is dying" line looks like in numbers
 
 The phrase "AI 行情要熄火了" (the AI trade is dying) gets used loosely. Read as a concrete sequence, the trade-cycle break would look like:
 
@@ -44,7 +44,7 @@ The phrase "AI 行情要熄火了" (the AI trade is dying) gets used loosely. Re
 - Public AI infrastructure names start guiding down on revenue, not because demand is zero, but because the customer mix shifts from "expansion" to "right-sized."
 - Hyperscaler capex commentary pivots from "we are constrained by power / chips / buildout" to "we are pacing our build." That sentence in an earnings call is the cleanest signal.
 
-None of these steps requires a new model to be bad. They require the capital structure to catch up with the operating reality.
+None of these steps requires a new model to be worse. They require the capital structure to catch up with the operating reality.
 
 ## What the post does not cover
 
@@ -56,4 +56,4 @@ None of these steps requires a new model to be bad. They require the capital str
 
 ## Take-away
 
-The clean read of this argument is: the AI trade has a clock, and the clock reads roughly four quarters. The clock is set by when the first major private AI exit becomes a public ticker, not by when a model ships or does not ship. Operators building on AI have that window; investors underwriting AI have the same window. What happens the quarter after the first IPO prints is a different trade than today, regardless of what the technology does.
+The clean read of this argument is: the AI trade has a clock, and the clock reads roughly four quarters. The clock is set by when the first major private AI exit becomes a public ticker, not by when a model ships or does not ship. Operators building on AI have that window; the underwriters of the same capital have it too. What happens the quarter after the first IPO prints is a different trade than today, regardless of what the technology does.

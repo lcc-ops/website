@@ -1,5 +1,21 @@
 [
   {
+    "url": "/zh/content/x-ai-product-bootcamp/",
+    "locale": "zh",
+    "title": "\"30 天 AI 产品变现训练营\"卖的是什么:拆解单位经济",
+    "description": "逐行读一条典型的\"30 天 AI 产品训练营\"销售帖,看它承诺了什么、省略了什么,以及怎么判断这个 offer 值不值标价。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "bootcamp",
+      "product",
+      "side-hustle",
+      "unit-economics"
+    ],
+    "excerpt": "这条推文是一条 30 天 AI 产品训练营的销售帖。卖点是:从选品、开发到推广,30 天搞定,cohort 形式授课,Quark 盘链接到课程目录。这种形态很常见,这次拆解适用于这类 offer。 问",
+    "body": "这条推文是一条 30 天 AI 产品训练营的销售帖。卖点是:从选品、开发到推广,30 天搞定,cohort 形式授课,Quark 盘链接到课程目录。这种形态很常见,这次拆解适用于这类 offer。 问题不是课程内容是否真实。问题是推文暗示的结果(「30 天就能跑的可持续副业」)是不是课程实际能交付的东西。 销售话术拆解到交付物 逐字读这条帖子,offer 承诺四个组件: 选品。 选一个有清晰痛点和预算的 AI 自动化产品类目。 开发。 用 no-code + AI 在 30 天内交付 v0。 推广。 有模板的付费和自然分发方案。 长期资产框架。 「构建长期副业资产」。 30 天窗口够交付 (1) 和 (2)。不够验证 (3),也不够证明 (4)。 30 天能做什么,不能做什么 阶段 30 天能达成 30 天覆盖不到 选品 选一个毛利率 50%、买家画像清晰的类目 验证这个类目对单人运营者有可触达的分发渠道 开发 用 no-code + LLM 栈交付一个 v0 追上同细分既有竞品的功能完整度 推广 上线落地页、基础广告、内容节奏 建立起让自然分发生效的受众图谱 收入 第 3-4 周拿到前 5 个以内的付费客户 达到稳定的 1K USD/月 run-rate 30 天是交付一个产品的时间表,不是验证一个生意的时间表。「交付 v0」和「验证生意」之间的错位,正是大部分学员卡住的地方。 训练营本身的单位经济 反推一份典型 cohort 训练营的运营方经济: 学费: 1500-3000 USD/人,每 cohort 100-500 人。 单 cohort 总收入: 150K-1.5M USD。 运营方成本: 1-2 名 lead(主讲)+ 社群运营 + 内容制作 + 招募广告投放。 净利率: 40-70%,取决于广告效率。 运营方的生意是把课程卖给下一 cohort,不是自己跑 AI 产品。这没问题,但意味着课程形态由「什么在 creator 受众里跑付费转化最高」决定,而不是「什么让最多毕业生真正跑 AI 产品」。 这条推文没有覆盖的部分 真实获客成本。 「推广」课程通常教小额预算的付费投放。它不教 channel-native 分发——2026 年单人运营者唯一可持续的获客来源。 选品反馈回路。 第 1 周选对产品类目,前提是手上有「哪些类目有可触达分发渠道」的数据。课程通常给启发式,不给数据。 退款和满意度。 大部分 cohort 训练营报 70-90% 满意度。这是问卷数据,不是结果数据。 时间成本 vs 学费。 30 天内 60-90 小时的时间投入是真成本。按任何合理的小时机会成本算,时间是学费的好几倍。 cohort 完成率。 一部分付费学员不会走完 30 天。公开 testimonial 是分子,分母不公开。 30 天之后的支持。 大部分训练营到第 "
+  },
+  {
     "url": "/zh/content/dropshipping-hidden-costs/",
     "locale": "zh",
     "title": "2026 Dropshipping 真实成本拆解",
@@ -310,6 +326,38 @@
     "body": "一个英语市场跑通的 AI 写作工具想看下一个四个市场: 日本、韩国、东南亚、拉美。问题不是\"选哪个\", 是\"四条本地化轨道按什么顺序交付\"。标准建议(\"先翻译, 再加支付, 再投广告, 再招客服\")是错的顺序。下面是能 work 的顺序, 以及标准建议悄悄忽略的三个成本。 四条本地化轨道 轨道 覆盖 缺了的失败模式 1. UI/内容翻译 应用内字符串, 着陆页, 邮件序列 注册摩擦, 用户觉得是外国 AI 不维护 2. 支付方式 本地钱包, 本地卡, 替代支付通道 支付页第二步流失, 日韩 40-60% 本地用户没法用卡或 PayPal 付 3. 本地社媒渠道 日台 LINE, 韩国 KakaoTalk, 东南亚 WhatsApp, 拉美 Instagram 没有自然流量, 只能买广告, 没法做口碑 4. 客服 跨时区覆盖 + 语言流利的客服 第一张差评工单 = 第二周流失 运营者常犯的错是把它们当 checklist, 每个做 2 周然后按 1-2-3-4 顺序交付。实际能 work 的顺序要看市场。 Track 1: 不能像机翻的翻译 运营者首先跳过的是翻译质量。GPT-4 翻完直接上, 母语者一眼看出, 立刻把这产品贴上\"外国 AI\"标签, 信任掉。修法不是\"换更好的模型\", 是对高曝光字符串跑一次人工 QA。 高曝光字符串不是产品介绍大段文字, 是: 价格页标题和三个套餐名 CTA 按钮 (开始免费试用, 升级, 取消) 错误提示 (支付失败, 卡被拒, 网络错误) 空状态 (新用户刚进来什么都没生成时看到的画面) 母语 QA 一遍这 30-50 个字符串, 一门语言 400-1200 美金。ROI 是非线性的, 因为非英语市场付费转化, 头 10 秒的用户体验是唯一重要的, 那里有 5+ 本地化竞品在抢。 运营者忽略的成本: 迭代成本。每次产品更新, 20-40% 字符串要重开。一个每月发 2 次 UI 改动的 SaaS, 每月每门语言付 30-50 字符串的翻译费。6 个月后, 持续本地化账单比初次搭建还大。 Track 2: 支付本地化 逐国家支付组合是第二条, 也是最直接卡单客单价的轨道。 市场 默认支付 备注 日本 信用卡 + Konbini + 银行转账 PayPal 不是默认, ARPU 30 美金以下 Konbini 是必选 韩国 KakaoPay + NaverPay + Toss + 卡 卡渗透率高, 本地钱包是信任信号 台湾 信用卡 + LINE Pay + ATM 转账 30 美金以下是 LINE Pay 东南亚 (泰/越/印尼/菲) 本地钱包 (GrabPay/GCash/TrueMoney) + 卡 各国不同, 印尼跑 GoPay/OVO, 菲律宾跑 GCash 拉美 (墨/巴/阿) 卡 + PIX (巴) + OXXO "
   },
   {
+    "url": "/zh/content/x-com-ai-ipo-window/",
+    "locale": "zh",
+    "title": "AI 行情离熄火还有大约四个季度:IPO 窗口决定资本时钟",
+    "description": "一份关于 AI 需求何时走弱的公开时间表推演,核心变量是 OpenAI / Anthropic 的 IPO 时点与晚期私募投资人愿意接受的折价幅度。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "openai",
+      "anthropic",
+      "ipo",
+      "周期"
+    ],
+    "excerpt": "这条被广泛转发的推文核心论点是时点,不是技术。论点是:美国 AI 需求大致会持续到 2026 年 Q4,因为晚期 AI 资本的退出渠道仍然是私募。当 OpenAI 或 Anthropic 真正 IPO",
+    "body": "这条被广泛转发的推文核心论点是时点,不是技术。论点是:美国 AI 需求大致会持续到 2026 年 Q4,因为晚期 AI 资本的退出渠道仍然是私募。当 OpenAI 或 Anthropic 真正 IPO,那一笔把晚期私募估值顶在高位的折价会瞬间消失,周期拐点先于模型质量下降出现。 这是关于资本结构的判断,不是关于 GPT-5 能不能做某件事的判断。 IPO 窗口是一面钟 如果我们把公开估计的 OpenAI 2026 Q4、Anthropic 2026 Q4 到 2027 年中这两条时间线当作基准,晚期 AI 资本的可见退出最多还有四个季度。任何一家跳票一两个季度,只是把拐点沿着时间轴等长平移,不会改变交易的形态。 在第一家真正挂牌之前,有三件事成立: 大多数晚期基金的退出路径只剩下私募二级 tender offer。2024-2025 多笔 AI 标的的二级 tender 据报按上一轮 primary 的 6-7 折定价;折价反映的是谁还在写支票,不是底层业务。 AI 质量的公开市场参照系基本是 hyperscaler 和一小撮芯片、基础设施标的。在盈利或 capex 措辞倒逼之前,这些 ticker 不会主动重新定价。 客户的 AI 预算继续增长,理由是没有任何公开基准敢说「AI 已经 price in」。基准出现,预算才会压缩——不是因为模型变差就压缩。 「AI 行情要熄火」在数字上长什么样 「AI 行情要熄火了」这句话被用得很泛。把它当成一个具体序列,周期拐点大概是这样: 如果某家大额 IPO 按传言区间下限,或低于上轮私募估值定价。最后一轮 primary 与第一次 public print 之间的 post-money gap,成为「AI 在愿意付钱的市场里值多少」的新参照系。 下一批晚期 AI 资本要么接受结构上更低的估值,要么找到愿意承销 flat 或 down round 的新 lead。 公开 AI 基础设施标的开始下调收入指引,不是因为需求归零,而是因为客户结构从「扩张」切到「right-sized」。 hyperscaler 在财报里把 capex 措辞从「我们被电力 / 芯片 / 工程进度卡住」换成「我们按节奏推进」。这句话出现在 earnings call,基本是最干净的信号。 上面任何一步都不需要新的模型变差。它们只需要资本结构追上运营现实。 这条推文没有覆盖的部分 IPO 时点跳票。 论点是 Q4 2026,但 OpenAI 内部目标已经跳票过多次。如果 Q4 推到 2027 年中,周期拐点跟着平移 6-9 个月。推文没有展开这条分支。 IPO 之前的 tender reset。 部分 AI 私募在 2025 年下半年已经按 flat 或 up round 跑过 tender。如果这些 reset 站稳,IPO 后的折价可能小于 "
+  },
+  {
+    "url": "/content/x-ai-youtube-niche/",
+    "locale": "en",
+    "title": "AI on YouTube: the CPM math behind finding a monetizable niche in one afternoon",
+    "description": "A breakdown of how to read YouTube CPM by sub-niche, what the 1K / 10K / 100K subscriber bands actually pay, and why most AI-assisted YouTube channels never reach sustainable revenue.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "youtube",
+      "cpm",
+      "creator-economy",
+      "niche-selection"
+    ],
+    "excerpt": "The post in question is a prompt template: \"I'm [age], interested in [topic], want to use AI to make",
+    "body": "The post in question is a prompt template: \"I'm [age], interested in [topic], want to use AI to make money on YouTube, give me the top 5 CPM niches that fit me.\" The interesting part is not the template. The interesting part is what the answer has to look like for the math to work. CPM (cost per mille — what advertisers pay per 1000 monetized views) varies by roughly 30x across monetizable YouTube niches. Picking the wrong niche on day one means spending the rest of the year on a 2-USD-per-1000-views base. The 30x CPM spread A clean snapshot of US-audience CPM by niche as of mid-2026: Niche CPM (USD/1000 views) Why advertisers pay Personal finance, investing, insurance 28-45 High LTV customer; regulated buyer pools B2B SaaS, martech, dev tools 22-38 SMB and enterprise buyers consume video before purchase Legal, tax, compliance 18-32 High-value professional services Health-adjacent (insurance, pharmacy, equipment) 15-28 Patient-acquisition cost is high; regulated buyer pools Career, technical recruiting 12-22 Recruiter ad budgets are large and per-hire ROI is trackable Software tutorials, dev content 10-18 Developer tools compete heavily for awareness Consumer tech reviews 5-12 High"
+  },
+  {
     "url": "/tools/ai-break-even/",
     "locale": "en",
     "title": "AI Subscription Break-Even Calculator",
@@ -342,6 +390,22 @@
     ],
     "excerpt": "An English-market AI writing tool is profitable and looking at the next four markets: Japan, Korea, ",
     "body": "An English-market AI writing tool is profitable and looking at the next four markets: Japan, Korea, Southeast Asia, and Latin America. The question is not \"which market\" but \"in what order should the four localization tracks ship.\" The conventional advice (\"translate, then add payment, then run ads, then hire support\") is the wrong sequence. Below is the sequence that actually works, and the three costs the standard advice quietly ignores. The four localization tracks Track What it covers Failure mode if missing 1. UI / content translation In-app strings, landing pages, email sequences Signup friction; user assumes tool is foreign and unmaintained 2. Payment methods Local wallets, local cards, alternative rails Checkout abandonment at the second step; 40-60% of local users in JP/KR cannot pay with card or PayPal 3. Local social channels LINE in JP/TW, KakaoTalk in KR, WhatsApp in SEA, Instagram in LATAM No organic distribution; you can buy ads but cannot build word-of-mouth 4. Customer support Timezone coverage + language-fluent agents First bad support ticket = churn in week 2 The mistake operators make is treating these as a checklist and shipping them in order 1, 2, 3, 4 with 2 "
+  },
+  {
+    "url": "/zh/content/x-ai-youtube-niche/",
+    "locale": "zh",
+    "title": "AI YouTube 变现:CPM 决定一切,选错细分等于白干一年",
+    "description": "拆解 YouTube 各细分领域的 CPM 区间,1K / 10K / 100K 订阅量级的真实收入,以及为什么大多数 AI 辅助 YouTube 频道做不到自负盈亏。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "youtube",
+      "cpm",
+      "creator-economy",
+      "niche-selection"
+    ],
+    "excerpt": "这条原推文是个 prompt 模板:「我 [年龄],对 [兴趣] 感兴趣,想用 AI 在 YouTube 赚钱,给我按我的画像排前 5 个 CPM 最高的细分。」有意思的不是模板本身,是模板要返回什么",
+    "body": "这条原推文是个 prompt 模板:「我 [年龄],对 [兴趣] 感兴趣,想用 AI 在 YouTube 赚钱,给我按我的画像排前 5 个 CPM 最高的细分。」有意思的不是模板本身,是模板要返回什么答案,收支才能闭环。 CPM(cost per mille,广告主为每 1000 次可变现播放付的钱)在可变现 YouTube 细分之间相差大约 30 倍。第一天选错细分,等于剩下这一年都盖在「每 1000 次播放 2 USD」的地基上。 30 倍的 CPM 差距 US 观众口径下,2026 年中各细分 CPM 的清晰快照: 细分 CPM(USD/千次播放) 广告主为什么付钱 个人理财、投资、保险 28-45 高 LTV 客户,合规买方池 B2B SaaS、martech、dev tools 22-38 中小企业和企业买方在看视频前下单 法律、税务、合规 18-32 高单价专业服务 医疗相关(保险、药店、设备) 15-28 患者获取成本高,合规买方池 职业、技术招聘 12-22 招聘方预算大,按入职可追踪 ROI 软件教程、dev 内容 10-18 开发工具竞争激烈抢曝光 消费电子评测 5-12 播放量高,单播放价值低 教育、K-12 4-9 学校广告预算分散 lifestyle、vlog、美妆、时尚 1-4 播放高,受众广但 LTV 低 游戏 0.6-2 播放巨大,但玩家 LTV 低、ad-block 高 娱乐、meme、剪辑合集 0.4-1.5 同游戏行,部分地理 ad-block 率超 40% 顶部和底部的差距大约 100 倍。「可持续创作者生意」和「花钱的爱好」之间,收益差大约 20 倍。 订阅量级实际能拿到多少 从上面的细分表反推,US 观众为主、每周 2 更、落在金融 / SaaS / 法律细分的频道,大致可以预期: 1K 订阅,月 30K 播放。AdSense: 540-1350 USD/月。不是一份工资。 10K 订阅,月 250K 播放。AdSense: 4.5K-11K USD/月。在低成本地理是一份全职,在高成本地理是副业。 100K 订阅,月 2M 播放。AdSense: 36K-90K USD/月。真正的生意;赞助和产品收入通常再翻倍。 同样到 100K 订阅,在游戏或娱乐细分,AdSense 单项只有 1.2K-4K USD/月。差距是细分,不是工作量。 AI 改的是哪一环 推文假设 AI 是内容生成器。实际的变化是,AI 把单条视频制作成本压到瓶颈步骤——脚本、配音、粗剪——这一层。在 AI 之前,一条 12 分钟的精致视频,creator 时间成本折合 200-600 USD。AI 辅助之后,同一条视频的 creator 时间成本是 8-15 小时,但不再有每分钟的直接现金支出。 这个变化不改变 CPM。它改变的是盈亏临界点(达成"
   },
   {
     "url": "/zh/content/amazon-fba-fees-breakdown/",
@@ -919,6 +983,22 @@
     "body": "Shopify's headline number is \"$39/month.\" The real cost is much higher. Here's every fee a typical store pays in 2026. Subscription tiers Plan Monthly Best for Starter $5 Side projects, in-person sales Basic $39 New stores, < $10k/month revenue Shopify $105 Growing stores, more reports Advanced $399 $1M+/year, lowest card rates The 3-year plan discounts Basic to $29/month and Advanced to $299/month. Transaction fees — Shopify Payments If you use Shopify Payments (powered by Stripe): Channel Online In-person Basic plan 2.9% + $0.30 2.7% + $0.00 Shopify plan 2.7% + $0.30 2.5% + $0.00 Advanced plan 2.5% + $0.30 2.4% + $0.00 For international cards (non-US), add 1.5% to the percentage. Transaction fees — third-party gateways If you use PayPal, Stripe directly, or another gateway: Basic plan: 2.0% extra on top of what the gateway charges Shopify plan: 1.0% Advanced plan: 0.5% The math: Basic + PayPal = 3.49% + $0.30 + PayPal's fee. Stick with Shopify Payments until you process $10k+/month. What a $50 sale actually nets Assume Shopify Basic + Shopify Payments, no apps charging transaction fees: That's 4.8% platform cost on a $50 sale. At $20 sale it's 7.4%. At $200 it's 3.6%. Hidden fees"
   },
   {
+    "url": "/content/x-ai-product-bootcamp/",
+    "locale": "en",
+    "title": "The \"30-day AI product bootcamp\" pitch: a unit-economics teardown",
+    "description": "A line-by-line read of a typical \"30-day AI product monetization bootcamp\" sales post, what it promises, what it leaves out, and how to decide whether the offer is worth the asking price.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "bootcamp",
+      "product",
+      "side-hustle",
+      "unit-economics"
+    ],
+    "excerpt": "The post in question is a sales post for a 30-day AI product bootcamp. The pitch is: from product se",
+    "body": "The post in question is a sales post for a 30-day AI product bootcamp. The pitch is: from product selection through build to promotion, in 30 days, taught in a cohort format, with a Quark-pan link to the curriculum. The format is familiar to most; this teardown applies to offers of this shape. The question is not whether the curriculum is real. It is whether the outcome the post implies (a \"sustainable side-hustle\" from a 30-day commitment) is what the curriculum actually delivers. What the pitch says, mapped to deliverables Reading the post literally, the offer promises four components: Product selection. Pick an AI-automation product category where the buyer has clear pain and budget. Build. Use no-code + AI to ship a v0 within 30 days. Promotion. Paid and organic distribution plan with templates. Long-term asset framing. \"构建长期副业资产\" (build a long-term side-hustle asset). The 30-day window is enough to ship (1) and (2). It is not enough to validate (3) or to demonstrate (4). What 30 days can and cannot do Stage 30-day outcome What it does not cover Selection Pick a category with margin 50% and clear buyer profile Validate that the chosen category has reachable distribution channel"
+  },
+  {
     "url": "/content/pricing-formula-explained/",
     "locale": "en",
     "title": "The Cross-border Pricing Formula (with Worked Examples)",
@@ -1014,5 +1094,21 @@
     ],
     "excerpt": "A directional note from a Chinese knowledge-planet thread: \"In the AI-for-export direction, do we be",
     "body": "A directional note from a Chinese knowledge-planet thread: \"In the AI-for-export direction, do we bet on the general-tool traffic play, or do we go deep into a vertical?\" Five candidate verticals (legaltech, medtech, real estate, education, cross-border ecommerce). The case argues that the general-AI tool category is saturated but vertical AI is \"not yet fully developed.\" Where each vertical actually pays. What the case actually argues A market-direction note, not a case study. Three observations: General AI categories (writing, translation, design) are \"extremely crowded.\" Vertical AI categories (legaltech, medtech, real estate, education, cross-border ecommerce) look under-built. Compliance burden and customer acquisition cost vary sharply by vertical. The case invites readers to share real case studies. Below I treat each vertical individually rather than treating the note as if it were evidence. The five verticals: where the math actually works Legaltech — contract review, compliance checks Dimension Reading Willingness to pay High. A missed clause costs the customer more than the entire annual tool fee. Compliance burden High but for the customer, not the operator. The operato"
+  },
+  {
+    "url": "/content/x-com-ai-ipo-window/",
+    "locale": "en",
+    "title": "Why the AI trade has roughly four more quarters before the IPO wave forces a repricing",
+    "description": "A public timeline argument for when AI demand softens, framed by the gap between the OpenAI / Anthropic IPO window and the discount private investors accept to get in earlier.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "openai",
+      "anthropic",
+      "ipo",
+      "cycle"
+    ],
+    "excerpt": "The argument running through one widely-shared post is timing, not technology. The claim is that US ",
+    "body": "The argument running through one widely-shared post is timing, not technology. The claim is that US AI demand stays elevated through roughly Q4 2026 because the exit path for private AI capital is still private. The minute OpenAI or Anthropic actually IPOs, the discount that has kept late-stage private rounds attractive collapses, and the trade-cycle break shows up before the model quality declines. That is a statement about capital structure, not about what GPT-5 can or cannot do. The IPO window as a clock If we take the public Q4 2026 estimate for OpenAI and the parallel Q4 2026 to mid-2027 estimate for Anthropic at face value, the visible exit for late-stage AI capital is, at most, four quarters out. Either company slipping that timeline by a quarter or two does not change the shape of the trade; it pushes the inflection point right by an equivalent amount. Until the first IPO prints, three things stay true: Private secondary tender offers remain the only exit for most late funds. Pricing those offers at 30-50% below the last primary mark has been observed in 2024-2025 secondaries for several AI names; the size of that discount reflects who is left writing the check, not the und"
   }
 ]
