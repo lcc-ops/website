@@ -1,9 +1,6 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-import { statSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
-import { dirname, join } from 'node:path';
 import { type Locale, t } from '~/i18n/ui';
 import { getLocaleFromUrl, localizePath } from '~/i18n/utils';
 const locale: Locale = getLocaleFromUrl(Astro.url);
@@ -26,7 +23,10 @@ const aiPosts = allPosts
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3);
 
-type Download = { title: string; desc: string; filename: string; tag: string; ext: string; size?: string };
+// Sizes are baked in at write-time. Cloudflare Workers runtime has no fs;
+// computing them at request time would require importing each file as a string,
+// which inflates the worker bundle for no real benefit.
+type Download = { title: string; desc: string; filename: string; tag: string; ext: string; size: string };
 const downloads: Download[] = [
   {
     title: 'Pricing model',
@@ -34,6 +34,7 @@ const downloads: Download[] = [
     filename: 'pricing-template.xlsx',
     tag: 'Excel',
     ext: '.xlsx',
+    size: '8.0 KB',
   },
   {
     title: 'Product scoring',
@@ -41,6 +42,7 @@ const downloads: Download[] = [
     filename: 'product-scoring.xlsx',
     tag: 'Excel',
     ext: '.xlsx',
+    size: '8.2 KB',
   },
   {
     title: 'Ads launch SOP',
@@ -48,6 +50,7 @@ const downloads: Download[] = [
     filename: 'ads-sop.md',
     tag: 'Markdown',
     ext: '.md',
+    size: '4.0 KB',
   },
   {
     title: 'Order fulfillment SOP',
@@ -55,20 +58,9 @@ const downloads: Download[] = [
     filename: 'order-fulfillment-sop.md',
     tag: 'Markdown',
     ext: '.md',
+    size: '4.7 KB',
   },
 ];
-
-const here = dirname(fileURLToPath(import.meta.url));
-const publicRoot = join(here, '..', '..', 'public');
-function withSize(d: Download): Download {
-  try {
-    const bytes = statSync(join(publicRoot, 'downloads', d.filename)).size;
-    return { ...d, size: bytes < 1024 ? `${bytes} B` : `${(bytes / 1024).toFixed(1)} KB` };
-  } catch {
-    return { ...d, size: '' };
-  }
-}
-const downloadsSized = downloads.map(withSize);
 
 const externalLinks: Array<{ label: string; href: string; tag: string; desc: string }> = isEn
   ? [
@@ -99,7 +91,7 @@ const externalLinks: Array<{ label: string; href: string; tag: string; desc: str
         {t(locale, 'resources.subtitle')}
       </p>
       <div class="mt-6 flex flex-wrap gap-3 text-sm" style="color: var(--color-fg-soft);">
-        <span class="badge">{downloadsSized.length} {isEn ? 'downloads' : '个下载'}</span>
+        <span class="badge">{downloads.length} {isEn ? 'downloads' : '个下载'}</span>
         <span class="badge">{toolsHere.length} {isEn ? 'calculators' : '款计算器'}</span>
         <span class="badge">{topPosts.length} {isEn ? 'top reads' : '篇精读'}</span>
         <span class="badge">{isEn ? 'No signup' : '无需注册'}</span>
@@ -114,7 +106,7 @@ const externalLinks: Array<{ label: string; href: string; tag: string; desc: str
         </span>
       </div>
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
-        {downloadsSized.map((d) => (
+        {downloads.map((d) => (
           <article class="card p-5 flex flex-col gap-3">
             <div class="flex items-center gap-2 text-xs" style="color: var(--color-fg-soft);">
               <span class="badge">{d.tag}</span>
