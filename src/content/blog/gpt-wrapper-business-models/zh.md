@@ -1,7 +1,7 @@
 ---
 title: 'GPT 套壳产品：8 种赚钱套路与 5 种烧钱陷阱'
 description: '8 种在财务上站得住脚的 GPT 套壳产品模式，5 种被 token 账单烧死的模式。'
-pubDate: 2026-07-03
+pubDate: 2026-06-30
 category: 'ai'
 tags: ['ai', 'gpt', 'wrappers', 'patterns', 'monetization']
 translationKey: 'gpt-wrapper-business-models'

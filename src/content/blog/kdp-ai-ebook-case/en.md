@@ -1,7 +1,7 @@
 ---
 title: 'AI + Amazon KDP Case: 350 Books in 6 Months, 18,000 EUR, and Why This Is a Library Bet Not a Book Bet'
 description: 'Cold-eyed breakdown of an AI bulk-ebook KDP case sourced from the web. Cost-structure arithmetic, the 20/80 distribution, why category choice dominates content quality, and what is safe to copy.'
-pubDate: 2026-07-04
+pubDate: 2026-06-30
 category: 'ai'
 tags: ['ai', 'kdp', 'amazon', 'publishing', 'passive-income', 'case-study', 'monetization']
 translationKey: 'kdp-ai-ebook-case'

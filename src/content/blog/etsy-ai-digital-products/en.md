@@ -1,7 +1,7 @@
 ---
 title: 'Etsy AI Digital Products Case: 100 Listables, Zero Inventory, 2,500 USD/Month, and Why It Is Compounding SEO in a Disposable File'
 description: 'A cold-eyed read of an Etsy AI-generated digital product case sourced from the web. The 38% category growth number, the 100-listable thesis, the bundle strategy that turns 5 USD singles into 27 USD bundles, and where the model falls apart.'
-pubDate: 2026-07-04
+pubDate: 2026-06-30
 category: 'ai'
 tags: ['ai', 'etsy', 'digital-products', 'passive-income', 'case-study', 'monetization']
 translationKey: 'etsy-ai-digital-products'

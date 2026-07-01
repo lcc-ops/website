@@ -1,7 +1,7 @@
 ---
 title: 'Google Ads ROAS 公式：真实的盈亏平衡计算'
 description: '怎么算 Google Ads ROAS、盈亏平衡 ROAS、基于实际利润率的目标 ROAS。含公式、计算器、常见 ROAS 错误。'
-pubDate: 2026-06-29
+pubDate: 2026-06-30
 category: 'ads'
 tags: ['google-ads', 'roas', 'roi', '盈亏平衡']
 translationKey: 'google-ads-roas-formula'

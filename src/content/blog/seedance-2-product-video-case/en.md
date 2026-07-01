@@ -1,7 +1,7 @@
 ---
 title: 'Seedance 2.0 Product Video Case: From 8000 RMB Detail-Page Designer to 30K/Month AI Video Freelancer'
 description: 'Cold-eyed breakdown of an AI product-video freelance case sourced from the web. Backend math, international pricing tier, and the four-window argument for why "now" is the early period.'
-pubDate: 2026-07-04
+pubDate: 2026-06-30
 category: 'ai'
 tags: ['ai', 'video', 'seedance', 'freelance', 'case-study', 'monetization']
 translationKey: 'seedance-2-product-video-case'

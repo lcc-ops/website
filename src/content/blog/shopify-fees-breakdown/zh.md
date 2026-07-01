@@ -1,7 +1,7 @@
 ---
 title: '2026 Shopify 费用完全拆解'
 description: '2026 年 Shopify 每一项费用 — 订阅、支付、应用、主题和隐藏成本。含计算器告诉你 $50 一单实际到手多少。'
-pubDate: 2026-06-29
+pubDate: 2026-06-30
 category: 'pricing'
 tags: ['shopify', '费用', '支付', '拆解']
 translationKey: 'shopify-fees-breakdown'

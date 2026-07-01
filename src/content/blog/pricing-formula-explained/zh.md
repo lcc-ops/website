@@ -1,7 +1,7 @@
 ---
 title: '跨境电商定价公式（含算例）'
 description: '跨境卖家在 Shopify、Etsy、亚马逊上定价的精准公式。包含 Dropshipping、品牌商品、高客单价品类的真实算例。'
-pubDate: 2026-06-29
+pubDate: 2026-06-30
 category: 'pricing'
 tags: ['定价', 'shopify', 'etsy', 'amazon', '公式']
 translationKey: 'pricing-formula-explained'

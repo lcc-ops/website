@@ -1,7 +1,7 @@
 ---
 title: '一个人做到月入 5 万的 AI SaaS 需要多少付费用户'
 description: '一个人做的 AI SaaS 真正要多少付费用户才能撑起 5000 美元/月 MRR。三个典型价位的 LTV/CAC 数学。'
-pubDate: 2026-07-06
+pubDate: 2026-06-30
 category: 'ai'
 tags: ['ai', 'saas', 'solo', 'profit', 'math']
 translationKey: 'solo-saas-profit-math'

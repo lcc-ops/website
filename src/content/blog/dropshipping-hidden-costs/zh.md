@@ -1,7 +1,7 @@
 ---
 title: '2026 Dropshipping 真实成本拆解'
 description: '透明拆解每个 Dropshipper 都会漏的成本 — 供应商费、退货、支付冻结、广告支出、退款。含 $50 客单价店铺的真实 P&L。'
-pubDate: 2026-06-29
+pubDate: 2026-06-30
 category: 'pricing'
 tags: ['dropshipping', '成本', '利润', '隐形']
 translationKey: 'dropshipping-hidden-costs'

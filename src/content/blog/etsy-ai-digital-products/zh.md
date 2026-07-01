@@ -1,7 +1,7 @@
 ---
 title: 'Etsy AI 数字产品案例：100 个 listing、零库存、月入 2500 美金，以及为什么这是堆 Etsy SEO 的复利'
 description: '冷峻拆解一个 Etsy AI 数字产品案例。38% 类目增长数字、100 个 listing 假设、5 美金单品变 27 美金套装的 bundle 策略、模型在哪里撑不住。'
-pubDate: 2026-07-04
+pubDate: 2026-06-30
 category: 'ai'
 tags: ['ai', 'etsy', 'digital-products', 'passive-income', 'case-study', 'monetization']
 translationKey: 'etsy-ai-digital-products'

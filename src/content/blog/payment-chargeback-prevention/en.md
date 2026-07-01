@@ -1,7 +1,7 @@
 ---
 title: 'How to Prevent Payment Chargebacks (and Win Disputes When They Happen)'
 description: 'Practical chargeback prevention for cross-border ecommerce. Covers fraud screening, 3DS, evidence templates, and the dispute process on Stripe and PayPal.'
-pubDate: 2026-06-29
+pubDate: 2026-06-30
 category: 'payment'
 tags: ['chargeback', 'fraud', 'dispute', 'prevention']
 translationKey: 'payment-chargeback-prevention'

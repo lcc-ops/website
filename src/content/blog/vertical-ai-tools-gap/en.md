@@ -1,7 +1,7 @@
 ---
 title: 'Vertical AI vs General AI: Why the Next Wave of Independent AI Tools Is Not a Wrapper on GPT'
 description: 'A directional note from a Chinese knowledge-planet thread: the general-purpose AI tool category is saturated, but vertical AI tools in legaltech, medtech, real estate, education and cross-border ecommerce are under-built. Cold-eyed read of which verticals actually pay, which are compliance quagmires, and where the indie operator can enter.'
-pubDate: 2026-07-04
+pubDate: 2026-06-30
 category: 'ai'
 tags: ['ai', 'vertical-ai', 'market', 'legaltech', 'medtech', 'case-study', 'monetization']
 translationKey: 'vertical-ai-tools-gap'

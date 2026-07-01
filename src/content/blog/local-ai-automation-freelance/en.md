@@ -1,7 +1,7 @@
 ---
 title: 'Local SMB AI Automation Freelance Case: One Operator, 5,000 USD/Month by Month 6 — and Why the AI Is the Least Interesting Part'
 description: 'Cold-eyed breakdown of a knowledge-planet case. Unit economics on local SMB clients, why offline sales beats Upwork bidding, and three failure modes the source quietly skips.'
-pubDate: 2026-07-04
+pubDate: 2026-06-30
 category: 'ai'
 tags: ['ai', 'automation', 'freelance', 'local-smb', 'case-study', 'monetization']
 translationKey: 'local-ai-automation-freelance'

@@ -1,7 +1,7 @@
 ---
 title: '2026 PayPal vs Stripe 费率对比：每笔真实成本'
 description: 'PayPal 和 Stripe 跨境卖家费率并排对比。包含小额费陷阱、拒付处理、货币转换成本。'
-pubDate: 2026-06-29
+pubDate: 2026-06-30
 category: 'payment'
 tags: ['paypal', 'stripe', '费率', '对比']
 translationKey: 'paypal-vs-stripe-fees'

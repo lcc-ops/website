@@ -1,7 +1,7 @@
 ---
 title: 'The Math of a 5K USD/Month Solo AI SaaS'
 description: 'How many paying users a one-person AI SaaS actually needs to clear 5K USD/mo. The LTV/CAC math behind three typical price points.'
-pubDate: 2026-07-06
+pubDate: 2026-06-30
 category: 'ai'
 tags: ['ai', 'saas', 'solo', 'profit', 'math']
 translationKey: 'solo-saas-profit-math'

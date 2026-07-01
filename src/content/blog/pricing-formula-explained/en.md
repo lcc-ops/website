@@ -1,7 +1,7 @@
 ---
 title: 'The Cross-border Pricing Formula (with Worked Examples)'
 description: 'The exact formula cross-border sellers use to price products on Shopify, Etsy and Amazon. Includes worked examples for dropshipping, branded products and high-AOV niches.'
-pubDate: 2026-06-29
+pubDate: 2026-06-30
 category: 'pricing'
 tags: ['pricing', 'shopify', 'etsy', 'amazon', 'formula']
 translationKey: 'pricing-formula-explained'

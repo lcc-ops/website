@@ -1,7 +1,7 @@
 ---
 title: 'The Hidden Costs of Dropshipping in 2026 (Real Numbers)'
 description: 'A transparent breakdown of every cost dropshippers forget — supplier fees, returns, payment holds, ad spend, refunds. Includes a real P&L from a $50 average-order store.'
-pubDate: 2026-06-29
+pubDate: 2026-06-30
 category: 'pricing'
 tags: ['dropshipping', 'costs', 'profit', 'hidden']
 translationKey: 'dropshipping-hidden-costs'

@@ -1,7 +1,7 @@
 ---
 title: 'Shopify Fees in 2026: The Complete Breakdown for Sellers'
 description: 'Every fee Shopify charges in 2026 — subscription, payments, apps, themes and the hidden costs. Includes a calculator showing what a $50 sale actually nets you.'
-pubDate: 2026-06-29
+pubDate: 2026-06-30
 category: 'pricing'
 tags: ['shopify', 'fees', 'payments', 'breakdown']
 translationKey: 'shopify-fees-breakdown'

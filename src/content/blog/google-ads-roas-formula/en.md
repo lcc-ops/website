@@ -1,7 +1,7 @@
 ---
 title: 'Google Ads ROAS Formula: The Real Break-even Calculation'
 description: 'How to calculate Google Ads ROAS, break-even ROAS, and target ROAS based on your actual margin. Includes formula, calculator, and common ROAS mistakes.'
-pubDate: 2026-06-29
+pubDate: 2026-06-30
 category: 'ads'
 tags: ['google-ads', 'roas', 'roi', 'break-even']
 translationKey: 'google-ads-roas-formula'

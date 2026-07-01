@@ -1,7 +1,7 @@
 ---
 title: 'English AI Content Site Case: 3 Sites, 9,000 Articles, 2,300 USD/Month AdSense in 6 Months — And the 500x Cost Compression That Makes It Work'
 description: 'Cold-eyed read of a 3-site English AI-powered AdSense content case sourced from the web. The keyword strategy (KD < 15, search 100-500/mo), the production math (50 articles/day at $0.013 each), why "AI is not about quality, it is about volume" is more true than most people admit, and where the model breaks.'
-pubDate: 2026-07-04
+pubDate: 2026-06-30
 category: 'ai'
 tags: ['ai', 'seo', 'adsense', 'content-site', 'cross-border', 'case-study', 'monetization']
 translationKey: 'english-ai-seo-content-site'

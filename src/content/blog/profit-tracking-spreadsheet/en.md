@@ -1,7 +1,7 @@
 ---
 title: 'How to Build a Cross-border Profit Tracking Spreadsheet'
 description: 'Step-by-step tutorial for building a profit-tracking spreadsheet in Excel or Google Sheets. Includes formulas, dashboard setup, and free template link.'
-pubDate: 2026-06-29
+pubDate: 2026-06-30
 category: 'ops'
 tags: ['excel', 'spreadsheet', 'profit', 'tracking']
 translationKey: 'profit-tracking-spreadsheet'

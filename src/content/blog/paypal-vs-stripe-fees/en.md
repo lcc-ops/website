@@ -1,7 +1,7 @@
 ---
 title: 'PayPal vs Stripe Fees in 2026: The Real Cost Per Sale'
 description: 'Side-by-side fee comparison of PayPal and Stripe for cross-border sellers. Includes micro-fee trap, chargeback handling, and currency conversion costs.'
-pubDate: 2026-06-29
+pubDate: 2026-06-30
 category: 'payment'
 tags: ['paypal', 'stripe', 'fees', 'comparison']
 translationKey: 'paypal-vs-stripe-fees'

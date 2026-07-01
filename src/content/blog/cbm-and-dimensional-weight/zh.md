@@ -1,7 +1,7 @@
 ---
 title: '体积重与 CBM 完全指南（含计算器）'
 description: '怎么算 CBM、计费重和空运/海运/快递的体积重。含免费计算器和常见产品尺寸的算例。'
-pubDate: 2026-06-29
+pubDate: 2026-06-30
 category: 'shipping'
 tags: ['cbm', '物流', '体积重', '国际快递']
 translationKey: 'cbm-and-dimensional-weight'

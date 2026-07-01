@@ -1,7 +1,7 @@
 ---
 title: 'GPT Wrappers: 8 Patterns That Work, 5 That Burn Cash'
 description: 'Field guide to the 8 GPT-wrapper product patterns that hold up financially, and the 5 that die in the token bill.'
-pubDate: 2026-07-03
+pubDate: 2026-06-30
 category: 'ai'
 tags: ['ai', 'gpt', 'wrappers', 'patterns', 'monetization']
 translationKey: 'gpt-wrapper-business-models'

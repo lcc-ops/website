@@ -1,7 +1,7 @@
 ---
 title: '本地小老板 AI 自动化接单案例：单兵，6 个月月入 5000 美金 —— 但 AI 是最没意思的那部分'
 description: '冷峻拆解一个知识星球案例。本地小客户的单位经济、为什么线下销售赢过 Upwork 投标、以及案例跳过的三件决定模型成败的事。'
-pubDate: 2026-07-04
+pubDate: 2026-06-30
 category: 'ai'
 tags: ['ai', 'automation', 'freelance', 'local-smb', 'case-study', 'monetization']
 translationKey: 'local-ai-automation-freelance'

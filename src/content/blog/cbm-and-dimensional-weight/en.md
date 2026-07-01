@@ -1,7 +1,7 @@
 ---
 title: 'CBM and Dimensional Weight Explained (with Calculator)'
 description: 'How to calculate CBM, chargeable weight and dimensional weight for air, sea and express shipping. Includes a free calculator and worked examples for common product sizes.'
-pubDate: 2026-06-29
+pubDate: 2026-06-30
 category: 'shipping'
 tags: ['cbm', 'shipping', 'dimensional-weight', 'logistics']
 translationKey: 'cbm-and-dimensional-weight'

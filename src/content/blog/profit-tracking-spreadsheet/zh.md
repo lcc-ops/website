@@ -1,7 +1,7 @@
 ---
 title: '跨境电商利润核算 Excel 搭建教程'
 description: '手把手教你用 Excel 或 Google Sheets 搭建利润核算表。含公式、看板配置、免费模板下载。'
-pubDate: 2026-06-29
+pubDate: 2026-06-30
 category: 'ops'
 tags: ['excel', '表格', '利润', '核算']
 translationKey: 'profit-tracking-spreadsheet'

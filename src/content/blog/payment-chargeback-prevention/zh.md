@@ -1,7 +1,7 @@
 ---
 title: '如何防止收款拒付（以及申诉成功）'
 description: '跨境电商拒付防范实战。涵盖欺诈筛查、3DS、证据模板、Stripe 和 PayPal 申诉流程。'
-pubDate: 2026-06-29
+pubDate: 2026-06-30
 category: 'payment'
 tags: ['拒付', '欺诈', '争议', '防范']
 translationKey: 'payment-chargeback-prevention'
