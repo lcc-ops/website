@@ -39,7 +39,7 @@ The body must contain, in this order:
 
 **There is no source footer.** Do NOT add a `**Source**: linked from...`
 block at the bottom. The case reads as if the writer is documenting
-a model directly. Provenance lives only in `scripts/scrapers/data/zsxq.sqlite3`.
+a model directly. Provenance lives only in `scripts/scrapers_x/data/x.sqlite3`.
 
 Length: 1500-2200 words. Both `en.md` and `zh.md` should match in length.
 

@@ -28,13 +28,13 @@ The case reads as if the writer is documenting the model directly. The
 actual provenance is internal data — the writer knows where the case came
 from, but the reader doesn't need to.
 
-**Exception**: the post URL (e.g., `https://wx.zsxq.com/group/<gid>/topic/<tid>`)
+**Exception**: the post URL (e.g., `https://x.com/<handle>/status/<id>`)
 is a structural reference, not an attribution. Don't include it either,
 unless the writer specifically asks for it.
 
-**On committing and pushing**: when Step 7 generates output, the
-provenance detail (topic_id, group_id, author nickname) is held **only**
-in the operator's working memory (or in `scripts/scrapers/data/zsxq.sqlite3`).
+**On committing and pushing**: when Step 6 generates output, the
+provenance detail (tweet_id, author handle, post URL) is held **only**
+in the operator's working memory (or in `scripts/scrapers_x/data/x.sqlite3`).
 It does NOT appear in the published markdown.
 
 ## Voice rules
@@ -47,14 +47,6 @@ It does NOT appear in the published markdown.
 4. **Honest gaps.** Every post must include a "what the source does not cover"
    or "what the post does not cover" section. List 3-5 real gaps (taxes,
    dispute rates, account risk, distribution cost, etc.).
-5. **Source attribution at the bottom of every post:**
-
-   ```
-   **Source**: linked from a public post in the knowledge-planet group
-   `AI出海·1001个赚钱案例` (group id `28855218245821`), topic id `<id>`,
-   posted <date> by <author>. Cases are sourced from the web. <Revenue and
-   cost figures above are self-reported.>
-   ```
 
 ## Language register
 
@@ -77,4 +69,3 @@ It does NOT appear in the published markdown.
 - `translationKey` identical to slug.
 - tldr field with 1-2 sentences.
 - Exactly 6 FAQ entries.
-- Source footer referencing the actual `topic_id` from SQLite, not a placeholder.

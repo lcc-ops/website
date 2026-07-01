@@ -108,7 +108,7 @@ twitter-x-daily-blog: 4 drafts created
 - src/content/blog/<slug-3>/{en,zh}.md
 - src/content/blog/<slug-4>/{en,zh}.md
 
-Run `pnpm build` to confirm all five compile. The drafts are NOT committed; run `git status` and pick the ones you want.
+Run `pnpm build` to confirm all drafts compile. The drafts are NOT committed; run `git status` and pick the ones you want.
 ```
 
 Stop after the summary. Do NOT run `git add` or `git commit`. That is the user's call.
