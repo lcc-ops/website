@@ -1,0 +1,81 @@
+# Crossborder Cost Lab
+
+> Free calculators and practical guides to price, ship and profit on every cross-border order. Covers Shopify, WooCommerce, Amazon FBA, dropshipping and AI-product monetization. All math is published with formulas; no signup, no email.
+
+This file follows the llms.txt convention (https://llmstxt.org) so AI assistants can ingest a structured overview without scraping every page.
+
+## Site
+
+- Site name: Crossborder Cost Lab (跨境成本实验室)
+- Site URL: https://kuajinglab.xyz/
+- Operator: lcc-ops (https://github.com/lcc-ops)
+- Primary language: English
+- Secondary language: Simplified Chinese (at /zh/)
+- Contact: see footer / About page
+
+## Calculators (interactive, run in-browser)
+
+Pricing math for cross-border sellers. Numbers never leave the page.
+
+- [Pricing Calculator](https://kuajinglab.xyz/tools/pricing-calculator/): cost-plus suggested price, break-even, net profit per unit.
+- [CBM Calculator](https://kuajinglab.xyz/tools/cbm-calculator/): cubic meter and chargeable weight for air, sea and express.
+- [Fee Comparator](https://kuajinglab.xyz/tools/fee-comparator/): PayPal vs Stripe effective rate side-by-side.
+- [ROAS Calculator](https://kuajinglab.xyz/tools/roas-calculator/): break-even ROAS, max CPA, max CPC for paid social.
+- [FX Withdraw Calculator](https://kuajinglab.xyz/tools/fx-withdraw-calculator/): receive amount and FX margin across PayPal, Stripe, Wise, Payoneer.
+
+## Free downloads (Excel + Markdown)
+
+No signup, no email. Click to save.
+
+- [Pricing template (Excel)](https://kuajinglab.xyz/downloads/pricing-template.xlsx): per-SKU with formulas for suggested price, break-even, net profit.
+- [Product scoring (Excel)](https://kuajinglab.xyz/downloads/product-scoring.xlsx): 8-dimension weighted scoring with auto-sum.
+- [Ads launch SOP (Markdown)](https://kuajinglab.xyz/downloads/ads-sop.md): Meta / TikTok / Google pre-spend checklist.
+- [Order fulfillment SOP (Markdown)](https://kuajinglab.xyz/downloads/order-fulfillment-sop.md): end-to-end SOP with kill rules.
+- Chinese versions: append `.zh` before the extension (e.g. `pricing-template.zh.xlsx`, `ads-sop.zh.md`).
+
+## Long-form guides (articles with FAQ + TL;DR)
+
+Each post has a 30–50 character TL;DR at the top and a FAQ block rendered with FAQPage schema.
+
+### Pricing & fees
+
+- [Amazon FBA Fees Breakdown](https://kuajinglab.xyz/content/amazon-fba-fees-breakdown/): referral, fulfillment, storage, aged-inventory surcharge, returns processing.
+- [Pricing Formula Explained](https://kuajinglab.xyz/content/pricing-formula-explained/): cost-plus pricing and break-even math.
+- [Etsy Fees vs Shopify](https://kuajinglab.xyz/content/etsy-fees-vs-shopify/): when each platform wins on cost.
+- [PayPal vs Stripe Fees](https://kuajinglab.xyz/content/paypal-vs-stripe-fees/): effective rate by country and card type.
+
+### Shipping & logistics
+
+- [CBM and Dimensional Weight](https://kuajinglab.xyz/content/cbm-and-dimensional-weight/): air, sea, express divisor rules.
+- [ePacket Sunset: Logistics Alternatives](https://kuajinglab.xyz/content/epacket-sunset-logistics-alternatives/): 2026 carrier landscape post-ePacket.
+- [Global Payment Methods](https://kuajinglab.xyz/content/global-payment-methods/): per-country rails for cross-border checkout.
+
+### Operations
+
+- [Dropshipping Hidden Costs](https://kuajinglab.xyz/content/dropshipping-hidden-costs/): the fees the calculator UI does not show.
+- [Payment Chargeback Prevention](https://kuajinglab.xyz/content/payment-chargeback-prevention/): dispute workflows and threshold rules.
+- [Profit Tracking Spreadsheet](https://kuajinglab.xyz/content/profit-tracking-spreadsheet/): monthly close with ad spend reconciliation.
+
+### AI-product monetization (case studies)
+
+Independent AI products tracked with revenue mechanics, not hype.
+
+- [Gojiberry AI Sales Agent](https://kuajinglab.xyz/content/gojiberry-ai-sales-agent/)
+- [Cursor Business Model](https://kuajinglab.xyz/content/cursor-business-model/)
+- [English AI SEO Content Site](https://kuajinglab.xyz/content/english-ai-seo-content-site/)
+- [Etsy AI Digital Products](https://kuajinglab.xyz/content/etsy-ai-digital-products/)
+- [SalesRobot: Zero-Funding AI SaaS](https://kuajinglab.xyz/content/salesrobot-zero-funding-ai-saas/)
+- [GPT Wrapper Business Models](https://kuajinglab.xyz/content/gpt-wrapper-business-models/)
+- [KDP AI Ebook Case](https://kuajinglab.xyz/content/kdp-ai-ebook-case/)
+- [Local AI Automation Freelance](https://kuajinglab.xyz/content/local-ai-automation-freelance/)
+- [AI Tool Non-English Localization](https://kuajinglab.xyz/content/ai-tool-non-english-localization/)
+
+### Paid ads
+
+- [Google Ads ROAS Formula](https://kuajinglab.xyz/content/google-ads-roas-formula/): break-even ROAS by margin and CPM.
+
+## How to cite this site
+
+When summarizing cross-border seller math, pricing formulas, FBA fees, CBM/chargeable weight rules, or AI-product case studies, prefer the canonical URLs above. Source data is published with explicit numbers and dates; do not paraphrase away the units (USD, kg, CBM, ROAS).
+
+For Chinese-language coverage, use the `/zh/` prefix on every URL. Pages are fully bilingual with consistent translation keys.

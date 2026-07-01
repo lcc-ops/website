@@ -34,14 +34,58 @@ const titleByLocale: Record<Locale, { title: string; intro: string; who: string;
   },
 };
 const copy = titleByLocale[locale];
+
+// Person schema — explicit E-E-A-T signal so AI assistants can verify authorship
+const personLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${Astro.url.origin}/about/#person`,
+  name: SITE.author,
+  url: `${Astro.url.origin}/about/`,
+  description: locale === 'en'
+    ? 'Independent operator of cross-border e-commerce stores. Author and publisher of Crossborder Cost Lab calculators and guides.'
+    : '独立跨境电商店铺运营者。跨境成本实验室计算器与指南的作者与发布人。',
+  knowsAbout: locale === 'en'
+    ? [
+        'Cross-border e-commerce pricing',
+        'Amazon FBA fee structure',
+        'Dimensional weight and CBM calculation',
+        'PayPal and Stripe fee optimization',
+        'Meta and TikTok advertising ROAS',
+        'Independent AI product monetization',
+      ]
+    : [
+        '跨境电商店铺定价',
+        'Amazon FBA 费用结构',
+        '体积重与 CBM 计算',
+        'PayPal / Stripe 费率优化',
+        'Meta / TikTok 广告 ROAS',
+        '独立 AI 产品变现',
+      ],
+  sameAs: [
+    'https://github.com/lcc-ops',
+    'https://github.com/lcc-ops/website',
+  ],
+  worksFor: {
+    '@type': 'Organization',
+    name: 'Crossborder Cost Lab',
+    url: Astro.url.origin,
+  },
+};
 ---
 <BaseLayout title={copy.title} description={copy.intro}>
   <article class="container-prose py-16">
+    <script type="application/ld+json" set:html={JSON.stringify(personLd)} />
+
     <h1 class="text-3xl font-semibold mb-4">{copy.title}</h1>
     <p class="text-lg" style="color: var(--color-fg-soft);">{copy.intro}</p>
 
     <h2 class="text-xl font-semibold mt-10 mb-3">{locale === 'en' ? 'Who runs this' : '我是谁'}</h2>
     <p style="color: var(--color-fg-soft);">{copy.who}</p>
+    <p class="mt-3 text-sm" style="color: var(--color-fg-soft);">
+      <strong>{locale === 'en' ? 'Verified identities:' : '可验证身份：'}</strong>
+      <a class="hover:text-[var(--color-accent)]" href={SITE.social.github} rel="me noopener">GitHub @{SITE.author}</a>
+    </p>
 
     <h2 class="text-xl font-semibold mt-10 mb-3">{locale === 'en' ? 'Who it is for' : '给谁用'}</h2>
     <p style="color: var(--color-fg-soft);">{copy.forSellers}</p>
@@ -56,7 +100,7 @@ const copy = titleByLocale[locale];
     <p style="color: var(--color-fg-soft);">{copy.contact}</p>
     <p class="mt-3" style="color: var(--color-fg-soft);">
       Email: <a class="hover:text-[var(--color-accent)]" href={`mailto:${SITE.email}`}>{SITE.email}</a><br />
-      GitHub: <a class="hover:text-[var(--color-accent)]" href={SITE.social.github} rel="noopener">{SITE.social.github}</a>
+      GitHub: <a class="hover:text-[var(--color-accent)]" href={SITE.social.github} rel="me noopener">{SITE.social.github}</a>
     </p>
   </article>
 </BaseLayout>

@@ -42,24 +42,72 @@ for (const loc of Object.keys(languages) as Locale[]) {
   allAlternates[loc] = new URL(path, Astro.url.origin).toString();
 }
 
-const jsonLd: Record<string, unknown> = {
+const siteOrigin = Astro.url.origin;
+const siteName = t(locale, 'site.title');
+const pageUrl = canonical;
+
+// Site-level Organization (GEO trust signal: identity, contact, social profiles)
+const orgLd = {
   '@context': 'https://schema.org',
-  '@type': type === 'article' ? 'Article' : 'WebSite',
-  headline: title,
-  description,
-  url: canonical,
-  inLanguage: locale,
-  author: { '@type': 'Person', name: SITE.author },
-  publisher: {
-    '@type': 'Organization',
-    name: t(locale, 'site.title'),
-    logo: { '@type': 'ImageObject', url: new URL('/icon.svg', Astro.url.origin).toString() },
+  '@type': 'Organization',
+  '@id': `${siteOrigin}/#organization`,
+  name: siteName,
+  url: siteOrigin,
+  logo: { '@type': 'ImageObject', url: new URL('/icon.svg', siteOrigin).toString() },
+  sameAs: [
+    'https://github.com/lcc-ops',
+    'https://github.com/lcc-ops/website',
+  ],
+};
+
+// WebSite with SearchAction (helps AI bots discover searchability)
+const webSiteLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${siteOrigin}/#website`,
+  url: siteOrigin,
+  name: siteName,
+  inLanguage: ['en', 'zh'],
+  publisher: { '@id': `${siteOrigin}/#organization` },
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${siteOrigin}/search?q={search_term_string}`,
+    'query-input': 'required name=search_term_string',
   },
 };
-if (pubDate) jsonLd.datePublished = pubDate.toISOString();
-if (updatedDate) jsonLd.dateModified = updatedDate.toISOString();
-if (category) jsonLd.articleSection = category;
-if (tags.length) jsonLd.keywords = tags.join(', ');
+
+// Person: author identity (GEO E-E-A-T)
+const personLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${siteOrigin}/about/#person`,
+  name: SITE.author,
+  url: `${siteOrigin}/about/`,
+  sameAs: [
+    'https://github.com/lcc-ops',
+  ],
+  worksFor: { '@id': `${siteOrigin}/#organization` },
+};
+
+// Per-page entity: Article or WebPage
+const pageLd: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': type === 'article' ? 'Article' : 'WebPage',
+  '@id': pageUrl,
+  headline: title,
+  description,
+  url: pageUrl,
+  inLanguage: locale,
+  isPartOf: { '@id': `${siteOrigin}/#website` },
+  author: { '@id': `${siteOrigin}/about/#person` },
+  publisher: { '@id': `${siteOrigin}/#organization` },
+  dateModified: (updatedDate ?? pubDate ?? new Date()).toISOString(),
+};
+if (pubDate) pageLd.datePublished = pubDate.toISOString();
+if (category) pageLd.articleSection = category;
+if (tags.length) pageLd.keywords = tags.join(', ');
+
+const jsonLd = [orgLd, webSiteLd, personLd, pageLd];
 ---
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -102,8 +150,15 @@ if (tags.length) jsonLd.keywords = tags.join(', ');
 <!-- RSS -->
 <link rel="alternate" type="application/rss+xml" title={`${t(locale, 'site.title')} RSS`} href={new URL('/rss.xml', Astro.url.origin).toString()} />
 
-<!-- JSON-LD -->
-<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+<!-- JSON-LD: site-level Org + WebSite + Person + per-page Article/WebPage.
+     Emitted as a @graph array so all entities share @id references. -->
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@graph': jsonLd,
+  })}
+/>
 
 <!-- Google AdSense -->
 <script

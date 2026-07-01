@@ -7,6 +7,7 @@ import ResourceCta from '~/components/ResourceCta.astro';
 import SeoStructuredData from '~/components/SeoStructuredData.astro';
 import { type Locale, t } from '~/i18n/ui';
 import { localizePath, dateFormatter } from '~/i18n/utils';
+import { SITE } from '~/site.config';
 import readingTime from 'reading-time';
 
 const slug = Astro.params.slug ?? '';
@@ -23,6 +24,7 @@ if (!post) {
 const { Content } = await render(post);
 const dateFmt = dateFormatter(locale);
 const minutes = Math.max(1, Math.round(readingTime(post.body ?? '').minutes));
+const updatedLabel = post.data.updatedDate ? dateFmt.format(post.data.updatedDate) : null;
 
 const translation = allPosts.find(
   (p) => p.data.translationKey === post.data.translationKey && p.id.startsWith(`${slug}/`) && p.id !== post.id,
@@ -58,7 +60,9 @@ const alternates: Record<Locale, string> = {
       <div class="flex flex-wrap items-center gap-2 text-sm mb-3" style="color: var(--color-fg-soft);">
         <span class="badge">{post.data.category}</span>
         <time datetime={post.data.pubDate.toISOString()}>{t(locale, 'blog.publishedOn')} {dateFmt.format(post.data.pubDate)}</time>
+        {updatedLabel && <time datetime={post.data.updatedDate!.toISOString()}>{t(locale, 'blog.updatedOn')} {updatedLabel}</time>}
         <span>· {minutes} {t(locale, 'blog.minutes')}</span>
+        <span>· <a class="hover:text-[var(--color-accent)]" href={`/about/`} rel="author">{SITE.author}</a></span>
         {translationHref && (
           <a href={translationHref} class="ml-auto hover:text-[var(--color-accent)]" hreflang={other}>
             中文版

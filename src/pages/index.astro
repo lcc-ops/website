@@ -4,6 +4,7 @@ import BaseLayout from '~/layouts/BaseLayout.astro';
 import PostCard from '~/components/PostCard.astro';
 import ToolCard from '~/components/ToolCard.astro';
 import CategoryChip from '~/components/CategoryChip.astro';
+import SeoStructuredData from '~/components/SeoStructuredData.astro';
 import { SITE } from '~/site.config';
 import { t, type Locale } from '~/i18n/ui';
 import { getLocaleFromUrl, localizePath } from '~/i18n/utils';
@@ -46,6 +47,65 @@ function toolTranslationFor(slug: string, target: Locale) {
 }
 
 const featuredCategories = ['pricing', 'shipping', 'payment', 'ads', 'ops'];
+const isEn = locale === 'en';
+
+// Top-of-page FAQ block — GEO: Q&A pairs here are the most-likely-cited
+// because they sit above the fold and follow the literal question forms
+// users (and AI assistants) ask.
+const homeFaq = isEn
+  ? [
+      {
+        q: 'How do I calculate the right selling price for a cross-border product?',
+        a: 'Start from total cost per unit (COGS + inbound + outbound + packaging), add platform fee %, payment fee %, refund reserve %, and ad spend target, then divide by (1 − target margin). The pricing calculator does this in the browser: enter your numbers, the suggested price and break-even price update live.',
+      },
+      {
+        q: 'How much does Amazon FBA actually take from each sale?',
+        a: 'For a $25 small-standard product, expect $3.86 FBA fulfillment + 15% referral ($3.75) = $7.61 before storage and aged-inventory surcharges. With storage, aged-inventory, returns processing and removal fees, FBA takes 30–40% of the sale price on slow-moving SKUs. Work backward from a target margin or you will price yourself out.',
+      },
+      {
+        q: 'What is chargeable weight and how do I calculate it?',
+        a: 'Chargeable weight is the greater of actual weight and dimensional (volumetric) weight. Dimensional weight = (L × W × H in cm) ÷ 5000 for air/express, ÷ 6000 for sea. Carriers charge whichever is higher. The CBM calculator applies all three rules and gives total CBM, total chargeable weight, and boxes needed.',
+      },
+      {
+        q: 'How do I find the break-even ROAS for my ads?',
+        a: 'Break-even ROAS = 1 / contribution margin. If contribution margin after COGS and shipping is 40%, break-even ROAS = 2.5x. Below that, you lose money on every sale even before fixed costs. The ROAS calculator also returns max CPA and max CPC at your target CTR.',
+      },
+      {
+        q: 'Is Crossborder Cost Lab really free, and do I need to sign up?',
+        a: 'Yes, free, and no signup. All calculators run in your browser; your numbers never leave the page. No email gate, no account, no tracking before the cookie banner.',
+      },
+    ]
+  : [
+      {
+        q: '跨境商品的售价怎么算？',
+        a: '从单件总成本（采购 + 头程 + 尾程 + 包材）出发，加上平台费率、收款费率、退款准备金、广告预算目标，再除以（1 − 目标利润率）。定价计算器在浏览器内实时算：填入数字，建议售价和盈亏平衡价自动更新。',
+      },
+      {
+        q: 'Amazon FBA 一单到底抽多少？',
+        a: '以 $25 小标件为例：FBA 履约费 $3.86 + 推荐费 15%（$3.75）= $7.61，这还不算仓储、长期库存附加费、退货处理费、移除费。慢销 SKU 全部加起来 FBA 会抽走 30–40% 售价。必须从目标利润率反推售价，否则定多少都是亏。',
+      },
+      {
+        q: '什么是计费重？怎么算？',
+        a: '计费重 = 实重与体积重（抛重）取大。体积重 =（长 × 宽 × 高 cm）÷ 5000（空运/快递），÷ 6000（海运）。承运商按大的那个收。CBM 计算器覆盖三种规则，同时给出总体积、总计费重和所需箱数。',
+      },
+      {
+        q: '保本 ROAS 怎么算？',
+        a: '保本 ROAS = 1 ÷ 贡献利润率。如果扣完采购和物流后贡献利润率 40%，保本 ROAS 就是 2.5 倍。低于这个值每卖一单都在亏钱，更别说固定成本。ROAS 计算器同时给出最高 CPA 和最高 CPC。',
+      },
+      {
+        q: '跨境成本实验室真的免费吗？需要注册吗？',
+        a: '免费，不需要。计算器全部在浏览器内跑，数据不会离开页面。无需邮箱、无需账号、cookie 提示之前没有任何追踪。',
+      },
+    ];
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: homeFaq.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
 ---
 <BaseLayout title={SITE.title} description={SITE.description}>
   <section class="container-page py-16 sm:py-24">
@@ -117,6 +177,24 @@ const featuredCategories = ['pricing', 'shipping', 'payment', 'ads', 'ops'];
         </div>
       </aside>
     </div>
+  </section>
+
+  <section class="container-page py-10" aria-labelledby="faq-heading">
+    <h2 id="faq-heading" class="text-2xl font-semibold mb-2">{isEn ? 'Frequently asked' : '常见问题'}</h2>
+    <p class="mb-6 text-sm" style="color: var(--color-fg-soft);">
+      {isEn
+        ? 'Five short answers to the questions AI assistants and searchers ask most about cross-border pricing, FBA fees, and shipping math.'
+        : '五个短答，覆盖 AI 助手与搜索用户最常问的跨境定价、FBA 费用、物流算账问题。'}
+    </p>
+    <div class="space-y-3">
+      {homeFaq.map((f) => (
+        <details class="card p-4">
+          <summary class="font-medium cursor-pointer">{f.q}</summary>
+          <p class="mt-2 text-sm" style="color: var(--color-fg-soft);">{f.a}</p>
+        </details>
+      ))}
+    </div>
+    <SeoStructuredData type="FAQPage" data={faqLd} />
   </section>
 
   <section class="container-page py-10">
