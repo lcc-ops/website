@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { statSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'node:path';
 import { type Locale, t } from '~/i18n/ui';
 import { getLocaleFromUrl, localizePath } from '~/i18n/utils';
 const locale: Locale = getLocaleFromUrl(Astro.url);
@@ -23,6 +26,50 @@ const aiPosts = allPosts
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3);
 
+type Download = { title: string; desc: string; filename: string; tag: string; ext: string; size?: string };
+const downloads: Download[] = [
+  {
+    title: 'Pricing model',
+    desc: 'Per-SKU sheet. COGS, inbound, outbound, platform + payment fees, target margin. Live formulas for suggested price, break-even, net profit.',
+    filename: 'pricing-template.xlsx',
+    tag: 'Excel',
+    ext: '.xlsx',
+  },
+  {
+    title: 'Product scoring',
+    desc: '8 weighted dimensions (growth, price band, margin, inbound, repeat, compliance, ad difficulty, returns). 0–10 each, auto-sum.',
+    filename: 'product-scoring.xlsx',
+    tag: 'Excel',
+    ext: '.xlsx',
+  },
+  {
+    title: 'Ads launch SOP',
+    desc: 'Meta / TikTok / Google. 7 steps before spending $1. Naming convention, audience structure, kill rules. Caveats at the bottom.',
+    filename: 'ads-sop.md',
+    tag: 'Markdown',
+    ext: '.md',
+  },
+  {
+    title: 'Order fulfillment SOP',
+    desc: 'Receive → procure → pack → ship → deliver → post-sale. Time budgets and kill rules per stage. No 3PL contract advice.',
+    filename: 'order-fulfillment-sop.md',
+    tag: 'Markdown',
+    ext: '.md',
+  },
+];
+
+const here = dirname(fileURLToPath(import.meta.url));
+const publicRoot = join(here, '..', '..', 'public');
+function withSize(d: Download): Download {
+  try {
+    const bytes = statSync(join(publicRoot, 'downloads', d.filename)).size;
+    return { ...d, size: bytes < 1024 ? `${bytes} B` : `${(bytes / 1024).toFixed(1)} KB` };
+  } catch {
+    return { ...d, size: '' };
+  }
+}
+const downloadsSized = downloads.map(withSize);
+
 const externalLinks: Array<{ label: string; href: string; tag: string; desc: string }> = isEn
   ? [
       { label: 'Shopify pricing', href: 'https://www.shopify.com/pricing', tag: 'Platform', desc: 'Official plan breakdown — Basic / Shopify / Advanced monthly fees.' },
@@ -44,7 +91,7 @@ const externalLinks: Array<{ label: string; href: string; tag: string; desc: str
 <BaseLayout title={t(locale, 'resources.title')} description={t(locale, 'resources.subtitle')}>
   <article>
     <section class="container-page py-16 sm:py-20">
-      <p class="badge mb-4">🧭 {isEn ? 'Curated resources' : '精选资源'}</p>
+      <p class="badge mb-4">📦 {isEn ? 'Downloads + curated links' : '下载 + 精选链接'}</p>
       <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight max-w-3xl">
         {t(locale, 'resources.title')}
       </h1>
@@ -52,10 +99,40 @@ const externalLinks: Array<{ label: string; href: string; tag: string; desc: str
         {t(locale, 'resources.subtitle')}
       </p>
       <div class="mt-6 flex flex-wrap gap-3 text-sm" style="color: var(--color-fg-soft);">
+        <span class="badge">{downloadsSized.length} {isEn ? 'downloads' : '个下载'}</span>
         <span class="badge">{toolsHere.length} {isEn ? 'calculators' : '款计算器'}</span>
         <span class="badge">{topPosts.length} {isEn ? 'top reads' : '篇精读'}</span>
-        <span class="badge">{externalLinks.length} {isEn ? 'external links' : '个外链'}</span>
         <span class="badge">{isEn ? 'No signup' : '无需注册'}</span>
+      </div>
+    </section>
+
+    <section class="container-page py-10">
+      <div class="flex items-baseline justify-between mb-6">
+        <h2 class="text-2xl font-semibold">{isEn ? 'Downloads' : '可下载文件'}</h2>
+        <span class="text-sm" style="color: var(--color-fg-soft);">
+          {isEn ? 'No email. Click to save.' : '无需邮箱，点击直接保存。'}
+        </span>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
+        {downloadsSized.map((d) => (
+          <article class="card p-5 flex flex-col gap-3">
+            <div class="flex items-center gap-2 text-xs" style="color: var(--color-fg-soft);">
+              <span class="badge">{d.tag}</span>
+              {d.size && <span>{d.size}</span>}
+            </div>
+            <h3 class="text-base font-semibold">{d.title}</h3>
+            <p class="text-sm" style="color: var(--color-fg-soft);">{d.desc}</p>
+            <div class="mt-auto pt-2">
+              <a
+                href={`/downloads/${d.filename}`}
+                download
+                class="btn btn-primary"
+              >
+                {isEn ? `Download ${d.ext}` : `下载 ${d.ext}`} ↗
+              </a>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
 

@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { statSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'node:path';
 import { type Locale, t } from '~/i18n/ui';
 import { localizePath } from '~/i18n/utils';
 const locale: Locale = 'zh';
@@ -21,6 +24,50 @@ const aiPosts = allPosts
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3);
 
+type Download = { title: string; desc: string; filename: string; tag: string; ext: string; size?: string };
+const downloads: Download[] = [
+  {
+    title: '定价模板',
+    desc: '按 SKU 拆分。COGS、头程、尾程、平台费、收款费、目标利润率。含公式，自动算建议售价、盈亏平衡价、单件净利。',
+    filename: 'pricing-template.xlsx',
+    tag: 'Excel',
+    ext: '.xlsx',
+  },
+  {
+    title: '选品打分表',
+    desc: '8 个加权维度（类目增速、价格带、毛利、头程敏感、复购、合规、广告难度、退货率）。0–10 分，自动汇总。',
+    filename: 'product-scoring.xlsx',
+    tag: 'Excel',
+    ext: '.xlsx',
+  },
+  {
+    title: '广告投放 SOP',
+    desc: 'Meta / TikTok / Google，花钱前 7 步。命名规范、人群结构、止损线。文末附"未覆盖"清单。',
+    filename: 'ads-sop.md',
+    tag: 'Markdown',
+    ext: '.md',
+  },
+  {
+    title: '订单履约 SOP',
+    desc: '接单→采购→打包→发货→签收→售后。每段时效阈值与止损线。不含 3PL 谈判部分。',
+    filename: 'order-fulfillment-sop.md',
+    tag: 'Markdown',
+    ext: '.md',
+  },
+];
+
+const here = dirname(fileURLToPath(import.meta.url));
+const publicRoot = join(here, '..', '..', '..', 'public');
+function withSize(d: Download): Download {
+  try {
+    const bytes = statSync(join(publicRoot, 'downloads', d.filename)).size;
+    return { ...d, size: bytes < 1024 ? `${bytes} B` : `${(bytes / 1024).toFixed(1)} KB` };
+  } catch {
+    return { ...d, size: '' };
+  }
+}
+const downloadsSized = downloads.map(withSize);
+
 const externalLinks: Array<{ label: string; href: string; tag: string; desc: string }> = [
   { label: 'Shopify 定价', href: 'https://www.shopify.com/pricing', tag: '平台', desc: '官方套餐拆解 — Basic / Shopify / Advanced 月费。' },
   { label: 'Stripe 费率', href: 'https://stripe.com/pricing', tag: '收款', desc: '按国家与卡组织划分的单笔费率。' },
@@ -33,7 +80,7 @@ const externalLinks: Array<{ label: string; href: string; tag: string; desc: str
 <BaseLayout title={t(locale, 'resources.title')} description={t(locale, 'resources.subtitle')}>
   <article>
     <section class="container-page py-16 sm:py-20">
-      <p class="badge mb-4">🧭 精选资源</p>
+      <p class="badge mb-4">📦 下载 + 精选链接</p>
       <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight max-w-3xl">
         {t(locale, 'resources.title')}
       </h1>
@@ -41,10 +88,38 @@ const externalLinks: Array<{ label: string; href: string; tag: string; desc: str
         {t(locale, 'resources.subtitle')}
       </p>
       <div class="mt-6 flex flex-wrap gap-3 text-sm" style="color: var(--color-fg-soft);">
+        <span class="badge">{downloadsSized.length} 个下载</span>
         <span class="badge">{toolsHere.length} 款计算器</span>
         <span class="badge">{topPosts.length} 篇精读</span>
-        <span class="badge">{externalLinks.length} 个外链</span>
         <span class="badge">无需注册</span>
+      </div>
+    </section>
+
+    <section class="container-page py-10">
+      <div class="flex items-baseline justify-between mb-6">
+        <h2 class="text-2xl font-semibold">可下载文件</h2>
+        <span class="text-sm" style="color: var(--color-fg-soft);">无需邮箱，点击直接保存。</span>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
+        {downloadsSized.map((d) => (
+          <article class="card p-5 flex flex-col gap-3">
+            <div class="flex items-center gap-2 text-xs" style="color: var(--color-fg-soft);">
+              <span class="badge">{d.tag}</span>
+              {d.size && <span>{d.size}</span>}
+            </div>
+            <h3 class="text-base font-semibold">{d.title}</h3>
+            <p class="text-sm" style="color: var(--color-fg-soft);">{d.desc}</p>
+            <div class="mt-auto pt-2">
+              <a
+                href={`/downloads/${d.filename}`}
+                download
+                class="btn btn-primary"
+              >
+                下载 {d.ext} ↗
+              </a>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
 
