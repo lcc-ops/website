@@ -105,6 +105,13 @@ if (tags.length) jsonLd.keywords = tags.join(', ');
 <!-- JSON-LD -->
 <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
+<!-- Google AdSense -->
+<script
+  async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2713534716131369"
+  crossorigin="anonymous"
+></script>
+
 <!-- Cloudflare Web Analytics (fill beacon after deploy) -->
 {SITE.analytics.cfBeacon && (
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify(SITE.analytics.cfBeacon)}></script>
