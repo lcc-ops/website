@@ -57,15 +57,21 @@ def parse_tweet_id(url: str) -> Optional[str]:
     return m.group(1)
 
 
-_COUNT_RE = re.compile(r"^([\d,.]+)\s*([KkMmBb]?)$")
+_COUNT_RE = re.compile(r"^\s*([\d,.]+)\s*([KkMmBb]?)")
 
 
 def parse_count(label: str) -> int:
-    """Parse an aria-label like '12', '1.2K', '3M', '1,234' into an int.
+    """Parse the leading number out of an aria-label.
 
-    Unknown / empty labels return 0. This is deliberate: the scraper
-    records 0 instead of skipping the card, because missing counts are
-    common on freshly posted tweets.
+    X.com renders the interaction count as the FIRST token in the button's
+    aria-label, followed by a localized verb (e.g. ``"25 ϲ��������ϲ��"`` for
+    Likes, ``"1.2K �ظ�"`` for Replies, ``"3M ��ת"`` for Reposts). Earlier
+    scrapers assumed the whole string was the count, which silently yielded
+    0 once X started localizing the verb.
+
+    Returns the parsed integer; 0 if the leading token is missing or
+    unparseable. Missing counts are common on freshly posted tweets and
+    are recorded as 0 rather than skipping the card.
     """
     if not label:
         return 0
@@ -74,7 +80,10 @@ def parse_count(label: str) -> int:
     if m is None:
         return 0
     number_str, suffix = m.groups()
-    number = float(number_str.replace(",", ""))
+    try:
+        number = float(number_str.replace(",", ""))
+    except ValueError:
+        return 0
     multiplier = {
         "": 1, "K": 1_000, "k": 1_000,
         "M": 1_000_000, "m": 1_000_000,
