@@ -6,11 +6,9 @@ export const SITE = {
   shortName: 'CCL',
   author: 'kuajinglab',
   email: 'contact@kuajinglab.xyz',
-  social: {
-    // GitHub profile (not the source repo — repo URL is intentionally not
-    // exposed in published pages).
-    github: 'https://github.com/lcc-ops',
-  },
+  // No public source-channel links: published pages must not advertise
+  // the codebase host (avoids giving crawlers a one-click path to the
+  // repo). Contact is email-only.
   analytics: {
     // Cloudflare Web Analytics beacon — fill after deploying to Workers
     cfBeacon: '',

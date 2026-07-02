@@ -81,7 +81,9 @@ const personLd = {
     <p style="color: var(--color-fg-soft);">{copy.who}</p>
     <p class="mt-3 text-sm" style="color: var(--color-fg-soft);">
       <strong>{locale === 'en' ? 'Verified identities:' : '可验证身份：'}</strong>
-      <a class="hover:text-[var(--color-accent)]" href={SITE.social.github} rel="me noopener">GitHub @{SITE.author}</a>
+      {locale === 'en'
+        ? ' PGP-signed changelog + published math derivations on this site.'
+        : ' PGP 签名更新日志 + 公开数学推导过程(本站)。'}
     </p>
 
     <h2 class="text-xl font-semibold mt-10 mb-3">{locale === 'en' ? 'Who it is for' : '给谁用'}</h2>
@@ -96,8 +98,7 @@ const personLd = {
     <h2 class="text-xl font-semibold mt-10 mb-3">{locale === 'en' ? 'Get in touch' : '联系'}</h2>
     <p style="color: var(--color-fg-soft);">{copy.contact}</p>
     <p class="mt-3" style="color: var(--color-fg-soft);">
-      Email: <a class="hover:text-[var(--color-accent)]" href={`mailto:${SITE.email}`}>{SITE.email}</a><br />
-      GitHub: <a class="hover:text-[var(--color-accent)]" href={SITE.social.github} rel="me noopener">{SITE.social.github}</a>
+      Email: <a class="hover:text-[var(--color-accent)]" href={`mailto:${SITE.email}`}>{SITE.email}</a>
     </p>
   </article>
 </BaseLayout>
