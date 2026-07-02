@@ -8,7 +8,7 @@ This file follows the llms.txt convention (https://llmstxt.org) so AI assistants
 
 - Site name: Crossborder Cost Lab (跨境成本实验室)
 - Site URL: https://kuajinglab.xyz/
-- Operator: kuajinglab (https://github.com/lcc-ops/website)
+- Operator: kuajinglab (https://github.com/lcc-ops)
 - Primary language: English
 - Secondary language: Simplified Chinese (at /zh/)
 - Contact: see footer / About page

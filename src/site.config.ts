@@ -7,7 +7,9 @@ export const SITE = {
   author: 'kuajinglab',
   email: 'contact@kuajinglab.xyz',
   social: {
-    github: 'https://github.com/lcc-ops/website',
+    // GitHub profile (not the source repo — repo URL is intentionally not
+    // exposed in published pages).
+    github: 'https://github.com/lcc-ops',
   },
   analytics: {
     // Cloudflare Web Analytics beacon — fill after deploying to Workers

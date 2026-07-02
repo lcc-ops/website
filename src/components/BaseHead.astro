@@ -54,10 +54,7 @@ const orgLd = {
   name: siteName,
   url: siteOrigin,
   logo: { '@type': 'ImageObject', url: new URL('/icon.svg', siteOrigin).toString() },
-  sameAs: [
-    'https://github.com/lcc-ops',
-    'https://github.com/lcc-ops/website',
-  ],
+  sameAs: [],
 };
 
 // WebSite with SearchAction (helps AI bots discover searchability)
@@ -83,9 +80,7 @@ const personLd = {
   '@id': `${siteOrigin}/about/#person`,
   name: SITE.author,
   url: `${siteOrigin}/about/`,
-  sameAs: [
-    'https://github.com/lcc-ops',
-  ],
+  sameAs: [],
   worksFor: { '@id': `${siteOrigin}/#organization` },
 };
 
