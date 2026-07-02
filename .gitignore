@@ -40,3 +40,11 @@ scripts/scrapers/*
 __pycache__/
 *.pyc
 *.pyo
+
+# pytest
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
