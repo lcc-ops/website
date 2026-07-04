@@ -129,6 +129,22 @@
     "body": "跨境卖家资金从客户银行卡到内地对公账户通常要过 4 道费——收款手续费、汇损、中转行费、提现费。Wise 和 Airwallex 在汇损这个单一最大漏水上砍过 PayPal。 计算器怎么算 金额——你要换的总额。 原币种——销售币种（USD 最常见）。 目标币种——通常对中国主体是 CNY，对美国主体是 USD。 返回： 各家的隐含汇损。 提现手续费（如有）。 净到账金额——进你银行账户的实数。 默认汇率基于中间价参考值；你的实际汇率取决于当日。哪家费率和实际差额最小即赢家。 到账示例（USD → CNY，$10,000） 服务商 汇损点差 有效汇率 到账 CNY 较中间价损失 中间价（参考） 0% 7.25 ¥72,500 ¥0 PayPal 3.5% 6.996 ¥69,963 ¥2,537 Wise 0.41% 7.220 ¥72,203 ¥297 Airwallex 0.35% 7.225 ¥72,246 ¥254 单笔 $10k，PayPal 与 Airwallex 的差额是 $2,283 进你口袋。按月 12 笔算，每年 $27k——对任何跨境玩家都不是小数。 常见坑 中转行费（每笔 $15–25）此处不模拟。Wise 和 Airwallex 在 60+ 国家用本地轨道避免这笔费。 收款手续费：很多服务商收 USD/EUR 收款费。Stripe、Wise、Airwallex 对主要币种免收款费。 留仓余额：资金放进 Wise 多币种钱包后，跨币种转换用中间价——客户付 USD、付供应商 EUR 场景特别好用。 远期合约：$50k+/月，Airwallex 和 PingPong 提供锁汇的远期合约。本计算器不模拟，找服务商谈。 常见错误 轻信\"无手续费\"收款——PayPal 收款显示 0%，但提现时把 3–4% 塞进汇率。永远对比 Google 的中间价。 用国内银行电汇 USD 让他们换汇——国有大行通常在中间价上加 1–2%，外加 $20–40 电报费。比 PayPal 还差。 忽略中转行费——美国银行到中国银行的 SWIFT 电汇通常触发两家中转行，每家 $15–25。 在不计息的平台留大额余额——Wise 和 Airwallex 对 USD 浮存给约 3%（国库券收益），闲钱可以帮你赚钱。 何时换服务商 月 $10k 以下：Wise Business ——成本、速度（1–2 天）、多币种的最佳组合。 月 $10k–$50k：Airwallex ——更低有效费率、预付卡、批量付款。 月 $50k+：Airwallex 或 PingPong ——都提供资金管理和远期汇率对冲。 纯 USD 收款 + 美国 LLC：开 Mercury 或 Relay 账户，Stripe ACH 收 USD，ACH 付供应商。零换汇、零电报费。 何时这工具不够用 加"
   },
   {
+    "url": "/zh/content/x-home-services-ai-workflow/",
+    "locale": "zh",
+    "title": "家政保洁 AI 工作流案例：报价-验收-回访一条龙，单兵单品类 —— 案例没谈的三件决定单位经济的事",
+    "description": "冷峻拆解一个 x 案例。向家政/保洁小商家卖 AI 工作流（报价、验收、回访）。定价结构、渠道动态，以及案例跳过的三件决定单兵模型成立与否的事。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "automation",
+      "home-services",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一个单独运营者向家政/保洁 SMB（保洁、害虫、园林、手工、装修后清洁）卖 AI 工作流，三件事：标准化报价、完工后验收、回访。卖点很直白——\"报价不统一让你漏 20-30% 收入\"。合同是一次性安装",
+    "body": "一个单独运营者向家政/保洁 SMB（保洁、害虫、园林、手工、装修后清洁）卖 AI 工作流，三件事：标准化报价、完工后验收、回访。卖点很直白——\"报价不统一让你漏 20-30% 收入\"。合同是一次性安装 + 月度维护。案例没碰三件改算账的事：跨区域渠道碎片化、员工绕开率、bot 报错价的争议成本。 案例数字 指标 数值 目标客群 保洁、害虫、园林、手工、装修后 工作流三步 报价 → 验收 → 回访 定价结构 一次性安装 + 月度维护 运营者人数 1 卖点 老板因报价不统一漏 20-30% 收入 来源是 x 上一条单帖。没发收入、客户数、留存。下面这些数字是按运营者自己给的框架推的。 算账 真正能复利的是维护费。5 个维护客户能给一个 1,500-2,500 美金/月的底线收入，不用新销售维持。\"20-30% 收入恢复\"是装机的钩子，维护费是下个月、下下个月都还在账上的钱。 工作流主干 主干跨客户不动。唯一会变的是价格表。这是单人能覆盖 10-20 个客户的根因。 为什么这个卖点有效 老板已经能感觉到痛。口头报价随心情、完工后扯皮范围、客户完工后失联——这些不是假设。AI 没引入新产品，AI 干掉方差。老板 30 秒能算清的毛利改善，老板会买。 同样的卖点结构在其他本地自动化案例（牙科诊所、地产、会计）里反复出现。规律一致：抓一个口头报价行业、把答案标准化、把\"恢复的毛利\"卖给老板。 三个区域问题 渠道碎片化是案例没点名的约束。 区域 主渠道 次渠道 支付 中国大陆 微信 SMS 微信支付、支付宝 东南亚（SG/MY/ID） WhatsApp Line（TH） GrabPay、本地钱包 日韩 Line SMS 便利店、银行转账 拉美 WhatsApp Instagram DM Pix（BR）、本地卡 美加 SMS Email Stripe、ACH 为微信做的工作流在圣保罗跑不起来。为 WhatsApp 做的工作流在东京跑不起来。每个区域适配器大约 1-2 周工作量，还要给月度维护加一条线。案例没谈运营者锁单区域还是多区域。这个决定才是单位经济立不立得住的开关。 案例跳过的三件事 三件失败模式。每件都改算账。 员工绕开率。阿姨和现场员工经常直接打电话给客户，绕开 bot。如果绕开率到 40% 以上，工作流就是装饰——老板照样接电话，bot 没把答案标准化。案例完全没提绕开率。 bot 报错价的争议成本。价格表里有一行配错（装修后清洁算低 30%），bot 报低，客户下单，运营者自己吃差价。20 个客户、每天 100 个报价，1% 报错就是每天一笔实亏。案例没给报错率或赔付上限。 跨区域渠道维护。每个区域有自己的通讯 App、自己的鉴权流、自己的限速。多区域运营者 30-40% 时间花在渠道管道上，不是花在价格表上。案例\"一个运营者、一个工作流\"的框架默认只做一个区"
+  },
+  {
     "url": "/zh/content/pricing-formula-explained/",
     "locale": "zh",
     "title": "跨境电商定价公式（含算例）",
@@ -254,6 +270,38 @@
     ],
     "excerpt": "ePacket was the default for Chinese sellers shipping small parcels to the US and EU. It is being pha",
     "body": "ePacket was the default for Chinese sellers shipping small parcels to the US and EU. It is being phased out through 2026, replaced by a fragmented set of carriers with different price, speed and tracking characteristics. Here is what works now. What changed USPS stopped accepting ePacket inbound in mid-2023. Most China Post lines migrated to Cainiao Standard, which keeps similar pricing but adds a tracking step. Sellers still listing ePacket on Etsy or Shopify risk buyer complaints when tracking gaps appear. The good news: alternatives now cover the same price points. The bad news: choosing between them is more complex. Replacement matrix (0.5–2 kg to US) Carrier Transit (days) Cost per kg Tracking Notes YunExpress Economy 12–20 $4.80 Semi-tracked Cheapest tracked option, slower YunExpress Standard 10–15 $6.20 End-to-end Stronger tracking, faster Cainiao Standard 14–25 $3.80 Partial Cheapest but tracking gaps Cainiao Premium 8–12 $7.20 End-to-end AliExpress default, fastest Yanwen Economic Air 18–28 $3.50 Weak Cheapest, only for low-value items SF International 7–12 $6.80 End-to-end Best speed, premium price Asendia (US-bound) 12–18 $5.40 End-to-end USPS handoff, good for B2C For c"
+  },
+  {
+    "url": "/zh/content/x-agentic-commerce-marketplace/",
+    "locale": "zh",
+    "title": "Agent 交易市场案例：AI Agent 三角色市场、质押仲裁机制 —— 案例没谈的三件决定单位经济的事",
+    "description": "冷峻拆解一个 x 案例。OKX AI 的三角色 Agent 市场（用户/ASP/仲裁方），机制做什么、为什么像新一代服务市场平台原型，以及案例跳过的三件事：ASP 获客成本、争议量、需求侧流动性。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "agent",
+      "marketplace",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "x 上一条贴描述 OKX AI 的 Agentic commerce 平台是三角色市场：用户、ASP（Agent 服务提供方）、质押仲裁。框架是\"Agent 服务平台 = 新一代猪八戒\"。机制具体，案",
+    "body": "x 上一条贴描述 OKX AI 的 Agentic commerce 平台是三角色市场：用户、ASP（Agent 服务提供方）、质押仲裁。框架是\"Agent 服务平台 = 新一代猪八戒\"。机制具体，案例没给单位经济。三件事案例跳过：ASP 获客成本、上量后的争议量、需求侧流动性。 机制是什么 角色 职能 收益 用户（买家） 发任务或买 Agent 产品 付标价 ASP（Agent 提供方） 发布 Agent 产品或接任务 收标价减平台抽成 仲裁方 纠纷时裁决 抽走输方押金的一笔 仲裁链上质押。用户和 ASP 都押，仲裁方从输方拿抽成。这把平台客服从争议路径里拿掉，信任机制交给质押第三方。 供给侧算账 对 ASP——一个独立开发者，Agent 干 80%、人兜 20%——单位经济大致： 更贴近稳态的是低端：单兵开发者带一个能跑的 Agent、无销售团队，月入 5,000-20,000 美金。这是\"一人公司\"叙事最便宜的形态。市场做需求聚合，平台做信任机制，Agent 干活。开发者写 Agent，不接任务。 为什么它能赢老服务市场 维度 老市场（Upwork、猪八戒） Agent 交易市场 供给侧 自由职业者（按小时） Agent + 人在环（按任务） 单任务边际成本 高（人工小时） 低（算力 + 20% 人工复核） 交易单位 小时 有可验证产出的任务 定价 按小时 按任务 争议处理 平台客服 链上质押仲裁 信任机制 评价 + 平台保险 质押抵押 成本结构是质的差别，不是量的差别。自由职业者收 30-100 美金/小时。Agent 加人在环收 50-500 美金/任务，等效单价低一个数量级。平台可以在大得多的流水上抽更小的比例。 案例跳过的三件事 三处空白。每件都决定案例能不能被复制。 ASP 获客成本。市场需要供给。前 100 个 ASP 是手动拉来的，往往靠补贴费率或保底需求。案例没谈冷启动成本。没有供给市场是空的，没有需求供给会跑掉。 上量后的争议量。上线时争议率被人为压低——没交易就没争议。上量后争议率才决定仲裁机制是否成立。争议率超过 10-15%，每单都进仲裁、抽成被仲裁方吃掉、ASP 流失。案例没发争议数据，但这是案例里最承重的数字。 需求侧流动性。市场要跑起来买家侧必须活跃。案例给了\"Agent 服务平台\"框架但没发买家数、交易量、任务完成率。三个都没有，案例是机制描述不是收入案例。 再补一个：监管暴露。一个为 AI Agent 完成的付费任务做中介的市场，同时踩在加密（抵押）、AI 责任（Agent 产出）、消费者保护（退款）三条线上。案例没谈平台运营在哪个司法管辖区、责任怎么分。 谁是第一批 加密原生用户。他们已经在链上、已经懂钱包流、已经习惯质押仲裁。大众用户是远期长尾；质押和仲裁的摩擦对一个没用过 MetaMask 的人是真实转化壁垒。 "
+  },
+  {
+    "url": "/content/x-agentic-commerce-marketplace/",
+    "locale": "en",
+    "title": "Agentic commerce marketplace case: a three-role market for AI agents, an arbitration mechanism, and the three things the source skips about the unit economics",
+    "description": "Cold-eyed case-study on OKX AI's three-role agent marketplace (User / ASP / Arbitrator). What the mechanism does, why it looks like a service-platform primitive, and the gaps in the post about cost, dispute volume, and demand.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "agent",
+      "marketplace",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "An x.com thread describes OKX AI's agentic commerce platform as a three-role marketplace: User, ASP ",
+    "body": "An x.com thread describes OKX AI's agentic commerce platform as a three-role marketplace: User, ASP (Agent Service Provider), and an arbitration mechanism with staked collateral. The framing is \"agent service platform as the new Pig-zai\" (the Chinese service marketplace). The mechanism is concrete. The unit economics are not in the source. Three things the post skips: ASP acquisition cost, dispute volume at scale, demand-side liquidity. What the mechanism is Role Function Compensation User (buyer) Posts a task or buys an agent product Pays the listed price ASP (agent provider) Publishes an agent-built product or completes user tasks Earns the listed price minus platform cut Arbitrator Adjudicates disputes when user and ASP disagree Takes a cut of the loser stake The arbitration is collateralized on-chain. Both user and ASP stake; the arbitrator is paid from the loser stake. This removes the platform's own support team from the dispute path and shifts the trust mechanism to a staked third party. The arithmetic of the supply side For an ASP — a solo developer with an agent that handles 80% of the work and a human in the loop for the rest — the unit economics look like: The bottom of "
   },
   {
     "url": "/zh/content/kdp-ai-ebook-case/",
@@ -749,6 +797,22 @@
     ],
     "excerpt": "The phrase \"GPT wrapper\" means two very different things. The dismissive use: a thin product that ad",
     "body": "The phrase \"GPT wrapper\" means two very different things. The dismissive use: a thin product that adds nothing the underlying model does not already do. The technical use: any product that sits between the user and a foundation model. Most funded AI products in 2023-2025 are wrappers in the technical sense. The question is which of them are wrappers in the dismissive sense. Below are the 8 patterns that tend to make money, and the 5 that tend to burn cash. The failure mode in the second half is shared across every example. 8 patterns that work Vertical workflow tool. Owns a specific job in a specific industry (lease abstraction for lawyers, prior-auth drafting for clinics, packing-list generation for freight forwarders). High willingness to pay because the alternative is a human doing the work. Copilot augmentation. Lives inside the tool the user already uses — a Slack bot, a Notion extension, a VS Code plugin, a Shopify app. Distribution is free; CAC is near zero; switching cost is the integration. Workflow automation. A \"Zapier with AI\" that turns a user prompt into a multi-step action across APIs. Pricing is per execution or per connected account. Prompt marketplace / IP store. "
+  },
+  {
+    "url": "/content/x-home-services-ai-workflow/",
+    "locale": "en",
+    "title": "Home-services AI workflow case: a quote-accept-follow-up loop, one operator, one niche — and three unit-economics gotchas the post skips",
+    "description": "Cold-eyed case-study on selling a quote/acceptance/follow-up AI workflow to home-services SMBs. Pricing math, channel dynamics, and the three things the source quietly leaves out.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "automation",
+      "home-services",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A solo operator pitches home-services SMBs — cleaning, pest control, landscaping, handyman — on an A",
+    "body": "A solo operator pitches home-services SMBs — cleaning, pest control, landscaping, handyman — on an AI workflow that does three jobs: standardized pricing, post-service acceptance, and follow-up. The pitch is blunt: inconsistent answers cost 20-30% of revenue. The deal shape is a one-time setup fee plus a monthly retainer. The post does not address three things that change the math: channel fragmentation across regions, staff override rate, and what happens when the bot mis-prices. What the case claims Quantity Value Target segment Cleaning, pest control, landscaping, handyman, post-renovation Workflow steps Quote → acceptance check → follow-up Pricing model One-time setup + monthly retainer Operator headcount One Pitch angle Owner leaves 20-30% revenue on the table via inconsistent answers The source is a single x.com post. It does not publish revenue, client count, or retention. The numbers below come from the operator's own framing. The arithmetic What compounds is the retainer. Five retainer clients give a 1,500-2,500 USD/month baseline that does not need new sales to hold. The \"20-30% revenue recovery\" pitch closes the setup; the retainer is what pays next month and the month a"
   },
   {
     "url": "/content/profit-tracking-spreadsheet/",
