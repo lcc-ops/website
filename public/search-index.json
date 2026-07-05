@@ -223,6 +223,23 @@
     "body": "一条推文把四个高 Star 开源项目映到四种具体的 AI 变现生意：跨国内容搬运 / 二创（VideoLingo,16k+ Stars)、客服自动化、获客、电商商品图。案例说得明确：GitHub Star 是注意力信号，问题在于哪个仓库把这种注意力变成付费客户。下面是冷读、转化鸿沟、案例没说的四点。 案例摆出的内容 仓库 / 模型 公开规模 命名变现模式 VideoLingo 16k+ Stars 跨国内容搬运(翻译 + 重渲) 客服自动化(仓库未名) Star 数未给 Make / n8n 风格工作流 + AI 层;按席位计费 获客(仓库未名) Star 数未给 SMB 流水自动化 电商商品图(仓库未名) Star 数未给 AI 驱动商品图 / 视频生成 案例把 GitHub 影响力当营销渠道、AI 能力当变现层。真正卡住的地方是 Star 到付费客户的转化。 Star 数跟注意力相关、跟营收不相关 Star 是开发者 / 技术受众信号。它能映射到三件事： SEO 排名。 一个 10k Star 的仓库会出现在「<niche github\"、\"<niche open source」 的搜索里。搜索流量带动 hosted 产品的漏斗。 贡献者漏斗。 每个 Star 都是潜在未来的贡献者，OSS 开发速度复利累积。 合作方 inbound。 代理、白标合作、企业客户会通过「我看到你们的仓库」主动找来——无付费投放。 Star 跟付费客户不能直接画等号。能变现的仓库，是那种「注意力受众跟付费客户受众重合」的——创作者、代理、SMB 经营者。完全面向开发者的仓库（编排框架、ML 基础设施），只能在企业 tier 变现；面向创作者 / SMB 经营者的仓库，可以在自助价位变现。 模型 受众与付费客户的重合度 转化形态 内容出海 高。创作者 + 代理既是用户也是买家 自助漏斗 客服自动化 中。SMB 可自助付费,中型客户走销售辅助 混合 获客 较低。SMB 能试用,但归因证明需要销售电话 销售辅助 电商商品图 高。SMB 店铺主就是直接买家 自助漏斗 这一栏基本就是「开源影响力 → 营收」的强度排序。受众重合高的（内容出海、电商商品图）最容易做成生意。 四个生意模型，冷读 跨国内容搬运 / 二创（VideoLingo 及邻近） 做强版本的路子是：按创作者订阅（10–50 美金/月）+ 代理 tier(100–500 美金/月）+ API tier。VideoLingo 的 16k Stars 说明创作者侧拉力是真实的；hosted 产品能不能接住这一波流量，是漏斗上的转化断点。 客服自动化 做强版本的路子是按工作流或按席位定价 + 搭建费。模式与本站已经覆盖的工作流自动化独立 operator 案例高度重合，数学在 5–10 客户规模成立。 获客 这个模型比内容出海承"
   },
   {
+    "url": "/zh/content/x-github-ai-side-hustle-stacks/",
+    "locale": "zh",
+    "title": "四个已经能赚钱的开源 GitHub AI 副业栈:按「实际在做什么」拆解",
+    "description": "一条高互动 X 帖(1123 赞、54 回复、301 转推)拆解了四个高星 GitHub 项目,分别对应四种 AI 副业商业模式:出海内容搬运、AI 客服部署、自动获客、电商 AI 产品视觉。下面冷读每个栈能做什么、对应的小规模商业模式长什么样、真正的入门成本在哪里。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "open-source",
+      "side-hustle",
+      "github",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条高互动 X 帖(1123 赞、54 回复、301 转推)拆解了四个高星 GitHub 项目,分别对应四种 AI 副业商业模式:出海内容搬运、AI 客服部署、自动获客、电商 AI 产品视觉。这不是「",
+    "body": "一条高互动 X 帖(1123 赞、54 回复、301 转推)拆解了四个高星 GitHub 项目,分别对应四种 AI 副业商业模式:出海内容搬运、AI 客服部署、自动获客、电商 AI 产品视觉。这不是「10 个 AI 副业」的清单,是四个已经能跑的栈,GitHub 仓库就是入口。下面冷读每个栈,以及每个商业模式在小规模下长什么样。 四个栈 栈 在做什么 商业模式 GitHub 锚点 VideoLingo 跨语种视频本地化(ASR、翻译、配音、字幕) 2B 内容代理,按分钟计费 16k+ stars 客服 AI 在客服队列上挂微调模型的整套方案 SaaS,200–1000 美金/月/客户 未点名 获客自动化 抓取、补全数据、生成个性化外联 按结果计费,按预约会议 未点名 产品视觉 AI 一张产品图 → 模特上身生活方式图 按张或订阅,替代棚拍 未点名 帖子明确点了 VideoLingo。另外三个按功能描述,具体仓库留给读者自己找。这没关系——模式比仓库 URL 重要。 为什么是四个,不是十个 「10 个 AI 副业」清单是内容营销套路,目的是拉互动,不是呈现商业机会。真实机会的信号是:存在一个有几千 star 的开源仓库、GitHub issues 里某个付费客户的影子、从仓库到第一张发票 30 天内的路径。 帖子点的四个栈都达到这个门槛。每个都有:(a)一个几千 star 的开源仓库;(b)一个明确的买家画像(2B 内容买家、中小企业客服负责人、B2B 销售团队、电商商家);(c)一个清晰的按单位计价。每个的价格上限都定在它替代的人工或供应商成本上,而不是同行订阅价上。 每个栈的经济形状 VideoLingo 和客服栈都是 2B SaaS 形状:按席位或按月定价,替代一个已知的人工成本。获客栈是按结果形状:按预约会议、按合格线索。产品视觉栈是混合:单次项目按张计费,大商家按月订阅。 形状决定销售周期。SaaS 形状的模型成交周期 2–6 周,买家比的是已知的人工成本。按结果形状的模型成交周期几天,买家只为结果付钱。按张形状的模型按单成交,买家按交付物付钱。 对一个单人 founder,销售周期是承重变量。按结果和按张的模型比 SaaS 形状的模型转化快,因为买家是为结果付钱,不是为承诺付钱。帖子对这点是哑的,但选哪个栈先跑的时候,这是要优化的变量。 GitHub 仓库真正给你的是什么 帖子说得很直白:fork 一个仓库,几天就到工作原型,不是几个月。贵的不是代码。贵的是: 前 3 个付费客户。 没有他们,副业变不成生意。帖子没点怎么拿前 3,但标准答案是:对仓库目标买家做冷触达,以成本价或低于成本价交付第一个项目,换一份公开案例。 模型不会让买家当众翻车的信任。 一条错的客服答复是公开事故。一张错的产品图可能触发广告平台下架。信任是一个项目一个项目攒起来的,不"
+  },
+  {
     "url": "/zh/content/cbm-and-dimensional-weight/",
     "locale": "zh",
     "title": "体积重与 CBM 完全指南（含计算器）",
@@ -236,6 +253,23 @@
     ],
     "excerpt": "CBM 和体积重是决定物流费用的两个数字。算错要么多付，要么收到承运商的调整账单。 什么是 CBM？ CBM = 立方米。是货物的体积： 例：一个箱子 60cm × 40cm × 30cm 10 个相",
     "body": "CBM 和体积重是决定物流费用的两个数字。算错要么多付，要么收到承运商的调整账单。 什么是 CBM？ CBM = 立方米。是货物的体积： 例：一个箱子 60cm × 40cm × 30cm 10 个相同箱子：0.72 CBM。 什么是体积重？ 体积重（也称\"泡重\"）按货物占的空间算，不按质量算。轻但体积大的东西如果只按实际重量收费就太便宜。 除数取决于承运商和运输方式： 方式 除数 空运 6000 快递（DHL、FedEx、UPS） 5000 海运散货（LCL） 1000 USPS First-Class 9000 亚马逊 FBA 入仓 5000 承运商按两者取大 每票货，承运商都算两个数： 实际重量（秤读数） 体积重（体积 ÷ 除数） 你付较大的那个。这就是 计费重。 算例 一个 50cm × 40cm × 30cm 重 8kg 的箱子，DHL 出货： 你付 12kg 的钱，不是 8kg。哪怕秤上只读 8。 什么时候体积重起作用 经验法则：产品体积大但轻（枕头、泡沫、灯罩）时，体积重总是赢。密度高体积小（书、金属件）时，实际重量赢。 产品类型 体积重 or 实际？ 服装（压缩） 实际 书 实际 泡沫、枕头、毛绒 体积重 灯罩、篮子 体积重 电子（小） 实际 家具配件 体积重 保健品、化妆品 实际 充气产品 永远是体积重 怎么降低体积重 公式改不了，但包装可以改： 用能装下的最小箱子 — 每厘米都算钱。能用 40cm 箱就别用 50cm。 软货压紧 — 服装真空袋能减 30–50% 体积重。 拆成多箱 — 两个 5kg 箱通常比一个 10kg 形状奇怪的箱更便宜。 能折叠就折叠 — 折叠大幅降低体积。 算例：包装优化 10 件衬衫装 50×40×30cm 箱，每件 200g： 海运 LCL 特殊性 海运拼箱（LCL）的除数是 1000 — 意味着体积重更狠。1 CBM 高密度货（1000kg 实际）打平。低于这个密度就是为体积买单。 多数 LCL 承运商还有 最低 1 CBM 起收费，哪怕你只出 0.3 CBM。 空运 vs 快递 空运 快递（DHL/FedEx） 除数 6000 5000 单价/kg $4–8 $6–12 适合 100kg+ 大货 < 100kg 急件 时效 5–10 天 3–7 天 跟踪 基础 实时 快递除数更小（5000 vs 6000），体积重更高 — 所以快递对泡货更贵。 速查：什么时候用什么方式 货物画像 最佳方式 < 20kg，急件 快递 20–200kg，密度高 快递或空运 100–500kg，任意密度 空运 200kg+ / 2 CBM+，不急 海运 LCL 整柜（28+ CBM） 海运 FCL 配套工具 CBM 计算器 — 即将上线 产品定价计算器 — 把物流费算进定价 物流成本 Excel — 见 资源页"
+  },
+  {
+    "url": "/zh/content/ai-ppt-gamma-tome-divergence/",
+    "locale": "zh",
+    "title": "同一场 AI PPT 比赛,Gamma 跑到 1 亿美金 ARR,Tome 直接关停",
+    "description": "两个 AI PPT 产品,一家做到 1 亿美金 ARR、100 人团队、估值 21 亿;一家 2025 年 4 月关停,中间融过 3200 万美金。差距不是模型,是产品直觉——用户来是排版的,不是来想内容的。下面给个人开发者的可抄清单。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "ppt",
+      "product-strategy",
+      "case-study",
+      "monetization",
+      "open-source"
+    ],
+    "excerpt": "两个 AI PPT 产品在同一时间窗口里同场竞技。一家做到了 1 亿美金 ARR、不到 100 人、估值 21 亿美金;另一家在 2025 年 4 月关停产品,中间融过 3200 万美金。下面冷读两者",
+    "body": "两个 AI PPT 产品在同一时间窗口里同场竞技。一家做到了 1 亿美金 ARR、不到 100 人、估值 21 亿美金;另一家在 2025 年 4 月关停产品,中间融过 3200 万美金。下面冷读两者为什么一个活、一个死,以及个人开发者在这个赛道里能抄的三条路。 两个对照数字 公司 结果 时间窗 资本 团队 Gamma 1 亿美金 ARR,估值 21 亿美金 2022 上线,2025 底 ARR 目标 未点名 <100 Tome 关停产品 2025 年 4 月 30 日 融资 3200 万美金 未点名 整篇案例就建在这组对比上。同一个赛道,同一个时间窗,结果一个做出十倍差、一个直接清零。 Gamma 真正在卖什么 案例说得直白:Gamma 卖的是排版与样式,不是内容。用户输入文字,Gamma 处理幻灯片结构、视觉节奏、图片位置、导出。用户真正要做的事是「我知道要说什么,不想花两小时用 PowerPoint 把它排出来」。 这个定位把使用频次拉到每周。做幻灯片的人是顾问、创始人、PM、销售工程师、内部沟通岗——他们每周都要做。频次撑住 20 美金/月定价,因为每次使用的成本大约是 5 毛钱。 获客成本(CAC)很关键,但留存才是承重数。案例没给 Gamma 的 CAC,但按 7000 万用户、1 亿美金 ARR 反推,人均年付(ARPU)大约是 1.4 美金——也就是说 Gamma 是按 freemium 转付费的模型在跑,不是按付费席位模型。7000 万用户里绝大多数是免费的。 Tome 卖的是什么 Tome 把产品定位成「AI 帮你想清楚 PPT 内容」。用户输入主题,AI 提出大纲,用户修改,AI 排版。 心理模型错位就是全部失败原因。来 Tome 的人脑子里已经有大纲了——不然不会打开幻灯片工具。AI 那个「这一张写什么」的建议,要么冗余、要么讨嫌。产品被用一次,用户走,Tome 始终没建起 Gamma 那种每周一次的频次。 教训不是 AI 不能帮人想内容。教训是 AI PPT 工具的买家买的不是想内容。买家买的是「帮我排版」。产品做了别的事,用户就走。 个人开发者的入口 案例点了一个具体的开源底座:PptxGenJS。一个用 JavaScript 生成标准 .pptx 文件的库,GitHub 大约 5000 star,每周 127 万次 npm 下载。库本身处理文件格式那层脏活——版式、母版、主题、动画,这套东西从零写要一年。 AI 层架在它上面:用户输入提示词,系统生成 HTML 样式的幻灯片,导出 .pptx。最近更新还加了 PPT 动画支持。案例提到一个 X 帖子,这套组合拿到 5 万曝光、400 赞、350 收藏、100+ 评论——评论区全是「怎么用」「能不能分享」。需求信号是真的。 案例列了三条个人能走的路: 垂直场景工具。 「AI 周报 "
   },
   {
     "url": "/zh/content/solo-saas-profit-math/",
@@ -252,6 +286,22 @@
     ],
     "excerpt": "一个独立 AI SaaS 想替代一份工资，需要大约每月 5000 美元 MRR。所需付费用户数取决于三件事：月费、获客成本、平均客户生命周期。代入真实数字，结论让人不舒服：在典型的独立创始人价位下，你",
     "body": "一个独立 AI SaaS 想替代一份工资，需要大约每月 5000 美元 MRR。所需付费用户数取决于三件事：月费、获客成本、平均客户生命周期。代入真实数字，结论让人不舒服：在典型的独立创始人价位下，你需要的用户数比创业故事里说的多得多。 设定 独立创始人，无员工，无销售团队 通过内容、社区、几次发布（Product Hunt、X、独立社区）分发。不投广告 一个真正有用的产品——流失是这个类别的自然水平，不是糟糕 UX 抬高的 代入盈利门槛计算器： 客单价 CAC 平均留存 回本用户数 回本时月 MRR 9 美元/月 40 美元 6 个月 27 243 美元 29 美元/月 80 美元 8 个月 23 667 美元 99 美元/月 200 美元 12 个月 25 2,475 美元 回本用户数在三个价位下大致一样（20-30 人）——低价位下数学还更宽松。让人难受的是回本点的 MRR，那是「客单价 × 用户数」的函数。要到 5000 美元 MRR，需要在回本点上再扩 8-20 倍。 5000 美元 MRR 真正需要多少 客单价 所需付费用户 月流失 5% 下每月新用户 月流失 10% 下每月新用户 9 美元/月 556 28 56 29 美元/月 173 9 17 99 美元/月 51 3 5 「每月新用户」那一列才是运营上要紧的。9 美元档每月拉来 28-56 个新付费用户才能稳住。99 美元档只需要 3-5 个。产品能力、上线摩擦、创始人每周工时，在这两列之间的差距是巨大的。 为什么 29 美元是独立创始人的常见价位 大多数独立 AI SaaS 落在 19-29 美元/月，因为： 9 美元太便宜养不起创始人。即便 500 用户，MRR 才 4500 美元。 99 美元需要企业销售动作（安全审查、采购、定制合同），一个独立创始人跑不动单个签约。 29 美元落在「个人买家刷信用卡不用问老板」的区间，也是让「所需用户数」运营上可实现的合适价位。 数学：在 29 美元/月、月流失 5%、CAC 80 美元下，你需要 173 付费用户、每月 9 个新用户来撑住 5000 美元 MRR。这对一个有好产品、有内容习惯的独立创始人是可达成的目标。如果靠付费投放就不可达成。 瓶颈是用户数，不是价格 一旦独立创始人接受了现实价位上限在 99 美元/月左右，剩下的杠杆只有量。标准动作： 每周稳定的内容输出（一篇深度、一篇快文），沉淀 SEO 与个人品牌 少数几个分发渠道（一个社区、一个发布场、一个合作伙伴） 紧凑的 onboarding，让用户在第一场会话内到「啊哈」时刻 数学救不了一个分发差的产品。数学能让一个分发好的产品对自己需要的量保持诚实。 延伸阅读 Cursor 商业模型 — 高 ARPU AI 极端端长什么样。 GPT 套壳产品：8 种赚钱套路与 5 种烧钱陷阱 — "
+  },
+  {
+    "url": "/zh/content/ai-photo-app-payment-channel/",
+    "locale": "zh",
+    "title": "一条支付通道一年多赚 1700 万美金：AI 修图 App 是怎么把收款从苹果商店搬回自己的",
+    "description": "一支小团队 2025 年营收翻了 14 倍,年化冲到 5500 万美金,2026 年初推到 7000 万美金。同样的用户、同样的产品,只是把收款从 App Store 搬到了自己的网页,一年多出 1700 万美金的毛利。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "consumer-app",
+      "monetization",
+      "payment-rail",
+      "case-study"
+    ],
+    "excerpt": "一支做消费 AI 修图和视频的小团队,2025 年营收翻了 14 倍,年化冲到 5500 万美金,2026 年初推到 7000 万美金。窗口期内产品没做大版本模型升级,增长的引擎基本是一项运营决策:多",
+    "body": "一支做消费 AI 修图和视频的小团队,2025 年营收翻了 14 倍,年化冲到 5500 万美金,2026 年初推到 7000 万美金。窗口期内产品没做大版本模型升级,增长的引擎基本是一项运营决策:多数付费漏斗从 App Store 搬到了自建网页。下面把案例摆在桌面上的数字拆开,以及四点案例没说的事。 数字 数量 值 2025 营收增长 14 倍 年化营收(2025) 5500 万美金 年化营收(2026 初) 7000 万美金 App Store 类别排名 照片视频类前 5 融资 无,自负盈亏 风格模板数 1000 累计成片 10 亿 数字为公司自报、未审计。用作方向性论据,不是财报。 支付通道的数学 案例把抽成算得很具体: 这是故事的核心数字。案例说得很直白:同样的用户、同样的产品,只是换了收款的门。1700 万美金的差额,比大多数 AI 消费团队一季度花在模型 API 上的钱都多。 紧挨着抽成的,还有一条隐性的运营成本:税务与退款。在 App Store,苹果代收 VAT、代缴销售税、处理退款与拒付;搬到自建网页,这些活转给运营方自己扛。7000 万美金 GMV 之下,这是一条真实的人力线,案例没点名,但言下之意是已经招了人来扛。 为什么 App Store 是大多数 operator 忘记交的税 大多数消费 AI 团队优先上 iOS,因为 App Store 是获客最便宜、但单位经济学最差的渠道。免费安装零摩擦,但每一次付费转化都要给苹果 30%,运营方看不到是谁付的、什么时候付的、这个同期群后面怎么走。平台掌握客户关系。 案例描述的是另一种打法:iOS 负责留存与日活,网页负责获客与付费转化。广告把流量引到自建定价页,用户在网页上付完款,拿到产品访问权限,之后才被邀请去下 App 做更重的体验。App 是日常驾驶舱,网页是结账台。 这条切分有两个结构性好处: 运营方掌握付费客户。 邮箱、账单、流失原因、退款原因、扩张信号——运营方全可见。苹果不允许这些数据按同期群粒度导出,而且能导出的也有延迟。 广告 CAC 可量化。 某个关键词带来 50 个付费网页客户、CPA 30 美金,可以加预算。某个关键词带来 200 次 App 安装、CPA 6 美金但零订阅,应该立刻停。案例说正是这套数据,让公司一年内把苹果搜索广告的预算放大了 13 倍。 「不做模型」的姿态 案例里第二个不太显眼的取舍,是团队不训基础模型。产品是把大约 1000 个预设「风格」搭在第三方图像和视频模型 API 之上,商业 API 加少量开源都接。每个预设是一条一键工作流——用户描述需求,系统选模型、应用风格、输出成片。 这是一笔主动的交换。运营方不付训练基础模型的资本开支、不背推理成本的长尾、不用每两个月追一次前缘。代价是没有模型护城河。他们真正在堆的护城河是 1000 条工作流的"
   },
   {
     "url": "/zh/content/english-ai-seo-content-site/",
@@ -735,6 +785,23 @@
     "body": "A tweet thread maps four high-star open-source projects onto four specific AI-monetization business models: cross-border content export (VideoLingo at 16k+ stars), customer-service automation, lead generation, and e-commerce product imagery. The case is explicit: GitHub stars are an attention signal; the question is which repos translate that attention into paying customers. Below is a cold read of the matching, the conversion gap, and four points the case is silent on. What the case lays out Repo / Model Reported scale Named monetization VideoLingo 16k+ stars Cross-border content export (translate + re-render) Customer-service automation (repo unnamed) unspecified stars Make / n8n-style workflow + AI layer; per-seat pricing Lead generation (repo unnamed) unspecified stars SMB-facing pipeline automation E-commerce product imagery (repo unnamed) unspecified stars AI-driven product photo / video generation The case treats GitHub presence as the marketing channel and the AI capability as the monetization layer. The conversion from stars to paying customers is the load-bearing gap. Star count correlates with attention, not revenue Stars are a developer-and-technical audience signal. Th"
   },
   {
+    "url": "/content/x-github-ai-side-hustle-stacks/",
+    "locale": "en",
+    "title": "Four open-source GitHub stacks that already monetize AI side-hustles, ranked by what they actually do",
+    "description": "A high-engagement X thread walked through four high-star GitHub projects that map to four AI-side-hustle business models: cross-border content redistribution, AI customer-service deployment, lead-gen automation, and AI product visuals for e-commerce. Cold read of each stack, what each business model looks like at small scale, and where the real entry cost sits.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "open-source",
+      "side-hustle",
+      "github",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A high-engagement X thread (1,123 likes, 54 replies, 301 reposts) walked through four high-star GitH",
+    "body": "A high-engagement X thread (1,123 likes, 54 replies, 301 reposts) walked through four high-star GitHub projects that map to four AI-side-hustle business models: cross-border content redistribution, AI customer-service deployment, lead-gen automation, and AI product visuals for e-commerce. The thread is not a \"10 side-hustles\" list. It is four stacks that already work, with the GitHub repo as the entry point. Below is a cold read of each stack and what each business model looks like at small scale. The four stacks Stack What it does Business model GitHub anchor VideoLingo Cross-border video localization (ASR, translate, dub, subtitle) B2B content agency, per-minute billing 16k+ stars Customer-service AI Drop-in fine-tuned model for support queue SaaS, 200–1,000 USD/month per customer Not named Lead-gen automation Scrape, enrich, personalize outbound Performance-based, per booked meeting Not named Product-visual AI One product image → on-model lifestyle photos Per-asset or subscription, replacing photo shoots Not named The thread names VideoLingo explicitly. The other three are described by function; the specific repos are left as an exercise for the reader. This is fine — the patter"
+  },
+  {
     "url": "/tools/fx-withdraw-calculator/",
     "locale": "en",
     "title": "FX & Payout Comparator — PayPal, Wise, Airwallex",
@@ -881,6 +948,23 @@
     "body": "A solo operator pitches home-services SMBs — cleaning, pest control, landscaping, handyman — on an AI workflow that does three jobs: standardized pricing, post-service acceptance, and follow-up. The pitch is blunt: inconsistent answers cost 20-30% of revenue. The deal shape is a one-time setup fee plus a monthly retainer. The post does not address three things that change the math: channel fragmentation across regions, staff override rate, and what happens when the bot mis-prices. What the case claims Quantity Value Target segment Cleaning, pest control, landscaping, handyman, post-renovation Workflow steps Quote → acceptance check → follow-up Pricing model One-time setup + monthly retainer Operator headcount One Pitch angle Owner leaves 20-30% revenue on the table via inconsistent answers The source is a single x.com post. It does not publish revenue, client count, or retention. The numbers below come from the operator's own framing. The arithmetic What compounds is the retainer. Five retainer clients give a 1,500-2,500 USD/month baseline that does not need new sales to hold. The \"20-30% revenue recovery\" pitch closes the setup; the retainer is what pays next month and the month a"
   },
   {
+    "url": "/content/postiz-30-channels-moat/",
+    "locale": "en",
+    "title": "How a solo founder took Postiz past 145k USD MRR by integrating 30 platforms nobody else bothered with",
+    "description": "A solo-built social-media scheduling tool reportedly hit 145k USD MRR by integrating 30+ publishing channels — Mastodon, Bluesky, Nostr, Warpcast, Telegram, Discord included. Cold read of why \"channel count\" beats \"better UI\" in tool-type products and how open-source turned into a paid-conversion funnel.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "social-media",
+      "open-source",
+      "saas",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A solo-built social-media scheduling tool called Postiz reportedly crossed 145k USD MRR. The product",
+    "body": "A solo-built social-media scheduling tool called Postiz reportedly crossed 145k USD MRR. The product does not win on UI polish or feature depth. It wins on integration count — 30+ publishing channels, including the platforms competitors called \"too small to bother with\": Mastodon, Bluesky, Nostr, Warpcast, Telegram, Discord. The product is also open-source. Below is a cold read of why \"channel count\" is the moat and how open-source turns into a paid-conversion funnel. The number Quantity Value MRR (latest) 145k USD Implied ARR 1.74M USD Publishing channels 30+ Code license Open source Funding Bootstrapped (no round named) Headcount Solo founder Founder-attributed, not audited. The figure is a directional anchor for the strategy, not a financial statement. Why 30 channels is the moat The case names the move clearly. A 6-channel scheduling tool is in a feature-parity race with every other 6-channel scheduling tool. The buyer compares UI, price, and integrations. The tool has to win on at least one of those three to convert. A 30-channel scheduling tool is not in the same race. The buyer compares the tool to \"hire a part-time social media manager to post on the other 24 platforms\". Th"
+  },
+  {
     "url": "/content/profit-tracking-spreadsheet/",
     "locale": "en",
     "title": "How to Build a Cross-border Profit Tracking Spreadsheet",
@@ -962,6 +1046,40 @@
     "body": "A knowledge-planet post describes a solo operator who walks into local small businesses (dental clinics, real estate agents, accounting firms), sells them AI-powered workflow integrations on Make.com plus a GPT layer, and reports 5,000 USD/month by month 6. The post is direct about numbers, direct about the stack, direct about the offline-vs-online gap. Three things it is not direct about: implementation friction, retainer churn, and the sales cycle length. Below is what the case actually adds up to, and the three gaps. What the case claims Quantity Value Setup fee per client 500 - 1,500 USD Monthly retainer 200 - 500 USD per client Clients in month 1 2 - 3 Month 3 revenue 2,000 USD/month Month 6 revenue (target) 5,000 USD/month Upwork AI freelance hourly rate 30 - 70 USD Cited Upwork category growth 109% YoY All figures are self-reported. The author's first name is omitted; the cited Upwork growth does not link to a primary report. The arithmetic The interesting part is the recurring share. The setup fee is the entry price; the retainer is what compounds. Five retainer clients give a 1,500-2,500 USD/month baseline that does not require new sales to maintain. The \"5,000 USD by mont"
   },
   {
+    "url": "/zh/content/lovable-vibe-coding-pricing/",
+    "locale": "zh",
+    "title": "Lovable 不到 200 人做到 5 亿美金 ARR:定价曲线里藏着什么",
+    "description": "瑞典 AI 应用生成器 Lovable 据披露在不到两年内做到 5 亿美金 ARR、不到 200 人、估值 66 亿美金。它不训自己的模型,把第三方大模型包成「描述需求 → 得到能跑的全栈应用」流程。冷读单位经济学、定价档位实际意味什么,以及为什么它的目标客户不是开发者。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "no-code",
+      "vibe-coding",
+      "pricing",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "Lovable,一支瑞典 AI 应用生成器,据披露在不到两年内做到 5 亿美金 ARR、不到 200 人、估值 66 亿美金。产品不训自己的模型,把第三方大模型包成「描述需求、得到一个能跑的全栈应用」",
+    "body": "Lovable,一支瑞典 AI 应用生成器,据披露在不到两年内做到 5 亿美金 ARR、不到 200 人、估值 66 亿美金。产品不训自己的模型,把第三方大模型包成「描述需求、得到一个能跑的全栈应用」流程。下面冷读单位经济学,以及定价档位实际意味什么。 数字 数量 值 年化营收(最新) 5 亿美金 员工数 <200 人均营收 200 万美金+/年 估值 66 亿美金 单轮融资 3.3 亿美金 ARR 最近一步增长 25%+ 每周新项目数 100 万 已上线项目月访问 6 亿 总用户数 800 万(过半用在能赚钱的活上) 数字为公司自报、未审计。用作方向性论据,不是财报。 定价档位 案例点了三档。形状比具体数字重要: 计费单位是项目复杂度与产出数量。这是「先出货,再按用量计费」——和 Vercel、和云 egress、和所有用量计费的基础设施产品同形。先免费,用户的第一个项目免费,价格随用户实际在做的量往上走。 这个形状是承重决策,不是具体价格点。具体价格点以后可以调。「免费起步,再按用量扩张」这个形状,是非技术买家能安心接受的——在做出他们想继续做的东西之前,他们不付钱。 为什么客户是「非技术」而不是「开发者」 开发者把 Lovable 对标到他们已有的栈:VS Code、Git、一个 LLM 订阅。月成本大约 0–20 美金。在开发者已经具备这套肌肉记忆的前提下,Lovable 在任何价格点上都不便宜。 非技术买家把 Lovable 对标到外包报价。一个基础网站或应用 3000–30000 美金。Lovable 月费 25–50 美金。非技术买家没有「LLM 包出来的产品够不到」的价格上限。他们买的是「我不用去找、考核、付款给外包」,这在一个项目上就省下 5000 美金。 案例说得直接:护城河在非技术买家。开发者市场拥挤且价格敏感。非技术买家市场大、竞争小、结构上愿意付费,因为他们的替代方案是「项目根本不做」。 案例点出的飞轮 案例给出三层叠加: 每周 100 万个新项目上线平台。 每个项目默认公开,每个项目就是一个营销面。 这些项目合计每月 6 亿次访问。 访问者看到被做出来的东西,品牌与信任一起涨,反哺 SEO。 800 万用户里过半用在能赚钱的活上。 这不是闲着试玩的人。这是在平台上跑真实生意的人,他们会为 Pro 和 Business 付费。 飞轮是「项目数 → 访问数 → 用户数 → 付费用户数」。四个环节没有哪个是新的。新的是四个环节在同一平台上同时跑,因为每个环节都在反哺下一个,所以很难复制。 「不做模型」的姿态 Lovable 不训自己的基础模型。案例说得很直白:它包的是第三方大模型。竞争壁垒是「包」——项目结构、提示词到应用的流程、素材库、部署管线。任何竞争者都能调同样的 API,但很少有人能以同样节奏交付同样质量的包。 这笔交换和之前那"
+  },
+  {
+    "url": "/content/lovable-vibe-coding-pricing/",
+    "locale": "en",
+    "title": "Lovable''s 500M USD ARR under 200 people: what the pricing curve hides",
+    "description": "Sweden-based Lovable reportedly hit 500M USD ARR within two years of launch with under 200 employees and a 6.6B USD valuation. Cold read of the unit economics, what the pricing tiers imply, and why \"vibe coding\" is a non-technical-buyer product, not a developer tool.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "no-code",
+      "vibe-coding",
+      "pricing",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "Lovable, a Sweden-based AI app builder, reportedly hit 500M USD ARR inside two years of launch with ",
+    "body": "Lovable, a Sweden-based AI app builder, reportedly hit 500M USD ARR inside two years of launch with under 200 employees and a 6.6B USD valuation. The product does not train its own model. It wraps third-party LLMs into a flow where the user describes what they want and gets a working full-stack app. The case below is a cold read of the unit economics and what the pricing tiers actually imply. The numbers Quantity Value Annualized revenue (latest) 500M USD Headcount <200 Revenue per employee 2M+ USD/year Valuation 6.6B USD Funding round 330M USD ARR growth (latest step) 25%+ Projects shipped per week 1M Monthly visits across shipped apps 600M Total users 8M (50%+ using it for revenue work) The figures are company-attributed. Not audited. Useful as a directional argument. The pricing tiers The case names three tiers. The shape is more important than the numbers: The meter is project complexity and number of generated artifacts. This is \"ship a starter, then meter usage\" — the same shape as Vercel, the same shape as cloud egress, the same shape as any usage-priced infrastructure product. The starter is free, the user's first project is free, and the price scales with how much the user"
+  },
+  {
     "url": "/zh/tools/fee-comparator/",
     "locale": "zh",
     "title": "PayPal vs Stripe 手续费对比器",
@@ -1027,6 +1145,23 @@
     ],
     "excerpt": "一个知识星球帖子抛出一个常见误区：做工具型产品，上来就想做一个「更好用的版本」，结果掉进最挤的赛道跟现有玩家抢同一批客户。案例拆的是一款独立开发者做的开源社媒排期工具，据报已跨过 14.5 万美金 M",
     "body": "一个知识星球帖子抛出一个常见误区：做工具型产品，上来就想做一个「更好用的版本」，结果掉进最挤的赛道跟现有玩家抢同一批客户。案例拆的是一款独立开发者做的开源社媒排期工具，据报已跨过 14.5 万美金 MRR，做法是接 30+ 发布渠道，包括主流工具懒得做的长尾平台。下面是数字、承重部分，以及案例没说的事。 案例描述的内容 数量 值(自报) 产品 Postiz(开源社媒排期) 公开 MRR 14.5 万美金 集成数 30+(主流 + Mastodon、Bluesky、Nostr、Warpcast、Telegram、Discord 等长尾) 许可证 开源 + hosted 付费订阅 团队规模 单个独立开发者(按案例口吻) 数字由创始人自报，作为方向性参考；案例用它们去论证「开源 + 长尾」的组合是承重策略，不是功能集。 为什么 30+ 集成是护城河 功能型护城河（更聪明的 UI、更干净的 dashboard、更精致的模板）半衰期只有几周。下一个版本竞品就追上来了，差异化消失。 集成型护城河累积而不衰减： 每加一个集成，带来三样东西： 新买家池。 每个集成都是一个长尾搜索词（「post to Mastodon + scheduler」)。SEO 自然增长，不烧钱。 涨价锚点。 老订阅者看到 dashboard 里不断多出来的新集成，「同等月费下价值上升」，留存自动加固，不需要急着提价。 迁移税。 一旦客户把 20+ 渠道都接进了某个排期器，评估竞品时迁移代价（重新走 20 遍 OAuth、配权限、回放队列）是真实的。切换成本随集成宽度增长。 到了 30+ 集成，竞品 90 天内追不上来。这才是护城河。 为什么开源是获客渠道 案例把开源框架解释成免费获客。三套机制： GitHub star 当 SEO。 1 万–2 万 star 的仓库，自然排在 「social scheduler github」 搜索上，每一个 star 都是一条被动外链，流向自部署的漏斗。营销预算接近零。 自部署者当布道者。 一家小代理自己部署 Postiz、服务 5 个客户，就是一个 5 家客户的推荐漏斗。不会主动投放，但会跟同行说。漏斗的获客成本是这位执行安装的人，不是付费投放。 贡献者当集成工程师。 Mastodon 集成需要 patch 时，这是个开源工件，会有社区贡献者接手，而不是创始人自己背带宽。在不发工资的前提下，工程带宽靠社区放大。 开源 / 不开源的选择，本质上是营销动作。Hosted 计划才是钱，自部署是漏斗。 14.5 万美金 MRR 的算术 对一个独立 SaaS，这个数字落在顶级分布。这个品类的大多数独立工具一辈子没跨过 2–3 万 MRR。14.5 万这个数，意味着这位独立开发者要么（a）花了 4 年以上死磕集成宽度，(b）拿到了能压过按席位数学的企业 / 代理 tier"
+  },
+  {
+    "url": "/zh/content/postiz-30-channels-moat/",
+    "locale": "zh",
+    "title": "Postiz 单人做到 14.5 万美金 MRR:集成 30 个别人懒得接的平台才是护城河",
+    "description": "一支单人开发的社媒排期工具,据披露月经常性收入做到 14.5 万美金,秘诀是接了 30 多个发布渠道——包括竞品懒得接的 Mastodon、Bluesky、Nostr、Warpcast、Telegram、Discord。下面冷读「渠道数」为什么比「更好的 UI」更重要,以及开源怎么变成付费转化漏斗。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "social-media",
+      "open-source",
+      "saas",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一支单人开发的社媒排期工具 Postiz 据披露月经常性收入做到 14.5 万美金。产品不是靠 UI 精致或功能深度赢的。它赢在「接了 30 多个发布渠道」——包括竞品觉得「用户太少不值得做」的 Ma",
+    "body": "一支单人开发的社媒排期工具 Postiz 据披露月经常性收入做到 14.5 万美金。产品不是靠 UI 精致或功能深度赢的。它赢在「接了 30 多个发布渠道」——包括竞品觉得「用户太少不值得做」的 Mastodon、Bluesky、Nostr、Warpcast、Telegram、Discord。整套产品还开源。下面冷读「渠道数」为什么是护城河,以及开源怎么变成付费转化漏斗。 数字 数量 值 MRR(最新) 14.5 万美金 推算 ARR 174 万美金 发布渠道 30+ 代码许可 开源 融资 自负盈亏(无轮次披露) 团队 单人 founder 创始人自报、未审计。数字是策略的方向锚,不是财报。 为什么 30 个渠道是护城河 案例点得很清楚。一个 6 渠道的排期工具,处在和其他 6 渠道排期工具的功能对等赛跑里。买家比的是 UI、价格、集成数。工具至少要赢其中一项才能转化。 一个 30 渠道的排期工具不在同一场比赛里。买家把它对标到「雇一个兼职社媒运营,去那 24 个平台手动发」。对标框架从「功能对等」滑到「替代人工」。价格上限从「我愿意为排期工具付多少」跳到「我愿意为不做这些活付多少」。 机械原因是:每个集成是一个第三方 API 加上鉴权流加上格式适配器。集成成本真实存在——一个能用的集成大约 3–10 个工程日。一个 30 渠道的工具代表 90–300 工程日的集成工作。新入场者要花同样的时间才能追平。每多接一个渠道,护城河就厚一分。 开源怎么变成付费漏斗 案例描述了一个三步循环: 开源仓库。 GitHub star 累积起来,反哺可见度。自部署用户装上开始用。 自部署用户撞上运维极限。 一些用户规模超过自部署的舒适区(数据库备份、可用性、版本升级、安全补丁)。他们开始找托管版。 托管版就是付费产品。 自部署用户是预审过的线索,因为他们已经在工作流里验证过产品。转化率结构性地高于冷流量。 案例说得很直白:开源不是慷慨。开源是一条免费的分销渠道,把预审过的线索交到你手上。托管付费产品是这层之上的变现。 定价锚点 案例暗示 Postiz 定价在 30–80 美金/月。锚的是替代人工,不是同行订阅价。 一个兼职社媒运营在大多数市场 1000–2000 美金/月。Postiz 50 美金/月替代大约每月 10 小时的发布工作。买家比的是 50 美金/月 对 1500 美金/月的人工,30 倍价值比。价格上限结构性地高于任何把锚定在 Buffer 或 Hootsuite 定价上的「排期工具」竞争者。 这和之前法律 AI 案例同形:把价格锚到工具替代的人力成本上,而不是同行软件月费上。价格上限从软件预算跑到 HR 预算。 复用的路径 案例暗示单人 founder 想复用结构,有四步: 挑一个现有玩家只覆盖 5–6 个渠道或工作流的品类。 自己覆盖 15+ 长尾。品类不一"
   },
   {
     "url": "/content/postiz-long-tail-channels/",
@@ -1199,6 +1334,22 @@
     "body": "The post in question is a sales post for a 30-day AI product bootcamp. The pitch is: from product selection through build to promotion, in 30 days, taught in a cohort format, with a Quark-pan link to the curriculum. The format is familiar to most; this teardown applies to offers of this shape. The question is not whether the curriculum is real. It is whether the outcome the post implies (a \"sustainable side-hustle\" from a 30-day commitment) is what the curriculum actually delivers. What the pitch says, mapped to deliverables Reading the post literally, the offer promises four components: Product selection. Pick an AI-automation product category where the buyer has clear pain and budget. Build. Use no-code + AI to ship a v0 within 30 days. Promotion. Paid and organic distribution plan with templates. Long-term asset framing. \"构建长期副业资产\" (build a long-term side-hustle asset). The 30-day window is enough to ship (1) and (2). It is not enough to validate (3) or to demonstrate (4). What 30 days can and cannot do Stage 30-day outcome What it does not cover Selection Pick a category with margin 50% and clear buyer profile Validate that the chosen category has reachable distribution channel"
   },
   {
+    "url": "/content/ai-photo-app-payment-channel/",
+    "locale": "en",
+    "title": "The 17M USD a year an AI photo app kept by switching its payment rail off the App Store",
+    "description": "A small AI photo-and-video team reportedly grew 2025 revenue 14x to 55M USD annualized, then to 70M USD. Same users, same product, different checkout. The 30% Apple cut is the lever most operators forget to pull.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "consumer-app",
+      "monetization",
+      "payment-rail",
+      "case-study"
+    ],
+    "excerpt": "A small team running a consumer AI photo-and-video app reportedly grew revenue 14x in 2025, hit 55M ",
+    "body": "A small team running a consumer AI photo-and-video app reportedly grew revenue 14x in 2025, hit 55M USD annualized, and is now at 70M USD annualized. The product did not get a major model upgrade in that window. The growth came mostly from one operational decision: most of the paid funnel now runs through a self-hosted web checkout instead of the App Store. Below is what the case puts on the table and what it does not. The numbers Quantity Value 2025 revenue growth 14x year-over-year Annualized revenue (2025) 55M USD Annualized revenue (early 2026) 70M USD App Store category rank Top 5 in Photo & Video Funding None (bootstrapped) Styles (preset templates) 1,000 Cumulative renders 1 billion The figures are company-attributed. Not audited. They are useful as a directional argument, not as a financial statement. The payment-rail math The case lays out the cut in concrete numbers: That is the headline number. The case is explicit: same users, same product, different checkout. The 17M USD is more than most AI consumer teams spend on model API costs in a quarter. A second, quieter lever sits next to the cut: tax and refund handling. On the App Store, Apple handles VAT collection, sales-t"
+  },
+  {
     "url": "/content/pricing-formula-explained/",
     "locale": "en",
     "title": "The Cross-border Pricing Formula (with Worked Examples)",
@@ -1294,6 +1445,23 @@
     ],
     "excerpt": "A directional note from a Chinese knowledge-planet thread: \"In the AI-for-export direction, do we be",
     "body": "A directional note from a Chinese knowledge-planet thread: \"In the AI-for-export direction, do we bet on the general-tool traffic play, or do we go deep into a vertical?\" Five candidate verticals (legaltech, medtech, real estate, education, cross-border ecommerce). The case argues that the general-AI tool category is saturated but vertical AI is \"not yet fully developed.\" Where each vertical actually pays. What the case actually argues A market-direction note, not a case study. Three observations: General AI categories (writing, translation, design) are \"extremely crowded.\" Vertical AI categories (legaltech, medtech, real estate, education, cross-border ecommerce) look under-built. Compliance burden and customer acquisition cost vary sharply by vertical. The case invites readers to share real case studies. Below I treat each vertical individually rather than treating the note as if it were evidence. The five verticals: where the math actually works Legaltech — contract review, compliance checks Dimension Reading Willingness to pay High. A missed clause costs the customer more than the entire annual tool fee. Compliance burden High but for the customer, not the operator. The operato"
+  },
+  {
+    "url": "/content/ai-ppt-gamma-tome-divergence/",
+    "locale": "en",
+    "title": "Why Gamma hit 100M USD ARR and Tome shut down in the same AI-PPT race",
+    "description": "Two AI-PPT products, one outcome of 100M USD ARR with 100 people at 2.1B USD valuation, the other shut down in April 2025 despite 32M USD raised. The split is a product-intuition story, not a model-performance story. Cold read of the numbers and what a solo builder can take from it.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "ppt",
+      "product-strategy",
+      "case-study",
+      "monetization",
+      "open-source"
+    ],
+    "excerpt": "Two AI-PPT products competed in the same window. One hit 100M USD ARR with under 100 people at a 2.1",
+    "body": "Two AI-PPT products competed in the same window. One hit 100M USD ARR with under 100 people at a 2.1B USD valuation. The other shut down in April 2025 after raising 32M USD. Below is a cold read of why one worked and the other did not, plus a checklist for a solo builder looking at the same niche. The two numbers Company Outcome Window Capital Headcount Gamma 100M USD ARR, 2.1B USD valuation Launch 2022, ARR target end-2025 Not named <100 Tome Product shut down 30 April 2025 32M USD raised Not named The contrast is the entire case. Same niche. Same calendar window. Different outcomes by an order of magnitude on revenue and a full wipe on the loser side. What Gamma actually sells The case is direct: Gamma sells layout and styling, not content. The user types the words. Gamma handles the slide structure, the visual rhythm, the image placement, and the export. The job-to-be-done is \"I know what I want to say, I do not want to spend two hours saying it in PowerPoint\". This positioning drives a weekly cadence. People who make decks weekly (consultants, founders, PMs, sales engineers, internal comms people) come back. Weekly use supports 20 USD/month pricing because the cost-per-use is r"
   },
   {
     "url": "/content/x-com-ai-ipo-window/",

@@ -25,6 +25,7 @@ Thumbs.db
 
 # agent / harness
 .claude/
+.agents/
 
 # Cloudflare Pages build debug snapshot (not source)
 .cf-builds-config.html
