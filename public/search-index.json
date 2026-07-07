@@ -321,6 +321,24 @@
     "body": "一支做消费 AI 修图和视频的小团队,2025 年营收翻了 14 倍,年化冲到 5500 万美金,2026 年初推到 7000 万美金。窗口期内产品没做大版本模型升级,增长的引擎基本是一项运营决策:多数付费漏斗从 App Store 搬到了自建网页。下面把案例摆在桌面上的数字拆开,以及四点案例没说的事。 数字 数量 值 2025 营收增长 14 倍 年化营收(2025) 5500 万美金 年化营收(2026 初) 7000 万美金 App Store 类别排名 照片视频类前 5 融资 无,自负盈亏 风格模板数 1000 累计成片 10 亿 数字为公司自报、未审计。用作方向性论据,不是财报。 支付通道的数学 案例把抽成算得很具体: 这是故事的核心数字。案例说得很直白:同样的用户、同样的产品,只是换了收款的门。1700 万美金的差额,比大多数 AI 消费团队一季度花在模型 API 上的钱都多。 紧挨着抽成的,还有一条隐性的运营成本:税务与退款。在 App Store,苹果代收 VAT、代缴销售税、处理退款与拒付;搬到自建网页,这些活转给运营方自己扛。7000 万美金 GMV 之下,这是一条真实的人力线,案例没点名,但言下之意是已经招了人来扛。 为什么 App Store 是大多数 operator 忘记交的税 大多数消费 AI 团队优先上 iOS,因为 App Store 是获客最便宜、但单位经济学最差的渠道。免费安装零摩擦,但每一次付费转化都要给苹果 30%,运营方看不到是谁付的、什么时候付的、这个同期群后面怎么走。平台掌握客户关系。 案例描述的是另一种打法:iOS 负责留存与日活,网页负责获客与付费转化。广告把流量引到自建定价页,用户在网页上付完款,拿到产品访问权限,之后才被邀请去下 App 做更重的体验。App 是日常驾驶舱,网页是结账台。 这条切分有两个结构性好处: 运营方掌握付费客户。 邮箱、账单、流失原因、退款原因、扩张信号——运营方全可见。苹果不允许这些数据按同期群粒度导出,而且能导出的也有延迟。 广告 CAC 可量化。 某个关键词带来 50 个付费网页客户、CPA 30 美金,可以加预算。某个关键词带来 200 次 App 安装、CPA 6 美金但零订阅,应该立刻停。案例说正是这套数据,让公司一年内把苹果搜索广告的预算放大了 13 倍。 「不做模型」的姿态 案例里第二个不太显眼的取舍,是团队不训基础模型。产品是把大约 1000 个预设「风格」搭在第三方图像和视频模型 API 之上,商业 API 加少量开源都接。每个预设是一条一键工作流——用户描述需求,系统选模型、应用风格、输出成片。 这是一笔主动的交换。运营方不付训练基础模型的资本开支、不背推理成本的长尾、不用每两个月追一次前缘。代价是没有模型护城河。他们真正在堆的护城河是 1000 条工作流的"
   },
   {
+    "url": "/zh/content/web-build-service-ai-leverage/",
+    "locale": "zh",
+    "title": "印度程序员的 AI 工具死了、AI 加持的建站服务活了:2026 年「卖 AI」为什么输给「用 AI」",
+    "description": "冷读一个单人印度 operator 同时做的两个产品:AI 产品图 SaaS(死了——零付费用户)和 AI 加持的小企业建站服务(活了——月收入超他以前整年的工资)。结构主张:AI 不是产品,AI 是成本结构杠杆。AI 工具市场已经饱和,AI 加持的传统服务市场没有。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "service",
+      "leverage",
+      "web-build",
+      "indie",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条知识星球帖子拆的是一名单人印度开发者,他并行做了两个产品:一个 AI 产品图 SaaS 工具,一个 AI 加持的小企业建站服务。SaaS 安静地死了,零付费用户。建站服务活了,一个月赚的钱超过他以",
+    "body": "一条知识星球帖子拆的是一名单人印度开发者,他并行做了两个产品:一个 AI 产品图 SaaS 工具,一个 AI 加持的小企业建站服务。SaaS 安静地死了,零付费用户。建站服务活了,一个月赚的钱超过他以前整年的工资。帖子最终落到的结构主张不是关于 AI 质量——是关于 AI 的角色。AI 不是产品。AI 是让一个传统服务在以前撑不住的价格点与 CAC 下成立的「成本结构杠杆」。下面是双产品对比、免费预览机制的单位经济、以及案例没展开的四点。 双产品对比 产品 状态 机制 结果 AI 产品图 SaaS 关停 订阅模式 零付费用户 AI 加持建站服务 活着 固定价格 + 免费预览 + 7 天交付 月收入 旧年薪 同一个 operator、同一套 AI 工具、同一笔启动资金。两个结果完全在框定上分岔。 SaaS 为什么死 AI 产品图品类在 2026 年有三个结构性问题: 市场饱和。 几十个团队出货同类 AI 产品图工具。Shopify、Amazon、Etsy 给自家商家送了免费或捆绑版。品类结构性过剩。 零差异化。 底层能力就是一次模型 API 调用,所有竞品都能拿到。差异化要靠 UX、分发、工作流集成——每一项都贵过早期 SaaS 能撑住的预算。 没有信任机制。 SaaS 在客户看到价值前就要订阅。冷流量没有现成受众时,转化率撑不起 CAC。 案例没给 CAC 与转化的具体数字,但「零付费用户」这个结果,任意一个原因单独成立都能解释。 建站服务为什么活 服务能跑通是因为一个机制: 免费预览机制把信任门槛干掉了。一个小企业主永远不会冷电话一个陌生人「给我做个网站」,但他会填一张简报,因为提交成本是零。AI 压低的预览成本(1 小时 vs 半天设计师等效工时)是这个 CAC 在毛利下可持续的原因。 这就是杠杆:同一套 AI 工具,做 SaaS 产品时无法差异化,做以前撑不住的服务时把它变得经济上能跑。 单位经济 经济跑得通是因为 AI 同时压了免费预览成本与付费项目成本。没有 AI,免费预览成本就要砸半天 / 条线索;有了 AI,是 1.5 小时 / 条线索。这层压缩就是整个生意模型。 案例落的框定 案例把教训拆成三层: AI 是杠杆,不是产品。 卖 AI → 竞争。用 AI 压低非 AI 服务的成本结构 → 持续收入。 设计一个零风险入口。 免费预览、免费试用、不满意退款——具体形式不重要,原则是把客户第一次接触的信任成本拿掉。 锚定固定价格、固定交付。 小企业客户最怕两件事:不知道要花多少钱,不知道要等多久。两个不确定性都干掉,转化翻倍。 案例没说的事 四点: 固定价格的具体数字。 案例说「固定价格」没给美元数,这是核心单位经济变量。 免费预览的转化率。 20–40% 在可比服务下合理,案例没确认。10% 转化率数学垮掉;50% 转化率意味着 operator "
+  },
+  {
     "url": "/zh/content/english-ai-seo-content-site/",
     "locale": "zh",
     "title": "英文 AI 内容站案例：3 个站、9000 篇文章、6 个月月入 2300 美金 AdSense —— 以及让模型跑通的 500 倍成本压缩",
@@ -709,6 +727,24 @@
     "body": "An AI-illustration account (in the \"图解万物 / 万物图鉴\" mold) reportedly built a 200,000-follower cross-platform matrix in four months on the back of a Coze workflow, and monetizes two layers at once: official creator-share revenue and a 1,000+ RMB paid course that bundles the workflow itself. The headline number — 200k followers in 4 months — is the part that gets shared. The structurally interesting part is the second layer. Below is the math, the workflow shape, and what the case quietly skips. What the case claims Quantity Value Reported cross-platform followers 200,000+ in 4 months Initial niche Cats and dogs (high-emotion, broad appeal) Production tool Coze workflow (prompt + image gen + caption + format) Visual style Flat, character-driven illustration, consistent across posts Monetization layer 1 Official creator-share on the publishing platform Monetization layer 2 1,000+ RMB paid course bundling the Coze workflow Matrix strategy Cross-platform accounts running the same workflow Reported total monthly revenue Not disclosed The case treats the workflow as the asset and the followers as the marketing channel. The two layers are deliberately separated: layer one is algorithm-fragile"
   },
   {
+    "url": "/content/web-build-service-ai-leverage/",
+    "locale": "en",
+    "title": "An Indian dev's AI-SaaS died and his AI-leveraged web-build service thrived: why 'sell AI' loses and 'use AI' wins in 2026",
+    "description": "Cold read of a solo Indian operator who shipped two products side by side: an AI product-photo SaaS (died — zero paying users) and an AI-leveraged small-business web-build service (thrived — pays more than his old salary). The structural claim: AI is not the product, AI is the cost-structure lever. The AI tool market is saturated; the AI-leveraged traditional-service market is not.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "service",
+      "leverage",
+      "web-build",
+      "indie",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A knowledge-planet case profiles a solo Indian developer who launched two products in parallel: an A",
+    "body": "A knowledge-planet case profiles a solo Indian developer who launched two products in parallel: an AI product-photo SaaS tool, and an AI-leveraged web-build service for small businesses. The SaaS died quietly with zero paying users. The service thrived, paying more than his old annual salary in a single month. The structural claim the case lands on is not about AI quality — it is about AI's role. AI is not the product. AI is the cost-structure lever that makes a traditional service viable at price points and CACs that did not work before. Below is the two-product comparison, the unit economics of the free-preview mechanism, and four gaps the case does not address. The two-product comparison Product Status Mechanism Outcome AI product-photo SaaS shut down subscription model zero paying users AI-leveraged web-build service thriving fixed-price, free preview, 7-day delivery income previous annual salary The same operator, the same AI tooling, the same starting capital. The two outcomes diverged entirely on framing. Why the SaaS died The AI-product-photo category has three structural problems in 2026: Market saturation. Dozens of teams ship comparable AI product-photo tools. Major plat"
+  },
+  {
     "url": "/content/x-atypica-ai-consumer-research/",
     "locale": "en",
     "title": "Atypica: a 30-minute AI consumer-insight report at a 50,000–150,000 RMB traditional price, and what the comparison actually skips",
@@ -790,6 +826,40 @@
     ],
     "excerpt": "CBM and dimensional weight are the two numbers that decide what you pay for shipping. Get them wrong",
     "body": "CBM and dimensional weight are the two numbers that decide what you pay for shipping. Get them wrong and you either overpay or get a surprise adjustment bill. What is CBM? CBM = cubic meter. It's the volume of your shipment: Example: a box 60cm × 40cm × 30cm For 10 identical boxes: 0.72 CBM. What is dimensional weight? Dimensional weight (also \"volumetric weight\") accounts for the space a package takes up, not just its mass. Light but bulky items would be unfairly cheap if carriers only charged by actual weight. The divisor depends on the carrier and mode: Mode Divisor Air freight 6000 Express (DHL, FedEx, UPS) 5000 Sea freight (LCL) 1000 USPS First-Class 9000 Amazon FBA inbound 5000 Carrier charges the higher number For every shipment, the carrier calculates both: Actual weight (scale) Dimensional weight (volume ÷ divisor) You pay for the higher of the two. This is called chargeable weight. Worked example A box 50cm × 40cm × 30cm weighing 8kg, shipping via DHL: You pay for 12kg, not 8kg. Even though the scale reads 8. When dimensional weight kicks in Rule of thumb: if your product is bulky and light (pillows, foam, lampshades), dimensional weight always wins. If it's dense and sma"
+  },
+  {
+    "url": "/content/cognition-devin-job-not-tool/",
+    "locale": "en",
+    "title": "Cognition / Devin: 1M to 492M USD ARR in 20 months by selling an AI engineer as a job, not a feature",
+    "description": "Cold read of Cognition (Devin) — 100M to 4.92B-tier annualized revenue in 20 months, 10B USD raise, Goldman / Citi / Mercedes as customers. The structural point: when the product is positioned as a job, the price anchor is a salary, not a subscription.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "enterprise",
+      "developer-tools",
+      "pricing",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A knowledge-planet case walks through Cognition — the company behind Devin — and the framing it land",
+    "body": "A knowledge-planet case walks through Cognition — the company behind Devin — and the framing it lands on: in 20 months, the company reportedly moved from 1M USD to 492M USD annualized revenue, capped by a 1B USD raise at a 26B USD valuation. The customer list (Goldman, Citi, Mercedes, Dell, Cisco, Ramp, Rivian, Nubank, Cloudflare) is what makes the case load-bearing. Below is the math, the job-vs-feature framing, and four gaps the case does not address. What the case claims Quantity Value 2024-09 ARR 1M USD 2026-05 ARR 492M USD Growth multiple 500x in 20 months 2026 raise 1B USD primary Valuation 26B USD Enterprise customers 9 named (Goldman, Citi, Mercedes, Dell, Cisco, Ramp, Rivian, Nubank, Cloudflare) Product framing \"The first autonomous software engineer\" Self-bootstrap claim A large share of Devin's code is written by Devin Pricing posture Anchored to engineer salary, not per-seat tool subscription The case treats the curve as evidence of the framing, not a coincidence. The framing is what makes the price anchor sustainable at enterprise scale. Why job-vs-feature framing changes the price anchor Two products can ship the same model underneath. They do not ship at the same pri"
+  },
+  {
+    "url": "/zh/content/cognition-devin-job-not-tool/",
+    "locale": "zh",
+    "title": "Cognition / Devin:20 个月年化收入从 100 万涨到 4.92 亿,把 AI 工程师当「岗位」卖而不是「功能」卖",
+    "description": "冷读 Cognition(Devin)——20 个月内从 100 万美金年化涨到 4.92 亿,10 亿美金一级市场融资,客户名单 Goldman、Citi、Mercedes。结构要点:产品按「岗位」定价,价格锚定人力年薪,不是按 SaaS 订阅。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "enterprise",
+      "developer-tools",
+      "pricing",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条知识星球帖子拆的是 Cognition——Devin 的母公司——以及它最终落到的一句话:20 个月内,公司据报从 100 万美金涨到 4.92 亿美金年化,接着 10 亿美金一级市场融资,估值 ",
+    "body": "一条知识星球帖子拆的是 Cognition——Devin 的母公司——以及它最终落到的一句话:20 个月内,公司据报从 100 万美金涨到 4.92 亿美金年化,接着 10 亿美金一级市场融资,估值 260 亿。客户名单(Goldman、Citi、Mercedes、Dell、Cisco、Ramp、Rivian、Nubank、Cloudflare)才是这条案例承重的地方。下面是数学、岗位 vs 功能的框定,以及案例没展开的四点。 案例说的数字 数量 值 2024-09 ARR 100 万美金 2026-05 ARR 4.92 亿美金 增长倍数 20 个月 500 倍 2026 融资 10 亿美金一级市场 估值 260 亿美金 企业客户 9 家(Goldman、Citi、Mercedes、Dell、Cisco、Ramp、Rivian、Nubank、Cloudflare) 产品框定 「第一个能自主干活的软件工程师」 自举声明 Devin 自家代码相当一部分由 Devin 自己写 定价姿态 锚定工程师年薪,不是 per-seat 工具订阅 案例把这条曲线当成框定的结果,不是巧合。框定才是让价格锚在企业量级下立得住的东西。 为什么「岗位 vs 功能」框定会把价格锚拉开 两个产品底层可以跑同一个模型,卖不到同一个价。框定决定客户用的是哪个对标: 北美中级工程师一年综合成本 20–30 万美金。如果 Devin 一年收 10–15 万就能替代一个全职工程师的产出,客户 ROI 是 2–3 倍,还没算工具节省。同一个模型套在「功能」框定里,价格封顶 20–100 美元 / seat / 月——同样一笔企业销售,ACV 小 10–30 倍。 这是案例承重的主张:不是「Devin 技术上自主」(这件事每个季度都在动),是它按岗位定价——这让它落在客户 P&L 的人头那条线上,不是 SaaS 那条线。 客户名单是证据 9 家被点名的客户共享两个属性: 大型遗留代码库。 Goldman、Citi、Mercedes、Dell、Cisco、Nubank、Cloudflare 跑的都是跨十年的系统,技术债堆得很深。Devin 在干净 demo 上能干活不稀奇;在 20 年 COBOL + Java 混合的老系统上能干活,才是护城河。 工程组织有预算决策权。 企业工程预算大到能吃 10 万美金 + 的年度合同,不走采购摩擦。SMB 和创业公司工程预算吃不下。案例把 Cognition 框定为 enterprise-first,这是扛得住岗位定价合同的预算档。 这是持续性主张。能抄 Devin 表面的 demo 级竞品有的是;能在 Goldman Sachs 内部代码库上跑出相同性能,门槛高得多。 自举声明 案例报 Devin 自家代码的相当一部分是由 Devin 自己写的。如果属实,结构上"
   },
   {
     "url": "/zh/content/cursor-business-model/",
@@ -1233,6 +1303,42 @@
     ],
     "excerpt": "Lovable, a Sweden-based AI app builder, reportedly hit 500M USD ARR inside two years of launch with ",
     "body": "Lovable, a Sweden-based AI app builder, reportedly hit 500M USD ARR inside two years of launch with under 200 employees and a 6.6B USD valuation. The product does not train its own model. It wraps third-party LLMs into a flow where the user describes what they want and gets a working full-stack app. The case below is a cold read of the unit economics and what the pricing tiers actually imply. The numbers Quantity Value Annualized revenue (latest) 500M USD Headcount <200 Revenue per employee 2M+ USD/year Valuation 6.6B USD Funding round 330M USD ARR growth (latest step) 25%+ Projects shipped per week 1M Monthly visits across shipped apps 600M Total users 8M (50%+ using it for revenue work) The figures are company-attributed. Not audited. Useful as a directional argument. The pricing tiers The case names three tiers. The shape is more important than the numbers: The meter is project complexity and number of generated artifacts. This is \"ship a starter, then meter usage\" — the same shape as Vercel, the same shape as cloud egress, the same shape as any usage-priced infrastructure product. The starter is free, the user's first project is free, and the price scales with how much the user"
+  },
+  {
+    "url": "/content/medvi-one-person-clinic-layer/",
+    "locale": "en",
+    "title": "Medvi: 2 people, 400M USD in 15 months, and the 'own the customer, lease the rest' model behind the curve",
+    "description": "Cold read of Medvi (Matthew Gallagher): 2-person remote-health company doing 400M USD in sales on 250k customers in year one, scaling toward 1.8B USD, 16.2% net margin vs Hims at 5.5% with 2,442 staff. The structural claim: the company is not a healthcare company — it is a customer-acquisition and experience layer on top of rented infrastructure.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "health",
+      "one-person",
+      "infrastructure",
+      "pricing",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A knowledge-planet case profiles Matthew Gallagher's Medvi: a US remote-health company that reported",
+    "body": "A knowledge-planet case profiles Matthew Gallagher's Medvi: a US remote-health company that reportedly hit 400M USD in sales on 250,000 customers in 15 months with a 2-person team, tracking toward 1.8B USD in 2026. The structural claim the case lands on is not \"AI replaced the doctors\" — it is \"Medvi is not a healthcare company. It is a customer-acquisition and experience layer that sits on top of rented healthcare infrastructure.\" Below is the math, the leased-stack model, and four gaps the case does not address. What the case lays out Quantity Value Founder Matthew Gallagher, 41, LA Co-founders 1 (his brother) Total team 2 Launch Sep 2024 Reported sales (year 1) 400M USD Reported customers 250,000 2026 trajectory 1.8B USD (self-reported projection) Net margin 16.2% Comparable: Hims and Hers 2.4B USD revenue, 2,442 employees, 5.5% net margin Product focus Cash-pay prescription weight-loss, direct-to-consumer The case treats the team-size-to-revenue ratio as the load-bearing proof point, not the headline revenue number itself. What Medvi owns vs leases The structural distinction the case draws: A full-stack telehealth company would own all of the leased items — clinical staff, phar"
+  },
+  {
+    "url": "/zh/content/medvi-one-person-clinic-layer/",
+    "locale": "zh",
+    "title": "Medvi:2 个人,15 个月做 4 亿美金,以及「持有客户、租用其余」模型怎么撑起这条曲线",
+    "description": "冷读 Medvi(Matthew Gallagher):2 人远程健康公司 15 个月做到 4 亿美金销售、25 万客户,正冲 18 亿;净利率 16.2%,对比 Hims 5.5% 配 2442 个员工。结构主张:这家公司不是一家医疗公司——它是建在租用基础设施之上的客户获取与体验层。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "health",
+      "one-person",
+      "infrastructure",
+      "pricing",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条知识星球帖子拆的是 Matthew Gallagher 的 Medvi:一家美国远程医疗公司,据报 15 个月做到 4 亿美金销售、25 万客户,2 人团队,2026 年冲 18 亿。帖子最终落到",
+    "body": "一条知识星球帖子拆的是 Matthew Gallagher 的 Medvi:一家美国远程医疗公司,据报 15 个月做到 4 亿美金销售、25 万客户,2 人团队,2026 年冲 18 亿。帖子最终落到的结构主张不是「AI 替代了医生」——是「Medvi 不是一家医疗公司,它是建在租用医疗基础设施之上的客户获取与体验层」。下面是数学、租用栈模型、以及案例没展开的四点。 案例说的数字 数量 值 创始人 Matthew Gallagher,41 岁,洛杉矶 联合创始人 1(他弟弟) 团队总数 2 上线 2024 年 9 月 公开销售(第一年) 4 亿美金 公开客户数 25 万 2026 跟踪 18 亿美金(自报预测) 净利率 16.2% 可比公司:Hims and Hers 24 亿美金收入、2442 名员工、5.5% 净利率 产品方向 现金支付处方减肥药,D2C 案例把「团队规模对收入」的比率当成承重的证据点,不是把标题收入本身。 Medvi 持有 vs 租用什么 案例画的结构分界: 一家全栈远程医疗公司会把租用项全部持有——临床员工、药房基础设施、客服团队、履约。Medvi 一项都不持有。「持有客户、租用其余」是 headcount 卡在 2 人的原因。 为什么这个模型能产生 3 倍净利率 Hims and Hers Health——最接近的公开可比公司——约 24 亿美金收入、2442 名员工、5.5% 净利率。Medvi 据报 16.2% 净利率 + 2 人团队。净利率差不是「公司更小」的函数,是成本结构的函数: 成本项 全栈远程医疗 Medvi 临床员工 雇佣医生,约 20 万美金 / 年 × N 按次租用,随收入可变 药房 自有牌照、履约中心 按张租用,随收入可变 客服 内部团队,约 4 万美金 / 年 × N AI + 语音合成,约 5000–10000 美金 / 月 资本支出 诊所、牌照、履约建设 零 工具栈 per-employee 工具 AI 工具 3000–12000 美金 / 年替代 13 万美金 + 人力 客服这条 3–10 倍的成本差,就是 16.2% 净利率在小团队下能成立的关键。临床与药房层随收入走可变成本,headcount 完全不需要随收入扩展。 价格锚 案例指出 Medvi 的定价锚的是人力成本,不是按张处方计费。一次美国远程问诊按服务报价 80–150 美金,在 Medvi 的订阅包里被打到 30–60 美金。客户把这个 bundle 比作「去诊所」,觉得便宜。Medvi 拿毛利,因为租用进来的边际问诊成本接近 5–15 美金。 这是 Cognition / Devin 同样的「岗位定价」动作,但套在了远程问诊而不是软件工程上。两个产品都落在客户 P&L 的人力那条线,不是按次服务的账单线。 案例点名的失败模式 案例对一条失"
   },
   {
     "url": "/zh/tools/fee-comparator/",
