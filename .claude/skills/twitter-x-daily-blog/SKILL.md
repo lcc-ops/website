@@ -53,6 +53,23 @@ If any pre-flight check fails, abort with a one-sentence remediation.
 
 The skill is a recipe for **you (Claude)** to execute. The skill does NOT spawn sub-servers, run any scheduled task, or call external APIs. All the work is done by you reading, evaluating, writing files.
 
+### Step 0: Inspection scripts live on disk, not inline
+
+For any database inspection, encoding fix-up, candidate filtering, or ad-hoc data
+transformation in this skill, **write a one-off script to `scripts/check/` first
+and invoke it via `python scripts/check/<name>.py`**. Do not paste inline
+`python -c "..."` one-liners into Bash. The user has stated this preference
+explicitly: inline scripts trigger yes-prompts; on-disk scripts do not.
+
+Naming convention: `scripts/check/<step>__<short-purpose>.py`
+(e.g. `scripts/check/step2__list_x_candidates.py`).
+
+Note: the SQLite table is named `topics` in `x.sqlite3` (column names
+`like_count`, `reply_count`, `repost_count`, `quote_count`), not `tweets`.
+The body_text column is stored as GBK bytes decoded as latin1 codepoints; do
+an explicit `bytes_unicode.encode('latin1').decode('utf-8')` round-trip
+before scoring or printing.
+
 ### Step 1: Run the crawl
 
 ```bash
@@ -64,18 +81,10 @@ This connects to Chrome on :9228, drives the x.com search results page for AI-mo
 
 ### Step 2: Identify candidates
 
-From the SQLite `tweets` table, pick posts whose `last_seen_at` is within the last 24 hours, sorted by engagement score:
-
-```sql
-SELECT tweet_id, posted_at, author_handle, likes, replies, quotes, reposts,
-       substr(body_text, 1, 200) AS preview
-FROM tweets
-WHERE last_seen_at >= datetime('now', '-1 day')
-  AND last_seen_at != first_seen_at
-  AND body_text IS NOT NULL
-ORDER BY (coalesce(likes,0)*2 + coalesce(replies,0)*3 + coalesce(quotes,0)*2 + coalesce(reposts,0)*1) DESC
-LIMIT 30
-```
+Write a small inspection script to `scripts/check/step2__list_x_candidates.py`
+that opens the SQLite read-only, decodes body_text via the GBK round-trip,
+and prints posts whose `last_seen_at` is within the last 24 hours, sorted by
+engagement score.
 
 Score formula: `likes*2 + replies*3 + quotes*2 + reposts`. Replies weighted highest because they signal deeper engagement than a like.
 

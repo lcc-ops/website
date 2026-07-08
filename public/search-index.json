@@ -510,6 +510,42 @@
     "body": "订阅产品是否健康，看一个用户终身贡献是否大于获取他的成本。两个数最重要：LTV（生命周期价值）和 CAC（获客成本）。下面的计算器把 LTV/CAC 关系转成每个创始人真正会问的问题——「我需要多少付费用户才能停止在获客上亏钱？」 数学 3 倍 ROI 是常说的及格线。低于它，企业靠时间在烧钱。 怎么用 输入月订阅价格（美元）。 输入一个付费用户的完整获客成本。 输入平均留存月数。如果你只知道月流失率，用 1 除以流失率：月流失 5% ≈ 平均留存 20 个月。 输入目标回本月数——你希望获客成本在多少个月内回本。默认 12 个月是合理的 SaaS 目标。 输出告诉你需要多少付费用户才能回本、对应月 MRR、以及 ROI 倍数。"
   },
   {
+    "url": "/zh/content/ai-service-website-beats-ai-tool/",
+    "locale": "zh",
+    "title": "AI 工具死了，AI 服务活了：印度程序员 7 天固定价建站，怎么把\"卖 AI 的人\"干翻",
+    "description": "冷峻拆解\"AI 是电不是电器\"论点——一个接单者同时上 AI 产品图 SaaS 和 7 天固定价建站服务，SaaS 零付费用户死掉，服务月入超过他之前一整年的工资。这给挑细分赛道的单人接单者留下什么。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "saas",
+      "service-business",
+      "solo-founder",
+      "web-design",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一个印度程序员辞职后并行做两件事。第一个是给电商卖家的 AI 产品图 SaaS。第二个是给小企业主的 7 天固定价建站服务。SaaS 安静地死了，零付费用户。服务现在月入超过他之前一整年的工资。案例论",
+    "body": "一个印度程序员辞职后并行做两件事。第一个是给电商卖家的 AI 产品图 SaaS。第二个是给小企业主的 7 天固定价建站服务。SaaS 安静地死了，零付费用户。服务现在月入超过他之前一整年的工资。案例论断：原因不是 AI，是报价方式。下面是账——哪里站得住、哪里被夸。 接单者到底做了什么 第一个卖的是功能，第二个卖的是结果。第一个的买家做的是采购决策（要不要切换出图流程），第二个的买家做的是信任决策（这个陌生人能不能交付）。两个决策产出两个转化率，案例把第二个当成真战场。 为什么 SaaS 死了 案例给了三个结构性原因： 技术平价。2026 年任何新 AI 出图 SaaS 都要和 50+ 个同类工具抢客户。模型、prompt、集成都在伸手可及的距离。差异化收敛到营销和价格。 免费档竞争。电商平台自己（Shopify、Etsy、Amazon）都在卖家后台塞了同款 AI 出图功能，跟 listing 流程绑定。一个独立 SaaS 对同样的功能收费，等于跟一个已经拥有客户关系的免费对手打。 零切换成本。SaaS 好用，用户能在别的工具里复制 prompt；SaaS 不好用，用户直接走。两边 SaaS 都没拿到锁定。 三条叠加意味着 SaaS 单位经济不可行：CAC 高、LTV 无、护城河零。案例说 SaaS 跑不通是对的；更深的问题是同一个细分里什么才能跑通。 为什么服务赢了 卖的不是\"AI 出图\"，是\"7 天拿到一个能用的商业网站、固定价、看到首页满意了再付钱\"。买家不需要懂 AI，买家需要的是被骗的风险小。免费首页预览把陌生人冷启动最大的信任门槛打掉。 案例暗示单笔毛利 1,000-2,000 美金。账：AI 20-30 分钟出首页，接单者 1-2 小时人工润色，单笔总工时约 6 小时。固定价 1,500-3,000 美金，等效时薪 250-500 美金/小时。这就是\"AI 杠杆\"的具体数字。 \"免费预览\"机制 案例末尾给了一份 5 条清单，前 3 条是承重： 别卖 AI，卖服务。挑一个你懂的服务细分（设计、文案、视频、咨询、培训），用 AI 把交付成本砍 60%+，然后用省下的成本做一个竞争对手不敢做的承诺。 设计一个零风险体验入口。\"免费首版交付 / 满意再付\"，具体形式不重要，核心是买家第一次接触你时不需要任何信任基础。 固定价、固定周期。小企业主最怕两件事：不知道要花多少钱、不知道要等多久。把两个不确定性消灭，转化率翻倍。 第四、第五是运营：瞄准本地小企业（建站需求永远在、对价格敏感但愿为确定性付费、不会自己折腾 Wix）；把 AI 省下的时间用来做更多免费预览，不是用来提前下班。飞轮转起来：更多预览→更多成交→更多作品集→更多自然客流。 案例没说的几件事 客户获取成本。接单者怎么找客户。本地 SEO、冷邮件、Facebook 群、跟商会合作——都合理，"
+  },
+  {
+    "url": "/zh/content/ai-beauty-fanvue-tiktok/",
+    "locale": "zh",
+    "title": "AI 美女 TikTok → Fanvue 漏斗：19 岁单人 2 周 85 万日元，562 个 9.99 美金订阅背后的账",
+    "description": "冷峻拆解 19 岁单人接单者用 Claude 生成舞蹈视频、做 AI 美女 TikTok 账号 5 天涨 5 万粉、转化 562 个 Fanvue 9.99 美金月订阅的漏斗数学。平台风险图、模型脆弱处。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "fanvue",
+      "tiktok",
+      "creator-economy",
+      "adult-creator-stack",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一个 19 岁单人接单者用 Claude 写脚本、指导一系列 AI 生成的舞蹈视频，做 TikTok 账号。5 天涨约 5 万粉。同一个接单者开了一个 Fanvue 9.99 美金/月，两周内 562",
+    "body": "一个 19 岁单人接单者用 Claude 写脚本、指导一系列 AI 生成的舞蹈视频，做 TikTok 账号。5 天涨约 5 万粉。同一个接单者开了一个 Fanvue 9.99 美金/月，两周内 562 个粉丝转化成付费订阅。按案例 2 周收入 8.5 万美金等值日元。模型是两段式：TikTok 在漏斗顶，Fanvue 在底部。下面是账——哪里站得住、哪里被夸。 漏斗具体数字 粉丝到订阅 1.1% 的转化对这个细分来说偏高。案例暗示 8.5 万日元包含一次性峰值（大额打赏、病毒式 PPV、付费聊天）叠在经常性订阅之上。9.99 × 562 × 12 ≈ 6.7 万美金/年 是稳态；2 周 8.5 万美金等值日元是发布峰值，不是 run rate。 为什么用 TikTok 做漏斗顶 TikTok 算法的触达在短视频里压倒一切。1 分钟舞蹈视频上 For You 页能拿到 50 万-200 万曝光。同样的内容放 Instagram Reels 或 YouTube Shorts 表现差 3-10 倍。漏斗把工作分给两个平台：TikTok 负责触达（免费），Fanvue 负责收钱（付费）。每个平台只做一件事。 第二个原因：TikTok 给创作者的分钱达不到把 5 万粉变现的水平。同样的 5 万粉，在别的平台可能每月广告收入 200-500 美金；Fanvue 上 1.1% 转化能拿到 5,610 美金/月经常性。数学逼着走双平台拆分。 Claude 在制作里到底干什么 视频生产栈有三层： 脚本与导演——Claude 写舞蹈编排描述、镜头运动计划、口型同步时间、音频提示。没有 Claude 这一天要半天人写。 画面 prompt——Claude 产出喂给 AI 视频模型的逐帧画面 prompt。prompt 质量决定视觉一致性。 配音与字幕——Claude 写可选的配音文本或字幕，接单者直接贴到视频里。 实际视频帧来自一个视频模型（Kling、Seedance、Sora、Veo 都合理；案例没指明）。Claude 把人类侧的活压掉之后，接单者单条视频从半天压到 1-2 小时。视频模型吃剩下的活。 单位经济细账 按 562 订阅 × 9.99 USD = 5,610 USD/月经常性，等效时薪 5,610 / 50 ≈ 112 USD/小时。叠加小费 / PPV / 私信收入，等效更高，112 USD/小时是地板。漏斗通时账是真的。 案例没说的几件事 流失率。订阅生意活不活看流失。562 订阅每月 10% 流失 = 每月掉 56 订阅、每月要补 56 新订阅才能持平。案例没显示这个数。 退款 / 争议率。订阅模式的拒付是真实成本，这个细分常在 1-3%。案例没拆分。 小费 / PPV / 私信占比。8.5 万日元把经常性和一次性混在一起。90% tips / 10% 订阅"
+  },
+  {
     "url": "/zh/content/x-buddha-youtube-douyin/",
     "locale": "zh",
     "title": "AI 数字人念白在抖音:\"小和尚禅语\" 月涨粉 5 万、靠卖书变现,以及看不见的留存曲线",
@@ -645,6 +681,24 @@
     "body": "A subscription product is healthy when each customer's lifetime contribution exceeds the cost of acquiring them. Two numbers matter: LTV (lifetime value) and CAC (customer acquisition cost). The calculator below turns the LTV/CAC relationship into the question every founder actually asks — \"how many paid users do I need before I stop losing money on acquisition?\" The math A 3x ROI multiple is the commonly cited break-even target. Below that, the business runs on borrowed time. How to use Enter the monthly subscription price (USD). Enter the fully-loaded CAC for a paying user. Enter the average lifetime in months. If you only know monthly churn, divide 1 by the churn rate: 5% monthly churn ≈ 20-month lifetime. Enter the target payback window — the number of months in which you want acquisition costs to pay back. The default 12 months is a reasonable SaaS target. The output shows how many paid users you need to clear acquisition costs, the monthly MRR that requires, and the ROI multiple."
   },
   {
+    "url": "/content/ai-service-website-beats-ai-tool/",
+    "locale": "en",
+    "title": "AI tool died, AI service won: how one Indian programmer built a 7-day fixed-price website business while his AI SaaS got zero paying users",
+    "description": "Cold-eyed read of the \"AI is electricity, not the appliance\" thesis from one operator who shipped an AI product image SaaS alongside a fixed-price website service. The SaaS died with zero paying users. The service earned more in a month than his old annual salary. What that implies for solo operators picking a niche.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "saas",
+      "service-business",
+      "solo-founder",
+      "web-design",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "An Indian programmer quit his job and shipped two things in parallel. The first was an AI product-im",
+    "body": "An Indian programmer quit his job and shipped two things in parallel. The first was an AI product-image SaaS for ecommerce sellers. The second was a fixed-price 7-day website-build service for small businesses. The SaaS died quietly with zero paying users. The service now earns more in a month than he used to make in a year. The case argues the reason is not the AI; it is the offer framing. Numbers, math, and where the case strains. What the operator actually shipped The first product sells a feature. The second sells an outcome. The buyer for the first is a procurement decision (\"do I want to switch my image workflow?\"). The buyer for the second is a trust decision (\"do I believe this stranger can deliver?\"). The two decisions produce two different conversion rates, and the case points at the second as the real game. Why the SaaS died The case gives three reasons, each structural: Technology parity. Any new AI image SaaS in 2026 is competing with 50+ similar tools. Models, prompts, and integrations are all within reach. The differentiation collapses to marketing and pricing. Free-tier competition. The ecommerce platforms themselves (Shopify, Etsy, Amazon) ship comparable AI image "
+  },
+  {
     "url": "/content/ai-tool-non-english-localization/",
     "locale": "en",
     "title": "AI Writing Tool Going Non-English: The Localization Order That Actually Matters",
@@ -676,6 +730,24 @@
     ],
     "excerpt": "这条原推文是个 prompt 模板:「我 [年龄],对 [兴趣] 感兴趣,想用 AI 在 YouTube 赚钱,给我按我的画像排前 5 个 CPM 最高的细分。」有意思的不是模板本身,是模板要返回什么",
     "body": "这条原推文是个 prompt 模板:「我 [年龄],对 [兴趣] 感兴趣,想用 AI 在 YouTube 赚钱,给我按我的画像排前 5 个 CPM 最高的细分。」有意思的不是模板本身,是模板要返回什么答案,收支才能闭环。 CPM(cost per mille,广告主为每 1000 次可变现播放付的钱)在可变现 YouTube 细分之间相差大约 30 倍。第一天选错细分,等于剩下这一年都盖在「每 1000 次播放 2 USD」的地基上。 30 倍的 CPM 差距 US 观众口径下,2026 年中各细分 CPM 的清晰快照: 细分 CPM(USD/千次播放) 广告主为什么付钱 个人理财、投资、保险 28-45 高 LTV 客户,合规买方池 B2B SaaS、martech、dev tools 22-38 中小企业和企业买方在看视频前下单 法律、税务、合规 18-32 高单价专业服务 医疗相关(保险、药店、设备) 15-28 患者获取成本高,合规买方池 职业、技术招聘 12-22 招聘方预算大,按入职可追踪 ROI 软件教程、dev 内容 10-18 开发工具竞争激烈抢曝光 消费电子评测 5-12 播放量高,单播放价值低 教育、K-12 4-9 学校广告预算分散 lifestyle、vlog、美妆、时尚 1-4 播放高,受众广但 LTV 低 游戏 0.6-2 播放巨大,但玩家 LTV 低、ad-block 高 娱乐、meme、剪辑合集 0.4-1.5 同游戏行,部分地理 ad-block 率超 40% 顶部和底部的差距大约 100 倍。「可持续创作者生意」和「花钱的爱好」之间,收益差大约 20 倍。 订阅量级实际能拿到多少 从上面的细分表反推,US 观众为主、每周 2 更、落在金融 / SaaS / 法律细分的频道,大致可以预期: 1K 订阅,月 30K 播放。AdSense: 540-1350 USD/月。不是一份工资。 10K 订阅,月 250K 播放。AdSense: 4.5K-11K USD/月。在低成本地理是一份全职,在高成本地理是副业。 100K 订阅,月 2M 播放。AdSense: 36K-90K USD/月。真正的生意;赞助和产品收入通常再翻倍。 同样到 100K 订阅,在游戏或娱乐细分,AdSense 单项只有 1.2K-4K USD/月。差距是细分,不是工作量。 AI 改的是哪一环 推文假设 AI 是内容生成器。实际的变化是,AI 把单条视频制作成本压到瓶颈步骤——脚本、配音、粗剪——这一层。在 AI 之前,一条 12 分钟的精致视频,creator 时间成本折合 200-600 USD。AI 辅助之后,同一条视频的 creator 时间成本是 8-15 小时,但不再有每分钟的直接现金支出。 这个变化不改变 CPM。它改变的是盈亏临界点(达成"
+  },
+  {
+    "url": "/content/ai-beauty-fanvue-tiktok/",
+    "locale": "en",
+    "title": "AI-generated TikTok creator funneling to Fanvue: 562 subscribers at 9.99 USD, 85K USD JPY in two weeks, and the math behind the funnel",
+    "description": "Cold-eyed read of a 19-year-old solo operator who used Claude to generate dance videos for a TikTok AI-beauty account, grew 50K followers in 5 days, and converted 562 paid subscribers at 9.99 USD/month on Fanvue. The funnel math, the platform-risk picture, and where the model is fragile.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "fanvue",
+      "tiktok",
+      "creator-economy",
+      "adult-creator-stack",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A 19-year-old solo operator used Claude to write scripts and direct a series of AI-generated dance v",
+    "body": "A 19-year-old solo operator used Claude to write scripts and direct a series of AI-generated dance videos for a TikTok account. Five days in, the account had 50K followers. The same operator opened a Fanvue at 9.99 USD/month, and 562 of those followers converted to paid subscribers within two weeks. Two-week revenue, per the case: 85K USD-equivalent in JPY. The model is two-stage: TikTok at the top of the funnel, Fanvue at the bottom. Numbers, math, and where the case strains. The funnel in concrete numbers The 1.1% follower-to-subscriber conversion is high for the niche. The case implies the 85K JPY figure includes a one-time spike (large tips, viral PPV drops, premium chat) on top of the recurring subscription base. The recurring math at 9.99 USD × 562 × 12 = 67K USD/year is the steady-state; the 85K USD-equivalent over 2 weeks is a launch spike, not a run rate. Why TikTok at the top TikTok algorithmic reach is unmatched for short-form video. A 1-minute dance video can land on the For You page and pull 500K-2M impressions in a single day. The same content on Instagram Reels or YouTube Shorts underperforms by 3-10x. The funnel splits the work across platforms: TikTok for reach (fr"
   },
   {
     "url": "/zh/content/amazon-fba-fees-breakdown/",
@@ -743,6 +815,40 @@
     ],
     "excerpt": "A knowledge-planet case profiles a solo Indian developer who launched two products in parallel: an A",
     "body": "A knowledge-planet case profiles a solo Indian developer who launched two products in parallel: an AI product-photo SaaS tool, and an AI-leveraged web-build service for small businesses. The SaaS died quietly with zero paying users. The service thrived, paying more than his old annual salary in a single month. The structural claim the case lands on is not about AI quality — it is about AI's role. AI is not the product. AI is the cost-structure lever that makes a traditional service viable at price points and CACs that did not work before. Below is the two-product comparison, the unit economics of the free-preview mechanism, and four gaps the case does not address. The two-product comparison Product Status Mechanism Outcome AI product-photo SaaS shut down subscription model zero paying users AI-leveraged web-build service thriving fixed-price, free preview, 7-day delivery income previous annual salary The same operator, the same AI tooling, the same starting capital. The two outcomes diverged entirely on framing. Why the SaaS died The AI-product-photo category has three structural problems in 2026: Market saturation. Dozens of teams ship comparable AI product-photo tools. Major plat"
+  },
+  {
+    "url": "/zh/content/atypica-ai-consumer-research/",
+    "locale": "zh",
+    "title": "Atypica AI 消费者洞察：30 分钟出一份原本要 15000 美金的报告",
+    "description": "冷峻拆解一个 AI 消费者洞察工具把 5-15K 美金的咨询交付物压到 30 分钟一人单干的案例，背后对个人接单者、传统调研公司的真实冲击。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "consumer-research",
+      "atypica",
+      "consulting",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一个接单者打开 Atypica，输入一段产品描述和目标人群，30 分钟拿到 30 页消费者洞察报告。传统调研公司报同样交付物 5000-15000 美金、2-4 周。案例断言这个差距会在一年里削掉中型",
+    "body": "一个接单者打开 Atypica，输入一段产品描述和目标人群，30 分钟拿到 30 页消费者洞察报告。传统调研公司报同样交付物 5000-15000 美金、2-4 周。案例断言这个差距会在一年里削掉中型调研业一半。下面是账——哪里站得住、哪里被夸。 成本重写，明账 成本压了大约 100 倍，周期压了大约 100 倍，客户池扩了一个数量级。交付物深度不是 800 个样本的一手调研，更接近筛调研报告。但\"筛调研\"这一层曾是中型公司的现金牛，被吃掉的恰好是这一层。 谁真买，按什么价 三档买家，按\"以前怎么做\"排序： 买家 旧行为 新行为 实际单价 单人创业者 直接跳过调研 向接单者买 30 分钟 Atypica 交付物 200-500 美金 增长市场 每季度向公司买一次洞察 每周自己跑一遍 成本是接单者工资，不是预算项 精品咨询 自己在家做 5K 美金的筛调研 用 Atypica 做初筛，只把高 stakes 项目升级 省 50-70% 中型调研开支 第一行是走量盘。案例的关键论点是：可触达市场恰恰在这一行扩大——以前跳过这步的人现在花 200-500 美金做一次。 中型调研公司的账 一家 2026 年中型调研公司典型地跑： 每季度 5-15 单，单价 5-15K 美金 每单 1-3 个高级顾问，加分析师台子 养台子靠的是筛调研这层的活 如果一半筛调研量流向 Atypica 式单人接单者（按原价十分之一收），公司收入线掉 50%，成本线只掉 20%（高级顾问做高 stakes 项目还要留）。台子先裁。案例说\"传统公司必须缩\"是对的——问题是哪一档公司活下来。高档一手调研（监管市场、定性 panel）耐用；走量筛调研这层被打掉。 单人接单者真实工作流 按案例，合理的接单路径： 免费预览：接单者用 5 分钟 Atypica 跑一版，发给客户一页摘要。不收费。这把信任门槛压到和\"AI 建站\"案例一样——客户在掏钱前先看到东西。 200-500 美金付费交付：接单者把 Atypica 输出打磨一遍，加一道人工解读，发一份 15-25 页报告。这个价客户愿意付，因为比公司报价便宜 10-50 倍。 可选追加：客户想要真正的定性访谈时，接单者外包 5-10 个访谈，每个 50-100 美金，从单笔项目费里出。接单者在追加项上的毛利很薄。 账：30 分钟接单者时间，200-500 美金收入，无样本无合同。成本是 API 订阅，平摊到所有客户上。 案例没说的几件事 一手调研深度。Atypica 是筛选工具。替代不了 800 个样本的问卷、民族志、监管市场准入研究。\"30 分钟\"假设提问本身已经清楚——含糊的需求仍要人先翻译，工具才答得上来。 甲方信任。很多企业甲方仍要求报告封面挂一家有名字的调研公司，原因可能是合规或董事会层面的惯例。单人接单者走量档是真的，但高档单子仍归有品牌的公"
+  },
+  {
+    "url": "/content/atypica-ai-consumer-research/",
+    "locale": "en",
+    "title": "Atypica AI consumer research: a 30-minute report replacing a 15,000 USD traditional engagement",
+    "description": "Cold-eyed read of an AI consumer-insight tool that compresses a 5-15K USD consulting deliverable into 30 minutes of one-person work, and what that compression actually implies for solo operators and traditional research firms.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "consumer-research",
+      "atypica",
+      "consulting",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A solo operator opens Atypica, types a product description and a target segment, and gets a 30-page ",
+    "body": "A solo operator opens Atypica, types a product description and a target segment, and gets a 30-page consumer-insight report in 30 minutes. A traditional research firm would quote 5,000-15,000 USD and 2-4 weeks for the same deliverable. The case argues that this gap will halve the mid-tier research industry within a year. Numbers, math, and where the claim strains. The cost rewrite in plain numbers The shift is roughly 100x on cost, 100x on cycle, and the buyer pool expands by an order of magnitude. The deliverable is not the same depth as a primary-research study with 800 survey respondents — it is closer to a screening report. But the screening tier used to be the mid-tier firm's cash cow, and that is exactly what gets eaten. Who actually buys this, and at what price Three buyer pools, sorted by what they used to do: Buyer Old behavior New behavior Realistic price Solo founder Skipped the research step Pays a solo operator for a 30-min Atypica deliverable 200-500 USD Growth marketer Quarterly insight check from a firm Runs the check weekly, in-house Cost is the operator's salary, not a budget line Boutique consultancy Did the screening study themselves at 5K USD Uses Atypica to tr"
   },
   {
     "url": "/content/x-atypica-ai-consumer-research/",
@@ -860,6 +966,42 @@
     ],
     "excerpt": "一条知识星球帖子拆的是 Cognition——Devin 的母公司——以及它最终落到的一句话:20 个月内,公司据报从 100 万美金涨到 4.92 亿美金年化,接着 10 亿美金一级市场融资,估值 ",
     "body": "一条知识星球帖子拆的是 Cognition——Devin 的母公司——以及它最终落到的一句话:20 个月内,公司据报从 100 万美金涨到 4.92 亿美金年化,接着 10 亿美金一级市场融资,估值 260 亿。客户名单(Goldman、Citi、Mercedes、Dell、Cisco、Ramp、Rivian、Nubank、Cloudflare)才是这条案例承重的地方。下面是数学、岗位 vs 功能的框定,以及案例没展开的四点。 案例说的数字 数量 值 2024-09 ARR 100 万美金 2026-05 ARR 4.92 亿美金 增长倍数 20 个月 500 倍 2026 融资 10 亿美金一级市场 估值 260 亿美金 企业客户 9 家(Goldman、Citi、Mercedes、Dell、Cisco、Ramp、Rivian、Nubank、Cloudflare) 产品框定 「第一个能自主干活的软件工程师」 自举声明 Devin 自家代码相当一部分由 Devin 自己写 定价姿态 锚定工程师年薪,不是 per-seat 工具订阅 案例把这条曲线当成框定的结果,不是巧合。框定才是让价格锚在企业量级下立得住的东西。 为什么「岗位 vs 功能」框定会把价格锚拉开 两个产品底层可以跑同一个模型,卖不到同一个价。框定决定客户用的是哪个对标: 北美中级工程师一年综合成本 20–30 万美金。如果 Devin 一年收 10–15 万就能替代一个全职工程师的产出,客户 ROI 是 2–3 倍,还没算工具节省。同一个模型套在「功能」框定里,价格封顶 20–100 美元 / seat / 月——同样一笔企业销售,ACV 小 10–30 倍。 这是案例承重的主张:不是「Devin 技术上自主」(这件事每个季度都在动),是它按岗位定价——这让它落在客户 P&L 的人头那条线上,不是 SaaS 那条线。 客户名单是证据 9 家被点名的客户共享两个属性: 大型遗留代码库。 Goldman、Citi、Mercedes、Dell、Cisco、Nubank、Cloudflare 跑的都是跨十年的系统,技术债堆得很深。Devin 在干净 demo 上能干活不稀奇;在 20 年 COBOL + Java 混合的老系统上能干活,才是护城河。 工程组织有预算决策权。 企业工程预算大到能吃 10 万美金 + 的年度合同,不走采购摩擦。SMB 和创业公司工程预算吃不下。案例把 Cognition 框定为 enterprise-first,这是扛得住岗位定价合同的预算档。 这是持续性主张。能抄 Devin 表面的 demo 级竞品有的是;能在 Goldman Sachs 内部代码库上跑出相同性能,门槛高得多。 自举声明 案例报 Devin 自家代码的相当一部分是由 Devin 自己写的。如果属实,结构上"
+  },
+  {
+    "url": "/zh/content/cognition-devin-ai-engineer-role/",
+    "locale": "zh",
+    "title": "Cognition Devin 案例：20 个月 ARR 干到 4.92 亿美金，而 AI 编程插件还在千万级挣扎",
+    "description": "冷峻拆解 Cognition Devin 的营收曲线与\"卖岗位不卖功能\"论点。为什么 AI 编程助手卡死在订阅费天花板，而把 AI 包装成\"岗位\"就能解锁高一个数量级的报价。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "coding",
+      "cognition",
+      "devin",
+      "enterprise",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "Cognition Devin 在 2024 年 9 月年化收入还只有 100 万美金，到 2026 年 5 月飙到 4.92 亿美金，20 个月翻了近 500 倍。同一个时间窗里，AI 编程助手还卡",
+    "body": "Cognition Devin 在 2024 年 9 月年化收入还只有 100 万美金，到 2026 年 5 月飙到 4.92 亿美金，20 个月翻了近 500 倍。同一个时间窗里，AI 编程助手还卡在年化几百万美金的层级。案例的论断：差距不是模型更聪明，是锚点不同——Devin 卖的是第一个能自主工作的软件工程师——一个岗位，不是一个 AI 助手——一个功能。下面是账——哪里站得住、哪里被夸。 营收曲线，按案例 时间 年化（USD） 备注 2024-09 约 1,000,000 产品仍在内测 2026-05 约 492,000,000 20 个月 500 倍 一轮融资 26B 估值，融 10 亿 公司自报 按案例，20 个月 500 倍是创业史上最陡的曲线之一。数据是公司自报，无公开审计。492M 美金里多少是经常性收入、多年预付、还是按 ARR 入账的 pipeline，没有公开拆分。 翻转价格的锚点 两个 AI 产品，两个价格点，两套买家逻辑： \"岗位\"框架把 AI 放到买家 P&L 上新招一个人那一行。\"功能\"框架把 AI 放到软件预算里跟所有其他工具竞争。不同预算、不同采购流程、不同价格承受力。案例的关键点：同一个模型包成两种讲法，营收差一个数量级。 客户名单说明剩下的一切 案例挂出的客户：Goldman Sachs、Citi、Mercedes、Dell、Cisco、Ramp、Rivian、Nubank、Cloudflare。这些公司不是付 20 美金/月 买自动补全的。它们的代码库又老又乱，助手在跨服务依赖里幻觉、崩溃。AI 工程师能规划、能写、能测、能往生产分支推的能力不是开发者便利，是这些公司多年想招人没招到的等价人力吞吐。 这客户画像的另一面是：企业采购。签单周期长，安全审计硬，合同金额大。Devin 客户名单就是案例论点真正打开的客户池。 为什么助手天花板是结构性的 案例论断 AI 编程助手有的是结构封顶，不是临时封顶。三个原因： 订阅数学把单座收入压死。20 美金/月 产品的单活跃用户年化收入上限 240 USD。要做到 100M 美金 ARR 需要每月 35000+ 个付费座。愿意付 240 USD/年 买助手的池子有上限；再往下降价，毛利撑不住模型和算力成本。 模型平价重置比较。每次新模型发布都拉高助手能做到的下限。Copilot、Cursor、Codeium 之间的差异收敛到价格和 UX，护城河浅。 交付物是一行代码，不是一个结果。买家能验函数跑没跑，但不容易验助手有没有每天帮我省 30 分钟。价值是隐含的，价格被开发者自付意愿压住。 \"岗位\"框架把三件事一起翻：价格锚人头、差异化在工作流深度（不是模型）、交付物是结果（合并的 PR、生产的部署、关掉的工单）——买家直接能验。 个人接单者真实功课 案例末尾给了 6 条可抄清单。压一"
+  },
+  {
+    "url": "/content/cognition-devin-ai-engineer-role/",
+    "locale": "en",
+    "title": "Cognition Devin case: how an \"AI engineer role\" product hit 492M USD ARR in 20 months while AI-coding plugins stayed at single-digit million",
+    "description": "Cold-eyed read of the Cognition Devin revenue curve and the \"sell the job, not the feature\" thesis. Why AI-coding assistants cap at subscription fees, and why positioning an AI as a headcount replacement unlocks an order-of-magnitude higher price.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "coding",
+      "cognition",
+      "devin",
+      "enterprise",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "Cognition Devin went from 1M USD annualized in September 2024 to 492M USD by May 2026 — a 500x jump ",
+    "body": "Cognition Devin went from 1M USD annualized in September 2024 to 492M USD by May 2026 — a 500x jump in 20 months. The same window saw AI coding assistants stay stuck in the single-digit-million ARR band. The case argues the gap is not a smarter model but a different anchor: Devin is sold as \"the first autonomous software engineer\" — a job, not a feature. Numbers, math, and where the claim strains. The revenue curve as posted Date ARR (USD) Note 2024-09 1,000,000 product still in early access 2026-05 492,000,000 500x in 20 months Round 1,000,000,000 raised at 26B USD valuation self-reported 500x in 20 months is one of the steepest revenue curves in startup history by the case claim. The data is corporate, not audited. There is no public breakdown of how much of the 492M USD is contracted recurring revenue, how much is multi-year prepaid, and how much is pipeline booked as ARR. The anchor that flips the price Two AI products, two price points, two buyer logics: The \"job\" framing puts the AI into the same line item on a buyer P&L where a new hire would sit. The \"feature\" framing puts the AI into a software budget that competes with every other tool. Different budgets, different procur"
   },
   {
     "url": "/zh/content/cursor-business-model/",
@@ -1303,6 +1445,42 @@
     ],
     "excerpt": "Lovable, a Sweden-based AI app builder, reportedly hit 500M USD ARR inside two years of launch with ",
     "body": "Lovable, a Sweden-based AI app builder, reportedly hit 500M USD ARR inside two years of launch with under 200 employees and a 6.6B USD valuation. The product does not train its own model. It wraps third-party LLMs into a flow where the user describes what they want and gets a working full-stack app. The case below is a cold read of the unit economics and what the pricing tiers actually imply. The numbers Quantity Value Annualized revenue (latest) 500M USD Headcount <200 Revenue per employee 2M+ USD/year Valuation 6.6B USD Funding round 330M USD ARR growth (latest step) 25%+ Projects shipped per week 1M Monthly visits across shipped apps 600M Total users 8M (50%+ using it for revenue work) The figures are company-attributed. Not audited. Useful as a directional argument. The pricing tiers The case names three tiers. The shape is more important than the numbers: The meter is project complexity and number of generated artifacts. This is \"ship a starter, then meter usage\" — the same shape as Vercel, the same shape as cloud egress, the same shape as any usage-priced infrastructure product. The starter is free, the user's first project is free, and the price scales with how much the user"
+  },
+  {
+    "url": "/zh/content/medvi-two-person-health-empire/",
+    "locale": "zh",
+    "title": "Medvi 案例：2 个人的远程医疗公司如何在 16 个月里做出 4 亿美金销售额，把 2442 人的对手甩在 5.5% 净利率",
+    "description": "冷峻拆解 Medvi——一个 2 人远程医疗公司如何在 16 个月里做到 4 亿美金销售额、16% 净利率，2442 人的对手 Hims and Hers 反而只有 5.5%。\"拥有客户、租用其他\"论点、AI 工具栈算账、模型在哪里断。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "telehealth",
+      "medvi",
+      "solo-saas",
+      "outsourcing",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "Matthew Gallagher 在 2024 年 9 月用 2 万美金、零员工开了 Medvi。16 个月后这家公司做了 4 亿美金销售额、25 万客户、付两份工资、净利率 16.2%。对手 Hi",
+    "body": "Matthew Gallagher 在 2024 年 9 月用 2 万美金、零员工开了 Medvi。16 个月后这家公司做了 4 亿美金销售额、25 万客户、付两份工资、净利率 16.2%。对手 Hims and Hers 有 2442 个员工、24 亿美金营收、净利率 5.5%。案例论断：差距不是 AI vs 人，是拥有客户 vs 拥有基础设施。下面是账——哪里站得住、哪里被夸。 头条数字，并排放 指标 Medvi（2 人） Hims and Hers（2442 人） 成立 2024 年 9 月 2017 年 2025 销售额 约 4 亿美金 约 24 亿美金 服务客户 约 25 万 案例未披露 员工 2（创始人 + 弟弟） 2442 净利率 16.2% 5.5% 2026 预期 约 18 亿美金 案例未披露 人均销售：Medvi 2 亿美金/人，Hims and Hers 约 100 万美金/人。200 倍差距，案例解读为\"人不是资产，客户关系才是\"。数字均为公司自报，无公开审计。 \"拥有 vs 租用\"的拆分 Medvi 拥有： 品牌和客户面身份 广告素材和分发渠道 客户关系和复购环 AI 辅助的客服层 定价和包装 Medvi 租用： 第三方合规平台上的持牌医生 药房履约和最后一公里配送 支付 客服溢出 AI 工具（Claude 写内容、语音合成撑呼叫中心、编程助手迭代产品） 创始人是\"客户获取和体验层\"，其余是基础设施。案例论断：\"租\"列里的每一项都是一个 SaaS 或服务生意，API 成熟、SLA 成熟、价格线性。\"拥有\"列才是出 margin 的那部分。 AI 工具栈的账 10-40 倍成本差就是护城河。接单者吃差价，客户付得比正规渠道少，租来的基础设施吃掉牌照和合规的活。案例的点：AI 不是产品，AI 是让一个人干十个人活的杠杆。 为什么\"这不是 AI 替代医生\"的故事 案例写得很清楚：医生本来就不在内部。医疗人力本来就是外包给第三方合规平台的。AI 压的是客户体验层的成本，不是医疗层的成本。试图\"替代医生\"的人会撞上 FDA / 州医委会的墙；拥有客户、租用医生的接单者既合法又有 margin。 结构上的功课是看任何一个受监管行业，问：哪一层是有牌照的，哪一层是关系？拥有关系、租牌照。同样的形状在 legaltech（拥有 intake，租律师）、会计（拥有 workflow，租 CPA）、教育（拥有课程销售，租老师）都能用。 个人接单者剧本 案例末尾给了一份 6 条清单： 决定你\"拥有\"什么。品牌、客户名单、复购环、分发。这些绝不外包。 其余全租。合规、履约、基础设施、支付、甚至客服溢出都有成熟的 SaaS，别自己重建。 用现成积木搭系统。支付、邮件、语音、AI 工具都有生产级方案，拼而不是造。 把广告投放做成可测试的机器。AI 一天出 50"
+  },
+  {
+    "url": "/content/medvi-two-person-health-empire/",
+    "locale": "en",
+    "title": "Medvi case: how a 2-person telehealth company hit 400M USD sales in 16 months by owning customers and renting everything else",
+    "description": "Cold-eyed read of Medvi, a 2-person remote-health operator that cleared 400M USD in 16 months and 16% net margin while its 2,442-person competitor ran at 5.5%. The \"own the customer, rent the rest\" thesis, the AI tool stack math, and where the model breaks.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "telehealth",
+      "medvi",
+      "solo-saas",
+      "outsourcing",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "Matthew Gallagher opened Medvi in September 2024 with 20K USD and no employees. Sixteen months later",
+    "body": "Matthew Gallagher opened Medvi in September 2024 with 20K USD and no employees. Sixteen months later the company had done 400M USD in sales, served 250K customers, paid two salaries, and posted a 16.2% net margin. The competitor (Hims and Hers) had 2,442 employees, 2.4B USD in sales, and a 5.5% net margin. The case argues the gap is not AI vs human; it is owning the customer vs owning the infrastructure. Numbers, math, and where the model breaks. The headline numbers, side by side Metric Medvi (2-person) Hims and Hers (2,442-person) Founded September 2024 2017 2025 sales 400M USD 2.4B USD Customers served 250,000 not disclosed in this case Employees 2 (founder + brother) 2,442 Net margin 16.2% 5.5% 2026 trajectory 1.8B USD not disclosed in this case Per-employee sales: Medvi at 200M USD/employee, Hims and Hers at 1M USD/employee. A 200x gap that the case reads as \"the headcount was not the asset — the customer relationship was.\" Numbers are self-reported; no audited statements are public. The \"own vs rent\" split What Medvi owns: Brand and customer-facing identity Ad creative and distribution channels Customer relationship and repeat-purchase loop AI-assisted customer support layer "
   },
   {
     "url": "/content/medvi-one-person-clinic-layer/",
