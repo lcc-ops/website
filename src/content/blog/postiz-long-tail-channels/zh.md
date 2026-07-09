@@ -1,6 +1,6 @@
 ---
 title: 'Postiz 案例:30+ 社交渠道 + 开源,撑起 14.5 万美金 MRR,跟主流赛道错开的那条路'
-description: '冷读 Postiz(开源社媒排期工具)走到 14.5 万美金 MRR 的路子。它真正变现的是什么,护城河在哪里,案例没说清楚哪几件事,以及「长尾集成 + 开源」单位经济学的拆解。'
+description: '拆解 Postiz(开源社媒排期工具)走到 14.5 万美金 MRR 的路子。它真正变现的是什么,护城河在哪里,案例没说清楚哪几件事,以及「长尾集成 + 开源」单位经济学的拆解。'
 pubDate: 2026-07-05
 category: 'ai'
 tags: ['ai', 'open-source', 'saas', 'social-media', 'distribution', 'case-study', 'monetization']

@@ -1,6 +1,6 @@
 ---
 title: 'Postiz 单人做到 14.5 万美金 MRR:集成 30 个别人懒得接的平台才是护城河'
-description: '一支单人开发的社媒排期工具,据披露月经常性收入做到 14.5 万美金,秘诀是接了 30 多个发布渠道——包括竞品懒得接的 Mastodon、Bluesky、Nostr、Warpcast、Telegram、Discord。下面冷读「渠道数」为什么比「更好的 UI」更重要,以及开源怎么变成付费转化漏斗。'
+description: '一支单人开发的社媒排期工具,据披露月经常性收入做到 14.5 万美金,秘诀是接了 30 多个发布渠道——包括竞品懒得接的 Mastodon、Bluesky、Nostr、Warpcast、Telegram、Discord。下面拆「渠道数」为什么比「更好的 UI」更重要,以及开源怎么变成付费转化漏斗。'
 pubDate: 2026-07-06
 category: 'ai'
 tags: ['ai', 'social-media', 'open-source', 'saas', 'case-study', 'monetization']
@@ -20,7 +20,7 @@ faq:
   - q: "案例没说清楚的是什么?"
     a: '三点:(1)维护成本。30+ 平台 API 经常变,鉴权会断,限流会调,主平台 UI 改版要跟着适配。案例没点维护工时——如果每个集成每月 1 天维护,就是 30+ 天/月,不是单人 founder 的数学。(2)开源到付费的转化率。漏斗形状说得通,但案例没给数字。(3)长尾集成的流失——小平台会倒,Mastodon 实例会关、Warpcast 会转型。倒一个就是丢一个付费用户当初选它的功能。这三点案例都是哑的。'
 ---
-一支单人开发的社媒排期工具 Postiz 据披露月经常性收入做到 14.5 万美金。产品不是靠 UI 精致或功能深度赢的。它赢在「接了 30 多个发布渠道」——包括竞品觉得「用户太少不值得做」的 Mastodon、Bluesky、Nostr、Warpcast、Telegram、Discord。整套产品还开源。下面冷读「渠道数」为什么是护城河,以及开源怎么变成付费转化漏斗。
+一支单人开发的社媒排期工具 Postiz 据披露月经常性收入做到 14.5 万美金。产品不是靠 UI 精致或功能深度赢的。它赢在「接了 30 多个发布渠道」——包括竞品觉得「用户太少不值得做」的 Mastodon、Bluesky、Nostr、Warpcast、Telegram、Discord。整套产品还开源。下面拆「渠道数」为什么是护城河,以及开源怎么变成付费转化漏斗。
 
 ## 数字
 

@@ -1,6 +1,6 @@
 ---
 title: "Cognition / Devin:20 个月年化收入从 100 万涨到 4.92 亿,把 AI 工程师当「岗位」卖而不是「功能」卖"
-description: "冷读 Cognition(Devin)——20 个月内从 100 万美金年化涨到 4.92 亿,10 亿美金一级市场融资,客户名单 Goldman、Citi、Mercedes。结构要点:产品按「岗位」定价,价格锚定人力年薪,不是按 SaaS 订阅。"
+description: "拆解 Cognition(Devin)——20 个月内从 100 万美金年化涨到 4.92 亿,10 亿美金一级市场融资,客户名单 Goldman、Citi、Mercedes。结构要点:产品按「岗位」定价,价格锚定人力年薪,不是按 SaaS 订阅。"
 pubDate: 2026-07-07
 category: 'ai'
 tags: ['ai', 'enterprise', 'developer-tools', 'pricing', 'case-study', 'monetization']

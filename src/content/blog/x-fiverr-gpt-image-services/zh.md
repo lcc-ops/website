@@ -1,6 +1,6 @@
 ---
 title: '在 Fiverr 用 GPT Image 接单:单 gig 单位经济、纠纷率、新卖家内卷曲线'
-description: '冷读一个 Fiverr 副业案例——用 GPT Image(或同类模型)做老照片修复、物体消除、AI 商用图,定价 10–100 美元 / 单。下面是单 gig 单位经济、把毛利压下去三件事(纠纷率、平台抽成、新卖家内卷),以及谁能跨过衰减曲线。'
+description: '拆解一个 Fiverr 副业案例——用 GPT Image(或同类模型)做老照片修复、物体消除、AI 商用图,定价 10–100 美元 / 单。下面是单 gig 单位经济、把毛利压下去三件事(纠纷率、平台抽成、新卖家内卷),以及谁能跨过衰减曲线。'
 pubDate: 2026-07-07
 category: 'ai'
 tags: ['ai', 'image', 'fiverr', 'freelance', 'monetization', 'case-study']

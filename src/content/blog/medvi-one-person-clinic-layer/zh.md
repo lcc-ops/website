@@ -1,6 +1,6 @@
 ---
 title: "Medvi:2 个人,15 个月做 4 亿美金,以及「持有客户、租用其余」模型怎么撑起这条曲线"
-description: "冷读 Medvi(Matthew Gallagher):2 人远程健康公司 15 个月做到 4 亿美金销售、25 万客户,正冲 18 亿;净利率 16.2%,对比 Hims 5.5% 配 2442 个员工。结构主张:这家公司不是一家医疗公司——它是建在租用基础设施之上的客户获取与体验层。"
+description: "拆解 Medvi(Matthew Gallagher):2 人远程健康公司 15 个月做到 4 亿美金销售、25 万客户,正冲 18 亿;净利率 16.2%,对比 Hims 5.5% 配 2442 个员工。结构主张:这家公司不是一家医疗公司——它是建在租用基础设施之上的客户获取与体验层。"
 pubDate: 2026-07-07
 category: 'ai'
 tags: ['ai', 'health', 'one-person', 'infrastructure', 'pricing', 'case-study', 'monetization']

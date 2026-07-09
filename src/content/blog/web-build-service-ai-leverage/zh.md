@@ -1,6 +1,6 @@
 ---
 title: "印度程序员的 AI 工具死了、AI 加持的建站服务活了:2026 年「卖 AI」为什么输给「用 AI」"
-description: "冷读一个单人印度 operator 同时做的两个产品:AI 产品图 SaaS(死了——零付费用户)和 AI 加持的小企业建站服务(活了——月收入超他以前整年的工资)。结构主张:AI 不是产品,AI 是成本结构杠杆。AI 工具市场已经饱和,AI 加持的传统服务市场没有。"
+description: "拆解一个单人印度 operator 同时做的两个产品:AI 产品图 SaaS(死了——零付费用户)和 AI 加持的小企业建站服务(活了——月收入超他以前整年的工资)。结构主张:AI 不是产品,AI 是成本结构杠杆。AI 工具市场已经饱和,AI 加持的传统服务市场没有。"
 pubDate: 2026-07-07
 category: 'ai'
 tags: ['ai', 'service', 'leverage', 'web-build', 'indie', 'case-study', 'monetization']

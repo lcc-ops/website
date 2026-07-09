@@ -1,6 +1,6 @@
 ---
 title: 'Atypica:30 分钟出一份消费者洞察报告,传统公司报价 5–15 万,真实套利窗口只有 6–18 个月'
-description: '冷读 Atypica——一款据称 30 分钟就能产出一份传统调研公司报价 5–15 万元的消费者洞察报告的工具。案例把它框定为「单人 operator 倒卖 AI 报告」的套利机会。下面是单位经济、倒卖模型、以及那个对比悄悄略过的几点。'
+description: '拆解 Atypica——一款据称 30 分钟就能产出一份传统调研公司报价 5–15 万元的消费者洞察报告的工具。案例把它框定为「单人 operator 倒卖 AI 报告」的套利机会。下面是单位经济、倒卖模型、以及那个对比悄悄略过的几点。'
 pubDate: 2026-07-07
 category: 'ai'
 tags: ['ai', 'research', 'consumer-insights', 'resale', 'monetization', 'case-study']

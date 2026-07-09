@@ -1,6 +1,6 @@
 ---
 title: '小红书 39 元 AI 头像定制:月单 1500+,Midjourney 月费 30 美元,单人月入 5 万的真实工作量和衰减曲线'
-description: '冷读一个单人 operator 在小红书上跑的 AI 头像定制 gig:客单 39 元、月单 1500+、Midjourney 月费 30 美元是唯一工具成本。下面是单单单位经济、交付物实际工作量、CAC 问题、以及案例没说清的四点。'
+description: '拆解一个单人 operator 在小红书上跑的 AI 头像定制 gig:客单 39 元、月单 1500+、Midjourney 月费 30 美元是唯一工具成本。下面是单单单位经济、交付物实际工作量、CAC 问题、以及案例没说清的四点。'
 pubDate: 2026-07-07
 category: 'ai'
 tags: ['ai', 'avatar', 'xiaohongshu', 'midjourney', 'monetization', 'case-study']
