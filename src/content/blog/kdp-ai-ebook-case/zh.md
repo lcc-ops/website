@@ -1,6 +1,6 @@
 ---
 title: 'AI + Amazon KDP 案例：6 个月 350 本、18000 欧元，以及为什么这是书库赌局而非单本赌局'
-description: '冷峻拆解一个网络流传的 AI 批量电子书 KDP 案例。成本结构算账、20/80 分布、为什么品类选择压过内容质量，以及哪些路径可以照抄、哪些坑必躲。'
+description: '深度拆解一个网络流传的 AI 批量电子书 KDP 案例。成本结构算账、20/80 分布、为什么品类选择压过内容质量，以及哪些路径可以照抄、哪些坑必躲。'
 pubDate: 2026-06-30
 category: 'ai'
 tags: ['ai', 'kdp', 'amazon', 'publishing', 'passive-income', 'case-study', 'monetization']

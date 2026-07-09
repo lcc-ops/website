@@ -1,6 +1,6 @@
 ---
 title: '垂直 AI vs 通用 AI：为什么下一波独立 AI 工具不是 GPT 的另一层壳'
-description: '一条方向性观察：通用 AI 工具赛道已经极度内卷，但垂直 AI 工具（法律科技/医疗/地产/教育/跨境电商）还远没被吃透。冷峻拆解：哪些品类客户真付费、哪些是合规深坑、个人开发者该进哪个。'
+description: '一条方向性观察：通用 AI 工具赛道已经极度内卷，但垂直 AI 工具（法律科技/医疗/地产/教育/跨境电商）还远没被吃透。深度拆解：哪些品类客户真付费、哪些是合规深坑、个人开发者该进哪个。'
 pubDate: 2026-06-30
 category: 'ai'
 tags: ['ai', 'vertical-ai', 'market', 'legaltech', 'medtech', 'case-study', 'monetization']

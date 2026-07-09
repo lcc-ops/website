@@ -1,6 +1,6 @@
 ---
 title: 'Cognition Devin 案例：20 个月 ARR 干到 4.92 亿美金，而 AI 编程插件还在千万级挣扎'
-description: '冷峻拆解 Cognition Devin 的营收曲线与"卖岗位不卖功能"论点。为什么 AI 编程助手卡死在订阅费天花板，而把 AI 包装成"岗位"就能解锁高一个数量级的报价。'
+description: '深度拆解 Cognition Devin 的营收曲线与"卖岗位不卖功能"论点。为什么 AI 编程助手卡死在订阅费天花板，而把 AI 包装成"岗位"就能解锁高一个数量级的报价。'
 pubDate: 2026-07-08
 category: 'ai'
 tags: ['ai', 'coding', 'cognition', 'devin', 'enterprise', 'case-study', 'monetization']

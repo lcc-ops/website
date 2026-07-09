@@ -1,6 +1,6 @@
 ---
 title: 'Atypica AI 消费者洞察：30 分钟出一份原本要 15000 美金的报告'
-description: '冷峻拆解一个 AI 消费者洞察工具把 5-15K 美金的咨询交付物压到 30 分钟一人单干的案例，背后对个人接单者、传统调研公司的真实冲击。'
+description: '深度拆解一个 AI 消费者洞察工具把 5-15K 美金的咨询交付物压到 30 分钟一人单干的案例，背后对个人接单者、传统调研公司的真实冲击。'
 pubDate: 2026-07-08
 category: 'ai'
 tags: ['ai', 'consumer-research', 'atypica', 'consulting', 'case-study', 'monetization']

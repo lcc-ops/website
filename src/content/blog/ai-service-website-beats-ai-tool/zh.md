@@ -1,6 +1,6 @@
 ---
 title: 'AI 工具死了，AI 服务活了：印度程序员 7 天固定价建站，怎么把"卖 AI 的人"干翻'
-description: '冷峻拆解"AI 是电不是电器"论点——一个接单者同时上 AI 产品图 SaaS 和 7 天固定价建站服务，SaaS 零付费用户死掉，服务月入超过他之前一整年的工资。这给挑细分赛道的单人接单者留下什么。'
+description: '深度拆解"AI 是电不是电器"论点——一个接单者同时上 AI 产品图 SaaS 和 7 天固定价建站服务，SaaS 零付费用户死掉，服务月入超过他之前一整年的工资。这给挑细分赛道的单人接单者留下什么。'
 pubDate: 2026-07-08
 category: 'ai'
 tags: ['ai', 'saas', 'service-business', 'solo-founder', 'web-design', 'case-study', 'monetization']

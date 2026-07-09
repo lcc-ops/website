@@ -1,6 +1,6 @@
 ---
 title: 'AI 美女 TikTok → Fanvue 漏斗：19 岁单人 2 周 85 万日元，562 个 9.99 美金订阅背后的账'
-description: '冷峻拆解 19 岁单人接单者用 Claude 生成舞蹈视频、做 AI 美女 TikTok 账号 5 天涨 5 万粉、转化 562 个 Fanvue 9.99 美金月订阅的漏斗数学。平台风险图、模型脆弱处。'
+description: '深度拆解 19 岁单人接单者用 Claude 生成舞蹈视频、做 AI 美女 TikTok 账号 5 天涨 5 万粉、转化 562 个 Fanvue 9.99 美金月订阅的漏斗数学。平台风险图、模型脆弱处。'
 pubDate: 2026-07-08
 category: 'ai'
 tags: ['ai', 'fanvue', 'tiktok', 'creator-economy', 'adult-creator-stack', 'case-study', 'monetization']

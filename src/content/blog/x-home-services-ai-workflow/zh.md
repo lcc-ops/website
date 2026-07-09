@@ -1,6 +1,6 @@
 ---
 title: '家政保洁 AI 工作流案例：报价-验收-回访一条龙，单兵单品类 —— 案例没谈的三件决定单位经济的事'
-description: '冷峻拆解一个 x 案例。向家政/保洁小商家卖 AI 工作流（报价、验收、回访）。定价结构、渠道动态，以及案例跳过的三件决定单兵模型成立与否的事。'
+description: '深度拆解一个 x 案例。向家政/保洁小商家卖 AI 工作流（报价、验收、回访）。定价结构、渠道动态，以及案例跳过的三件决定单兵模型成立与否的事。'
 pubDate: 2026-07-03
 category: 'ai'
 tags: ['ai', 'automation', 'home-services', 'case-study', 'monetization']

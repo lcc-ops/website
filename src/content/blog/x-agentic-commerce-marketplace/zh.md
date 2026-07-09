@@ -1,6 +1,6 @@
 ---
 title: 'Agent 交易市场案例：AI Agent 三角色市场、质押仲裁机制 —— 案例没谈的三件决定单位经济的事'
-description: '冷峻拆解一个 x 案例。OKX AI 的三角色 Agent 市场（用户/ASP/仲裁方），机制做什么、为什么像新一代服务市场平台原型，以及案例跳过的三件事：ASP 获客成本、争议量、需求侧流动性。'
+description: '深度拆解一个 x 案例。OKX AI 的三角色 Agent 市场（用户/ASP/仲裁方），机制做什么、为什么像新一代服务市场平台原型，以及案例跳过的三件事：ASP 获客成本、争议量、需求侧流动性。'
 pubDate: 2026-07-03
 category: 'ai'
 tags: ['ai', 'agent', 'marketplace', 'case-study', 'monetization']

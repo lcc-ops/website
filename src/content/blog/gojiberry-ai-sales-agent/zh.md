@@ -1,6 +1,6 @@
 ---
 title: 'Gojiberry AI: 一个 AI 销售员, 11 个月从 0 到 350 万美金年化, 把自己当第一个客户'
-description: 'Y Combinator 背书的 B2B AI 销售 agent, 11 个月做到 350 万美金年化。冷峻拆解: 单元经济、自我销售飞轮, 以及公开数据没说的三个数字。'
+description: 'Y Combinator 背书的 B2B AI 销售 agent, 11 个月做到 350 万美金年化。深度拆解: 单元经济、自我销售飞轮, 以及公开数据没说的三个数字。'
 pubDate: 2026-07-01
 category: 'ai'
 tags: ['ai', 'b2b-saas', 'sales-automation', 'agent', 'case-study', 'monetization']

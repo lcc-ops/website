@@ -1,6 +1,6 @@
 ---
 title: 'Medvi 案例：2 个人的远程医疗公司如何在 16 个月里做出 4 亿美金销售额，把 2442 人的对手甩在 5.5% 净利率'
-description: '冷峻拆解 Medvi——一个 2 人远程医疗公司如何在 16 个月里做到 4 亿美金销售额、16% 净利率，2442 人的对手 Hims and Hers 反而只有 5.5%。"拥有客户、租用其他"论点、AI 工具栈算账、模型在哪里断。'
+description: '深度拆解 Medvi——一个 2 人远程医疗公司如何在 16 个月里做到 4 亿美金销售额、16% 净利率，2442 人的对手 Hims and Hers 反而只有 5.5%。"拥有客户、租用其他"论点、AI 工具栈算账、模型在哪里断。'
 pubDate: 2026-07-08
 category: 'ai'
 tags: ['ai', 'telehealth', 'medvi', 'solo-saas', 'outsourcing', 'case-study', 'monetization']

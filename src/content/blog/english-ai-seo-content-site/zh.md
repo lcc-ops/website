@@ -1,6 +1,6 @@
 ---
 title: '英文 AI 内容站案例：3 个站、9000 篇文章、6 个月月入 2300 美金 AdSense —— 以及让模型跑通的 500 倍成本压缩'
-description: '冷峻拆解一个 3 站英文 AI AdSense 案例。关键词策略（KD<15、月搜索量 100-500）、生产算账（每天 50 篇 × 0.013 美金/篇）、为什么"AI 不是质量，而是产量"这句话比多数人承认的更真实、模型在哪会破。'
+description: '深度拆解一个 3 站英文 AI AdSense 案例。关键词策略（KD<15、月搜索量 100-500）、生产算账（每天 50 篇 × 0.013 美金/篇）、为什么"AI 不是质量，而是产量"这句话比多数人承认的更真实、模型在哪会破。'
 pubDate: 2026-06-30
 category: 'ai'
 tags: ['ai', 'seo', 'adsense', 'content-site', 'cross-border', 'case-study', 'monetization']

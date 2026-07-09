@@ -1,6 +1,6 @@
 ---
 title: 'Seedance 2.0 产品视频案例：从月薪 8000 的详情页设计师到月入 3 万的 AI 视频接单'
-description: '冷峻拆解一个网络流传的 AI 产品视频接单案例。背后的算账、海外报价区间、"现在是窗口期"的四项论据，以及它在哪里站得住、在哪里拉满。'
+description: '深度拆解一个网络流传的 AI 产品视频接单案例。背后的算账、海外报价区间、"现在是窗口期"的四项论据，以及它在哪里站得住、在哪里拉满。'
 pubDate: 2026-06-30
 category: 'ai'
 tags: ['ai', 'video', 'seedance', 'freelance', 'case-study', 'monetization']

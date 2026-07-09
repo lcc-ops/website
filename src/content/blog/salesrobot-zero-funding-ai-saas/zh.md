@@ -1,6 +1,6 @@
 ---
 title: 'SalesRobot: 一个 100 万美金 ARR 的 LinkedIn AI 工具, 4100 个客户, 零融资'
-description: 'LinkedIn 自动化 + 冷邮件 AI 工具, 100 万美金 ARR, 4100+ B2B 团队, 零外部资金。冷峻拆解: 单元经济, "高度分散市场"论, 以及 bootstrapped AI SaaS 真正证明了什么。'
+description: 'LinkedIn 自动化 + 冷邮件 AI 工具, 100 万美金 ARR, 4100+ B2B 团队, 零外部资金。深度拆解: 单元经济, "高度分散市场"论, 以及 bootstrapped AI SaaS 真正证明了什么。'
 pubDate: 2026-07-01
 category: 'ai'
 tags: ['ai', 'b2b-saas', 'linkedin-automation', 'bootstrapped', 'case-study', 'monetization']
