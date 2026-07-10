@@ -37,17 +37,22 @@ Do NOT invoke for:
 
 ## Pre-flight (run these checks first)
 
-If any pre-flight check fails, abort with a one-sentence remediation.
+If any pre-flight check fails, abort with a one-sentence remediation. Each
+check is a single on-disk script that exits 0/1 — do NOT inline any
+`curl` or `python -c` commands.
 
 1. CDP reachable. Run:
    ```bash
-   curl -sf http://localhost:9228/json/version > /dev/null || abort "Chrome is not debugging on :9228 — relaunch with --remote-debugging-port=9228"
+   bash scripts/check/step1b__cdp_x.sh || abort "Chrome not debugging on :9228 — relaunch with --remote-debugging-port=9228"
    ```
 2. Scraper module importable. Run:
    ```bash
-   python -c "import sys; sys.path.insert(0, 'scripts/scrapers_x'); from _lib import db, cdp, selectors" || abort "scraper module not importable — re-read scripts/scrapers_x/_lib"
+   python scripts/check/step1d__import_x.py || abort "scraper module not importable — re-read scripts/scrapers_x/_lib"
    ```
-3. SQLite present. Verify `scripts/scrapers_x/data/x.sqlite3` exists. If not, run a full crawl once before doing incremental.
+3. SQLite present. Run:
+   ```bash
+   python scripts/check/step1f__sqlite_x.py || abort "x sqlite missing — run a full crawl once first"
+   ```
 
 ## Working procedure
 
