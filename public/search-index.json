@@ -1,5 +1,38 @@
 [
   {
+    "url": "/zh/content/x-ai-monetization-scarce-scenario/",
+    "locale": "zh",
+    "title": "'AI 变现最赚钱的方法' 本身就是个热词——关于 2026 AI 变现的供需失衡",
+    "description": "一个简短观察：'AI 变现最赚钱的方法' 本身就是个被搜索的热词。运营者的判断：工具不稀缺、prompt 不稀缺，能把 AI 产出卖出去的“场景”稀缺。200 字观察，背后的供需拆分、稀缺场景到底在哪里、原话没讲的事，下面。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "market-map",
+      "scenario-scarcity",
+      "monetization",
+      "case-study"
+    ],
+    "excerpt": "一个简短观察：'AI 变现最赚钱的方法' 本身就是个被搜索的热词。判断：工具不稀缺（人人都有 GPT/Claude）、prompt 不稀缺（每个 AI 变现课卖的都是同一套 prompt），但能把 A",
+    "body": "一个简短观察：'AI 变现最赚钱的方法' 本身就是个被搜索的热词。判断：工具不稀缺（人人都有 GPT/Claude）、prompt 不稀缺（每个 AI 变现课卖的都是同一套 prompt），但能把 AI 产出卖出去的“场景”稀缺。算账的关键不在“AI 厉害”，在于供需失衡——供给端 3 年涨 10–50 倍，需求端只涨 2–3 倍。稀缺场景的真实位置、原话没讲的事，下面。 供需拆分 供给端 3 年涨 10–50 倍，需求端只涨 2–3 倍。失衡就是“场景稀缺”这个观察。供给过剩把工具和 prompt 价格压到 commodity；需求稀缺把场景特定的收入保住。 2026 稀缺场景在哪里 四类，每一类买家不同、单位经济不同、平台政策风险不同。稀缺的不是“AI 能做”，是“有个愿意付费的买家存在”。 为什么场景稀缺 三个力把需求端卡紧： 买家信任。 多数买家不愿为能自己跑（20 USD/月订阅）的 AI 产出付费。买家付费是因为没时间、没工具、没 prompt 技能。这是潜在买家总数的一个小切片。 接受度门槛。 B2B 监管行业（法律、医疗、金融）的买家拿 AI 产出后必须人工复核。AI 做 80%，人工收尾。人工复核市场是稀缺的。 平台把关。 TikTok、YouTube、Instagram、Amazon KDP、Etsy 在 2024–2025 都收紧了 AI 内容规则。2024 能跑的场景 2026 可能关了。 原话没讲的事 “热词”这个观察是定性的。 运营者没给搜索量数据或平台趋势数字。这个判断可能是真的，也可能是选择偏差——会做这个观察的人，本身就在搜这个词。 场景列表漏了几个真赚钱的。 AI 写代码服务、AI SMB 客服、AI 线索 agency、AI 个人报税都漏了。漏掉这些把稀缺性讲偏到了内容和 B2B。 场景不是固定的。 每 6–12 个月就有新场景开出来。TikTok Shop 美女是 2024 开出来的，Fanvue AI persona 是 2025，AI 波斯剧是 2026。稀缺框架讲的是封闭集合，真实是动态的。 运营者侧的发现成本。 单人运营者找到一个能转化的场景通常要 3–6 个月试错。原话不讲发现场景的成本，只讲场景存在。 带走就一句 运营者的判断是真的：工具过剩、prompt 过剩、场景稀缺。2026 稀缺场景集中在四类——B2B 可替代工作流、垂类内容农场、运营者侧微型工具、站外 AI 服务。每一类单位经济和平台政策风险不同。读者要做的是找一个愿意付费的买家场景，在供给过剩压毛利之前建一个能防守的位置。观察是有用的框架，不是策略。策略是接下来 3–6 个月的试错，找到一个适合自己技能和受众的稀缺场景。"
+  },
+  {
+    "url": "/content/ai-persian-drama-overseas-revenue/",
+    "locale": "en",
+    "title": "'Revenge of Persia' did $586K in 72 hours on YourChannel: the unit economics of AI short-drama overseas in 2026",
+    "description": "A look at an AI-generated short drama launched on overseas platform YourChannel. Title: 'Revenge of Persia'. Author: a Chinese operator. 72-hour revenue: $586,700 (≈4M RMB). The unit economics of AI short-drama overseas: a single 70-episode AI-generated vertical drama, 72 hours from launch, $586K. The audience is non-Chinese (Persian / Middle East), the platform is overseas (YourChannel), the production cost is AI-near-zero, and the unit revenue per episode is dramatically higher than the equivalent Chinese platform.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "short-drama",
+      "overseas",
+      "monetization",
+      "yourchannel",
+      "case-study"
+    ],
+    "excerpt": "A case profiles an AI-generated short drama launched on overseas platform YourChannel. Title: 'Reven",
+    "body": "A case profiles an AI-generated short drama launched on overseas platform YourChannel. Title: 'Revenge of Persia'. The author is a Chinese operator. The audience is Persian / Middle East. The 72-hour revenue: $586,700, roughly 4M RMB. The production is AI-generated across script, storyboard, voice, and edit. The case lands on the unit economics of AI short-drama overseas in 2026: a single 70-episode vertical drama, 72 hours from launch, $586K revenue, near-zero production cost. Below is the unit-revenue curve, the breakeven math, and four gaps the case does not address. The unit economics comparison What matters is the ARPU gap, not the audience-size gap. The overseas audience is one-tenth the size of a Chinese hit. The per-viewer spend is 5–10x higher. The net revenue per title is 2–3x. The model is: smaller audience, much higher ARPU, faster revenue curve. The 72-hour revenue curve The case states $586K in 72 hours. The lifetime is not given, but comparable AI short-drama titles in 2026 see 70–85% of lifetime revenue in the first 72 hours. The implied lifetime revenue is $700K–$850K, with 10–30% margin to the operator after platform share (typically 30–50%) and refund / chargebac"
+  },
+  {
     "url": "/zh/content/x-ai-product-bootcamp/",
     "locale": "zh",
     "title": "\"30 天 AI 产品变现训练营\"卖的是什么:拆解单位经济",
@@ -14,6 +47,95 @@
     ],
     "excerpt": "这条推文是一条 30 天 AI 产品训练营的销售帖。卖点是:从选品、开发到推广,30 天搞定,cohort 形式授课,Quark 盘链接到课程目录。这种形态很常见,这次拆解适用于这类 offer。 问",
     "body": "这条推文是一条 30 天 AI 产品训练营的销售帖。卖点是:从选品、开发到推广,30 天搞定,cohort 形式授课,Quark 盘链接到课程目录。这种形态很常见,这次拆解适用于这类 offer。 问题不是课程内容是否真实。问题是推文暗示的结果(「30 天就能跑的可持续副业」)是不是课程实际能交付的东西。 销售话术拆解到交付物 逐字读这条帖子,offer 承诺四个组件: 选品。 选一个有清晰痛点和预算的 AI 自动化产品类目。 开发。 用 no-code + AI 在 30 天内交付 v0。 推广。 有模板的付费和自然分发方案。 长期资产框架。 「构建长期副业资产」。 30 天窗口够交付 (1) 和 (2)。不够验证 (3),也不够证明 (4)。 30 天能做什么,不能做什么 阶段 30 天能达成 30 天覆盖不到 选品 选一个毛利率 50%、买家画像清晰的类目 验证这个类目对单人运营者有可触达的分发渠道 开发 用 no-code + LLM 栈交付一个 v0 追上同细分既有竞品的功能完整度 推广 上线落地页、基础广告、内容节奏 建立起让自然分发生效的受众图谱 收入 第 3-4 周拿到前 5 个以内的付费客户 达到稳定的 1K USD/月 run-rate 30 天是交付一个产品的时间表,不是验证一个生意的时间表。「交付 v0」和「验证生意」之间的错位,正是大部分学员卡住的地方。 训练营本身的单位经济 反推一份典型 cohort 训练营的运营方经济: 学费: 1500-3000 USD/人,每 cohort 100-500 人。 单 cohort 总收入: 150K-1.5M USD。 运营方成本: 1-2 名 lead(主讲)+ 社群运营 + 内容制作 + 招募广告投放。 净利率: 40-70%,取决于广告效率。 运营方的生意是把课程卖给下一 cohort,不是自己跑 AI 产品。这没问题,但意味着课程形态由「什么在 creator 受众里跑付费转化最高」决定,而不是「什么让最多毕业生真正跑 AI 产品」。 这条推文没有覆盖的部分 真实获客成本。 「推广」课程通常教小额预算的付费投放。它不教 channel-native 分发——2026 年单人运营者唯一可持续的获客来源。 选品反馈回路。 第 1 周选对产品类目,前提是手上有「哪些类目有可触达分发渠道」的数据。课程通常给启发式,不给数据。 退款和满意度。 大部分 cohort 训练营报 70-90% 满意度。这是问卷数据,不是结果数据。 时间成本 vs 学费。 30 天内 60-90 小时的时间投入是真成本。按任何合理的小时机会成本算,时间是学费的好几倍。 cohort 完成率。 一部分付费学员不会走完 30 天。公开 testimonial 是分子,分母不公开。 30 天之后的支持。 大部分训练营到第 "
+  },
+  {
+    "url": "/zh/content/ai-persian-drama-overseas-revenue/",
+    "locale": "zh",
+    "title": "《波斯的复仇》在 YourChannel 72 小时 58.6 万美金:2026 年 AI 短剧出海的单位经济",
+    "description": "一部 AI 生成的短剧,上到海外平台 YourChannel。剧名《波斯的复仇》,作者是国人。受众:波斯/中东。72 小时营收:58.67 万美金(约 400 万人民币)。这条讲 AI 短剧出海的单位经济——一部 70 集 AI 生成的竖屏短剧,72 小时内 58.6 万美金。受众不是中国人(波斯/中东),平台在海外(YourChannel),制作成本近零,单集单位收入比中国平台高一个数量级。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "short-drama",
+      "overseas",
+      "monetization",
+      "yourchannel",
+      "case-study"
+    ],
+    "excerpt": "一条推文拆的是一部 AI 生成的短剧,上到海外平台 YourChannel。剧名《波斯的复仇》。作者是国人。受众是波斯/中东。72 小时营收 58.67 万美金,约 400 万人民币。制作横跨剧本、分",
+    "body": "一条推文拆的是一部 AI 生成的短剧,上到海外平台 YourChannel。剧名《波斯的复仇》。作者是国人。受众是波斯/中东。72 小时营收 58.67 万美金,约 400 万人民币。制作横跨剧本、分镜、配音、剪辑,全是 AI。案例落 AI 短剧出海在 2026 年的单位经济——一部 70 集竖屏短剧,72 小时内 58.6 万美金营收,制作成本近零。下面是单集营收曲线、盈亏平衡数学,以及案例没展开的四点。 单位经济对比 关键在 ARPU 差,不是受众规模差。海外受众是中国爆款的十分之一。单观众花费高 5–10 倍。单剧净收入 2–3 倍。模型是:小受众,高 ARPU,更快的营收曲线。 72 小时营收曲线 案例给 72 小时 58.6 万。生命周期没说,但 2026 年同类 AI 短剧首 72 小时占 70–85%。隐含生命周期 70 万–85 万美金,扣完平台分成(典型 30–50%)和退款/拒付,operator 净 10–30%。 盈亏平衡数学 案例没给单解锁 ARPU、平台分成、拒付率。隐含 operator 净 20–37.5 万,跨度大,但量级与 2026 年公开的国人 AI 短剧案例一致。 为什么 2026 年这模型能跑 三个原因。 AI 把制作成本压到营收的 1% 以下。 500–5000 美金制作对 20 万–200 万美金单剧营收,制作占比 0.025–2.5%。传统(非 AI)短剧制作成本是营收的 10–30%。AI 成本压缩是整个商业模型。 海外 ARPU 差是结构性的。 波斯/中东/东南亚观众单解锁付 5–10 倍于中国观众。平台分 operator 50–70% 这个高 ARPU 还能自己赚。 72 小时曲线匹配 AI 制作周期。 operator 一周能出货 1–3 部。72 小时营收曲线清完一个 slot。一周复利就是规模化机制。 案例没说的事 四点。 制作成本。 案例说 AI 生成但没给美元数。隐含区间 500–5000,跨度大,影响盈亏平衡。 营销成本。 YourChannel 上趋势需要付费位或强自然流量。案例没处理 CAC。如果 operator 付 5 万美金买趋势位,净利压很多。 退款/拒付率。 海外短剧平台 5–15% 拒付(用户后悔)。案例没处理。10% 拒付意味着 operator 损失 6 万美金左右。 IP 风险。 《波斯的复仇》借用波斯历史叙事。案例没处理文化 IP 风险和平台内容政策风险。第二周平台下架,长尾归零。 结论 案例不是「一部 AI 短剧赚了 58.6 万」。案例是:2026 年 AI 短剧出海,单位收入曲线结构性优于中国平台,AI 制作成本把盈亏平衡压到个位数付费解锁。72 小时窗口就是模型——快内容、快营收、低长尾。一周出货节奏是规模化机制。 看这条案例的多数人,带走就一句:别在中国短剧"
+  },
+  {
+    "url": "/zh/content/x-vincent-ai-monetization-curriculum/",
+    "locale": "zh",
+    "title": "100 集 AI 变现课收下来：'90% 都讲三件事' 这句话，到底在讲什么",
+    "description": "一个案例讲运营者收集近 100 集 AI 变现课程，观察到 90% 都在讲三件事：数字人、换脸、克隆声音。剩下 10% 讲 AI 生成美女内容。把它当作 2026 AI 变现课程市场的 map 来读。三轨集中度、课程经济模型、平台政策风险、原话没讲的事，下面。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "curriculum",
+      "digital-human",
+      "face-swap",
+      "voice-clone",
+      "market-map",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一个运营者收集了近 100 集 AI 变现课程。观察：90% 集中在三件事——数字人视频、换脸、克隆声音。剩下 10% 讲 AI 生成美女内容。原话把它当作 2026 AI 变现课程市场的 map 来",
+    "body": "一个运营者收集了近 100 集 AI 变现课程。观察：90% 集中在三件事——数字人视频、换脸、克隆声音。剩下 10% 讲 AI 生成美女内容。原话把它当作 2026 AI 变现课程市场的 map 来读。算账的关键不在“AI 内容很厉害”，在于课程市场本身高度集中，而集中度本身就是市场在讲“哪条线真的能赚钱”。三轨集中度、课程经济模型、原帖没讲的事，下面。 三轨集中度 90% 集中是按“篇数”算。真实收入集中度更紧——top 10 课程吃掉 50–70% 收入。标准 Pareto：少数课承重，多数是噪声。 课程经济模型 典型 AI 变现课创作者，1–3K 销量、400 RMB 客单，年收入 40–120 万 RMB。是真钱，但不是 VC 规模。市场是 cottage industry——大量小卖家，少数爆款。 为什么集中在三轨 集中不是随机的。三个力推它： 工具门槛低。 数字人、换脸、克隆声音对非技术运营者最容易上手。一节课能在一个屏幕录制里把三轨都 demo 完。10% 美女内容需要账号搭建、内容运营、支付通道管理——30 集课讲不完。 创作者 CAC 低。 录课的人自己往往不是技术背景。他们教自己能 demo 的东西。 受众需求。 三轨都有可见的 TikTok / YouTube 成功案例，课好卖。市场是反馈环：可见成功 → 课好卖 → 更多课 → 课程更窄。 三轨的真实收入 三轨都能赚到钱，但天花板不同。 10% 的课讲美女内容轨道，原因是这条漏斗单人天花板高，但运营复杂度也高——多数录课的人没真跑过，讲不出来。 原帖没讲的事 90% 是按“篇数”算不是按“收入”算。 真实收入集中度更紧，top 10 课很可能吃掉 95%+。90% 这个数低估了市场集中度。 完课率。 低价 AI 课常见 5–15%。多数买家根本没动手做。原帖讲的是“大家在教什么”，不是“大家在学什么”。 退课率。 没披露。低价 AI 课常见 10–25%，高价课（999+ RMB）更高。20% 退课率直接吃掉 20% 收入。 10% 美女内容内部的子项分化。 Fanvue、TikTok Shop 美女、YouTube 美女、X / Threads 美女，每个单位经济和风险都不一样。 带走就一句 90% 集中是真的，但更深的信号是收入集中：少数三轨课程承重，三轨本身的平台政策风险差异极大。读这张 map 要按收入加权，不是按篇数。换脸轨是 2026 平台执法收紧最暴露的；美女内容轨单人天花板最高但运营复杂度最高。100 课合计年收入 3000万–2.5亿 RMB，是真实的 cottage industry——大量小卖家、少数爆款、课程收敛在三件工具上，因为创作者和受众都觉得它简单。"
+  },
+  {
+    "url": "/content/x-vincent-ai-monetization-curriculum/",
+    "locale": "en",
+    "title": "100 AI-monetization courses collected, and what '90% teach the same three things' actually says about the 2026 AI money-making market",
+    "description": "A case profiles an operator who collected nearly 100 AI-monetization courses and observed that 90% of them teach three things: digital humans, face-swap, voice cloning. The remaining 10% teach AI-generated beauty content. The observation is sold as a market-map read. The three-track concentration, the curriculum-economics math, the gap between what is taught and what makes money, and what the 90% claim quietly elides, below.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "curriculum",
+      "digital-human",
+      "face-swap",
+      "voice-clone",
+      "market-map",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "An operator collected nearly 100 AI-monetization courses. The observation: 90% teach digital humans,",
+    "body": "An operator collected nearly 100 AI-monetization courses. The observation: 90% teach digital humans, face-swap, or voice cloning. The remaining 10% teach AI-generated beauty content. The observation is sold as a market-map read. The interesting part is not 'AI is amazing for content' — it is the curriculum market itself is highly concentrated, and the concentration reveals what actually pays. The three-track concentration, the curriculum-economics math, and the four gaps the 90% claim elides, below. The three-track concentration The 90% concentration on the first three tracks is a body-text count. The actual revenue concentration is tighter — the top 10 courses in the three tracks capture 50–70% of aggregate revenue. The market is a textbook Pareto: a small set of courses carry the load, the rest are noise. The curriculum-economics math A typical AI-monetization course creator with 1–3K sales at 400 RMB is at 400K–1.2M RMB annual revenue. That is real money but not venture-scale. The market is a cottage industry — many small sellers, a few breakout hits. Why the curriculum concentrates on three tracks The concentration is not random. Three forces push it: Tool accessibility. Digita"
+  },
+  {
+    "url": "/zh/content/x-my-askai-2ppl-82pct/",
+    "locale": "zh",
+    "title": "2 个人、月 7 万工单、自动解决 82%、单条 0.10 USD：My AskAI 的客服数学和没人讲的集成关键门槛",
+    "description": "My AskAI——Mike Heap 在伦敦，2 人团队。AI 客服 agent 接进已有工单系统，每月自动处理 7 万条工单，解决率 82%，单条成本压到 0.10 USD。250+ 电商和 SaaS 客户。定价锚定人工客服人头，不是软件 seat。漏斗模型、集成关键门槛、原帖没讲的事，下面。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "customer-support",
+      "integration-moat",
+      "per-ticket-pricing",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "My AskAI——Mike Heap 在伦敦，2 人团队。AI 客服 agent 接进已有工单和帮中心系统。月 7 万工单 82% 解决率，单条成本 0.10 USD。250+ 电商和 SaaS 客",
+    "body": "My AskAI——Mike Heap 在伦敦，2 人团队。AI 客服 agent 接进已有工单和帮中心系统。月 7 万工单 82% 解决率，单条成本 0.10 USD。250+ 电商和 SaaS 客户。定价锚定人工客服人头，不是软件 seat。关键不在“AI 会回答工单”，在于集成关键门槛（连接器、帮中心接入、历史人工回复学习）。漏斗模型、集成关键门槛、原帖没讲的事，下面。 单条工单经济 单条数学是结构性动作。客户买的是“客服成本省下来的百分比”，不是软件 seat。99 USD/月 的 seat 是 1188 USD/年；省 200K USD/月 的 20% 是 40K USD/月，年化 48 万 USD/年。后者是前者 400 倍，而且客户更满意——账单跟着自己客服量走。 为什么 2 人在 250+ 客户下能跑 2 人团队能跑是因为产品运营轻。三块叠加： 连接器建一次。 Zendesk、Intercom、Freshdesk、Salesforce Service Cloud、自建栈。每个建一次，所有客户复用。 知识库接入自动化。 客户帮中心文章自动灌进来，不需要人工标注。 历史回复学习自动化。 AI 从客户自己人工回复历史里学，不需要人工标注。 销售是 bottom-up。客户自己找上门，签约，接入。2 人覆盖工程（连接器维护）和客户成功（前 30 天高触感 onboarding）。到 250+ 客户团队要扩——2 个人并行承接不了上百个客户的 30 天高触感 onboarding。 为什么集成关键门槛在累加 关键门槛不是 LLM。三层叠加： 连接器库。 每加一个新连接器多覆盖一个客户群。建 Zendesk 连接器约 2 个工程师周。每个连接器开一个市场切片。 帮中心接入。 产品自动接入客户帮中心文章。接得越多答得越好。新客户 500 篇帮中心文章就能 day 1 用上。 历史回复学习。 AI 从客户自己的人工回复历史里学。客户专属调优随使用时间累加。6 个月客户比 day 1 客户好用一个量级。 新进入者用更好的 LLM 打不过 My AskAI，因为关键门槛在连接器库和客户专属调优。 原帖没讲的事 单客户收入没披露。 250+ 客户数好看，但单客户收入差 100 倍。小电商 500 工单/月和大 SaaS 5 万工单/月是两个合同。 单客户 onboarding 成本。 前 30 天高触感 onboarding 是工程时间。2 人并行承接能力有限，100 客户 onboarding 高峰会压垮团队。 18% 人工处理的 mix 没拆。 AI 哪些场景失败、剩下这部分的客服成本是多少？高风险场景（退款、法律）留在人工里，单条有效成本会拉高。 横向对手没对比。 原帖不和 Intercom Fin、Zendesk AI、Salesforce Einstei"
+  },
+  {
+    "url": "/content/x-my-askai-2ppl-82pct/",
+    "locale": "en",
+    "title": "2 people, 70K tickets per month at 82% auto-resolution, 0.10 USD per ticket: My AskAI's customer-support math, and the integration moat nobody talks about",
+    "description": "My AskAI — Mike Heap in London, 2-person team. AI customer-support agent that plugs into existing ticket systems, resolves 70K tickets per month at 82% resolution rate, costs 0.10 USD per ticket. 250+ e-commerce and SaaS customers. The product sells against a human-support headcount, not a software seat. The funnel math, the integration moat, and the four gaps the case does not cover, below.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "customer-support",
+      "integration-moat",
+      "per-ticket-pricing",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "My AskAI — Mike Heap in London, 2-person team. AI customer-support agent plugs into existing ticketi",
+    "body": "My AskAI — Mike Heap in London, 2-person team. AI customer-support agent plugs into existing ticketing and helpdesk systems. 70K tickets/month at 82% resolution rate. Per-ticket cost 0.10 USD. 250+ e-commerce and SaaS customers. Pricing anchored against human-support headcount, not software seats. The interesting part is not 'AI answers tickets' — it is the integration moat (connectors, help-center ingestion, past-reply learning). The funnel math, the integration moat, and the four gaps the case does not cover, below. The per-ticket economics The per-ticket math is the core move. The customer is buying a percentage of support-cost savings, not a software seat. A seat at 99 USD/month is 1188 USD/year; a 20% share of 200K USD/month savings is 40K USD/month, or 480K USD/year. The latter is 400x the former, and the customer is happier because the bill scales with their support volume. Why 2 people is realistic at 250+ customers The 2-person team is realistic because the product is operations-light. Three components compound: Connectors are built once. Zendesk, Intercom, Freshdesk, Salesforce Service Cloud, custom stacks. Built once, reused across all customers. Knowledge-base ingestion"
   },
   {
     "url": "/zh/content/dropshipping-hidden-costs/",
@@ -61,10 +183,115 @@
     "body": "Shopify 头条数字是 \"$39/月\"。真实成本远高于此。下面是 2026 年一家典型店铺的每一笔费用。 订阅档 套餐 月费 适合 Starter $5 副业、线下销售 Basic $39 新店，月营收 < $10k Shopify $105 增长期，需要更多报表 Advanced $399 年营收 $1M+，最低刷卡费率 三年计划 Basic 降至 $29/月，Advanced 降至 $299/月。 交易费 — Shopify Payments 用 Shopify Payments（底层 Stripe）： 渠道 在线 线下 Basic 套餐 2.9% + $0.30 2.7% + $0.00 Shopify 套餐 2.7% + $0.30 2.5% + $0.00 Advanced 套餐 2.5% + $0.30 2.4% + $0.00 国际卡（非美国）在百分比上额外加 1.5%。 交易费 — 第三方网关 用 PayPal、Stripe 直连或其他网关： Basic 套餐：每笔额外 2.0% Shopify 套餐：1.0% Advanced 套餐：0.5% 算账：Basic + PayPal = 3.49% + $0.30 + PayPal 费率。$10k/月以下就用 Shopify Payments，别折腾。 $50 一单实际到手 假设 Shopify Basic + Shopify Payments，无应用额外抽成： $50 一单平台成本 4.8%。$20 一单 7.4%。$200 一单 3.6%。 多数卖家漏掉的隐藏费 货币转换 Shopify Payments 对非美元交易额外收 1.5%，再加 1–2% 的汇兑点差。尽量用美元结算。 退款费 Shopify 交易费在退款时不退。服装类影响大 — 15% 退货率意味着你付了 $1.75 交易费处理订单，退款后这 $1.75 白付。 拒付费 每笔拒付 $15，不管输赢。哪怕赢了，你也付了 $15 自卫。 应用交易费 部分应用（订阅、批发、市场）在 Shopify Payments 之上额外收 2%。检查应用栈。 主题费 免费主题功能有限。多数正经店铺一次性付 $150–350 买付费主题。避开有隐藏授权的\"免费主题\"。 邮件成本 Shopify Email 前 10,000 封/月免费，超出 $0.001/封。Klaviyo 集成 500 联系人后起步 $45/月。 真实店铺的月度账单 项目 成本 Basic 订阅 $39 付费主题（摊销） $12 5 个必备应用（平均） $90 邮件工具（1k 联系人） $30 域名 $1 固定合计 $172/月 交易费（$10k 营收） $320 平台总成本 $492 占总营收 4.9%。定价时直接算进去。 什么时候升级套餐 Basic 继续用，直到： 月流"
   },
   {
+    "url": "/zh/content/x-mercor-expert-data-pipeline/",
+    "locale": "zh",
+    "title": "3 年做到 20 亿美金年化：Mercor 不卖模型也不卖应用，卖的是“专家小时数”",
+    "description": "Mercor——3 年公司，2026 年 6 月跨过 20 亿美金年化收入。每天给全球专家发出去 389 万美金，累计建了 29.5 万个专家岗位，均时薪 124 USD。产品不是模型也不是应用，是给 AI 训练供应专家人力的 staffing 层。定价锚定专家小时，不锚软件月费。卖铲子的位置、专家供给关键门槛、原帖没讲的事，下面。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "data-labeling",
+      "expert-supply",
+      "pick-and-shovel",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "Mercor——AI 实验室和领域专家之间的 staffing 层。2026 年 6 月年化 20 亿美金，2026 年 2 月年化 10 亿（4 个月前），2025 年 9 月年化 5 亿（5 个月",
+    "body": "Mercor——AI 实验室和领域专家之间的 staffing 层。2026 年 6 月年化 20 亿美金，2026 年 2 月年化 10 亿（4 个月前），2025 年 9 月年化 5 亿（5 个月前）。累计 29.5 万个专家岗位，每天发出去 389 万美金，均时薪 124 USD。最高：肿瘤 130–180 USD，法律 100–150 USD，MBB 100 USD。关键不在“Mercor 招专家”，在于站在所有模型公司上游的卖铲子位置。单位经济、专家供给关键门槛、原帖没讲的事，下面。 卖铲子的位置 20 亿美金年化这个数字最有可能是 GMV / 流水，不是净收入。按 30% 抽成 × 3.66 亿美金流水算，Mercor 净收入接近 1.1 亿美金——还是真实生意，但数字不同。原帖报大数字是因为成长阶段指标读起来好看。 为什么关键门槛是运营不是技术 关键门槛不是匹配算法。三个运营层在累加： 招聘。 Mercor 品牌吸引想要灵活小时工的专家。供给端月月在扩大。新进入者面对冷启动——专家不会信任一个没听说过的品牌交出自己的资质。 背调。 Mercor 做资质核验、样本测试、质量打分。背调流水线是真正的产品；匹配算法是 commodity。 工作流。 任务模板、质量评分、争议解决。实验室跨项目复用 Mercor 的工作流。切换成本是运营层的，不是合同层的。 新进入者用更好的算法打不过 Mercor，因为关键门槛在供给侧关系和工作流库。 为什么定价锚定专家小时 124 USD/小时均价不是软件价——是人力价。买家（AI 实验室）的对比： 买家付的是“领域专家 + 质量保障 + 工作流整合”。124 USD/小时是带质量保证的弹性专家雇佣的全成本时薪。锚定软件 seat 会把 Mercor 压在 5–50 USD/seat/月——完全是另一个生意。 原帖没讲的事 净收入 vs GMV。 20 亿美金最有可能是流水，不是净收入。抽成 × 体量才是真数字。1.1 亿美金净估算只是粗略但更接近财务现实。 客户集中度。 原帖不讲哪些实验室占多少份额。一两个大客户的合同流失就是 30–50% 收入事件。 专家留存。 124 USD/小时这个水平，留存是有竞争的。原帖不讲专家或实验室客户的流失率。两个数都重要。 质量争议率。 专家产出是主观的（“这条法律标注对不对”“这份医学摘要准不准”）。原帖暗示质量高但没给单任务争议率或退款率。5–10% 争议率是合理的，会吃掉毛利。 带走就一句 Mercor 是真实的卖铲子生意——站在所有模型实验室上游，在专家小时上抽佣。20 亿美金年化这个标题最有可能是 GMV 不是净收入；真实收入按 30% 抽成算接近 1–1.5 亿美金/年。关键门槛是运营层的（招聘、背调、工作流），不是技术层的。读者照抄要先选 1 个垂直（法律或医疗）、"
+  },
+  {
+    "url": "/content/ai-side-hustle-github-stacks/",
+    "locale": "en",
+    "title": "5 open-source AI side-hustle playbooks on GitHub: a meta-read of the 2026 'AI money-maker handbook' stack",
+    "description": "A look at a Chinese operator who curates 5 open-source AI side-hustle playbooks on GitHub. Stacks covered: AI-money-maker handbook (AI tools, SaaS, self-media, API aggregation, overseas projects), developer side-hustle collection, AI-content pipelines, AI-image services, AI-drama production. The case is not a single playbook — it is a meta-read of the recurring shape of AI side-hustle playbooks in 2026. The recurring shape: every playbook ends with a workflow diagram, a tool list, and a 'revenue curve' that is suspiciously steep.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "side-hustle",
+      "open-source",
+      "playbook",
+      "github",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A Chinese operator curates 5 open-source AI side-hustle playbooks on GitHub. The collection covers A",
+    "body": "A Chinese operator curates 5 open-source AI side-hustle playbooks on GitHub. The collection covers AI tools, SaaS, self-media, API aggregation, overseas projects, AI-content production, AI-image services, and AI-drama production. The case is not a single playbook — it is a meta-read of the recurring shape of 2026 AI side-hustle playbooks. The recurring shape: every playbook ships a workflow diagram, a tool list, and a 'revenue curve' that is suspiciously steep. The unit-economics section is missing in 4 of 5. The meta-lesson: the playbooks ship the upside, skip the gap, and the gap is where most readers lose money. Below is the recurring shape, the unit-economics gap, and four gaps the case does not address. The recurring shape across all 5 playbooks The shape is consistent across all 5 playbooks. The point is not that the playbooks are wrong — it is that they are incomplete. The playbooks ship the upside and skip the gap. The gap is where the unit-economics risk lives. The unit-economics gap The gap is structural. The playbooks assume a frictionless distribution channel; the reality is that distribution is the bottleneck. The playbooks assume a free or near-free tool stack; the re"
+  },
+  {
+    "url": "/zh/content/x-spott-old-ats-rebuild/",
+    "locale": "zh",
+    "title": "6 个月做到月 100 万美金：Spott 怎么用 AI 重建 Bullhorn 这种 20 年没人重做的招聘软件",
+    "description": "Spott——3 个麦肯锡/BCG/贝恩出来的创始人，2024 上线，6 个月内月收入涨 8 倍到 100 万美金（年化 1200 万）。YC W25，种子 320 万美金（Base10 领投）。产品替代 Bullhorn / Loxo / Vincere——招聘中介用了 20 年的 ATS/CRM 栈。关键不在“AI 重建招聘软件”，在于这种又老又没人重做的苦活是 2026 AI 性价比最高的玩法。单位经济、迁移这件事、原帖没讲的事，下面。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "recruiting",
+      "old-software-replacement",
+      "ats-crm",
+      "migration-moat",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "Spott——3 个麦肯锡/BCG/贝恩出来的创始人，2024 上线，6 个月内月收入涨 8 倍到 100 万美金（年化 1200 万）。YC W25，种子 320 万美金（Base10 领投）。产品",
+    "body": "Spott——3 个麦肯锡/BCG/贝恩出来的创始人，2024 上线，6 个月内月收入涨 8 倍到 100 万美金（年化 1200 万）。YC W25，种子 320 万美金（Base10 领投）。产品替代 Bullhorn、Loxo、Vincere——招聘中介用了 20 年的 ATS/CRM 栈。关键不在“AI 重建招聘软件”，在于又老又没人重做的苦活是 2026 AI 性价比最高的玩法。需求已验证、痛点已存在、迁移门槛锁赢面。单位经济、迁移这件事、原帖没讲的事，下面。 为什么又老又没人重做的苦活是最佳 AI 玩法 3 个结构原因在累加。读者扫 AI 玩法应该把“老软件替代”权重放在 greenfield AI 产品之上，因为需求端已经解决。风险在执行，不在市场。 月 100 万美金时的单位经济 定价数学比老 ATS seat 涨 10–50 倍。原因是锚——Spott 锚的是招聘官全成本（10 万+ USD/年），不是软件 seat（1.2–3.6K USD/年）。对 10 万 USD/年全成本的招聘官，500 USD/月这个价对中介老板像是不用脑子的选择。 为什么迁移是承重产品功能 4 周迁移是真正卖单的东西。新 UI 是关 demo 的东西，迁移是关合同的。三个原因： 数据引力。 招聘中介的候选人库是它的关键门槛。5 年 placement、10 万+ 候选人 profile、自定义笔记、招聘网站和 LinkedIn Recruiter 集成。糟糕迁移丢了这些，对推动切换的招聘官是职业自杀。 切换成本。 一旦数据搬进 Spott，自定义字段和集成重建好，切回 Bullhorn 的成本巨大。迁移门槛把客户锁 3+ 年。 销售周期加速。 一页能讲清的迁移计划把采购周期从 6 个月压到 4–6 周。采购签字是因为迁移风险被框住了。 原帖没讲的事 客户数和集中度。 月 100 万美金不讲是 50 个大客户还是 200 个中型客户。50 客户书走一个就是 6% 月流失风险；200 客户书分散得多。 迁移团队容量。 4 周迁移是高触感工程。并行 10 个迁移要 10 人迁移团队。原帖没讲怎么随客户数扩团队。 按 recruiter 还是按 agency 定价。 原帖不讲 Spott 按 recruiter seat 收还是按 agency 打包收。按 recruiter 定价随 agency 增长扩张；打包价扩张更难。 退款或流失率。 招聘中介在 placement 慢下来或招聘官离职时流失。净留存 ARR 是比毛 ARR 低一截的数字。 带走就一句 模型是真的：3 个咨询出身、6 个月做到月 100 万、替代 20 年老招聘软件。结构性动作是定价锚定招聘官全成本，不是软件 seat——单合同涨 10–50 倍。迁移是承重产品功能；4 周零停机迁移把客户锁 3+ "
+  },
+  {
+    "url": "/zh/content/x-jordan-gal-ai-voice-49usd/",
+    "locale": "zh",
+    "title": "6 人、单 49 USD/月、8 个月做到 100 万美金 ARR：Jordan Gal 的 AI 语音怎么吃本地小生意",
+    "description": "一个 AI 语音产品（Jordan Gal）：6 人团队，90 天出第一版，8 个月做到 100 万美金 ARR，订阅一直只有一个 49 USD/月。冷启动靠每天 1000 封冷邮件，连发 2 个月。定价锚定前台人力，不是软件 seat。漏斗模型、单 plan 纪律、原帖没讲的事，下面。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "voice",
+      "small-business",
+      "missed-call",
+      "single-plan",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一个 AI 语音产品，瞄准会漏接电话的本地小生意。6 人团队，90 天出第一版，8 个月做到 100 万美金 ARR。整个上线期订阅就一个 49 USD/月。冷启动每天约 1000 封冷邮件，连发 2",
+    "body": "一个 AI 语音产品，瞄准会漏接电话的本地小生意。6 人团队，90 天出第一版，8 个月做到 100 万美金 ARR。整个上线期订阅就一个 49 USD/月。冷启动每天约 1000 封冷邮件，连发 2 个月。SEO + 付费广告各占一半获客。关键不在“AI 会打电话”，在于单 plan 纪律和冷邮件 CAC 数学。漏斗模型、原帖没讲的事，下面。 100 万美金 ARR 时的单位经济 100 万美金 ARR 时，贡献毛利（69.3–89.8 万 USD）还覆盖不了团队成本（120 万 USD）。产品对团队成本还没盈利。要打平团队成本需要约 2300–3000 付费客户——这是原帖暗示的下一个里程碑。 冷邮件 CAC 数学 冷邮件 CAC 数学是承重假设。在高意向语音类目 1–3% 回复率下数学很优。如果回复率掉到 0.3–0.5%（更接近 2026 冷邮件平均水平），cohort 经济会被压。 为什么坚持单 plan 三个结构原因推单 plan： 决策成本。 小生意老板看 49 / 99 / 199 USD 三个 plan，决策时间是单 plan 的 10 倍，且经常什么都不选。单 49 USD 去掉决策摩擦。 支持成本。 多 plan 意味着多 setup 路径、多功能门禁、多工单。单 plan 一个 setup 流程、一套功能、工单少。 升级路径。 客户用 49 USD 3–6 个月后问“我有 3 个店，能打折吗”——这是自然升级时刻，由客户需求驱动，不是 plan 档位强推。 原帖没讲的事 月流失率。 49 USD/月 SMB 流失模式下，5–10% 月流失是合理的。原帖报 ARR，没报净留存 ARR。1700 客户 7% 月流失意味着每月丢 119 个、补 119 个才能持平。 AI 语音披露合规成本。 原帖不讲怎么处理 FCC 和各州 AI 语音披露规则。2026 执法收紧可能要求每通电话前播报 AI 提示，增加延迟降低转化。 冷邮件送达率。 1000/天 连发 2 个月共 6 万封邮件，没讲垃圾邮件过滤率和发件域名信誉成本。邮箱服务商在高量时会限流，原帖不讲轮换多少个发件域名。 升级机制。 原帖不讲 49 USD 单 plan 客户怎么变成 99 USD 或 199 USD 客户。暗示的机制是多店批量定价，但数学没给。 带走就一句 模型是真的：6 人、单 49 USD、8 个月 100 万美金 ARR。冷邮件 CAC 数学是承重假设——在 1–3% 回复率下数学很优，但回到 2026 平均 0.3–0.5% 会被压。读者照抄要先在自己垂直里测试冷邮件回复率，再决定是不是投 6 个人 90 天。单 plan 纪律是保住贡献毛利和压低支持成本的结构性动作。100 万美金 ARR 时产品还没盈利——下一个 1300 个客户才是盈亏平衡点。"
+  },
+  {
+    "url": "/zh/content/x-wesley-tian-headshot-9ppl/",
+    "locale": "zh",
+    "title": "9 人、4 个月 100 万美金、2 年 1000 万美金：Wesley Tian 的 AI 职业头像怎么把 200 美金的影棚切成 10–30 美金的软件",
+    "description": "一个 AI 职业头像产品：9 个员工，4 个月做到 100 万美金年收入，2 年做到 1000 万美金，服务 100 万+ 职场人，累计生成 2500 万张头像。定价 10–30 USD / 套，对标 200+ USD 的影棚。关键不在“AI 生成头像”，在于按职业切垂直细分（律师、房产、医生、创始人、LinkedIn）。每个职业的单价模型、CAC 数学、原帖没讲的事，下面。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "headshot",
+      "professional-services",
+      "vertical-niche",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一个 AI 职业头像产品，9 个员工，4 个月做到 100 万美金年收入，2 年做到 1000 万美金，100 万+ 职场人，累计生成 2500 万张头像，平均每用户 25 张——复购是承重收入。定价",
+    "body": "一个 AI 职业头像产品，9 个员工，4 个月做到 100 万美金年收入，2 年做到 1000 万美金，100 万+ 职场人，累计生成 2500 万张头像，平均每用户 25 张——复购是承重收入。定价 10–30 USD / 套，对标 200+ USD 影棚。关键不在“AI 出图”，在于按职业切垂直细分。每个职业一套落地页、一套定价锚点、一套复购触发器。每个职业的单价模型、原帖没讲的事，下面。 按职业切分的 TAM 数学 有意思的结构性动作是“切片”。通用“AI 头像给所有人”产品被压在 9.99 USD 大众市场，靠价格竞争。按职业切的产品落在 30 USD 这一档，靠“对标影棚”竞争。单用户收入 3 倍、转化率 3–5 倍、CAC 回本更快。 单次生成的单位经济 9 人团队是瓶颈，不是模型成本。每个员工一年贡献 110 万美金——是消费级产品团队的 top decile。模型成本是变量，团队成本是固定的。 为什么是每个用户 25 张 25 张这个数字是设计出来的，不是偶然。每个职业都有自己的触发器： 律师换工作 → 需要新头像 房产经纪换 brokerage → 需要新头像 医生换执业点 → 需要新头像 创始人换项目 → 需要新头像 LinkedIn 资料 2–3 年更新一次 → 需要新头像 产品设计上让用户在 3 年生命周期里跨 3–4 个职业复购 4–6 次。25 张是这个周期累计的产出，不是单次互动的产出。 原帖没讲的事 按职业的收入拆分。 1000 万美金/年合计数盖住了哪条细分承重。律师 80% + 其他 20% 和均衡拆分，单位经济完全不同。 退款率。 AI 头像品类常见 15–25% 退款率（“不像我”“脸不对”“光线差”）。20% 退款率直接把毛利从 90% 拉到 70%。 客服负担。 每张退款要设计师或训练过的运营人工复核。9 人团队的处理能力是瓶颈。没有客服自动化的扩张直接撞到团队规模。 按落地页的 CAC。 律师 CAC 和房产 CAC 完全不同。原帖不讲是不是某个细分 5 USD CAC 拿到客户、另一个 50 USD。 带走就一句 模型是真的：4 个月 100 万、2 年 1000 万、9 个员工。按职业切细分是把产品从 9.99 USD 大众市场抬到 30 USD 职业定向市场的关键动作。复购（每个用户 25 张头像跨 4–6 个职业）承重。读者照抄要先选 1 个职业、定价锚定影棚、设计 3 年里 4–6 次复购触发器。1000 万美金/年当 9 人稳态看；过 2000 万美金要加人或加流程自动化。"
+  },
+  {
+    "url": "/content/x-wesley-tian-headshot-9ppl/",
+    "locale": "en",
+    "title": "9 people, 10M USD year-one to 100M USD year-three: how Wesley Tian's AI-headshot shop slices a 200 USD studio visit into a 10–30 USD software product",
+    "description": "A case profiles Wesley Tian's AI-headshot product: 9 employees, 4 months to 1M USD/year, 2 years to 10M USD/year, 1M+ professionals served, 25M+ headshots generated. Pricing: 10–30 USD per set vs the 200 USD+ studio alternative. The interesting part is not 'AI generates headshots' — it is the vertical-niche slicing by profession (lawyer, realtor, doctor, founder, LinkedIn). The unit economics per profession, the per-job CAC math, and the four gaps the case does not cover, below.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "headshot",
+      "professional-services",
+      "vertical-niche",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A case profiles Wesley Tian's AI-headshot product. 9 employees. 4 months to 1M USD/year. 2 years to ",
+    "body": "A case profiles Wesley Tian's AI-headshot product. 9 employees. 4 months to 1M USD/year. 2 years to 10M USD/year. 1M+ professionals served. 25M+ headshots generated. Average per-user 25 headshots — repeat purchases are the load-bearing revenue. Pricing 10–30 USD vs the 200 USD+ studio alternative. The interesting part is not 'AI generates photos' — it is the vertical-niche slicing by profession. Each profession gets its own landing page, its own pricing anchor, its own repeat-purchase triggers. The unit economics per profession and the four gaps the case does not cover, below. The vertical-niche slicing math The interesting core move is the slicing. A generic 'AI headshot for everyone' product lands in the 9.99 USD mass-market bucket and competes on price. A profession-targeted product lands in the 30 USD bucket and competes on conversion-to-studio-alternative. The per-user revenue is 3x, the conversion rate is 3–5x, and the CAC payback is faster. The unit economics per generation The 9-person team is the bottleneck, not the model cost. Each employee is generating roughly 1.1M USD/year in revenue — top-decile productivity for a consumer-product team. The model cost is the variable;"
+  },
+  {
     "url": "/zh/content/local-ai-automation-freelance/",
     "locale": "zh",
     "title": "本地小老板 AI 自动化接单案例：单兵，6 个月月入 5000 美金 —— 但 AI 是最没意思的那部分",
-    "description": "冷峻拆解一个知识星球案例。本地小客户的单位经济、为什么线下销售赢过 Upwork 投标、以及案例跳过的三件决定模型成败的事。",
+    "description": "深度拆解一个知识星球案例。本地小客户的单位经济、为什么线下销售赢过 Upwork 投标、以及案例跳过的三件决定模型成败的事。",
     "category": "ai",
     "tags": [
       "ai",
@@ -81,7 +308,7 @@
     "url": "/zh/content/vertical-ai-tools-gap/",
     "locale": "zh",
     "title": "垂直 AI vs 通用 AI：为什么下一波独立 AI 工具不是 GPT 的另一层壳",
-    "description": "一条方向性观察：通用 AI 工具赛道已经极度内卷，但垂直 AI 工具（法律科技/医疗/地产/教育/跨境电商）还远没被吃透。冷峻拆解：哪些品类客户真付费、哪些是合规深坑、个人开发者该进哪个。",
+    "description": "一条方向性观察：通用 AI 工具赛道已经极度内卷，但垂直 AI 工具（法律科技/医疗/地产/教育/跨境电商）还远没被吃透。深度拆解：哪些品类客户真付费、哪些是合规深坑、个人开发者该进哪个。",
     "category": "ai",
     "tags": [
       "ai",
@@ -111,6 +338,24 @@
     "body": "产品定价计算器 回答每个跨境卖家都问的问题：我应该卖多少钱才真赚钱？ 多数定价公式只算 \"成本 × 加价倍数\"。但这样漏掉了物流、平台佣金、支付手续费，还有那些悄悄吃掉利润的单笔固定费。这个计算器四个都包含。 使用方法 填 产品成本（付给供应商的金额，美元）。 填 物流成本 / 单（包邮模型填 0）。 填 佣金 %（美国 Shopify Payments 是 2.9%；Etsy 是 6.5% + 3%；亚马逊是 15%）。 填 支付处理 %（如果平台打包在一起，和佣金一样）。 填 单笔固定费（Shopify 收 $0.30；PayPal 部分地区收 $0.49）。 设 目标净利率（所有费用之后）。 看 建议售价、盈亏平衡价、单件利润。 公式 盈亏平衡价假设 0% 净利率，超过它卖出去的部分都是利润。 算例 $8 产品 + $3.50 物流 + 2.9% 佣金 + 2.9% 支付费 + $0.30 固定费 + 30% 目标利润率： 建议售价：$24.85 盈亏平衡价：$13.05（零利润） 单件利润（按建议售价）：$7.46 如果你的市场卖不到 $24.85，目标利润率就不现实。要么砍成本、要么提价、要么接受更薄的利润。 这个计算器没算的 退货成本（普通品类在成本上加 5–15%） 广告成本占比（跑付费流量时从利润里扣） 汇兑损耗（收美元花人民币时 1–3%） 完整 P&L 看资源区的 利润核算 Excel 模板。 常见错误 错误 修法 用毛利率而不是净利率 本计算器用净利率（扣完所有费） 漏算单笔固定费 一定要加，规模大了累计惊人 公式里忽略物流 物流是成本，不是营销条目 货币混着用 先全部换算成同一种货币 参考场景（Shopify 美国默认） 成本 物流 平台佣金 支付费 单笔固定费 目标利润率 建议售价 保本售价 $5 $3.50 2.9% 2.9% $0.30 30% $18.46 $9.69 $8 $3.50 2.9% 2.9% $0.30 30% $24.85 $13.05 $15 $5.00 2.9% 2.9% $0.30 25% $33.16 $24.87 $40 $8.00 6.5%（Etsy） 3% $0.30 35% $98.43 $63.98 注意有效费率涨 2%（Etsy 6.5% + 3% 对比 Shopify 2.9% 打包），$40 客单价建议价涨 3.6%——单件看起来小，整盘 SKU 累起来很大。 何时这工具不够用 分级或量价定价——B2B 或批发 SKU 需要数量阶梯表；本工具假设单一单价。 套装 / 礼包定价——单组件成本分摊不简单，要单独建模。 订阅 / 复购——首单 OK，但真实利润靠 LTV/CAC（看 ROAS 计算器）。 高退货率品类——把 5–15% 退货成本算进到岸价，再算售价。 汇率敏感供应链——成本是 "
   },
   {
+    "url": "/zh/content/hightouch-ai-marketing-arr/",
+    "locale": "zh",
+    "title": "多米诺披萨从不让人工智能生成披萨:Hightouch 的「品牌安全」AI 营销 20 个月净增 7000 万 ARR",
+    "description": "Hightouch,一个把多美乐、Spotify、DoorDash 签成客户的 AI 营销平台。怎么跑:多美乐的披萨永远用真实拍摄,AI 只生成背景和周边元素。产品是一个品牌安全约束,不是一个生成模型。案例在 20 个月里靠这个约束净增 ~7000 万 ARR,推公司跨过 1 亿 ARR。2026 年 AI 营销的稀缺资源不是生成能力——是主要模型厂不愿出的「品牌正确性约束」。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "marketing",
+      "brand-safety",
+      "hightouch",
+      "enterprise",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条知识星球帖子拆的是 Hightouch——一个签下多美乐、Spotify、DoorDash 作为企业客户的 AI 营销平台。机制,如 Hightouch 联合创始人 Kashish Gupta 所",
+    "body": "一条知识星球帖子拆的是 Hightouch——一个签下多美乐、Spotify、DoorDash 作为企业客户的 AI 营销平台。机制,如 Hightouch 联合创始人 Kashish Gupta 所说,是一个硬约束:多美乐从来不让 AI 生成披萨。每条广告里的披萨都是真实拍摄。AI 只生成背景、周边元素、文案。产品不是模型。产品是品牌安全约束。案例在 20 个月里净增 7000 万 ARR,推公司跨过 1 亿 ARR。重点不是关于生成质量——是 2026 年 AI 营销里什么稀缺。模型是商品。约束是护城河。下面是单位经济逻辑、品类框定,以及案例没展开的四点。 机制 约束就是产品。大多数品牌团队都已经试过:打开模型,敲一句「生成披萨广告」,被烧过。输出看起来普通、不在品牌调上、有法律风险。品牌团队需要一个默认就带这个约束的供应商。Hightouch 默认就带这个约束。 为什么约束是护城河 看 2026 年 AI 营销里什么稀缺。生成不稀缺。每个品牌团队都能拿到同几家模型厂的 API。品牌正确性稀缺。一个知道多美乐品牌色、logo 摆放规则、法务词库、历史广告风格的模型,稀缺。一个默认就出货这个、并对 AI 输出给品牌做法律赔偿的供应商,稀缺。 商品化的部分: 前两项是商品。后三项是护城河。Hightouch 的产品是后三项。 单位经济 客户集中度是那个没说出的变量。7000 万净增 ARR 大概率压在少数几家财富 500 强品牌合同上。丢一家就崩。案例没正面处理集中度。 品类框定 案例落在一个重要的品类框定上:产品不是「AI 营销」。产品是「默认带品牌安全保证的 AI 营销」。两个品类的竞争结构完全不同: 第一个品类严重过饱和。第二个没有。框定——「约束生成」而不是「生成」——就是这一步。 案例没说的事 四点。 销售周期。 案例没给平均签约天数。品牌团队企业销售典型 6–18 个月。20 个月 7000 万 ARR 曲线意味着合同在 ARR 落地前 6–18 个月就开始谈了。 流失。 案例没给续约率。10%/年流失是 SaaS 基准线;品牌营销流失在 CMO 换人、品牌合并供应商时更高。 约束成本。 案例没给按输出的人工复核成本。如果品牌安全层需要每条输出人工签,按输出成本比客户预期高,毛利被压。 模型商品化风险。 案例没处理 Shopify / Adobe / Salesforce 把同款品牌安全层打包到现有营销云的情况。风险真实,案例没展开。 结论 案例不是「Hightouch 的 AI 更强」。案例是:2026 年 AI 营销的稀缺资源不是生成——是主要模型厂不愿出的「品牌正确性约束」。Hightouch 出货这个约束,给品牌做法律赔偿,把约束按 20K–200K 美金/年/品牌的价格卖掉。模型是商品,约束是护城河。 对 2026 年大多数做 AI 产"
+  },
+  {
     "url": "/zh/tools/fx-withdraw-calculator/",
     "locale": "zh",
     "title": "汇率与提现对比器 — PayPal / Wise / Airwallex",
@@ -132,7 +377,7 @@
     "url": "/zh/content/x-home-services-ai-workflow/",
     "locale": "zh",
     "title": "家政保洁 AI 工作流案例：报价-验收-回访一条龙，单兵单品类 —— 案例没谈的三件决定单位经济的事",
-    "description": "冷峻拆解一个 x 案例。向家政/保洁小商家卖 AI 工作流（报价、验收、回访）。定价结构、渠道动态，以及案例跳过的三件决定单兵模型成立与否的事。",
+    "description": "深度拆解一个 x 案例。向家政/保洁小商家卖 AI 工作流（报价、验收、回访）。定价结构、渠道动态，以及案例跳过的三件决定单兵模型成立与否的事。",
     "category": "ai",
     "tags": [
       "ai",
@@ -176,6 +421,42 @@
     "body": "多数卖家追踪营收但不追踪利润。利润才是你真正留下的。下面是怎么搭建说真话的表格。 你需要四张 sheet 完整的利润追踪表有四张 sheet： 订单（输入） 每笔销售一行。 列 描述 date 下单日期 orderid 唯一订单号 channel Shopify、Etsy、Amazon 等 sku 商品标识 qty 数量 saleprice 单价 currency USD、EUR、GBP paymentfee Stripe/PayPal 收的 shippingcost 物流成本 productcost 供应商成本（分摊） shippingcountry 目的地国家 customeremail 复购分析 status paid、refunded、partiallyrefunded refundamount 退款金额 chargebackflag TRUE/FALSE notes 备注 成本（输入） 每单变动的成本。 列 描述 date 成本日期 type shipping、packaging、label、customs、duty 等 amount 成本 relatedorderid 关联订单号 notes 说明 广告（输入） 每日广告花费和结果数据。 列 描述 date 花费日期 channel Google、Meta、TikTok、Pinterest campaign 广告活动名 spend 日花费 clicks 点击数 conversions 转化数（来自平台） conversionvalue 归因收入（来自平台） 看板（输出） 从其他三张 sheet 通过公式拉数据。更新一次，看到全部。 关键公式 按月总营收 按商品净利（最近 30 天） F 是收入，I 是产品成本，H 是物流成本，G 是支付费。 净利率 % 按渠道 ROAS（最近 30 天） 广告驱动单件利润（Google，最近 30 天） 看板布局 实施步骤 建四张 sheet，表头按上面来。 每天导入订单 — Shopify、Etsy、Amazon 都能导 CSV。用脚本或手动导入。 每天导入广告 — Google Ads API、Meta API，或 CSV 导出。 在看板 sheet 配一次公式，自动更新。 加条件格式 — 赚钱绿色，亏钱红色。 每周邮件摘要 — Google Sheets 能把看板发邮件附件。 常见坑 货币混用 同一营收列别混 USD 和 EUR。两个办法： 全部按销售日汇率换算成 USD（用日汇率） 分列存，月末统一换算 产品成本分摊 卖组合装或多件装，按 SKU 分摊成本。别把整套供应商成本压在一个 SKU 上。 退款追踪 退款不冲销原始成本。在成本 sheet 里加一行，退款金额作为负营收。 不退的退货 有些客户保留商品拿部分退款。作为单独成本行，不是退款。 广告归因 "
   },
   {
+    "url": "/zh/content/two-person-healthco-revenue-layer/",
+    "locale": "zh",
+    "title": "两个人、4 亿美金远程医疗销售、25 万患者、不雇医生:为什么「医疗公司」框定错了,「获客层」才是对的",
+    "description": "Matthew Gallagher 的远程医疗公司。2024-09:2 万美金、零员工起家。2025 年底:4 亿美金销售、25 万患者。2026 年:1.8 亿→1.8B 方向。员工总数:2 人(Gallagher 和他弟弟)。Gallagher 没建一家医疗公司。他在别人的基础设施上盖了一层「获客 + 体验」层。医生分包、药房外包、物流外包、牌照从合作方租。3 件东西公司自己抓:品牌、分发、客户关系。这条讲的不是医疗洞察,是获客洞察。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "telehealth",
+      "customer-acquisition",
+      "solopreneur",
+      "glp1",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条知识星球帖子拆的是 Matthew Gallagher 在 2024 年 9 月用 2 万美金、零员工起家的远程医疗公司。2025 年底:4 亿美金销售,25 万患者。2026 年:1.8B 方向",
+    "body": "一条知识星球帖子拆的是 Matthew Gallagher 在 2024 年 9 月用 2 万美金、零员工起家的远程医疗公司。2025 年底:4 亿美金销售,25 万患者。2026 年:1.8B 方向。员工总数:2 人——Gallagher 和他弟弟。这条不是医疗洞察(治什么病、开什么药),是结构洞察:Gallagher 没建一家医疗公司。他在别人的医疗基础设施上盖了一层「获客 + 体验」层。医生分包。药房外包。物流外包。牌照从合作方租。公司自己抓三件:品牌、分发、客户关系。获客层的单位经济是技术级的,不是医疗级的。下面是按患者数学、轻资产结构、以及案例没展开的四点。 轻资产结构 自有的:品牌、效果营销、客户门户、计费、客服、续费。分包的:医生问诊、处方、药房、物流。自有组件是「获客 + 体验」层——这是技术级生意;分包组件是「受监管的医疗工作」——按单交易付费。 资本效率 时点 资本 销售年化 员工数 资本周转 2024-09 2 万 0 0 — 2025-底 2 万 4 亿 2 2 万倍 2026(预计) 2 万 18 亿 2 9 万倍 资本周转——2 万美金起本 15 个月转出 4 亿年化——是核心。传统医疗公司做不到。原因就是轻资产:本该砸在医生、药房、物流上的资本,留在合作方那。Gallagher 的公司只在获客层花钱。 单位经济 案例没给按患者数字。上面是 2026 年公开远程医疗获客层的可比数字。核心单位经济变量是毛利。50% 毛利对应 4 亿营收贡献 2 亿毛利给管理费——软件级。20% 毛利贡献 8000 万——医疗级。案例没给毛利。 为什么框定是「获客」,不是「医疗」 关键在单位经济,不在监管状态。医疗公司是受监管毛利(5–15%,因为监管成本内部化)。获客层是技术毛利(40–70%,因为监管成本被外包给按单付费的合作方网络)。同一行营收,看你坐在结构的哪一边,像两种不同的生意。 框定不是「Gallagher 跑一家医疗公司」。框定是「Gallagher 跑一家恰好在医疗里的获客层」。两个框定隐含的估值倍数完全不同。医疗公司框定对应 1–3 倍营收。获客层框定对应 3–8 倍营收。 案例没说的事 四点。 毛利。 案例给营收不给毛利。核心单位经济变量没说。50% 毛利和 20% 毛利是两个生意。 流失。 远程医疗订阅流失典型 5–10%/月。案例没给续费数字。10%/月流失,公司要每月新增 2.5 万患者才能保持当前增速。 退款 / 拒付率。 远程医疗有 3–8% 拒付率(患者觉得没效果)。25 万患者基数对应 7500–20000 笔拒付——这是有意义运营负担,也是有意义营收反转。 合规开销。 案例框定 2 名员工,但合作方承担了合规成本。这部分是真钱,从毛利里出。案例没说合作方费用结构。 结论 重点不是「2 人在医疗里做了 4 亿」,是"
+  },
+  {
+    "url": "/zh/content/sales-leads-broker/",
+    "locale": "zh",
+    "title": "卖销售线索月入过万:AI 把「中介」重做了一遍",
+    "description": "一条 X 帖(259 赞 101 回复 90 转推)讲了一个「信息差生意」:用 AI 帮别人找客户(精准线索),0 库存、0 交付。卖的不是关系,是结构化数据。下面是机制拆解、单位经济、风险地图,以及四个案例跳过的点。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "leads",
+      "b2b",
+      "side-hustle",
+      "sales",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条 X 帖(259 赞、101 回复、90 转推)讲了一个「信息差生意」:用 AI 帮别人找客户。客单价不高,但毛利 80%+、0 库存、0 交付、可复利。 帖子的落点不是「中介升级」,是:AI 把",
+    "body": "一条 X 帖(259 赞、101 回复、90 转推)讲了一个「信息差生意」:用 AI 帮别人找客户。客单价不高,但毛利 80%+、0 库存、0 交付、可复利。 帖子的落点不是「中介升级」,是:AI 把传统中介(卖关系)重做了一遍。卖的不是关系,卖的是结构化数据——谁正在找你这类服务、决策人是谁、邮箱多少、最近在干什么。下面是机制拆解、单位经济、风险地图,以及四个案例没说清的点。 机制:三步 买方拿这份包直接 cold outreach,转化率比「销售自己 cold call」高 5–10 倍,因为信号已经过滤过、决策人已经定位好。 为什么这是「信息差」 卖的不是数据本身——领英、官网数据公开。卖的是「过滤 + 排序 + 时机」这三层处理过后的产品。 一个销售自己抓也能抓,但 1 个销售 1 周工时只够抓 50 条,质量随机。AI 1 天出 200 条,按「最近 7 天扩张」「招销售岗」「换了 CRM」这些信号过滤,这层处理是稀缺资源,不是数据。 类似「卖食材」 vs 「卖预制菜」:Apollo / Lusha 卖工具+数据库(食材),你买回来自己跑;Hightouch 类卖成品包(预制菜),你买完直接用。预制菜客单低但毛利高、用户切换成本高(习惯了一种打包方式后不会轻易换)。 单位经济 1 个人能做这件事。但要扩量(月 100 包 = 2 万美金收入)需要: 多渠道信号源(领英 + 行业目录 + 招标公告 + 公司新闻) 信号加权模型(让 AI 判断「在招销售岗」比「换 CRM」权重高) 客户细分(给 SaaS 销售 / 给 B2B 服务销售 / 给电商运营 给的包内容不同) 谁在买这种产品 两类: 小 B 销售团队。 5–20 人规模,没有自己的 leadgen 团队,买不起 HubSpot / Salesforce 的全套自动化。买成品包最划算。 freelance 销售。 一个人或 2–3 人,自己跑 cold outreach,需要持续线索流。订阅制线索包(月 500 美金拿 300 条)是主流。 大 B 销售团队(100+ 人)有内部 SDR / leadgen 团队,不会买外部包。 风险地图 四个风险: 合规。 GDPR / CCPA / 个人信息保护法对 B2B 线索抓取有边界。欧盟数据卖给美国销售可能违规,某些行业(医疗、法律、金融)有更严的合规要求。买方的法务部一旦卡住,续约就出问题。 买方转化率。 案例默认「线索 = 销售」,但实际转化率 1–5%。大部分线索买方拿过去不会成单,只是「contact 是真的」。卖方按包收钱,买方按转化付费,两边预期错位。 复购率。 案例没说买方复购。卖线索是一次性生意还是订阅,差别巨大——一次性是「找新客户」的生意,订阅是「持续服务」的生意,后者 ARPU 高 5–10 倍。 信号衰减。 AI 抓「最近 "
+  },
+  {
     "url": "/zh/content/global-payment-methods/",
     "locale": "zh",
     "title": "全球主流支付方式全景梳理（2026 版）",
@@ -210,7 +491,7 @@
     "url": "/zh/content/x-videolingo-open-source-content/",
     "locale": "zh",
     "title": "四个高 Star 开源项目的 AI 变现路径:16k Star 仓库是如何映射成生意模型的",
-    "description": "冷读一条推文,把四个高 Star GitHub 项目映到四种 AI 变现生意模型:内容出海(VideoLingo 16k+)、客服自动化、获客、电商视觉。每个仓库对应哪个模型,以及决定它们能否跑起来的\"Star 转化率\"鸿沟。",
+    "description": "拆解一条推文,把四个高 Star GitHub 项目映到四种 AI 变现生意模型:内容出海(VideoLingo 16k+)、客服自动化、获客、电商视觉。每个仓库对应哪个模型,以及决定它们能否跑起来的\"Star 转化率\"鸿沟。",
     "category": "ai",
     "tags": [
       "ai",
@@ -220,13 +501,13 @@
       "case-study"
     ],
     "excerpt": "一条推文把四个高 Star 开源项目映到四种具体的 AI 变现生意：跨国内容搬运 / 二创（VideoLingo,16k+ Stars)、客服自动化、获客、电商商品图。案例说得明确：GitHub St",
-    "body": "一条推文把四个高 Star 开源项目映到四种具体的 AI 变现生意：跨国内容搬运 / 二创（VideoLingo,16k+ Stars)、客服自动化、获客、电商商品图。案例说得明确：GitHub Star 是注意力信号，问题在于哪个仓库把这种注意力变成付费客户。下面是冷读、转化鸿沟、案例没说的四点。 案例摆出的内容 仓库 / 模型 公开规模 命名变现模式 VideoLingo 16k+ Stars 跨国内容搬运(翻译 + 重渲) 客服自动化(仓库未名) Star 数未给 Make / n8n 风格工作流 + AI 层;按席位计费 获客(仓库未名) Star 数未给 SMB 流水自动化 电商商品图(仓库未名) Star 数未给 AI 驱动商品图 / 视频生成 案例把 GitHub 影响力当营销渠道、AI 能力当变现层。真正卡住的地方是 Star 到付费客户的转化。 Star 数跟注意力相关、跟营收不相关 Star 是开发者 / 技术受众信号。它能映射到三件事： SEO 排名。 一个 10k Star 的仓库会出现在「<niche github\"、\"<niche open source」 的搜索里。搜索流量带动 hosted 产品的漏斗。 贡献者漏斗。 每个 Star 都是潜在未来的贡献者，OSS 开发速度复利累积。 合作方 inbound。 代理、白标合作、企业客户会通过「我看到你们的仓库」主动找来——无付费投放。 Star 跟付费客户不能直接画等号。能变现的仓库，是那种「注意力受众跟付费客户受众重合」的——创作者、代理、SMB 经营者。完全面向开发者的仓库（编排框架、ML 基础设施），只能在企业 tier 变现；面向创作者 / SMB 经营者的仓库，可以在自助价位变现。 模型 受众与付费客户的重合度 转化形态 内容出海 高。创作者 + 代理既是用户也是买家 自助漏斗 客服自动化 中。SMB 可自助付费,中型客户走销售辅助 混合 获客 较低。SMB 能试用,但归因证明需要销售电话 销售辅助 电商商品图 高。SMB 店铺主就是直接买家 自助漏斗 这一栏基本就是「开源影响力 → 营收」的强度排序。受众重合高的（内容出海、电商商品图）最容易做成生意。 四个生意模型，冷读 跨国内容搬运 / 二创（VideoLingo 及邻近） 做强版本的路子是：按创作者订阅（10–50 美金/月）+ 代理 tier(100–500 美金/月）+ API tier。VideoLingo 的 16k Stars 说明创作者侧拉力是真实的；hosted 产品能不能接住这一波流量，是漏斗上的转化断点。 客服自动化 做强版本的路子是按工作流或按席位定价 + 搭建费。模式与本站已经覆盖的工作流自动化独立 operator 案例高度重合，数学在 5–10 客户规模成立。 获客 这个模型比内容出海承"
+    "body": "一条推文把四个高 Star 开源项目映到四种具体的 AI 变现生意：跨国内容搬运 / 二创（VideoLingo,16k+ Stars)、客服自动化、获客、电商商品图。案例说得明确：GitHub Star 是注意力信号，问题在于哪个仓库把这种注意力变成付费客户。下面是拆解、转化鸿沟、案例没说的四点。 案例摆出的内容 仓库 / 模型 公开规模 命名变现模式 VideoLingo 16k+ Stars 跨国内容搬运(翻译 + 重渲) 客服自动化(仓库未名) Star 数未给 Make / n8n 风格工作流 + AI 层;按席位计费 获客(仓库未名) Star 数未给 SMB 流水自动化 电商商品图(仓库未名) Star 数未给 AI 驱动商品图 / 视频生成 案例把 GitHub 影响力当营销渠道、AI 能力当变现层。真正卡住的地方是 Star 到付费客户的转化。 Star 数跟注意力相关、跟营收不相关 Star 是开发者 / 技术受众信号。它能映射到三件事： SEO 排名。 一个 10k Star 的仓库会出现在「<niche github\"、\"<niche open source」 的搜索里。搜索流量带动 hosted 产品的漏斗。 贡献者漏斗。 每个 Star 都是潜在未来的贡献者，OSS 开发速度复利累积。 合作方 inbound。 代理、白标合作、企业客户会通过「我看到你们的仓库」主动找来——无付费投放。 Star 跟付费客户不能直接画等号。能变现的仓库，是那种「注意力受众跟付费客户受众重合」的——创作者、代理、SMB 经营者。完全面向开发者的仓库（编排框架、ML 基础设施），只能在企业 tier 变现；面向创作者 / SMB 经营者的仓库，可以在自助价位变现。 模型 受众与付费客户的重合度 转化形态 内容出海 高。创作者 + 代理既是用户也是买家 自助漏斗 客服自动化 中。SMB 可自助付费,中型客户走销售辅助 混合 获客 较低。SMB 能试用,但归因证明需要销售电话 销售辅助 电商商品图 高。SMB 店铺主就是直接买家 自助漏斗 这一栏基本就是「开源影响力 → 营收」的强度排序。受众重合高的（内容出海、电商商品图）最容易做成生意。 四个生意模型，拆解 跨国内容搬运 / 二创（VideoLingo 及邻近） 做强版本的路子是：按创作者订阅（10–50 美金/月）+ 代理 tier(100–500 美金/月）+ API tier。VideoLingo 的 16k Stars 说明创作者侧拉力是真实的；hosted 产品能不能接住这一波流量，是漏斗上的转化断点。 客服自动化 做强版本的路子是按工作流或按席位定价 + 搭建费。模式与本站已经覆盖的工作流自动化独立 operator 案例高度重合，数学在 5–10 客户规模成立。 获客 这个模型比内容出海承"
   },
   {
     "url": "/zh/content/x-github-ai-side-hustle-stacks/",
     "locale": "zh",
     "title": "四个已经能赚钱的开源 GitHub AI 副业栈:按「实际在做什么」拆解",
-    "description": "一条高互动 X 帖(1123 赞、54 回复、301 转推)拆解了四个高星 GitHub 项目,分别对应四种 AI 副业商业模式:出海内容搬运、AI 客服部署、自动获客、电商 AI 产品视觉。下面冷读每个栈能做什么、对应的小规模商业模式长什么样、真正的入门成本在哪里。",
+    "description": "一条高互动 X 帖(1123 赞、54 回复、301 转推)拆解了四个高星 GitHub 项目,分别对应四种 AI 副业商业模式:出海内容搬运、AI 客服部署、自动获客、电商 AI 产品视觉。下面拆每个栈能做什么、对应的小规模商业模式长什么样、真正的入门成本在哪里。",
     "category": "ai",
     "tags": [
       "ai",
@@ -237,7 +518,7 @@
       "monetization"
     ],
     "excerpt": "一条高互动 X 帖(1123 赞、54 回复、301 转推)拆解了四个高星 GitHub 项目,分别对应四种 AI 副业商业模式:出海内容搬运、AI 客服部署、自动获客、电商 AI 产品视觉。这不是「",
-    "body": "一条高互动 X 帖(1123 赞、54 回复、301 转推)拆解了四个高星 GitHub 项目,分别对应四种 AI 副业商业模式:出海内容搬运、AI 客服部署、自动获客、电商 AI 产品视觉。这不是「10 个 AI 副业」的清单,是四个已经能跑的栈,GitHub 仓库就是入口。下面冷读每个栈,以及每个商业模式在小规模下长什么样。 四个栈 栈 在做什么 商业模式 GitHub 锚点 VideoLingo 跨语种视频本地化(ASR、翻译、配音、字幕) 2B 内容代理,按分钟计费 16k+ stars 客服 AI 在客服队列上挂微调模型的整套方案 SaaS,200–1000 美金/月/客户 未点名 获客自动化 抓取、补全数据、生成个性化外联 按结果计费,按预约会议 未点名 产品视觉 AI 一张产品图 → 模特上身生活方式图 按张或订阅,替代棚拍 未点名 帖子明确点了 VideoLingo。另外三个按功能描述,具体仓库留给读者自己找。这没关系——模式比仓库 URL 重要。 为什么是四个,不是十个 「10 个 AI 副业」清单是内容营销套路,目的是拉互动,不是呈现商业机会。真实机会的信号是:存在一个有几千 star 的开源仓库、GitHub issues 里某个付费客户的影子、从仓库到第一张发票 30 天内的路径。 帖子点的四个栈都达到这个门槛。每个都有:(a)一个几千 star 的开源仓库;(b)一个明确的买家画像(2B 内容买家、中小企业客服负责人、B2B 销售团队、电商商家);(c)一个清晰的按单位计价。每个的价格上限都定在它替代的人工或供应商成本上,而不是同行订阅价上。 每个栈的经济形状 VideoLingo 和客服栈都是 2B SaaS 形状:按席位或按月定价,替代一个已知的人工成本。获客栈是按结果形状:按预约会议、按合格线索。产品视觉栈是混合:单次项目按张计费,大商家按月订阅。 形状决定销售周期。SaaS 形状的模型成交周期 2–6 周,买家比的是已知的人工成本。按结果形状的模型成交周期几天,买家只为结果付钱。按张形状的模型按单成交,买家按交付物付钱。 对一个单人 founder,销售周期是承重变量。按结果和按张的模型比 SaaS 形状的模型转化快,因为买家是为结果付钱,不是为承诺付钱。帖子对这点是哑的,但选哪个栈先跑的时候,这是要优化的变量。 GitHub 仓库真正给你的是什么 帖子说得很直白:fork 一个仓库,几天就到工作原型,不是几个月。贵的不是代码。贵的是: 前 3 个付费客户。 没有他们,副业变不成生意。帖子没点怎么拿前 3,但标准答案是:对仓库目标买家做冷触达,以成本价或低于成本价交付第一个项目,换一份公开案例。 模型不会让买家当众翻车的信任。 一条错的客服答复是公开事故。一张错的产品图可能触发广告平台下架。信任是一个项目一个项目攒起来的,不"
+    "body": "一条高互动 X 帖(1123 赞、54 回复、301 转推)拆解了四个高星 GitHub 项目,分别对应四种 AI 副业商业模式:出海内容搬运、AI 客服部署、自动获客、电商 AI 产品视觉。这不是「10 个 AI 副业」的清单,是四个已经能跑的栈,GitHub 仓库就是入口。下面拆每个栈,以及每个商业模式在小规模下长什么样。 四个栈 栈 在做什么 商业模式 GitHub 锚点 VideoLingo 跨语种视频本地化(ASR、翻译、配音、字幕) 2B 内容代理,按分钟计费 16k+ stars 客服 AI 在客服队列上挂微调模型的整套方案 SaaS,200–1000 美金/月/客户 未点名 获客自动化 抓取、补全数据、生成个性化外联 按结果计费,按预约会议 未点名 产品视觉 AI 一张产品图 → 模特上身生活方式图 按张或订阅,替代棚拍 未点名 帖子明确点了 VideoLingo。另外三个按功能描述,具体仓库留给读者自己找。这没关系——模式比仓库 URL 重要。 为什么是四个,不是十个 「10 个 AI 副业」清单是内容营销套路,目的是拉互动,不是呈现商业机会。真实机会的信号是:存在一个有几千 star 的开源仓库、GitHub issues 里某个付费客户的影子、从仓库到第一张发票 30 天内的路径。 帖子点的四个栈都达到这个门槛。每个都有:(a)一个几千 star 的开源仓库;(b)一个明确的买家画像(2B 内容买家、中小企业客服负责人、B2B 销售团队、电商商家);(c)一个清晰的按单位计价。每个的价格上限都定在它替代的人工或供应商成本上,而不是同行订阅价上。 每个栈的经济形状 VideoLingo 和客服栈都是 2B SaaS 形状:按席位或按月定价,替代一个已知的人工成本。获客栈是按结果形状:按预约会议、按合格线索。产品视觉栈是混合:单次项目按张计费,大商家按月订阅。 形状决定销售周期。SaaS 形状的模型成交周期 2–6 周,买家比的是已知的人工成本。按结果形状的模型成交周期几天,买家只为结果付钱。按张形状的模型按单成交,买家按交付物付钱。 对一个单人 founder,销售周期是承重变量。按结果和按张的模型比 SaaS 形状的模型转化快,因为买家是为结果付钱,不是为承诺付钱。帖子对这点是哑的,但选哪个栈先跑的时候,这是要优化的变量。 GitHub 仓库真正给你的是什么 帖子说得很直白:fork 一个仓库,几天就到工作原型,不是几个月。贵的不是代码。贵的是: 前 3 个付费客户。 没有他们,副业变不成生意。帖子没点怎么拿前 3,但标准答案是:对仓库目标买家做冷触达,以成本价或低于成本价交付第一个项目,换一份公开案例。 模型不会让买家当众翻车的信任。 一条错的客服答复是公开事故。一张错的产品图可能触发广告平台下架。信任是一个项目一个项目攒起来的,不是"
   },
   {
     "url": "/zh/content/cbm-and-dimensional-weight/",
@@ -268,14 +549,14 @@
       "monetization",
       "open-source"
     ],
-    "excerpt": "两个 AI PPT 产品在同一时间窗口里同场竞技。一家做到了 1 亿美金 ARR、不到 100 人、估值 21 亿美金;另一家在 2025 年 4 月关停产品,中间融过 3200 万美金。下面冷读两者",
-    "body": "两个 AI PPT 产品在同一时间窗口里同场竞技。一家做到了 1 亿美金 ARR、不到 100 人、估值 21 亿美金;另一家在 2025 年 4 月关停产品,中间融过 3200 万美金。下面冷读两者为什么一个活、一个死,以及个人开发者在这个赛道里能抄的三条路。 两个对照数字 公司 结果 时间窗 资本 团队 Gamma 1 亿美金 ARR,估值 21 亿美金 2022 上线,2025 底 ARR 目标 未点名 <100 Tome 关停产品 2025 年 4 月 30 日 融资 3200 万美金 未点名 整篇案例就建在这组对比上。同一个赛道,同一个时间窗,结果一个做出十倍差、一个直接清零。 Gamma 真正在卖什么 案例说得直白:Gamma 卖的是排版与样式,不是内容。用户输入文字,Gamma 处理幻灯片结构、视觉节奏、图片位置、导出。用户真正要做的事是「我知道要说什么,不想花两小时用 PowerPoint 把它排出来」。 这个定位把使用频次拉到每周。做幻灯片的人是顾问、创始人、PM、销售工程师、内部沟通岗——他们每周都要做。频次撑住 20 美金/月定价,因为每次使用的成本大约是 5 毛钱。 获客成本(CAC)很关键,但留存才是承重数。案例没给 Gamma 的 CAC,但按 7000 万用户、1 亿美金 ARR 反推,人均年付(ARPU)大约是 1.4 美金——也就是说 Gamma 是按 freemium 转付费的模型在跑,不是按付费席位模型。7000 万用户里绝大多数是免费的。 Tome 卖的是什么 Tome 把产品定位成「AI 帮你想清楚 PPT 内容」。用户输入主题,AI 提出大纲,用户修改,AI 排版。 心理模型错位就是全部失败原因。来 Tome 的人脑子里已经有大纲了——不然不会打开幻灯片工具。AI 那个「这一张写什么」的建议,要么冗余、要么讨嫌。产品被用一次,用户走,Tome 始终没建起 Gamma 那种每周一次的频次。 教训不是 AI 不能帮人想内容。教训是 AI PPT 工具的买家买的不是想内容。买家买的是「帮我排版」。产品做了别的事,用户就走。 个人开发者的入口 案例点了一个具体的开源底座:PptxGenJS。一个用 JavaScript 生成标准 .pptx 文件的库,GitHub 大约 5000 star,每周 127 万次 npm 下载。库本身处理文件格式那层脏活——版式、母版、主题、动画,这套东西从零写要一年。 AI 层架在它上面:用户输入提示词,系统生成 HTML 样式的幻灯片,导出 .pptx。最近更新还加了 PPT 动画支持。案例提到一个 X 帖子,这套组合拿到 5 万曝光、400 赞、350 收藏、100+ 评论——评论区全是「怎么用」「能不能分享」。需求信号是真的。 案例列了三条个人能走的路: 垂直场景工具。 「AI 周报 "
+    "excerpt": "两个 AI PPT 产品在同一时间窗口里同场竞技。一家做到了 1 亿美金 ARR、不到 100 人、估值 21 亿美金;另一家在 2025 年 4 月关停产品,中间融过 3200 万美金。下面拆两者为",
+    "body": "两个 AI PPT 产品在同一时间窗口里同场竞技。一家做到了 1 亿美金 ARR、不到 100 人、估值 21 亿美金;另一家在 2025 年 4 月关停产品,中间融过 3200 万美金。下面拆两者为什么一个活、一个死,以及个人开发者在这个赛道里能抄的三条路。 两个对照数字 公司 结果 时间窗 资本 团队 Gamma 1 亿美金 ARR,估值 21 亿美金 2022 上线,2025 底 ARR 目标 未点名 <100 Tome 关停产品 2025 年 4 月 30 日 融资 3200 万美金 未点名 整篇案例就建在这组对比上。同一个赛道,同一个时间窗,结果一个做出十倍差、一个直接清零。 Gamma 真正在卖什么 案例说得直白:Gamma 卖的是排版与样式,不是内容。用户输入文字,Gamma 处理幻灯片结构、视觉节奏、图片位置、导出。用户真正要做的事是「我知道要说什么,不想花两小时用 PowerPoint 把它排出来」。 这个定位把使用频次拉到每周。做幻灯片的人是顾问、创始人、PM、销售工程师、内部沟通岗——他们每周都要做。频次撑住 20 美金/月定价,因为每次使用的成本大约是 5 毛钱。 获客成本(CAC)很关键,但留存才是承重数。案例没给 Gamma 的 CAC,但按 7000 万用户、1 亿美金 ARR 反推,人均年付(ARPU)大约是 1.4 美金——也就是说 Gamma 是按 freemium 转付费的模型在跑,不是按付费席位模型。7000 万用户里绝大多数是免费的。 Tome 卖的是什么 Tome 把产品定位成「AI 帮你想清楚 PPT 内容」。用户输入主题,AI 提出大纲,用户修改,AI 排版。 心理模型错位就是全部失败原因。来 Tome 的人脑子里已经有大纲了——不然不会打开幻灯片工具。AI 那个「这一张写什么」的建议,要么冗余、要么讨嫌。产品被用一次,用户走,Tome 始终没建起 Gamma 那种每周一次的频次。 教训不是 AI 不能帮人想内容。教训是 AI PPT 工具的买家买的不是想内容。买家买的是「帮我排版」。产品做了别的事,用户就走。 个人开发者的入口 案例点了一个具体的开源底座:PptxGenJS。一个用 JavaScript 生成标准 .pptx 文件的库,GitHub 大约 5000 star,每周 127 万次 npm 下载。库本身处理文件格式那层脏活——版式、母版、主题、动画,这套东西从零写要一年。 AI 层架在它上面:用户输入提示词,系统生成 HTML 样式的幻灯片,导出 .pptx。最近更新还加了 PPT 动画支持。案例提到一个 X 帖子,这套组合拿到 5 万曝光、400 赞、350 收藏、100+ 评论——评论区全是「怎么用」「能不能分享」。需求信号是真的。 案例列了三条个人能走的路: 垂直场景工具。 「AI 周报 P"
   },
   {
     "url": "/zh/content/x-xhs-ai-avatar-midjourney/",
     "locale": "zh",
     "title": "小红书 39 元 AI 头像定制:月单 1500+,Midjourney 月费 30 美元,单人月入 5 万的真实工作量和衰减曲线",
-    "description": "冷读一个单人 operator 在小红书上跑的 AI 头像定制 gig:客单 39 元、月单 1500+、Midjourney 月费 30 美元是唯一工具成本。下面是单单单位经济、交付物实际工作量、CAC 问题、以及案例没说清的四点。",
+    "description": "拆解一个单人 operator 在小红书上跑的 AI 头像定制生意:客单 39 元、月单 1500+、Midjourney 月费 30 美元是唯一工具成本。下面是单单单位经济、交付物实际工作量、CAC 问题、以及案例没说清的四点。",
     "category": "ai",
     "tags": [
       "ai",
@@ -285,8 +566,26 @@
       "monetization",
       "case-study"
     ],
-    "excerpt": "一个单人 operator 在小红书上据报跑着 AI 头像定制 gig:客单 39 元、月单 1500+、Midjourney 月费 30 美元是唯一工具成本。新闻里月毛收入约 58500 元(≈ 8",
-    "body": "一个单人 operator 在小红书上据报跑着 AI 头像定制 gig:客单 39 元、月单 1500+、Midjourney 月费 30 美元是唯一工具成本。新闻里月毛收入约 58500 元(≈ 8000 美元)、单人、无员工。数学在这个量级下成立。但案例对获客成本、交付物定制工时、退款 / 纠纷率、品类饱和曲线四项集体沉默。下面是单位经济、交付物实际形态、以及四点遗漏。 案例说的数字 数量 值 Gig AI 头像定制 客单 39 元 公开月单量 1500+ 工具成本 30 美元 / 月(Midjourney 订阅) 毛收入新闻数字 58500 元 / 月(≈ 8000 美元) operator 人数 1(无员工) 分销渠道 小红书图文笔记 有效小时毛 100–250 元 / 小时 新闻里的收入是真的。维持它需要的隐含工作量案例没提。 单单单位经济 「轻载」假设 operator 第一版生成就直接发出。实际的头像定制是来回交付——买家要换风格、operator 重生成、有可观比例的订单涉及 2–4 轮生成。「实际」有效小时毛 100–160 元,依然可观,但显著低于标题暗示。 月单 1500 时的数学 按 250 小时 / 月(轻载),operator 每周工作约 60 小时——重负载全职。按 625 小时 / 月(实际带改稿),operator 每周工作 150 小时,这对单人不可能。案例可能低估了单数、单单工时、或实际 operator 头数。 现实的单人上限是 600–800 单 / 月,不是 1500。再往上,要么质量掉(纠纷率上去),要么 operator 实际在跑一个小团队。 案例说的「副业本质」 案例把结论框定为:副业不是技术多深,是「需求够具体、流量够便宜、变现够快」。模型层这是真的。运营层,收入被三件事卡住: 分销复利。 小红书图文笔记是漏斗。operator 停更两周,单量掉 30–50%。发帖节奏是工作量的一部分。 交付物质量稳定。 头像定制是主观的;一批质量翻车会触发集中纠纷。质量控制是单级的,不是批级的。 品类饱和。 小红书头像定制有几千个竞争账号。今天入场的新人面对 3–6 个月无酬内容搭建期。 模型是真的。它不是被动收入,是每周 50–60 小时单人 operator 生意,品类饱和半衰期 12–18 个月。 案例没说的事 四点: 获客成本。 小红书分销要求每天 3–5 小时的发帖、回复、互动。这是 operator 真实工作量的一部分,不是平台免费提供的功能。 退款 / 纠纷率。 头像定制的图像质量纠纷占 5–15% 的订单。每轮纠纷 15–30 分钟 operator 工时。案例没给纠纷数。 品类饱和。 几千个竞争账号存在。今天入场的新人面对 3–6 个月无酬爬坡期。案例描述的是一个成熟 operator 的新闻数字,没描"
+    "excerpt": "一个单人 operator 在小红书上据报跑着 AI 头像定制生意:客单 39 元、月单 1500+、Midjourney 月费 30 美元是唯一工具成本。新闻里月毛收入约 58500 元(≈ 800",
+    "body": "一个单人 operator 在小红书上据报跑着 AI 头像定制生意:客单 39 元、月单 1500+、Midjourney 月费 30 美元是唯一工具成本。新闻里月毛收入约 58500 元(≈ 8000 美元)、单人、无员工。数学在这个量级下成立。但案例对获客成本、交付物定制工时、退款 / 纠纷率、品类饱和曲线四项集体沉默。下面是单位经济、交付物实际形态、以及四点遗漏。 案例说的数字 数量 值 生意 AI 头像定制 客单 39 元 公开月单量 1500+ 工具成本 30 美元 / 月(Midjourney 订阅) 毛收入新闻数字 58500 元 / 月(≈ 8000 美元) operator 人数 1(无员工) 分销渠道 小红书图文笔记 有效小时毛 100–250 元 / 小时 新闻里的收入是真的。维持它需要的隐含工作量案例没提。 单单单位经济 「轻载」假设 operator 第一版生成就直接发出。实际的头像定制是来回交付——买家要换风格、operator 重生成、有可观比例的订单涉及 2–4 轮生成。「实际」有效小时毛 100–160 元,依然可观,但显著低于标题暗示。 月单 1500 时的数学 按 250 小时 / 月(轻载),operator 每周工作约 60 小时——重负载全职。按 625 小时 / 月(实际带改稿),operator 每周工作 150 小时,这对单人不可能。案例可能低估了单数、单单工时、或实际 operator 头数。 现实的单人上限是 600–800 单 / 月,不是 1500。再往上,要么质量掉(纠纷率上去),要么 operator 实际在跑一个小团队。 案例说的「副业本质」 案例把结论框定为:副业不是技术多深,是「需求够具体、流量够便宜、变现够快」。模型层这是真的。运营层,收入被三件事卡住: 分销复利。 小红书图文笔记是漏斗。operator 停更两周,单量掉 30–50%。发帖节奏是工作量的一部分。 交付物质量稳定。 头像定制是主观的;一批质量翻车会触发集中纠纷。质量控制是单级的,不是批级的。 品类饱和。 小红书头像定制有几千个竞争账号。今天入场的新人面对 3–6 个月无酬内容搭建期。 模型是真的。它不是被动收入,是每周 50–60 小时单人 operator 生意,品类饱和半衰期 12–18 个月。 案例没说的事 四点: 获客成本。 小红书分销要求每天 3–5 小时的发帖、回复、互动。这是 operator 真实工作量的一部分,不是平台免费提供的功能。 退款 / 纠纷率。 头像定制的图像质量纠纷占 5–15% 的订单。每轮纠纷 15–30 分钟 operator 工时。案例没给纠纷数。 品类饱和。 几千个竞争账号存在。今天入场的新人面对 3–6 个月无酬爬坡期。案例描述的是一个成熟 operator 的新闻数字,没描述入场"
+  },
+  {
+    "url": "/zh/content/ai-medium-seo-playbook/",
+    "locale": "zh",
+    "title": "一个 operator 用 AI 文章 + Medium + SEO + 数字产品 9 个月赚近 3 万美金:2026 年 AI 内容站的单位经济",
+    "description": "一个 operator,9 个月里用 AI 写的 Medium 文章 + SEO + 卖数字产品,赚了近 3 万美金。机制:批量 AI 文章(每天 2 篇)+ Medium 分发 + SEO 标题 + 数字产品漏斗。这条不是「AI 内容有效」——这条是单位经济:9 个月每天 2 篇 ≈ 540 篇,3 万美金营收 ≈ 55 美金/篇。这是一个内容流水线生意,不是 AI 神迹生意。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "content",
+      "medium",
+      "seo",
+      "digital-product",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条推文拆的是一个 operator 9 个月里用 AI 写的 Medium 文章 + SEO + 卖数字产品,赚了近 3 万美金。机制:批量 AI 文章(每天 2 篇)+ Medium 分发 + S",
+    "body": "一条推文拆的是一个 operator 9 个月里用 AI 写的 Medium 文章 + SEO + 卖数字产品,赚了近 3 万美金。机制:批量 AI 文章(每天 2 篇)+ Medium 分发 + SEO 标题 + 数字产品漏斗。重点不是「AI 内容有效」,是单位经济:9 个月每天 2 篇 ≈ 540 篇,3 万美金营收 ≈ 55 美金/篇平均。下面是单篇数学、数字产品后端、以及案例没展开的四点。 单篇单位经济 跨度大,看数字产品后端。没有产品,一篇文章终身赚 0.20–5 美金。有了产品,一篇文章能赚 50+ 美金。产品是把 pageview 变美元的单位经济杠杆。 为什么这是内容流水线生意 关键在节奏,不在 AI 质量。一个 540 篇的 operator(无论人写、AI 写、外包)就有一个 3 万美金的生意。AI 把单篇制作成本压到 1–5 美金,这让数学跑得通。没有 AI,同样节奏单篇成本 50–200 美金,单位经济就垮。 流水线形状: 每篇 operator 时间:1.5–2.5 小时。每天 2 篇的节奏是单兵 3–5 小时专注工作能撑住的。复利体量是护城河。 数字产品后端 文章是漏斗顶部。产品是转化。大多数文章在 0.1–1% pageview 转化率下卖产品;客单价 30–300 美金。产品漏斗是把 pageview 变美元的环节。没有产品,文章只是 Medium partner 收入(0.20–5 美金/篇终身),不是生意。 为什么 55 美金/篇有误导 3 万美金摊到 540 篇是平均。中位大概 0–5 美金,少数爆款拉动平均。80/20 适用:约 20% 的文章(高流量 SEO 赢家)贡献 80% 营收。剩下 80% 的文章是支撑长尾 SEO 的内容农场填充。 出 540 篇是体量游戏。AI + SEO + 产品漏斗组合让体量游戏赚钱。中位单篇是亏损引子;分布是赢家。 案例没说的事 四点。 制作成本。 案例没给单篇成本。隐含 1–5 美金。 中位单篇营收。 3 万美金是 540 篇的平均,中位大概 0–5 美金。平均被少数爆款拉动。 数字产品的流失。 案例没给退款/拒付率。差漏斗上数字产品退款率 5–15%。 可持续性。 案例没处理 12–24 月后 Google 算法压 SEO 流量会发生什么。「Helpful Content」更新自 2024 起降权薄 AI 内容;案例没处理模型长期存续。 结论 案例不是「AI 内容有效」。案例是:AI + SEO + 数字产品后端是一个内容流水线生意——AI 压制作成本,SEO 压分发成本,产品漏斗是单位经济杠杆。55 美金/篇平均有误导;中位是 0–5 美金。模型跑得通因为体量复利;模型脆弱因为 Google 算法是隐性合伙人。 看这条案例的多数人,带走就一句:别再找 AI 内容魔法。建一条内容"
   },
   {
     "url": "/zh/content/solo-saas-profit-math/",
@@ -324,7 +623,7 @@
     "url": "/zh/content/web-build-service-ai-leverage/",
     "locale": "zh",
     "title": "印度程序员的 AI 工具死了、AI 加持的建站服务活了:2026 年「卖 AI」为什么输给「用 AI」",
-    "description": "冷读一个单人印度 operator 同时做的两个产品:AI 产品图 SaaS(死了——零付费用户)和 AI 加持的小企业建站服务(活了——月收入超他以前整年的工资)。结构主张:AI 不是产品,AI 是成本结构杠杆。AI 工具市场已经饱和,AI 加持的传统服务市场没有。",
+    "description": "拆解一个单人印度 operator 同时做的两个产品:AI 产品图 SaaS(死了——零付费用户)和 AI 加持的小企业建站服务(活了——月收入超他以前整年的工资)。结构主张:AI 不是产品,AI 是成本结构杠杆。AI 工具市场已经饱和,AI 加持的传统服务市场没有。",
     "category": "ai",
     "tags": [
       "ai",
@@ -342,7 +641,7 @@
     "url": "/zh/content/english-ai-seo-content-site/",
     "locale": "zh",
     "title": "英文 AI 内容站案例：3 个站、9000 篇文章、6 个月月入 2300 美金 AdSense —— 以及让模型跑通的 500 倍成本压缩",
-    "description": "冷峻拆解一个 3 站英文 AI AdSense 案例。关键词策略（KD<15、月搜索量 100-500）、生产算账（每天 50 篇 × 0.013 美金/篇）、为什么\"AI 不是质量，而是产量\"这句话比多数人承认的更真实、模型在哪会破。",
+    "description": "深度拆解一个 3 站英文 AI AdSense 案例。关键词策略（KD<15、月搜索量 100-500）、生产算账（每天 50 篇 × 0.013 美金/篇）、为什么\"AI 不是质量，而是产量\"这句话比多数人承认的更真实、模型在哪会破。",
     "category": "ai",
     "tags": [
       "ai",
@@ -359,8 +658,8 @@
   {
     "url": "/zh/content/x-fiverr-gpt-image-services/",
     "locale": "zh",
-    "title": "在 Fiverr 用 GPT Image 接单:单 gig 单位经济、纠纷率、新卖家内卷曲线",
-    "description": "冷读一个 Fiverr 副业案例——用 GPT Image(或同类模型)做老照片修复、物体消除、AI 商用图,定价 10–100 美元 / 单。下面是单 gig 单位经济、把毛利压下去三件事(纠纷率、平台抽成、新卖家内卷),以及谁能跨过衰减曲线。",
+    "title": "在 Fiverr 用 GPT Image 接单:单位经济、纠纷率、新卖家内卷曲线",
+    "description": "拆解一个 Fiverr 副业案例——用 GPT Image(或同类模型)做老照片修复、物体消除、AI 商用图,定价 10–100 美元 / 单。下面是单位经济、把毛利压下去三件事(纠纷率、平台抽成、新卖家内卷),以及谁能跨过衰减曲线。",
     "category": "ai",
     "tags": [
       "ai",
@@ -370,8 +669,8 @@
       "monetization",
       "case-study"
     ],
-    "excerpt": "Fiverr 上跑 GPT Image 的 gig(老照片修复 10–25 美元、物体消除 5–25 美元、AI 商用图 20–100+ 美元)是一个真实存在的品类,有几千个活跃卖家。单 gig 数字",
-    "body": "Fiverr 上跑 GPT Image 的 gig(老照片修复 10–25 美元、物体消除 5–25 美元、AI 商用图 20–100+ 美元)是一个真实存在的品类,有几千个活跃卖家。单 gig 数字干净:工具成本按美分计、gig 价按美元计、专注的 operator 单日能出 10–30 单。毛利被纠纷 / 改稿率、平台抽成、Fiverr 新卖家内卷曲线三件事压得很厉害。下面是单位经济、三个压毛利的因子、以及持续性的问题。 案例说的数字 品类 gig 价 工具成本 operator 工时 所需技能 老照片修复 10–25 美元 0.05–0.30 美元 5–15 分钟 中 物体消除 5–25 美元 0.05–0.20 美元 3–10 分钟 低 AI 商用图 20–100+ 美元 0.20–0.80 美元 10–25 分钟 中-高 案例把三个品类当成经济结构类似的格子。表格里看不出的是:高技能 gig(商用图)单量低但单 gig 毛利高,这才是分水岭。 单 gig 单位经济 专注 operator 单日 15 gig、平均 25 美元,大致单日毛收入 300 美元 / 月毛 7500 美元。扣纠纷、平台费、未售出 listing 时间后,头部 10% 卖家实际月入 3000–5000 美元,中位卖家 1000–2000 美元 / 月。 三个压毛利的因子 纠纷 / 改稿率 Fiverr 上图像编辑品类的买家,15–30% 的订单会发起纠纷或要求改稿。每轮纠纷 15–45 分钟无酬 operator 工时。一个纠纷率 25% 的卖家,总工时的 25% 砸在纠纷里,有效小时单价被压 20–30%。 压纠纷率是一门独立手艺:清晰的 gig 描述、样例输入配对、产出稳定的 prompt 模版、首次改稿快速响应。愿意投这些的卖家把纠纷率压到 10% 以下,实际小时单价明显高出。 平台抽成 Fiverr 卖家侧抽 20%,不可谈。这是接入买家池的成本。15 美元 gig,operator 拿 12;50 美元 gig,operator 拿 40。抽成是固定百分比,高价 gig 不被不对称惩罚,但低价 gig 的毛利空间更薄,扛不住。 Fiverr 内卷曲线 每季度新卖家涌入同一品类、以更低价格开 gig。Fiverr 搜索算法给新卖家曝光加成,意味着老卖家必须: 随行就市降价(把品类地板压下去) 垂直化(例如专做 1940 年代肖像修复) 把 gig 打包成高客单 搬站外走直接客户管线 Q1 定价 25 美元的品类,到 Q4 经常跌到 15 美元。不适应的老卖家,有效小时单价会被衰减。 垂直化能扛过内卷曲线 通用 gig 跟几千个同类条目竞争。「专做 1940–1960 美国肖像修复 + 档案级打印输出 + 5 天交付」的 gig 跟几十个竞争。垂直化换来三件事: 信任度"
+    "excerpt": "Fiverr 上跑 GPT Image 的服务(老照片修复 10–25 美元、物体消除 5–25 美元、AI 商用图 20–100+ 美元)是一个真实存在的品类,有几千个活跃卖家。单笔数字干净:工具成",
+    "body": "Fiverr 上跑 GPT Image 的服务(老照片修复 10–25 美元、物体消除 5–25 美元、AI 商用图 20–100+ 美元)是一个真实存在的品类,有几千个活跃卖家。单笔数字干净:工具成本按美分计、单价按美元计、专注的 operator 单日能出 10–30 单。毛利被纠纷 / 改稿率、平台抽成、Fiverr 新卖家内卷曲线三件事压得很厉害。下面是单位经济、三个压毛利的因子、以及持续性的问题。 案例说的数字 品类 单价 工具成本 operator 工时 所需技能 老照片修复 10–25 美元 0.05–0.30 美元 5–15 分钟 中 物体消除 5–25 美元 0.05–0.20 美元 3–10 分钟 低 AI 商用图 20–100+ 美元 0.20–0.80 美元 10–25 分钟 中-高 案例把三个品类当成经济结构类似的格子。表格里看不出的是:高技能条目(商用图)单量低但单笔毛利高,这才是分水岭。 单笔单位经济 专注 operator 单日 15 单、平均 25 美元,大致单日毛收入 300 美元 / 月毛 7500 美元。扣纠纷、平台费、未售出 listing 时间后,头部 10% 卖家实际月入 3000–5000 美元,中位卖家 1000–2000 美元 / 月。 三个压毛利的因子 纠纷 / 改稿率 Fiverr 上图像编辑品类的买家,15–30% 的订单会发起纠纷或要求改稿。每轮纠纷 15–45 分钟无酬 operator 工时。一个纠纷率 25% 的卖家,总工时的 25% 砸在纠纷里,有效小时单价被压 20–30%。 压纠纷率是一门独立手艺:清晰的条目描述、样例输入配对、产出稳定的 prompt 模版、首次改稿快速响应。愿意投这些的卖家把纠纷率压到 10% 以下,实际小时单价明显高出。 平台抽成 Fiverr 卖家侧抽 20%,不可谈。这是接入买家池的成本。15 美元单价,operator 拿 12;50 美元单价,operator 拿 40。抽成是固定百分比,高单价不被不对称惩罚,但低单价的毛利空间更薄,扛不住。 Fiverr 内卷曲线 每季度新卖家涌入同一品类、以更低价格开条目。Fiverr 搜索算法给新卖家曝光加成,意味着老卖家必须: 随行就市降价(把品类地板压下来) 垂直化(例如专做 1940 年代肖像修复) 把单子打包成高客单 搬站外走直接客户管线 Q1 定价 25 美元的品类,到 Q4 经常跌到 15 美元。不适应的老卖家,有效小时单价会被衰减。 垂直化能扛过内卷曲线 通用条目跟几千个同类条目竞争。「专做 1940–1960 美国肖像修复 + 档案级打印输出 + 5 天交付」的条目跟几十个竞争。垂直化换来三件事: 信任度更高。 具体框定抬升买家信心,纠纷率下降。 价格溢价。 垂直买家愿意付 2–3 倍通用价格,因为服务"
   },
   {
     "url": "/content/x-xhs-ai-avatar-midjourney/",
@@ -389,6 +688,23 @@
     ],
     "excerpt": "A solo operator on 小红书 (Xiaohongshu) reportedly runs an AI-avatar customization gig at 39 RMB per or",
     "body": "A solo operator on 小红书 (Xiaohongshu) reportedly runs an AI-avatar customization gig at 39 RMB per order, with 1,500+ orders/month and Midjourney at $30/month as the only tooling cost. Headline gross is roughly 58,500 RMB/month (≈$8,000), single-operator, no employees. The math works at this scale. The case is silent on customer-acquisition cost, deliverable customization time, refund / dispute rate, and the niche saturation curve. Below is the unit economics, the deliverable shape, and four gaps. What the case lays out Quantity Value Gig AI avatar customization Price per order 39 RMB Reported monthly orders 1,500+ Tooling cost $30/month (Midjourney subscription) Headline gross 58,500 RMB/month ($8,000) Operator count 1 (no employees reported) Distribution channel 小红书 image-text posts Effective hourly gross 100–250 RMB/hour The headline income is real. The implicit workload to maintain it is not in the case. Per-order unit economics The \"light\" case assumes the operator ships the first generation without revisions. In practice, avatar customization is a back-and-forth deliverable — buyers request style changes, the operator regenerates, and a meaningful fraction of orders involve 2–"
+  },
+  {
+    "url": "/content/local-services-ai-followup/",
+    "locale": "en",
+    "title": "A Google Sheet + auto-email reminder sold for $12/month to a local HVAC owner: why the boring AI plays in 2026 aren't in AI tools",
+    "description": "A look at a $12/month Google Sheet + auto-email 'customer follow-up' product sold to a local blue-collar service business (HVAC). How it runs: a Google Sheet tracks every install and auto-emails the owner when filters need swapping, warranties are about to lapse, or 6-month service is due. The interesting part is not the $12. It is the addressable market — local blue-collar service owners (plumbers, cleaners, landscapers, detailers) who still run follow-up in their head.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "automation",
+      "local-service",
+      "saas",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A case profiles a solo operator who built a Google-Sheet-plus-auto-email 'customer follow-up' remind",
+    "body": "A case profiles a solo operator who built a Google-Sheet-plus-auto-email 'customer follow-up' reminder product for a local HVAC (heating, ventilation, air conditioning) shop owner. The product tracks every install the shop has done, then auto-emails the owner (not the customer) when a 3-month filter swap is due, when a warranty is about to lapse, or when a 6-month service check is due. The product sells for $12/month. The operator signed a second shop; the product now runs at $24/month across two shops. The lesson here is not 'the $24'. It is the addressable market — local blue-collar service business owners who still run follow-up in their head and lose repeat revenue because of it. In 2026, the AI-tools market is saturated. The AI-leveraged local-service market is not. The product here is not the AI. It is the reminder, sold to a non-technical buyer through a face-to-face relationship. The AI is the auto-email — the cheapest piece of the stack. Per-shop economics, addressable market, and four gaps the case doesn't cover, below. The product The product is, mechanically, a Google Sheet plus a scheduled auto-email. There is no model, no agent, no app. The edge is not the AI. The edg"
   },
   {
     "url": "/content/epacket-sunset-logistics-alternatives/",
@@ -410,7 +726,7 @@
     "url": "/zh/content/x-agentic-commerce-marketplace/",
     "locale": "zh",
     "title": "Agent 交易市场案例：AI Agent 三角色市场、质押仲裁机制 —— 案例没谈的三件决定单位经济的事",
-    "description": "冷峻拆解一个 x 案例。OKX AI 的三角色 Agent 市场（用户/ASP/仲裁方），机制做什么、为什么像新一代服务市场平台原型，以及案例跳过的三件事：ASP 获客成本、争议量、需求侧流动性。",
+    "description": "深度拆解一个 x 案例。OKX AI 的三角色 Agent 市场（用户/ASP/仲裁方），机制做什么、为什么像新一代服务市场平台原型，以及案例跳过的三件事：ASP 获客成本、争议量、需求侧流动性。",
     "category": "ai",
     "tags": [
       "ai",
@@ -442,7 +758,7 @@
     "url": "/zh/content/kdp-ai-ebook-case/",
     "locale": "zh",
     "title": "AI + Amazon KDP 案例：6 个月 350 本、18000 欧元，以及为什么这是书库赌局而非单本赌局",
-    "description": "冷峻拆解一个网络流传的 AI 批量电子书 KDP 案例。成本结构算账、20/80 分布、为什么品类选择压过内容质量，以及哪些路径可以照抄、哪些坑必躲。",
+    "description": "深度拆解一个网络流传的 AI 批量电子书 KDP 案例。成本结构算账、20/80 分布、为什么品类选择压过内容质量，以及哪些路径可以照抄、哪些坑必躲。",
     "category": "ai",
     "tags": [
       "ai",
@@ -478,7 +794,7 @@
     "url": "/zh/content/x-ai-pet-companion-video/",
     "locale": "zh",
     "title": "AI 宠物陪伴短视频:一条工作流产出多条视频的「可复制副业」,以及可复制到底指的是什么",
-    "description": "冷读一个 AI 宠物陪伴短视频案例——宠物 + 配音 + ASMR,一条 Coze 风格工作流一次跑出多条视频,通过电商(宠物零食、宠物周边)变现。案例把它框定为可复制副业。下面是工作流结构、单条经济、以及可复制声明实际漏掉的三件事。",
+    "description": "拆解一个 AI 宠物陪伴短视频案例——宠物 + 配音 + ASMR,一条 Coze 风格工作流一次跑出多条视频,通过电商(宠物零食、宠物周边)变现。案例把它框定为可复制副业。下面是工作流结构、单条经济、以及可复制声明实际漏掉的三件事。",
     "category": "ai",
     "tags": [
       "ai",
@@ -513,7 +829,7 @@
     "url": "/zh/content/ai-service-website-beats-ai-tool/",
     "locale": "zh",
     "title": "AI 工具死了，AI 服务活了：印度程序员 7 天固定价建站，怎么把\"卖 AI 的人\"干翻",
-    "description": "冷峻拆解\"AI 是电不是电器\"论点——一个接单者同时上 AI 产品图 SaaS 和 7 天固定价建站服务，SaaS 零付费用户死掉，服务月入超过他之前一整年的工资。这给挑细分赛道的单人接单者留下什么。",
+    "description": "深度拆解\"AI 是电不是电器\"论点——一个接单者同时上 AI 产品图 SaaS 和 7 天固定价建站服务，SaaS 零付费用户死掉，服务月入超过他之前一整年的工资。这给挑细分赛道的单人接单者留下什么。",
     "category": "ai",
     "tags": [
       "ai",
@@ -531,7 +847,7 @@
     "url": "/zh/content/ai-beauty-fanvue-tiktok/",
     "locale": "zh",
     "title": "AI 美女 TikTok → Fanvue 漏斗：19 岁单人 2 周 85 万日元，562 个 9.99 美金订阅背后的账",
-    "description": "冷峻拆解 19 岁单人接单者用 Claude 生成舞蹈视频、做 AI 美女 TikTok 账号 5 天涨 5 万粉、转化 562 个 Fanvue 9.99 美金月订阅的漏斗数学。平台风险图、模型脆弱处。",
+    "description": "深度拆解 19 岁单人接单者用 Claude 生成舞蹈视频、做 AI 美女 TikTok 账号 5 天涨 5 万粉、转化 562 个 Fanvue 9.99 美金月订阅的漏斗数学。平台风险图、模型脆弱处。",
     "category": "ai",
     "tags": [
       "ai",
@@ -546,10 +862,27 @@
     "body": "一个 19 岁单人接单者用 Claude 写脚本、指导一系列 AI 生成的舞蹈视频，做 TikTok 账号。5 天涨约 5 万粉。同一个接单者开了一个 Fanvue 9.99 美金/月，两周内 562 个粉丝转化成付费订阅。按案例 2 周收入 8.5 万美金等值日元。模型是两段式：TikTok 在漏斗顶，Fanvue 在底部。下面是账——哪里站得住、哪里被夸。 漏斗具体数字 粉丝到订阅 1.1% 的转化对这个细分来说偏高。案例暗示 8.5 万日元包含一次性峰值（大额打赏、病毒式 PPV、付费聊天）叠在经常性订阅之上。9.99 × 562 × 12 ≈ 6.7 万美金/年 是稳态；2 周 8.5 万美金等值日元是发布峰值，不是 run rate。 为什么用 TikTok 做漏斗顶 TikTok 算法的触达在短视频里压倒一切。1 分钟舞蹈视频上 For You 页能拿到 50 万-200 万曝光。同样的内容放 Instagram Reels 或 YouTube Shorts 表现差 3-10 倍。漏斗把工作分给两个平台：TikTok 负责触达（免费），Fanvue 负责收钱（付费）。每个平台只做一件事。 第二个原因：TikTok 给创作者的分钱达不到把 5 万粉变现的水平。同样的 5 万粉，在别的平台可能每月广告收入 200-500 美金；Fanvue 上 1.1% 转化能拿到 5,610 美金/月经常性。数学逼着走双平台拆分。 Claude 在制作里到底干什么 视频生产栈有三层： 脚本与导演——Claude 写舞蹈编排描述、镜头运动计划、口型同步时间、音频提示。没有 Claude 这一天要半天人写。 画面 prompt——Claude 产出喂给 AI 视频模型的逐帧画面 prompt。prompt 质量决定视觉一致性。 配音与字幕——Claude 写可选的配音文本或字幕，接单者直接贴到视频里。 实际视频帧来自一个视频模型（Kling、Seedance、Sora、Veo 都合理；案例没指明）。Claude 把人类侧的活压掉之后，接单者单条视频从半天压到 1-2 小时。视频模型吃剩下的活。 单位经济细账 按 562 订阅 × 9.99 USD = 5,610 USD/月经常性，等效时薪 5,610 / 50 ≈ 112 USD/小时。叠加小费 / PPV / 私信收入，等效更高，112 USD/小时是地板。漏斗通时账是真的。 案例没说的几件事 流失率。订阅生意活不活看流失。562 订阅每月 10% 流失 = 每月掉 56 订阅、每月要补 56 新订阅才能持平。案例没显示这个数。 退款 / 争议率。订阅模式的拒付是真实成本，这个细分常在 1-3%。案例没拆分。 小费 / PPV / 私信占比。8.5 万日元把经常性和一次性混在一起。90% tips / 10% 订阅"
   },
   {
+    "url": "/zh/content/social-scheduler-not-better-tool/",
+    "locale": "zh",
+    "title": "AI 社媒排期工具:不在「更好用」那一格里赢,反而能赢",
+    "description": "一个知识星球帖讲透了独立开发者做工具型产品最常掉进的坑:卷「更好用」,进了最挤的赛道,跟一堆人抢同一批客户。真正能赚钱的人,比的不是谁做得更好,是谁做了别人懒得做的那一块。下面是结构主张、单位经济拆解,以及四个案例没说清的事。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "saas",
+      "social-media",
+      "niche",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条知识星球帖讲透了独立开发者做工具型 AI 产品最常掉进的坑:卷「更好用」,进了最挤的赛道,跟一堆人抢同一批客户。社媒排期工具这个市场,早就有 Buffer、Hootsuite 大厂在做,界面漂亮、",
+    "body": "一条知识星球帖讲透了独立开发者做工具型 AI 产品最常掉进的坑:卷「更好用」,进了最挤的赛道,跟一堆人抢同一批客户。社媒排期工具这个市场,早就有 Buffer、Hootsuite 大厂在做,界面漂亮、功能全、用户量大。新入场者再做一个「更好用」的,客户凭什么换。 帖子的落点不是「别做社媒排期」。落点是:做工具型产品,真正能赢的人,比的不是谁做得更好,是比谁做了别人懒得做的那一块。小语种、长尾平台、垂直行业这些「不值得做」的供给,反而藏着大钱。下面是结构主张、机制拆解,以及四个案例没说清的事。 「更好用」是陷阱 工具型产品市场,已经被大厂成熟产品占满。Buffer、Hootsuite、Later 这些,UI 漂亮、功能全、用户量大。新入场者只能在「更好用」这一格里跟几十个同类抢同一批客户。这个格子的三个结构性问题: 可比维度被锁死。 既然市场上已经有「够用」的产品,新工具必须证明自己「比够用更好」,客户只会比较 UI、速度、功能,这些都是边际效用递减的战场。 判断成本高。 「更好用」是个主观标签,客户得花时间试用、翻评测、对照 5 个工具,转化路径长。 冷启动 CAC 撑不住。 没有渠道优势,新工具要付 Google Ads 或 cold outreach 才能拉到客户,撑不到现金流正向就死。 这就是为什么 90% 的「更好用」AI 工具熬不过 12 个月。不是 AI 不够好,是位置不对。 「别人懒得做的那一块」长什么样 三类供给是大厂不会优先做的,正是新工具的护城河: 小语种支持。 主流工具优先英语、中文、西班牙语。葡语、印尼语、阿拉伯语、越南语、土耳其语这些语种常常是后置甚至没有。这部分用户占全球 SaaS 用户 30%,但主流工具只覆盖 20% 语种。缺口巨大。 长尾平台集成。 Mastodon、Bluesky、Nostr、Warpcast、Telegram、Discord、Threads 这些用户少但活跃的发布渠道,主流工具不会优先做集成,因为用户基数小、付费意愿不确定。但这些平台的 KOL 议价权高,愿意为稀缺工具付溢价。 垂直行业模板。 医疗、法律、教育、跨境电商这些小众行业的内容模板,大厂不会专门做,因为 TAM 小。但这些行业的客户付费意愿强,工具替换成本高。 这三条的共同特征:主流工具看不上、ROI 算不过来、不愿意做。正是新工具的入场券。 AI 怎么把「懒得做」变成「能做」 AI 不是用来「做得更好」,是用来「把别人懒得做的成本砍到能赚钱」。 AI 翻译+本地化。 多语种支持的传统工时是 1 个语种 1 周,AI 砍到 1 个语种 1 天。1 个人 1 周能覆盖 10+ 语种,小语种工具的人力成本降到主流工具的 1/5。 AI 抓取+解析长尾平台。 集成一个新平台 API 过去要 1 个开发者 1 周(包括 OAuth、限流、错误处理)。A"
+  },
+  {
     "url": "/zh/content/x-buddha-youtube-douyin/",
     "locale": "zh",
     "title": "AI 数字人念白在抖音:\"小和尚禅语\" 月涨粉 5 万、靠卖书变现,以及看不见的留存曲线",
-    "description": "冷读一个抖音上 AI 形象 + AI 配音 + 国学 / 情感 / 鸡汤脚本的念白账号(月涨粉 5 万,卖书变现)。毛利怎么算,选品类为什么要紧,以及案例没说清楚的留存曲线。",
+    "description": "拆解一个抖音上 AI 形象 + AI 配音 + 国学 / 情感 / 鸡汤脚本的念白账号(月涨粉 5 万,卖书变现)。毛利怎么算,选品类为什么要紧,以及案例没说清楚的留存曲线。",
     "category": "ai",
     "tags": [
       "ai",
@@ -566,7 +899,7 @@
     "url": "/zh/content/x-coze-image-illustration-account/",
     "locale": "zh",
     "title": "AI 图文博主四个月矩阵 20 万粉,真正的资产是 Coze 工作流本身——两条变现层的数学拆解",
-    "description": "冷读一个 \"图解万物 / 万物图鉴\" 风格的 AI 图文账号:据报四个月内通过 Coze 工作流把跨平台矩阵做到 20 万粉。变现拆成两层:平台创作者分成 + 1000+ 元的打包课程。下面是数学、工作流结构、案例没说清的部分。",
+    "description": "拆解一个 \"图解万物 / 万物图鉴\" 风格的 AI 图文账号:据报四个月内通过 Coze 工作流把跨平台矩阵做到 20 万粉。变现拆成两层:平台创作者分成 + 1000+ 元的打包课程。下面是数学、工作流结构、案例没说清的部分。",
     "category": "ai",
     "tags": [
       "ai",
@@ -611,6 +944,23 @@
     ],
     "excerpt": "这条被广泛转发的推文核心论点是时点,不是技术。论点是:美国 AI 需求大致会持续到 2026 年 Q4,因为晚期 AI 资本的退出渠道仍然是私募。当 OpenAI 或 Anthropic 真正 IPO",
     "body": "这条被广泛转发的推文核心论点是时点,不是技术。论点是:美国 AI 需求大致会持续到 2026 年 Q4,因为晚期 AI 资本的退出渠道仍然是私募。当 OpenAI 或 Anthropic 真正 IPO,那一笔把晚期私募估值顶在高位的折价会瞬间消失,周期拐点先于模型质量下降出现。 这是关于资本结构的判断,不是关于 GPT-5 能不能做某件事的判断。 IPO 窗口是一面钟 如果我们把公开估计的 OpenAI 2026 Q4、Anthropic 2026 Q4 到 2027 年中这两条时间线当作基准,晚期 AI 资本的可见退出最多还有四个季度。任何一家跳票一两个季度,只是把拐点沿着时间轴等长平移,不会改变交易的形态。 在第一家真正挂牌之前,有三件事成立: 大多数晚期基金的退出路径只剩下私募二级 tender offer。2024-2025 多笔 AI 标的的二级 tender 据报按上一轮 primary 的 6-7 折定价;折价反映的是谁还在写支票,不是底层业务。 AI 质量的公开市场参照系基本是 hyperscaler 和一小撮芯片、基础设施标的。在盈利或 capex 措辞倒逼之前,这些 ticker 不会主动重新定价。 客户的 AI 预算继续增长,理由是没有任何公开基准敢说「AI 已经 price in」。基准出现,预算才会压缩——不是因为模型变差就压缩。 「AI 行情要熄火」在数字上长什么样 「AI 行情要熄火了」这句话被用得很泛。把它当成一个具体序列,周期拐点大概是这样: 如果某家大额 IPO 按传言区间下限,或低于上轮私募估值定价。最后一轮 primary 与第一次 public print 之间的 post-money gap,成为「AI 在愿意付钱的市场里值多少」的新参照系。 下一批晚期 AI 资本要么接受结构上更低的估值,要么找到愿意承销 flat 或 down round 的新 lead。 公开 AI 基础设施标的开始下调收入指引,不是因为需求归零,而是因为客户结构从「扩张」切到「right-sized」。 hyperscaler 在财报里把 capex 措辞从「我们被电力 / 芯片 / 工程进度卡住」换成「我们按节奏推进」。这句话出现在 earnings call,基本是最干净的信号。 上面任何一步都不需要新的模型变差。它们只需要资本结构追上运营现实。 这条推文没有覆盖的部分 IPO 时点跳票。 论点是 Q4 2026,但 OpenAI 内部目标已经跳票过多次。如果 Q4 推到 2027 年中,周期拐点跟着平移 6-9 个月。推文没有展开这条分支。 IPO 之前的 tender reset。 部分 AI 私募在 2025 年下半年已经按 flat 或 up round 跑过 tender。如果这些 reset 站稳,IPO 后的折价可能小于 "
+  },
+  {
+    "url": "/zh/content/x-faceless-x-account-ai-operator/",
+    "locale": "zh",
+    "title": "AI 运营不露脸 X 账号：30天到首单、3000 USD/月，以及“5–6 小时/周”这套话术真正没讲的四件事",
+    "description": "一个案例讲 AI 运营不露脸 X 账号，每天 1 小时、每周 5–6 小时，30 天内做到 3000 USD/月。流程是 GPT 写 thread、AI 出图、定时发布。算账的关键不在“AI 能写推”，在于多账号矩阵模型和 niche CPM 数学。原帖没讲的事：账号矩阵风险、X 对 AI 内容的政策、niche CPM 波动、赞助管线的现实。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "x-twitter",
+      "faceless-account",
+      "content-monetization",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一个案例讲 AI 运营不露脸 X 账号，每天 1 小时、每周 5–6 小时，30 天做到 3000 USD/月。流程是 GPT 写 thread、AI 出图、定时发布、niche 选题、粉丝漏斗到 n",
+    "body": "一个案例讲 AI 运营不露脸 X 账号，每天 1 小时、每周 5–6 小时，30 天做到 3000 USD/月。流程是 GPT 写 thread、AI 出图、定时发布、niche 选题、粉丝漏斗到 newsletter 或付费社群。算账的关键不在“AI 写推”，在于多账号矩阵模型和 niche CPM 数学。单账号经济学、赞助管线现实、以及原帖没讲的四件事，下面。 单账号单位经济 5–6 小时/周只能撑 1–2 个账号 1 小时/天。要做到 3000 USD/月意味着单账号 1500–3000 USD/月——只有 niche CPM top decile 才跑得动。原帖标题数字撑不住，除非运营者跑多账号矩阵而时间预算里没承认。 三条收入线展开 有意思的是线 2。5 万粉 niche 账号单条赞助 200–800 USD。要纯靠线 2 撑 3000 USD/月，每月得 4–15 单赞助。建这条管线（冷 DM、跟进、谈价、内容 brief、收款）是另一套工作流，AI 循环里没有。 多账号矩阵模型 现实的玩法是 5–10 个 niche 账号并行，每个 3–8 万粉。运营者按 30 分钟批次轮转。每天合计 5–6 小时（不是每周）。每个账号一个 niche：AI 工具、indie SaaS、健身、财经。矩阵模型用 niche CPM 波动换组合平滑。 矩阵放大收入也放大风险。5 个账号 = 5 次违规概率、5 倍写作风格指纹、5 倍设备指纹。检测抓到 1 个，连坐封整组。 原帖没讲的事 赞助管线的工作量。 5–6 小时/周不含冷 DM、跟进、谈价、内容 brief、收款。这部分单算每周 5–10 小时。3000 USD/月目标要求这条管线并行运转。 账号存活率。 原帖不讲前 30 天挂几个号。X 在收紧 AI 内容标签，首月 30% 封号率意味着开 4–5 个才能保 3 个。 收入结构占比。 3000 USD/月这个标题数字没把 X Premium 分成和赞助分开。两条线单位经济、规模化路径、风险结构完全不同。读者看不出来哪条线是承重的。 粉丝到 newsletter / 社群的转化。 5 万粉账号 1% newsletter 转化 = 500 订阅。10 USD/月订阅 = 5000 USD/月。原帖不讲这个站外漏斗是主模型还是顺带的结果。 带走就一句 3000 USD/月这个目标在 niche 头部是真实的——5 万粉 AI 工具或 indie SaaS 账号加稳定的赞助管线可以做到。5–6 小时/周是软肋：撑这个收入真实工时是每周 15–25 小时（含赞助管线）。读者照抄时要预算 5–10 个 niche 账号并行、首月预期 1–2 个号被封、把标题数字当 top decile 看待。2026 这个模型在 X Premium 分成和赞助价都稳的前提下能跑，两"
   },
   {
     "url": "/content/x-buddha-youtube-douyin/",
@@ -662,6 +1012,23 @@
     ],
     "excerpt": "An AI pet-companion short-video case (pets + voice + ASMR) reportedly runs on a single workflow that",
     "body": "An AI pet-companion short-video case (pets + voice + ASMR) reportedly runs on a single workflow that produces multiple videos per run, monetized through e-commerce — pet snacks and pet peripherals in the creator''s storefront. The case frames the model as replicable. The workflow is genuinely replicable; the audience and the e-commerce conversion are not. Below is the workflow shape, the per-video economics, and what the replicability claim actually means. What the case lays out Quantity Value Content AI pet-companion short videos (pets + voice + ASMR) Production One workflow, multiple video outputs per run Distribution Short-video platforms (Douyin, Kuaishou, Xiaohongshu video) Monetization layer 1 Platform creator-share Monetization layer 2 E-commerce (pet snacks, peripherals) Reported operator count Single operator (case implies) Replicability claim Yes (case frames it as a replicable side hustle) The case is honest about the workflow shape. It is silent on the audience and the storefront trust that the workflow output depends on. The workflow shape The replicable part is the production pipeline: A single source clip can produce 5–15 finished videos with different cuts, ASMR tra"
+  },
+  {
+    "url": "/content/social-scheduler-not-better-tool/",
+    "locale": "en",
+    "title": "AI social-scheduling tools: the \\\"better tool\\\" track is a trap, the \\\"someone-has-to-do-it\\\" track is the real one",
+    "description": "A knowledge-planet case breaks down the most common trap solo AI-tool builders fall into: trying to build a \\\"better\\\" version, ending up in the most crowded niche, fighting dozens of tools for the same buyers. The people who actually make money don't compete on \\\"better\\\" — they pick the slice nobody else will touch. The structural claim, the unit economics of the unloved niches, and four gaps the case does not address.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "saas",
+      "social-media",
+      "niche",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A knowledge-planet case breaks down the most common trap solo AI-tool builders fall into: competing ",
+    "body": "A knowledge-planet case breaks down the most common trap solo AI-tool builders fall into: competing on \"better,\" ending up in the most crowded niche, fighting dozens of similar tools for the same buyers. The social-media scheduling market is already occupied by Buffer, Hootsuite, Later — polished UIs, full feature sets, large user bases. A new entrant building \"a better tool\" has to answer the question: why would anyone switch. The case does not say \"don't build a social-scheduling tool.\" It says: for tool-type AI products, the operators who actually make money don't compete on \"better\" — they pick the slice nobody else will touch. Small languages, long-tail platforms, niche verticals. The unloved supply, where the big money quietly sits. Below: the structural claim, the mechanism, and four gaps the case does not address. \"Better\" is a trap The tool market is already full. Buffer, Hootsuite, Later — polished, mature, well-funded. A new entrant has to compete in the \"better\" lane against dozens of similar products. Three structural problems with that lane: Comparable dimensions are locked. If the market has a \"good enough\" product, new tools have to prove they are better on UI, spee"
   },
   {
     "url": "/tools/ai-break-even/",
@@ -732,6 +1099,24 @@
     "body": "这条原推文是个 prompt 模板:「我 [年龄],对 [兴趣] 感兴趣,想用 AI 在 YouTube 赚钱,给我按我的画像排前 5 个 CPM 最高的细分。」有意思的不是模板本身,是模板要返回什么答案,收支才能闭环。 CPM(cost per mille,广告主为每 1000 次可变现播放付的钱)在可变现 YouTube 细分之间相差大约 30 倍。第一天选错细分,等于剩下这一年都盖在「每 1000 次播放 2 USD」的地基上。 30 倍的 CPM 差距 US 观众口径下,2026 年中各细分 CPM 的清晰快照: 细分 CPM(USD/千次播放) 广告主为什么付钱 个人理财、投资、保险 28-45 高 LTV 客户,合规买方池 B2B SaaS、martech、dev tools 22-38 中小企业和企业买方在看视频前下单 法律、税务、合规 18-32 高单价专业服务 医疗相关(保险、药店、设备) 15-28 患者获取成本高,合规买方池 职业、技术招聘 12-22 招聘方预算大,按入职可追踪 ROI 软件教程、dev 内容 10-18 开发工具竞争激烈抢曝光 消费电子评测 5-12 播放量高,单播放价值低 教育、K-12 4-9 学校广告预算分散 lifestyle、vlog、美妆、时尚 1-4 播放高,受众广但 LTV 低 游戏 0.6-2 播放巨大,但玩家 LTV 低、ad-block 高 娱乐、meme、剪辑合集 0.4-1.5 同游戏行,部分地理 ad-block 率超 40% 顶部和底部的差距大约 100 倍。「可持续创作者生意」和「花钱的爱好」之间,收益差大约 20 倍。 订阅量级实际能拿到多少 从上面的细分表反推,US 观众为主、每周 2 更、落在金融 / SaaS / 法律细分的频道,大致可以预期: 1K 订阅,月 30K 播放。AdSense: 540-1350 USD/月。不是一份工资。 10K 订阅,月 250K 播放。AdSense: 4.5K-11K USD/月。在低成本地理是一份全职,在高成本地理是副业。 100K 订阅,月 2M 播放。AdSense: 36K-90K USD/月。真正的生意;赞助和产品收入通常再翻倍。 同样到 100K 订阅,在游戏或娱乐细分,AdSense 单项只有 1.2K-4K USD/月。差距是细分,不是工作量。 AI 改的是哪一环 推文假设 AI 是内容生成器。实际的变化是,AI 把单条视频制作成本压到瓶颈步骤——脚本、配音、粗剪——这一层。在 AI 之前,一条 12 分钟的精致视频,creator 时间成本折合 200-600 USD。AI 辅助之后,同一条视频的 creator 时间成本是 8-15 小时,但不再有每分钟的直接现金支出。 这个变化不改变 CPM。它改变的是盈亏临界点(达成"
   },
   {
+    "url": "/content/x-chinese-herb-ai-video-monetize/",
+    "locale": "en",
+    "title": "AI-generated Chinese herbal medicine short videos: 36万 followers and 10万 RMB in cumulative revenue, and what the 'copy-able playbook' framing actually skips",
+    "description": "A case profiles a Chinese operator running AI-generated Chinese herbal medicine short videos on Douyin / Xigua. 358K–368K followers, 100K+ RMB cumulative revenue split between Douyin's creator-share program and 橱窗 e-commerce (herbal tea, related SKUs). The model is sold as a copy-able playbook. The unit economics, the per-video production cost, the platform-share math, and the four gaps the playbook quietly elides, below.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "short-video",
+      "chinese-medicine",
+      "douyin",
+      "content-monetization",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A case profiles a Chinese operator running AI-generated short videos on Chinese herbal medicine. 358",
+    "body": "A case profiles a Chinese operator running AI-generated short videos on Chinese herbal medicine. 358K–368K followers on Douyin / Xigua. Cumulative revenue 100K+ RMB, split between Douyin's creator-share program and 橱窗 e-commerce on herbal tea and related SKUs. The model is sold as a copy-able playbook. The interesting part is not 'AI makes videos' — it is the niche choice (high search demand, low saturation, evergreen) and the unit economics of a one-person content farm. The unit-economics breakdown, the search-driven traffic shape, and the four gaps the playbook quietly elides, below. The unit-economics breakdown The production cost per video is roughly 5–10 RMB in cash plus 1.5 hours of operator time. At a steady-state 10 videos per week, the operator commits 15 hours per week. The model is a one-person content farm — the operator's job is script direction and SKU selection, not filming. The revenue math, split by stream The interesting split is the ratio. Creator-share is volume-driven — more videos, more views, more payout. 橱窗 is intent-driven — fewer videos but higher per-view revenue because the audience self-selects on search. The two streams scale differently. Creator-share"
+  },
+  {
     "url": "/content/ai-beauty-fanvue-tiktok/",
     "locale": "en",
     "title": "AI-generated TikTok creator funneling to Fanvue: 562 subscribers at 9.99 USD, 85K USD JPY in two weeks, and the math behind the funnel",
@@ -748,6 +1133,41 @@
     ],
     "excerpt": "A 19-year-old solo operator used Claude to write scripts and direct a series of AI-generated dance v",
     "body": "A 19-year-old solo operator used Claude to write scripts and direct a series of AI-generated dance videos for a TikTok account. Five days in, the account had 50K followers. The same operator opened a Fanvue at 9.99 USD/month, and 562 of those followers converted to paid subscribers within two weeks. Two-week revenue, per the case: 85K USD-equivalent in JPY. The model is two-stage: TikTok at the top of the funnel, Fanvue at the bottom. Numbers, math, and where the case strains. The funnel in concrete numbers The 1.1% follower-to-subscriber conversion is high for the niche. The case implies the 85K JPY figure includes a one-time spike (large tips, viral PPV drops, premium chat) on top of the recurring subscription base. The recurring math at 9.99 USD × 562 × 12 = 67K USD/year is the steady-state; the 85K USD-equivalent over 2 weeks is a launch spike, not a run rate. Why TikTok at the top TikTok algorithmic reach is unmatched for short-form video. A 1-minute dance video can land on the For You page and pull 500K-2M impressions in a single day. The same content on Instagram Reels or YouTube Shorts underperforms by 3-10x. The funnel splits the work across platforms: TikTok for reach (fr"
+  },
+  {
+    "url": "/content/x-faceless-x-account-ai-operator/",
+    "locale": "en",
+    "title": "AI-operated faceless X accounts: a 30-day-to-first-dollar solo workflow, and what the '3000 USD/month' headline actually skips",
+    "description": "A case profiles an operator running AI-operated faceless X accounts at 1 hour per day, 5–6 hours per week, claiming 3000 USD/month within 30 days. The workflow is GPT-written threads, AI-generated visuals, scheduled posts. The model is sold as a copy-able solo side-hustle. The per-account revenue math, the multi-account cluster risk, X policy on AI-generated content, and the four gaps the headline quietly elides, below.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "x-twitter",
+      "faceless-account",
+      "content-monetization",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A case profiles an operator running AI-operated faceless X accounts at 1 hour per day, 5–6 hours per",
+    "body": "A case profiles an operator running AI-operated faceless X accounts at 1 hour per day, 5–6 hours per week, claiming 3000 USD/month within 30 days. The workflow: GPT-written threads, AI-generated visuals, scheduled posts, niche selection, follower funnel to a newsletter or paid community. The case presents this as a copy-able 7-step playbook. The interesting part is not 'AI writes tweets' — it is the multi-account cluster model and the niche-CPM math. The per-account economics, the sponsorship pipeline reality, and the four gaps the headline quietly elides, below. The unit economics per account The 5–6 hour per week figure is consistent with 1–2 accounts at 1 hour per day, not with a 5–10 account cluster. At 1–2 accounts the 3000 USD/month target requires 1500–3000 USD per account per month — possible only at top-decile niche CPM. The case's headline number collapses unless the operator is running a multi-account cluster that the time-budget does not admit. The revenue stream decomposition The interesting math is Stream 2 — sponsored posts. A 50K-follower niche account commands 200–800 USD per sponsored thread. To hit 3000 USD/month on Stream 2 alone, the operator needs 4–15 sponsor"
+  },
+  {
+    "url": "/zh/content/x-chinese-herb-ai-video-monetize/",
+    "locale": "zh",
+    "title": "AI生成中药短视频：36万粉、累计变现10万+，以及“可抄作业”这套话术真正没说的四件事",
+    "description": "一个抖音/西瓜视频账号，用 AI 生成中药题材短视频，涨粉35.8万–36.8万，累计变现10万+，分成计划 + 橱窗（中药茶饮 + 周边 SKU）两条线。账面上讲的是“可抄作业”，账外不讲的有四件：退款率、橱窗 GMV 与分成比例、抖音 AI 医疗内容政策、账号矩阵风险。下面是单位经济模型、搜索流量形状、四个真实缺口。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "short-video",
+      "chinese-medicine",
+      "douyin",
+      "content-monetization",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一个抖音/西瓜视频账号，用 AI 生成中药题材短视频，35.8万–36.8万 粉丝，累计变现 10万+ RMB，收入两条线：抖音播放分成 + 橱窗挂车（中药茶饮 + 周边 SKU）。原话讲的是“可抄作",
+    "body": "一个抖音/西瓜视频账号，用 AI 生成中药题材短视频，35.8万–36.8万 粉丝，累计变现 10万+ RMB，收入两条线：抖音播放分成 + 橱窗挂车（中药茶饮 + 周边 SKU）。原话讲的是“可抄作业”，但选这个题才是关键——需求真实、搜索驱动、长尾可挂电商。单人内容农场的单位经济模型、搜索流量形状、以及原帖没讲的四件事，下面。 单条视频的单位经济 单条视频现金成本 5–10 RMB，人力 1.5 小时。稳态每周 10 条，运营者每周投入 15 小时。模式是单人内容农场——运营者的工作是脚本方向和 SKU 选品，不是拍片。 收入拆分 关键在两条线的比例。分成靠量——条数越多、播放越高、分成越多。橱窗靠意图——条数不一定要多，但每条带来的电商更高，因为观众是带着需求搜过来的。两条线的天花板不同：分成卡在题材容量，橱窗跟着账号权重走。 搜索流量形状 普通 AI 内容农场（菜谱、鸡汤）吃的是粉丝信息流。视频 24 小时衰减，下一条得重新挣流量。中药养生号吃的是搜索和推荐——“黄芪 有什么功效”“枸杞 天天喝 行不行”“茯苓 副作用”。搜索流量的半衰期是 6–18 个月。一条命中搜索词的短视频，发布 12 个月后还在带量。 复利效应：35.8 万粉是看得见的数，真实流量来自搜索，是粉丝信息流的 2–5 倍。运营者的单条收入不会像段子号那样在发布窗口结束后就崩。 原帖没讲的事 分成和橱窗的月度拆分没讲。 10万+ 累计把“靠量”（低毛利、低风险）和“靠意图”（毛利更高、SKU 合规风险）混在一起讲。读者看不出来哪条线才是承重的。 橱窗退款率没披露。 抖音中药品类橱窗常见 8–15% 退款率，主要原因“味道不对”“没效果”“发错货”。12% 退款率直接吃掉 12% 橱窗净利。 账号年龄和封号历史没讲。 原帖不讲这是不是第一个账号、前面有没有挂过。读者照抄时要预期“挂 1–2 个号才跑出一个”。 脚本 prompt 才是真正的门槛。 真正能跑通的 prompt 工程是把“黄芪 + 气血 + 副作用”转成 60 秒视频脚本、且不踩抖音医疗宣称审核。这套东西不是 commodity。原帖把它当 commodity 讲，同质化 prompt 在 4–8 周内会被抖音去重压垮。 带走就一句 模式是真的：35.8 万粉、10万+ 累计、6–12 个月跑出来。选题是承重决策——需求长尾、搜索驱动、电商匹配高。读者照抄时要做好三件事：预算 1–2 个号被封、12% 橱窗退款、prompt 工程不是 commodity。把 10万+ 累计当 6–12 个月的成绩单看，不要当月流水。月度稳态净利 9K–45K RMB，是单人内容农场的真实天花板。"
   },
   {
     "url": "/zh/content/amazon-fba-fees-breakdown/",
@@ -817,10 +1237,28 @@
     "body": "A knowledge-planet case profiles a solo Indian developer who launched two products in parallel: an AI product-photo SaaS tool, and an AI-leveraged web-build service for small businesses. The SaaS died quietly with zero paying users. The service thrived, paying more than his old annual salary in a single month. The structural claim the case lands on is not about AI quality — it is about AI's role. AI is not the product. AI is the cost-structure lever that makes a traditional service viable at price points and CACs that did not work before. Below is the two-product comparison, the unit economics of the free-preview mechanism, and four gaps the case does not address. The two-product comparison Product Status Mechanism Outcome AI product-photo SaaS shut down subscription model zero paying users AI-leveraged web-build service thriving fixed-price, free preview, 7-day delivery income previous annual salary The same operator, the same AI tooling, the same starting capital. The two outcomes diverged entirely on framing. Why the SaaS died The AI-product-photo category has three structural problems in 2026: Market saturation. Dozens of teams ship comparable AI product-photo tools. Major plat"
   },
   {
+    "url": "/content/ai-medium-seo-playbook/",
+    "locale": "en",
+    "title": "An operator made ~$30K on Medium with AI articles + SEO + digital products: the unit economics of AI content sites in 2026",
+    "description": "A look at an operator who, in roughly 9 months, made nearly $30,000 from AI-written articles on Medium + SEO + selling digital products. How it runs: bulk AI article production (2/day) + Medium distribution + SEO-optimized titles + a digital product funnel. The case is not 'AI content works'. The case is the unit economics: 2 articles/day for 9 months = ~540 articles, $30K revenue = $55/article. This is a content-pipeline business, not an AI-magic business.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "content",
+      "medium",
+      "seo",
+      "digital-product",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A case profiles an operator who, in roughly 9 months, made nearly $30,000 from AI-written articles o",
+    "body": "A case profiles an operator who, in roughly 9 months, made nearly $30,000 from AI-written articles on Medium + SEO + selling digital products. How it runs: bulk AI article production (2 articles per day) + Medium distribution + SEO-optimized titles + a digital product funnel. The case is not 'AI content works'. The case is the unit economics: 2 articles/day for 9 months is 540 articles, $30K revenue is $55/article average. The point: this is a content-pipeline business, not an AI-magic business. The per-article math, the digital-product backend, and four gaps the case does not address, below. The per-article unit economics The wide band is the digital-product backend. Without the product, an article earns $0.20–$5 lifetime. With the product, an article can earn $50+. The product is the unit-economics lever that turns pageviews into dollars. Why this is a content-pipeline business The point is the cadence, not the AI quality. An operator who ships 540 articles at any production cost (human, AI, outsourced) has a $30K business. The AI compresses the per-article production cost to $1–$5, which is what makes the math work. Without AI, the same cadence costs $50–$200/article, which brea"
+  },
+  {
     "url": "/zh/content/atypica-ai-consumer-research/",
     "locale": "zh",
     "title": "Atypica AI 消费者洞察：30 分钟出一份原本要 15000 美金的报告",
-    "description": "冷峻拆解一个 AI 消费者洞察工具把 5-15K 美金的咨询交付物压到 30 分钟一人单干的案例，背后对个人接单者、传统调研公司的真实冲击。",
+    "description": "深度拆解一个 AI 消费者洞察工具把 5-15K 美金的咨询交付物压到 30 分钟一人单干的案例，背后对个人接单者、传统调研公司的真实冲击。",
     "category": "ai",
     "tags": [
       "ai",
@@ -871,7 +1309,7 @@
     "url": "/zh/content/x-atypica-ai-consumer-research/",
     "locale": "zh",
     "title": "Atypica:30 分钟出一份消费者洞察报告,传统公司报价 5–15 万,真实套利窗口只有 6–18 个月",
-    "description": "冷读 Atypica——一款据称 30 分钟就能产出一份传统调研公司报价 5–15 万元的消费者洞察报告的工具。案例把它框定为「单人 operator 倒卖 AI 报告」的套利机会。下面是单位经济、倒卖模型、以及那个对比悄悄略过的几点。",
+    "description": "拆解 Atypica——一款据称 30 分钟就能产出一份传统调研公司报价 5–15 万元的消费者洞察报告的工具。案例把它框定为「单人 operator 倒卖 AI 报告」的套利机会。下面是单位经济、倒卖模型、以及那个对比悄悄略过的几点。",
     "category": "ai",
     "tags": [
       "ai",
@@ -883,6 +1321,42 @@
     ],
     "excerpt": "Atypica 据报 30 分钟产出一份传统调研公司报价 5–15 万元的消费者洞察报告。案例把它框定为套利:买 AI 工具,把产出当研究交付物卖出去,拿走差价。账面对比是真实的数字;这能不能撑起一个",
     "body": "Atypica 据报 30 分钟产出一份传统调研公司报价 5–15 万元的消费者洞察报告。案例把它框定为套利:买 AI 工具,把产出当研究交付物卖出去,拿走差价。账面对比是真实的数字;这能不能撑起一个持续的 operator 生意是另一个问题。下面是数学、倒卖模型、以及案例悄悄跳过的四点。 案例说的数字 数量 值 AI 工具 Atypica 单份报告生成时间 约 30 分钟 传统调研报价 5–15 万元 / 份 工具单份成本 5–50 元(模型 API + 订阅分摊) 典型转售价 1–3 万元 / 份 隐含单份毛利 CAC 前 70–90% 隐含窗口 6–18 个月,然后竞争把差压平 案例把价格差当生意。价格差是真实数字;生意是 operator 能不能在竞争压力下把它抓稳。 AI 工具真正替代了什么 传统研究交付物由三块组成: 数据采集。 问卷、访谈、二手资料综合。Atypica 用「在公开数据上训练过的模型 + operator prompt 输入」来替代。 分析。 受众分层、需求地图、竞争框定。Atypica 用结构化 prompt 链产出替代。 担保。 一个机构签章,意思是「这份交付物如果错了,我们兜底」。5–15 万元价格标签真正支付的就是这一块。Atypica 不替代这一块。 转售案例默认客户买的是「数据采集 + 分析」。对部分买家,确实如此。对买担保的买家,AI 产出不替代那个价格。 倒卖生意,拆三层 转售 operator 同时在卖三层,三层商品化速度不同: 只跑第一层的 operator 是在做 freelance,不是做生意。能撑过 6–18 个月窗口的,是爬到第三层的人。 单份报告的单位经济 获客成本是漏掉的那一行。中端买家(消费品牌的 CMO 级决策)CAC 在 5000–30000 元 / 客户,看 operator 用外联、内容营销还是转介绍。按 1 万转售价,operator 在每个 CAC 周期要 2–6 个客户才能回收购客成本。 案例没说的事 四点: 获客成本。 案例把转售框定为「客户找 operator」。实际是 operator 找客户,在复购建立起来之前,获客成本吃掉单位经济。 交付物定制工时。 「30 分钟 AI 报告」标题省掉了单份 2–6 小时的 operator 工时。AI 出草稿,operator 把草稿改造成客户在转售价位上愿意接受的交付物。 同类工具打到同一地板。 Atypica 只是这个品类的几款之一。operator 越多,转售价越向「工具成本 + 工时」压。窗口是有限的。 担保问题。 5 万+ 价位买的客户大多在买「公司愿意背锅」。AI 产出不提供这个。在同价位转售 AI 产出,要求 operator 吸收担保风险,大多数单人 operator 吸收不了。 结论 套利窗口是真实的。它是 6–18 个"
+  },
+  {
+    "url": "/zh/content/atypica-ai-insight-30min/",
+    "locale": "zh",
+    "title": "Atypica.AI 把一份 5–15K 美金的消费者洞察报告压成 30 分钟单兵活:2026 年 AI 替代研究的单位经济",
+    "description": "Atypica.AI,一个把 5000–15000 美金消费者洞察报告(传统 2–4 周交付)压成 30 分钟单兵工作流的工具。传统消费者洞察市场按报告计费(5–15K 美金/份、2–4 周周期);AI 形态按用户/月计费,边际成本近零。冲击不是「AI 做得更好」——是销售单位从报告变成订阅,买家的 CAC 数学塌掉。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "research",
+      "consumer-insight",
+      "atypica",
+      "b2b",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条推文拆的是 Atypica.AI——一个把传统 5000–15000 美金消费者洞察报告(2–4 周交付)压成 30 分钟单兵工作流的工具。传统洞察市场按报告计费;AI 形态按用户/月计费,边际成",
+    "body": "一条推文拆的是 Atypica.AI——一个把传统 5000–15000 美金消费者洞察报告(2–4 周交付)压成 30 分钟单兵工作流的工具。传统洞察市场按报告计费;AI 形态按用户/月计费,边际成本近零。重点不是「AI 做得更好」——是销售单位从报告变成订阅,买家的 CAC 数学塌掉。下面是单位经济冲击、对传统代理的分层影响,以及案例没展开的四点。 单位经济迁移 冲击是销售单位。报告是一次性采购,每次要重新走供应商评估。订阅批一次反复用。反复用模式才是买家 CAC 数学塌掉的地方。 对传统代理的三层冲击 Atypica.AI 的结构性攻击点是市场底层——买家对价格最敏感、输出质量最不缺差异化的地方。市场中层压缩但没塌,高级润色层是真的。市场顶层没动。 为什么「30 分钟」是模型,不是质量 案例把 30 分钟框定成头条。30 分钟输出是初级顾问第一稿,不是合伙人级报告。结构性论点不是 Atypica.AI 输出更好——是 30 分钟输出「够用」,能在市场底层替代 5K 美金/份的报价底线。 买家的采购决策不是「哪个输出更好」。买家的决策是「我要合伙人级报告,还是初级初稿我润色」。对 80% 的品牌团队研究需求,答案是后者。 单位经济 案例没给价格或 ARR。隐含区间与 5M–50M ARR / 50000–200000 活跃用户一致。跨度大,反映试用到付费的转化率未知。 案例没说的事 四点。 输出质量。 案例框定「30 分钟」但没把输出与高级顾问报告对比。30 分钟输出是初级顾问第一稿,不是合伙人级。期待后者的买家会失望。 定价。 案例暗示 50–200 美金/月但没给数字。 客户留存。 一个给初级初稿的研究工具可能被用一次就放弃,等差距被注意到。订阅产品的核心单位经济变量是留存曲线。 竞争反应。 案例没处理当尼尔森、益普索、Mintel 或麦肯锡在现有平台出同类 AI 功能时会发生什么。冲击窗口 12–24 个月;主要研究供应商有数据优势。 结论 案例不是「Atypica.AI 做得更快」。案例是:消费者洞察的销售单位从报告(按次)迁移到订阅(按用户按月),买家 CAC 数学塌 10–50 倍。市场底层——5K 美金初级顾问级——最先塌。市场中层压缩。市场顶层没动。冲击窗口 12–24 个月,在主要研究供应商出货同类 AI 功能之前。 看这条案例的多数人,带走就一句:找一个按交付件计费、买家在市场底层对价格敏感的服务行业。出一个工具,把市场底层输出以订阅价出货。先冲击底层,再让中层在你周围压缩。顶层不是目标。"
+  },
+  {
+    "url": "/content/atypica-ai-insight-30min/",
+    "locale": "en",
+    "title": "Atypica.AI turns a 5–15K USD consumer-insight report into a 30-minute solo job: the unit economics of AI research replacement in 2026",
+    "description": "A look at Atypica.AI, a tool that compresses a 5,000–15,000 USD consumer-insight report (traditional 2–4 week deliverable) into a 30-minute solo workflow. The traditional consumer-insight market charges by the report (5–15K USD per deliverable, 2–4 week cycle). The AI shape charges by the user / month, with marginal cost near zero. The disruption is not 'AI does research better' — it is 'the unit of sale shifts from report to subscription', and the buyer's CAC math collapses.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "research",
+      "consumer-insight",
+      "atypica",
+      "b2b",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A case profiles Atypica.AI, a tool that compresses a traditional 5,000–15,000 USD consumer-insight r",
+    "body": "A case profiles Atypica.AI, a tool that compresses a traditional 5,000–15,000 USD consumer-insight report (2–4 week deliverable) into a 30-minute solo workflow. The traditional insight market charges by the report; the AI shape charges by the user / month at near-zero marginal cost. The interesting part is not 'AI does research better' — it is the unit of sale shifts from report to subscription, and the buyer's CAC math collapses. The unit-economics disruption, the layered effect on traditional agencies, and four gaps the case does not address, below. The unit-economics shift The disruption is the unit of sale. A report is a one-off purchase that requires vendor evaluation per engagement. A subscription is approved once and used repeatedly. The repeat-usage pattern is where the buyer's CAC math collapses. The three-layer effect on traditional agencies Atypica.AI's real attack is the bottom of the market, where the buyer is most price-sensitive and the output quality is least differentiated. The middle compresses but does not collapse — the senior-refinement layer is real. The top is untouched. Why '30 minutes' is the model, not the quality The case puts 30 minutes at the top. The 3"
   },
   {
     "url": "/tools/cbm-calculator/",
@@ -954,7 +1428,7 @@
     "url": "/zh/content/cognition-devin-job-not-tool/",
     "locale": "zh",
     "title": "Cognition / Devin:20 个月年化收入从 100 万涨到 4.92 亿,把 AI 工程师当「岗位」卖而不是「功能」卖",
-    "description": "冷读 Cognition(Devin)——20 个月内从 100 万美金年化涨到 4.92 亿,10 亿美金一级市场融资,客户名单 Goldman、Citi、Mercedes。结构要点:产品按「岗位」定价,价格锚定人力年薪,不是按 SaaS 订阅。",
+    "description": "拆解 Cognition(Devin)——20 个月内从 100 万美金年化涨到 4.92 亿,10 亿美金一级市场融资,客户名单 Goldman、Citi、Mercedes。结构要点:产品按「岗位」定价,价格锚定人力年薪,不是按 SaaS 订阅。",
     "category": "ai",
     "tags": [
       "ai",
@@ -971,7 +1445,7 @@
     "url": "/zh/content/cognition-devin-ai-engineer-role/",
     "locale": "zh",
     "title": "Cognition Devin 案例：20 个月 ARR 干到 4.92 亿美金，而 AI 编程插件还在千万级挣扎",
-    "description": "冷峻拆解 Cognition Devin 的营收曲线与\"卖岗位不卖功能\"论点。为什么 AI 编程助手卡死在订阅费天花板，而把 AI 包装成\"岗位\"就能解锁高一个数量级的报价。",
+    "description": "深度拆解 Cognition Devin 的营收曲线与\"卖岗位不卖功能\"论点。为什么 AI 编程助手卡死在订阅费天花板，而把 AI 包装成\"岗位\"就能解锁高一个数量级的报价。",
     "category": "ai",
     "tags": [
       "ai",
@@ -1036,6 +1510,60 @@
     "body": "Cursor is the strongest case study of a 2023-2025 AI product that turned developer mindshare into revenue. Back-of-envelope breakdown of the unit economics, what is known, what is estimated, and where the model breaks. Pricing Tier Price Audience Hobby Free Casual users, students Pro 20 USD/mo Individual developers Pro+ 40 USD/mo Power users wanting higher model allowances Business / Enterprise Custom, typically 40 USD+/seat with SSO and admin Teams and companies Two unusual things about this ladder. First, the free tier is generous (covers basic code completion), so the upgrade pull comes from agentic features (Composer, multi-file edits, terminal commands), not from autocomplete. Second, no usage-metered plan at the consumer end. The bet: a developer integrated into Cursor will not tolerate going back to a non-AI editor, and the price captures that. Revenue The widely-cited \"500M USD ARR\" for late 2025 comes from press reports, not filings. Consistent with: Pro paying base in the high six figures at 20 USD/mo Smaller but rapidly growing Pro+ / Business at 40 USD+/seat Doubling each year since 2023 If the high end is correct, the implied gross margin after model cost is the intere"
   },
   {
+    "url": "/zh/content/devin-job-substitute-arr-20-months/",
+    "locale": "zh",
+    "title": "Devin 母公司 Cognition 20 个月从 100 万到 4.92 亿 ARR:「AI 工程师工具」框定错了,「AI 工程师替代」才对",
+    "description": "Cognition(Devin 的母公司)。年化收入:2024 年 9 月 100 万美金,2026 年 5 月 4.92 亿美金。融资 10 亿,估值 260 亿。三组数字值得记:20 个月、近 500 倍、企业客户。产品不是「帮工程师的工具」,是「干工程师活的角色」。工具的定价逻辑是按席位(天花板卡死),替代的定价逻辑是按工单(没天花板)。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "devin",
+      "cognition",
+      "agent",
+      "enterprise",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条知识星球帖子拆的是 Cognition——Devin 的母公司。年化收入:2024 年 9 月 100 万美金,2026 年 5 月 4.92 亿美金。融资 10 亿,估值 260 亿。爬坡曲线 ",
+    "body": "一条知识星球帖子拆的是 Cognition——Devin 的母公司。年化收入:2024 年 9 月 100 万美金,2026 年 5 月 4.92 亿美金。融资 10 亿,估值 260 亿。爬坡曲线 20 个月、近 500 倍。客户是企业。三组数字值得记:20 个月、近 5 亿、企业。产品不是「帮工程师的工具」,是「干工程师活的角色」。下面是单位经济逻辑、工具 vs 替代的框定,以及案例没展开的四点。 营收爬坡 时点 年化收入 备注 2024-09 100 万美金 上线当季 2026-05 4.92 亿美金 20 个月后 倍数 492x 持续增长,没见顶 融资 10 亿美金 估值 260 亿 隐含倍数 53x ARR 激进,靠增长撑 曲线形状——持续、没见顶——是不寻常的地方。大多数 AI 工具公司经历一次上线尖峰,随后增长率衰减。Cognition 的曲线到 2026 年 5 月没衰减。 为什么框定是「替代」,不是「工具」 这是一个框定问题,不是功能问题。2026 年的 AI 工程师市场有两种产品形态: 工具的营收封顶在「客户员工数 × 每席位 ARPU」。替代的营收封顶在「客户工程工作量」。第一个天花板小;第二个天花板大得多。重点不是「Devin 是个更强的自动补全」,是:Devin 以替代的形式定价与销售。 单位经济 案例没给按工单价格。2026 年同类 AI 工程师替代按每合并 PR 定价。492M ARR 平摊到 1000 企业客户,隐含 ARPU 40K–500K 美金/年——与客户每年消耗数千个合并 PR 量级一致。 要看的是单工单毛利。模型成本 30 美金、定价 80 美金,毛利 62%——可持续。模型成本 30 美金、定价 40 美金,毛利 25%——毛利陷阱。案例没给单工单成本,这是核心单位经济变量。 为什么「企业」是关键 第三个框定词——企业——是杠杆点。企业采购接受按结果的合同,按席位 SaaS 拿不到。一家财富 500 强工程组织会签一份带 SLA 的按工单合同。一个个人工程师不会。替代框定只能卖给企业;工具框定两个细分都能卖,但 ARPU 低一个数量级。 复利效应: 框定不是「AI 工程师」。框定是「企业级工程师工作替代,按工单定价」。 案例没说的事 四点。 单工单毛利。 案例没给单工单成本。如果模型成本相对价格高,替代是毛利陷阱。案例暗示毛利可持续但没确认。 质量方差。 案例没给按客户的 PR 接受率。50% 接受率意味着客户在为半个替代付钱;90% 接受率意味着客户在为接近等价的替代付钱。两个 case 的单位经济完全不一样。 客户集中度。 492M ARR 可能压在少数几家财富 500 强合同上。丢一家合同就是灾难。案例没处理集中度。 估值脱节。 260 亿估值对 492M ARR 是 53 倍营收倍数,烤进了持续 5 倍以"
+  },
+  {
+    "url": "/content/devin-job-substitute-arr-20-months/",
+    "locale": "en",
+    "title": "Devin's parent Cognition went from $1M to $492M ARR in 20 months: why 'AI engineer tool' is the wrong frame and 'AI engineer substitute' is the right one",
+    "description": "A look at Cognition (Devin's parent). Annualized revenue: $1M in September 2024, $492M in May 2026. $1B Series raise at $26B valuation. Three numbers matter: 20 months, ~500x revenue, enterprise customers. The product is not 'a tool that helps engineers', it is 'the thing that does the engineer's job'. The pricing logic of a tool (per-seat subscription) caps the ceiling. The pricing logic of a substitute (job-priced) does not.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "devin",
+      "cognition",
+      "agent",
+      "enterprise",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A case profiles Cognition, the company behind the AI software engineer Devin. Annualized revenue: $1",
+    "body": "A case profiles Cognition, the company behind the AI software engineer Devin. Annualized revenue: $1M in September 2024, $492M in May 2026. Funding: $1B raised at a $26B valuation. The ramp is 20 months and 500x. The customers are enterprise. Three numbers to keep in mind: 20 months, $500M, enterprise. The product is not 'a tool that helps engineers'. The product is 'the thing that does the engineer's job'. Unit-economics logic, the tool vs substitute frame, and four gaps the case does not address, below. The revenue ramp Date Annualized revenue Note September 2024 $1M launch quarter May 2026 $492M 20 months later Multiple 492x sustained growth, no plateau Funding $1B at $26B valuation Implied multiple 53x ARR aggressive; growth-dependent The shape of the ramp — sustained, no plateau — is the unusual part. Most AI-tool companies see a launch spike then a growth-rate decay. Cognition's curve has not decayed through May 2026. Why the frame is 'substitute', not 'tool' The framing matters more than the feature. The AI-engineer market in 2026 has two product shapes: A tool's revenue caps at the customer's headcount times per-seat ARPU. A substitute's revenue caps at the customer's engin"
+  },
+  {
+    "url": "/content/hightouch-ai-marketing-arr/",
+    "locale": "en",
+    "title": "Domino's never lets AI generate a pizza: why Hightouch's 'brand-safe' AI marketing added $70M ARR in 20 months",
+    "description": "A look at Hightouch, the AI marketing platform that lands Domino's, Spotify, and DoorDash as customers. How it runs: Hightouch's AI is restricted — Domino's pizza always uses real photography; the AI generates only backgrounds and surrounding elements. The product is a brand-safety constraint, not a generative model. The case landed $70M of net-new ARR in 20 months on the back of this constraint, pushing the company past $100M ARR. In 2026, the scarce resource in AI marketing is not generation — it is the brand-correctness constraint that the major platforms refuse to ship.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "marketing",
+      "brand-safety",
+      "hightouch",
+      "enterprise",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A case profiles Hightouch, the AI marketing platform that landed Domino's, Spotify, and DoorDash as ",
+    "body": "A case profiles Hightouch, the AI marketing platform that landed Domino's, Spotify, and DoorDash as enterprise customers. How it runs, as stated by Hightouch's co-founder Kashish Gupta, is a hard constraint: Domino's never lets AI generate a pizza. The pizza in every ad is real photography. AI generates only backgrounds, supporting elements, and contextual copy. The product is not the model. The product is the brand-safety constraint. The case landed $70M of net-new ARR in 20 months and pushed the company past $100M ARR. The interesting part is not generation quality — it is what is scarce in 2026 AI marketing. The model is commodity. The constraint is the moat. Unit-economics logic, the category framing, and four gaps the case does not address, below. The mechanism The constraint is the product. Most brand teams have already tried opening a model, typing 'generate a pizza ad', and got burned. The output looks generic, off-brand, and is legally risky. The brand team needs a vendor that ships the constraint by default. Hightouch ships the constraint. Why the constraint is the moat What is scarce in 2026 AI marketing. Generation is not scarce. Every brand team has API access to the s"
+  },
+  {
     "url": "/content/english-ai-seo-content-site/",
     "locale": "en",
     "title": "English AI Content Site Case: 3 Sites, 9,000 Articles, 2,300 USD/Month AdSense in 6 Months — And the 500x Cost Compression That Makes It Work",
@@ -1073,7 +1601,7 @@
     "url": "/zh/content/etsy-ai-digital-products/",
     "locale": "zh",
     "title": "Etsy AI 数字产品案例：100 个 listing、零库存、月入 2500 美金，以及为什么这是堆 Etsy SEO 的复利",
-    "description": "冷峻拆解一个 Etsy AI 数字产品案例。38% 类目增长数字、100 个 listing 假设、5 美金单品变 27 美金套装的 bundle 策略、模型在哪里撑不住。",
+    "description": "深度拆解一个 Etsy AI 数字产品案例。38% 类目增长数字、100 个 listing 假设、5 美金单品变 27 美金套装的 bundle 策略、模型在哪里撑不住。",
     "category": "ai",
     "tags": [
       "ai",
@@ -1083,8 +1611,8 @@
       "case-study",
       "monetization"
     ],
-    "excerpt": "一个单独运营者在 Etsy 卖 AI 生成的数字产品（月入约 2500 美金、零库存、零客服）。案例把它框成「被动收入」，给了一个具体例子：一份 ADHD 每日计划表第一个月 400 美金。下面是冷峻",
-    "body": "一个单独运营者在 Etsy 卖 AI 生成的数字产品（月入约 2500 美金、零库存、零客服）。案例把它框成「被动收入」，给了一个具体例子：一份 ADHD 每日计划表第一个月 400 美金。下面是冷峻拆解——案例到底说什么、规模化算账什么样、模型在哪撑不住。 案例数字一览 指标 数值 月收入 约 2,500 USD 库存 无（纯数字文件） 客服 无（在交付那一刻之外） 成本栈 ChatGPT 订阅（约 20 USD/月）+ Canva 免费版 首批收入时间 上架即可有零星，月 3-6 形成持续营收 类目增长 Etsy 数字产品类目 2026 同比增长 38%（案例口径） 数字均为作者自报。38% 这一增速数字归到 Etsy 公开类目数据，本案范围内没逐项核对，按案例口径处理。 100 个 listing 的算账 案例暗中说的是「这生意不是一件产品，是 100+ 个 listing 堆在 Etsy SEO 上」。账这么算： 2500 美金这条 headline 落在「100 个 listing 低端段」。过了大约 30 个 listing，每多一个 listing 的边际时间开始比带来的收入更慢——这时生意从「主动 hustle」拐到「复利」。 Bundle 数学 案例点了 bundle 策略但没给完整算账： 形态 价格 转化率 单个访客收入 5 USD 单品 5 USD 1.0% 0.05 USD 27 USD 5 件套 27 USD 1.4% 0.38 USD 数字按案例「bundle 转化率 3 倍」的口径推演。bundle 跑得动有三个原因： AOV 拉高，每笔 Etsy 交易的绝对金额变大 bundle 减少买家决策成本，感知价值更高 Etsy 搜索排名对高 AOV 完整交易加权位置，下一位买家更看见你 通用电商模式，Etsy 这种 marketplace 把它奖励得更大。不是 AI 独有。 Etsy SEO：这才是真正生意 案例一半篇幅在讲 AI，一半在讲 Etsy SEO。提到的机制： 长尾标题：「2026 ADHD Daily Planner Printable — Time Blocking + Habit Tracker」而不是「Digital Planner」 13 个标签全用上，全关键词化 文件名也重写成关键词 持续上新品，因为 Etsy 把没动销的 listing 降权 复利的真东西：每个 listing 是店铺的一个独立搜索入口。100 个 listing 覆盖 100 个不同长尾搜索 = 100 个不同入口进同一店铺。跑出来的爆款互相给店铺里的其他产品导流。 这就是为什么案例锚在「选品眼光 + SEO 执行力 + 产品数量的复利」——AI 是产能速度倍增器，SEO 是分发引擎。 案例没说的几件事 Etsy 收费栈。上架费（约 0."
+    "excerpt": "一个单独运营者在 Etsy 卖 AI 生成的数字产品（月入约 2500 美金、零库存、零客服）。案例把它框成「被动收入」，给了一个具体例子：一份 ADHD 每日计划表第一个月 400 美金。下面是深度",
+    "body": "一个单独运营者在 Etsy 卖 AI 生成的数字产品（月入约 2500 美金、零库存、零客服）。案例把它框成「被动收入」，给了一个具体例子：一份 ADHD 每日计划表第一个月 400 美金。下面是深度拆解——案例到底说什么、规模化算账什么样、模型在哪撑不住。 案例数字一览 指标 数值 月收入 约 2,500 USD 库存 无（纯数字文件） 客服 无（在交付那一刻之外） 成本栈 ChatGPT 订阅（约 20 USD/月）+ Canva 免费版 首批收入时间 上架即可有零星，月 3-6 形成持续营收 类目增长 Etsy 数字产品类目 2026 同比增长 38%（案例口径） 数字均为作者自报。38% 这一增速数字归到 Etsy 公开类目数据，本案范围内没逐项核对，按案例口径处理。 100 个 listing 的算账 案例暗中说的是「这生意不是一件产品，是 100+ 个 listing 堆在 Etsy SEO 上」。账这么算： 2500 美金这条 headline 落在「100 个 listing 低端段」。过了大约 30 个 listing，每多一个 listing 的边际时间开始比带来的收入更慢——这时生意从「主动 hustle」拐到「复利」。 Bundle 数学 案例点了 bundle 策略但没给完整算账： 形态 价格 转化率 单个访客收入 5 USD 单品 5 USD 1.0% 0.05 USD 27 USD 5 件套 27 USD 1.4% 0.38 USD 数字按案例「bundle 转化率 3 倍」的口径推演。bundle 跑得动有三个原因： AOV 拉高，每笔 Etsy 交易的绝对金额变大 bundle 减少买家决策成本，感知价值更高 Etsy 搜索排名对高 AOV 完整交易加权位置，下一位买家更看见你 通用电商模式，Etsy 这种 marketplace 把它奖励得更大。不是 AI 独有。 Etsy SEO：这才是真正生意 案例一半篇幅在讲 AI，一半在讲 Etsy SEO。提到的机制： 长尾标题：「2026 ADHD Daily Planner Printable — Time Blocking + Habit Tracker」而不是「Digital Planner」 13 个标签全用上，全关键词化 文件名也重写成关键词 持续上新品，因为 Etsy 把没动销的 listing 降权 复利的真东西：每个 listing 是店铺的一个独立搜索入口。100 个 listing 覆盖 100 个不同长尾搜索 = 100 个不同入口进同一店铺。跑出来的爆款互相给店铺里的其他产品导流。 这就是为什么案例锚在「选品眼光 + SEO 执行力 + 产品数量的复利」——AI 是产能速度倍增器，SEO 是分发引擎。 案例没说的几件事 Etsy 收费栈。上架费（约 0."
   },
   {
     "url": "/content/etsy-ai-digital-products/",
@@ -1187,6 +1715,24 @@
     "body": "Cross-border sellers pay 3–4 different fees when money moves from a customer''s card to a mainland China bank account: payment processing fee, FX margin, intermediary bank fee, withdrawal fee. Wise and Airwallex undercut PayPal specifically on FX margin, which is often the single largest leak. How this calculator works Amount — the gross amount you''re converting. From currency — your sales currency (USD most common). To currency — typically CNY for Chinese entities, USD for US-based. The tool returns: FX margin baked into each provider''s displayed rate. Withdraw fee (if any). Net receive amount — what hits your bank. Defaults assume mid-market reference rates as of writing; your actual rate depends on the day. The provider with the smallest gap between its fee column and the sum of others is the winner. Sample receive amounts (USD → CNY, $10,000) Provider FX margin Effective rate Receive CNY Loss vs mid-market Mid-market (reference) 0% 7.25 ¥72,500 ¥0 PayPal 3.5% 6.996 ¥69,963 ¥2,537 Wise 0.41% 7.220 ¥72,203 ¥297 Airwallex 0.35% 7.225 ¥72,246 ¥254 On a single $10k transfer, the gap between PayPal and Airwallex is $2,283 in your favor. Multiply by 12 monthly transfers and you're a"
   },
   {
+    "url": "/zh/content/ai-side-hustle-github-stacks/",
+    "locale": "zh",
+    "title": "GitHub 上 5 个开源 AI 副业剧本:2026 年「AI 赚钱手册」栈的元解读",
+    "description": "一个国人 operator 整理的 5 个开源 AI 副业剧本。覆盖:AI 赚钱手册(AI 工具、SaaS、自媒体、API 聚合、海外项目)、程序员副业合集、AI 内容流水线、AI 图像服务、AI 短剧制作。这条不是单个剧本——是对 2026 年 AI 副业剧本「反复出现的形状」的元解读。每个剧本结尾都是:工作流图、工具清单、一条陡得不合理的「营收曲线」。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "side-hustle",
+      "open-source",
+      "playbook",
+      "github",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一个国人 operator 在 GitHub 上整理了 5 个开源 AI 副业剧本。合集覆盖 AI 工具、SaaS、自媒体、API 聚合、海外项目、AI 内容制作、AI 图像服务、AI 短剧制作。案例",
+    "body": "一个国人 operator 在 GitHub 上整理了 5 个开源 AI 副业剧本。合集覆盖 AI 工具、SaaS、自媒体、API 聚合、海外项目、AI 内容制作、AI 图像服务、AI 短剧制作。案例不是单个剧本——是对 2026 年 AI 副业剧本「反复出现的形状」的元解读。每个剧本出货:一张工作流图、一个工具清单、一条陡得不合理的「营收曲线」。5 个里 4 个缺单位经济部分。元教训:剧本出货上行,跳过缺口,大多数读者在缺口里亏钱。下面是反复出现的形状、单位经济缺口、以及案例没展开的四点。 5 个剧本反复出现的形状 形状在 5 个剧本里一致。重点不是剧本写得不对——是剧本写得不全。剧本出货上行,跳过缺口。缺口就是单位经济风险待的地方。 单位经济缺口 缺口是结构性的。剧本假设无摩擦的分发渠道;现实是分发是瓶颈。剧本假设工具栈免费或近免费;现实是工具栈每月复利成本 200–2000 美金(规模化下)。 为什么剧本对头部 5–10% 有效、对中位数不奏效 剧本对有以下条件的 operator 有效: 一个分发渠道(现有受众、付费流量或内容引擎) 愿意迭代 prompt 设计与质量控制 财务跑道撑得住 3–6 月负现金流 对这些 operator,剧本是一个起始模板,他们调整并执行。对中位数读者——以上都没有——剧本是一个菜谱,产出几周活动,然后放弃。 剧本是写给 operator 的,不是写给读者的。按剧本照搬的读者在缺口里亏钱。把剧本当起始模板、补齐单位经济缺口的读者,有机会吃上行。 案例没说的事 四点。 作者营收。 剧本没给作者自己的营收,只整理第三方成功故事。作者自己的结果是核心证据;没有它,剧本是理论的。 中位结果。 没报中位结果,只报分布顶部。1–5% 的「成功率」合理但没说。 失败模式。 失败的剧本没被收录,只收录跑通的。生存偏差放大了暗示的成功率。 剧本对头部 5–10% operator 有效、对中位数读者无效这个结构性论点,案例没做。 案例把合集框定为正面资源;缺口是那个没说出的部分。 结论 案例不是「GitHub 上 5 个 AI 副业剧本」。案例是:2026 年 AI 副业剧本生态出货上行,跳过单位经济缺口。剧本对头部 5–10% 的 operator 有效(他们本来就有分发);对中位数读者不奏效。缺口是大多数读者亏钱的地方。 看这些剧本的多数读者,带走就一句:把剧本当起始模板看,不是菜谱。出货工作流之前,先补齐单位经济缺口。上行对有分发的 operator 是真的;对其他人是理论的。"
+  },
+  {
     "url": "/content/global-payment-methods/",
     "locale": "en",
     "title": "Global Payment Methods by Region: The Complete 2026 Map",
@@ -1206,7 +1752,7 @@
     "url": "/zh/content/gojiberry-ai-sales-agent/",
     "locale": "zh",
     "title": "Gojiberry AI: 一个 AI 销售员, 11 个月从 0 到 350 万美金年化, 把自己当第一个客户",
-    "description": "Y Combinator 背书的 B2B AI 销售 agent, 11 个月做到 350 万美金年化。冷峻拆解: 单元经济、自我销售飞轮, 以及公开数据没说的三个数字。",
+    "description": "Y Combinator 背书的 B2B AI 销售 agent, 11 个月做到 350 万美金年化。深度拆解: 单元经济、自我销售飞轮, 以及公开数据没说的三个数字。",
     "category": "ai",
     "tags": [
       "ai",
@@ -1265,6 +1811,23 @@
     ],
     "excerpt": "ROAS is the most quoted metric in ecommerce. Most sellers don't calculate it correctly — and end up ",
     "body": "ROAS is the most quoted metric in ecommerce. Most sellers don't calculate it correctly — and end up celebrating unprofitable campaigns. What ROAS actually measures A ROAS of 4× means every $1 in ad spend returned $4 in revenue. That's the gross number. It tells you nothing about whether you made money. The break-even formula Where net margin = profit after all costs (COGS, shipping, fees, refunds) divided by revenue. For a 25% net margin store: 1 ÷ 0.25 = 4× break-even ROAS. Anything above 4× is profit on ad spend alone. Anything below is loss. Worked example A store with these unit economics: Sale price: $50 Cost: $12 Shipping: $4 Payment + platform fees: $3 (6%) Net profit per sale: $31 (62% margin) Break-even ROAS = 1 ÷ 0.62 = 1.61× If the store achieves 3× ROAS, profit per sale attributed to ads: 3× ROAS looks great but the actual margin on ad-driven sales is 28.7%, not 62%. The ad cost is real money you spent. Target ROAS with profit buffer Don't aim for break-even. Add a buffer for other costs: Scenario Target ROAS at 25% net margin Break-even 4× 25% profit buffer 5.33× 50% profit buffer 8× 100% profit buffer (double profit) 16× For most stores, target 2× break-even ROAS as a"
+  },
+  {
+    "url": "/zh/content/local-services-ai-followup/",
+    "locale": "zh",
+    "title": "Google Sheet + 自动邮件提醒卖给本地暖通维修老板 12 美金/月:2026 年无聊的 AI 生意不在 AI 工具里",
+    "description": "一个 12 美金/月的 Google Sheet + 自动邮件「客户跟进」产品,卖给本地蓝领服务业(HVAC)。怎么跑:一张 Google Sheet 记录所有安装,到点自动邮件提醒老板(不是客户)——三个月要换滤芯、保修快到期、半年保养要做。这条不是看 24 美金/月,是看可触达的市场——本地蓝领服务业老板(水电、清洁、园艺、汽车美容),他们的客户跟进几乎全靠脑子记。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "automation",
+      "local-service",
+      "saas",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条知识星球帖子拆的是一名单人 operator,他给本地一家暖通维修(HVAC)店老板做了一个 Google Sheet + 自动邮件「客户跟进」产品。Sheet 记录这家店做过的所有安装,到点就自",
+    "body": "一条知识星球帖子拆的是一名单人 operator,他给本地一家暖通维修(HVAC)店老板做了一个 Google Sheet + 自动邮件「客户跟进」产品。Sheet 记录这家店做过的所有安装,到点就自动邮件提醒老板(不是客户):三个月要换滤芯了,提醒;保修快到期了,提醒;半年保养要做了,提醒。产品卖 12 美金/月。operator 又签了第二家店,产品现在跑在 24 美金/月。帖子把教训落点不是「24 美金」,而是可触达的市场——本地蓝领服务业老板,他们的客户跟进全靠脑子,因为这个丢掉了复购收入。 2026 年的 AI 工具市场已经饱和,AI 加持的本地服务市场没有。产品不是 AI——产品是「提醒」,卖给一个非技术买家,以面对面关系成交。AI 是自动邮件,栈里最便宜的那块。下面是单店单位经济、可触达的市场规模,以及案例没展开的四点。 产品本身 机械地讲,产品就是一张 Google Sheet 加一条定时自动邮件。没有模型、没有 agent、没有 app。杠杆不是 AI。杠杆是那个以前活在老板脑子里、但经常被忘掉的提醒。 单店单位经济 项目 数值 备注 单店价格 12 美金/月 案例数字 Onboarding operator 成本 2–3 小时 上门、导入历史、调时间表 月度维护 30 分钟 处理边界、看流失 单店净收入(规模化) 10 美金/月 扣掉 Stripe 手续费和时间分摊 流失(假设) 10%/月 本地 SaaS 典型值 回本周期 2–3 个月 净 10、onboarding 20–30 单店经济单薄。跨店经济才是看点。 可触达的市场 看单店金额没意义,要看 operator 能签多少店。 1% 转化(5,000 店),operator 跑出一个 60,000 美金/月的生意,毛利结构还是单店那种。数字不性感,但真。买家不是「AI 买家」——是「因为脑子记不住而丢掉复购」的本地服务业老板。 为什么 AI 工具 SaaS 死、这个活 三个原因。 产品以服务形式包装,不是软件。 一个服务业老板不会「装个 CRM」。但会签一个「你帮我搭的 Google Sheet」。人情包装做了 SaaS 着陆页做不到的事。 CAC 是本地的,不是数字的。 operator 走进店,搭好产品,当面签。CAC 是一个下午本地拜访的成本,不是 Google Ads 的成本。 买家非技术、价格无压力。 12 美金/月不需要采购批准。老板刷自己的卡,然后忘掉。99 美金/月的 AI SaaS 经常需要一张要跟会计报备的卡。 所以 2026 年,AI 工具市场饱和,AI 加持的本地服务市场没有。后者的竞争是 ServiceTitan、Housecall Pro、Jobber——但这些产品定价 200–500 美金/月,要几天 onboarding。一个 12 美金/月、靠一杯"
   },
   {
     "url": "/zh/content/gpt-wrapper-business-models/",
@@ -1362,10 +1925,28 @@
     "body": "A chargeback isn't a refund. It's a $15–20 fee plus the product cost plus your time — even if you win. Prevention is cheaper than defense. The two types of chargebacks Unauthorized (cardholder fraud) Someone used a stolen card to buy from you. The real cardholder notices and disputes. With 3DS in place, liability shifts to the issuer. Without 3DS, you eat the loss. Win rate with 3DS: 85% (issuer pays) Win rate without 3DS: 40% (you eat it) Merchant disputes (buyer remorse) Item not received (INR) — buyer claims product didn't arrive Significantly not as described (SNAD) — product differs from listing Service not provided — digital products, services These need evidence, not fraud filters. Win rate with strong evidence: 60–80%. Prevention checklist Before the sale [ ] Enable 3D Secure on all transactions. Stripe and PayPal both support it. Conversion drops 3–5%, but chargebacks drop 50%+. [ ] Use AVS (Address Verification System). Mismatched billing/shipping is a fraud flag. [ ] CVV required — never waive it. Most fraud doesn't have the CVV. [ ] Velocity checks — flag 3+ orders from same IP/card in 24h. [ ] Block high-risk countries if you don't ship there. List available in Stripe "
   },
   {
+    "url": "/content/x-jordan-gal-ai-voice-49usd/",
+    "locale": "en",
+    "title": "Jordan Gal took an AI voice product from 0 to 1M USD ARR in 8 months with 6 people and a single 49 USD plan — the boring small-business voice funnel",
+    "description": "A case profiles an AI voice product (Jordan Gal): 6-person team, 90 days to first version, 8 months to 1M USD ARR, single 49 USD/month plan throughout. The product replaces missed-call loss for local small businesses. Cold start via 1000 cold emails per day for 2 months. Pricing anchored against a human receptionist, not a software seat. The funnel math, the single-plan discipline, and the four gaps the case does not cover, below.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "voice",
+      "small-business",
+      "missed-call",
+      "single-plan",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "An AI voice product targeting local small businesses that miss calls. 6-person team. 90 days to firs",
+    "body": "An AI voice product targeting local small businesses that miss calls. 6-person team. 90 days to first version. 8 months to 1M USD ARR. Single 49 USD/month plan throughout the launch. Cold start via 1000 cold emails per day for 2 months. SEO + paid ads split 50/50 on acquisition. The interesting part is not 'AI makes voice calls' — it is the single-plan discipline and the cold-email CAC math. The funnel math, the single-plan discipline, and the four gaps the case does not cover, below. The unit economics at 1M USD ARR At 1M USD ARR, contribution margin (693K–898K USD) does not yet cover team cost (1.2M USD). The product is pre-profitable on team alone. To clear team cost, the operator needs roughly 2300–3000 paying customers, which the case implies is the next milestone. The cold-email CAC math The cold-email CAC math is the load-bearing assumption. At 1–3% reply rates in a high-intent voice vertical, the math works dramatically. If reply rates drop to 0.3–0.5% (which is closer to cold-email averages in 2026), the cohort economics compress. Why single-plan discipline Three reasons push single-plan: Decision cost. A small-business owner comparing 49 USD / 99 USD / 199 USD plans spend"
+  },
+  {
     "url": "/zh/content/legora-pricing-as-headcount/",
     "locale": "zh",
     "title": "Legora 定价数学:18 个月从 300 万美金 ARR 到 1 亿美金,因为它卖的是 AI 岗位,不是 AI 工具",
-    "description": "冷读瑞典法律 AI 公司 Legora 的营收轨迹(2024 年底 300 万、2025 年底 5000 万、2026 年 4 月 1 亿美金 ARR),以及为什么按人头定价、按软件订阅定价,会把垂直 AI 的单位经济学彻底拉开。",
+    "description": "拆解瑞典法律 AI 公司 Legora 的营收轨迹(2024 年底 300 万、2025 年底 5000 万、2026 年 4 月 1 亿美金 ARR),以及为什么按人头定价、按软件订阅定价,会把垂直 AI 的单位经济学彻底拉开。",
     "category": "ai",
     "tags": [
       "ai",
@@ -1376,7 +1957,7 @@
       "monetization"
     ],
     "excerpt": "一个 operator 拆穿一个常见陷阱：开垂直 AI 产品，上来就按工具月费定价。Legora 是反面案例。案例列出三个营收里程碑——2024 年底 300 万美金 ARR、2025 年底 5000",
-    "body": "一个 operator 拆穿一个常见陷阱：开垂直 AI 产品，上来就按工具月费定价。Legora 是反面案例。案例列出三个营收里程碑——2024 年底 300 万美金 ARR、2025 年底 5000 万美金 ARR、2026 年 4 月 1 亿美金 ARR——同期 D 轮 6 亿美金、估值 56 亿美金。帖子的核心论点是：真正承重的是定价策略，不是模型表现。下面是冷读、定价数字含义，以及案例里没说的四个点。 案例摆出的数字 数量 值 2024 年底 ARR 300 万美金 2025 年底 ARR 5000 万美金 2026 年 4 月 ARR 1 亿美金 客户数 1000+ 家律所/法务团队 D 轮融资 6 亿美金,估值 56 亿美金 创始人/地区 Max Junestrand / 瑞典 命名交付物 合同尽调、合规监控、文书交付 数字由公司自报、未审计。案例用这些数字去论证定价策略才是关键的决策。 定价数学 横向 AI 写作工具的锚点是 ChatGPT 或 Claude Pro,20–50 美金/月，买家比的是下一个订阅、下一张账单的边际成本。垂直 AI 卖的不是「一个工具席位」，买家比的是： 一个 AI 初级律师 @ 50–150k 美金/年 一个人类初级律师 @ 150–200k 美金/年 一个能扛同样活的中级律师 @ 250–400k 美金/年 价格上限直接拉到 HR 的 FTE 预算池。销售单位从「seat」变成「FTE-equivalent」，数学差了大约两个数量级。 续费翻转 真正结构性后果在续费，不在获客。 定价模型 买家替代的是 买家流失的场景 横向 AI 写作工具(锚定 ChatGPT) 订阅清单上的一项 别家工具更好用,合同到续费时被价格比下去 垂直 AI 席位(锚定初级律师) 已经预算下来的人头 团队已经按 AI 重组,撤 AI 就要重发岗位、重启招聘 对横向工具，流失是价格比较的决策；对垂直 AI 席位，流失是组织架构的决策。组织架构决策比价格比较难回滚得多。成熟垂直 AI 厂商广宣的 60–80% 净留存，经济学就坐落在这上面。案例没指名，但定价策略已经暗示了它。 为什么大多数 operator 没踩到这条 帖子里说得直白：「卖工具一个月 99 美金，还是卖岗位一年 100k 美金，是 80% 留存工具类，还是 60–80% 留存 FTE 类的分界线。」 大多数人犯的错是上来就用软件月费的心智模型，因为所有横向 AI 工具都这么做，等被买家把价格压到 79 美金才奇怪，而自己本来是想收 200 美金。锚点定在软件月费，一开始就站错了参考系。 三个最容易踩坑的地方： 被替代的人头不够贵。 你替代一个 30k 美金/年的角色，价格天花板就在 15–20k,SaaS 的开销就要吃掉一半，单位经济学立不住。要选被替代的人头在 100k+ "
+    "body": "一个 operator 拆穿一个常见陷阱：开垂直 AI 产品，上来就按工具月费定价。Legora 是反面案例。案例列出三个营收里程碑——2024 年底 300 万美金 ARR、2025 年底 5000 万美金 ARR、2026 年 4 月 1 亿美金 ARR——同期 D 轮 6 亿美金、估值 56 亿美金。帖子的核心论点是：真正承重的是定价策略，不是模型表现。下面是拆解、定价数字含义，以及案例里没说的四个点。 案例摆出的数字 数量 值 2024 年底 ARR 300 万美金 2025 年底 ARR 5000 万美金 2026 年 4 月 ARR 1 亿美金 客户数 1000+ 家律所/法务团队 D 轮融资 6 亿美金,估值 56 亿美金 创始人/地区 Max Junestrand / 瑞典 命名交付物 合同尽调、合规监控、文书交付 数字由公司自报、未审计。案例用这些数字去论证定价策略才是关键的决策。 定价数学 横向 AI 写作工具的锚点是 ChatGPT 或 Claude Pro,20–50 美金/月，买家比的是下一个订阅、下一张账单的边际成本。垂直 AI 卖的不是「一个工具席位」，买家比的是： 一个 AI 初级律师 @ 50–150k 美金/年 一个人类初级律师 @ 150–200k 美金/年 一个能扛同样活的中级律师 @ 250–400k 美金/年 价格上限直接拉到 HR 的 FTE 预算池。销售单位从「seat」变成「FTE-equivalent」，数学差了大约两个数量级。 续费翻转 真正结构性后果在续费，不在获客。 定价模型 买家替代的是 买家流失的场景 横向 AI 写作工具(锚定 ChatGPT) 订阅清单上的一项 别家工具更好用,合同到续费时被价格比下去 垂直 AI 席位(锚定初级律师) 已经预算下来的人头 团队已经按 AI 重组,撤 AI 就要重发岗位、重启招聘 对横向工具，流失是价格比较的决策；对垂直 AI 席位，流失是组织架构的决策。组织架构决策比价格比较难回滚得多。成熟垂直 AI 厂商广宣的 60–80% 净留存，经济学就坐落在这上面。案例没指名，但定价策略已经暗示了它。 为什么大多数 operator 没踩到这条 帖子里说得直白：「卖工具一个月 99 美金，还是卖岗位一年 100k 美金，是 80% 留存工具类，还是 60–80% 留存 FTE 类的分界线。」 大多数人犯的错是上来就用软件月费的心智模型，因为所有横向 AI 工具都这么做，等被买家把价格压到 79 美金才奇怪，而自己本来是想收 200 美金。锚点定在软件月费，一开始就站错了参考系。 三个最容易踩坑的地方： 被替代的人头不够贵。 你替代一个 30k 美金/年的角色，价格天花板就在 15–20k,SaaS 的开销就要吃掉一半，单位经济学立不住。要选被替代的人头在 100k+ "
   },
   {
     "url": "/content/legora-pricing-as-headcount/",
@@ -1416,7 +1997,7 @@
     "url": "/zh/content/lovable-vibe-coding-pricing/",
     "locale": "zh",
     "title": "Lovable 不到 200 人做到 5 亿美金 ARR:定价曲线里藏着什么",
-    "description": "瑞典 AI 应用生成器 Lovable 据披露在不到两年内做到 5 亿美金 ARR、不到 200 人、估值 66 亿美金。它不训自己的模型,把第三方大模型包成「描述需求 → 得到能跑的全栈应用」流程。冷读单位经济学、定价档位实际意味什么,以及为什么它的目标客户不是开发者。",
+    "description": "瑞典 AI 应用生成器 Lovable 据披露在不到两年内做到 5 亿美金 ARR、不到 200 人、估值 66 亿美金。它不训自己的模型,把第三方大模型包成「描述需求 → 得到能跑的全栈应用」流程。拆单位经济学、定价档位实际意味什么,以及为什么它的目标客户不是开发者。",
     "category": "ai",
     "tags": [
       "ai",
@@ -1427,7 +2008,7 @@
       "monetization"
     ],
     "excerpt": "Lovable,一支瑞典 AI 应用生成器,据披露在不到两年内做到 5 亿美金 ARR、不到 200 人、估值 66 亿美金。产品不训自己的模型,把第三方大模型包成「描述需求、得到一个能跑的全栈应用」",
-    "body": "Lovable,一支瑞典 AI 应用生成器,据披露在不到两年内做到 5 亿美金 ARR、不到 200 人、估值 66 亿美金。产品不训自己的模型,把第三方大模型包成「描述需求、得到一个能跑的全栈应用」流程。下面冷读单位经济学,以及定价档位实际意味什么。 数字 数量 值 年化营收(最新) 5 亿美金 员工数 <200 人均营收 200 万美金+/年 估值 66 亿美金 单轮融资 3.3 亿美金 ARR 最近一步增长 25%+ 每周新项目数 100 万 已上线项目月访问 6 亿 总用户数 800 万(过半用在能赚钱的活上) 数字为公司自报、未审计。用作方向性论据,不是财报。 定价档位 案例点了三档。形状比具体数字重要: 计费单位是项目复杂度与产出数量。这是「先出货,再按用量计费」——和 Vercel、和云 egress、和所有用量计费的基础设施产品同形。先免费,用户的第一个项目免费,价格随用户实际在做的量往上走。 这个形状是承重决策,不是具体价格点。具体价格点以后可以调。「免费起步,再按用量扩张」这个形状,是非技术买家能安心接受的——在做出他们想继续做的东西之前,他们不付钱。 为什么客户是「非技术」而不是「开发者」 开发者把 Lovable 对标到他们已有的栈:VS Code、Git、一个 LLM 订阅。月成本大约 0–20 美金。在开发者已经具备这套肌肉记忆的前提下,Lovable 在任何价格点上都不便宜。 非技术买家把 Lovable 对标到外包报价。一个基础网站或应用 3000–30000 美金。Lovable 月费 25–50 美金。非技术买家没有「LLM 包出来的产品够不到」的价格上限。他们买的是「我不用去找、考核、付款给外包」,这在一个项目上就省下 5000 美金。 案例说得直接:护城河在非技术买家。开发者市场拥挤且价格敏感。非技术买家市场大、竞争小、结构上愿意付费,因为他们的替代方案是「项目根本不做」。 案例点出的飞轮 案例给出三层叠加: 每周 100 万个新项目上线平台。 每个项目默认公开,每个项目就是一个营销面。 这些项目合计每月 6 亿次访问。 访问者看到被做出来的东西,品牌与信任一起涨,反哺 SEO。 800 万用户里过半用在能赚钱的活上。 这不是闲着试玩的人。这是在平台上跑真实生意的人,他们会为 Pro 和 Business 付费。 飞轮是「项目数 → 访问数 → 用户数 → 付费用户数」。四个环节没有哪个是新的。新的是四个环节在同一平台上同时跑,因为每个环节都在反哺下一个,所以很难复制。 「不做模型」的姿态 Lovable 不训自己的基础模型。案例说得很直白:它包的是第三方大模型。竞争壁垒是「包」——项目结构、提示词到应用的流程、素材库、部署管线。任何竞争者都能调同样的 API,但很少有人能以同样节奏交付同样质量的包。 这笔交换和之前那"
+    "body": "Lovable,一支瑞典 AI 应用生成器,据披露在不到两年内做到 5 亿美金 ARR、不到 200 人、估值 66 亿美金。产品不训自己的模型,把第三方大模型包成「描述需求、得到一个能跑的全栈应用」流程。下面拆单位经济学,以及定价档位实际意味什么。 数字 数量 值 年化营收(最新) 5 亿美金 员工数 <200 人均营收 200 万美金+/年 估值 66 亿美金 单轮融资 3.3 亿美金 ARR 最近一步增长 25%+ 每周新项目数 100 万 已上线项目月访问 6 亿 总用户数 800 万(过半用在能赚钱的活上) 数字为公司自报、未审计。用作方向性论据,不是财报。 定价档位 案例点了三档。形状比具体数字重要: 计费单位是项目复杂度与产出数量。这是「先出货,再按用量计费」——和 Vercel、和云 egress、和所有用量计费的基础设施产品同形。先免费,用户的第一个项目免费,价格随用户实际在做的量往上走。 这个形状是承重决策,不是具体价格点。具体价格点以后可以调。「免费起步,再按用量扩张」这个形状,是非技术买家能安心接受的——在做出他们想继续做的东西之前,他们不付钱。 为什么客户是「非技术」而不是「开发者」 开发者把 Lovable 对标到他们已有的栈:VS Code、Git、一个 LLM 订阅。月成本大约 0–20 美金。在开发者已经具备这套肌肉记忆的前提下,Lovable 在任何价格点上都不便宜。 非技术买家把 Lovable 对标到外包报价。一个基础网站或应用 3000–30000 美金。Lovable 月费 25–50 美金。非技术买家没有「LLM 包出来的产品够不到」的价格上限。他们买的是「我不用去找、考核、付款给外包」,这在一个项目上就省下 5000 美金。 案例说得直接:护城河在非技术买家。开发者市场拥挤且价格敏感。非技术买家市场大、竞争小、结构上愿意付费,因为他们的替代方案是「项目根本不做」。 案例点出的飞轮 案例给出三层叠加: 每周 100 万个新项目上线平台。 每个项目默认公开,每个项目就是一个营销面。 这些项目合计每月 6 亿次访问。 访问者看到被做出来的东西,品牌与信任一起涨,反哺 SEO。 800 万用户里过半用在能赚钱的活上。 这不是闲着试玩的人。这是在平台上跑真实生意的人,他们会为 Pro 和 Business 付费。 飞轮是「项目数 → 访问数 → 用户数 → 付费用户数」。四个环节没有哪个是新的。新的是四个环节在同一平台上同时跑,因为每个环节都在反哺下一个,所以很难复制。 「不做模型」的姿态 Lovable 不训自己的基础模型。案例说得很直白:它包的是第三方大模型。竞争壁垒是「包」——项目结构、提示词到应用的流程、素材库、部署管线。任何竞争者都能调同样的 API,但很少有人能以同样节奏交付同样质量的包。 这笔交换和之前那支"
   },
   {
     "url": "/content/lovable-vibe-coding-pricing/",
@@ -1450,7 +2031,7 @@
     "url": "/zh/content/medvi-two-person-health-empire/",
     "locale": "zh",
     "title": "Medvi 案例：2 个人的远程医疗公司如何在 16 个月里做出 4 亿美金销售额，把 2442 人的对手甩在 5.5% 净利率",
-    "description": "冷峻拆解 Medvi——一个 2 人远程医疗公司如何在 16 个月里做到 4 亿美金销售额、16% 净利率，2442 人的对手 Hims and Hers 反而只有 5.5%。\"拥有客户、租用其他\"论点、AI 工具栈算账、模型在哪里断。",
+    "description": "深度拆解 Medvi——一个 2 人远程医疗公司如何在 16 个月里做到 4 亿美金销售额、16% 净利率，2442 人的对手 Hims and Hers 反而只有 5.5%。\"拥有客户、租用其他\"论点、AI 工具栈算账、模型在哪里断。",
     "category": "ai",
     "tags": [
       "ai",
@@ -1504,7 +2085,7 @@
     "url": "/zh/content/medvi-one-person-clinic-layer/",
     "locale": "zh",
     "title": "Medvi:2 个人,15 个月做 4 亿美金,以及「持有客户、租用其余」模型怎么撑起这条曲线",
-    "description": "冷读 Medvi(Matthew Gallagher):2 人远程健康公司 15 个月做到 4 亿美金销售、25 万客户,正冲 18 亿;净利率 16.2%,对比 Hims 5.5% 配 2442 个员工。结构主张:这家公司不是一家医疗公司——它是建在租用基础设施之上的客户获取与体验层。",
+    "description": "拆解 Medvi(Matthew Gallagher):2 人远程健康公司 15 个月做到 4 亿美金销售、25 万客户,正冲 18 亿;净利率 16.2%,对比 Hims 5.5% 配 2442 个员工。结构主张:这家公司不是一家医疗公司——它是建在租用基础设施之上的客户获取与体验层。",
     "category": "ai",
     "tags": [
       "ai",
@@ -1517,6 +2098,59 @@
     ],
     "excerpt": "一条知识星球帖子拆的是 Matthew Gallagher 的 Medvi:一家美国远程医疗公司,据报 15 个月做到 4 亿美金销售、25 万客户,2 人团队,2026 年冲 18 亿。帖子最终落到",
     "body": "一条知识星球帖子拆的是 Matthew Gallagher 的 Medvi:一家美国远程医疗公司,据报 15 个月做到 4 亿美金销售、25 万客户,2 人团队,2026 年冲 18 亿。帖子最终落到的结构主张不是「AI 替代了医生」——是「Medvi 不是一家医疗公司,它是建在租用医疗基础设施之上的客户获取与体验层」。下面是数学、租用栈模型、以及案例没展开的四点。 案例说的数字 数量 值 创始人 Matthew Gallagher,41 岁,洛杉矶 联合创始人 1(他弟弟) 团队总数 2 上线 2024 年 9 月 公开销售(第一年) 4 亿美金 公开客户数 25 万 2026 跟踪 18 亿美金(自报预测) 净利率 16.2% 可比公司:Hims and Hers 24 亿美金收入、2442 名员工、5.5% 净利率 产品方向 现金支付处方减肥药,D2C 案例把「团队规模对收入」的比率当成承重的证据点,不是把标题收入本身。 Medvi 持有 vs 租用什么 案例画的结构分界: 一家全栈远程医疗公司会把租用项全部持有——临床员工、药房基础设施、客服团队、履约。Medvi 一项都不持有。「持有客户、租用其余」是 headcount 卡在 2 人的原因。 为什么这个模型能产生 3 倍净利率 Hims and Hers Health——最接近的公开可比公司——约 24 亿美金收入、2442 名员工、5.5% 净利率。Medvi 据报 16.2% 净利率 + 2 人团队。净利率差不是「公司更小」的函数,是成本结构的函数: 成本项 全栈远程医疗 Medvi 临床员工 雇佣医生,约 20 万美金 / 年 × N 按次租用,随收入可变 药房 自有牌照、履约中心 按张租用,随收入可变 客服 内部团队,约 4 万美金 / 年 × N AI + 语音合成,约 5000–10000 美金 / 月 资本支出 诊所、牌照、履约建设 零 工具栈 per-employee 工具 AI 工具 3000–12000 美金 / 年替代 13 万美金 + 人力 客服这条 3–10 倍的成本差,就是 16.2% 净利率在小团队下能成立的关键。临床与药房层随收入走可变成本,headcount 完全不需要随收入扩展。 价格锚 案例指出 Medvi 的定价锚的是人力成本,不是按张处方计费。一次美国远程问诊按服务报价 80–150 美金,在 Medvi 的订阅包里被打到 30–60 美金。客户把这个 bundle 比作「去诊所」,觉得便宜。Medvi 拿毛利,因为租用进来的边际问诊成本接近 5–15 美金。 这是 Cognition / Devin 同样的「岗位定价」动作,但套在了远程问诊而不是软件工程上。两个产品都落在客户 P&L 的人力那条线,不是按次服务的账单线。 案例点名的失败模式 案例对一条失"
+  },
+  {
+    "url": "/content/x-mercor-expert-data-pipeline/",
+    "locale": "en",
+    "title": "Mercor hits 2B USD run rate in 3 years by selling expert hours, not models: the pick-and-shovel math of the AI-training data supply chain",
+    "description": "Mercor — 3 years old, 2B USD annualized revenue, 3.89M USD daily payouts to experts, 295K jobs created at 124 USD/hour average. The product is not a model and not an app — it is a staffing layer that matches domain experts (oncologists, lawyers, MBB consultants) to AI-training tasks. Pricing anchored against expert hours, not software seats. The pick-and-shovel position, the expert-supply economics, and the four gaps the case does not cover, below.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "data-labeling",
+      "expert-supply",
+      "pick-and-shovel",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "Mercor — a staffing layer between AI labs and domain experts. 2B USD annualized revenue by June 2026",
+    "body": "Mercor — a staffing layer between AI labs and domain experts. 2B USD annualized revenue by June 2026. 1B USD annualized in February 2026 (4 months earlier). 500M USD annualized in September 2025 (5 months earlier). 295K expert jobs created. 3.89M USD paid out daily. Average expert rate 124 USD/hour. Top rates: oncology 130–180 USD/hour, legal 100–150 USD/hour, MBB consulting 100 USD/hour. The interesting part is not 'Mercor hires experts' — it is the pick-and-shovel position above every model lab. The unit economics, the expert-supply moat, and the four gaps the case does not cover, below. The pick-and-shovel position The 2B USD annualized claim is most likely GMV / billings, not net revenue. At a 30% take rate on 366M USD in expert billings, Mercor's net revenue is closer to 110M USD — still a real business, but a different number. The case presents the bigger number because that is what reads well in growth-stage metrics. Why the moat is operational, not technical The moat is not the matching algorithm. Three operational layers compound: Recruitment. Mercor's brand attracts experts who want flexible hourly work. The supply side is widening month over month. A new entrant faces a "
+  },
+  {
+    "url": "/zh/content/norm-ai-law-firm-12b/",
+    "locale": "zh",
+    "title": "Norm AI 不卖法律软件,开律所 Norm Law:为什么「AI 律师工具」框定错了,「AI 律师值班的律所」才是对的",
+    "description": "Norm AI。2023 年 7 月 John Nay 创办。C 轮:120 万美金/1.2B 估值,累计融资 2.6 亿+。客户管理 30 万亿+ 美金资产——黑石、贝恩、先锋、花旗、纽约人寿。Norm 不是法律软件公司。Norm 开着一家律所——Norm Law;AI agent 是律师,人类资深律师监督。客户付法律服务费,不付软件订阅。框定是「律所」,不是「工具」——律所按案件计费,工具按席位计费。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "legal",
+      "law-firm",
+      "norm-ai",
+      "enterprise",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条知识星球帖子拆的是 Norm AI,John Nay 在 2023 年 7 月创办。C 轮:1.2 亿美金,12 亿估值。累计融资 2.6 亿+。客户管理 30 万亿+ 美金资产——黑石、贝恩资本",
+    "body": "一条知识星球帖子拆的是 Norm AI,John Nay 在 2023 年 7 月创办。C 轮:1.2 亿美金,12 亿估值。累计融资 2.6 亿+。客户管理 30 万亿+ 美金资产——黑石、贝恩资本、先锋、花旗、纽约人寿。这条不在技术,在结构:Norm 不卖法律软件产品。Norm 开着一家律所——Norm Law。AI agent 做法律工作(合同审阅、监管分析、合规检查);人类资深律师监督、校准、纠错。客户把 Norm Law 当外部法律顾问聘。交付物是法律意见,不是软件输出。重点在计费模型——律所按案件计费,工具按席位计费。下面是结构框定、按客户数学,以及案例没展开的四点。 结构框定 重点不是「Norm 的 AI 更强」,是:Norm 开着律所,不是工具。律所的天花板是客户的 workload;工具的天花板是客户的 headcount。对一家「法律 workload 远大于法务 headcount」的企业客户,律所框定是天花板更高的营收模型。 客户名单 客户 管理 AUM / 资产 隐含合同规模(粗略) 黑石 1.1T 美金 AUM 2M–10M 美金/年 贝恩资本 185B 美金 AUM 1M–5M 美金/年 先锋 8T 美金 AUM 5M–20M 美金/年 花旗 2.4T 美金资产 5M–20M 美金/年 纽约人寿 700B 美金资产 2M–10M 美金/年 合计 30T+ 隐含 20M–100M 美金/年 book 案例没给按客户营收。隐含范围与 50M–150M ARR 公司一致。客户集中度是那个没说出的变量——少数几家财富级合同大概率占 book 主体。 单位经济 案例没给监督比,这是核心单位经济变量。1:10 是软件级毛利(80%+);1:2 是律所级毛利(40–50%)。两者之间公司估值差 2 倍。 为什么 2026 年「律所」是对的框定 这点和 Cognition 一样:律所框定移除了按席位营收天花板。法律 AI 工具席位市场是红海(Harvey、CoCounsel、Spellbook)。「AI 值班的律所产能」市场没那么多竞品——因为大多数法律 AI 厂不想吃律所形态带来的无照执业风险。 律所框定也是唯一能撑住 12 亿估值的框定。50M ARR 的按席位法律 AI 工具,估值 250M–500M。100M ARR 的律所形态,毛利是律所级,估值 1B–2B。律所框定是撑住这个倍数的那个。 案例没说的事 四点。 杠杆比。 1 资深律师带几个 agent。这是核心单位经济变量,案例没说。1:10 是软件级;1:2 是律所级。两者毛利与倍数差异很大。 收费结构。 固定费 vs 按小时。律所按小时计费是 cost-plus 生意;按案件固定费是 value-based 生意。案例没给。 执业责任。 AI agent 给错法律意见,谁背 ma"
+  },
+  {
+    "url": "/content/norm-ai-law-firm-12b/",
+    "locale": "en",
+    "title": "Norm AI doesn't sell legal software, it runs Norm Law: why 'AI lawyer tool' is the wrong frame and 'AI-staffed law firm' is the right one",
+    "description": "A look at Norm AI. Founded July 2023 by John Nay. Series C: $120M at $1.2B valuation, total funding $260M. Customers manage over $30T in assets — Blackstone, Bain, Vanguard, Citi, New York Life. Norm is not a legal-software company. Norm runs a law firm called Norm Law; the AI agents are the lawyers, human senior lawyers supervise. The customer pays for the legal service, not the software subscription. The frame is 'firm', not 'tool' — and a firm bills by the matter, not by the seat.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "legal",
+      "law-firm",
+      "norm-ai",
+      "enterprise",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A case profiles Norm AI, founded by John Nay in July 2023. Series C: $120M raised at a $1.2B valuati",
+    "body": "A case profiles Norm AI, founded by John Nay in July 2023. Series C: $120M raised at a $1.2B valuation. Total funding: $260M+. Customers manage over $30T in assets — Blackstone, Bain Capital, Vanguard, Citi, New York Life. The interesting part is not the technology but the structure: Norm does not sell a legal-software product. Norm runs a law firm called Norm Law. AI agents do the legal work (contract review, regulatory analysis, compliance checks); human senior lawyers supervise, calibrate, correct. The customer engages Norm Law as outside counsel. The deliverable is legal advice, not software output. The billing model is the point — a firm bills by the matter, a tool bills by the seat. The structural framing, per-customer math, and four gaps the case does not address, below. The frame The case is not 'Norm has better AI'. The case is: Norm operates a firm, not a tool. A firm's ceiling is the customer's workload; a tool's ceiling is the customer's headcount. For an enterprise customer whose legal workload is much larger than its legal headcount, the firm frame is the higher-ceiling revenue model. The customer roster Customer AUM / assets managed Implied deal size (rough) Blacksto"
   },
   {
     "url": "/zh/tools/fee-comparator/",
@@ -1571,7 +2205,7 @@
     "url": "/zh/content/postiz-long-tail-channels/",
     "locale": "zh",
     "title": "Postiz 案例:30+ 社交渠道 + 开源,撑起 14.5 万美金 MRR,跟主流赛道错开的那条路",
-    "description": "冷读 Postiz(开源社媒排期工具)走到 14.5 万美金 MRR 的路子。它真正变现的是什么,护城河在哪里,案例没说清楚哪几件事,以及「长尾集成 + 开源」单位经济学的拆解。",
+    "description": "拆解 Postiz(开源社媒排期工具)走到 14.5 万美金 MRR 的路子。它真正变现的是什么,护城河在哪里,案例没说清楚哪几件事,以及「长尾集成 + 开源」单位经济学的拆解。",
     "category": "ai",
     "tags": [
       "ai",
@@ -1589,7 +2223,7 @@
     "url": "/zh/content/postiz-30-channels-moat/",
     "locale": "zh",
     "title": "Postiz 单人做到 14.5 万美金 MRR:集成 30 个别人懒得接的平台才是护城河",
-    "description": "一支单人开发的社媒排期工具,据披露月经常性收入做到 14.5 万美金,秘诀是接了 30 多个发布渠道——包括竞品懒得接的 Mastodon、Bluesky、Nostr、Warpcast、Telegram、Discord。下面冷读「渠道数」为什么比「更好的 UI」更重要,以及开源怎么变成付费转化漏斗。",
+    "description": "一支单人开发的社媒排期工具,据披露月经常性收入做到 14.5 万美金,秘诀是接了 30 多个发布渠道——包括竞品懒得接的 Mastodon、Bluesky、Nostr、Warpcast、Telegram、Discord。下面拆「渠道数」为什么比「更好的 UI」更重要,以及开源怎么变成付费转化漏斗。",
     "category": "ai",
     "tags": [
       "ai",
@@ -1600,7 +2234,7 @@
       "monetization"
     ],
     "excerpt": "一支单人开发的社媒排期工具 Postiz 据披露月经常性收入做到 14.5 万美金。产品不是靠 UI 精致或功能深度赢的。它赢在「接了 30 多个发布渠道」——包括竞品觉得「用户太少不值得做」的 Ma",
-    "body": "一支单人开发的社媒排期工具 Postiz 据披露月经常性收入做到 14.5 万美金。产品不是靠 UI 精致或功能深度赢的。它赢在「接了 30 多个发布渠道」——包括竞品觉得「用户太少不值得做」的 Mastodon、Bluesky、Nostr、Warpcast、Telegram、Discord。整套产品还开源。下面冷读「渠道数」为什么是护城河,以及开源怎么变成付费转化漏斗。 数字 数量 值 MRR(最新) 14.5 万美金 推算 ARR 174 万美金 发布渠道 30+ 代码许可 开源 融资 自负盈亏(无轮次披露) 团队 单人 founder 创始人自报、未审计。数字是策略的方向锚,不是财报。 为什么 30 个渠道是护城河 案例点得很清楚。一个 6 渠道的排期工具,处在和其他 6 渠道排期工具的功能对等赛跑里。买家比的是 UI、价格、集成数。工具至少要赢其中一项才能转化。 一个 30 渠道的排期工具不在同一场比赛里。买家把它对标到「雇一个兼职社媒运营,去那 24 个平台手动发」。对标框架从「功能对等」滑到「替代人工」。价格上限从「我愿意为排期工具付多少」跳到「我愿意为不做这些活付多少」。 机械原因是:每个集成是一个第三方 API 加上鉴权流加上格式适配器。集成成本真实存在——一个能用的集成大约 3–10 个工程日。一个 30 渠道的工具代表 90–300 工程日的集成工作。新入场者要花同样的时间才能追平。每多接一个渠道,护城河就厚一分。 开源怎么变成付费漏斗 案例描述了一个三步循环: 开源仓库。 GitHub star 累积起来,反哺可见度。自部署用户装上开始用。 自部署用户撞上运维极限。 一些用户规模超过自部署的舒适区(数据库备份、可用性、版本升级、安全补丁)。他们开始找托管版。 托管版就是付费产品。 自部署用户是预审过的线索,因为他们已经在工作流里验证过产品。转化率结构性地高于冷流量。 案例说得很直白:开源不是慷慨。开源是一条免费的分销渠道,把预审过的线索交到你手上。托管付费产品是这层之上的变现。 定价锚点 案例暗示 Postiz 定价在 30–80 美金/月。锚的是替代人工,不是同行订阅价。 一个兼职社媒运营在大多数市场 1000–2000 美金/月。Postiz 50 美金/月替代大约每月 10 小时的发布工作。买家比的是 50 美金/月 对 1500 美金/月的人工,30 倍价值比。价格上限结构性地高于任何把锚定在 Buffer 或 Hootsuite 定价上的「排期工具」竞争者。 这和之前法律 AI 案例同形:把价格锚到工具替代的人力成本上,而不是同行软件月费上。价格上限从软件预算跑到 HR 预算。 复用的路径 案例暗示单人 founder 想复用结构,有四步: 挑一个现有玩家只覆盖 5–6 个渠道或工作流的品类。 自己覆盖 15+ 长尾。品类不一"
+    "body": "一支单人开发的社媒排期工具 Postiz 据披露月经常性收入做到 14.5 万美金。产品不是靠 UI 精致或功能深度赢的。它赢在「接了 30 多个发布渠道」——包括竞品觉得「用户太少不值得做」的 Mastodon、Bluesky、Nostr、Warpcast、Telegram、Discord。整套产品还开源。下面拆「渠道数」为什么是护城河,以及开源怎么变成付费转化漏斗。 数字 数量 值 MRR(最新) 14.5 万美金 推算 ARR 174 万美金 发布渠道 30+ 代码许可 开源 融资 自负盈亏(无轮次披露) 团队 单人 founder 创始人自报、未审计。数字是策略的方向锚,不是财报。 为什么 30 个渠道是护城河 案例点得很清楚。一个 6 渠道的排期工具,处在和其他 6 渠道排期工具的功能对等赛跑里。买家比的是 UI、价格、集成数。工具至少要赢其中一项才能转化。 一个 30 渠道的排期工具不在同一场比赛里。买家把它对标到「雇一个兼职社媒运营,去那 24 个平台手动发」。对标框架从「功能对等」滑到「替代人工」。价格上限从「我愿意为排期工具付多少」跳到「我愿意为不做这些活付多少」。 机械原因是:每个集成是一个第三方 API 加上鉴权流加上格式适配器。集成成本真实存在——一个能用的集成大约 3–10 个工程日。一个 30 渠道的工具代表 90–300 工程日的集成工作。新入场者要花同样的时间才能追平。每多接一个渠道,护城河就厚一分。 开源怎么变成付费漏斗 案例描述了一个三步循环: 开源仓库。 GitHub star 累积起来,反哺可见度。自部署用户装上开始用。 自部署用户撞上运维极限。 一些用户规模超过自部署的舒适区(数据库备份、可用性、版本升级、安全补丁)。他们开始找托管版。 托管版就是付费产品。 自部署用户是预审过的线索,因为他们已经在工作流里验证过产品。转化率结构性地高于冷流量。 案例说得很直白:开源不是慷慨。开源是一条免费的分销渠道,把预审过的线索交到你手上。托管付费产品是这层之上的变现。 定价锚点 案例暗示 Postiz 定价在 30–80 美金/月。锚的是替代人工,不是同行订阅价。 一个兼职社媒运营在大多数市场 1000–2000 美金/月。Postiz 50 美金/月替代大约每月 10 小时的发布工作。买家比的是 50 美金/月 对 1500 美金/月的人工,30 倍价值比。价格上限结构性地高于任何把锚定在 Buffer 或 Hootsuite 定价上的「排期工具」竞争者。 这和之前法律 AI 案例同形:把价格锚到工具替代的人力成本上,而不是同行软件月费上。价格上限从软件预算跑到 HR 预算。 复用的路径 案例暗示单人 founder 想复用结构,有四步: 挑一个现有玩家只覆盖 5–6 个渠道或工作流的品类。 自己覆盖 15+ 长尾。品类不一定"
   },
   {
     "url": "/content/postiz-long-tail-channels/",
@@ -1677,7 +2311,7 @@
     "url": "/zh/content/salesrobot-zero-funding-ai-saas/",
     "locale": "zh",
     "title": "SalesRobot: 一个 100 万美金 ARR 的 LinkedIn AI 工具, 4100 个客户, 零融资",
-    "description": "LinkedIn 自动化 + 冷邮件 AI 工具, 100 万美金 ARR, 4100+ B2B 团队, 零外部资金。冷峻拆解: 单元经济, \"高度分散市场\"论, 以及 bootstrapped AI SaaS 真正证明了什么。",
+    "description": "LinkedIn 自动化 + 冷邮件 AI 工具, 100 万美金 ARR, 4100+ B2B 团队, 零外部资金。深度拆解: 单元经济, \"高度分散市场\"论, 以及 bootstrapped AI SaaS 真正证明了什么。",
     "category": "ai",
     "tags": [
       "ai",
@@ -1711,7 +2345,7 @@
     "url": "/zh/content/seedance-2-product-video-case/",
     "locale": "zh",
     "title": "Seedance 2.0 产品视频案例：从月薪 8000 的详情页设计师到月入 3 万的 AI 视频接单",
-    "description": "冷峻拆解一个网络流传的 AI 产品视频接单案例。背后的算账、海外报价区间、\"现在是窗口期\"的四项论据，以及它在哪里站得住、在哪里拉满。",
+    "description": "深度拆解一个网络流传的 AI 产品视频接单案例。背后的算账、海外报价区间、\"现在是窗口期\"的四项论据，以及它在哪里站得住、在哪里拉满。",
     "category": "ai",
     "tags": [
       "ai",
@@ -1759,6 +2393,24 @@
     "body": "Fiverr gigs running on GPT Image (old-photo restoration at $10–25, object removal at $5–25, AI commercial imagery at $20–100+) are a real category with thousands of active sellers. The per-gig math is clean: tool cost in cents, gig price in dollars, and a focused operator can ship 10–30 gigs per day. The margin compresses once dispute / revision rates, platform fees, and the Fiverr churn curve are factored in. Below is the unit economics, the three margin compressors, and the durability question. What the case lays out Category Gig price Tool cost Operator time Skill required Old-photo restoration $10–25 $0.05–0.30 5–15 min Mid Object removal $5–25 $0.05–0.20 3–10 min Low AI commercial imagery $20–100+ $0.20–0.80 10–25 min Mid–High The case frames these as three categories with similar economics. The differences in skill requirement and price ceiling matter more than the table implies — high-skill gigs (commercial imagery) carry lower volume but higher per-gig margin. Per-gig unit economics A focused operator shipping 15 gigs/day at an average $25 price generates roughly $300/day gross, or $7,500/month gross. Net of disputes, platform fees, and unsold listing hours, the realistic m"
   },
   {
+    "url": "/content/sales-leads-broker/",
+    "locale": "en",
+    "title": "Selling sales leads at $1K+/month: AI re-did the broker business",
+    "description": "An X post (259 likes, 101 replies, 90 reposts) describes an information-arbitrage business: AI finds customers for other people (qualified leads), zero inventory, zero delivery. The product isn't the relationship — it's the structured data. The mechanism, unit economics, risk map, and four gaps the case does not address.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "leads",
+      "b2b",
+      "side-hustle",
+      "sales",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "An X post (259 likes, 101 replies, 90 reposts) describes an information-arbitrage business: use AI t",
+    "body": "An X post (259 likes, 101 replies, 90 reposts) describes an information-arbitrage business: use AI to find customers for other people. Low ticket per pack, but 80%+ margin, zero inventory, zero delivery, and it can compound. The case is not 'broker upgraded.' It is: AI rebuilt the traditional broker business. What is sold is not the relationship — what is sold is the structured data: who is currently looking for your kind of service, who the decision-maker is, what the email is, what they've been doing lately. The mechanism, the unit economics, the risk map, and four gaps the case does not address, below. The mechanism, three steps The buyer's cold-outreach conversion is 5–10x higher than unfiltered cold call, because the signals are pre-filtered and the decision-maker is pre-located. Why this is \"information arbitrage\" What is sold is not the data itself — LinkedIn and company sites are public. What is sold is the processed product: 'filtered + ranked + timed.' A salesperson could scrape on their own, but one salesperson's weekly hours get them 50 leads of random quality. AI does 200/day filtered by signals like 'expanded in the last 7 days,' 'hiring a sales role,' 'just switched "
+  },
+  {
     "url": "/content/shopify-fees-breakdown/",
     "locale": "en",
     "title": "Shopify Fees in 2026: The Complete Breakdown for Sellers",
@@ -1772,6 +2424,24 @@
     ],
     "excerpt": "Shopify's headline number is \"$39/month.\" The real cost is much higher. Here's every fee a typical s",
     "body": "Shopify's headline number is \"$39/month.\" The real cost is much higher. Here's every fee a typical store pays in 2026. Subscription tiers Plan Monthly Best for Starter $5 Side projects, in-person sales Basic $39 New stores, < $10k/month revenue Shopify $105 Growing stores, more reports Advanced $399 $1M+/year, lowest card rates The 3-year plan discounts Basic to $29/month and Advanced to $299/month. Transaction fees — Shopify Payments If you use Shopify Payments (powered by Stripe): Channel Online In-person Basic plan 2.9% + $0.30 2.7% + $0.00 Shopify plan 2.7% + $0.30 2.5% + $0.00 Advanced plan 2.5% + $0.30 2.4% + $0.00 For international cards (non-US), add 1.5% to the percentage. Transaction fees — third-party gateways If you use PayPal, Stripe directly, or another gateway: Basic plan: 2.0% extra on top of what the gateway charges Shopify plan: 1.0% Advanced plan: 0.5% The math: Basic + PayPal = 3.49% + $0.30 + PayPal's fee. Stick with Shopify Payments until you process $10k+/month. What a $50 sale actually nets Assume Shopify Basic + Shopify Payments, no apps charging transaction fees: That's 4.8% platform cost on a $50 sale. At $20 sale it's 7.4%. At $200 it's 3.6%. Hidden fees"
+  },
+  {
+    "url": "/content/x-spott-old-ats-rebuild/",
+    "locale": "en",
+    "title": "Spott rebuilt Bullhorn in 6 months and hit 1M USD/month: why the boring old-software replacement is the best 2026 AI play",
+    "description": "Spott — 3 founders from McKinsey / BCG / Bain, 2024 launch, 8x revenue growth in 6 months to 1M USD/month run rate (12M USD annualized). YC W25, 3.2M USD seed. The product replaces Bullhorn / Loxo / Vincere — the 20-year-old ATS / CRM stack used by recruiting agencies. The interesting part is not 'AI rebuilds recruiting software' — it is that the boring old-software replacement is the highest-payoff AI play. The unit economics, the migration moat, and the four gaps the case does not cover, below.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "recruiting",
+      "old-software-replacement",
+      "ats-crm",
+      "migration-moat",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "Spott — 3 founders from McKinsey / BCG / Bain, 2024 launch, 8x revenue growth in 6 months to 1M USD/",
+    "body": "Spott — 3 founders from McKinsey / BCG / Bain, 2024 launch, 8x revenue growth in 6 months to 1M USD/month (12M USD annualized). YC W25, 3.2M USD seed (Base10). The product replaces Bullhorn, Loxo, Vincere — the 20-year-old ATS / CRM stack used by recruiting agencies. The interesting part is not 'AI rebuilds recruiting software' — it is that the boring old-software replacement is the highest-payoff AI play. Demand is validated, pain is acute, migration barrier locks the win. The unit economics, the migration moat, and the four gaps the case does not cover, below. Why boring old-software replacement is the best AI play The 3 reasons compound. A reader scanning AI plays should weight boring old-software replacement over greenfield AI products because the demand side is solved. The risk is execution, not market. The unit economics at 1M USD/month The pricing math jumps 10–50x compared to incumbent ATS seats. The reason is the anchor — Spott sells against recruiter loaded cost (100K+ USD/year), not against software seat cost (1.2K–3.6K USD/year). A 500 USD/month price tag against a 100K USD/year loaded recruiter looks like a no-brainer for the agency owner. Why the migration is the load"
   },
   {
     "url": "/content/x-ai-product-bootcamp/",
@@ -1885,6 +2555,60 @@
     "body": "TikTok Shop's fee structure is the shortest among major marketplaces, but it punishes sellers who do not model the creator affiliate cut. Here is the real cost on a $30 product. Fee stack on a $30 product Fee Amount % of price Sale price $30.00 100% Referral commission (6%, fashion) $1.80 6% Transaction fee (1.8%) $0.54 1.8% TikTok's cut $2.34 7.8% Creator affiliate (10% typical) $3.00 10% TikTok's cut of creator fee (30%) $0.90 3% Creator + TikTok affiliate layer $3.90 13% Total platform + creator $6.24 20.8% That is the floor. Add a 5% return rate, 10% offsite ad spend, and a $0.30 fixed transaction cost, and the picture changes. Referral commission by category Category Referral % Fashion (apparel, accessories) 6% Home & living 6% Electronics 4% Health & beauty 5% Pet supplies 5% Toys & collectibles 5% Books & media 4% Food & beverage 4% Auto accessories 4% Compared to Amazon's 15% referral, TikTok Shop's commission is one-third. But the creator affiliate layer is what makes the math unforgiving if you skip the modeling. Creator affiliate — the hidden cost Most TikTok Shop sellers rely on creators. You set the commission rate (5–20% is typical), and any creator who posts your pro"
   },
   {
+    "url": "/zh/content/toonflow-ai-drama-pipeline/",
+    "locale": "zh",
+    "title": "Toonflow 一句话出一部完整短剧:2026 年 6 agent AI 视频制作的单位经济",
+    "description": "Toonflow,一个 AI 短剧流水线。输入:一句话。输出:完整短剧——剧本、分镜、配音、剪辑全自动。流水线跑 6 个 AI agent(导演、编剧、分镜、质检、配音、剪辑)像真实剧组一样分工。头条特性:跨镜头角色一致——AI 视频最难的问题。这条不是「AI 视频有效」——是 2026 年 6 agent AI 短剧制作的单位经济,以及「角色一致性」突破究竟解锁了什么。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "video",
+      "short-drama",
+      "pipeline",
+      "toonflow",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条推文拆的是 Toonflow——一个 AI 短剧流水线,接一句一句话输入,出一部完整短剧(剧本、分镜、配音、剪辑全自动)。流水线跑 6 个 AI agent(导演、编剧、分镜、配音、质检、剪辑)像",
+    "body": "一条推文拆的是 Toonflow——一个 AI 短剧流水线,接一句一句话输入,出一部完整短剧(剧本、分镜、配音、剪辑全自动)。流水线跑 6 个 AI agent(导演、编剧、分镜、配音、质检、剪辑)像真实剧组一样分工。用户不用配环境、不用写 prompt;界面是拖拽分镜、调台词、换 BGM。头条技术声称:跨镜头、跨场景角色一致性——AI 视频最难的问题。重点不是「AI 视频有效」,是:2026 年 6 agent AI 短剧制作的单位经济,以及「角色一致性」突破究竟对海外短剧市场解锁了什么。下面是单集数学、角色一致性突破、以及案例没展开的四点。 6 agent 流水线 导演 agent 把角色规范传给所有下游 agent。质检 agent 验证一致性。用户通过拖拽在分镜阶段介入,其余自动化。流水线用模型推理成本替代 5–10 人剧组。 角色一致性突破 AI 视频自 2023 年以来最难的问题是角色一致性。之前的模型每个镜头都把角色画得稍微不一样——脸、衣服、身材都不同——打破沉浸感。6 agent 流水线声称解决: 突破不在模型——在编排。导演 agent 的规范 + 质检 agent 的验证,是给跨镜头一致性的东西。案例是公开声称 6 agent 流水线跨镜头一致性的首例。独立基准还没验证。 单位经济 案例没给单集成本。隐含 5–50 美金。AI 成本压缩相对传统制作(单 70 集 5K–50K)10–100 倍。瓶颈不是成本;瓶颈是分发。 为什么角色一致性是解锁 角色一致性问题在 2026 年是 AI 短剧采用最大的单一阻塞。operator 能便宜出 70 集,但镜头之间主角脸变,观众不容忍,平台不推。 如果 Toonflow 的角色一致性声明成立,解锁是体量游戏。operator 一周能出 1–3 部,接近零生产成本,知道每部都沉浸稳定。72 小时海外营收曲线按周复利。复利是解锁。 如果声明不成立,Toonflow 是个产出 70 集沉浸破碎内容的工具。买家(operator)在质检里发现这事,因为制作成本已沉,还是出货,看 72 小时曲线表现不及预期。质检环节是隐性风险。 案例没说的事 四点。 单集成本。 案例没给美元数。隐含 5–50 美金。 失败模式。 6 agent 流水线产出不一致镜头时怎么办;用户手动覆盖有限。案例没处理质检 agent 标记一个镜头时用户做什么。 质量上限。 案例框定 6 agent 编排是突破,但没处理输出质量的上限(电影级短剧 vs 竖屏短剧)。6 agent 流水线针对竖屏格式优化;电影级是另一回事。 分发 CAC。 案例没处理拉到付费观众的成本;生产成本是单位经济的小头。案例忽略分发瓶颈。 结论 重点不是「Toonflow 能做短剧」,是:一个解决角色一致性的 6 agent AI 视频流水线,是 AI 短剧体量"
+  },
+  {
+    "url": "/content/toonflow-ai-drama-pipeline/",
+    "locale": "en",
+    "title": "Toonflow takes one sentence and outputs a full short drama: the unit economics of 6-agent AI video production in 2026",
+    "description": "A look at Toonflow, an AI short-drama pipeline. Input: one sentence. Output: a complete short drama — script, storyboard, voice, edit, all automated. The pipeline runs 6 AI agents (director, screenwriter, storyboard, QC, voice) that divide work like a real production team. The headline feature: character consistency across shots, which is the hardest problem in AI video. The case is not 'AI video works'. The case is: the unit economics of 6-agent AI drama production in 2026, and what the character-consistency breakthrough actually unlocks.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "video",
+      "short-drama",
+      "pipeline",
+      "toonflow",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A case profiles Toonflow, an AI short-drama pipeline that takes a one-sentence input and outputs a c",
+    "body": "A case profiles Toonflow, an AI short-drama pipeline that takes a one-sentence input and outputs a complete short drama — script, storyboard, voice, edit, all automated. The pipeline runs 6 AI agents (director, screenwriter, storyboard, voice, QC, editor) that divide work like a real production team. The user does not need to set up environments or write prompts; the interface is drag-and-drop storyboard, dialogue editing, BGM replacement. The headline technical claim: character consistency across shots and scenes, which is the hardest problem in AI video. The case is not 'AI video works'. The case is: the unit economics of 6-agent AI drama production in 2026, and what the character-consistency breakthrough actually unlocks for the overseas short-drama market. Below is the per-episode math, the character-consistency breakthrough, and four gaps the case does not address. The 6-agent pipeline The director agent passes the character spec to every downstream agent. The QC agent validates consistency. The user intervenes at the storyboard stage via drag-and-drop; the rest is automated. The pipeline replaces a 5–10 person production team at the cost of model inference. The character-cons"
+  },
+  {
+    "url": "/content/two-person-healthco-revenue-layer/",
+    "locale": "en",
+    "title": "Two guys, $400M in telehealth sales, 250K patients, no doctors hired: why 'healthcare company' is the wrong frame and 'patient-acquisition layer' is the right one",
+    "description": "A look at Matthew Gallagher's telehealth company. 2024-09: launch with $20K and no employees. 2025-end: $400M in sales, 250,000 patients. 2026: on track for $1.8B. Total headcount: 2 (Gallagher and his brother). The interesting part: Gallagher did not build a healthcare company. He built a customer-acquisition and experience layer on top of someone else's infrastructure. Doctors are subcontracted, licenses are rented from a partner, pharmacy is outsourced, logistics is outsourced. The company owns three things: brand, distribution, customer relationship. The lesson here is not a healthcare insight but a customer-acquisition insight.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "telehealth",
+      "customer-acquisition",
+      "solopreneur",
+      "glp1",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A case profiles a telehealth company launched by Matthew Gallagher in September 2024 with $20,000 of",
+    "body": "A case profiles a telehealth company launched by Matthew Gallagher in September 2024 with $20,000 of capital and zero employees. By end-2025: $400M in sales, 250,000 patients served. By 2026: on track for $1.8B. Total headcount: 2 — Gallagher and his brother. The interesting part is not the healthcare insight (what condition is being treated, what drug is being prescribed) but the structural one: Gallagher did not build a healthcare company. He built a customer-acquisition and experience layer on top of someone else's healthcare infrastructure. Doctors are subcontracted. Pharmacy is outsourced. Logistics is outsourced. Licenses are rented from a partner. The company itself owns three things: brand, distribution, customer relationship. The unit economics of a customer-acquisition layer are tech-grade, not healthcare-grade. Per-patient math, the asset-light structure, and four gaps the case does not address, below.\" The asset-light structure The owned components are: brand, performance marketing, customer portal, billing, customer support, retention. The subcontracted components are: doctor consults, prescription writing, pharmacy, logistics. The owned components are the customer-acq"
+  },
+  {
     "url": "/content/vertical-ai-tools-gap/",
     "locale": "en",
     "title": "Vertical AI vs General AI: Why the Next Wave of Independent AI Tools Is Not a Wrapper on GPT",
@@ -1934,5 +2658,21 @@
     ],
     "excerpt": "The argument running through one widely-shared post is timing, not technology. The claim is that US ",
     "body": "The argument running through one widely-shared post is timing, not technology. The claim is that US AI demand stays elevated through roughly Q4 2026 because the exit path for private AI capital is still private. The minute OpenAI or Anthropic actually IPOs, the discount that has kept late-stage private rounds attractive collapses, and the trade-cycle break shows up before the model quality declines. That is a statement about capital structure, not about what GPT-5 can or cannot do. The IPO window as a clock If we take the public Q4 2026 estimate for OpenAI and the parallel Q4 2026 to mid-2027 estimate for Anthropic at face value, the visible exit for late-stage AI capital is, at most, four quarters out. Either company slipping that timeline by a quarter or two does not change the shape of the trade; it pushes the inflection point right by an equivalent amount. Until the first IPO prints, three things stay true: Private secondary tender offers remain the only exit for most late funds. Pricing those offers at 30-50% below the last primary mark has been observed in 2024-2025 secondaries for several AI names; the size of that discount reflects who is left writing the check, not the und"
+  },
+  {
+    "url": "/content/x-ai-monetization-scarce-scenario/",
+    "locale": "en",
+    "title": "Why the keyword 'how to make money with AI' itself is the tell: a short note on AI-monetization supply vs scenario scarcity in 2026",
+    "description": "A case profiles a short operator note: 'AI monetization is the most profitable method' is itself a trending keyword. The operator's read: tools are not scarce, scenarios where AI output can be sold are. A 200-word observation, with the supply-side vs demand-side breakdown, what 'scenario scarcity' actually means in 2026, and the four gaps the observation quietly elides.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "market-map",
+      "scenario-scarcity",
+      "monetization",
+      "case-study"
+    ],
+    "excerpt": "A short operator note: 'AI monetization is the most profitable method' is itself a trending keyword.",
+    "body": "A short operator note: 'AI monetization is the most profitable method' is itself a trending keyword. The operator's read: tools are not scarce, prompts are not scarce, scenarios where AI output can be sold are. The interesting part is not 'AI is amazing' — it is the supply-side vs demand-side imbalance. The scenario-scarcity framing, where the scarce scenarios actually are in 2026, and the four gaps the observation elides, below. The supply-side vs demand-side split The supply-side grew 10–50x in three years; the demand side grew 2–3x. The imbalance is the operator's observation. The supply-side glut pushes tools and prompts to commodity pricing; the demand-side scarcity keeps scenario-specific revenue intact. Where the scarce scenarios are in 2026 Four categories, each with a different buyer, a different unit economics, a different platform-policy risk. The scarcity is not 'AI can do it' — it is 'a buyer exists who will pay for it'. Why scenarios are scarce Three forces keep the demand side tight: Buyer trust. Most buyers will not pay for AI-generated output they can run themselves with a 20 USD/month subscription. The buyer pays because they do not have the time, the tool access,"
   }
 ]
