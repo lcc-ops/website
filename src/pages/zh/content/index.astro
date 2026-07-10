@@ -28,7 +28,7 @@ const activeCategory = categoryParam && categoryParam in categoryLabels[locale] 
 
 const filtered = activeCategory ? posts.filter((p) => p.data.category === activeCategory) : posts;
 
-const featuredCategories = ['pricing', 'shipping', 'payment', 'ads', 'ops', 'guide', 'ai'];
+const featuredCategories = ['pricing', 'shipping', 'payment', 'ads', 'ops', 'ai'];
 ---
 <BaseLayout title={t(locale, 'nav.content')} description={t(locale, 'home.section.guides.subtitle')}>
   <section class="container-page py-16">
