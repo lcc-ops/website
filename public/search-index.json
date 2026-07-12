@@ -457,6 +457,40 @@
     "body": "一条 X 帖(259 赞、101 回复、90 转推)讲了一个「信息差生意」:用 AI 帮别人找客户。客单价不高,但毛利 80%+、0 库存、0 交付、可复利。 帖子的落点不是「中介升级」,是:AI 把传统中介(卖关系)重做了一遍。卖的不是关系,卖的是结构化数据——谁正在找你这类服务、决策人是谁、邮箱多少、最近在干什么。下面是机制拆解、单位经济、风险地图,以及四个案例没说清的点。 机制:三步 买方拿这份包直接 cold outreach,转化率比「销售自己 cold call」高 5–10 倍,因为信号已经过滤过、决策人已经定位好。 为什么这是「信息差」 卖的不是数据本身——领英、官网数据公开。卖的是「过滤 + 排序 + 时机」这三层处理过后的产品。 一个销售自己抓也能抓,但 1 个销售 1 周工时只够抓 50 条,质量随机。AI 1 天出 200 条,按「最近 7 天扩张」「招销售岗」「换了 CRM」这些信号过滤,这层处理是稀缺资源,不是数据。 类似「卖食材」 vs 「卖预制菜」:Apollo / Lusha 卖工具+数据库(食材),你买回来自己跑;Hightouch 类卖成品包(预制菜),你买完直接用。预制菜客单低但毛利高、用户切换成本高(习惯了一种打包方式后不会轻易换)。 单位经济 1 个人能做这件事。但要扩量(月 100 包 = 2 万美金收入)需要: 多渠道信号源(领英 + 行业目录 + 招标公告 + 公司新闻) 信号加权模型(让 AI 判断「在招销售岗」比「换 CRM」权重高) 客户细分(给 SaaS 销售 / 给 B2B 服务销售 / 给电商运营 给的包内容不同) 谁在买这种产品 两类: 小 B 销售团队。 5–20 人规模,没有自己的 leadgen 团队,买不起 HubSpot / Salesforce 的全套自动化。买成品包最划算。 freelance 销售。 一个人或 2–3 人,自己跑 cold outreach,需要持续线索流。订阅制线索包(月 500 美金拿 300 条)是主流。 大 B 销售团队(100+ 人)有内部 SDR / leadgen 团队,不会买外部包。 风险地图 四个风险: 合规。 GDPR / CCPA / 个人信息保护法对 B2B 线索抓取有边界。欧盟数据卖给美国销售可能违规,某些行业(医疗、法律、金融)有更严的合规要求。买方的法务部一旦卡住,续约就出问题。 买方转化率。 案例默认「线索 = 销售」,但实际转化率 1–5%。大部分线索买方拿过去不会成单,只是「contact 是真的」。卖方按包收钱,买方按转化付费,两边预期错位。 复购率。 案例没说买方复购。卖线索是一次性生意还是订阅,差别巨大——一次性是「找新客户」的生意,订阅是「持续服务」的生意,后者 ARPU 高 5–10 倍。 信号衰减。 AI 抓「最近 "
   },
   {
+    "url": "/zh/content/blue-collar-ai-reminder-12usd/",
+    "locale": "zh",
+    "title": "每月12美金的「提醒我给谁打电话」小产品, 帮蓝领老板记住该跟进谁: 两个客户=24美金月费, AI 升级之后客单价能拉到 50-100 美金",
+    "description": "一个操作者帮认识的暖通维修老板做了个东西, 简单到不值一提——Google Sheet + 自动邮件提醒。 装空调3个月该换滤芯, 系统自动提醒老板跟进; 保修快到期, 系统提醒; 上次保养半年没做了, 系统提醒。 这玩意儿收12美金/月, 隔壁看到也签了, 现在24美金/月。 这个案例有意思的不是24美金, 是 AI 加进来之后的杠杆——AI 解析历史工单、AI 写个性化跟进文案、预测性提醒, 把一个12美金的产品升级到50-100美金/月, 而蓝领行业里的竞争几乎是零, 因为 VC 不会投「帮水管工发短信」这种项目。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "蓝领",
+      "本地服务",
+      "提醒",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一个暖通维修老板有一个他自己解决的「客户记忆」问题: 谁该换滤芯, 谁保修快到期, 谁半年没联系了。 一个朋友帮他搭了一个最无聊版本的 CRM——Google Sheet + 自动邮件提醒, 收12美",
+    "body": "一个暖通维修老板有一个他自己解决的「客户记忆」问题: 谁该换滤芯, 谁保修快到期, 谁半年没联系了。 一个朋友帮他搭了一个最无聊版本的 CRM——Google Sheet + 自动邮件提醒, 收12美金/月。 两个月后, 隔壁一家也签了。 两个客户12美金, 24美金月费。 这就是全部 setup。 有意思的不是24美金, 是把无聊变成真实产品的那个杠杆。 数字 这组数字里最关键的是「AI 升级客单价预期」。 在不改产品结构的情况下, 客单价能从12美金拉到50-100美金, 单客户月费提升4-8倍。 为什么这片市场传统 SaaS 进不去 这个案例的目标客户是本地服务小老板——暖通、水管、清洁、园艺、汽车美容, 他们完全靠脑子记忆客户跟进, 不用 CRM, 不用 Salesforce, 不用 Excel, 用的是「卧槽我忘给那个客户打电话了」。 任何每月300美金、要花三小时配置的 SaaS, 这个群体都不会用, 这也是为什么几乎所有面向蓝领的垂直 SaaS 都死了。 这个案例的产品每月12美金, 唯一的 onboarding 是填一个 Google Sheet 模板。 这也是为什么它今天才有2个客户。 市场结构也是反常的。 蓝领垂直 SaaS 被投了很多次也死了很多次——TAM 小、买家从没付过费、ACV 太低, 不符合传统 SaaS 经济模型。 结果就是这种产品在某个城市里通常没有在位的玩家, 操作者直接竞争接近于零。 AI 杠杆——三项升级改变单位 三项堆叠, 12美金/月升级到 80-120 美金/月。 单客户24个月收入从$288 升级到 $1,300-$2,800, 提升 5-10 倍。 这个案例没告诉你的事 六条缺口。 第一, 真实流失——2个客户不能预测第5个或第10个会不会留下来。 第二, 使用黏性——案例只说「发了提醒邮件」, 没确认老板会不会真的打开邮件去跟进客户, 这条决定了产品对客户的真实价值。 第三, 隐私合规——历史发票照片喂 AI 涉及客户侧数据, 案例完全没提。 第四, 现金流成本——Google Sheet + n8n 在12美金/月下几乎免费, AI 升级之后 API 成本必须消化在提价里, 案例没拆。 第五, 地域可移植性——这案例默认是国内本地小商家, 美国的 SMB 客户获取成本、采购流程都不同。 第六, 长期退出——产品故意做窄, 没有平台化退出路径。 带走就一句 杠杆是「在老板预算里最无聊的那一项——提醒系统——没有在位玩家, 因为 VC 不会投」。 AI 把无聊变成有毛利的产品, 而蓝领行业聚合起来足够撑一个「100个客户 + $5K-$10K/月 MRR」的生意, 不需要融一分钱。"
+  },
+  {
+    "url": "/zh/content/local-ai-automation-22-clients/",
+    "locale": "zh",
+    "title": "美国自由职业者退出40美金/小时的WordPress建站,用 n8n + Claude 给本地商家搭了一套AI线索筛选,22个客户稳定月入2.1万美金",
+    "description": "一个美国自由职业者, 2025年底从WordPress建站转去做AI自动化代建, 服务本地服务类商家。 用 n8n + Claude 搭了一条表单 -> AI判断 -> 分流的工作流, 每个客户一次性收费3500美金 + 每月300美金维护费。 现在22个客户, 每月稳定进账超过21000美金, 他每周实际工时不到15小时。 单位是模板, 不是软件——牙医、暖通、地产、律师都是同一套逻辑, 换行业就换话术。 关键数字: 单客户搭建4小时, 折合时薪875美金, 相比他之前的40美金时薪天花板提升了20倍。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "本地服务",
+      "自由职业",
+      "副业",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一个在美国的自由职业者, 此前做 WordPress 建站, 时薪40美金封顶。 2025年底他转向了一份新报价: 用 n8n 加 Claude 搭 AI 线索筛选工作流, 卖给那些没有内部技术人员的",
+    "body": "一个在美国的自由职业者, 此前做 WordPress 建站, 时薪40美金封顶。 2025年底他转向了一份新报价: 用 n8n 加 Claude 搭 AI 线索筛选工作流, 卖给那些没有内部技术人员的本地服务类商家。 到2026年6月, 他手上22个客户, 每月进账超过21000美金, 自己每周实际工时不到15小时。 这件事有意思的杠杆不是 AI 模型, 而是一套模板在多个行业之间复用。 工作流的结构是「网站表单提交 → Claude 评估意图 → 高意向推日历预约链接, 低意向发一封有用的跟进邮件」。 这条流程搬到牙科诊所、暖通维修、房产经纪、律师、清洁公司, 都是一个新付费客户。 上线的功能数量是一个。 数字 「每周实际工时 <15」这一行是案例作者自己说的, 不是从收入反推; 在算账的时候要和月度新增客户的签字时间放一起看。 为什么是这个组合: n8n + Claude 工具组合的选择不是「任意工作流工具 + 任意大模型都能换」。 n8n 提供可视化节点图 + JSON 导出, Claude 直接写 JSON, 操作者手工调试。 Make.com 和 Zapier 也能跑同样结构, Zapier 对非技术人员体验更顺, n8n 在规模化时更便宜且支持自托管。 模型层 (Claude) 可替换, 工作流工具可替换, 但结构不可换——一套模板, 多个行业。 模板能打中, 是因为三个原因。 第一, 目标买家是听说过 ChatGPT 但不会把它接到工作流的小老板, 永远不可能自助, 也不会读30页的技术方案书。 第二, 线索筛选这个结果很具体, 演示成本低——「你网站表单的线索, 90秒内收到个性化回复, 7×24小时」。 第三, 操作者获客渠道是「本地」——商会活动、Yelp 信号、Facebook 本地商业群组——Upwork 上时薪50美金的同行不会去扫这些渠道。 单位经济拆细 一个反直觉的数据点: 操作者不另外收超出维护费的工时。 客户的临时问题消化在每月300美金里。 如果月度支持工时超过1-2小时/客户, 毛利就会被吃掉。 案例作者自己承认这是约束——「越简单的工作流, 工作才越好做」是他反复强调的规则。 这个案例不告诉你的事 五条缺口。 第一, 流失率——操作者没公布客户保留率, 22个客户的存量数字不告诉你每年走多少人。 第二, 付款节奏——$3,500 是首付? 50/50? 还是首月维护费抵? 影响现金流和坏账风险, 案例没提。 第三, 单项目毛利——Claude API 成本、n8n 托管、未计入的1-2小时月度支持工时没拆出来; 表面时薪875美金, 净时薪另算。 第四, 地域——这是美国 SMB 市场, 客户付费意愿、CRM 生态都和中国不一样, 直接照搬会撞 WeChat 替代 CRM、付费意愿低一半这两堵墙。 第五, 防御性——2"
+  },
+  {
     "url": "/zh/content/global-payment-methods/",
     "locale": "zh",
     "title": "全球主流支付方式全景梳理（2026 版）",
@@ -691,6 +725,40 @@
     "body": "Fiverr 上跑 GPT Image 的服务(老照片修复 10–25 美元、物体消除 5–25 美元、AI 商用图 20–100+ 美元)是一个真实存在的品类,有几千个活跃卖家。单笔数字干净:工具成本按美分计、单价按美元计、专注的 operator 单日能出 10–30 单。毛利被纠纷 / 改稿率、平台抽成、Fiverr 新卖家内卷曲线三件事压得很厉害。下面是单位经济、三个压毛利的因子、以及持续性的问题。 案例说的数字 品类 单价 工具成本 operator 工时 所需技能 老照片修复 10–25 美元 0.05–0.30 美元 5–15 分钟 中 物体消除 5–25 美元 0.05–0.20 美元 3–10 分钟 低 AI 商用图 20–100+ 美元 0.20–0.80 美元 10–25 分钟 中-高 案例把三个品类当成经济结构类似的格子。表格里看不出的是:高技能条目(商用图)单量低但单笔毛利高,这才是分水岭。 单笔单位经济 专注 operator 单日 15 单、平均 25 美元,大致单日毛收入 300 美元 / 月毛 7500 美元。扣纠纷、平台费、未售出 listing 时间后,头部 10% 卖家实际月入 3000–5000 美元,中位卖家 1000–2000 美元 / 月。 三个压毛利的因子 纠纷 / 改稿率 Fiverr 上图像编辑品类的买家,15–30% 的订单会发起纠纷或要求改稿。每轮纠纷 15–45 分钟无酬 operator 工时。一个纠纷率 25% 的卖家,总工时的 25% 砸在纠纷里,有效小时单价被压 20–30%。 压纠纷率是一门独立手艺:清晰的条目描述、样例输入配对、产出稳定的 prompt 模版、首次改稿快速响应。愿意投这些的卖家把纠纷率压到 10% 以下,实际小时单价明显高出。 平台抽成 Fiverr 卖家侧抽 20%,不可谈。这是接入买家池的成本。15 美元单价,operator 拿 12;50 美元单价,operator 拿 40。抽成是固定百分比,高单价不被不对称惩罚,但低单价的毛利空间更薄,扛不住。 Fiverr 内卷曲线 每季度新卖家涌入同一品类、以更低价格开条目。Fiverr 搜索算法给新卖家曝光加成,意味着老卖家必须: 随行就市降价(把品类地板压下来) 垂直化(例如专做 1940 年代肖像修复) 把单子打包成高客单 搬站外走直接客户管线 Q1 定价 25 美元的品类,到 Q4 经常跌到 15 美元。不适应的老卖家,有效小时单价会被衰减。 垂直化能扛过内卷曲线 通用条目跟几千个同类条目竞争。「专做 1940–1960 美国肖像修复 + 档案级打印输出 + 5 天交付」的条目跟几十个竞争。垂直化换来三件事: 信任度更高。 具体框定抬升买家信心,纠纷率下降。 价格溢价。 垂直买家愿意付 2–3 倍通用价格,因为服务"
   },
   {
+    "url": "/zh/content/gtm-freelancer-monthly-fees/",
+    "locale": "zh",
+    "title": "做 GTM 接单的哥们, 用 Zapier + GPT 周末搭了一个 AI 跟进, 收费2500美金, 一年后他年收入7.5万美金, 其中60%是月费, 8个客户里的3个已经续了8个月",
+    "description": "一个 GTM 接单自由职业者, 客户随口问了句「能不能搞个 AI 帮我跟进线索」, 他报价2500美金, 周末两天用 Zapier + GPT 搭好。 客户的销售首次回复时间从14小时降到3分钟以内。 一年下来, 18个客户, 总收入75000美金, 平均单价4200美金。 60%的收入是月费, 8个客户在付, 其中3个超过8个月没断过。 2个月费客户帮他转介绍了11000美金的新单, 一分钱营销费没花。 这个案例有意思的不是搭建本身, 是事后他做的四个选择——卖结果不卖工具、专挑无聊行业、越简单越赚、月费才是命脉。 杠杆逻辑: AI 压缩了交付成本, 没压缩客户感知到的价值, 差值就是利润。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "gtm",
+      "自由职业",
+      "副业",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一个 GTM 接单的自由职业者今年早些时候做了一单: 客户随口问「能不能搞个 AI 帮我跟进线索」, 他报价2500美金, 周末两天用 Zapier + GPT 搭好, 客户的销售团队首次回复时间从1",
+    "body": "一个 GTM 接单的自由职业者今年早些时候做了一单: 客户随口问「能不能搞个 AI 帮我跟进线索」, 他报价2500美金, 周末两天用 Zapier + GPT 搭好, 客户的销售团队首次回复时间从14小时压缩到3分钟以内。 客户跟朋友提了一嘴, 朋友也打电话来了。 这条转介绍链子就是他一年做下来75000美金、18个客户总盘子的来源。 这个案例真正有意思的不是搭建本身, 也不是工具, 是他在那之后做的四个不同选择。 数字 这一组数字里最关键的是「60%是月费」。 18 个客户里, 8 个在持续付月费, 其中 3 个超过8个月没断——这个结构让一个自由职业看起来更像是一个微 SaaS, 不像接单。 案例里的四个反常识模式 第一, 卖结果, 不卖工具。 没有任何一个客户问过他用什么模型、跑的是 n8n 还是 Make 还是 Zapier。 客户只问: 线索多久能收到回复? 团队一周能省几小时? 跟进率能涨多少? 把话术从「我给你搭一个 GPT 驱动的多步自动化工作流」换成「你的线索会在90秒内收到个性化回复, 7×24小时」, 成交率直接起飞。 第二, 专挑无聊行业。 他最赚钱的客户不是科技公司, 是牙科诊所、暖通维修、房产团队、保险经纪人。 这些行业的内部技术人才数是零, 全靠手动跟进和排班淹没。 他们不会要技术方案书, 只想让问题消失。 第三, 越简单越赚。 这个操作者做过30多个自动化, 规律永远是越简单活得越久。 一个多 AI 对话 + 知识库 + 推理面板的复杂系统, 开发6周, demo 拿了 LinkedIn 赞, 三分之一回答是错的, 3个月后项目死了。 一个「每天早上醒来找新线索 → 给每个人写个性化邮件 → 扔进表格等发送」的脚本, 5天搞定, 跑了8个月, 客户一次修改都没提过。 第四, 月费才是命脉。 他前期全是一次性收费, 2500美金交付完事。 问题是: 搭12小时的项目和搭40小时的项目收一样的钱, 后者等于打零工。 后来改成「3000-7000 安装 + 500-1500 月费」之后, 收入与工作量对齐了。 月费覆盖 prompt 调整、API 接口坏掉排查、凌晨静默故障修复。 单位经济拆细 第一年装安装费里有85-90%的毛利, 第二年起单客户只剩月费, 操作者每月只花1-3小时, 单小时收入折到$200+/小时——这才是这个生意结构的真正算账。 这个案例没告诉你的事 六条缺口。 第一, 退款和纠纷率——$2,500-$7,000 的安装费不算小数, 这一类业务月费纠纷常见, 案例作者没公布。 第二, API 成本的占比——Zapier 订阅 + GPT API 都算操作者支出, 一个自定义 prompt 跑 GPT-4o 级推理吃毛利, 案例没拆出来。 第三, 续费曲线——3 个客户超 8 个月只是一个数据点, 12-24 "
+  },
+  {
+    "url": "/content/blue-collar-ai-reminder-12usd/",
+    "locale": "en",
+    "title": "A 12-USD-per-month 'remind me who to call' automation for blue-collar shop owners: 2 customers = $24/month MRR, with the obvious AI wedge to scale it to a real product",
+    "description": "A side-project operator built a Google Sheet plus auto-email reminder for an HVAC shop owner: 3 months after install → reminder to push the filter-replacement follow-up; warranty window closing → reminder; last service 6 months ago → reminder. $12/month per customer. Today 2 paying customers, $24/month MRR. The case is not the $24; the case is the wedge: local service SMBs in plumbing, cleaning, lawn, auto-detailing run customer follow-up entirely in their heads and have no CRM. Adding AI to that template — auto-parsing past work orders, generating personalized reminders, predicting service cycles — turns a $12 retainer into a $50-$100/month product.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "blue-collar",
+      "local-services",
+      "reminder",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "An HVAC shop owner had a recurring revenue problem that most operators solve by memory: who is due f",
+    "body": "An HVAC shop owner had a recurring revenue problem that most operators solve by memory: who is due for a filter check, whose warranty is about to expire, who has not been called in 6 months. A friend built him the most boring version of a CRM — Google Sheet plus an automated email reminder — and charged $12/month for it. Two months in, a neighbor shop signed on. Two customers at $12, $24/month MRR. That is the entire setup. The interesting part is not the $24. The interesting part is the wedge that turns boring into a real product. Numbers The interesting row is the AI-tier price. At $50-$100/month the same operator's MRR scales 4-8x without acquiring a single new customer, just by upgrading the existing product. Why this works in a market where most SaaS does not The target buyer in this case is a shop owner. The local trade shop owner — HVAC, plumbing, cleaning, lawn care, auto-detailing — runs customer follow-up entirely in their head. Not in a CRM, not in Salesforce, not in Excel. They use \"oh shit I forgot to call that customer.\" Any SaaS that costs $300/month and takes three hours to set up will not be adopted by this segment; that is the reason most vertical SaaS in blue-col"
+  },
+  {
     "url": "/content/x-xhs-ai-avatar-midjourney/",
     "locale": "en",
     "title": "A 39 RMB AI-avatar gig on 小红书: 1,500+ orders per month on Midjourney at $30/month, and the math behind a one-person 50,000 RMB/month income",
@@ -723,6 +791,40 @@
     ],
     "excerpt": "A case profiles a solo operator who built a Google-Sheet-plus-auto-email 'customer follow-up' remind",
     "body": "A case profiles a solo operator who built a Google-Sheet-plus-auto-email 'customer follow-up' reminder product for a local HVAC (heating, ventilation, air conditioning) shop owner. The product tracks every install the shop has done, then auto-emails the owner (not the customer) when a 3-month filter swap is due, when a warranty is about to lapse, or when a 6-month service check is due. The product sells for $12/month. The operator signed a second shop; the product now runs at $24/month across two shops. The lesson here is not 'the $24'. It is the addressable market — local blue-collar service business owners who still run follow-up in their head and lose repeat revenue because of it. In 2026, the AI-tools market is saturated. The AI-leveraged local-service market is not. The product here is not the AI. It is the reminder, sold to a non-technical buyer through a face-to-face relationship. The AI is the auto-email — the cheapest piece of the stack. Per-shop economics, addressable market, and four gaps the case doesn't cover, below. The product The product is, mechanically, a Google Sheet plus a scheduled auto-email. There is no model, no agent, no app. The edge is not the AI. The edg"
+  },
+  {
+    "url": "/content/gtm-freelancer-monthly-fees/",
+    "locale": "en",
+    "title": "A GTM-freelance operator priced an AI lead-followup at $2,500, built it in a weekend on Zapier + GPT, and now books $75K per year — 60% of which is monthly retainer from 8 clients, 3 of whom have not churned in 8 months",
+    "description": "An operator in the GTM freelance space charges $2,500-$7,000 setup plus $500-$1,500 monthly retainer for simple AI automations in dental, HVAC, real-estate, insurance. They run 18 paying clients per year, average ticket $4,200, $75K annual revenue. The four observations: the pitch is a result not a model, the targets are boring verticals with no procurement, the build is intentionally simple, and monthly retainer is the lock-in. 60% of revenue is recurring. 2 retainer clients referred $11K in new business, zero marketing spend.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "gtm",
+      "freelance",
+      "side-hustle",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A GTM freelance operator worked a one-weekend job earlier this year: a customer asked if they could ",
+    "body": "A GTM freelance operator worked a one-weekend job earlier this year: a customer asked if they could \"build an AI thing that follows up on leads.\" The operator quoted $2,500, shipped on Zapier plus GPT over the weekend, and the customer's sales team cut first-response time from 14 hours to under 3 minutes. The customer mentioned it to a friend; the friend called. That pipeline is how the operator cleared $75,000 in year one on 18 clients. The interesting part of this case is not the build or the tool. The interesting part is the four downstream choices the operator made differently from a typical AI freelancer. Numbers The recurring line is the load-bearing one. 60% of revenue is monthly retainer from 8 of 18 customers, three of them over 8 months in. That mix is what makes the freelance lane look more like a micro-SaaS than a freelance practice. Four patterns from the case First, sell the result not the tool. Nobody asked what model or what orchestrator. Customers asked how quickly a lead gets a reply, how many hours per week the team saves, how much follow-up rate improves. Switching the pitch from \"I build a GPT-driven multi-step automation\" to \"your lead will get a personalized "
+  },
+  {
+    "url": "/content/local-ai-automation-22-clients/",
+    "locale": "en",
+    "title": "A US freelancer left $40/hr WordPress work, built an n8n + Claude lead-routing pipeline for local service businesses, and now runs 22 clients at $21K/month recurring",
+    "description": "A freelance operator in the US used n8n plus Claude to build a single lead-qualification template for plumbers, dentists, HVAC, real-estate — same flow, different industry each time. 22 clients paying $300/month retainer plus $3,500 one-time setup. The math: 22 × $300 = $6,600/month locked, plus 3-4 new signups per month at $10K-$14K, totals a stable $21K+ per month. Weekly billable hours < 15. The interesting point is not the money, it's that the operator sells one template, not a software product.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "local-ai",
+      "freelance",
+      "side-hustle",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A US-based freelancer used to cap at $40/hour on WordPress builds. Around the end of 2025 he shifted",
+    "body": "A US-based freelancer used to cap at $40/hour on WordPress builds. Around the end of 2025 he shifted to a different offer: an AI lead-qualification workflow on n8n plus Claude, sold to local service businesses with no in-house technical staff. By June 2026 the operator is running 22 such customers and billing above $21K every month, working fewer than 15 hours per week. The interesting lever is not the AI model, it is the reuse of one template across industries. The workflow is \"website form submit → Claude scores intent → high-intent routes to a calendar booking link, low-intent gets a useful follow-up email.\" That same flow, swapped into a dental clinic, an HVAC shop, a real-estate team, a lawyer, a cleaning company, is a new paying customer. The number of features shipped is one. Numbers The numbers in the row for \"weekly billable hours\" come from the case author's own framing — fewer than 15 hours per week on customer work. Above-the-fold revenue math, not bill-rate math. Why n8n + Claude at this position The choice of n8n plus Claude is not interchangeable with \"any workflow tool plus any LLM.\" n8n gives the operator a visual node-graph plus JSON export, which Claude can write"
   },
   {
     "url": "/content/epacket-sunset-logistics-alternatives/",
