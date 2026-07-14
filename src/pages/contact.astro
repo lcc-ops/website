@@ -1,0 +1,180 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { type Locale } from '~/i18n/ui';
+import { getLocaleFromUrl } from '~/i18n/utils';
+import { SITE } from '~/site.config';
+
+const locale: Locale = getLocaleFromUrl(Astro.url);
+const isEn = locale === 'en';
+
+const channels = isEn
+  ? [
+      {
+        title: 'Corrections and source disputes',
+        body: 'If a calculator produces a wrong number, or a post quotes a number that has since changed, this is the right channel. Replies within 3 business days.',
+        icon: 'M',
+      },
+      {
+        title: 'Partnership and tools',
+        body: 'If you maintain a Stripe / PayPal / Amazon / carrier integration and want to verify the rate sheet we cite, reach out. We re-verify quarterly and will share what we check.',
+        icon: 'P',
+      },
+      {
+        title: 'Press and quotes',
+        body: 'For republication requests and short quotes, write in. We grant non-exclusive republication with attribution.',
+        icon: 'Q',
+      },
+    ]
+  : [
+      {
+        title: '纠错与来源异议',
+        body: '若计算器算错数字，或文章引用的数字已过时，请走这个渠道。3 个工作日内回复。',
+        icon: 'M',
+      },
+      {
+        title: '合作与工具',
+        body: '若你维护 Stripe / PayPal / Amazon / 承运商集成，希望核对所引费率表，欢迎联系。我们每季度复核，可同步核对清单。',
+        icon: 'P',
+      },
+      {
+        title: '媒体与引用',
+        body: '转载请求与短引用，请来邮。我们以署名方式授予非独占转载授权。',
+        icon: 'Q',
+      },
+    ];
+---
+<BaseLayout
+  title={isEn ? 'Contact' : '联系'}
+  description={isEn
+    ? 'How to reach the editor of Crossborder Cost Lab for corrections, partnerships, and press.'
+    : '联系跨境成本实验室编辑：纠错、合作、媒体。'}
+>
+  <article class="container-prose py-16">
+    <header class="mb-10">
+      <p class="badge mb-3">{isEn ? 'Contact' : '联系'}</p>
+      <h1 class="text-3xl sm:text-4xl font-semibold mb-3">
+        {isEn ? 'Get in touch' : '联系我们'}
+      </h1>
+      <p class="text-base" style="color: var(--color-fg-soft);">
+        {isEn
+          ? 'Pick the channel that matches your reason. Using the right channel gets you a faster, more useful reply.'
+          : '请按事由挑对应渠道。选对渠道回复更快、更对路。'}
+      </p>
+    </header>
+
+    <section class="mb-12 grid gap-4 sm:grid-cols-3">
+      {channels.map((c) => (
+        <div class="card p-5">
+          <div
+            class="flex h-9 w-9 items-center justify-center rounded-full text-sm font-semibold mb-3"
+            style="background: var(--color-accent); color: var(--color-bg);"
+            aria-hidden="true"
+          >
+            {c.icon}
+          </div>
+          <h2 class="text-base font-semibold mb-1">{c.title}</h2>
+          <p class="text-sm" style="color: var(--color-fg-soft);">{c.body}</p>
+        </div>
+      ))}
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-xl font-semibold mb-3">{isEn ? 'Send a message' : '发送邮件'}</h2>
+      <p class="mb-4 text-sm" style="color: var(--color-fg-soft);">
+        {isEn
+          ? 'The fastest way to reach the editor. Form entries open in your mail client; no data is sent to a server on this site.'
+          : '直达主编最快的方式。表单会在你的邮件客户端打开，本站不收集任何数据。'}
+      </p>
+
+      <form
+        class="card p-6 space-y-4"
+        action={`mailto:${SITE.email}`}
+        method="post"
+        enctype="text/plain"
+      >
+        <div>
+          <label for="contact-name" class="block text-sm font-medium mb-1">
+            {isEn ? 'Your name' : '你的称呼'}
+          </label>
+          <input
+            id="contact-name"
+            name="name"
+            type="text"
+            required
+            class="w-full rounded-md border bg-transparent px-3 py-2 text-sm"
+            style="border-color: var(--color-border);"
+          />
+        </div>
+        <div>
+          <label for="contact-email" class="block text-sm font-medium mb-1">
+            {isEn ? 'Your email' : '你的邮箱'}
+          </label>
+          <input
+            id="contact-email"
+            name="email"
+            type="email"
+            required
+            class="w-full rounded-md border bg-transparent px-3 py-2 text-sm"
+            style="border-color: var(--color-border);"
+          />
+        </div>
+        <div>
+          <label for="contact-topic" class="block text-sm font-medium mb-1">
+            {isEn ? 'Topic' : '事由'}
+          </label>
+          <select
+            id="contact-topic"
+            name="topic"
+            class="w-full rounded-md border bg-transparent px-3 py-2 text-sm"
+            style="border-color: var(--color-border);"
+          >
+            <option value="correction">{isEn ? 'Correction / source dispute' : '纠错 / 来源异议'}</option>
+            <option value="partnership">{isEn ? 'Partnership / tools' : '合作 / 工具'}</option>
+            <option value="press">{isEn ? 'Press / republication' : '媒体 / 转载'}</option>
+            <option value="other">{isEn ? 'Other' : '其他'}</option>
+          </select>
+        </div>
+        <div>
+          <label for="contact-message" class="block text-sm font-medium mb-1">
+            {isEn ? 'Message' : '正文'}
+          </label>
+          <textarea
+            id="contact-message"
+            name="message"
+            rows={6}
+            required
+            class="w-full rounded-md border bg-transparent px-3 py-2 text-sm"
+            style="border-color: var(--color-border);"
+          ></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary">
+            {isEn ? 'Open in mail client' : '在邮件客户端打开'} →
+          </button>
+          <p class="mt-2 text-xs" style="color: var(--color-fg-soft);">
+            {isEn
+              ? 'This form opens your default mail client. The site does not collect form data on a server.'
+              : '此表单会调起你默认的邮件客户端，表单数据不会发送到本站服务器。'}
+          </p>
+        </div>
+      </form>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-xl font-semibold mb-3">{isEn ? 'Direct email' : '直接邮箱'}</h2>
+      <p class="text-sm" style="color: var(--color-fg-soft);">
+        {isEn ? 'Prefer plain email?' : '更喜欢直接邮件？'}{' '}
+        <a class="hover:text-[var(--color-accent)] font-medium" href={`mailto:${SITE.email}`}>{SITE.email}</a>
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold mb-3">{isEn ? 'Response time' : '回复时效'}</h2>
+      <p class="text-sm" style="color: var(--color-fg-soft);">
+        {isEn
+          ? 'Corrections: within 3 business days. Partnerships: within 1 week. Press: within 48 hours during business days. Replies are sent from the same address you wrote to.'
+          : '纠错：3 个工作日内。合作：1 周内。媒体：工作日 48 小时内。回复地址即来信地址。'}
+      </p>
+    </section>
+  </article>
+</BaseLayout>

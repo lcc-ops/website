@@ -1,0 +1,183 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { type Locale } from '~/i18n/ui';
+import { getLocaleFromUrl } from '~/i18n/utils';
+import { SITE } from '~/site.config';
+
+const locale: Locale = getLocaleFromUrl(Astro.url);
+const isEn = locale === 'en';
+
+const sections = isEn
+  ? [
+      {
+        title: '1. What this site publishes',
+        body: [
+          'Calculators for cross-border e-commerce pricing, chargeable weight, payment-fee comparison, break-even ROAS, and FX withdrawal.',
+          'Case studies on independent AI products, sourced from public posts and filings, summarized with first-party analysis.',
+          'Step-by-step guides on cross-border fees, shipping, payments, advertising math and operational policy.',
+        ],
+      },
+      {
+        title: '2. How content is produced',
+        body: [
+          'Each calculator is built from the operator\'s first-party formulas. The underlying rate sheet (Stripe pricing, PayPal fees, Amazon FBA calculator, carrier dim-weight tables) is cited at the bottom of the page.',
+          'Case studies in the AI Lab are paraphrased summaries. Every post links to the original source on first mention; the original author is credited.',
+          'Guides are written from direct operational experience running cross-border stores. Each guide carries an "Updated on" date and is re-verified quarterly.',
+        ],
+      },
+      {
+        title: '3. What we do not publish',
+        body: [
+          'Sponsored posts, paid reviews, or affiliate redirects designed to mislead.',
+          'Auto-generated articles without an editor pass.',
+          'Auto-translated content without a native-reader review.',
+          'Press-release rewrites, scraped content, or reposts of others\' work.',
+        ],
+      },
+      {
+        title: '4. Sourcing and citation rules',
+        body: [
+          'Every quantitative claim cites its source by name (e.g. "Stripe pricing page, June 2026").',
+          'When a number is rounded, we say so. When a number is disputed, we say who disputes it.',
+          'When a source cannot be re-verified, the post is either marked "stale" or removed.',
+        ],
+      },
+      {
+        title: '5. AI-assisted writing',
+        body: [
+          'AI tools may be used to draft or paraphrase text, but every published post is reviewed by the named editor before publication. The editor is responsible for the final claim.',
+          'We do not publish AI-only content with no human review.',
+        ],
+      },
+      {
+        title: '6. Re-review cadence',
+        body: [
+          'Calculators: re-checked against their source rate sheets at least once per quarter.',
+          'Case studies: re-checked at the same cadence. The "Updated on" frontmatter date is the source of truth.',
+          'Guides with moving targets (carrier fees, ad CPM, AI product pricing) re-reviewed quarterly.',
+        ],
+      },
+      {
+        title: '7. Corrections',
+        body: [
+          'If a tool produces a wrong number, we fix it within 7 days of being told. Fixes are silent on the live page; the frontmatter date is updated.',
+          'For factual errors in posts, we add a dated correction note at the bottom of the page so the audit trail is visible.',
+          'To report an error, email ' + SITE.email + '. Every report is read.',
+        ],
+      },
+      {
+        title: '8. Independence',
+        body: [
+          'Crossborder Cost Lab is not a news outlet, not a financial advisor, not a tax preparer. The site is funded by the operator\'s own e-commerce revenue and (when enabled) Google AdSense non-personalized ads.',
+          'The site does not accept sponsored posts, does not run affiliate redirects, and does not sell email lists.',
+        ],
+      },
+    ]
+  : [
+      {
+        title: '1. 本站发布什么',
+        body: [
+          '面向跨境电商的定价、体积重、支付费率对比、保本 ROAS、汇率提现计算器。',
+          '独立 AI 产品案例研究，来源取自公开文章与文件，附第一性分析。',
+          '跨境费率、物流、收款、广告算账、运营政策的实操指南。',
+        ],
+      },
+      {
+        title: '2. 内容如何生产',
+        body: [
+          '每个计算器由运营者本人按第一性公式构建，底层费率表（Stripe 价目、PayPal 费率、Amazon FBA 计算器、承运商体积重表）在页面底部引用。',
+          'AI 实验栏目的案例为摘要改写。每篇首次提及原始来源时附链接，并致谢原作者。',
+          '指南来自运营跨境店铺的直接经验，每篇带"更新于"日期，每季度复核。',
+        ],
+      },
+      {
+        title: '3. 不发布什么',
+        body: [
+          '付费软文、付费评测、误导性联盟跳转。',
+          '未经编辑通过的自动生成文章。',
+          '未经母语读者复核的机翻内容。',
+          '新闻稿改写、抓取内容、他人作品的转载。',
+        ],
+      },
+      {
+        title: '4. 来源与引用规则',
+        body: [
+          '每条量化结论按名称引用来源（如"Stripe 价目页，2026 年 6 月"）。',
+          '数字四舍五入会注明；存在分歧的数字会注明分歧方。',
+          '无法回溯复核的来源，对应文章标记为"过期"或下架。',
+        ],
+      },
+      {
+        title: '5. AI 辅助写作',
+        body: [
+          '可以使用 AI 工具起草或改写，但每篇发布前由署名编辑人工审校。署名编辑对最终结论负责。',
+          '不发布任何未经人工审校的纯 AI 内容。',
+        ],
+      },
+      {
+        title: '6. 复核频率',
+        body: [
+          '计算器：每季度至少对照原始费率表复核一次。',
+          '案例研究：同等频率，"更新于"日期以前端 frontmatter 为准。',
+          '引用动态数字（承运商费率、广告 CPM、AI 产品定价）的指南，每季度复核。',
+        ],
+      },
+      {
+        title: '7. 纠错',
+        body: [
+          '工具算错：收到反馈后 7 天内修复。修正静默上线，同步更新 frontmatter 日期。',
+          '文章中的事实错误：在页面底部加日期化更正说明，保留审核痕迹。',
+          '如需报错，请邮件至 ' + SITE.email + '，每条都会阅读。',
+        ],
+      },
+      {
+        title: '8. 独立性',
+        body: [
+          '跨境成本实验室不是新闻媒体、不是财务顾问、不是税务代理。资金来源为运营者本人的电商业绩，以及（启用时）Google AdSense 非个性化广告。',
+          '不接受付费软文、不做联盟跳转倒流、不出售邮件列表。',
+        ],
+      },
+    ];
+---
+<BaseLayout
+  title={isEn ? 'Editorial policy' : '编辑政策'}
+  description={isEn
+    ? 'How content on this site is sourced, reviewed and corrected. The full editorial standard for Crossborder Cost Lab.'
+    : '本站内容的来源、复核与纠错机制。跨境成本实验室编辑政策全文。'}
+>
+  <article class="container-prose py-16">
+    <header class="mb-10">
+      <p class="badge mb-3">{isEn ? 'Editorial' : '编辑'}</p>
+      <h1 class="text-3xl sm:text-4xl font-semibold mb-3">
+        {isEn ? 'Editorial policy' : '编辑政策'}
+      </h1>
+      <p class="text-sm" style="color: var(--color-fg-soft);">
+        {isEn ? 'Last updated: 2026-07-14' : '更新于：2026-07-14'}
+      </p>
+    </header>
+
+    <div class="space-y-10">
+      {sections.map((s) => (
+        <section>
+          <h2 class="text-xl font-semibold mb-3">{s.title}</h2>
+          <ul class="list-disc pl-5 space-y-2" style="color: var(--color-fg-soft);">
+            {s.body.map((line) => <li>{line}</li>)}
+          </ul>
+        </section>
+      ))}
+    </div>
+
+    <footer class="mt-12 pt-6 border-t" style="border-color: var(--color-border);">
+      <p class="text-sm" style="color: var(--color-fg-soft);">
+        {isEn
+          ? 'See also: '
+          : '另见：'}
+        <a class="hover:text-[var(--color-accent)]" href="/about/">{isEn ? 'About & standards' : '关于与标准'}</a>
+        {' · '}
+        <a class="hover:text-[var(--color-accent)]" href="/changelog/">{isEn ? 'Changelog' : '更新日志'}</a>
+        {' · '}
+        <a class="hover:text-[var(--color-accent)]" href={`mailto:${SITE.email}`}>{SITE.email}</a>
+      </p>
+    </footer>
+  </article>
+</BaseLayout>

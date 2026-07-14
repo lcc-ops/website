@@ -1,0 +1,129 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { type Locale } from '~/i18n/ui';
+import { getLocaleFromUrl } from '~/i18n/utils';
+
+const locale: Locale = getLocaleFromUrl(Astro.url);
+const isEn = locale === 'en';
+
+// Read git history at build time. Cheap: this runs once per `astro build`,
+// and the output is static HTML afterwards. If git is unavailable (e.g.
+// a non-git deploy environment), fall back to a friendly notice.
+import { execSync } from 'node:child_process';
+
+type Commit = { hash: string; date: string; subject: string };
+
+function readCommits(n: number): Commit[] {
+  try {
+    const raw = execSync(
+      `git log -n ${n} --pretty=format:%h%x09%ad%x09%s --date=short`,
+      { encoding: 'utf-8', stdio: ['ignore', 'pipe', 'ignore'] },
+    );
+    return raw
+      .split('\n')
+      .filter(Boolean)
+      .map((line) => {
+        const [hash, date, ...rest] = line.split('\t');
+        return { hash, date, subject: rest.join('\t') };
+      });
+  } catch {
+    return [];
+  }
+}
+
+const commits = readCommits(40);
+
+function classify(subject: string): { label: string; tone: 'feat' | 'fix' | 'chore' | 'other' } {
+  if (subject.startsWith('feat')) return { label: isEn ? 'New' : '新增', tone: 'feat' };
+  if (subject.startsWith('fix')) return { label: isEn ? 'Fix' : '修复', tone: 'fix' };
+  if (subject.startsWith('chore')) return { label: isEn ? 'Chore' : '维护', tone: 'chore' };
+  return { label: isEn ? 'Other' : '其他', tone: 'other' };
+}
+
+// Group by date for a day-by-day feed.
+const byDate = new Map<string, Commit[]>();
+for (const c of commits) {
+  if (!byDate.has(c.date)) byDate.set(c.date, []);
+  byDate.get(c.date)!.push(c);
+}
+const dates = Array.from(byDate.keys());
+---
+<BaseLayout
+  title={isEn ? 'Changelog' : '更新日志'}
+  description={isEn
+    ? 'A running log of what changed on this site, when, and why. Useful for editors and reviewers verifying freshness.'
+    : '本站所有改动的运行日志。供编辑与审核者核对更新频率。'}
+>
+  <article class="container-prose py-16">
+    <header class="mb-10">
+      <p class="badge mb-3">{isEn ? 'Changelog' : '更新日志'}</p>
+      <h1 class="text-3xl sm:text-4xl font-semibold mb-3">
+        {isEn ? 'What changed, and when' : '改了什么，何时改的'}
+      </h1>
+      <p class="text-sm" style="color: var(--color-fg-soft);">
+        {isEn
+          ? 'Generated from the project git history at build time. Last 40 commits.'
+          : '由构建时的 git 历史生成。最近 40 次提交。'}
+      </p>
+    </header>
+
+    {commits.length === 0 ? (
+      <p style="color: var(--color-fg-soft);">
+        {isEn
+          ? 'No commit history available in this build environment.'
+          : '当前构建环境无法读取 git 历史。'}
+      </p>
+    ) : (
+      <ol class="relative border-l pl-6 space-y-8" style="border-color: var(--color-border);">
+        {dates.map((date) => (
+          <li>
+            <span
+              class="absolute -left-2 flex h-4 w-4 items-center justify-center rounded-full"
+              style="background: var(--color-accent);"
+              aria-hidden="true"
+            ></span>
+            <h2 class="text-sm font-semibold uppercase tracking-wide mb-3" style="color: var(--color-fg-soft);">
+              {date}
+            </h2>
+            <ul class="space-y-2">
+              {byDate.get(date)!.map((c) => {
+                const klass = classify(c.subject);
+                const toneColor =
+                  klass.tone === 'feat'
+                    ? 'var(--color-accent)'
+                    : klass.tone === 'fix'
+                      ? '#dc2626'
+                      : klass.tone === 'chore'
+                        ? 'var(--color-fg-soft)'
+                        : 'var(--color-fg-soft)';
+                return (
+                  <li class="flex items-baseline gap-3 text-sm">
+                    <span
+                      class="inline-block min-w-[3rem] rounded px-2 py-0.5 text-xs font-medium"
+                      style={`background: ${toneColor}; color: var(--color-bg);`}
+                    >
+                      {klass.label}
+                    </span>
+                    <span class="flex-1" style="color: var(--color-fg-soft);">
+                      {c.subject.replace(/^[a-z]+\([^)]+\):\s*/, '')}
+                    </span>
+                    <code class="text-xs" style="color: var(--color-fg-soft);">{c.hash}</code>
+                  </li>
+                );
+              })}
+            </ul>
+          </li>
+        ))}
+      </ol>
+    )}
+
+    <footer class="mt-12 pt-6 border-t" style="border-color: var(--color-border);">
+      <p class="text-sm" style="color: var(--color-fg-soft);">
+        {isEn ? 'See also: ' : '另见：'}
+        <a class="hover:text-[var(--color-accent)]" href="/about/">{isEn ? 'About & standards' : '关于与标准'}</a>
+        {' · '}
+        <a class="hover:text-[var(--color-accent)]" href="/editorial/">{isEn ? 'Editorial policy' : '编辑政策'}</a>
+      </p>
+    </footer>
+  </article>
+</BaseLayout>

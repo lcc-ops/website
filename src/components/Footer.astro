@@ -24,11 +24,19 @@ const tagline = t(locale, 'site.tagline');
         </ul>
       </div>
       <div>
+        <p class="font-semibold mb-2" style="color: var(--color-fg);">{locale === 'en' ? 'Editorial' : '编辑'}</p>
+        <ul class="space-y-1">
+          <li><a href={localizePath('/editorial', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'nav.editorial')}</a></li>
+          <li><a href={localizePath('/contact', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'nav.contact')}</a></li>
+          <li><a href={localizePath('/changelog', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'nav.changelog')}</a></li>
+          <li><a href="/rss.xml" class="hover:text-[var(--color-accent)]">RSS</a></li>
+        </ul>
+      </div>
+      <div>
         <p class="font-semibold mb-2" style="color: var(--color-fg);">{locale === 'en' ? 'Legal' : '法律'}</p>
         <ul class="space-y-1">
           <li><a href={localizePath('/privacy', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'footer.privacy')}</a></li>
           <li><a href={localizePath('/terms', locale)} class="hover:text-[var(--color-accent)]">{t(locale, 'footer.terms')}</a></li>
-          <li><a href="/rss.xml" class="hover:text-[var(--color-accent)]">RSS</a></li>
         </ul>
       </div>
     </div>
