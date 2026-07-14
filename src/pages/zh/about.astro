@@ -1,42 +1,6 @@
 ---
-import BaseLayout from '~/layouts/BaseLayout.astro';
-import { SITE } from '~/site.config';
-
-const copy = {
-  title: '关于',
-  intro: '一个免费工具集，专门帮你算清跨境订单里那些看不见的成本，让定价回到利润本身。',
-  who: '我自己在做面向北美和欧洲的小型独立站。跨境订单的利润极薄，大部分损耗藏在付款手续费、汇差、体积重、广告浪费这些没人给你算清楚的数字里。跨境成本实验室是我把自用的计算器公开出来的地方，省得你再从头搭一遍。',
-  forSellers: '如果你在 Shopify、WooCommerce、Amazon、TikTok Shop 上卖货，或者做单品 Dropshipping，这个站点就是为你准备的。这些工具假设你清楚自己的货成本、已经在发跨境包裹、想要 30 秒内拿到答案，而不是再读一份 40 页的白皮书。',
-  sideProject: '副栏：AI 实验是一个案例集，跟踪独立 AI 产品。案例来源取自网络。数学和跨境那侧的计算器一样。',
-  principles: [
-    '无需注册、无需邮箱——页面打开就能算。',
-    '公式公开透明——计算过程可见，假设条件有说明。',
-    '不接受付费排序——工具按回答的问题排序，不按付费金额排序。',
-  ],
-  contact: '发现汇率过时、币种缺失，或边角案例下算错了？欢迎邮件到 contact@kuajinglab.xyz 告诉我——每条都会看。',
-};
+// /zh/about — single-source-of-truth: the canonical /about page renders
+// both locales based on the URL. Redirect any direct hit on /zh/about to
+// the canonical page so we don't drift two copies.
+return Astro.redirect('/about', 301);
 ---
-<BaseLayout title={copy.title} description={copy.intro}>
-  <article class="container-prose py-16">
-    <h1 class="text-3xl font-semibold mb-4">{copy.title}</h1>
-    <p class="text-lg" style="color: var(--color-fg-soft);">{copy.intro}</p>
-
-    <h2 class="text-xl font-semibold mt-10 mb-3">我是谁</h2>
-    <p style="color: var(--color-fg-soft);">{copy.who}</p>
-
-    <h2 class="text-xl font-semibold mt-10 mb-3">给谁用</h2>
-    <p style="color: var(--color-fg-soft);">{copy.forSellers}</p>
-    <p class="text-base mt-6" style="color: var(--color-fg-soft);">{copy.sideProject}</p>
-
-    <h2 class="text-xl font-semibold mt-10 mb-3">编辑原则</h2>
-    <ul class="list-disc pl-5 space-y-2" style="color: var(--color-fg-soft);">
-      {copy.principles.map((line) => <li>{line}</li>)}
-    </ul>
-
-    <h2 class="text-xl font-semibold mt-10 mb-3">联系</h2>
-    <p style="color: var(--color-fg-soft);">{copy.contact}</p>
-    <p class="mt-3" style="color: var(--color-fg-soft);">
-      Email: <a class="hover:text-[var(--color-accent)]" href={`mailto:${SITE.email}`}>{SITE.email}</a>
-    </p>
-  </article>
-</BaseLayout>
