@@ -29,6 +29,55 @@ const activeCategory = categoryParam && categoryParam in categoryLabels[locale] 
 const filtered = activeCategory ? posts.filter((p) => p.data.category === activeCategory) : posts;
 
 const featuredCategories = ['pricing', 'shipping', 'payment', 'ads', 'ops', 'ai'];
+
+// Build a "cluster" view: for each featured category, count posts and surface
+// the latest post as a one-line preview. Adds a site-wide table-of-contents
+// that proves to crawlers and human reviewers the site has topical depth.
+type ClusterPreview = {
+  category: string;
+  count: number;
+  latestTitle?: string;
+  latestSlug?: string;
+  summary: Record<Locale, string>;
+};
+const clusterSummaries: Record<string, Record<Locale, string>> = {
+  pricing: {
+    en: 'Formulas, markups and break-even math for Shopify, Etsy, Amazon and Dropshipping catalogs.',
+    zh: '面向 Shopify、Etsy、Amazon、Dropshipping 的定价公式、加价倍数与盈亏平衡算账。',
+  },
+  shipping: {
+    en: 'Dimensional weight, ePacket replacements, FBA inbound fees and last-mile cost math.',
+    zh: '体积重、ePacket 替代方案、FBA 头程费用、尾程成本算账。',
+  },
+  payment: {
+    en: 'Stripe vs PayPal effective fees, FX margin on withdrawals, and processor routing.',
+    zh: 'Stripe 与 PayPal 有效费率对比、提现汇差成本、收款路由。',
+  },
+  ads: {
+    en: 'Break-even ROAS, max CPA, attribution windows and Meta/TikTok spend pacing.',
+    zh: '保本 ROAS、最高 CPA、归因窗口、Meta/TikTok 投放节奏。',
+  },
+  ops: {
+    en: 'Returns reserve, refund policy, supplier audits and operational risk.',
+    zh: '退货准备金、退款政策、供应商审计与运营风险。',
+  },
+  ai: {
+    en: 'Independent AI product case studies — ARR, business model, content flywheel, failure modes.',
+    zh: '独立 AI 产品案例 —— ARR、商业模式、内容飞轮、失败模式。',
+  },
+};
+const clusters: ClusterPreview[] = featuredCategories.map((cat) => {
+  const inCat = posts.filter((p) => p.data.category === cat);
+  const latest = inCat[0];
+  return {
+    category: cat,
+    count: inCat.length,
+    latestTitle: latest?.data.title,
+    latestSlug: latest ? `/content/${latest.id.split('/')[0]}` : undefined,
+    summary: clusterSummaries[cat] ?? { en: '', zh: '' },
+  };
+});
+const showClusters = !activeCategory;
 ---
 <BaseLayout title={t(locale, 'nav.content')} description={t(locale, 'home.section.guides.subtitle')}>
   <section class="container-page py-16">
@@ -36,6 +85,46 @@ const featuredCategories = ['pricing', 'shipping', 'payment', 'ads', 'ops', 'ai'
     <p class="mb-6" style="color: var(--color-fg-soft);">
       {filtered.length} {locale === 'zh' ? '篇' : ''}{locale === 'en' ? (filtered.length === 1 ? ' post' : ' posts') : ''}
     </p>
+
+    {showClusters && (
+      <div class="mb-12" aria-labelledby="clusters-heading">
+        <h2 id="clusters-heading" class="text-xl font-semibold mb-1">
+          {locale === 'en' ? 'Topic clusters' : '主题目录'}
+        </h2>
+        <p class="mb-4 text-sm" style="color: var(--color-fg-soft);">
+          {locale === 'en'
+            ? 'Each cluster is a stable set of posts on one question. New posts slot into a cluster instead of standing alone.'
+            : '每个目录对应一个稳定问题集合。新文章按目录归类，不单独悬空。'}
+        </p>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {clusters.map((c) => (
+            <a
+              href={localizePath(`/content?category=${c.category}`, locale)}
+              class="card p-5 flex flex-col hover:border-[var(--color-accent)]"
+              aria-label={`${categoryLabels[locale][c.category] ?? c.category} (${c.count})`}
+            >
+              <div class="flex items-baseline justify-between gap-2 mb-2">
+                <h3 class="text-lg font-semibold">
+                  {categoryLabels[locale][c.category] ?? c.category}
+                </h3>
+                <span class="text-xs tabular-nums" style="color: var(--color-fg-soft);">
+                  {c.count} {locale === 'en' ? (c.count === 1 ? 'post' : 'posts') : '篇'}
+                </span>
+              </div>
+              <p class="text-sm flex-1" style="color: var(--color-fg-soft);">
+                {c.summary[locale]}
+              </p>
+              {c.latestTitle && (
+                <p class="mt-3 text-xs" style="color: var(--color-fg-soft);">
+                  <span class="opacity-70">{locale === 'en' ? 'Latest:' : '最新：'}</span>{' '}
+                  <span class="font-medium">{c.latestTitle}</span>
+                </p>
+              )}
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
 
     <div class="mb-8 flex flex-wrap gap-2">
       <CategoryChip category="all" locale={locale} href={localizePath('/content', locale)} active={!activeCategory} />

@@ -46,4 +46,9 @@ Allow: /
 User-agent: cohere-training-data-crawler
 Allow: /
 
+# Authorized Digital Sellers — required by Google AdSense before ad serving.
+# Pub-id is updated when AdSense approves the account.
+Allow: /ads.txt
+
 Sitemap: https://kuajinglab.xyz/sitemap-index.xml
+Sitemap: https://kuajinglab.xyz/zh/sitemap-index.xml

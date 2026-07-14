@@ -15,6 +15,21 @@ const locale: Locale = getLocaleFromUrl(Astro.url);
 const allPosts = await getCollection('content', ({ data }) => !data.draft);
 const allTools = await getCollection('tools');
 
+// Pick representative posts for each home surface card (AI Lab / Guides).
+// Pick the latest 3 posts per category, then resolve to the current locale.
+type Surface = 'ai' | 'guide';
+function pickSurface(surface: Surface, count: number) {
+  const cat = surface === 'ai' ? 'ai' : null;
+  const filtered = allPosts
+    .filter((p) => p.id.endsWith(`/${locale}`) && !p.data.draft)
+    .filter((p) => (cat ? p.data.category === cat : p.data.category !== 'ai'))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .slice(0, count);
+  return filtered;
+}
+const aiCardPosts = pickSurface('ai', 3);
+const guidesCardPosts = pickSurface('guide', 3);
+
 // Home-page stats. Computed from collections / config so the numbers
 // stay in sync as content grows.
 const uniquePosts = new Set(allPosts.map((p) => p.data.translationKey));
@@ -183,6 +198,105 @@ const faqLd = {
           </a>
         </div>
       </aside>
+    </div>
+  </section>
+
+  <section class="container-page py-10" aria-labelledby="sections-heading">
+    <p class="badge mb-3">{t(locale, 'home.sections.eyebrow')}</p>
+    <h2 id="sections-heading" class="text-2xl sm:text-3xl font-semibold mb-2 max-w-3xl">
+      {t(locale, 'home.sections.title')}
+    </h2>
+    <p class="mb-8 text-sm max-w-2xl" style="color: var(--color-fg-soft);">
+      {t(locale, 'home.sections.subtitle')}
+    </p>
+    <div class="grid gap-5 md:grid-cols-3">
+      <!-- Tools surface -->
+      <div class="card p-6 flex flex-col">
+        <p class="text-xs uppercase tracking-wide mb-2" style="color: var(--color-fg-soft);">{isEn ? 'Surface 01' : '板块 01'}</p>
+        <h3 class="text-xl font-semibold mb-2">{t(locale, 'home.section.tools.title')}</h3>
+        <p class="text-sm" style="color: var(--color-fg-soft);">{t(locale, 'home.section.tools.body')}</p>
+        <ul class="mt-4 space-y-2 text-sm flex-1">
+          {toolsHere.slice(0, 3).map((tool) => {
+            const key = tool.data.translationKey;
+            const other: Locale = 'zh';
+            const translationLink = toolsByKey.get(key)?.[other]
+              ? toolTranslationFor(key, other)
+              : undefined;
+            return (
+              <li class="flex items-baseline gap-2">
+                <span aria-hidden="true" style="color: var(--color-accent);">→</span>
+                <a
+                  href={localizePath(`/tools/${key}`, locale)}
+                  class="hover:text-[var(--color-accent)] underline-offset-4 hover:underline"
+                >
+                  {tool.data.title}
+                </a>
+                {translationLink && <span class="text-xs" style="color: var(--color-fg-soft);">·</span>}
+              </li>
+            );
+          })}
+        </ul>
+        <a
+          href={localizePath('/tools', locale)}
+          class="mt-5 inline-flex items-center gap-1 text-sm font-medium hover:text-[var(--color-accent)]"
+        >
+          {t(locale, 'home.section.tools.link')} →
+        </a>
+      </div>
+
+      <!-- AI Lab surface -->
+      <div class="card p-6 flex flex-col">
+        <p class="text-xs uppercase tracking-wide mb-2" style="color: var(--color-fg-soft);">{isEn ? 'Surface 02' : '板块 02'}</p>
+        <h3 class="text-xl font-semibold mb-2">{t(locale, 'home.section.ai.title')}</h3>
+        <p class="text-sm" style="color: var(--color-fg-soft);">{t(locale, 'home.section.ai.body')}</p>
+        <ul class="mt-4 space-y-2 text-sm flex-1">
+          {aiCardPosts.map((post) => (
+            <li class="flex items-baseline gap-2">
+              <span aria-hidden="true" style="color: var(--color-accent);">→</span>
+              <a
+                href={localizePath(`/content/${post.id.split('/')[0]}`, locale)}
+                class="hover:text-[var(--color-accent)] underline-offset-4 hover:underline line-clamp-1"
+                title={post.data.title}
+              >
+                {post.data.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <a
+          href={localizePath('/ai', locale)}
+          class="mt-5 inline-flex items-center gap-1 text-sm font-medium hover:text-[var(--color-accent)]"
+        >
+          {t(locale, 'home.section.ai.link')} →
+        </a>
+      </div>
+
+      <!-- Guides surface -->
+      <div class="card p-6 flex flex-col">
+        <p class="text-xs uppercase tracking-wide mb-2" style="color: var(--color-fg-soft);">{isEn ? 'Surface 03' : '板块 03'}</p>
+        <h3 class="text-xl font-semibold mb-2">{t(locale, 'home.section.guides.title')}</h3>
+        <p class="text-sm" style="color: var(--color-fg-soft);">{t(locale, 'home.section.guides.body')}</p>
+        <ul class="mt-4 space-y-2 text-sm flex-1">
+          {guidesCardPosts.map((post) => (
+            <li class="flex items-baseline gap-2">
+              <span aria-hidden="true" style="color: var(--color-accent);">→</span>
+              <a
+                href={localizePath(`/content/${post.id.split('/')[0]}`, locale)}
+                class="hover:text-[var(--color-accent)] underline-offset-4 hover:underline line-clamp-1"
+                title={post.data.title}
+              >
+                {post.data.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <a
+          href={localizePath('/content', locale)}
+          class="mt-5 inline-flex items-center gap-1 text-sm font-medium hover:text-[var(--color-accent)]"
+        >
+          {t(locale, 'home.section.guides.link')} →
+        </a>
+      </div>
     </div>
   </section>
 
