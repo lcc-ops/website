@@ -1,0 +1,63 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { type Locale } from '~/i18n/ui';
+import { getLocaleFromUrl, localizePath } from '~/i18n/utils';
+
+Astro.response.status = 500;
+
+const locale: Locale = getLocaleFromUrl(Astro.url);
+const isEn = locale === 'en';
+
+const links = [
+  {
+    href: localizePath('/', locale),
+    eyebrow: isEn ? 'Start here' : '从这里开始',
+    title: isEn ? 'Home' : '首页',
+    desc: isEn ? 'Hero, calculators and the latest guides.' : '首页、计算器与最新指南。',
+  },
+  {
+    href: localizePath('/tools', locale),
+    eyebrow: isEn ? 'Do the math' : '直接算',
+    title: isEn ? 'Calculators' : '计算器',
+    desc: isEn ? 'Pricing, CBM, fees, ROAS and FX — five tools, no signup.' : '定价、体积、费率、ROAS、汇率——五个工具，开箱即用。',
+  },
+  {
+    href: localizePath('/content', locale),
+    eyebrow: isEn ? 'Read first' : '先看文章',
+    title: isEn ? 'Guides' : '内容',
+    desc: isEn ? 'In-depth formulas, examples and worked numbers.' : '深度公式、案例与算账过程。',
+  },
+  {
+    href: localizePath('/resources', locale),
+    eyebrow: isEn ? 'Curated' : '精选',
+    title: isEn ? 'Resources' : '资源',
+    desc: isEn ? 'Calculators, top reads and external links worth opening.' : '计算器清单、值得读的文章与有用外链。',
+  },
+];
+---
+<BaseLayout title={isEn ? 'Server error' : '服务器错误'} description={isEn ? 'Something snapped on our side. The team has been notified — try one of the links below while we fix it.' : '我们这边出了点问题。技术团队已收到通知，正在处理，请从下方入口继续浏览。'}>
+  <section class="container-page py-16 sm:py-24">
+    <p class="text-7xl font-semibold tracking-tight mb-2" style="color: var(--color-fg-soft);">500</p>
+    <h1 class="text-3xl sm:text-4xl font-semibold tracking-tight max-w-2xl">
+      {isEn ? 'Something snapped on our side.' : '我们这边出问题了。'}
+    </h1>
+    <p class="mt-4 text-lg max-w-2xl" style="color: var(--color-fg-soft);">
+      {isEn
+        ? 'The page failed to render. The team has already been paged. Try a cached link, or one of these instead:'
+        : '页面渲染失败，团队已收到告警。请稍后刷新或从下方入口继续：'}
+    </p>
+
+    <ul class="mt-10 grid gap-4 sm:grid-cols-2">
+      {links.map((link) => (
+        <li>
+          <a href={link.href} class="card p-6 block group h-full">
+            <p class="text-xs uppercase tracking-wide mb-2" style="color: var(--color-fg-soft);">{link.eyebrow}</p>
+            <h2 class="text-lg font-semibold group-hover:text-[var(--color-accent)]">{link.title}</h2>
+            <p class="text-sm mt-1" style="color: var(--color-fg-soft);">{link.desc}</p>
+            <p class="mt-3 text-sm font-medium" style="color: var(--color-accent);">→</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>
