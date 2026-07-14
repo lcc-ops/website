@@ -5,7 +5,30 @@ import { getLocaleFromUrl } from '~/i18n/utils';
 import { SITE } from '~/site.config';
 
 const locale: Locale = getLocaleFromUrl(Astro.url);
-const titleByLocale: Record<Locale, { title: string; intro: string; who: string; forSellers: string; sideProject: string; principles: string[]; contact: string }> = {
+const titleByLocale: Record<Locale, {
+  title: string;
+  intro: string;
+  who: string;
+  forSellers: string;
+  sideProject: string;
+  principles: string[];
+  contact: string;
+  editorialTitle: string;
+  editorialIntro: string;
+  sourcingTitle: string;
+  sourcingItems: string[];
+  correctionsTitle: string;
+  correctionsBody: string;
+  reviewCadence: string;
+  reviewBody: string;
+  boardTitle: string;
+  boardIntro: string;
+  boardItems: { role: string; who: string; note: string }[];
+  transparencyTitle: string;
+  transparencyBody: string;
+  fundingTitle: string;
+  fundingBody: string;
+}> = {
   en: {
     title: 'About',
     intro: 'A free toolkit that does the math so cross-border sellers can stop guessing and start pricing for profit.',
@@ -18,6 +41,32 @@ const titleByLocale: Record<Locale, { title: string; intro: string; who: string;
       'No sponsored rankings. Tools are listed by what they answer, not what pays the most.',
     ],
     contact: 'Spotted a wrong rate, a missing currency, or a calculation that breaks in the corner cases? Send a note to contact@kuajinglab.xyz — I read every one.',
+
+    editorialTitle: 'Editorial standards',
+    editorialIntro: 'Everything published on this site is held to four rules. They are short on purpose — the point is that they are checkable.',
+    sourcingTitle: 'How content is sourced and produced',
+    sourcingItems: [
+      'Tools are written from first-party formulas. Each one cites the underlying rate sheet (Stripe pricing page, PayPal fee table, Amazon FBA calculator output, carrier dimensional-weight tables) at the bottom of the page.',
+      'AI Lab case studies are paraphrased summaries of public posts, interviews, or filings the operator has read. Every post links back to the original source on first mention.',
+      'Numbers in tables (RPM, ARR, fee percentages) are quoted as the source states them. When a number is rounded, we say so. When it is disputed, we say who disputes it.',
+      'No ghostwriting-for-hire, no auto-generated articles published without an editor pass, no auto-translation published without a native-reader review.',
+    ],
+    correctionsTitle: 'Corrections policy',
+    correctionsBody: 'If a tool produces a wrong number, or a post quotes a number that has since changed, we fix it within 7 days of being told. The fix is silent on the live page (date in the frontmatter is updated). For factual errors in posts, we add a dated correction note at the bottom of the page so the audit trail is visible.',
+    reviewCadence: 'How often content is re-reviewed',
+    reviewBody: 'Every calculator is re-checked against its source rate sheet at least once per quarter. Posts that reference moving targets (carrier fees, ad CPM, AI product pricing) are re-checked at the same cadence and dated in the frontmatter. Pages we cannot re-verify against the original source are marked "stale" or removed.',
+    boardTitle: 'Editorial responsibility',
+    boardIntro: 'Crossborder Cost Lab is run by one operator. For accountability the responsibilities below are split across named roles so it is clear who owns which class of decision.',
+    boardItems: [
+      { role: 'Publisher & lead editor', who: SITE.author, note: 'Final say on what is published and what is retracted.' },
+      { role: 'Source verification', who: SITE.author, note: 'Re-checks each cited rate sheet quarterly; signs off before publication.' },
+      { role: 'Math reviewer', who: SITE.author, note: 'Walks each formula against an independent implementation before launch.' },
+      { role: 'Corrections contact', who: SITE.author, note: 'Reads every email to contact@kuajinglab.xyz and owns the corrections log.' },
+    ],
+    transparencyTitle: 'What this site is not',
+    transparencyBody: 'Crossborder Cost Lab is not a news outlet, not a financial advisor, not a tax preparer. Calculator outputs are estimates; cross-border fee structures change without notice and the operator of this site does not guarantee any specific outcome. Do your own reconciliation before committing capital to a price, an ad budget, or a logistics contract.',
+    fundingTitle: 'How this site is funded',
+    fundingBody: 'The site is funded by the operator\'s own e-commerce revenue. When ads are enabled, they are Google AdSense non-personalized by default. The site does not accept sponsored posts, does not run affiliate redirects, and does not sell email lists. The AdSense slot, when active, is the only revenue surface; it is set to non-personalized by default and respects consent under GDPR.',
   },
   zh: {
     title: '关于',
@@ -31,6 +80,32 @@ const titleByLocale: Record<Locale, { title: string; intro: string; who: string;
       '不接受付费排序——工具按回答的问题排序，不按付费金额排序。',
     ],
     contact: '发现汇率过时、币种缺失，或边角案例下算错了？欢迎邮件到 contact@kuajinglab.xyz 告诉我——每条都会看。',
+
+    editorialTitle: '编辑标准',
+    editorialIntro: '本站所有内容遵守四条规则，故意写得很短——重点是可核对。',
+    sourcingTitle: '内容来源与生产方式',
+    sourcingItems: [
+      '工具由第一性公式写出，每个工具在页面底部引用底层费率表（Stripe 价目页、PayPal 费率表、Amazon FBA 计算器输出、承运商体积重表）。',
+      'AI 实验栏目的案例，是对公开文章、访谈或文件的摘要改写，每篇首次提到原始来源时都会附链接。',
+      '表格里的数字（RPM、ARR、费率百分比）按来源原文引用。四舍五入会注明；存在分歧的数字会注明分歧方。',
+      '不接代写、不发布未经编辑通过的自动生成文章、不发布未经母语读者复核的机翻内容。',
+    ],
+    correctionsTitle: '纠错政策',
+    correctionsBody: '如果某个工具算错了，或某篇文章引用的数字已经过时，收到反馈后 7 天内修复。工具类的修正静默更新（frontmatter 日期同步更新）。文章中的事实错误会在页面底部加日期化的更正说明，保留审核痕迹。',
+    reviewCadence: '复核频率',
+    reviewBody: '每个计算器每季度至少对照原始费率表复核一次。引用动态数字（承运商费率、广告 CPM、AI 产品定价）的文章按同样频率复核并在 frontmatter 标注日期。无法回溯到原始来源进行复核的页面，标记为"过期"或下架。',
+    boardTitle: '编辑责任',
+    boardIntro: '跨境成本实验室由一人运营。为便于问责，下列职责按角色分配，明确谁负责哪一类决策。',
+    boardItems: [
+      { role: '出版人 & 主编', who: SITE.author, note: '决定发布与撤稿。' },
+      { role: '来源核验', who: SITE.author, note: '每季度重新核验所引费率表，发布前终审。' },
+      { role: '公式复核', who: SITE.author, note: '每个公式上线前走一遍独立实现对照。' },
+      { role: '纠错联系窗口', who: SITE.author, note: '阅读每封来信至 contact@kuajinglab.xyz，持有纠错日志。' },
+    ],
+    transparencyTitle: '本站不是',
+    transparencyBody: '跨境成本实验室不是新闻媒体、不是财务顾问、不是税务代理。计算器输出仅为估算；跨境费率结构随时变化，本站运营者不为任何具体结果背书。在把资金押到某个价格、广告预算或物流合同前，请自行核对。',
+    fundingTitle: '本站资金来源',
+    fundingBody: '本站由运营者本人的电商业绩自筹。开启广告时，默认为 Google AdSense 非个性化广告。本站不接受付费软文、不做联盟跳转倒流、不出售邮件列表。AdSense 槽位（启用时）是唯一的收入展示面，默认非个性化，并遵守 GDPR 下的同意机制。',
   },
 };
 const copy = titleByLocale[locale];
@@ -43,8 +118,8 @@ const personLd = {
   name: SITE.author,
   url: `${Astro.url.origin}/about/`,
   description: locale === 'en'
-    ? 'Independent operator of cross-border e-commerce stores. Author and publisher of Crossborder Cost Lab calculators and guides.'
-    : '独立跨境电商店铺运营者。跨境成本实验室计算器与指南的作者与发布人。',
+    ? 'Independent operator of cross-border e-commerce stores. Author, publisher and sole editor of Crossborder Cost Lab calculators and guides.'
+    : '独立跨境电商店铺运营者。跨境成本实验室计算器与指南的作者、出版人、唯一编辑。',
   knowsAbout: locale === 'en'
     ? [
         'Cross-border e-commerce pricing',
@@ -94,6 +169,53 @@ const personLd = {
     <ul class="list-disc pl-5 space-y-2" style="color: var(--color-fg-soft);">
       {copy.principles.map((line) => <li>{line}</li>)}
     </ul>
+
+    <hr class="my-10 border-[var(--color-border)]" />
+
+    <h2 class="text-xl font-semibold mt-10 mb-3">{copy.editorialTitle}</h2>
+    <p style="color: var(--color-fg-soft);">{copy.editorialIntro}</p>
+
+    <h3 class="text-lg font-semibold mt-8 mb-2">{copy.sourcingTitle}</h3>
+    <ol class="list-decimal pl-5 space-y-2" style="color: var(--color-fg-soft);">
+      {copy.sourcingItems.map((line) => <li>{line}</li>)}
+    </ol>
+
+    <h3 class="text-lg font-semibold mt-8 mb-2">{copy.correctionsTitle}</h3>
+    <p style="color: var(--color-fg-soft);">{copy.correctionsBody}</p>
+
+    <h3 class="text-lg font-semibold mt-8 mb-2">{copy.reviewCadence}</h3>
+    <p style="color: var(--color-fg-soft);">{copy.reviewBody}</p>
+
+    <h3 class="text-lg font-semibold mt-8 mb-2">{copy.boardTitle}</h3>
+    <p style="color: var(--color-fg-soft);">{copy.boardIntro}</p>
+    <div class="mt-4 overflow-x-auto">
+      <table class="w-full text-sm" style="color: var(--color-fg-soft);">
+        <thead>
+          <tr class="text-left" style="border-bottom: 1px solid var(--color-border);">
+            <th class="py-2 pr-4">{locale === 'en' ? 'Role' : '角色'}</th>
+            <th class="py-2 pr-4">{locale === 'en' ? 'Who' : '负责人'}</th>
+            <th class="py-2">{locale === 'en' ? 'Scope' : '职责'}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {copy.boardItems.map((b) => (
+            <tr style="border-bottom: 1px solid var(--color-border);">
+              <td class="py-2 pr-4 font-medium">{b.role}</td>
+              <td class="py-2 pr-4">{b.who}</td>
+              <td class="py-2">{b.note}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="text-lg font-semibold mt-8 mb-2">{copy.transparencyTitle}</h3>
+    <p style="color: var(--color-fg-soft);">{copy.transparencyBody}</p>
+
+    <h3 class="text-lg font-semibold mt-8 mb-2">{copy.fundingTitle}</h3>
+    <p style="color: var(--color-fg-soft);">{copy.fundingBody}</p>
+
+    <hr class="my-10 border-[var(--color-border)]" />
 
     <h2 class="text-xl font-semibold mt-10 mb-3">{locale === 'en' ? 'Get in touch' : '联系'}</h2>
     <p style="color: var(--color-fg-soft);">{copy.contact}</p>
