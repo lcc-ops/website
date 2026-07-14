@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import Breadcrumb from '~/components/Breadcrumb.astro';
 import AdSlot from '~/components/AdSlot.astro';
+import AuthorByline from '~/components/AuthorByline.astro';
 import ResourceCta from '~/components/ResourceCta.astro';
 import SeoStructuredData from '~/components/SeoStructuredData.astro';
 import { type Locale, t } from '~/i18n/ui';
@@ -24,7 +25,6 @@ if (!post) {
 const { Content } = await render(post);
 const dateFmt = dateFormatter(locale);
 const minutes = Math.max(1, Math.round(readingTime(post.body ?? '').minutes));
-const updatedLabel = post.data.updatedDate ? dateFmt.format(post.data.updatedDate) : null;
 
 const translation = allPosts.find(
   (p) => p.data.translationKey === post.data.translationKey && p.id.startsWith(`${slug}/`) && p.id !== post.id,
@@ -34,6 +34,31 @@ const translationHref = translation ? localizePath(`/content/${slug}`, other) : 
 const alternates: Record<Locale, string> = {
   en: localizePath(`/content/${slug}`, 'en'),
   zh: localizePath(`/content/${slug}`, 'zh'),
+};
+
+// Article author schema — explicit E-E-A-T signal so AI assistants can attribute the post.
+const articleLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: post.data.title,
+  description: post.data.description,
+  inLanguage: 'en',
+  datePublished: post.data.pubDate.toISOString(),
+  dateModified: (post.data.updatedDate ?? post.data.pubDate).toISOString(),
+  author: {
+    '@type': 'Person',
+    name: SITE.author,
+    url: `${Astro.url.origin}/about/#person`,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: SITE.name,
+    url: Astro.url.origin,
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': Astro.url.toString(),
+  },
 };
 ---
 <BaseLayout
@@ -47,6 +72,7 @@ const alternates: Record<Locale, string> = {
   tags={post.data.tags}
   alternates={alternates}
 >
+  <script type="application/ld+json" set:html={JSON.stringify(articleLd)} />
   <article class="container-prose py-12">
     <Breadcrumb
       items={[
@@ -59,10 +85,7 @@ const alternates: Record<Locale, string> = {
     <header class="mb-8">
       <div class="flex flex-wrap items-center gap-2 text-sm mb-3" style="color: var(--color-fg-soft);">
         <span class="badge">{post.data.category}</span>
-        <time datetime={post.data.pubDate.toISOString()}>{t(locale, 'blog.publishedOn')} {dateFmt.format(post.data.pubDate)}</time>
-        {updatedLabel && <time datetime={post.data.updatedDate!.toISOString()}>{t(locale, 'blog.updatedOn')} {updatedLabel}</time>}
         <span>· {minutes} {t(locale, 'blog.minutes')}</span>
-        <span>· <a class="hover:text-[var(--color-accent)]" href={`/about/`} rel="author">{SITE.author}</a></span>
         {translationHref && (
           <a href={translationHref} class="ml-auto hover:text-[var(--color-accent)]" hreflang={other}>
             中文版
@@ -74,6 +97,14 @@ const alternates: Record<Locale, string> = {
         <p class="mt-4 text-lg" style="color: var(--color-fg-soft);">{post.data.tldr}</p>
       )}
     </header>
+
+    <AuthorByline
+      locale={locale}
+      publishedISO={post.data.pubDate.toISOString()}
+      updatedISO={post.data.updatedDate ? post.data.updatedDate.toISOString() : null}
+      minutes={minutes}
+      category={post.data.category}
+    />
 
     <AdSlot slot="article-top" label={t(locale, 'ad.disclosure')} />
 

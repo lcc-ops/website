@@ -1,0 +1,74 @@
+---
+import { SITE } from '~/site.config';
+import { type Locale, t } from '~/i18n/ui';
+
+interface Props {
+  locale: Locale;
+  publishedISO: string;
+  updatedISO?: string | null;
+  minutes: number;
+  category: string;
+}
+const { locale, publishedISO, updatedISO, minutes, category } = Astro.props;
+
+const isEn = locale === 'en';
+const bioByLocale = {
+  en: 'Runs cross-border e-commerce stores and publishes the calculators and case studies on this site. Posts are reviewed against their source rate sheets quarterly.',
+  zh: '运营面向北美与欧洲的独立站，并在本站公开自用的计算器与案例分析。文章每季度对照原始费率表复核一次。',
+};
+---
+<aside
+  aria-label={isEn ? 'Article byline' : '文章署名'}
+  class="not-prose my-8 flex flex-wrap items-start gap-4 rounded-xl border p-5"
+  style="border-color: var(--color-border); background: var(--color-bg-soft);"
+>
+  <!-- Avatar: a deterministic monogram tile so every post has a real, consistent face -->
+  <div
+    class="flex h-12 w-12 flex-none items-center justify-center rounded-full text-base font-semibold uppercase"
+    style="background: var(--color-accent); color: var(--color-bg);"
+    aria-hidden="true"
+  >
+    {SITE.author.slice(0, 2)}
+  </div>
+
+  <div class="flex-1 min-w-0">
+    <p class="text-sm font-medium">
+      <a href="/about/" rel="author" class="hover:text-[var(--color-accent)]">
+        {SITE.author}
+      </a>
+      <span class="ml-2 text-xs font-normal" style="color: var(--color-fg-soft);">
+        {isEn ? 'Editor · Crossborder Cost Lab' : '主编 · 跨境成本实验室'}
+      </span>
+    </p>
+    <p class="mt-1 text-sm" style="color: var(--color-fg-soft);">
+      {isEn ? bioByLocale.en : bioByLocale.zh}
+    </p>
+
+    <dl class="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-xs" style="color: var(--color-fg-soft);">
+      <div>
+        <dt class="sr-only">{t(locale, 'blog.publishedOn')}</dt>
+        <dd>
+          <time datetime={publishedISO}>{t(locale, 'blog.publishedOn')}</time>
+        </dd>
+      </div>
+      {updatedISO && (
+        <div>
+          <dt class="sr-only">{t(locale, 'blog.updatedOn')}</dt>
+          <dd>
+            <time datetime={updatedISO}>{t(locale, 'blog.updatedOn')}</time>
+          </dd>
+        </div>
+      )}
+      <div>
+        <dt class="sr-only">{t(locale, 'blog.minutes')}</dt>
+        <dd>{minutes} {t(locale, 'blog.minutes')}</dd>
+      </div>
+      <div>
+        <dt class="sr-only">{t(locale, 'blog.category')}</dt>
+        <dd>
+          <span class="badge">{category}</span>
+        </dd>
+      </div>
+    </dl>
+  </div>
+</aside>
