@@ -1,6 +1,6 @@
 @echo off
 REM
-REM register-alert.bat — repository-root wrapper for the AutoAlertStaleRun
+REM register-alert.bat - repository-root wrapper for the AutoAlertStaleRun
 REM schtasks registration. One-line forward into step7b so callers from the
 REM repo root (double-click, PowerShell alias, whatever) can run:
 REM   register-alert.bat        (register / re-register)

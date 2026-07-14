@@ -2,7 +2,7 @@
 setlocal
 
 REM
-REM step7b__register_alert_schtasks.bat — register the AutoAlertStaleRun
+REM step7b__register_alert_schtasks.bat - register the AutoAlertStaleRun
 REM scheduled task that drives scripts\auto\_alert_stale_run.ps1 daily at
 REM 11:00. Mirrors step7a__register_schtasks.bat (which registers the
 REM 09:00 daily-batch task) and is intended to be run the same way:
@@ -26,7 +26,6 @@ if not exist "%RUNNER%" (
     exit /b 1
 )
 
-REM Remove any prior registration silently.
 schtasks /delete /tn "AutoAlertStaleRun" /f >nul 2>&1
 
 REM Register daily 11:00 trigger in the current user's context.
@@ -35,7 +34,7 @@ REM run that exits 0 still has time to update state.json.last_successful_run_at
 REM before the alert's 36 h threshold fires.
 REM /ru %USERNAME% is required so PATH and %USERPROFILE%\.claude\ match the
 REM same user-context that AutoDailyBlogDraft runs under.
-REM /rl highest for the same reason — the alert can write to the LOG path
+REM /rl highest for the same reason - the alert can write to the LOG path
 REM under %USERPROFILE% if you ever pass -LogPath.
 schtasks /create ^
   /tn "AutoAlertStaleRun" ^
