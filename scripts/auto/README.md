@@ -99,17 +99,31 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\auto\_alert_stale_ru
 
 Hook it to whatever downstream sink you already use (a webhook, a sheet,
 `Send-MailMessage`, an `Enter` notification). The exit code is the contract
-— do not parse the Write-Host body. Pre-canned one-liner for a second
-`schtasks` entry:
+— do not parse the Write-Host body.
+
+### Register the schtasks alarm
 
 ```bat
-schtasks /create /tn AutoAlertStaleRun /tr ^
-  "powershell -NoProfile -ExecutionPolicy Bypass -File D:\LocalSystem\Code\ai_dev\website\scripts\auto\_alert_stale_run.ps1" ^
-  /sc daily /st 11:00 /ru %USERNAME% /rl highest /f
+:: Run from a non-elevated cmd, same user-context as AutoDailyBlogDraft.
+scripts\check\step7b__register_alert_schtasks.bat
 ```
 
-Picking 11:00 (≠ 09:00 batch) keeps alert checks from racing the batch and
-gives the batch two hours of headroom before tripping the 36 h threshold.
+Then verify:
+
+```powershell
+schtasks /query /tn AutoAlertStaleRun /v /fo LIST
+schtasks /run /tn AutoAlertStaleRun           # force a manual trigger now
+```
+
+### Uninstall
+
+```bat
+schtasks /delete /tn "AutoAlertStaleRun" /f
+```
+
+Picking 11:00 (≠ 09:00 batch, with a 60-second /delay for desktop wake)
+keeps alert checks from racing the batch and gives the batch two hours of
+headroom before tripping the 36 h threshold.
 
 ## Anti-AI defence
 

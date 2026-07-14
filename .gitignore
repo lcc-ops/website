@@ -37,6 +37,15 @@ docs/NOTES.md
 scripts/scrapers/
 scripts/scrapers/*
 
+# scripts/auto runtime artifacts (sources tracked, run output never).
+# state.json is structurally tracked but only its schema baseline matters —
+# commit-level churn comes from running the daily batch in-place.
+scripts/auto/_queue/
+scripts/auto/_archive/
+scripts/auto/logs/
+scripts/auto/state.json.bak.*
+scripts/auto/state.lock
+
 # Python bytecode (anywhere in the repo)
 __pycache__/
 *.pyc
