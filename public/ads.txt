@@ -1,0 +1,15 @@
+# ads.txt — Authorized Digital Sellers declaration
+#
+# This file tells external ad buyers (including Google AdExchange and
+# third-party RTB buyers) that this domain is authorized to be sold
+# directly by the publisher account below. It is required by the IAB
+# Tech Lab ads.txt standard and by Google AdSense policy.
+#
+# It is NOT a replacement for the AdSense loader script on the page;
+# the two serve different purposes:
+#   - adsbygoogle.js loads the ad creative in the user's browser
+#   - ads.txt authorizes the inventory at the supply-chain level
+#
+# Format: <ad system domain>, <publisher account ID>, <relationship>, <certification authority ID>
+# Publisher ID: ca-pub-2713534716131369 (matches the client=... on the AdSense loader)
+google.com, pub-2713534716131369, DIRECT, f08c47fec0942fa0
