@@ -30,9 +30,11 @@ Get-ChildItem .\scripts\auto\_archive\ # contaminated / failed drafts
 3. **crawl** — runs the existing `scripts/scrapers/crawl.py` then
    `scripts/scrapers_x/crawl.py`. No retry on scrape failure.
 4. **build_prompts** — `scripts/auto/_build_prompts.py` reads both SQLite DBs,
-   applies the AI-keyword + score ≥ 6 + top 5 filter, dedups vs
+   picks candidates per `--track` (ai | general | both, default `both`),
+   applies score ≥ 6 + top 5 filter (per source, per track), dedups vs
    `state.json.last_slugs`, and writes per-candidate prompt JSON into
-   `scripts/auto/_queue/`.
+   `scripts/auto/_queue/`. Each queue entry carries the rendered prompt
+   string so `_draft_one.ps1` does not need to know which track.
 5. **draft_one (× N)** — sequentially invokes `claude.cmd -p "<prompt>"`,
    parses `=== en.md ===` / `=== zh.md ===` blocks, writes both `.md` files
    into `src\content\blog\<slug>\`. Single 30-min timeout per call.
@@ -80,6 +82,57 @@ the prior. Stale locks (>60 min) are removed at start.
 
 Logs: `scripts/auto/logs/YYYY-MM-DD.log`. 90-day retention enforced at the
 start of every build.
+
+## Tracks (ai / general / both)
+
+`scripts/auto/_build_prompts.py` accepts `--track`:
+
+- **`ai`** — legacy behavior. Body must contain at least one token from the
+  AI-keyword whitelist; rendered with `_prompts/draft_one_topic.md`; the
+  frontmatter `category` is hard-coded to `'ai'`.
+- **`general`** — non-AI operator-notes. Body must contain **zero** AI
+  keywords AND match a general-niche entry; rendered with
+  `_prompts/draft_one_topic_general.md`; the frontmatter `category` is
+  picked from `NICHE_TO_CATEGORY` based on the niche tag.
+- **`both`** (default) — runs both streams, capped at `--top` per source
+  per track. Total queue size can be up to `2 * 2 * --top` before dedup.
+
+The queue entry's `category` and `track` fields are written to
+`scripts/auto/_queue/<source>__<row_id>.json`. The anti-AI checker reads
+`tags[0]` from the draft, looks it up in `NICHE_TO_CATEGORY`, and rejects
+any draft whose `category:` line disagrees with that lookup — so a sloppy
+model that drifts back to `category: 'ai'` for a logistics post is moved
+to `_archive/` before `pnpm build` ever sees it.
+
+### Category coverage (live snapshot)
+
+The general track targets the same categories already present under
+`src/content/blog/`:
+
+| category | sample slug | niche tag emitted |
+|---|---|---|
+| `payment` | `payment-chargeback-prevention` | `chargeback` / `payment-fees` / `paypal-stripe` / `global-payments` |
+| `pricing` | `etsy-fees-vs-shopify` | `etsy-pricing` / `shopify-pricing` / `amazon-pricing` / `dropshipping-costs` / `ecommerce-fees` / `freelance-pricing` / `podcast-monetize` / `youtube-creator` |
+| `shipping` | `cbm-and-dimensional-weight` | `logistics` / `cbm` |
+| `ads` | `google-ads-roas-formula` | `google-ads` |
+| `ops` | _none yet_ | `ops-tools` / `lead-gen` |
+| `ai` | (legacy 70+ posts) | anything in `AI_NICHE_KEYWORDS` |
+
+### Adding a new general niche
+
+Three places must stay in sync — there is a unit test
+(`tests/test_general_track_category.py::test_niche_to_category_in_sync_between_modules`)
+that fails the build if they drift:
+
+1. `scripts/auto/_build_prompts.py` — add an entry to `GENERAL_NICHE_KEYWORDS`.
+2. `scripts/auto/_build_prompts.py` — add the niche→category mapping in
+   `NICHE_TO_CATEGORY`.
+3. `scripts/auto/_anti_ai_check.py` — mirror the same mapping in
+   `NICHE_TO_CATEGORY` (kept as a literal so the checker is self-contained).
+
+The keywords you add in step 1 must not appear in `AI_KEYWORDS` or
+`AI_NICHE_KEYWORDS` — `test_general_niche_table_contains_no_ai_overlap`
+and `test_general_niche_keywords_blocklist_excludes_ai_terms` enforce this.
 
 ## Stale-run detection
 
