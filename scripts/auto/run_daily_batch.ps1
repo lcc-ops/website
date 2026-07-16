@@ -2,12 +2,11 @@
 #
 # Phase order:
 #   1. flock + init log + state.json rollback-on-corruption
-#   2. _preflight.ps1  (CDP :9225, :9228 + Chrome launch if down)
-#   3. _run_crawl.ps1  (zsxq then x)
-#   4. _build_prompts.py (queue per-candidate prompt JSON)
-#   5. _draft_one.ps1 x N (sequential, one claude.cmd -p per slug)
-#   6. _anti_ai_check.py (move contaminated out of blog/)
-#   7. _build_and_summarize.ps1 (pnpm build, roll back on fail, write state.json)
+#   2. _run_crawl.ps1       (zsxq then x; each cdp.py spawns Chrome if needed)
+#   3. _build_prompts.py    (queue per-candidate prompt JSON)
+#   4. _draft_one.ps1 x N   (sequential, one claude.cmd -p per slug)
+#   5. _anti_ai_check.py    (move contaminated out of blog/)
+#   6. _build_and_summarize.ps1 (pnpm build, roll back on fail, write state.json)
 #
 # Argument: --autonomous  (called from schtasks; log to file only)
 # Exit: 0 = end-to-end ok. 1 = some phase failed.
@@ -38,18 +37,22 @@ function Write-Log {
     Add-Content -Path $LogPath -Value $line -Encoding UTF8
 }
 
-# Phase 0: flock
+# Phase 0: flock — PID-based; auto-clears if the holding process is dead.
 if (Test-Path $LockPath) {
-    $age = (Get-Date) - (Get-Item $LockPath).LastWriteTime
-    if ($age.TotalMinutes -lt 60) {
-        Write-Log "another batch is running (lock < 60min old); exiting 0" "WARN"
+    $holder = (Get-Content -Raw -Path $LockPath -ErrorAction SilentlyContinue).Trim()
+    $alive = $false
+    if ($holder -match '^\d+$') {
+        $alive = (Get-Process -Id ([int]$holder) -ErrorAction SilentlyContinue) -ne $null
+    }
+    if ($alive) {
+        Write-Log "another batch is running (pid=$holder alive); exiting 0" "WARN"
         exit 0
     } else {
-        Write-Log "stale lock $([int]$age.TotalMinutes)m old; removing" "WARN"
+        Write-Log "stale lock (holder '$holder' not alive); removing" "WARN"
         Remove-Item $LockPath -Force -ErrorAction SilentlyContinue
     }
 }
-Set-Content -Path $LockPath -Value "$$" -Force -Encoding UTF8
+Set-Content -Path $LockPath -Value "$PID" -Force -Encoding UTF8
 try {
 
     Write-Log "batch start (autonomous=$Autonomous)"
@@ -75,25 +78,16 @@ try {
         Write-Log "state.json created"
     }
 
-    # Phase 1: preflight
-    Write-Log "--- phase 1: preflight ---"
-    & (Join-Path $PSScriptRoot "_preflight.ps1") -Autonomous:$Autonomous -LogPath $LogPath
+    # Phase 1: crawl (each cdp.py spawns Chrome if its CDP port is down)
+    Write-Log "--- phase 1: crawl ---"
+    & (Join-Path $PSScriptRoot "_run_crawl.ps1") -Autonomous:$Autonomous -LogPath $LogPath
     $phase1 = $LASTEXITCODE
     if ($phase1 -ne 0) {
-        Write-Log "preflight failed; aborting batch" "ERROR"
-        exit 1
-    }
-
-    # Phase 2: crawl
-    Write-Log "--- phase 2: crawl ---"
-    & (Join-Path $PSScriptRoot "_run_crawl.ps1") -Autonomous:$Autonomous -LogPath $LogPath
-    $phase2 = $LASTEXITCODE
-    if ($phase2 -ne 0) {
         Write-Log "crawl returned non-zero (will continue anyway)" "WARN"
     }
 
-    # Phase 3: build prompt queue
-    Write-Log "--- phase 3: build_prompts ---"
+    # Phase 2: build prompt queue
+    Write-Log "--- phase 2: build_prompts ---"
     $queueOut = & python scripts/auto/_build_prompts.py --since-hours 24 --top 5 --threshold 6 2>&1
     $queueExit = $LASTEXITCODE
     Add-Content -Path $LogPath -Value ($queueOut -join "`n") -Encoding UTF8
@@ -128,8 +122,8 @@ try {
         exit 0
     }
 
-    # Phase 4: draft each
-    Write-Log "--- phase 4: draft_one (x$($queueFiles.Count)) ---"
+    # Phase 3: draft each
+    Write-Log "--- phase 3: draft_one (x$($queueFiles.Count)) ---"
     $consecutiveTimeouts = 0
     $draftedSlugs = @()
     foreach ($qf in $queueFiles) {
@@ -156,12 +150,12 @@ try {
     }
     Write-Log ("drafted slugs: " + ($draftedSlugs -join ","))
 
-    # Phase 5: anti-AI check + pnpm build
-    Write-Log "--- phase 5: anti-AI + build ---"
+    # Phase 4: anti-AI check + pnpm build
+    Write-Log "--- phase 4: anti-AI + build ---"
     & (Join-Path $PSScriptRoot "_build_and_summarize.ps1") -Autonomous:$Autonomous -LogPath $LogPath
-    $phase5 = $LASTEXITCODE
+    $phase4 = $LASTEXITCODE
 
-    if ($phase5 -ne 0) {
+    if ($phase4 -ne 0) {
         Write-Log "build_and_summarize failed" "ERROR"
         exit 1
     }
