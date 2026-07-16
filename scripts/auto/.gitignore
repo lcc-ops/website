@@ -1,0 +1,5 @@
+_queue/
+_archive/
+logs/
+*.lock
+state.json.bak.*
