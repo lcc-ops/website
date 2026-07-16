@@ -7,9 +7,11 @@ Run from the repo root:
     python scripts/scrapers_x/crawl.py --mode incremental --scroll-rounds 3
 
 The script attaches to the user's Chrome on :9228, visits the search URLs
-in selectors.SEARCH_URLS, scrolls each results page N times, extracts
-tweet cards, and persists them to scripts/scrapers_x/data/x.sqlite3.
-De-duplication is by URL UNIQUE constraint.
+in selectors.SEARCH_URLS (a (niche, mode) -> URL dict), scrolls each
+results page N times, extracts tweet cards, and persists them to
+scripts/scrapers_x/data/x.sqlite3. De-duplication is by tweet_id PK /
+url UNIQUE; the first niche query that surfaces a tweet wins (the rest
+INSERT OR IGNORE).
 """
 
 from __future__ import annotations
@@ -20,14 +22,13 @@ import random
 import sys
 from pathlib import Path
 
-HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from _lib.cdp import scoped_chrome, open_or_reuse_x_page  # noqa: E402
 from _lib.db import Database, TopicRow, utcnow_iso  # noqa: E402
 from _lib.selectors import (  # noqa: E402
     DOM_SELECTORS,
-    SEARCH_KEYWORD,
+    NICHE_TO_QUERY,
     SEARCH_URLS,
     parse_count,
     parse_tweet_id,
@@ -36,6 +37,7 @@ from _lib.selectors import (  # noqa: E402
 log = logging.getLogger("scrapers_x.crawl")
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 
+HERE = Path(__file__).resolve().parent
 DATA_DIR = HERE / "data"
 DB_PATH = DATA_DIR / "x.sqlite3"
 
@@ -44,12 +46,17 @@ def _parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="X.com scraper for AI monetization posts")
     p.add_argument("--mode", choices=["auto", "full", "incremental"], default="auto")
     p.add_argument("--scroll-rounds", type=int, default=5)
-    p.add_argument("--humane-delay-ms", type=int, nargs=2, default=[800, 1400])
+    p.add_argument("--humane-delay-ms", type=int, nargs=2, default=[3000, 6000],
+                   help="Per-card simulated delay range in ms; default 3000-6000 to look human.")
+    p.add_argument("--search-modes", choices=["top", "live", "both"], default="top",
+                   help="Which result-mode to crawl. 'top' (default) is one "
+                        "niche x 1 URL; 'both' adds the chronological live "
+                        "pass for double the URL count.")
     p.add_argument("--dry-run", action="store_true")
     return p.parse_args()
 
 
-def _extract_card(card, mode: str) -> TopicRow | None:
+def _extract_card(card, mode: str, niche: str) -> TopicRow | None:
     """Extract a TopicRow from a tweet article element. Returns None on failure."""
     anchor = card.query_selector(DOM_SELECTORS["tweet_url"])
     if not anchor:
@@ -88,6 +95,10 @@ def _extract_card(card, mode: str) -> TopicRow | None:
         return parse_count(label)
 
     now = utcnow_iso()
+    # Record the literal x.com query the card came from so the downstream
+    # _build_prompts can re-derive the niche via NICHE_TO_QUERY lookup if
+    # it wants to override what the body text alone would suggest.
+    search_keyword = NICHE_TO_QUERY.get(niche, niche)
     return TopicRow(
         tweet_id=tweet_id,
         url=url,
@@ -99,7 +110,7 @@ def _extract_card(card, mode: str) -> TopicRow | None:
         reply_count=_count("reply"),
         repost_count=_count("retweet"),
         quote_count=0,  # No stable selector; recorded as 0
-        search_keyword=SEARCH_KEYWORD,
+        search_keyword=search_keyword,
         search_mode=mode,
         first_seen_at=now,
         last_seen_at=now,
@@ -124,18 +135,36 @@ def crawl(args: argparse.Namespace) -> int:
 
     try:
         with scoped_chrome() as browser:
-            for mode, url in SEARCH_URLS.items():
-                log.info("[crawl] mode=%s url=%s", mode, url)
-                page, opened_new = open_or_reuse_x_page(browser, url)
-                try:
-                    page.wait_for_selector(
-                        DOM_SELECTORS["tweet_root"], timeout=15_000
-                    )
+            # Top-only by default to keep crawl frequency low (no `live`
+            # chronological second pass). Caller can still request all
+            # modes via the --search-modes flag.
+            modes = getattr(args, "search_modes", ("top",))
+            urls_to_crawl = [
+                ((niche, mode), url)
+                for (niche, mode), url in SEARCH_URLS.items()
+                if mode in modes
+            ]
+            first_url = urls_to_crawl[0][1] if urls_to_crawl else next(iter(SEARCH_URLS.values()))
+            page, opened_new = open_or_reuse_x_page(browser, first_url)
+            try:
+                for (niche, mode), url in urls_to_crawl:
+                    log.info("[crawl] niche=%s mode=%s url=%s", niche, mode, url)
+                    if page.url != url:
+                        page.goto(url, wait_until="domcontentloaded", timeout=30_000)
+                    try:
+                        page.wait_for_selector(
+                            DOM_SELECTORS["tweet_root"], timeout=15_000
+                        )
+                    except Exception:
+                        # Some queries legitimately return zero results; skip
+                        # rather than aborting the whole run.
+                        log.warning("[crawl] no tweet_root for %s/%s; skipping", niche, mode)
+                        continue
                     _scroll(page, args.scroll_rounds, tuple(args.humane_delay_ms))
                     cards = page.query_selector_all(DOM_SELECTORS["tweet_root"])
                     items_seen += len(cards)
                     for card in cards:
-                        row = _extract_card(card, mode)
+                        row = _extract_card(card, mode, niche)
                         if row is None:
                             items_skipped += 1
                             continue
@@ -151,12 +180,12 @@ def crawl(args: argparse.Namespace) -> int:
                             items_skipped += 1
                         else:
                             items_inserted += 1
-                finally:
-                    if opened_new:
-                        try:
-                            page.close()
-                        except Exception:
-                            pass
+            finally:
+                if opened_new:
+                    try:
+                        page.close()
+                    except Exception:
+                        pass
         db.record_run_end(
             run_id,
             finished_at=utcnow_iso(),
@@ -187,6 +216,11 @@ def crawl(args: argparse.Namespace) -> int:
 
 def main() -> int:
     args = _parse_args()
+    # Normalize the --search-modes string into the tuple the crawl() loop expects.
+    if args.search_modes == "both":
+        args.search_modes = ("top", "live")
+    else:
+        args.search_modes = (args.search_modes,)
     return crawl(args)
 
 

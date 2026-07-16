@@ -15,15 +15,59 @@ import re
 from typing import Optional
 
 # ---------------------------------------------------------------------------
-# Search URLs. UPDATE KEYWORD HERE.
+# Search keywords. Each entry maps a niche tag (matching
+# scripts/auto/_build_prompts.NICHE_TO_CATEGORY) to the literal x.com
+# query string the crawler will issue. The first entry remains the legacy
+# AI monetization query so the historic data shape is preserved.
+#
+# To add a new niche, append to NICHE_TO_QUERY (and the matching body-side
+# keywords in scripts/auto/_build_prompts.GENERAL_NICHE_KEYWORDS so the
+# downstream `general` track can re-derive the niche).
 # ---------------------------------------------------------------------------
-SEARCH_KEYWORD: str = "AI变现"
-_ENCODED: str = "AI%E5%8F%98%E7%8E%B0"  # "AI变现" URL-encoded
+from urllib.parse import quote
 
-SEARCH_URLS: dict[str, str] = {
-    "top": f"https://x.com/search?q={_ENCODED}&src=typed_query",
-    "live": f"https://x.com/search?q={_ENCODED}&src=typed_query&f=live",
+# Niche tag (matches _build_prompts.NICHE_TO_CATEGORY keys) -> x.com query.
+# Each query is the **bare tag word** as it appears in src/content/blog
+# frontmatter (tags[0]). x.com search tolerates these as-is; wider
+# composite phrases (e.g. "PayPal 手续费" instead of "paypal") were tried
+# and produced sparse results. Keep the legacy "AI变现" first so the
+# historical data shape is preserved.
+NICHE_TO_QUERY: dict[str, str] = {
+    "ai":               "AI变现",
+    "logistics":        "E邮宝 小包 跨境物流",
+    "cbm":              "CBM 抛货 体积重",
+    "payment-fees":     "PayPal 手续费",
+    "chargeback":       "拒付 拒赔 撤单",
+    "etsy-pricing":     "Etsy 佣金 费用",
+    "amazon-pricing":   "FBA 仓储费 亚马逊",
+    "dropshipping-costs": "一件代发 Dropshipping",
+    "google-ads":       "Google 广告 投产比",
+    "freelance-pricing": "自由职业 时薪 定价",
+    "lead-gen":         "B2B 销售线索 中介",
+    "podcast-monetize": "播客 变现 广告",
+    "youtube-creator":  "YouTube CPM 收益",
+    "shopify-pricing":  "Shopify 订阅 费用",
 }
+
+
+def _build_url(query: str, mode: str) -> str:
+    enc = quote(query)
+    base = f"https://x.com/search?q={enc}&src=typed_query"
+    return f"{base}&f=live" if mode == "live" else base
+
+
+# { (niche, mode): url } — derived from NICHE_TO_QUERY above. Modes are
+# "top" (default ranking) and "live" (chronological).
+SEARCH_URLS: dict[tuple[str, str], str] = {
+    (niche, mode): _build_url(query, mode)
+    for niche, query in NICHE_TO_QUERY.items()
+    for mode in ("top", "live")
+}
+
+
+# Back-compat: keep SEARCH_KEYWORD as the *first* niche's query so callers
+# that still import the legacy single-value symbol keep working.
+SEARCH_KEYWORD: str = next(iter(NICHE_TO_QUERY.values()))
 
 # ---------------------------------------------------------------------------
 # DOM selectors (initial; the probe may update these)
