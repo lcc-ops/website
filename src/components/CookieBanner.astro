@@ -40,6 +40,9 @@ const text = locale === 'en'
     function close(value) {
       localStorage.setItem(KEY, value);
       banner.classList.add('hidden');
+      if (value === 'accepted') {
+        window.dispatchEvent(new Event('ccl:consent-accepted'));
+      }
     }
     document.getElementById('cookie-accept')?.addEventListener('click', () => close('accepted'));
     document.getElementById('cookie-decline')?.addEventListener('click', () => close('essential'));

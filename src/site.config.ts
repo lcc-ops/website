@@ -18,6 +18,10 @@ export const SITE = {
     enabled: false,
     client: '',
   },
+  stats: {
+    // Descriptive hosting signal, not an uptime guarantee.
+    hosting: 'Cloudflare edge',
+  },
   // Source of truth for the FX calculator's currency dropdown. Both
   // FxWithdrawCalculator and the home-page stats read from this list.
   // Update here, not in the .astro file.

@@ -156,11 +156,28 @@ const jsonLd = [orgLd, webSiteLd, personLd, pageLd];
 />
 
 <!-- Google AdSense -->
-<script
-  async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2713534716131369"
-  crossorigin="anonymous"
-></script>
+{SITE.ads.enabled && SITE.ads.client && (
+  <script is:inline define:vars={{ client: SITE.ads.client }}>
+    (() => {
+      const loadAdsense = () => {
+        if (document.querySelector('script[data-ccl-adsense]')) return;
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(client)}`;
+        script.crossOrigin = 'anonymous';
+        script.dataset.cclAdsense = 'true';
+        document.head.appendChild(script);
+      };
+
+      try {
+        if (localStorage.getItem('cookie-consent') === 'accepted') loadAdsense();
+      } catch {
+        // Keep advertising disabled when browser storage is unavailable.
+      }
+      window.addEventListener('ccl:consent-accepted', loadAdsense, { once: true });
+    })();
+  </script>
+)}
 
 <!-- Cloudflare Web Analytics (fill beacon after deploy) -->
 {SITE.analytics.cfBeacon && (
