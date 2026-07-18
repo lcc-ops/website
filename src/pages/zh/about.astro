@@ -1,28 +1,39 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import { SITE } from '~/site.config';
+import { aboutCopy } from '~/i18n/aboutCopy';
 
-const copy = {
-  title: '关于',
-  intro: '一个免费工具集，专门帮你算清跨境订单里那些看不见的成本，让定价回到利润本身。',
-  who: '我自己在做面向北美和欧洲的小型独立站。跨境订单的利润极薄，大部分损耗藏在付款手续费、汇差、体积重、广告浪费这些没人给你算清楚的数字里。跨境成本实验室是我把自用的计算器公开出来的地方，省得你再从头搭一遍。',
-  forSellers: '如果你在 Shopify、WooCommerce、Amazon、TikTok Shop 上卖货，或者做单品 Dropshipping，这个站点就是为你准备的。这些工具假设你清楚自己的货成本、已经在发跨境包裹、想要 30 秒内拿到答案，而不是再读一份 40 页的白皮书。',
-  sideProject: '副栏：AI 实验是一个案例集，跟踪独立 AI 产品。案例来源取自网络。数学和跨境那侧的计算器一样。',
-  principles: [
-    '无需注册、无需邮箱——页面打开就能算。',
-    '公式公开透明——计算过程可见，假设条件有说明。',
-    '不接受付费排序——工具按回答的问题排序，不按付费金额排序。',
-  ],
-  contact: '发现汇率过时、币种缺失，或边角案例下算错了？欢迎邮件到 contact@kuajinglab.xyz 告诉我——每条都会看。',
+const copy = aboutCopy.zh;
+
+const personLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${Astro.url.origin}/zh/about/#person`,
+  name: SITE.author,
+  url: `${Astro.url.origin}/zh/about/`,
+  description: copy.personDescription,
+  knowsAbout: copy.knowsAbout,
+  sameAs: [],
+  worksFor: {
+    '@type': 'Organization',
+    name: 'Crossborder Cost Lab',
+    url: Astro.url.origin,
+  },
 };
 ---
 <BaseLayout title={copy.title} description={copy.intro}>
   <article class="container-prose py-16">
+    <script type="application/ld+json" set:html={JSON.stringify(personLd)} />
+
     <h1 class="text-3xl font-semibold mb-4">{copy.title}</h1>
     <p class="text-lg" style="color: var(--color-fg-soft);">{copy.intro}</p>
 
     <h2 class="text-xl font-semibold mt-10 mb-3">我是谁</h2>
     <p style="color: var(--color-fg-soft);">{copy.who}</p>
+    <p class="mt-3 text-sm" style="color: var(--color-fg-soft);">
+      <strong>{copy.verifiedIdentitiesLabel}</strong>
+      {copy.verifiedIdentitiesValue}
+    </p>
 
     <h2 class="text-xl font-semibold mt-10 mb-3">给谁用</h2>
     <p style="color: var(--color-fg-soft);">{copy.forSellers}</p>
@@ -32,6 +43,56 @@ const copy = {
     <ul class="list-disc pl-5 space-y-2" style="color: var(--color-fg-soft);">
       {copy.principles.map((line) => <li>{line}</li>)}
     </ul>
+
+    <hr class="my-10 border-[var(--color-border)]" />
+
+    <h2 class="text-xl font-semibold mt-10 mb-3">{copy.editorialTitle}</h2>
+    <p style="color: var(--color-fg-soft);">{copy.editorialIntro}</p>
+
+    <h3 class="text-lg font-semibold mt-8 mb-2">{copy.sourcingTitle}</h3>
+    <ol class="list-decimal pl-5 space-y-2" style="color: var(--color-fg-soft);">
+      {copy.sourcingItems.map((line) => <li>{line}</li>)}
+    </ol>
+
+    <h3 class="text-lg font-semibold mt-8 mb-2">{copy.correctionsTitle}</h3>
+    <p style="color: var(--color-fg-soft);">{copy.correctionsBody}</p>
+
+    <h3 class="text-lg font-semibold mt-8 mb-2">{copy.reviewCadence}</h3>
+    <p style="color: var(--color-fg-soft);">{copy.reviewBody}</p>
+
+    <h3 class="text-lg font-semibold mt-8 mb-2">{copy.boardTitle}</h3>
+    <p style="color: var(--color-fg-soft);">{copy.boardIntro}</p>
+    <div class="mt-4 overflow-x-auto">
+      <table class="w-full text-sm" style="color: var(--color-fg-soft);">
+        <thead>
+          <tr class="text-left" style="border-bottom: 1px solid var(--color-border);">
+            <th class="py-2 pr-4">角色</th>
+            <th class="py-2 pr-4">负责人</th>
+            <th class="py-2">职责</th>
+          </tr>
+        </thead>
+        <tbody>
+          {copy.boardItems.map((b) => (
+            <tr style="border-bottom: 1px solid var(--color-border);">
+              <td class="py-2 pr-4 font-medium">{b.role}</td>
+              <td class="py-2 pr-4">{b.who}</td>
+              <td class="py-2">{b.note}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="text-lg font-semibold mt-8 mb-2">{copy.transparencyTitle}</h3>
+    <p style="color: var(--color-fg-soft);">{copy.transparencyBody}</p>
+
+    <h3 class="text-lg font-semibold mt-8 mb-2">{copy.fundingTitle}</h3>
+    <p style="color: var(--color-fg-soft);">{copy.fundingBody}</p>
+
+    <h3 class="text-lg font-semibold mt-8 mb-2">{copy.partnerLinksTitle}</h3>
+    <p style="color: var(--color-fg-soft);">{copy.partnerLinksBody}</p>
+
+    <hr class="my-10 border-[var(--color-border)]" />
 
     <h2 class="text-xl font-semibold mt-10 mb-3">联系</h2>
     <p style="color: var(--color-fg-soft);">{copy.contact}</p>
