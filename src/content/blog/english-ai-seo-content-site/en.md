@@ -21,3 +21,7 @@ faq:
     a: 'Three risks the post calls out: (1) Google can change its AI content policy and de-rank the portfolio; (2) RPM is seasonal — Q1 is typically 60% of Q4 because advertisers spend less; (3) any single site being deindexed wipes out 1/3 of revenue. The 3-site, multi-niche, multi-domain strategy is a hedge against any single-point failure.'
 ---
 
+## Source
+
+This case is a paraphrased summary of publicly reported discussion of running 3-site English information-niche portfolios on AdSense. The headline figures (3 sites, 9,000 articles over 6 months, ~50 articles/day, 2,300 USD/month AdSense by month 6, 0.013 USD per-article AI cost, 6–9 USD RPM, 8,000 daily UV, 360,000 monthly PV) are quoted as the source material reports them; none are independently audited by the editor. The 500x cost-compression math (5–10 USD ghostwritten per article vs 0.013 USD AI-assisted) is reproduced from the source's own numbers and assumes a Claude Pro subscription spread across 9,000 articles. The niches (pet health, home DIY repair, personal finance) and the keyword-selection rule (KD < 15, monthly search 100–500) are described as the source states. This post is commentary on a content-business model, not a profile of a specific named operator; if you can point to a specific original report we should credit, write to contact@kuajinglab.xyz.
+

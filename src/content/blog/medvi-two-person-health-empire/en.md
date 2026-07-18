@@ -104,3 +104,7 @@ The case ends with a six-step list, compressed:
 ## Take-away
 
 The model works because the customer relationship is the only asset that compounds, and the rest of the value chain can be rented. A solo operator who identifies the relationship layer in any regulated industry, owns it, and rents everything else has a real shot at the same margin math Medvi posts — at a smaller scale. The 16% net margin is not the moat; the moat is that the operator did not have to hire anyone to capture it. AI is the lever; the structural choice is what to own.
+
+## Source
+
+This case is a paraphrased summary of publicly reported coverage of Medvi (Matthew Gallagher) and adjacent 2-person telehealth operator stories. Headline figures — 400M USD in 16 months, 250,000 customers, 2 employees, 16.2% net margin, 1.8B USD 2026 trajectory — are quoted as the source material reports them; none are independently audited by the editor. Comparisons to Hims and Hers Health use publicly disclosed company filings. Medical, regulatory and reimbursement claims (telehealth licensing, GLP-1 supply, AI customer-support scope) are not legal or medical advice and have not been independently verified. This post is commentary on a business model, not medical or financial guidance; consult a licensed professional for clinical, tax or investment decisions. If you can point to a specific original report we should credit, write to contact@kuajinglab.xyz.

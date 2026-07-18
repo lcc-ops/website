@@ -97,3 +97,7 @@ Each frame requires a different distribution motion. The current site has none o
 The product is real, the cost is low, and the monetization question is the actual content of the case. The indie builder who ships an aggregator in 2026 is in the same position as the indie builder who shipped a price-comparison site in 2010 or a job board in 2014: easy to build, hard to charge for, ceiling set by the free substitutes.
 
 The right move is to pick a frame before investing in redesign: vertical-AI-for-X for a paid professional audience, sell-the-workflow as a paid API, or newsletter + community with a sponsor slot. Without one of these, the site stays a hobby.
+
+## Source
+
+This case is a paraphrased summary of publicly available discussion of indie AI-news aggregator sites (the "AI Hot Radar" / "Kazike-style" pattern). Traffic numbers, revenue figures and the specific indie builder named in the original discussion are not independently verified by the editor. The monetization math (B2B RPM bands, newsletter sponsorship rates) is built from public industry ranges, not from the case's own dashboards. Source-licensing posture and the long-tail SEO ceiling are general aggregator-site issues, not unique to this case. This post is commentary on the niche-content business model, not a profile of a specific named company. If you can point to a specific original report we should credit, write to contact@kuajinglab.xyz.

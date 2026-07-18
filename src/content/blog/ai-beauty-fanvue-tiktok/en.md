@@ -99,3 +99,7 @@ At 562 subscribers × 9.99 USD = 5,610 USD/month recurring, the operator's effec
 ## Take-away
 
 The funnel math is real while the funnel holds: TikTok reach → Fanvue subscription is a clean two-platform model with strong unit economics at the launch spike. The model is fragile in three places: TikTok algorithm change, Fanvue payment-processor change, Claude / video-model price change. A solo operator replicating this should expect a 2-4 week launch window and a much smaller steady-state. Treat the 85K JPY two-week figure as a launch spike, not a run rate. The 67K USD/year zero-churn figure is closer to a realistic steady-state, and it is real money for a 19-year-old solo operator.
+
+## Source
+
+This case is a paraphrased summary of publicly available posts and operator commentary read by the editor. No specific original URL could be re-verified at the time of publication; the underlying narrative is widely reported in the AI-creator-economy coverage of mid-2026. Numbers in the post (562 subscribers, 9.99 USD/month, 85K JPY headline, ~50K TikTok followers) are quoted as the source material states them and have not been independently audited. Fanvue, TikTok, Claude and the AI video models referenced are trademarks of their respective owners; this post is commentary on the business model, not an endorsement, and the editor has no affiliation with any of the named platforms. If you can point to a specific original source we should credit, write to contact@kuajinglab.xyz.

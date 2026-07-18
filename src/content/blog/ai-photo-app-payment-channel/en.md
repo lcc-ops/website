@@ -20,3 +20,7 @@ faq:
   - q: "What does the case leave out?"
     a: 'Four things: (1) gross margin after the model-API bill — third-party model cost is non-trivial and the case does not name a unit-economics table; (2) what happens to retention if Apple changes rules again on out-of-app checkout links; (3) the cost of building and maintaining a payment, tax, and refund pipeline in 30+ jurisdictions; (4) regulatory exposure of processing subscription payments outside the App Store, which Apple has actively litigated against. The case is silent on all four.'
 ---
+
+## Source
+
+This case is a paraphrased summary of publicly reported coverage of an unnamed AI photo-and-video app team and adjacent web-checkout case studies. The headline figures (55M USD annualized → 70M USD annualized, 14x year-over-year growth, 17M USD/year implied gross retained by moving off the App Store) are quoted as the source material reports them; none are independently audited by the editor. Apple's standard 30% App Store fee, the small-business 15% program, and the typical 2.9% + 0.30 USD Stripe/Paddle checkout rates are public pricing pages. This post is commentary on payment-rail economics, not on a specific company; if you can point to a specific original report we should credit by name, write to contact@kuajinglab.xyz.
