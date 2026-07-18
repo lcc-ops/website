@@ -33,8 +33,8 @@ const locale: Locale = getLocaleFromUrl(Astro.url);
 
     <h2>{locale === 'en' ? 'Affiliate links' : '推广链接'}</h2>
     <p>{locale === 'en'
-      ? 'Some outbound links may be affiliate links. We mark them with rel="nofollow sponsored" and only recommend resources we have used or evaluated.'
-      : '部分外链可能为推广链接。我们会标注 rel="nofollow sponsored"，并只推荐已使用或评估过的资源。'
+      ? 'The Resources page lists outbound links to a small set of named partners (Shopify, Stripe, PayPal, 17Track, Etsy, Amazon FBA tooling). Only those links carry rel="nofollow sponsored" so the destination sees a paid referral. The site does not run affiliate redirects, does not inject tracking parameters on outbound URLs, and does not insert partner links into article body text. Other outbound links on the site (e.g. from editorial references and case studies) are not paid referrals. We only recommend resources we have used or evaluated.'
+      : '资源页面列出少量明确命名的合作方链接（Shopify、Stripe、PayPal、17Track、Etsy、亚马逊 FBA 工具）。仅这些链接标注 rel="nofollow sponsored"，以告知对方这是一次带佣金的推荐。本站不做联盟跳转倒流，不在出站 URL 上加追踪参数，也不会在文章正文里插入合作方链接。站内其他外链（如编辑参考、案例研究中的引用）均不构成付费推荐。我们只推荐已使用或评估过的资源。'
     }</p>
   </article>
 </BaseLayout>

@@ -20,7 +20,7 @@ import { SITE } from '~/site.config';
     <ul>
       <li><strong>Cloudflare Web Analytics</strong> — first-party, cookie-less, aggregated page-view counts. No personal data, no cross-site tracking.</li>
       <li><strong>Google AdSense</strong> (when enabled) — sets cookies to deliver and measure ads. Personalized ads require your consent; we default to non-personalized ads where allowed by regulation.</li>
-      <li><strong>Affiliate / partner links</strong> — outbound links to Shopify, Stripe, PayPal, 17Track, Etsy and Amazon FBA tools may set first-party cookies on the partner's domain to attribute a referral. We never receive personally identifying data from these partners; we only ever see aggregated click counts.</li>
+      <li><strong>Affiliate / partner links</strong> — outbound links on the Resources page to Shopify, Stripe, PayPal, 17Track, Etsy and Amazon FBA tooling may set first-party cookies on the partner's domain to attribute a referral. These links carry rel="nofollow sponsored" so the destination sees a paid referral. We never receive personally identifying data from these partners; we only ever see aggregated click counts. Other outbound links on the site (e.g. from editorial references and case studies) are not paid referrals.</li>
     </ul>
     <p>Tools on this site run entirely in your browser. The numbers you enter are never sent to a server.</p>
 
@@ -52,7 +52,7 @@ import { SITE } from '~/site.config';
       <tbody>
         <tr><td>Cloudflare, Inc.</td><td>CDN, edge hosting, DDoS protection, optional Web Analytics</td><td>Global edge; primary in EU/US</td></tr>
         <tr><td>Google LLC (AdSense)</td><td>Advertising (only when enabled)</td><td>US, EU (subject to TFC / EU user consent policy)</td></tr>
-        <tr><td>Partner sites (Shopify, Stripe, PayPal, 17Track, Etsy, Amazon)</td><td>Outbound referral attribution</td><td>Per partner</td></tr>
+        <tr><td>Partner sites (Shopify, Stripe, PayPal, 17Track, Etsy, Amazon)</td><td>Outbound referral attribution (Resources page only; all such links carry rel="nofollow sponsored")</td><td>Per partner</td></tr>
       </tbody>
     </table>
     <p>We do not sell, rent or trade your data. We do not share data with parties not listed above.</p>
