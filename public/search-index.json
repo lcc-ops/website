@@ -66,6 +66,55 @@
     "body": "一条推文拆的是一部 AI 生成的短剧,上到海外平台 YourChannel。剧名《波斯的复仇》。作者是国人。受众是波斯/中东。72 小时营收 58.67 万美金,约 400 万人民币。制作横跨剧本、分镜、配音、剪辑,全是 AI。案例落 AI 短剧出海在 2026 年的单位经济——一部 70 集竖屏短剧,72 小时内 58.6 万美金营收,制作成本近零。下面是单集营收曲线、盈亏平衡数学,以及案例没展开的四点。 单位经济对比 关键在 ARPU 差,不是受众规模差。海外受众是中国爆款的十分之一。单观众花费高 5–10 倍。单剧净收入 2–3 倍。模型是:小受众,高 ARPU,更快的营收曲线。 72 小时营收曲线 案例给 72 小时 58.6 万。生命周期没说,但 2026 年同类 AI 短剧首 72 小时占 70–85%。隐含生命周期 70 万–85 万美金,扣完平台分成(典型 30–50%)和退款/拒付,operator 净 10–30%。 盈亏平衡数学 案例没给单解锁 ARPU、平台分成、拒付率。隐含 operator 净 20–37.5 万,跨度大,但量级与 2026 年公开的国人 AI 短剧案例一致。 为什么 2026 年这模型能跑 三个原因。 AI 把制作成本压到营收的 1% 以下。 500–5000 美金制作对 20 万–200 万美金单剧营收,制作占比 0.025–2.5%。传统(非 AI)短剧制作成本是营收的 10–30%。AI 成本压缩是整个商业模型。 海外 ARPU 差是结构性的。 波斯/中东/东南亚观众单解锁付 5–10 倍于中国观众。平台分 operator 50–70% 这个高 ARPU 还能自己赚。 72 小时曲线匹配 AI 制作周期。 operator 一周能出货 1–3 部。72 小时营收曲线清完一个 slot。一周复利就是规模化机制。 案例没说的事 四点。 制作成本。 案例说 AI 生成但没给美元数。隐含区间 500–5000,跨度大,影响盈亏平衡。 营销成本。 YourChannel 上趋势需要付费位或强自然流量。案例没处理 CAC。如果 operator 付 5 万美金买趋势位,净利压很多。 退款/拒付率。 海外短剧平台 5–15% 拒付(用户后悔)。案例没处理。10% 拒付意味着 operator 损失 6 万美金左右。 IP 风险。 《波斯的复仇》借用波斯历史叙事。案例没处理文化 IP 风险和平台内容政策风险。第二周平台下架,长尾归零。 结论 案例不是「一部 AI 短剧赚了 58.6 万」。案例是:2026 年 AI 短剧出海,单位收入曲线结构性优于中国平台,AI 制作成本把盈亏平衡压到个位数付费解锁。72 小时窗口就是模型——快内容、快营收、低长尾。一周出货节奏是规模化机制。 看这条案例的多数人,带走就一句:别在中国短剧"
   },
   {
+    "url": "/zh/content/x-gregisenberg-corey-1000usd-hour-local-ai/",
+    "locale": "zh",
+    "title": "$1,000/小时的本地 AI 咨询生意：45 分钟 SMB 审计如何转成现成工具订阅",
+    "description": "一条爆款 X 帖描述了一个独立运营方按 $1,000/小时收费，带小企业主走完 45 分钟审计，找出每周损失 5–10 小时的地方，给出现成 AI 工具的处方。下面拆数学、转化漏斗、失败模式。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "local-business",
+      "consulting",
+      "automation",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条爆款 X 帖（2032 赞、111 回复、136 转推）描述了一个独立运营方按 $1,000/小时收费，给小企业做 45 分钟审计，找出每周损失 5–10 小时的地方，开出现成 AI 工具的处方。",
+    "body": "一条爆款 X 帖（2032 赞、111 回复、136 转推）描述了一个独立运营方按 $1,000/小时收费，给小企业做 45 分钟审计，找出每周损失 5–10 小时的地方，开出现成 AI 工具的处方。隐含前提——「只有 5% 的企业在 ChatGPT 之外用过 AI，剩下 95% 都需要你」——指向真实的客户池。但在照抄之前，数学、漏斗、失败模式都得摊开看。 交付的形状 阶段 时长 交付物 买家付的钱 发现电话 45 分钟 时间损失地图，3–7 个工具推荐 $750（折合 $1,000/小时） 实施 4–12 小时 工具配置到位，团队培训完成 通常单独报价 持续 retainer 月度 工具更新、新审计、故障处理 $500–2,000/月 帖子暗示审计是头条产品。后续的实施和 retainer 是大部分经常性收入所在，但不是帖子的卖点。 为什么 $1,000/小时锚定的是真实参考价 买家把 $750 审计和两个参考价比。(1) 一个兼职运营岗 $2,000–4,000/月——审计能拿回老板每周 5–10 小时就回本了，恰好是帖子点名的回收目标。(2) 麦肯锡级别的战略咨询 $5,000–50,000——审计是一笔能拿到具体交付的小钱。 定价锚定在「省下小时的价值」上，而不是运营方的小时成本上。对买家画像——年营收 $1M–10M、5–25 名员工、老板本人能感受到时间损失——这是正确的锚。同样的价格对财富 500 强的采购官、或自带运营团队的创业公司 CTO 不成立。 帖子漏掉的漏斗数学 按 $1,000/小时、每次审计 45 分钟算，运营方每周要做 2–3 次付费审计才能月入 $8,000–12,000。这要求每周有 8–15 个预约成功的发现电话，按 20–30% 预约率倒推，就是每周 40–80 次触达。 帖子对以下几点都沉默： 触达到预约的转化率。 这个赛道独立顾问的标准答案是：冷触达中 5–15% 预约 30 分钟介绍电话，其中 30–50% 转成付费的 45 分钟审计。帖子没点这些数字。 审计到 retainer 的转化率。 如果帖子作者把 30–50% 的审计客户留在 $500–2,000/月的 retainer，每 cohort 在 6–12 个月内能堆出 $6,000–30,000/月的经常性账本。帖子对这点是哑的。 获客成本。 冷触达、付费广告、推荐合作都吃 CAC。帖子没点 $1,000/小时里有多大比例覆盖获客。 三个失败模式 老板一个推荐都不落地，写一条差评。 这是最常见的失败。实施陪跑必须单独卖，或者打包进审计费。一次 $750 审计不做任何陪跑，是一笔 $750 的不高兴客户负债。 开出的工具崩了或改了定价。 现成 AI 工具每个季度都有停服、改价、被收购。老板拿着一个已经过期的推荐，找不到运营方。一个 retainer 或一个"
+  },
+  {
+    "url": "/zh/content/x-samuel-ecom-5m-dropshipping-7-lessons/",
+    "locale": "zh",
+    "title": "$5M Dropshipping 营收背后的 7 条教训：一个真实运营方到底做对了什么",
+    "description": "一条爆款 X 帖（268 赞、51 回复、19 转推）走了一个 dropshipping 运营方从 $5M 累计营收里学到的 7 条教训。读单位经济学之前，这些教训看着像通用鸡汤。下面按 SKU 拆每条教训的真实含义、帖子漏掉的、以及决定哪些 dropshipper 真能走到 $5M 的失败模式。",
+    "category": "pricing",
+    "tags": [
+      "dropshipping",
+      "pricing",
+      "unit-economics",
+      "eu-markets",
+      "case-study"
+    ],
+    "excerpt": "一条爆款 X 帖（268 赞、51 回复、19 转推）走了一个 dropshipping 运营方从 $5M 累计营收里学到的 7 条教训。在单位经济学里读这些之前，看着像通用鸡汤。下面冷拆。 7 条教",
+    "body": "一条爆款 X 帖（268 赞、51 回复、19 转推）走了一个 dropshipping 运营方从 $5M 累计营收里学到的 7 条教训。在单位经济学里读这些之前，看着像通用鸡汤。下面冷拆。 7 条教训和背后的单位数学 # 教训 单位层面的含义 1 不要先打美国市场 美国 CPM $15–30 vs 欧洲 CPM $5–12；低 CPM 市场吸收测试烧钱更快 2 速度大于完美 每天一个 SKU 测试节奏 = 测试期 $1,500–4,500/周广告花销 3 卷赢所有人 每天 10 小时运营方时间，持续 12 个月+ 4 坚持大于快赢 运营资金周期：客户付款到净现金 30–60 天 5 把赢家榨干 赢家窗口 60–90 天；窗口关上前放量 6 把供应链卷到极致 每个赢家 SKU 谈下 5–15% 成本或 5–10 天交期 7 永远在测 SKU 存活率 1–5%；管线必须保持满 每条都是真杠杆。单独一条都不是鸡汤。组合在一起才出 $5M/年的运营方；任一条单独都不够。 教训 1 在单位层面到底什么意思 标准说法是美国 CPM 高、欧洲 CPM 低。背后的数字： 市场 Meta CPM（2026） $50 AOV SKU 的平均 CPA 盈亏平衡 CPA 美国 $15–30 $25–45 $15–20（30–40% 毛利下） 德国 $5–12 $10–18 $15–20 荷兰 $4–10 $8–15 $15–20 一个 SKU 在美国需要 $30 CPA，在德国只要 $10–15 CPA 就能打平，意味着测试成本砍半。教训不是「欧洲更好」——是低 CPM 市场吸收测试烧钱更快，运营方用更少的 SKU 就能找到赢家。 教训 2 到底什么意思 一个标准 dropshipping SKU 测试周期 3–7 天：上广告、花 $50–150、量 CPA 和加车率。每天测一个 SKU 意味着测试期每周 $1,500–4,500 的广告花销。一个 90 天学习周期就是 $20,000–55,000 的测试开销。 教训不是「多测」——是 SKU 存活率太低，只有量才能找到赢家。一个 $200 的单 SKU 测试预算够发现「这个 SKU 不 work」；不够发现「这个 SKU work」，因为 $50 AOV SKU 上的统计信号需要累计 $5–10k 广告花销。 真实的 SKU 存活率 dropshipping SKU 从上架到「可复制的赢家」的标准存活率 1–5%。每 100 个测的 SKU，1–5 个成可放量的赢家。 每天一个 SKU 的测试节奏跑 90 天（90 个 SKU），意味着每个季度出 1–4 个赢家，这就是 $5M/年运营方的工作管线。帖子没点这个数字；点了之后新运营方对测试期预算的看法就变了。 运营资金周期 大多数 dropshipping 运营方跑 30–60"
+  },
+  {
+    "url": "/content/x-samuel-ecom-5m-dropshipping-7-lessons/",
+    "locale": "en",
+    "title": "$5M in dropshipping revenue and the seven lessons behind it: what a real operator actually does differently",
+    "description": "A viral X post (268 likes, 51 replies, 19 reposts) walked through seven lessons a dropshipping operator learned from making $5M in revenue. The lessons look like a generic motivational list until you read the unit economics behind each one. A read of what each lesson implies at the SKU level, what the post leaves out, and the failure modes that decide which dropshippers actually clear $5M.",
+    "category": "pricing",
+    "tags": [
+      "dropshipping",
+      "pricing",
+      "unit-economics",
+      "eu-markets",
+      "case-study"
+    ],
+    "excerpt": "A viral X post (268 likes, 51 replies, 19 reposts) walked through seven lessons a dropshipping opera",
+    "body": "A viral X post (268 likes, 51 replies, 19 reposts) walked through seven lessons a dropshipping operator learned from $5M in cumulative revenue. The lessons look like a motivational list until the unit economics behind each one are read in. What follows is the read. The seven lessons, with the unit math behind each # Lesson Unit-level meaning 1 Do not start in the USA USA CPM $15–30 vs EU CPM $5–12; lower-CPM markets absorb test burn faster 2 Speed beats perfection 1 SKU/day test cadence = $1,500–4,500/week ad spend during test phase 3 Outwork everyone 10 hrs/day operator time, sustained for 12+ months 4 Consistency beats quick wins Working-capital cycle: 30–60 days from customer pay to net cash 5 Double down on winners Winner window is 60–90 days; scale before decay 6 Work the supply chain Negotiate 5–15% cost-down or 5–10 day lead-time-down per winning SKU 7 Never stop testing SKU survival rate is 1–5%; pipeline must stay full Each lesson is a real lever. None of them is motivational fluff on its own. The combination is what produces a $5M/year operator; any one lesson in isolation does not. What lesson 1 actually means at the unit level The standard claim is that USA CPM is high "
+  },
+  {
     "url": "/zh/content/x-vincent-ai-monetization-curriculum/",
     "locale": "zh",
     "title": "100 集 AI 变现课收下来：'90% 都讲三件事' 这句话，到底在讲什么",
@@ -759,6 +808,23 @@
     ],
     "excerpt": "一条推文拆的是一个 operator 9 个月里用 AI 写的 Medium 文章 + SEO + 卖数字产品,赚了近 3 万美金。机制:批量 AI 文章(每天 2 篇)+ Medium 分发 + S",
     "body": "一条推文拆的是一个 operator 9 个月里用 AI 写的 Medium 文章 + SEO + 卖数字产品,赚了近 3 万美金。机制:批量 AI 文章(每天 2 篇)+ Medium 分发 + SEO 标题 + 数字产品漏斗。重点不是「AI 内容有效」,是单位经济:9 个月每天 2 篇 ≈ 540 篇,3 万美金营收 ≈ 55 美金/篇平均。下面是单篇数学、数字产品后端、以及案例没展开的四点。 单篇单位经济 跨度大,看数字产品后端。没有产品,一篇文章终身赚 0.20–5 美金。有了产品,一篇文章能赚 50+ 美金。产品是把 pageview 变美元的单位经济杠杆。 为什么这是内容流水线生意 关键在节奏,不在 AI 质量。一个 540 篇的 operator(无论人写、AI 写、外包)就有一个 3 万美金的生意。AI 把单篇制作成本压到 1–5 美金,这让数学跑得通。没有 AI,同样节奏单篇成本 50–200 美金,单位经济就垮。 流水线形状: 每篇 operator 时间:1.5–2.5 小时。每天 2 篇的节奏是单兵 3–5 小时专注工作能撑住的。复利体量是护城河。 数字产品后端 文章是漏斗顶部。产品是转化。大多数文章在 0.1–1% pageview 转化率下卖产品;客单价 30–300 美金。产品漏斗是把 pageview 变美元的环节。没有产品,文章只是 Medium partner 收入(0.20–5 美金/篇终身),不是生意。 为什么 55 美金/篇有误导 3 万美金摊到 540 篇是平均。中位大概 0–5 美金,少数爆款拉动平均。80/20 适用:约 20% 的文章(高流量 SEO 赢家)贡献 80% 营收。剩下 80% 的文章是支撑长尾 SEO 的内容农场填充。 出 540 篇是体量游戏。AI + SEO + 产品漏斗组合让体量游戏赚钱。中位单篇是亏损引子;分布是赢家。 案例没说的事 四点。 制作成本。 案例没给单篇成本。隐含 1–5 美金。 中位单篇营收。 3 万美金是 540 篇的平均,中位大概 0–5 美金。平均被少数爆款拉动。 数字产品的流失。 案例没给退款/拒付率。差漏斗上数字产品退款率 5–15%。 可持续性。 案例没处理 12–24 月后 Google 算法压 SEO 流量会发生什么。「Helpful Content」更新自 2024 起降权薄 AI 内容;案例没处理模型长期存续。 结论 案例不是「AI 内容有效」。案例是:AI + SEO + 数字产品后端是一个内容流水线生意——AI 压制作成本,SEO 压分发成本,产品漏斗是单位经济杠杆。55 美金/篇平均有误导;中位是 0–5 美金。模型跑得通因为体量复利;模型脆弱因为 Google 算法是隐性合伙人。 看这条案例的多数人,带走就一句:别再找 AI 内容魔法。建一条内容"
+  },
+  {
+    "url": "/zh/content/x-mikefutia-claude-code-google-ads-builder/",
+    "locale": "zh",
+    "title": "一个 URL 到可投的 Google Search 广告系列：拆 Claude Code 广告搭建器与单位经济学",
+    "description": "一条高互动 X 帖（619 赞、526 回复）走了一遍 Claude Code 搭建：一个 URL 进去，出来一个完整可投的 Google Search 广告系列——关键词、广告组、每条标题、否定词，按付费搜索代理会用的结构组织。下面拆这个搭建实际做了什么、每个广告系列的单位经济学、套壳生意坐在哪里。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "google-ads",
+      "claude-code",
+      "agency-tool",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条高互动 X 帖（619 赞、526 回复）走了一遍 Claude Code 搭建：一个 URL 进去，出来一个完整可投的 Google Search 广告系列——关键词、广告组、每条标题、否定词，",
+    "body": "一条高互动 X 帖（619 赞、526 回复）走了一遍 Claude Code 搭建：一个 URL 进去，出来一个完整可投的 Google Search 广告系列——关键词、广告组、每条标题、否定词，按付费搜索代理会用的结构组织。下面拆这个搭建实际做了什么、每个广告系列的单位经济学、套壳生意坐在哪里。 搭建实际做了什么 阶段 输入 输出 时长 爬取 + 提取 一个 URL offer、价值主张、信任点、定价 1–3 分钟 关键词主题 提取出的 offer 按意图分 5–12 个广告组 2–4 分钟 标题 + 描述 广告组 每组 15–30 条标题 + 4 条描述 3–8 分钟 否定词 + 出价 广告组 否定关键词清单、出价建议 1–3 分钟 Editor CSV 以上全部 Google Ads Editor 导入文件 <1 分钟 搭建输出一个 Google Ads Editor CSV，运营方能直接上传。首稿工作做完了。剩下的工作是 QA、转化追踪接线、上线后调优。 每个广告系列的单位经济学 项 成本 备注 Claude 订阅 $20–200/月固定 分摊到每月 10–40 个广告系列 每广告系列 API token $7–28 长广告生成 prompt 的输入 + 输出 token 运营方时间 3–5 小时 QA、转化追踪、上线 获客成本 每个客户 $30–150 冷触达、付费广告、推荐 总交付成本 $60–380 不含运营方小时费率 按 $500 交付价算，毛利 24–88%，取决于运营方效率和 CAC。按 $800 算，毛利 53–90%。要拿到毛利上限，运营方得跑每月 10+ 个广告系列，把 Claude 订阅和 QA 摊薄。 谁买这个 三类买家，价格敏感度不同： 月广告支出 $10k–100k 的小电商商家。 要比代理更快的迭代循环。价格承受 $300–800 每个广告系列，4–10 个广告系列的月 retainer。 绩效营销顾问。 每季度给自己客户交付 20–50 个广告系列，要压每个广告系列的时间。价格承受 $100–300 每个广告系列作为白标输入，他们再按完整代理价 ($1,000–3,000 每个) 转卖。 SaaS 营销团队。 内部跑付费搜索但想跳过首稿。价格承受 $200–500 每个广告系列，内部走预算。 三类买家对应三种不同的 go-to-market 动作：直客内容营销、代理合作、SaaS 社群分销。没有一种是自动的。 套壳生意坐在哪里 三种可行形状： 直接交付。 每个广告系列 $300–800，按项目计或按月 retainer 4–10 个广告系列。最贴合小电商买家。 白标交付。 同一套搭建卖给代理 $100–300 每个，代理再按完整代理价转卖客户。最贴合顾问买家；代理吃掉毛利，运营方吃掉量。 模板转售。 精挑细选的广告系"
   },
   {
     "url": "/zh/content/solo-saas-profit-math/",
@@ -1766,6 +1832,40 @@
     "body": "Berkshire Hathaway reportedly holds about 31B USD in Alphabet, with 10B USD sourced via a private placement. Alphabet sits as Berkshire''s third-largest equity holding behind Apple and American Express. The reported move signals two things simultaneously: (1) Berkshire is no longer treating AI-platform risk as binary-fail, and (2) the price Buffett is willing to pay implies his fair-value view sits well above prior peak-Shiller multiples. What Berkshire reportedly bought Reported attribute Reported value Issuer Alphabet Inc. Equity stake 31B USD fair value Of which private placement 10B USD direct from issuer Rank within Berkshire Third-largest equity Other top holdings for context Apple, American Express The 10B USD private placement is the load-bearing detail. A 31B USD position could in principle be assembled in the open market; a 10B USD chunk sourced privately signals that Berkshire wanted a specific size that the open market could not absorb quietly. What the route implies Three things a private placement route signals. Berkshire wanted size the open market could not deliver quietly. An open-market 10B USD buy on Alphabet would move price. The private route is the route for a"
   },
   {
+    "url": "/zh/content/x-cashclaw-ai-self-trading-agent/",
+    "locale": "zh",
+    "title": "CashClaw 与自开票 AI Agent：一个开源自交易 Agent 实际在做什么，外面的单位经济学",
+    "description": "一条爆款 X 帖介绍了 CashClaw，一个开源 AI Agent，自己找活、自己报价、自己执行、自己交付、自己开票。下面拆这个搭建实际做了什么、每个任务的单位经济学、决定 Agent 是否真能闭环的失败模式。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "agent",
+      "open-source",
+      "autonomous",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "一条爆款 X 帖（211 赞、15 回复、43 转推）介绍了 CashClaw，一个开源 AI Agent，自己找活、自己报价、自己执行、自己交付、自己开票。搭建是真的、开源的、一个周末能 fork。",
+    "body": "一条爆款 X 帖（211 赞、15 回复、43 转推）介绍了 CashClaw，一个开源 AI Agent，自己找活、自己报价、自己执行、自己交付、自己开票。搭建是真的、开源的、一个周末能 fork。套壳生意是问题。 搭建做了什么 阶段 在做什么 谁决策 找任务 扫招聘板、平台列表或直接客户请求 Agent 报价 估算小时数、报价 Agent（可选运营方覆盖） 执行 调 LLM 产出交付物 Agent 交付 + 开票 发交付物，开票收钱 Agent 运营方把钱包和目标接好之后，循环不需要人介入。运营方的角色坍缩成：(a) 设定目标；(b) 监控循环；(c) 处理冒出来的争议。 每个任务的经济学 项 成本 备注 Claude 订阅 $20–200/月固定 分摊到每月 100–1,000 个任务 每个任务 LLM API $0.05–2 短，$5–20 长 看交付物长度 算力 + 存储 $5–30/月每个 Agent 小 VPS，SQLite 平台费 发票金额的 5–20% 每个平台不同 总交付成本 每个任务 $0.10–25 加运营方监控时间 每个任务开票金额 $20–500 看平台。中位数 $50，毛利 50–99%（不含拒付 / 撤单损失）。经济学只在量上成立——一天一个任务摊不掉 Claude 订阅。 买家画像 三群人，价格敏感度和风险承受不同： 单人 founder。 要一个 24/7 不用人盯的获客或内容生产循环。价格承受 $200–500/月一个托管 Agent，每天回个报告。 小代理。 要用 Agent 替代兼职外包，处理高量低风险任务（数据录入、短文案、基础调研）。价格承受 $500–2,000/月每个 Agent 实例。 副业运营方。 要 Agent 每天测 50+ 个小单，留下付钱的。价格承受 $50–200/月，或者分成。 这三类都需要同一件帖子没点的事：Agent 发票背后的法人实体。 法人实体的缺口 大多数平台（Upwork、Fiverr、Toptal、直接客户开票平台）要求一个注册的商业实体——LLC、个体工商户或同等——才能收款。一个自开票 AI Agent 在大多数司法管辖区不能以个人身份开票，背后必须有一个税务登记的实体。 帖子没点这个要求。CashClaw 周围的套壳生意坐在要么：(a) 运营方自己的 LLC；要么 (b) 一个代 Agent 处理开票、税务、争议的壳公司。壳公司形状更耐用，因为它把拒付 / 撤单风险按量吸收掉。 三个失败模式 Agent 在难任务上报价低于成本。 没有报价硬底线，Agent 会在复杂任务上卷到底价，执行质量差，在发票上亏钱。缓解措施是按平台设报价下限，加一个交付前的质量检查。 Agent 被平台限流或封号。 大多数平台封每天发 10–20+ 报价、或交付质量低于阈值的账号。缓解措施是按平台限"
+  },
+  {
+    "url": "/content/x-cashclaw-ai-self-trading-agent/",
+    "locale": "en",
+    "title": "CashClaw and the self-billing AI Agent: what an open-source self-trading agent actually does, and the unit economics around it",
+    "description": "A viral X post introduced CashClaw, an open-source AI Agent that finds tasks, quotes, executes, delivers, and invoices — without human intervention. A read of what the build actually does, the per-task economics, and the failure modes that decide whether the agent actually closes the loop.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "agent",
+      "open-source",
+      "autonomous",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A viral X post (211 likes, 15 replies, 43 reposts) introduced CashClaw, an open-source AI Agent that",
+    "body": "A viral X post (211 likes, 15 replies, 43 reposts) introduced CashClaw, an open-source AI Agent that finds tasks, quotes, executes, delivers, and invoices on its own. The build is real, open-source, and small enough to fork in a weekend. The wrapper business around it is the question. What the build does Stage What happens Who decides Find tasks Scan job boards, marketplace listings, or direct customer requests Agent Quote Estimate hours, post a price Agent (with optional operator override) Execute Call an LLM to produce the deliverable Agent Deliver + invoice Send the deliverable, invoice for the work Agent The loop runs without human intervention once the operator has wired a wallet and a goal. The operator's role collapses to (a) setting the goal, (b) monitoring the loop, (c) handling disputes when they arise. Per-task economics Line item Cost Notes Claude subscription $20–200/month fixed Amortize across 100–1,000 tasks/month Per-task LLM API $0.05–2 short, $5–20 long-form Depends on deliverable length Compute + storage $5–30/month per agent Small VPS, SQLite Marketplace fees 5–20% of invoice Per marketplace Total cost to deliver $0.10–25 per task Plus operator monitoring time P"
+  },
+  {
     "url": "/tools/cbm-calculator/",
     "locale": "en",
     "title": "CBM & Dimensional Weight Calculator",
@@ -2638,6 +2738,23 @@
     "body": "A case profiles Norm AI, founded by John Nay in July 2023. Series C: $120M raised at a $1.2B valuation. Total funding: $260M+. Customers manage over $30T in assets — Blackstone, Bain Capital, Vanguard, Citi, New York Life. The interesting part is not the technology but the structure: Norm does not sell a legal-software product. Norm runs a law firm called Norm Law. AI agents do the legal work (contract review, regulatory analysis, compliance checks); human senior lawyers supervise, calibrate, correct. The customer engages Norm Law as outside counsel. The deliverable is legal advice, not software output. The billing model is the point — a firm bills by the matter, a tool bills by the seat. The structural framing, per-customer math, and four gaps the case does not address, below. The frame The case is not 'Norm has better AI'. The case is: Norm operates a firm, not a tool. A firm's ceiling is the customer's workload; a tool's ceiling is the customer's headcount. For an enterprise customer whose legal workload is much larger than its legal headcount, the firm frame is the higher-ceiling revenue model. The customer roster Customer AUM / assets managed Implied deal size (rough) Blacksto"
   },
   {
+    "url": "/content/x-mikefutia-claude-code-google-ads-builder/",
+    "locale": "en",
+    "title": "One URL to a launch-ready Google Search campaign: a read of a Claude Code Google Ads builder, with the unit economics behind it",
+    "description": "A high-engagement X post (619 likes, 526 replies) walked through a Claude Code build that takes one URL and outputs a complete Google Search campaign — keywords, ad groups, headlines, negatives, structured the way a paid-search agency would structure it. A read of what the build actually does, the per-campaign unit economics, and where the wrapper business sits.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "google-ads",
+      "claude-code",
+      "agency-tool",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A high-engagement X post (619 likes, 526 replies) walked through a Claude Code build that takes one ",
+    "body": "A high-engagement X post (619 likes, 526 replies) walked through a Claude Code build that takes one URL and outputs a complete Google Search campaign — keywords, ad groups, every headline, the negative list — structured the way a paid-search agency would structure it. What follows is a read of what the build actually does, the per-campaign unit economics, and where a wrapper business around this build would sit. What the build does Stage Input Output Time Crawl + extract One URL Offer, value prop, proof points, price 1–3 min Keyword themes Extracted offer 5–12 ad groups by intent 2–4 min Headlines + descriptions Ad groups 15–30 headlines + 4 descriptions per ad group 3–8 min Negatives + bids Ad groups Negative-keyword list, bid recommendations 1–3 min Editor CSV All of the above Google Ads Editor import file <1 min The build outputs a Google Ads Editor CSV that an operator can upload directly. The first-draft work is done. The remaining work is QA, conversion-tracking wiring, and post-launch tuning. Per-campaign unit economics Line item Cost Notes Claude subscription $20–200/month fixed Amortize across 10–40 campaigns/month Per-campaign API tokens $7–28 Input + output tokens for th"
+  },
+  {
     "url": "/zh/tools/fee-comparator/",
     "locale": "zh",
     "title": "PayPal vs Stripe 手续费对比器",
@@ -2685,6 +2802,40 @@
     ],
     "excerpt": "",
     "body": ""
+  },
+  {
+    "url": "/zh/content/x-paypal-wechat-world-cross-border-wallet/",
+    "locale": "zh",
+    "title": "PayPal World 与跨境钱包：微信支付 + UPI + Mercado Pago 互通，对 SMB 卖家到底改了什么",
+    "description": "一条高互动 X 帖（770 赞、1000+ 转推）报道了 PayPal 推出 PayPal World，把微信支付、印度 UPI、拉美 Mercado Pago 接进一个跨境钱包。下面拆这个互通实际做了什么、对 SMB 卖家改了什么、新闻稿没点名的失败模式。",
+    "category": "payment",
+    "tags": [
+      "payment",
+      "paypal",
+      "wechat-pay",
+      "cross-border",
+      "wallet",
+      "case-study"
+    ],
+    "excerpt": "一条高互动 X 帖（770 赞、1000+ 转推）报道了 PayPal 推出 PayPal World，把微信支付、印度 UPI、拉美 Mercado Pago 接进一个跨境钱包。标题场景是中国游客用",
+    "body": "一条高互动 X 帖（770 赞、1000+ 转推）报道了 PayPal 推出 PayPal World，把微信支付、印度 UPI、拉美 Mercado Pago 接进一个跨境钱包。标题场景是中国游客用 PayPal 扫微信支付二维码，或美国游客用 PayPal 扫 Mercado Pago 二维码。下面拆这个互通实际做了什么、对 SMB 卖家改了什么、新闻稿没点名的失败模式。 四个钱包互通实际做了什么 钱包 区域 2026 年日活 在 PayPal World 中的角色 PayPal 全球 200M+ 锚定钱包 微信支付 中国大陆 800M+ 出境游客覆盖 印度 UPI 印度 400M+ 入境游客覆盖 + 境内汇款 Mercado Pago 拉美 150M+ 拉美出境游客覆盖 这四个区域的任一个 PayPal 用户都可以扫其他三个的二维码。商户端按本地钱包收款，无需自己接入那个钱包。跨境换汇由 PayPal 在中间处理。 对 SMB 卖家改了什么 三个具体变化： 「我没有微信支付账号」的反对消失了。 一个中国游客走进美国纪念品店，可以扫店家 PayPal 二维码用微信支付付款，按人民币付。店家按美元收。这是中国游客集中的零售里被引用最多的摩擦点。 卖家通过现有接入收款。 没有新的商户入驻流程、没有超越跨境溢价的新费率表、没有新的合规审查。变化在钱包侧，不在商户侧。 结账页可以给游客提供「用你的本地钱包付」。 一个有印度游客客群的美国商家可以提供「用 UPI 付」而无需自己接入 UPI——PayPal World 桥接。 每笔交易的经济学 成本项 费率 备注 PayPal 境内商户费 2.9% + $0.30 标准卡费率 PayPal 跨境溢价 +1.5%（典型） 货币不同时适用 钱包到钱包汇兑差 1–3%（历史） PayPal 在换汇上吃 实际跨境钱包费率 约 5.4–7.4% + $0.30 对比境内 2.9% + $0.30 钱包到钱包费率大约是境内卡费率的两倍。对净利润只有 3–8% 的 SMB 卖家，这是 make-or-break 的那一项。新闻稿把互通框成「不增收新费」事件；跨境溢价才是成本。 失败模式 通过外国钱包的争议。 外国客户通过本国钱包发起争议，PayPal 仲裁。卖家比境内卡争议的胜诉机会小，因为争议路径是钱包专属的。跨境钱包交易的标准争议率比境内卡交易高 1.5–3 倍。 退款摩擦。 钱包到钱包的退款走同一个钱包，反向再吃一次汇兑差。一笔 $50 USD 退给中国微信支付客户，真实成本可能 $51–52（计反向汇兑差）。 受制裁走廊的合规。 在受制裁走廊（例如中国大陆 ↔ 美国某些商户类目）的钱包到钱包交易可能被拦截，即使两边钱包技术上都是支持的。卖家看到一笔支付失败但没有明确原因。 带走就一句 PayPal World 砍掉了一个"
+  },
+  {
+    "url": "/content/x-paypal-wechat-world-cross-border-wallet/",
+    "locale": "en",
+    "title": "PayPal World and the cross-border wallet: what the WeChat Pay + UPI + Mercado Pago integration actually changes for SMB sellers",
+    "description": "A high-engagement X post (770 likes, 1,000+ reposts) covered PayPal''s launch of PayPal World, integrating WeChat Pay, India UPI, and Latin America''s Mercado Pago into a single cross-border wallet. A read of what the integration actually does, what it changes for SMB sellers, and the failure modes the announcement does not name.",
+    "category": "payment",
+    "tags": [
+      "payment",
+      "paypal",
+      "wechat-pay",
+      "cross-border",
+      "wallet",
+      "case-study"
+    ],
+    "excerpt": "A high-engagement X post (770 likes, 1,000+ reposts) covered PayPal's launch of PayPal World, integr",
+    "body": "A high-engagement X post (770 likes, 1,000+ reposts) covered PayPal's launch of PayPal World, integrating WeChat Pay, India UPI, and Latin America's Mercado Pago into a single cross-border wallet. The headline use case is a Chinese tourist using PayPal to scan a WeChat Pay QR, or a U.S. tourist using PayPal to scan a Mercado Pago QR. What follows is a read of what the integration actually does, what it changes for SMB sellers, and the failure modes the announcement does not name. What the four-wallet integration actually does Wallet Region Daily-active users (2026) Role in PayPal World PayPal Global 200M+ Anchor wallet WeChat Pay Mainland China 800M+ Outbound-tourist coverage India UPI India 400M+ Inbound-tourist coverage + domestic remittance Mercado Pago Latin America 150M+ Outbound-tourist coverage from LatAm A PayPal user in any of those four regions can scan a QR from any of the other three. The merchant receives payment in their home wallet without needing to integrate that wallet directly. The cross-border conversion is handled by PayPal in the middle. What it changes for an SMB seller Three concrete changes: The \"I do not have a WeChat Pay account\" objection disappears. A C"
   },
   {
     "url": "/zh/content/postiz-long-tail-channels/",
@@ -2964,6 +3115,23 @@
     ],
     "excerpt": "The post in question is a sales post for a 30-day AI product bootcamp. The pitch is: from product se",
     "body": "The post in question is a sales post for a 30-day AI product bootcamp. The pitch is: from product selection through build to promotion, in 30 days, taught in a cohort format, with a Quark-pan link to the curriculum. The format is familiar to most; this teardown applies to offers of this shape. The question is not whether the curriculum is real. It is whether the outcome the post implies (a \"sustainable side-hustle\" from a 30-day commitment) is what the curriculum actually delivers. What the pitch says, mapped to deliverables Reading the post literally, the offer promises four components: Product selection. Pick an AI-automation product category where the buyer has clear pain and budget. Build. Use no-code + AI to ship a v0 within 30 days. Promotion. Paid and organic distribution plan with templates. Long-term asset framing. \"构建长期副业资产\" (build a long-term side-hustle asset). The 30-day window is enough to ship (1) and (2). It is not enough to validate (3) or to demonstrate (4). What 30 days can and cannot do Stage 30-day outcome What it does not cover Selection Pick a category with margin 50% and clear buyer profile Validate that the chosen category has reachable distribution channel"
+  },
+  {
+    "url": "/content/x-gregisenberg-corey-1000usd-hour-local-ai/",
+    "locale": "en",
+    "title": "The $1,000/hour local-AI-consulting business model: how a 45-minute SMB audit converts to off-the-shelf subscriptions",
+    "description": "A viral X post described a single operator charging $1,000/hour to walk small business owners through a 45-minute audit, identify 5–10 hours of weekly time loss, and prescribe off-the-shelf AI tools to recover them. A read of the math, the conversion funnel, and the failure modes.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "local-business",
+      "consulting",
+      "automation",
+      "case-study",
+      "monetization"
+    ],
+    "excerpt": "A viral X post (2,032 likes, 111 replies, 136 reposts) described a single operator charging $1,000/h",
+    "body": "A viral X post (2,032 likes, 111 replies, 136 reposts) described a single operator charging $1,000/hour for a 45-minute audit of small business workflows, identifying 5–10 hours of weekly time loss, and prescribing off-the-shelf AI tools to recover them. The implied premise — that \"only 5% of businesses use AI beyond ChatGPT, the other 95% need you\" — points to a real demand pool, but the math, the funnel, and the failure modes need to be drawn out before anyone copies the model. The shape of the engagement Stage Duration Deliverable Buyer pays for Discovery call 45 min Time-loss map, 3–7 tool recommendations $750 (or $1,000/hour equivalent) Implementation 4–12 hr Tools configured, team trained Often separately quoted Ongoing retainer Monthly Tool updates, new audits, troubleshooting $500–2,000/month The post implies the audit is the headline product. The follow-on implementation and retainer are where most of the recurring revenue sits, but they are not what the post is selling. Why $1,000/hour is anchored to a real reference price The buyer is comparing the $750 audit against two reference prices. (1) A part-time operations hire at $2,000–4,000/month — the audit pays back if it r"
   },
   {
     "url": "/content/ai-photo-app-payment-channel/",
