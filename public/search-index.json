@@ -83,6 +83,40 @@
     "body": "一条爆款 X 帖（2032 赞、111 回复、136 转推）描述了一个独立运营方按 $1,000/小时收费，给小企业做 45 分钟审计，找出每周损失 5–10 小时的地方，开出现成 AI 工具的处方。隐含前提——「只有 5% 的企业在 ChatGPT 之外用过 AI，剩下 95% 都需要你」——指向真实的客户池。但在照抄之前，数学、漏斗、失败模式都得摊开看。 交付的形状 阶段 时长 交付物 买家付的钱 发现电话 45 分钟 时间损失地图，3–7 个工具推荐 $750（折合 $1,000/小时） 实施 4–12 小时 工具配置到位，团队培训完成 通常单独报价 持续 retainer 月度 工具更新、新审计、故障处理 $500–2,000/月 帖子暗示审计是头条产品。后续的实施和 retainer 是大部分经常性收入所在，但不是帖子的卖点。 为什么 $1,000/小时锚定的是真实参考价 买家把 $750 审计和两个参考价比。(1) 一个兼职运营岗 $2,000–4,000/月——审计能拿回老板每周 5–10 小时就回本了，恰好是帖子点名的回收目标。(2) 麦肯锡级别的战略咨询 $5,000–50,000——审计是一笔能拿到具体交付的小钱。 定价锚定在「省下小时的价值」上，而不是运营方的小时成本上。对买家画像——年营收 $1M–10M、5–25 名员工、老板本人能感受到时间损失——这是正确的锚。同样的价格对财富 500 强的采购官、或自带运营团队的创业公司 CTO 不成立。 帖子漏掉的漏斗数学 按 $1,000/小时、每次审计 45 分钟算，运营方每周要做 2–3 次付费审计才能月入 $8,000–12,000。这要求每周有 8–15 个预约成功的发现电话，按 20–30% 预约率倒推，就是每周 40–80 次触达。 帖子对以下几点都沉默： 触达到预约的转化率。 这个赛道独立顾问的标准答案是：冷触达中 5–15% 预约 30 分钟介绍电话，其中 30–50% 转成付费的 45 分钟审计。帖子没点这些数字。 审计到 retainer 的转化率。 如果帖子作者把 30–50% 的审计客户留在 $500–2,000/月的 retainer，每 cohort 在 6–12 个月内能堆出 $6,000–30,000/月的经常性账本。帖子对这点是哑的。 获客成本。 冷触达、付费广告、推荐合作都吃 CAC。帖子没点 $1,000/小时里有多大比例覆盖获客。 三个失败模式 老板一个推荐都不落地，写一条差评。 这是最常见的失败。实施陪跑必须单独卖，或者打包进审计费。一次 $750 审计不做任何陪跑，是一笔 $750 的不高兴客户负债。 开出的工具崩了或改了定价。 现成 AI 工具每个季度都有停服、改价、被收购。老板拿着一个已经过期的推荐，找不到运营方。一个 retainer 或一个"
   },
   {
+    "url": "/zh/content/x-zsxq-brandon-david-ai-agent-postcard-websites/",
+    "locale": "zh",
+    "title": "$420 明信片 + 一个叫 David 的 AI agent + 8000 美金月经常性收入：拆 Brandon Doyle 的本地商家建站打法",
+    "description": "一个犹他州运营方花了 $420 给 350 家本地小商家印明信片，每张明信片链到一个 AI agent 已经帮收件人做好的网站。首月转化产出了 8000 美金 MRR。拆单位经济学、线下到线上的转化漏斗、帖子没点名的失败模式。",
+    "category": "pricing",
+    "tags": [
+      "local-services",
+      "ai-agent",
+      "cold-outreach",
+      "postcard",
+      "mrr",
+      "case-study"
+    ],
+    "excerpt": "一个犹他州运营方（Brandon Doyle，getdavid.ai 创始人）花了 $420 印明信片并寄给 350 家本地小商家。每张明信片链到一个 AI agent 已经帮收件人做好的网站。首月转",
+    "body": "一个犹他州运营方（Brandon Doyle，getdavid.ai 创始人）花了 $420 印明信片并寄给 350 家本地小商家。每张明信片链到一个 AI agent 已经帮收件人做好的网站。首月转化产出 8,000 美金 MRR，外加一个副项目的 300 美金/月。隐含经济学：每 $1 明信片花销在首月产生大约 $19 MRR。下面拆单位经济学、线下到线上的转化漏斗、帖子没点名的失败模式。 流程 阶段 在做什么 成本/产出 扫 Agent 在 Google Maps 上查有店面 + 评价但没网站/网站差的小商家 API $0 建 Agent 给每家商家生成定制落地页 350 个站加起来 <$20 印 350 张明信片：商家名、tagline、QR 码 $420 寄 USPS 投递 含在印刷里 转化 收件人扫 QR 看到成品网站，问能不能保留 回复率 10–25%（隐含） 收费 把回复转成代托管月付客户 每个 $50–300/月 整个流程通过 iMessage 即可操作——运营方的角色坍缩成：(a) 告诉 agent 扫哪个城市；(b) 批准明信片设计；(c) 处理有兴趣的商家回复。 每个商家的单位经济学 项 成本 备注 每个站 AI 生成 $0.05–0.20 单页，资源极少 明信片印刷 + 邮寄 $1.20 标准 4x6 USPS EDDM 每个商家总交付成本 约 $1.25 不含运营方时间 每个商家运营方时间 5–15 分钟 处理回复、定制化 $100/月下的回本 38 小时 头 4 天营收 $50/月下的回本 76 小时 头 8 天营收 一个 $100/月的客户在头 4 天就回本了获客成本。一个 $50/月的客户 8 天回本。两个都在标准 SMB 流失窗口（3–7%/月）内，所以 LTV 数学不需要聪明的留存层就成立。 为什么线下邮寄比线上冷触达有效 三个原因，每个背后有数字： 打开率。 实体邮件 90%+。冷邮件 2%。明信片被打开；邮件被过滤或忽略。 预制成品。 QR 码指向一个真的成品站，上面写着商家的名字。冷邮件指向一个销售说辞。商家看到自己生意被呈现，那就是说服事件。 没有催促，感知风险低。 商家可以扫、浏览、用一周时间决定。没有「约个电话」的压力，没有日历邀请，没有 Zoom。决策按商家节奏发生，所以「不决策」率更低。 打开率这一步的成本比是大约 60:1 利于明信片，转化步骤再乘以同样的 60:1。帖子的判断是对的，冷邮件在这个规模的 SMB 触达上已经死了；明信片是活下来的渠道。 帖子漏掉的转化漏斗 帖子暗示 350 张明信片 → 首月 $8,000 MRR。背后的数字： 步骤 隐含率 产出 寄出 100% 350 扫 QR 10–25%（典型 SMB 直邮响应） 35–90 问能不能保留网站 扫了的 50–80% 18–70 转付"
+  },
+  {
+    "url": "/content/x-zsxq-brandon-david-ai-agent-postcard-websites/",
+    "locale": "en",
+    "title": "$420 in postcards, an AI agent named David, and 8,000 USD/month MRR: a read of Brandon Doyle''s local-business website playbook",
+    "description": "A Utah-based operator spent $420 on a postcard mailer to 350 small local businesses, with each postcard linking to a website an AI agent had already built for the recipient. The first-month conversion produced $8,000 in MRR. A read of the unit economics, the offline-to-online conversion funnel, and the failure modes the post leaves out.",
+    "category": "pricing",
+    "tags": [
+      "local-services",
+      "ai-agent",
+      "cold-outreach",
+      "postcard",
+      "mrr",
+      "case-study"
+    ],
+    "excerpt": "A Utah-based operator (Brandon Doyle, founder of getdavid.ai) spent $420 printing and mailing postca",
+    "body": "A Utah-based operator (Brandon Doyle, founder of getdavid.ai) spent $420 printing and mailing postcards to 350 small local businesses. Each postcard linked to a website an AI agent had already built for the recipient. The first-month conversion produced $8,000 in monthly recurring revenue (MRR) plus an extra $300/month from a side project. The implied economics: every $1 of postcard spend generated roughly $19 of MRR in month one. What follows is a read of the unit economics, the offline-to-online conversion funnel, and the failure modes the post does not name. The flow Stage What happens Cost / output Scan Agent queries Google Maps for SMBs with storefront + reviews but no/poor website $0 in API Build Agent generates a custom landing page per business <$20 total for 350 sites Print 350 postcards with business name, tagline, QR code $420 Mail USPS delivery included in print Convert Recipients scan QR, see finished site, ask to keep it Reply rate 10–25% (implied) Bill Convert replies to managed-hosting customers $50–300/month per customer The entire flow is reachable through iMessage — the operator's role collapses to (a) telling the agent which city to scan, (b) approving the postc"
+  },
+  {
     "url": "/zh/content/x-samuel-ecom-5m-dropshipping-7-lessons/",
     "locale": "zh",
     "title": "$5M Dropshipping 营收背后的 7 条教训：一个真实运营方到底做对了什么",
@@ -2260,6 +2294,38 @@
     ],
     "excerpt": "Cross-border sellers pay 3–4 different fees when money moves from a customer''s card to a mainland C",
     "body": "Cross-border sellers pay 3–4 different fees when money moves from a customer''s card to a mainland China bank account: payment processing fee, FX margin, intermediary bank fee, withdrawal fee. Wise and Airwallex undercut PayPal specifically on FX margin, which is often the single largest leak. How this calculator works Amount — the gross amount you''re converting. From currency — your sales currency (USD most common). To currency — typically CNY for Chinese entities, USD for US-based. The tool returns: FX margin baked into each provider''s displayed rate. Withdraw fee (if any). Net receive amount — what hits your bank. Defaults assume mid-market reference rates as of writing; your actual rate depends on the day. The provider with the smallest gap between its fee column and the sum of others is the winner. Sample receive amounts (USD → CNY, $10,000) Provider FX margin Effective rate Receive CNY Loss vs mid-market Mid-market (reference) 0% 7.25 ¥72,500 ¥0 PayPal 3.5% 6.996 ¥69,963 ¥2,537 Wise 0.41% 7.220 ¥72,203 ¥297 Airwallex 0.35% 7.225 ¥72,246 ¥254 On a single $10k transfer, the gap between PayPal and Airwallex is $2,283 in your favor. Multiply by 12 monthly transfers and you're a"
+  },
+  {
+    "url": "/zh/content/x-zsxq-geordie-ai-agent-security-30m-a-round/",
+    "locale": "zh",
+    "title": "Geordie AI 与「AI agent 盲区」命题：5 个月 13 倍 ARR 增长、3000 万美金 A 轮、Agent 安全工具的单位经济学",
+    "description": "一个伦敦创始人（Henry Comfort）围绕一个命题建了 Geordie AI：传统企业安全工具看不到 AI agent 在公司里做什么。2026 年前 5 个月 ARR 增长 13 倍，公司拿到 Balderton Capital 领投的 3000 万美金 A 轮，赢了 RSAC Innovation Sandbox，一个 POC 就帮客户挖出比已知多 327% 的 agent。下面拆单位经济学、go-to-market 动作、失败模式。",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "agent-security",
+      "enterprise-saas",
+      "funding",
+      "case-study"
+    ],
+    "excerpt": "一个伦敦创始人（Henry Comfort）围绕一个命题建了 Geordie AI：传统企业安全工具看不到 AI agent 在公司里做什么。命题成立了。2026 年前 5 个月 ARR 增长 13 ",
+    "body": "一个伦敦创始人（Henry Comfort）围绕一个命题建了 Geordie AI：传统企业安全工具看不到 AI agent 在公司里做什么。命题成立了。2026 年前 5 个月 ARR 增长 13 倍，公司拿到 Balderton Capital 领投的 3000 万美金 A 轮（General Catalyst、Ten Eleven、Crosspoint Capital 跟投），公司还赢了 RSAC Innovation Sandbox——网安行业最权威的年度创新奖，历届获奖者累计创造了 500 亿美金退出和 100+ 并购。Owkin（一家 AI 生物科技）的一个 POC 挖出了比已知清单多 327% 的 agent。下面拆单位经济学、go-to-market 动作、失败模式。 两个产品 产品 在做什么 买家信号 Discovery 在客户环境里找到每一个 AI agent，画出访问 + 行为 + 风险 「我不知道什么在跑」 Beam 运行时约束层，动态限制 agent 行为，不关停 「我不能拖慢部署速度」 Discovery 是切入楔子——客户要看到问题才会付钱去修。Beam 是货币化层，在 Discovery 证明风险面真实之后到来。 13 倍 ARR 增长背后的单位经济学 项 区间 备注 ACV（年合同金额） $50,000–500,000 每个企业，看 agent 数量 销售周期 3–9 个月 企业安全标准 获客成本 $30,000–80,000 现场销售主导 净收入留存 130–160% agent 在客户环境里翻倍 毛利 75–85% 安全工具 SaaS 标准 回本周期 12–24 个月 现场销售重 5 个月 ARR 增长 13 倍，与一个起步在 $500K–1M ARR、增长到 $7–13M ARR 的账本一致，路径是加上 30–80 个新客户（或者少数几个 $250–500K ACV 的大单）。单位数学成立，因为每个新客户每个季度都在加 agent，席位数自然扩张，不用新销售。 为什么买家关心 三类买家，每类紧迫感不同： 财富 500 强 CSO 已经部署了 10+ AI agent，担心可视性。紧迫感：「我没法跟董事会证明什么在跑。」 平均单子 $100–500K ACV。 受监管企业的 AI 负责人（金融、医疗）需要通过 agent 行为审计。紧迫感：「下一个 agent 我没法上线除非审计签字。」 平均单子 $50–200K ACV。 技术先行公司的 CIO 想比安全团队审得更快的速度部署 agent。紧迫感：「我没法按 CEO 想要的速度走。」 平均单子 $100–300K ACV。 三类买家都在同一个楔子上买——Discovery——然后随 agent 数量增长扩到 Beam。扩张动作才是承重变量。 POC 实际证明什么 Ow"
+  },
+  {
+    "url": "/content/x-zsxq-geordie-ai-agent-security-30m-a-round/",
+    "locale": "en",
+    "title": "Geordie AI and the \"AI agent blind spot\" thesis: 13x ARR growth in 5 months, $30M A-round, and the unit economics behind agent-security tooling",
+    "description": "A London-based founder (Henry Comfort) built Geordie AI around a single thesis: traditional enterprise security tools cannot see what AI agents are doing inside the company. The company grew ARR 13x in 5 months of 2026, raised a $30M A-round led by Balderton Capital, won the RSAC Innovation Sandbox, and a single POC uncovered 327% more agents than the customer knew about. A read of the unit economics, the go-to-market motion, and the failure modes.",
+    "category": "ai",
+    "tags": [
+      "ai",
+      "agent-security",
+      "enterprise-saas",
+      "funding",
+      "case-study"
+    ],
+    "excerpt": "A London-based founder (Henry Comfort) built Geordie AI around a single thesis: traditional enterpri",
+    "body": "A London-based founder (Henry Comfort) built Geordie AI around a single thesis: traditional enterprise security tools cannot see what AI agents are doing inside the company. The thesis landed. ARR grew 13x in the first 5 months of 2026, the company raised a $30M A-round led by Balderton Capital (with General Catalyst, Ten Eleven, and Crosspoint Capital participating), and the company won the RSAC Innovation Sandbox — the security industry's most prestigious annual award, whose past winners have collectively created over $50B in exit value and 100+ acquisitions. A single POC at Owkin (an AI biotech) uncovered 327% more agents running in their environment than they had inventoried. What follows is a read of the unit economics, the go-to-market motion, and the failure modes. The two products Product What it does Buyer signal Discovery Finds every AI agent in the customer environment, maps access + behavior + risk \"I do not know what is running\" Beam Runtime constraint layer that dynamically limits agent behavior without shutdown \"I cannot slow down my deployment\" The discovery wedge is the entry point — the customer needs to see the problem before they pay to fix it. Beam is the monet"
   },
   {
     "url": "/zh/content/ai-side-hustle-github-stacks/",
